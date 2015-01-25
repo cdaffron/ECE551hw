@@ -1,0 +1,122 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dF:/Documents/ECE 551/hw2/tutorial
+Eadd_tb
+Z0 w1422215040
+Z1 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z2 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z3 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z4 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z5 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z6 dF:/Documents/ECE 551/hw2/counter
+Z7 8F:/Documents/ECE 551/hw2/counter/8bAdd_TB.vhd
+Z8 FF:/Documents/ECE 551/hw2/counter/8bAdd_TB.vhd
+l0
+L12
+Vd?QaTKAIHGMH3aA7Nc9XK1
+!s100 HYNR>9lZCQ;o8o@zb]INW0
+Z9 OP;C;10.4;61
+32
+Z10 !s110 1422215168
+!i10b 1
+Z11 !s108 1422215168.390000
+Z12 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|F:/Documents/ECE 551/hw2/counter/8bAdd_TB.vhd|
+Z13 !s107 F:/Documents/ECE 551/hw2/counter/8bAdd_TB.vhd|
+!i113 1
+Z14 o-work work -2002 -explicit -O0
+Z15 tExplicit 1
+Atbench
+R1
+R2
+R3
+R4
+R5
+DEx4 work 6 add_tb 0 22 d?QaTKAIHGMH3aA7Nc9XK1
+l34
+L15
+Vd:Wj`A[iBn`9HLA?`db^81
+!s100 IFC5<YaEb=Wf9FQHj@b:A0
+R9
+32
+R10
+!i10b 1
+R11
+R12
+R13
+!i113 1
+R14
+R15
+Abehavioral
+R1
+R2
+R3
+R4
+R5
+DEx4 work 6 add_tb 0 22 C<2?3W`k7UjP>kTo@_d4Q2
+l26
+L9
+V5n_UZ8>`RAIhIZ?oZN3bI2
+!s100 L53ZbJ0;@;3_XJWCNb:lF1
+R9
+32
+!s110 1422214636
+!i10b 1
+!s108 1422214636.602000
+R12
+R13
+!i113 1
+R14
+R15
+w1422214512
+Eadder2x8b
+Z16 w1422214864
+R1
+R2
+R3
+R4
+R5
+R6
+Z17 8F:/Documents/ECE 551/hw2/counter/8bAdder.vhd
+Z18 FF:/Documents/ECE 551/hw2/counter/8bAdder.vhd
+l0
+L12
+V]KA0PKn?02V2UL^GA36@c2
+!s100 JMUdWEc[LZA1=J8O=4ncW3
+R9
+32
+Z19 !s110 1422215169
+!i10b 1
+Z20 !s108 1422215169.085000
+Z21 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|F:/Documents/ECE 551/hw2/counter/8bAdder.vhd|
+Z22 !s107 F:/Documents/ECE 551/hw2/counter/8bAdder.vhd|
+!i113 1
+R14
+R15
+Abehavioral
+R1
+R2
+R3
+R4
+R5
+Z23 DEx4 work 9 adder2x8b 0 22 ]KA0PKn?02V2UL^GA36@c2
+l26
+L21
+Z24 V@T=Ee<mX5X=Z6C<6ih3KU2
+Z25 !s100 Agf?KU>@?Dj8UPgFP^_J_3
+R9
+32
+R19
+!i10b 1
+R20
+R21
+R22
+!i113 1
+R14
+R15

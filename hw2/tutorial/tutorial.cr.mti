@@ -1,0 +1,21 @@
+{F:/Documents/ECE 551/hw2/tutorial/tcounter.vhd} {1 {vcom -work work -2002 -explicit -stats=none {F:/Documents/ECE 551/hw2/tutorial/tcounter.vhd}
+Model Technology ModelSim PE Student Edition vcom 10.4 Compiler 2014.12 Dec  3 2014
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity tcounter
+-- Compiling architecture tbench of tcounter
+
+} {} {}} {F:/Documents/ECE 551/hw2/tutorial/counter.vhd} {1 {vcom -work work -2002 -explicit -stats=none {F:/Documents/ECE 551/hw2/tutorial/counter.vhd}
+Model Technology ModelSim PE Student Edition vcom 10.4 Compiler 2014.12 Dec  3 2014
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity counter
+-- Compiling architecture behave of counter
+
+} {} {}}

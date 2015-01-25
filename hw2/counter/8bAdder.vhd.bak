@@ -1,0 +1,28 @@
+-- Clocked 8-bit adder VHDL
+--
+-- Chris Daffron
+-- ECE 551: Digital Systems Design
+
+library IEEE;
+use IEEE.std_logic_1164.all;
+use IEEE.numeric_std.all;
+use IEEE.std_logic_unsigned.all;
+
+entity adder2x8b is
+  Port (
+    in1     : in  std_logic_vector (7 downto 0);
+    in2     : in  std_logic_vector (7 downto 0);
+    clk     : in  std_logic;
+    out1    : out std_logic_vector (7 downto 0)
+  );
+end adder2x8b;
+
+architecture behavioral of adder2x8b is
+begin
+    process(clk)
+    begin
+        if( rising_edge(clk) ) then
+	        out1 <= (std_logic_vector(unsigned(in1) + unsigned(in2)));
+        end if;
+    end process;
+end behavioral;
