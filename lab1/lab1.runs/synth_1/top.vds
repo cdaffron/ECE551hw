@@ -1,0 +1,345 @@
+#-----------------------------------------------------------
+# Vivado v2014.2 (64-bit)
+# SW Build 932637 on Wed Jun 11 13:33:10 MDT 2014
+# IP Build 924643 on Fri May 30 09:20:16 MDT 2014
+# Start of session at: Thu Feb 12 09:39:07 2015
+# Process ID: 4724
+# Log file: C:/Users/cdaffron/git/ece551/lab1/lab1.runs/synth_1/top.vds
+# Journal file: C:/Users/cdaffron/git/ece551/lab1/lab1.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source top.tcl
+# set_param gui.test TreeTableDev
+# set_msg_config -id {HDL 9-1061} -limit 100000
+# set_msg_config -id {HDL 9-1654} -limit 100000
+# create_project -in_memory -part xc7a100tcsg324-1
+# set_property target_language VHDL [current_project]
+# set_param project.compositeFile.enableAutoGeneration 0
+# set_property default_lib xil_defaultlib [current_project]
+# add_files C:/Users/cdaffron/git/ece551/lab1/551lab1.coe
+# add_files -quiet C:/Users/cdaffron/git/ece551/lab1/lab1.runs/blk_mem_gen_0_synth_1/blk_mem_gen_0.dcp
+# set_property used_in_implementation false [get_files C:/Users/cdaffron/git/ece551/lab1/lab1.runs/blk_mem_gen_0_synth_1/blk_mem_gen_0.dcp]
+# add_files -quiet C:/Users/cdaffron/git/ece551/lab1/lab1.runs/clk_wiz_0_synth_1/clk_wiz_0.dcp
+# set_property used_in_implementation false [get_files C:/Users/cdaffron/git/ece551/lab1/lab1.runs/clk_wiz_0_synth_1/clk_wiz_0.dcp]
+# add_files -quiet C:/Users/cdaffron/git/ece551/lab1/lab1.runs/c_counter_binary_0_synth_1/c_counter_binary_0.dcp
+# set_property used_in_implementation false [get_files C:/Users/cdaffron/git/ece551/lab1/lab1.runs/c_counter_binary_0_synth_1/c_counter_binary_0.dcp]
+# read_vhdl -library xil_defaultlib {
+#   C:/Users/cdaffron/git/ece551/lab1/lab1.srcs/sources_1/imports/new/Hex2SSegDecoder.vhd
+#   C:/Users/cdaffron/git/ece551/lab1/lab1.srcs/sources_1/new/debounce2.vhd
+#   C:/Users/cdaffron/git/ece551/lab1/lab1.srcs/sources_1/imports/new/HexDigs2SSeg.vhd
+#   C:/Users/cdaffron/git/ece551/lab1/lab1.srcs/sources_1/imports/new/CDiv.vhd
+#   C:/Users/cdaffron/git/ece551/lab1/lab1.srcs/sources_1/new/top.vhd
+# }
+# read_xdc {{C:/Users/cdaffron/git/ece551/lab1/lab1.srcs/constrs_1/imports/nexys 4 info/Nexys4_Master.xdc}}
+# set_property used_in_implementation false [get_files {{C:/Users/cdaffron/git/ece551/lab1/lab1.srcs/constrs_1/imports/nexys 4 info/Nexys4_Master.xdc}}]
+# read_xdc dont_buffer.xdc
+# set_property used_in_implementation false [get_files dont_buffer.xdc]
+# set_param synth.vivado.isSynthRun true
+# set_property webtalk.parent_dir C:/Users/cdaffron/git/ece551/lab1/lab1.cache/wt [current_project]
+# set_property parent.project_dir C:/Users/cdaffron/git/ece551/lab1 [current_project]
+# catch { write_hwdef -file top.hwdef }
+INFO: [Vivado_Tcl 4-279] hardware handoff file cannot be generated as there is no block diagram instance in the design
+# synth_design -top top -part xc7a100tcsg324-1
+Command: synth_design -top top -part xc7a100tcsg324-1
+
+Starting synthesis...
+
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 228.891 ; gain = 98.246
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'top' [C:/Users/cdaffron/git/ece551/lab1/lab1.srcs/sources_1/new/top.vhd:39]
+INFO: [Synth 8-638] synthesizing module 'debounce2' [C:/Users/cdaffron/git/ece551/lab1/lab1.srcs/sources_1/new/debounce2.vhd:42]
+INFO: [Synth 8-637] synthesizing blackbox instance 'deb_count' of component 'c_counter_binary_0' [C:/Users/cdaffron/git/ece551/lab1/lab1.srcs/sources_1/new/debounce2.vhd:84]
+INFO: [Synth 8-256] done synthesizing module 'debounce2' (1#1) [C:/Users/cdaffron/git/ece551/lab1/lab1.srcs/sources_1/new/debounce2.vhd:42]
+INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_0' [C:/Users/cdaffron/git/ece551/lab1/lab1.runs/synth_1/.Xil/Vivado-4724-COM1599/realtime/blk_mem_gen_0_stub.vhdl:17]
+INFO: [Synth 8-638] synthesizing module 'clk_wiz_0' [C:/Users/cdaffron/git/ece551/lab1/lab1.runs/synth_1/.Xil/Vivado-4724-COM1599/realtime/clk_wiz_0_stub.vhdl:13]
+INFO: [Synth 8-638] synthesizing module 'CDiv' [C:/Users/cdaffron/git/ece551/lab1/lab1.srcs/sources_1/imports/new/CDiv.vhd:24]
+WARNING: [Synth 8-614] signal 'D' is read in the process but is not in the sensitivity list [C:/Users/cdaffron/git/ece551/lab1/lab1.srcs/sources_1/imports/new/CDiv.vhd:30]
+INFO: [Synth 8-256] done synthesizing module 'CDiv' (2#1) [C:/Users/cdaffron/git/ece551/lab1/lab1.srcs/sources_1/imports/new/CDiv.vhd:24]
+INFO: [Synth 8-638] synthesizing module 'HexDigs2SSeg' [C:/Users/cdaffron/git/ece551/lab1/lab1.srcs/sources_1/imports/new/HexDigs2SSeg.vhd:16]
+INFO: [Synth 8-638] synthesizing module 'Hex2SSeg' [C:/Users/cdaffron/git/ece551/lab1/lab1.srcs/sources_1/imports/new/Hex2SSegDecoder.vhd:17]
+INFO: [Synth 8-256] done synthesizing module 'Hex2SSeg' (3#1) [C:/Users/cdaffron/git/ece551/lab1/lab1.srcs/sources_1/imports/new/Hex2SSegDecoder.vhd:17]
+INFO: [Synth 8-226] default block is never used [C:/Users/cdaffron/git/ece551/lab1/lab1.srcs/sources_1/imports/new/HexDigs2SSeg.vhd:45]
+INFO: [Synth 8-256] done synthesizing module 'HexDigs2SSeg' (4#1) [C:/Users/cdaffron/git/ece551/lab1/lab1.srcs/sources_1/imports/new/HexDigs2SSeg.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'top' (5#1) [C:/Users/cdaffron/git/ece551/lab1/lab1.srcs/sources_1/new/top.vhd:39]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 261.754 ; gain = 131.109
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Optimization
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+Loading clock regions from C:/Xilinx/Vivado/2014.2/data\parts/xilinx/artix7/artix7/xc7a100t/ClockRegion.xml
+Loading clock buffers from C:/Xilinx/Vivado/2014.2/data\parts/xilinx/artix7/artix7/xc7a100t/ClockBuffers.xml
+Loading clock placement rules from C:/Xilinx/Vivado/2014.2/data/parts/xilinx/artix7/ClockPlacerRules.xml
+Loading package pin functions from C:/Xilinx/Vivado/2014.2/data\parts/xilinx/artix7/PinFunctions.xml...
+Loading package from C:/Xilinx/Vivado/2014.2/data\parts/xilinx/artix7/artix7/xc7a100t/csg324/Package.xml
+Loading io standards from C:/Xilinx/Vivado/2014.2/data\./parts/xilinx/artix7/IOStandards.xml
+Loading device configuration modes from C:/Xilinx/Vivado/2014.2/data\parts/xilinx/artix7/ConfigModes.xml
+
+Processing XDC Constraints
+Parsing XDC File [C:/Users/cdaffron/git/ece551/lab1/lab1.runs/synth_1/.Xil/Vivado-4724-COM1599/dcp_2/clk_wiz_0_in_context.xdc] for cell 'clkdiv'
+Finished Parsing XDC File [C:/Users/cdaffron/git/ece551/lab1/lab1.runs/synth_1/.Xil/Vivado-4724-COM1599/dcp_2/clk_wiz_0_in_context.xdc] for cell 'clkdiv'
+Parsing XDC File [C:/Users/cdaffron/git/ece551/lab1/lab1.srcs/constrs_1/imports/nexys 4 info/Nexys4_Master.xdc]
+Finished Parsing XDC File [C:/Users/cdaffron/git/ece551/lab1/lab1.srcs/constrs_1/imports/nexys 4 info/Nexys4_Master.xdc]
+Parsing XDC File [C:/Users/cdaffron/git/ece551/lab1/lab1.runs/synth_1/dont_buffer.xdc]
+Finished Parsing XDC File [C:/Users/cdaffron/git/ece551/lab1/lab1.runs/synth_1/dont_buffer.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+---------------------------------------------------------------------------------
+Start RTL Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 473.293 ; gain = 342.648
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property BUFFER_TYPE = NONE for clk100. (constraint file  C:/Users/cdaffron/git/ece551/lab1/lab1.runs/synth_1/dont_buffer.xdc, line 5).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 473.293 ; gain = 342.648
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 473.293 ; gain = 342.648
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 4     
+	   2 Input      3 Bit       Adders := 2     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               10 Bit    Registers := 4     
+	                8 Bit    Registers := 2     
+	                3 Bit    Registers := 2     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   8 Input      8 Bit        Muxes := 1     
+	  16 Input      8 Bit        Muxes := 8     
+	   2 Input      3 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module top 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      3 Bit        Muxes := 1     
+Module debounce2 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	                1 Bit    Registers := 3     
+Module CDiv 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 4     
++---Registers : 
+	               10 Bit    Registers := 4     
+	                1 Bit    Registers := 1     
+Module Hex2SSeg 
+Detailed RTL Component Info : 
++---Muxes : 
+	  16 Input      8 Bit        Muxes := 1     
+Module HexDigs2SSeg 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 2     
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   8 Input      8 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Workers Ready, Starting Parallel Section  : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 480.113 ; gain = 349.469
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 480.113 ; gain = 349.469
+---------------------------------------------------------------------------------
+Finished Parallel Reinfer  : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 480.113 ; gain = 349.469
+---------------------------------------------------------------------------------
+Start RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\decoder/cathodes_reg[7] )
+WARNING: [Synth 8-3332] Sequential element (\decoder/cathodes_reg[7] ) is unused and will be removed from module top.
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 499.008 ; gain = 368.363
+---------------------------------------------------------------------------------
+Finished Parallel Area Opt  : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 499.008 ; gain = 368.363
+Finished Parallel Section  : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 499.008 ; gain = 368.363
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: Moved 1 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:26 ; elapsed = 00:00:29 . Memory (MB): peak = 545.957 ; gain = 415.313
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:29 . Memory (MB): peak = 545.957 ; gain = 415.313
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:26 ; elapsed = 00:00:29 . Memory (MB): peak = 556.660 ; gain = 426.016
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 556.660 ; gain = 426.016
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 556.660 ; gain = 426.016
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 556.660 ; gain = 426.016
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+-------------------+----------+
+|      |BlackBox name      |Instances |
++------+-------------------+----------+
+|1     |blk_mem_gen_0      |         1|
+|2     |clk_wiz_0          |         1|
+|3     |c_counter_binary_0 |         1|
++------+-------------------+----------+
+
+Report Cell Usage: 
++------+------------------------+------+
+|      |Cell                    |Count |
++------+------------------------+------+
+|1     |blk_mem_gen_0           |     1|
+|2     |c_counter_binary_0_bbox |     1|
+|3     |clk_wiz_0               |     1|
+|4     |CARRY4                  |     4|
+|5     |LUT1                    |    11|
+|6     |LUT2                    |    16|
+|7     |LUT3                    |    24|
+|8     |LUT4                    |    65|
+|9     |LUT5                    |     9|
+|10    |LUT6                    |    15|
+|11    |MUXF7                   |    28|
+|12    |FDRE                    |    57|
+|13    |FDSE                    |     8|
+|14    |IBUF                    |     1|
+|15    |OBUF                    |    16|
++------+------------------------+------+
+
+Report Instance Areas: 
++------+----------+-------------+------+
+|      |Instance  |Module       |Cells |
++------+----------+-------------+------+
+|1     |top       |             |   306|
+|2     |  deb     |debounce2    |    24|
+|3     |  decoder |HexDigs2SSeg |   117|
+|4     |  divide  |CDiv         |   109|
++------+----------+-------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 556.660 ; gain = 426.016
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Complete : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 556.660 ; gain = 426.016
+INFO: [Netlist 29-17] Analyzing 5 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Opt 31-140] Inserted 0 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 0 OBUFs to IO ports without IO buffers.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+24 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 556.883 ; gain = 372.770
+# write_checkpoint top.dcp
+# report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.030 . Memory (MB): peak = 556.883 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Thu Feb 12 09:39:37 2015...

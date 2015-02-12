@@ -1,0 +1,5 @@
+Running: xsim.dir/bram_sim_behav/xsimk.exe -simmode gui -wdb bram_sim_behav.wdb -simrunnum 0 -socket 8632
+Design successfully loaded
+Design Loading CPU Usage: 124 ms
+Simulation completed
+Simulation CPU Usage: 193987 ms

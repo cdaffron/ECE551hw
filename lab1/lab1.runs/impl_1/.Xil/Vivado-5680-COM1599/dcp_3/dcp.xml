@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<Checkpoint Version="3" Minor="0">
+	<BUILD_NUMBER Name="932637"/>
+	<FULL_BUILD Name="SW Build 932637 on Wed Jun 11 13:33:10 MDT 2014"/>
+	<Part Name="xc7a100tcsg324-1"/>
+	<Top Name="clk_wiz_0"/>
+	<DisableAutoIOBuffers Name="1"/>
+	<OutOfContext Name="1"/>
+	<File Type="EDIF" Name="clk_wiz_0.edf" ModTime="1423751764"/>
+	<File Type="VERILOG_STUB" Name="clk_wiz_0_stub.v" ModTime="1423751764"/>
+	<File Type="VHDL_STUB" Name="clk_wiz_0_stub.vhdl" ModTime="1423751764"/>
+	<File Type="XDC_EARLY" Name="clk_wiz_0_early.xdc" ModTime="1423751764"/>
+	<File Type="XDC_BOARD" Name="clk_wiz_0_board.xdc" ModTime="1423751764"/>
+	<File Type="XDC_IN_CONTEXT" Name="clk_wiz_0_in_context.xdc" ModTime="1423751732"/>
+	<File Type="INCR" Name="clk_wiz_0.incr" ModTime="1423751764"/>
+	<File Type="PSR" Name="clk_wiz_0.psr" ModTime="1423751764"/>
+	<File Type="WDF" Name="clk_wiz_0.wdf" ModTime="1423751764"/>
+</Checkpoint>
+

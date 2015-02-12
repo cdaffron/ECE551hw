@@ -1,0 +1,63 @@
+Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------
+| Tool Version : Vivado v.2014.2 (win64) Build 932637 Wed Jun 11 13:33:10 MDT 2014
+| Date         : Thu Feb 12 09:41:29 2015
+| Host         : COM1599 running 64-bit Service Pack 1  (build 7601)
+| Command      : report_control_sets -verbose -file top_control_sets_placed.rpt
+| Design       : top
+| Device       : xc7a100t
+-----------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++-------------------------------------------------------------------+-------+
+|                               Status                              | Count |
++-------------------------------------------------------------------+-------+
+| Number of unique control sets                                     |    10 |
+| Minimum Number of register sites lost to control set restrictions |    52 |
++-------------------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              17 |            9 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              37 |           12 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              30 |            6 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++------------------+----------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+----------------+
+|   Clock Signal   |     Enable Signal    |                                                                             Set/Reset Signal                                                                             | Slice Load Count | Bel Load Count |
++------------------+----------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+----------------+
+|  deb/out_flop    |                      |                                                                                                                                                                          |                1 |              3 |
+|  clkdiv/U0/clk50 |                      |                                                                                                                                                                          |                2 |              4 |
+|  divide/clk1k    |                      | decoder/dsel[2]                                                                                                                                                          |                2 |              4 |
+|  divide/clk1k    |                      | decoder/n_0_anodes[3]_i_1                                                                                                                                                |                2 |              4 |
+|  clkdiv/U0/clk50 |                      | divide/c00                                                                                                                                                               |                3 |             10 |
+|  clkdiv/U0/clk50 | divide/n_0_c2[9]_i_1 | divide/n_0_c3[9]_i_1                                                                                                                                                     |                2 |             10 |
+|  clkdiv/U0/clk50 | divide/n_0_c1[9]_i_1 | divide/n_0_c2[9]_i_1                                                                                                                                                     |                2 |             10 |
+|  clkdiv/U0/clk50 | divide/c00           | divide/n_0_c1[9]_i_1                                                                                                                                                     |                2 |             10 |
+|  divide/clk1k    |                      |                                                                                                                                                                          |                6 |             10 |
+|  clkdiv/U0/clk50 |                      | deb/deb_count/U0/i_synth/i_baseblox.i_baseblox_counter/the_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_q.i_simple.qreg/n_0_i_no_async_controls.output[19]_i_1 |                5 |             19 |
++------------------+----------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+----------------+
+
+

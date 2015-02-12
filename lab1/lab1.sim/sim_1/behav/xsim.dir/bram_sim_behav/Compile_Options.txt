@@ -1,0 +1,1 @@
+--debug "typical" --relax -L "xil_defaultlib" -L "blk_mem_gen_v8_2" -L "unisims_ver" -L "unimacro_ver" -L "secureip" --snapshot "bram_sim_behav" --prj "C:/Users/cdaffron/git/ece551/lab1/lab1.sim/sim_1/behav/bram_sim.prj" "xil_defaultlib.bram_sim" "xil_defaultlib.glbl" 

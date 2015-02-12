@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<Checkpoint Version="3" Minor="0">
+	<BUILD_NUMBER Name="932637"/>
+	<FULL_BUILD Name="SW Build 932637 on Wed Jun 11 13:33:10 MDT 2014"/>
+	<Part Name="xc7a100tcsg324-1"/>
+	<Top Name="c_counter_binary_0"/>
+	<DisableAutoIOBuffers Name="1"/>
+	<OutOfContext Name="1"/>
+	<File Type="EDIF" Name="c_counter_binary_0.edf" ModTime="1423708606"/>
+	<File Type="VERILOG_STUB" Name="c_counter_binary_0_stub.v" ModTime="1423708606"/>
+	<File Type="VHDL_STUB" Name="c_counter_binary_0_stub.vhdl" ModTime="1423708606"/>
+	<File Type="XDC_EARLY" Name="c_counter_binary_0_early.xdc" ModTime="1423708606"/>
+	<File Type="INCR" Name="c_counter_binary_0.incr" ModTime="1423708606"/>
+	<File Type="PSR" Name="c_counter_binary_0.psr" ModTime="1423708606"/>
+	<File Type="WDF" Name="c_counter_binary_0.wdf" ModTime="1423708606"/>
+</Checkpoint>
+

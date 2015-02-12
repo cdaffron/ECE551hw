@@ -1,0 +1,57 @@
+Vivado Simulator 2014.2
+Copyright 1986-1999, 2001-2014 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2014.2/bin/unwrapped/win64.o/xelab.exe --debug typical --relax -L xil_defaultlib -L blk_mem_gen_v8_2 -L unisims_ver -L unimacro_ver -L secureip --snapshot bram_sim_behav --prj C:/Users/cdaffron/git/ece551/lab1/lab1.sim/sim_1/behav/bram_sim.prj xil_defaultlib.bram_sim xil_defaultlib.glbl 
+Multi-threading is on. Using 2 slave threads.
+Determining compilation order of HDL files.
+INFO: [VRFC 10-165] Analyzing Verilog file "C:/Xilinx/Vivado/2014.2/data/verilog/src/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-163] Analyzing VHDL file "c:/Users/cdaffron/git/ece551/lab1/lab1.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.vhd" into library blk_mem_gen_v8_2
+INFO: [VRFC 10-163] Analyzing VHDL file "c:/Users/cdaffron/git/ece551/lab1/lab1.srcs/sources_1/ip/blk_mem_gen_0/sim/blk_mem_gen_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "c:/Users/cdaffron/git/ece551/lab1/lab1.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "c:/Users/cdaffron/git/ece551/lab1/lab1.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/cdaffron/git/ece551/lab1/lab1.srcs/sources_1/imports/new/Hex2SSegDecoder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/cdaffron/git/ece551/lab1/lab1.srcs/sources_1/imports/new/HexDigs2SSeg.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/cdaffron/git/ece551/lab1/lab1.srcs/sources_1/imports/new/debounce.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/cdaffron/git/ece551/lab1/lab1.srcs/sources_1/imports/new/CDiv.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/cdaffron/git/ece551/lab1/lab1.srcs/sources_1/new/top.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/cdaffron/git/ece551/lab1/lab1.srcs/sim_1/new/bram_sim.vhd" into library xil_defaultlib
+Starting static elaboration
+WARNING: [VRFC 10-1625] value in initialization depends on signal tcvl [C:/Users/cdaffron/git/ece551/lab1/lab1.srcs/sources_1/imports/new/CDiv.vhd:25]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package std.textio
+Compiling package synopsys.attributes
+Compiling package ieee.std_logic_misc
+Compiling package ieee.std_logic_textio
+Compiling package unisim.vcomponents
+Compiling package ieee.std_logic_signed
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling module xil_defaultlib.glbl
+Compiling architecture pulse of entity xil_defaultlib.debounce [debounce_default]
+Compiling architecture output_stage_behavioral of entity blk_mem_gen_v8_2.BLK_MEM_GEN_v8_2_output_stage [\BLK_MEM_GEN_v8_2_output_stage("...]
+Compiling architecture output_stage_behavioral of entity blk_mem_gen_v8_2.BLK_MEM_GEN_v8_2_output_stage [\BLK_MEM_GEN_v8_2_output_stage("...]
+Compiling architecture softecc_output_reg_stage_behavioral of entity blk_mem_gen_v8_2.BLK_MEM_GEN_v8_2_softecc_output_reg_stage [\BLK_MEM_GEN_v8_2_softecc_output...]
+Compiling architecture mem_module_behavioral of entity blk_mem_gen_v8_2.BLK_MEM_GEN_v8_2_mem_module [\BLK_MEM_GEN_v8_2_mem_module("bl...]
+Compiling architecture behavioral of entity blk_mem_gen_v8_2.blk_mem_gen_v8_2 [\blk_mem_gen_v8_2("blk_mem_gen_v...]
+Compiling architecture blk_mem_gen_0_arch of entity xil_defaultlib.blk_mem_gen_0 [blk_mem_gen_0_default]
+Compiling architecture ibuf_v of entity unisim.IBUF [\IBUF("DONT_CARE","0",true,"AUTO...]
+Compiling architecture mmcme2_adv_v of entity unisim.MMCME2_ADV [\MMCME2_ADV("OPTIMIZED",10.0,0.0...]
+Compiling architecture bufg_v of entity unisim.BUFG [bufg_default]
+Compiling architecture xilinx of entity xil_defaultlib.clk_wiz_0_clk_wiz [clk_wiz_0_clk_wiz_default]
+Compiling architecture xilinx of entity xil_defaultlib.clk_wiz_0 [clk_wiz_0_default]
+Compiling architecture divide of entity xil_defaultlib.CDiv [cdiv_default]
+Compiling architecture decode of entity xil_defaultlib.Hex2SSeg [hex2sseg_default]
+Compiling architecture behavioral of entity xil_defaultlib.HexDigs2SSeg [hexdigs2sseg_default]
+Compiling architecture behavioral of entity xil_defaultlib.top [top_default]
+Compiling architecture behavioral of entity xil_defaultlib.bram_sim
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot bram_sim_behav

@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<Checkpoint Version="3" Minor="0">
+	<BUILD_NUMBER Name="932637"/>
+	<FULL_BUILD Name="SW Build 932637 on Wed Jun 11 13:33:10 MDT 2014"/>
+	<Part Name="xc7a100tcsg324-1"/>
+	<Top Name="blk_mem_gen_0"/>
+	<DisableAutoIOBuffers Name="1"/>
+	<OutOfContext Name="1"/>
+	<File Type="EDIF" Name="blk_mem_gen_0.edf" ModTime="1423751717"/>
+	<File Type="VERILOG_STUB" Name="blk_mem_gen_0_stub.v" ModTime="1423751717"/>
+	<File Type="VHDL_STUB" Name="blk_mem_gen_0_stub.vhdl" ModTime="1423751717"/>
+	<File Type="XDC_EARLY" Name="blk_mem_gen_0_early.xdc" ModTime="1423751717"/>
+	<File Type="INCR" Name="blk_mem_gen_0.incr" ModTime="1423751717"/>
+	<File Type="PSR" Name="blk_mem_gen_0.psr" ModTime="1423751717"/>
+	<File Type="WDF" Name="blk_mem_gen_0.wdf" ModTime="1423751717"/>
+</Checkpoint>
+
