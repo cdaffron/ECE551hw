@@ -1,0 +1,72 @@
+Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2014.2 (win64) Build 932637 Wed Jun 11 13:33:10 MDT 2014
+| Date         : Wed Mar 11 22:13:04 2015
+| Host         : COM1599 running 64-bit Service Pack 1  (build 7601)
+| Command      : report_control_sets -verbose -file top_level_control_sets_placed.rpt
+| Design       : top_level
+| Device       : xc7a100t
+--------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++-------------------------------------------------------------------+-------+
+|                               Status                              | Count |
++-------------------------------------------------------------------+-------+
+| Number of unique control sets                                     |    19 |
+| Minimum Number of register sites lost to control set restrictions |    62 |
++-------------------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              70 |           26 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              32 |           16 |
+| Yes          | No                    | No                     |              24 |            7 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              44 |           13 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++------------------+-------------------------------+---------------------------+------------------+----------------+
+|   Clock Signal   |         Enable Signal         |      Set/Reset Signal     | Slice Load Count | Bel Load Count |
++------------------+-------------------------------+---------------------------+------------------+----------------+
+|  clkdiv/U0/clk50 |                               |                           |                1 |              1 |
+|  xlnx_opt__1     | processor/CE                  | processor/Q1_in           |                1 |              2 |
+|  divide/clk1k    |                               | decoder/dsel[2]           |                3 |              4 |
+|  divide/clk1k    |                               | decoder/n_0_anodes[3]_i_1 |                2 |              4 |
+|  xlnx_opt__1     |                               | processor/Q1_in           |                3 |              6 |
+|  xlnx_opt__1     |                               | instr_mem/instruction[7]  |                6 |              8 |
+|  xlnx_opt__1     | processor/E[0]                |                           |                2 |              8 |
+|  xlnx_opt__1     | processor/n_0_spm_enable_flop |                           |                2 |              8 |
+|  xlnx_opt__1     | instr_mem/O1[0]               |                           |                2 |              8 |
+|  xlnx_opt__1     | instr_mem/E[0]                |                           |                3 |              8 |
+|  clkdiv/U0/clk50 |                               | divide/c00                |                2 |             10 |
+|  clkdiv/U0/clk50 | divide/n_0_c2[9]_i_1          | divide/n_0_c3[9]_i_1      |                2 |             10 |
+|  clkdiv/U0/clk50 | divide/n_0_c1[9]_i_1          | divide/n_0_c2[9]_i_1      |                3 |             10 |
+|  clkdiv/U0/clk50 | divide/c00                    | divide/n_0_c1[9]_i_1      |                4 |             10 |
+|  divide/clk1k    |                               |                           |                5 |             10 |
+|  xlnx_opt__1     | processor/Q0_in               | processor/Q1_in           |                3 |             12 |
+|  xlnx_opt__1     | processor/WE                  |                           |                2 |             16 |
+|  xlnx_opt__1     | processor/Q0_in               |                           |                2 |             16 |
+|  xlnx_opt__1     |                               |                           |               20 |             59 |
++------------------+-------------------------------+---------------------------+------------------+----------------+
+
+
