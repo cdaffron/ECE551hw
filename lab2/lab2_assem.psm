@@ -1,0 +1,67 @@
+;;;Basic Instruction Flow for Lab 2
+
+;;;1. Get the values from the slide switches
+;;;	- probably implemented by polling the input ports
+;;;2. Calculate the value of a^2 + b^2
+;;;3. Write the values to 7-seg display
+;;;	- probably easiest to achieve by connecting registers to 3 of the output ports
+
+;;;Code:
+
+;;;Get values from input ports:
+
+CONSTANT slide_SW_zero, 00
+CONSTANT slide_SW_one, 01
+
+CONSTANT seven_SEG_low, 01
+CONSTANT seven_SEG_mid, 02
+CONSTANT seven_SEG_high, 04
+
+beginning:
+	INPUT s0, slide_SW_zero
+	INPUT s1, slide_SW_one
+
+;;; Calculate a^2
+	LOAD s3, s0
+	LOAD s4, s0
+	CALL mult_soft
+	LOAD s8, s5
+	LOAD s9, s6
+
+;;; Calculate b^2
+	LOAD s3, s1
+	LOAD s4, s1
+	CALL mult_soft
+
+;;; Add them together
+	ADD s9, s6
+	ADDCY s8, s5
+	LOAD sA, 00
+	ADDCY sA, 00
+
+;;; Write Values out to 7-seg displays (output ports 0, 1, 2)
+	OUTPUT s9, seven_SEG_low
+	OUTPUT s8, seven_SEG_mid
+	OUTPUT sA, seven_SEG_high
+
+	JUMP beginning
+
+
+;;; Multiplication subroutine (multiplicand in s3, multiplier in s4)
+
+;;;CONSTANT i, s7
+
+mult_soft:
+	LOAD s5, 00
+	LOAD s7, 08
+mult_loop:
+	SR0 s4
+	JUMP nc, shift_prod
+	ADD s5, s3
+shift_prod:
+	SRA s5
+	SRA s6
+	SUB s7, 01
+	JUMP nz, mult_loop
+	RETURN
+
