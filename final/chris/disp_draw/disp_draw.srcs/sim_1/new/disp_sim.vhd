@@ -38,26 +38,26 @@ architecture Behavioral of disp_sim is
 
     component disp_draw is
         Port ( 
-            FFT_addr    : out std_logic_vector (10 downto 0);
-            FFT_data    : in  std_logic_vector (15 downto 0);
+            FFT_addr    : out std_logic_vector (9 downto 0);
+            FFT_data    : in  std_logic_vector (31 downto 0);
             FFT_rden    : out std_logic;
             VGA_addr    : out std_logic_vector (18 downto 0);
-            VGA_data    : out std_logic_vector (15 downto 0);
+            VGA_data    : out std_logic_vector (11 downto 0);
             VGA_wren    : out std_logic;
             VGA_trig    : in  std_logic;
-            sw          : in  std_logic_vector (3 downto 0);
+            sw          : in  std_logic_vector (2 downto 0);
             clk         : in  std_logic        
         );
     end component;
     
-    signal FFT_addr : std_logic_vector (10 downto 0);
-    signal FFT_data : std_logic_vector (15 downto 0);
+    signal FFT_addr : std_logic_vector (9 downto 0);
+    signal FFT_data : std_logic_vector (31 downto 0);
     signal FFT_rden : std_logic;
     signal VGA_addr : std_logic_vector (18 downto 0);
-    signal VGA_data : std_logic_vector (15 downto 0);
+    signal VGA_data : std_logic_vector (11 downto 0);
     signal VGA_wren : std_logic;
     signal VGA_trig : std_logic;
-    signal sw : std_logic_vector (3 downto 0) := "0000";
+    signal sw : std_logic_vector (2 downto 0) := "000";
     signal clk : std_logic;
     
     constant clk_period : time := 10 ns;
@@ -98,19 +98,19 @@ begin
     begin
         if( rising_edge( clk ) ) then
             if( FFT_rden = '1' ) then
-                if( FFT_addr = "00000000000" ) then
-                    FFT_data <= X"0002";
-                elsif( FFT_addr = "00000000001" ) then
-                    FFT_data <= X"0004";
-                elsif( FFT_addr = "00000000010" ) then
-                    FFT_data <= X"0006";
-                elsif( FFT_addr = "00000000011" ) then
-                    FFT_data <= X"0008";
+                if( FFT_addr = "0000000000" ) then
+                    FFT_data <= X"00010002";
+                elsif( FFT_addr = "0000000001" ) then
+                    FFT_data <= X"00030004";
+                elsif( FFT_addr = "0000000010" ) then
+                    FFT_data <= X"00050006";
+                elsif( FFT_addr = "0000000011" ) then
+                    FFT_data <= X"00060008";
                 else
-                    FFT_data <= X"0000";
+                    FFT_data <= X"00000000";
                 end if;
             else
-                FFT_data <= X"0000";
+                FFT_data <= X"00000000";
             end if;
         end if;
     end process;

@@ -32,16 +32,13 @@ use IEEE.NUMERIC_STD.ALL;
 --use UNISIM.VComponents.all;
 
 -- nBins Coding:
---   "000" = 2 bins
---   "001" = 4 bins
---   "010" = 8 bins
---   "011" = 16 bins
---   "100" = 32 bins
---   "101" = 64 bins
+--   "00" = 16 bins
+--   "01" = 32 bins
+--   "10" = 64 bins
 
 entity averager is
     Port ( 
-        nBins       : in  std_logic_vector (2 downto 0);
+        nBins       : in  std_logic_vector (1 downto 0);
         in0         : in  std_logic_vector (15 downto 0);
         in1         : in  std_logic_vector (15 downto 0);
         in2         : in  std_logic_vector (15 downto 0);
@@ -120,21 +117,21 @@ begin
     process( clk )
     begin
         if( rising_edge(clk) ) then
-            if( nBins = "000" ) then
-                average <= std_logic_vector(( signed(in0) + signed(in1) ) srl 1);
-            elsif( nBins = "001" ) then
-                average <= std_logic_vector(( signed(in0) + signed(in1) + signed(in2) + signed(in3) ) srl 2);
-            elsif( nBins = "010" ) then
-                average <= std_logic_vector(( signed(in0) + signed(in1) + signed(in2) + signed(in3) + signed(in4) + signed(in5) + signed(in6) + signed(in7) ) srl 3);
-            elsif( nBins = "011" ) then
+--            if( nBins = "00" ) then
+--                average <= std_logic_vector(( signed(in0) + signed(in1) ) srl 1);
+--            elsif( nBins = "01" ) then
+--                average <= std_logic_vector(( signed(in0) + signed(in1) + signed(in2) + signed(in3) ) srl 2);
+--            elsif( nBins = "10" ) then
+--                average <= std_logic_vector(( signed(in0) + signed(in1) + signed(in2) + signed(in3) + signed(in4) + signed(in5) + signed(in6) + signed(in7) ) srl 3);
+            if( nBins = "00" ) then
                 average <= std_logic_vector(( signed(in0) + signed(in1) + signed(in2 ) + signed(in3 ) + signed(in4 ) + signed(in5 ) + signed(in6 ) + signed(in7 ) + 
                                               signed(in8) + signed(in9) + signed(in10) + signed(in11) + signed(in12) + signed(in13) + signed(in14) + signed(in15) ) srl 4);
-            elsif( nBins = "100" ) then
+            elsif( nBins = "01" ) then
                 average <= std_logic_vector(( signed(in0 ) + signed(in1 ) + signed(in2 ) + signed(in3 ) + signed(in4 ) + signed(in5 ) + signed(in6 ) + signed(in7 ) + 
                                               signed(in8 ) + signed(in9 ) + signed(in10) + signed(in11) + signed(in12) + signed(in13) + signed(in14) + signed(in15) +
                                               signed(in16) + signed(in17) + signed(in18) + signed(in19) + signed(in20) + signed(in21) + signed(in22) + signed(in23) +
                                               signed(in24) + signed(in25) + signed(in26) + signed(in27) + signed(in28) + signed(in29) + signed(in30) + signed(in31) ) srl 5);
-            elsif( nBins = "101" ) then
+            elsif( nBins = "10" ) then
                 average <= std_logic_vector(( signed(in0 ) + signed(in1 ) + signed(in2 ) + signed(in3 ) + signed(in4 ) + signed(in5 ) + signed(in6 ) + signed(in7 ) + 
                                               signed(in8 ) + signed(in9 ) + signed(in10) + signed(in11) + signed(in12) + signed(in13) + signed(in14) + signed(in15) +
                                               signed(in16) + signed(in17) + signed(in18) + signed(in19) + signed(in20) + signed(in21) + signed(in22) + signed(in23) +
@@ -143,6 +140,8 @@ begin
                                               signed(in40) + signed(in41) + signed(in42) + signed(in43) + signed(in44) + signed(in45) + signed(in46) + signed(in47) +
                                               signed(in48) + signed(in49) + signed(in50) + signed(in51) + signed(in52) + signed(in53) + signed(in54) + signed(in55) +
                                               signed(in56) + signed(in57) + signed(in58) + signed(in59) + signed(in60) + signed(in61) + signed(in62) + signed(in63) ) srl 6);
+            else
+                average <= X"0000";
             end if;
         end if;
     end process;

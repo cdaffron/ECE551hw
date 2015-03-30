@@ -3,9 +3,9 @@
   <File Type="RUN-CONSTRS" Name="$PDATADIR/runs/impl_1/constrs_in.xml"/>
   <File Type="PWROPT-DCP" Name="top_level_pwropt.dcp"/>
   <File Type="RUN-STRAT" Name="$PDATADIR/runs/impl_1/impl_1.psg"/>
+  <File Type="OPT-DRC" Name="top_level_drc_opted.rpt"/>
   <File Type="ROUTE-TIMING-PB" Name="top_level_timing_summary_routed.pb"/>
   <File Type="PA-TCL" Name="top_level.tcl"/>
-  <File Type="OPT-DRC" Name="top_level_drc_opted.rpt"/>
   <File Type="OPT-DCP" Name="top_level_opt.dcp"/>
   <File Type="PWROPT-DRC" Name="top_level_drc_pwropted.rpt"/>
   <File Type="PLACE-DCP" Name="top_level_placed.dcp"/>
@@ -30,8 +30,8 @@
   <File Type="ROUTE-SIMILARITY" Name="top_level_incremental_reuse_routed.rpt"/>
   <File Type="POSTROUTE-PHYSOPT-DCP" Name="top_level_postroute_physopt.dcp"/>
   <File Type="POSTROUTE-PHYSOPT-TIMING" Name="top_level_timing_summary_postroute_physopted.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="top_level_timing_summary_postroute_physopted.pb"/>
   <File Type="RDI-RDI" Name="top_level.vdi"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="top_level_timing_summary_postroute_physopted.pb"/>
   <File Type="BG-BIT" Name="top_level.bit"/>
   <File Type="BG-BIN" Name="top_level.bin"/>
   <File Type="BITSTR-MSK" Name="top_level.msk"/>

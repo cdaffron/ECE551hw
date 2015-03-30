@@ -2,9 +2,9 @@
 # Vivado v2014.2 (64-bit)
 # SW Build 932637 on Wed Jun 11 13:33:10 MDT 2014
 # IP Build 924643 on Fri May 30 09:20:16 MDT 2014
-# Start of session at: Tue Mar 24 09:28:50 2015
-# Process ID: 4312
-# Log file: C:/Users/cdaffron/Documents/ECE 551/lab2/lab2.runs/impl_1/top_level.vdi
-# Journal file: C:/Users/cdaffron/Documents/ECE 551/lab2/lab2.runs/impl_1\vivado.jou
+# Start of session at: Wed Mar 11 22:12:37 2015
+# Process ID: 50916
+# Log file: C:/Users/cdaffron/git/ece551/lab2/lab2.runs/impl_1/top_level.vdi
+# Journal file: C:/Users/cdaffron/git/ece551/lab2/lab2.runs/impl_1\vivado.jou
 #-----------------------------------------------------------
 source top_level.tcl -notrace
