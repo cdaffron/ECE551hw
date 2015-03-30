@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1427663007">
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="RDI-RDI" Name="averager.vdi"/>
+  <File Type="BG-DRC" Name="averager.drc"/>
+  <File Type="BG-BGN" Name="averager.bgn"/>
+  <File Type="BITSTR-SYSDEF" Name="averager.sysdef"/>
+  <File Type="BITSTR-MMI" Name="averager.mmi"/>
+  <File Type="BITSTR-BMM" Name="averager_bd.bmm"/>
+  <File Type="BITSTR-NKY" Name="averager.nky"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="averager_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="averager_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="averager_utilization_placed.pb"/>
+  <File Type="PLACE-CLK" Name="averager_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-DCP" Name="averager_placed.dcp"/>
+  <File Type="PLACE-CTRL" Name="averager_control_sets_placed.rpt"/>
+  <File Type="PWROPT-DRC" Name="averager_drc_pwropted.rpt"/>
+  <File Type="BITSTR-MSK" Name="averager.msk"/>
+  <File Type="RUN-CONSTRS" Name="$PDATADIR/runs/impl_1/constrs_in.xml"/>
+  <File Type="PLACE-IO" Name="averager_io_placed.rpt"/>
+  <File Type="OPT-DCP" Name="averager_opt.dcp"/>
+  <File Type="BG-BIT" Name="averager.bit"/>
+  <File Type="RUN-STRAT" Name="$PDATADIR/runs/impl_1/impl_1.psg"/>
+  <File Type="PLACE-UTIL" Name="averager_utilization_placed.rpt"/>
+  <File Type="PWROPT-DCP" Name="averager_pwropt.dcp"/>
+  <File Type="PA-TCL" Name="averager.tcl"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="averager_timing_summary_postroute_physopted.rpt"/>
+  <File Type="OPT-DRC" Name="averager_drc_opted.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="averager_postplace_pwropt.dcp"/>
+  <File Type="BG-BIN" Name="averager.bin"/>
+  <File Type="PHYSOPT-DCP" Name="averager_physopt.dcp"/>
+  <File Type="BITSTR-RBT" Name="averager.rbt"/>
+  <File Type="PHYSOPT-DRC" Name="averager_drc_physopted.rpt"/>
+  <File Type="ROUTE-DCP" Name="averager_routed.dcp"/>
+  <File Type="ROUTE-DRC" Name="averager_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="averager_drc_routed.pb"/>
+  <File Type="ROUTE-PWR" Name="averager_power_routed.rpt"/>
+  <File Type="ROUTE-PWR-SUM" Name="averager_power_summary_routed.pb"/>
+  <File Type="ROUTE-STATUS" Name="averager_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="averager_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="averager_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="averager_timing_summary_routed.pb"/>
+  <File Type="ROUTE-SIMILARITY" Name="averager_incremental_reuse_routed.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="averager_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="averager_timing_summary_postroute_physopted.pb"/>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2014">
+      <Desc>Vivado Implementation Defaults</Desc>
+    </StratHandle>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>
