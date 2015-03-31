@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="xfft_0_synth_1" LaunchDir="Z:/jtobin/adc_fft_to_pc2/adc_fft_to_pc2.runs/xfft_0_synth_1" FlowId="Vivado Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_1" LaunchDir="Z:/jtobin/adc_fft_to_pc2/adc_fft_to_pc2.runs/synth_1" FlowId="Vivado Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="xfft_0_synth_1"/>
+	</Run>
+</Runs>
+

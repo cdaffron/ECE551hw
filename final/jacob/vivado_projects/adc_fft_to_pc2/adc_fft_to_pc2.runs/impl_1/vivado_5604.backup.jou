@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# Vivado v2014.2 (64-bit)
+# SW Build 932637 on Wed Jun 11 13:33:10 MDT 2014
+# IP Build 924643 on Fri May 30 09:20:16 MDT 2014
+# Start of session at: Mon Mar 30 17:46:15 2015
+# Process ID: 6096
+# Log file: Z:/jtobin/vivado_projects/adc_fft_to_pc2/adc_fft_to_pc2.runs/impl_1/topv4.vdi
+# Journal file: Z:/jtobin/vivado_projects/adc_fft_to_pc2/adc_fft_to_pc2.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source topv4.tcl -notrace

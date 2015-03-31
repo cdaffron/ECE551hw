@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component>
+    <DashboardHolder activeDashboard="VIO">
+        <Dashboard columnResizable="1" key="VIO" rowResizable="0" title="VIO">
+            <Settings/>
+            <GadgetContainer boxAxis="1" count="1" height="689"
+                layout="JideBoxLayout" vgap="6" width="1102">
+                <Gadget height="456" key="VIO Probes" name="VIO Probes" width="1102">
+                    <Probe core="hw_vio_1" name="ram_initialized"/>
+                    <Probe core="hw_vio_1" name="rst_pr"/>
+                    <Probe core="hw_vio_1" name="run_1"/>
+                    <Probe core="hw_vio_1" name="fft_points[4:0]"/>
+                    <Probe core="hw_vio_1" name="init_max_addr_pr[12:0]"/>
+                    <Probe core="hw_vio_1" name="n_samples_pr[12:0]"/>
+                    <Probe core="hw_vio_1" name="sample_rate_pr[6:0]"/>
+                </Gadget>
+                <Settings/>
+            </GadgetContainer>
+        </Dashboard>
+    </DashboardHolder>
+</component>

@@ -1,0 +1,596 @@
+#-----------------------------------------------------------
+# Vivado v2014.2 (64-bit)
+# SW Build 932637 on Wed Jun 11 13:33:10 MDT 2014
+# IP Build 924643 on Fri May 30 09:20:16 MDT 2014
+# Start of session at: Mon Mar 30 19:24:11 2015
+# Process ID: 5052
+# Log file: Z:/jtobin/vivado_projects/adc_fft_to_pc2/adc_fft_to_pc2.runs/synth_1/topv4.vds
+# Journal file: Z:/jtobin/vivado_projects/adc_fft_to_pc2/adc_fft_to_pc2.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source topv4.tcl
+# set_param gui.test TreeTableDev
+# set_param xicom.use_bs_reader 1
+# set_msg_config -id {HDL 9-1061} -limit 100000
+# set_msg_config -id {HDL 9-1654} -limit 100000
+# set_msg_config -id {Labtools 27-147} -limit 4294967295
+# create_project -in_memory -part xc7a100tcsg324-1
+# set_property target_language VHDL [current_project]
+# set_param project.compositeFile.enableAutoGeneration 0
+# set_property default_lib xil_defaultlib [current_project]
+# add_files {{Z:/jtobin/matlab/coe files/mat10k.coe}}
+# add_files -quiet Z:/jtobin/vivado_projects/adc_fft_to_pc2/adc_fft_to_pc2.runs/xfft_0_synth_1/xfft_0.dcp
+# set_property used_in_implementation false [get_files Z:/jtobin/vivado_projects/adc_fft_to_pc2/adc_fft_to_pc2.runs/xfft_0_synth_1/xfft_0.dcp]
+# add_files -quiet Z:/jtobin/vivado_projects/adc_fft_to_pc2/adc_fft_to_pc2.runs/ila_1_synth_1/ila_1.dcp
+# set_property used_in_implementation false [get_files Z:/jtobin/vivado_projects/adc_fft_to_pc2/adc_fft_to_pc2.runs/ila_1_synth_1/ila_1.dcp]
+# add_files -quiet Z:/jtobin/vivado_projects/adc_fft_to_pc2/adc_fft_to_pc2.runs/clk_wiz_0_synth_1/clk_wiz_0.dcp
+# set_property used_in_implementation false [get_files Z:/jtobin/vivado_projects/adc_fft_to_pc2/adc_fft_to_pc2.runs/clk_wiz_0_synth_1/clk_wiz_0.dcp]
+# add_files -quiet Z:/jtobin/vivado_projects/adc_fft_to_pc2/adc_fft_to_pc2.runs/blk_mem_gen_0_synth_1/blk_mem_gen_0.dcp
+# set_property used_in_implementation false [get_files Z:/jtobin/vivado_projects/adc_fft_to_pc2/adc_fft_to_pc2.runs/blk_mem_gen_0_synth_1/blk_mem_gen_0.dcp]
+# add_files -quiet Z:/jtobin/vivado_projects/adc_fft_to_pc2/adc_fft_to_pc2.runs/vio_1_synth_1/vio_1.dcp
+# set_property used_in_implementation false [get_files Z:/jtobin/vivado_projects/adc_fft_to_pc2/adc_fft_to_pc2.runs/vio_1_synth_1/vio_1.dcp]
+# add_files -quiet Z:/jtobin/vivado_projects/adc_fft_to_pc2/adc_fft_to_pc2.runs/blk_mem_gen_1_synth_1/blk_mem_gen_1.dcp
+# set_property used_in_implementation false [get_files Z:/jtobin/vivado_projects/adc_fft_to_pc2/adc_fft_to_pc2.runs/blk_mem_gen_1_synth_1/blk_mem_gen_1.dcp]
+# read_vhdl -library xil_defaultlib {
+#   Z:/jtobin/vivado_projects/adc_fft_to_pc2/adc_fft_to_pc2.srcs/sources_1/imports/sources_1/imports/sources_1/imports/sources_1/imports/sources/uart_tx_generic.vhd
+#   Z:/jtobin/sources/uart/uart_rx.vhd
+#   {Z:/jtobin/sources/matlab board control/cmd_decode.vhd}
+#   Z:/jtobin/sources/adc_fft_to_pc/adc_fft_fsmV3.vhd
+#   Z:/jtobin/sources/adc_fft_to_pc/topv4.vhd
+# }
+# read_xdc Z:/jtobin/vivado_projects/adc_fft_to_pc2/adc_fft_to_pc2.srcs/constrs_1/imports/sources/Nexys4_audio_id.xdc
+# set_property used_in_implementation false [get_files Z:/jtobin/vivado_projects/adc_fft_to_pc2/adc_fft_to_pc2.srcs/constrs_1/imports/sources/Nexys4_audio_id.xdc]
+# read_xdc dont_buffer.xdc
+# set_property used_in_implementation false [get_files dont_buffer.xdc]
+# set_param synth.vivado.isSynthRun true
+# set_property webtalk.parent_dir Z:/jtobin/vivado_projects/adc_fft_to_pc2/adc_fft_to_pc2.cache/wt [current_project]
+# set_property parent.project_dir Z:/jtobin/vivado_projects/adc_fft_to_pc2 [current_project]
+# catch { write_hwdef -file topv4.hwdef }
+INFO: [Vivado_Tcl 4-279] hardware handoff file cannot be generated as there is no block diagram instance in the design
+# synth_design -top topv4 -part xc7a100tcsg324-1 -fsm_extraction sequential
+Command: synth_design -top topv4 -part xc7a100tcsg324-1 -fsm_extraction sequential
+
+Starting synthesis...
+
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:35 . Memory (MB): peak = 229.289 ; gain = 98.871
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'topv4' [Z:/jtobin/sources/adc_fft_to_pc/topv4.vhd:41]
+INFO: [Synth 8-4472] Detected and applied attribute keep = true [Z:/jtobin/sources/adc_fft_to_pc/topv4.vhd:34]
+INFO: [Synth 8-4472] Detected and applied attribute keep = true [Z:/jtobin/sources/adc_fft_to_pc/topv4.vhd:36]
+INFO: [Synth 8-4472] Detected and applied attribute keep = true [Z:/jtobin/sources/adc_fft_to_pc/topv4.vhd:43]
+INFO: [Synth 8-4472] Detected and applied attribute keep = true [Z:/jtobin/sources/adc_fft_to_pc/topv4.vhd:43]
+INFO: [Synth 8-4472] Detected and applied attribute keep = true [Z:/jtobin/sources/adc_fft_to_pc/topv4.vhd:43]
+INFO: [Synth 8-4472] Detected and applied attribute keep = true [Z:/jtobin/sources/adc_fft_to_pc/topv4.vhd:43]
+INFO: [Synth 8-4472] Detected and applied attribute keep = true [Z:/jtobin/sources/adc_fft_to_pc/topv4.vhd:44]
+INFO: [Synth 8-4472] Detected and applied attribute keep = true [Z:/jtobin/sources/adc_fft_to_pc/topv4.vhd:44]
+INFO: [Synth 8-4472] Detected and applied attribute keep = true [Z:/jtobin/sources/adc_fft_to_pc/topv4.vhd:44]
+INFO: [Synth 8-4472] Detected and applied attribute keep = true [Z:/jtobin/sources/adc_fft_to_pc/topv4.vhd:44]
+INFO: [Synth 8-4472] Detected and applied attribute keep = true [Z:/jtobin/sources/adc_fft_to_pc/topv4.vhd:44]
+INFO: [Synth 8-4472] Detected and applied attribute keep = true [Z:/jtobin/sources/adc_fft_to_pc/topv4.vhd:45]
+INFO: [Synth 8-4472] Detected and applied attribute keep = true [Z:/jtobin/sources/adc_fft_to_pc/topv4.vhd:45]
+INFO: [Synth 8-4472] Detected and applied attribute keep = true [Z:/jtobin/sources/adc_fft_to_pc/topv4.vhd:45]
+INFO: [Synth 8-4472] Detected and applied attribute keep = true [Z:/jtobin/sources/adc_fft_to_pc/topv4.vhd:45]
+INFO: [Synth 8-4472] Detected and applied attribute keep = true [Z:/jtobin/sources/adc_fft_to_pc/topv4.vhd:45]
+INFO: [Synth 8-4472] Detected and applied attribute keep = true [Z:/jtobin/sources/adc_fft_to_pc/topv4.vhd:45]
+INFO: [Synth 8-4472] Detected and applied attribute keep = true [Z:/jtobin/sources/adc_fft_to_pc/topv4.vhd:46]
+INFO: [Synth 8-4472] Detected and applied attribute keep = true [Z:/jtobin/sources/adc_fft_to_pc/topv4.vhd:47]
+INFO: [Synth 8-4472] Detected and applied attribute keep = true [Z:/jtobin/sources/adc_fft_to_pc/topv4.vhd:49]
+INFO: [Synth 8-4472] Detected and applied attribute keep = true [Z:/jtobin/sources/adc_fft_to_pc/topv4.vhd:50]
+INFO: [Synth 8-4472] Detected and applied attribute keep = true [Z:/jtobin/sources/adc_fft_to_pc/topv4.vhd:51]
+INFO: [Synth 8-4472] Detected and applied attribute keep = true [Z:/jtobin/sources/adc_fft_to_pc/topv4.vhd:51]
+INFO: [Synth 8-4472] Detected and applied attribute keep = true [Z:/jtobin/sources/adc_fft_to_pc/topv4.vhd:52]
+INFO: [Synth 8-4472] Detected and applied attribute keep = true [Z:/jtobin/sources/adc_fft_to_pc/topv4.vhd:53]
+INFO: [Synth 8-4472] Detected and applied attribute keep = true [Z:/jtobin/sources/adc_fft_to_pc/topv4.vhd:54]
+INFO: [Synth 8-4472] Detected and applied attribute keep = true [Z:/jtobin/sources/adc_fft_to_pc/topv4.vhd:57]
+INFO: [Synth 8-4472] Detected and applied attribute keep = true [Z:/jtobin/sources/adc_fft_to_pc/topv4.vhd:57]
+INFO: [Synth 8-4472] Detected and applied attribute keep = true [Z:/jtobin/sources/adc_fft_to_pc/topv4.vhd:57]
+INFO: [Synth 8-4472] Detected and applied attribute keep = true [Z:/jtobin/sources/adc_fft_to_pc/topv4.vhd:57]
+INFO: [Synth 8-4472] Detected and applied attribute keep = true [Z:/jtobin/sources/adc_fft_to_pc/topv4.vhd:57]
+INFO: [Synth 8-4472] Detected and applied attribute keep = true [Z:/jtobin/sources/adc_fft_to_pc/topv4.vhd:57]
+INFO: [Synth 8-4472] Detected and applied attribute keep = true [Z:/jtobin/sources/adc_fft_to_pc/topv4.vhd:62]
+INFO: [Synth 8-4472] Detected and applied attribute keep = true [Z:/jtobin/sources/adc_fft_to_pc/topv4.vhd:63]
+INFO: [Synth 8-4472] Detected and applied attribute keep = true [Z:/jtobin/sources/adc_fft_to_pc/topv4.vhd:64]
+INFO: [Synth 8-4472] Detected and applied attribute keep = true [Z:/jtobin/sources/adc_fft_to_pc/topv4.vhd:64]
+INFO: [Synth 8-4472] Detected and applied attribute keep = true [Z:/jtobin/sources/adc_fft_to_pc/topv4.vhd:65]
+INFO: [Synth 8-4472] Detected and applied attribute keep = true [Z:/jtobin/sources/adc_fft_to_pc/topv4.vhd:66]
+INFO: [Synth 8-4472] Detected and applied attribute keep = true [Z:/jtobin/sources/adc_fft_to_pc/topv4.vhd:66]
+INFO: [Synth 8-638] synthesizing module 'adc_fft_fsmV3' [Z:/jtobin/sources/adc_fft_to_pc/adc_fft_fsmV3.vhd:67]
+	Parameter clk_rate bound to: 100 - type: integer 
+INFO: [Synth 8-4472] Detected and applied attribute keep = true [Z:/jtobin/sources/adc_fft_to_pc/adc_fft_fsmV3.vhd:63]
+INFO: [Synth 8-4472] Detected and applied attribute keep = true [Z:/jtobin/sources/adc_fft_to_pc/adc_fft_fsmV3.vhd:70]
+INFO: [Synth 8-4472] Detected and applied attribute keep = true [Z:/jtobin/sources/adc_fft_to_pc/adc_fft_fsmV3.vhd:71]
+INFO: [Synth 8-256] done synthesizing module 'adc_fft_fsmV3' (1#1) [Z:/jtobin/sources/adc_fft_to_pc/adc_fft_fsmV3.vhd:67]
+INFO: [Synth 8-638] synthesizing module 'xfft_0' [Z:/jtobin/vivado_projects/adc_fft_to_pc2/adc_fft_to_pc2.runs/synth_1/.Xil/Vivado-5052-COM1598/realtime/xfft_0_stub.vhdl:35]
+INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_0' [Z:/jtobin/vivado_projects/adc_fft_to_pc2/adc_fft_to_pc2.runs/synth_1/.Xil/Vivado-5052-COM1598/realtime/blk_mem_gen_0_stub.vhdl:18]
+INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_1' [Z:/jtobin/vivado_projects/adc_fft_to_pc2/adc_fft_to_pc2.runs/synth_1/.Xil/Vivado-5052-COM1598/realtime/blk_mem_gen_1_stub.vhdl:18]
+INFO: [Synth 8-638] synthesizing module 'cmd_decode' [Z:/jtobin/sources/matlab board control/cmd_decode.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'cmd_decode' (2#1) [Z:/jtobin/sources/matlab board control/cmd_decode.vhd:18]
+INFO: [Synth 8-638] synthesizing module 'uart_rx' [Z:/jtobin/sources/uart/uart_rx.vhd:35]
+	Parameter clk_counts_per_bit bound to: 868 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'uart_rx' (3#1) [Z:/jtobin/sources/uart/uart_rx.vhd:35]
+INFO: [Synth 8-638] synthesizing module 'uart_tx_generic' [Z:/jtobin/vivado_projects/adc_fft_to_pc2/adc_fft_to_pc2.srcs/sources_1/imports/sources_1/imports/sources_1/imports/sources_1/imports/sources/uart_tx_generic.vhd:36]
+	Parameter clock_counts_per_bit bound to: 868 - type: integer 
+	Parameter n_bytes bound to: 4 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'uart_tx_generic' (4#1) [Z:/jtobin/vivado_projects/adc_fft_to_pc2/adc_fft_to_pc2.srcs/sources_1/imports/sources_1/imports/sources_1/imports/sources_1/imports/sources/uart_tx_generic.vhd:36]
+INFO: [Synth 8-256] done synthesizing module 'topv4' (5#1) [Z:/jtobin/sources/adc_fft_to_pc/topv4.vhd:41]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:38 . Memory (MB): peak = 263.109 ; gain = 132.691
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Optimization
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+Loading clock regions from C:/Xilinx/Vivado/2014.2/data\parts/xilinx/artix7/artix7/xc7a100t/ClockRegion.xml
+Loading clock buffers from C:/Xilinx/Vivado/2014.2/data\parts/xilinx/artix7/artix7/xc7a100t/ClockBuffers.xml
+Loading clock placement rules from C:/Xilinx/Vivado/2014.2/data/parts/xilinx/artix7/ClockPlacerRules.xml
+Loading package pin functions from C:/Xilinx/Vivado/2014.2/data\parts/xilinx/artix7/PinFunctions.xml...
+Loading package from C:/Xilinx/Vivado/2014.2/data\parts/xilinx/artix7/artix7/xc7a100t/csg324/Package.xml
+Loading io standards from C:/Xilinx/Vivado/2014.2/data\./parts/xilinx/artix7/IOStandards.xml
+Loading device configuration modes from C:/Xilinx/Vivado/2014.2/data\parts/xilinx/artix7/ConfigModes.xml
+
+Processing XDC Constraints
+Parsing XDC File [Z:/jtobin/vivado_projects/adc_fft_to_pc2/adc_fft_to_pc2.srcs/constrs_1/imports/sources/Nexys4_audio_id.xdc]
+WARNING: [Vivado 12-507] No nets matched 'busy_IBUF'. [Z:/jtobin/vivado_projects/adc_fft_to_pc2/adc_fft_to_pc2.srcs/constrs_1/imports/sources/Nexys4_audio_id.xdc:758]
+WARNING: [Vivado 12-507] No nets matched 'n_1_fsm'. [Z:/jtobin/vivado_projects/adc_fft_to_pc2/adc_fft_to_pc2.srcs/constrs_1/imports/sources/Nexys4_audio_id.xdc:759]
+WARNING: [Vivado 12-507] No nets matched 'n_1_uart_transmit'. [Z:/jtobin/vivado_projects/adc_fft_to_pc2/adc_fft_to_pc2.srcs/constrs_1/imports/sources/Nexys4_audio_id.xdc:760]
+WARNING: [Vivado 12-507] No nets matched 'ram1_max_addr0[11]'. [Z:/jtobin/vivado_projects/adc_fft_to_pc2/adc_fft_to_pc2.srcs/constrs_1/imports/sources/Nexys4_audio_id.xdc:761]
+WARNING: [Vivado 12-507] No nets matched 'ram1_max_addr0[2]'. [Z:/jtobin/vivado_projects/adc_fft_to_pc2/adc_fft_to_pc2.srcs/constrs_1/imports/sources/Nexys4_audio_id.xdc:762]
+WARNING: [Vivado 12-507] No nets matched 'ram1_max_addr0[12]'. [Z:/jtobin/vivado_projects/adc_fft_to_pc2/adc_fft_to_pc2.srcs/constrs_1/imports/sources/Nexys4_audio_id.xdc:763]
+WARNING: [Vivado 12-507] No nets matched 'ram1_max_addr0[3]'. [Z:/jtobin/vivado_projects/adc_fft_to_pc2/adc_fft_to_pc2.srcs/constrs_1/imports/sources/Nexys4_audio_id.xdc:764]
+WARNING: [Vivado 12-507] No nets matched 'ram1_max_addr0[4]'. [Z:/jtobin/vivado_projects/adc_fft_to_pc2/adc_fft_to_pc2.srcs/constrs_1/imports/sources/Nexys4_audio_id.xdc:765]
+WARNING: [Vivado 12-507] No nets matched 'ram1_max_addr0[5]'. [Z:/jtobin/vivado_projects/adc_fft_to_pc2/adc_fft_to_pc2.srcs/constrs_1/imports/sources/Nexys4_audio_id.xdc:766]
+WARNING: [Vivado 12-507] No nets matched 'ram1_max_addr0[10]'. [Z:/jtobin/vivado_projects/adc_fft_to_pc2/adc_fft_to_pc2.srcs/constrs_1/imports/sources/Nexys4_audio_id.xdc:767]
+WARNING: [Vivado 12-507] No nets matched 'ram1_max_addr0[8]'. [Z:/jtobin/vivado_projects/adc_fft_to_pc2/adc_fft_to_pc2.srcs/constrs_1/imports/sources/Nexys4_audio_id.xdc:768]
+WARNING: [Vivado 12-507] No nets matched 'ram1_max_addr0[7]'. [Z:/jtobin/vivado_projects/adc_fft_to_pc2/adc_fft_to_pc2.srcs/constrs_1/imports/sources/Nexys4_audio_id.xdc:769]
+WARNING: [Vivado 12-507] No nets matched 'ram1_max_addr0[6]'. [Z:/jtobin/vivado_projects/adc_fft_to_pc2/adc_fft_to_pc2.srcs/constrs_1/imports/sources/Nexys4_audio_id.xdc:770]
+WARNING: [Vivado 12-507] No nets matched 'ram1_max_addr0[9]'. [Z:/jtobin/vivado_projects/adc_fft_to_pc2/adc_fft_to_pc2.srcs/constrs_1/imports/sources/Nexys4_audio_id.xdc:771]
+WARNING: [Vivado 12-507] No nets matched 'ram1_max_addr0[1]'. [Z:/jtobin/vivado_projects/adc_fft_to_pc2/adc_fft_to_pc2.srcs/constrs_1/imports/sources/Nexys4_audio_id.xdc:772]
+Finished Parsing XDC File [Z:/jtobin/vivado_projects/adc_fft_to_pc2/adc_fft_to_pc2.srcs/constrs_1/imports/sources/Nexys4_audio_id.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [Z:/jtobin/vivado_projects/adc_fft_to_pc2/adc_fft_to_pc2.srcs/constrs_1/imports/sources/Nexys4_audio_id.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/topv4_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [Z:/jtobin/vivado_projects/adc_fft_to_pc2/adc_fft_to_pc2.srcs/constrs_1/imports/sources/Nexys4_audio_id.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/topv4_propImpl.xdc].
+Resolution: To avoid this message, exclude constraints listed in [.Xil/topv4_propImpl.xdc] from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [Z:/jtobin/vivado_projects/adc_fft_to_pc2/adc_fft_to_pc2.runs/synth_1/dont_buffer.xdc]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {REF_NAME==ila_1 || ORIG_REF_NAME==ila_1}'. [Z:/jtobin/vivado_projects/adc_fft_to_pc2/adc_fft_to_pc2.runs/synth_1/dont_buffer.xdc:5]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {REF_NAME==clk_wiz_0 || ORIG_REF_NAME==clk_wiz_0}'. [Z:/jtobin/vivado_projects/adc_fft_to_pc2/adc_fft_to_pc2.runs/synth_1/dont_buffer.xdc:6]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {REF_NAME==vio_1 || ORIG_REF_NAME==vio_1}'. [Z:/jtobin/vivado_projects/adc_fft_to_pc2/adc_fft_to_pc2.runs/synth_1/dont_buffer.xdc:8]
+Finished Parsing XDC File [Z:/jtobin/vivado_projects/adc_fft_to_pc2/adc_fft_to_pc2.runs/synth_1/dont_buffer.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+---------------------------------------------------------------------------------
+Start RTL Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:59 . Memory (MB): peak = 480.918 ; gain = 350.500
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property MARK_DEBUG = true for s_axis_config_tdata[0]. (constraint file  Z:/jtobin/vivado_projects/adc_fft_to_pc2/adc_fft_to_pc2.srcs/constrs_1/imports/sources/Nexys4_audio_id.xdc, line 751).
+Applied set_property MARK_DEBUG = true for fft_rst. (constraint file  Z:/jtobin/vivado_projects/adc_fft_to_pc2/adc_fft_to_pc2.srcs/constrs_1/imports/sources/Nexys4_audio_id.xdc, line 755).
+Applied set_property BUFFER_TYPE = NONE for din[15]. (constraint file  Z:/jtobin/vivado_projects/adc_fft_to_pc2/adc_fft_to_pc2.runs/synth_1/dont_buffer.xdc, line 7).
+Applied set_property BUFFER_TYPE = NONE for din[14]. (constraint file  Z:/jtobin/vivado_projects/adc_fft_to_pc2/adc_fft_to_pc2.runs/synth_1/dont_buffer.xdc, line 7).
+Applied set_property BUFFER_TYPE = NONE for din[13]. (constraint file  Z:/jtobin/vivado_projects/adc_fft_to_pc2/adc_fft_to_pc2.runs/synth_1/dont_buffer.xdc, line 7).
+Applied set_property BUFFER_TYPE = NONE for din[12]. (constraint file  Z:/jtobin/vivado_projects/adc_fft_to_pc2/adc_fft_to_pc2.runs/synth_1/dont_buffer.xdc, line 7).
+Applied set_property BUFFER_TYPE = NONE for din[11]. (constraint file  Z:/jtobin/vivado_projects/adc_fft_to_pc2/adc_fft_to_pc2.runs/synth_1/dont_buffer.xdc, line 7).
+Applied set_property BUFFER_TYPE = NONE for din[10]. (constraint file  Z:/jtobin/vivado_projects/adc_fft_to_pc2/adc_fft_to_pc2.runs/synth_1/dont_buffer.xdc, line 7).
+Applied set_property BUFFER_TYPE = NONE for din[9]. (constraint file  Z:/jtobin/vivado_projects/adc_fft_to_pc2/adc_fft_to_pc2.runs/synth_1/dont_buffer.xdc, line 7).
+Applied set_property BUFFER_TYPE = NONE for din[8]. (constraint file  Z:/jtobin/vivado_projects/adc_fft_to_pc2/adc_fft_to_pc2.runs/synth_1/dont_buffer.xdc, line 7).
+Applied set_property BUFFER_TYPE = NONE for din[7]. (constraint file  Z:/jtobin/vivado_projects/adc_fft_to_pc2/adc_fft_to_pc2.runs/synth_1/dont_buffer.xdc, line 7).
+Applied set_property BUFFER_TYPE = NONE for din[6]. (constraint file  Z:/jtobin/vivado_projects/adc_fft_to_pc2/adc_fft_to_pc2.runs/synth_1/dont_buffer.xdc, line 7).
+Applied set_property BUFFER_TYPE = NONE for din[5]. (constraint file  Z:/jtobin/vivado_projects/adc_fft_to_pc2/adc_fft_to_pc2.runs/synth_1/dont_buffer.xdc, line 7).
+Applied set_property BUFFER_TYPE = NONE for din[4]. (constraint file  Z:/jtobin/vivado_projects/adc_fft_to_pc2/adc_fft_to_pc2.runs/synth_1/dont_buffer.xdc, line 7).
+Applied set_property BUFFER_TYPE = NONE for din[3]. (constraint file  Z:/jtobin/vivado_projects/adc_fft_to_pc2/adc_fft_to_pc2.runs/synth_1/dont_buffer.xdc, line 7).
+Applied set_property BUFFER_TYPE = NONE for din[2]. (constraint file  Z:/jtobin/vivado_projects/adc_fft_to_pc2/adc_fft_to_pc2.runs/synth_1/dont_buffer.xdc, line 7).
+Applied set_property BUFFER_TYPE = NONE for din[1]. (constraint file  Z:/jtobin/vivado_projects/adc_fft_to_pc2/adc_fft_to_pc2.runs/synth_1/dont_buffer.xdc, line 7).
+Applied set_property BUFFER_TYPE = NONE for din[0]. (constraint file  Z:/jtobin/vivado_projects/adc_fft_to_pc2/adc_fft_to_pc2.runs/synth_1/dont_buffer.xdc, line 7).
+Applied set_property BUFFER_TYPE = NONE for clk100. (constraint file  Z:/jtobin/vivado_projects/adc_fft_to_pc2/adc_fft_to_pc2.runs/synth_1/dont_buffer.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:01:00 . Memory (MB): peak = 480.918 ; gain = 350.500
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:01:00 . Memory (MB): peak = 480.918 ; gain = 350.500
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'uart_rx'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'uart_tx_generic'
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'uart_rx'
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'uart_tx_generic'
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input     13 Bit       Adders := 6     
+	   2 Input     10 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 2     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	               31 Bit    Registers := 3     
+	               16 Bit    Registers := 1     
+	               13 Bit    Registers := 5     
+	               10 Bit    Registers := 2     
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 6     
+	                5 Bit    Registers := 2     
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 19    
++---Muxes : 
+	   2 Input     31 Bit        Muxes := 1     
+	   8 Input     16 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 3     
+	   8 Input     15 Bit        Muxes := 1     
+	   2 Input     15 Bit        Muxes := 1     
+	   4 Input     13 Bit        Muxes := 2     
+	   3 Input     13 Bit        Muxes := 1     
+	   2 Input     13 Bit        Muxes := 3     
+	   2 Input     10 Bit        Muxes := 5     
+	   4 Input      8 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 1     
+	  14 Input      5 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 3     
+	   2 Input      4 Bit        Muxes := 7     
+	   2 Input      3 Bit        Muxes := 2     
+	   9 Input      3 Bit        Muxes := 2     
+	   5 Input      3 Bit        Muxes := 1     
+	  15 Input      1 Bit        Muxes := 3     
+	   4 Input      1 Bit        Muxes := 7     
+	  12 Input      1 Bit        Muxes := 2     
+	   6 Input      1 Bit        Muxes := 3     
+	  10 Input      1 Bit        Muxes := 2     
+	   5 Input      1 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 14    
+	  13 Input      1 Bit        Muxes := 1     
+	   8 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 5     
+	  11 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module topv4 
+Detailed RTL Component Info : 
+Module adc_fft_fsmV3 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input     13 Bit       Adders := 6     
++---Registers : 
+	               32 Bit    Registers := 1     
+	               16 Bit    Registers := 1     
+	               13 Bit    Registers := 5     
+	                9 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 11    
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 2     
+	   4 Input     13 Bit        Muxes := 2     
+	   3 Input     13 Bit        Muxes := 1     
+	   2 Input     13 Bit        Muxes := 3     
+	  14 Input      5 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 3     
+	   2 Input      4 Bit        Muxes := 6     
+	   2 Input      3 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 2     
+	  15 Input      1 Bit        Muxes := 3     
+	   4 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 8     
+	  11 Input      1 Bit        Muxes := 2     
+	  12 Input      1 Bit        Muxes := 2     
+	   6 Input      1 Bit        Muxes := 2     
+	   8 Input      1 Bit        Muxes := 1     
+	  13 Input      1 Bit        Muxes := 1     
+	  10 Input      1 Bit        Muxes := 2     
+Module cmd_decode 
+Detailed RTL Component Info : 
++---Registers : 
+	               31 Bit    Registers := 3     
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     31 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 1     
+	   8 Input     16 Bit        Muxes := 1     
+	   2 Input     15 Bit        Muxes := 1     
+	   8 Input     15 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 1     
+Module uart_rx 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     10 Bit        Muxes := 3     
+	   2 Input      8 Bit        Muxes := 1     
+	   4 Input      8 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   9 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 1     
+Module uart_tx_generic 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 1     
+	                8 Bit    Registers := 4     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     10 Bit        Muxes := 2     
+	   4 Input      8 Bit        Muxes := 1     
+	   5 Input      3 Bit        Muxes := 1     
+	   9 Input      3 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 5     
+	   3 Input      1 Bit        Muxes := 2     
+	   5 Input      1 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Workers Ready, Starting Parallel Section  : Time (s): cpu = 00:00:14 ; elapsed = 00:01:01 . Memory (MB): peak = 482.641 ; gain = 352.223
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3936] Found unconnected internal register 'command_dec/init_max_addr_reg' and it is trimmed from '31' to '13' bits. [Z:/jtobin/sources/matlab board control/cmd_decode.vhd:47]
+WARNING: [Synth 8-3917] design topv4 has port cs driven by constant 0
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:01:01 . Memory (MB): peak = 482.641 ; gain = 352.223
+---------------------------------------------------------------------------------
+Finished Parallel Reinfer  : Time (s): cpu = 00:00:15 ; elapsed = 00:01:01 . Memory (MB): peak = 482.641 ; gain = 352.223
+---------------------------------------------------------------------------------
+Start RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\fsm/fft_config_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\command_dec/n_samples_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\fsm/s_axis_config_tdata_reg[15] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\command_dec/init_max_addr_reg[8] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\command_dec/sample_rate_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\command_dec/sample_rate_reg[30] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/\uart_transmit/FSM_sequential_state_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\fsm/s_axis_config_tdata_reg[7] )
+WARNING: [Synth 8-3332] Sequential element (\uart_transmit/FSM_sequential_state_reg[2] ) is unused and will be removed from module topv4.
+WARNING: [Synth 8-3332] Sequential element (\fsm/s_axis_config_tdata_reg[15] ) is unused and will be removed from module topv4.
+WARNING: [Synth 8-3332] Sequential element (\fsm/s_axis_config_tdata_reg[14] ) is unused and will be removed from module topv4.
+WARNING: [Synth 8-3332] Sequential element (\fsm/s_axis_config_tdata_reg[13] ) is unused and will be removed from module topv4.
+WARNING: [Synth 8-3332] Sequential element (\fsm/s_axis_config_tdata_reg[12] ) is unused and will be removed from module topv4.
+WARNING: [Synth 8-3332] Sequential element (\fsm/s_axis_config_tdata_reg[11] ) is unused and will be removed from module topv4.
+WARNING: [Synth 8-3332] Sequential element (\fsm/s_axis_config_tdata_reg[10] ) is unused and will be removed from module topv4.
+WARNING: [Synth 8-3332] Sequential element (\fsm/s_axis_config_tdata_reg[9] ) is unused and will be removed from module topv4.
+WARNING: [Synth 8-3332] Sequential element (\fsm/s_axis_config_tdata_reg[7] ) is unused and will be removed from module topv4.
+WARNING: [Synth 8-3332] Sequential element (\fsm/s_axis_config_tdata_reg[6] ) is unused and will be removed from module topv4.
+WARNING: [Synth 8-3332] Sequential element (\fsm/s_axis_config_tdata_reg[5] ) is unused and will be removed from module topv4.
+WARNING: [Synth 8-3332] Sequential element (\command_dec/n_samples_reg[8] ) is unused and will be removed from module topv4.
+WARNING: [Synth 8-3332] Sequential element (\command_dec/n_samples_reg[7] ) is unused and will be removed from module topv4.
+WARNING: [Synth 8-3332] Sequential element (\command_dec/n_samples_reg[6] ) is unused and will be removed from module topv4.
+WARNING: [Synth 8-3332] Sequential element (\command_dec/n_samples_reg[5] ) is unused and will be removed from module topv4.
+WARNING: [Synth 8-3332] Sequential element (\command_dec/n_samples_reg[4] ) is unused and will be removed from module topv4.
+WARNING: [Synth 8-3332] Sequential element (\command_dec/n_samples_reg[3] ) is unused and will be removed from module topv4.
+WARNING: [Synth 8-3332] Sequential element (\command_dec/n_samples_reg[2] ) is unused and will be removed from module topv4.
+WARNING: [Synth 8-3332] Sequential element (\command_dec/n_samples_reg[1] ) is unused and will be removed from module topv4.
+WARNING: [Synth 8-3332] Sequential element (\command_dec/n_samples_reg[0] ) is unused and will be removed from module topv4.
+WARNING: [Synth 8-3332] Sequential element (\command_dec/sample_rate_reg[30] ) is unused and will be removed from module topv4.
+WARNING: [Synth 8-3332] Sequential element (\command_dec/sample_rate_reg[29] ) is unused and will be removed from module topv4.
+WARNING: [Synth 8-3332] Sequential element (\command_dec/sample_rate_reg[28] ) is unused and will be removed from module topv4.
+WARNING: [Synth 8-3332] Sequential element (\command_dec/sample_rate_reg[27] ) is unused and will be removed from module topv4.
+WARNING: [Synth 8-3332] Sequential element (\command_dec/sample_rate_reg[26] ) is unused and will be removed from module topv4.
+WARNING: [Synth 8-3332] Sequential element (\command_dec/sample_rate_reg[25] ) is unused and will be removed from module topv4.
+WARNING: [Synth 8-3332] Sequential element (\command_dec/sample_rate_reg[24] ) is unused and will be removed from module topv4.
+WARNING: [Synth 8-3332] Sequential element (\command_dec/sample_rate_reg[23] ) is unused and will be removed from module topv4.
+WARNING: [Synth 8-3332] Sequential element (\command_dec/sample_rate_reg[22] ) is unused and will be removed from module topv4.
+WARNING: [Synth 8-3332] Sequential element (\command_dec/sample_rate_reg[21] ) is unused and will be removed from module topv4.
+WARNING: [Synth 8-3332] Sequential element (\command_dec/sample_rate_reg[20] ) is unused and will be removed from module topv4.
+WARNING: [Synth 8-3332] Sequential element (\command_dec/sample_rate_reg[19] ) is unused and will be removed from module topv4.
+WARNING: [Synth 8-3332] Sequential element (\command_dec/sample_rate_reg[18] ) is unused and will be removed from module topv4.
+WARNING: [Synth 8-3332] Sequential element (\command_dec/sample_rate_reg[17] ) is unused and will be removed from module topv4.
+WARNING: [Synth 8-3332] Sequential element (\command_dec/sample_rate_reg[16] ) is unused and will be removed from module topv4.
+WARNING: [Synth 8-3332] Sequential element (\command_dec/sample_rate_reg[15] ) is unused and will be removed from module topv4.
+WARNING: [Synth 8-3332] Sequential element (\command_dec/sample_rate_reg[14] ) is unused and will be removed from module topv4.
+WARNING: [Synth 8-3332] Sequential element (\command_dec/sample_rate_reg[13] ) is unused and will be removed from module topv4.
+WARNING: [Synth 8-3332] Sequential element (\command_dec/sample_rate_reg[12] ) is unused and will be removed from module topv4.
+WARNING: [Synth 8-3332] Sequential element (\command_dec/sample_rate_reg[11] ) is unused and will be removed from module topv4.
+WARNING: [Synth 8-3332] Sequential element (\command_dec/sample_rate_reg[10] ) is unused and will be removed from module topv4.
+WARNING: [Synth 8-3332] Sequential element (\command_dec/sample_rate_reg[9] ) is unused and will be removed from module topv4.
+WARNING: [Synth 8-3332] Sequential element (\command_dec/sample_rate_reg[8] ) is unused and will be removed from module topv4.
+WARNING: [Synth 8-3332] Sequential element (\command_dec/sample_rate_reg[7] ) is unused and will be removed from module topv4.
+WARNING: [Synth 8-3332] Sequential element (\command_dec/sample_rate_reg[5] ) is unused and will be removed from module topv4.
+WARNING: [Synth 8-3332] Sequential element (\command_dec/sample_rate_reg[4] ) is unused and will be removed from module topv4.
+WARNING: [Synth 8-3332] Sequential element (\command_dec/sample_rate_reg[2] ) is unused and will be removed from module topv4.
+WARNING: [Synth 8-3332] Sequential element (\command_dec/sample_rate_reg[1] ) is unused and will be removed from module topv4.
+WARNING: [Synth 8-3332] Sequential element (\command_dec/sample_rate_reg[0] ) is unused and will be removed from module topv4.
+WARNING: [Synth 8-3332] Sequential element (\command_dec/init_max_addr_reg[8] ) is unused and will be removed from module topv4.
+WARNING: [Synth 8-3332] Sequential element (\command_dec/init_max_addr_reg[7] ) is unused and will be removed from module topv4.
+WARNING: [Synth 8-3332] Sequential element (\command_dec/init_max_addr_reg[6] ) is unused and will be removed from module topv4.
+WARNING: [Synth 8-3332] Sequential element (\command_dec/init_max_addr_reg[5] ) is unused and will be removed from module topv4.
+WARNING: [Synth 8-3332] Sequential element (\command_dec/init_max_addr_reg[4] ) is unused and will be removed from module topv4.
+WARNING: [Synth 8-3332] Sequential element (\command_dec/init_max_addr_reg[3] ) is unused and will be removed from module topv4.
+WARNING: [Synth 8-3332] Sequential element (\command_dec/init_max_addr_reg[2] ) is unused and will be removed from module topv4.
+WARNING: [Synth 8-3332] Sequential element (\command_dec/init_max_addr_reg[1] ) is unused and will be removed from module topv4.
+WARNING: [Synth 8-3332] Sequential element (\command_dec/init_max_addr_reg[0] ) is unused and will be removed from module topv4.
+WARNING: [Synth 8-3332] Sequential element (\fsm/fft_config_reg[7] ) is unused and will be removed from module topv4.
+WARNING: [Synth 8-3332] Sequential element (\fsm/fft_config_reg[6] ) is unused and will be removed from module topv4.
+WARNING: [Synth 8-3332] Sequential element (\fsm/fft_config_reg[5] ) is unused and will be removed from module topv4.
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:01:03 . Memory (MB): peak = 510.723 ; gain = 380.305
+---------------------------------------------------------------------------------
+Finished Parallel Area Opt  : Time (s): cpu = 00:00:16 ; elapsed = 00:01:03 . Memory (MB): peak = 510.723 ; gain = 380.305
+Finished Parallel Section  : Time (s): cpu = 00:00:16 ; elapsed = 00:01:03 . Memory (MB): peak = 510.723 ; gain = 380.305
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:30 ; elapsed = 00:01:17 . Memory (MB): peak = 556.934 ; gain = 426.516
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:30 ; elapsed = 00:01:18 . Memory (MB): peak = 558.016 ; gain = 427.598
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:32 ; elapsed = 00:01:19 . Memory (MB): peak = 575.137 ; gain = 444.719
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:32 ; elapsed = 00:01:20 . Memory (MB): peak = 575.137 ; gain = 444.719
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:32 ; elapsed = 00:01:20 . Memory (MB): peak = 575.137 ; gain = 444.719
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:32 ; elapsed = 00:01:20 . Memory (MB): peak = 575.137 ; gain = 444.719
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |xfft_0        |         1|
+|2     |blk_mem_gen_0 |         1|
+|3     |blk_mem_gen_1 |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+--------------+------+
+|      |Cell          |Count |
++------+--------------+------+
+|1     |blk_mem_gen_0 |     1|
+|2     |blk_mem_gen_1 |     1|
+|3     |xfft_0        |     1|
+|4     |CARRY4        |   184|
+|5     |LUT1          |   260|
+|6     |LUT2          |    79|
+|7     |LUT3          |   511|
+|8     |LUT4          |    35|
+|9     |LUT5          |    43|
+|10    |LUT6          |    96|
+|11    |MUXF7         |     4|
+|12    |FDCE          |    50|
+|13    |FDPE          |     2|
+|14    |FDRE          |   182|
+|15    |IBUF          |     2|
+|16    |OBUF          |     3|
++------+--------------+------+
+
+Report Instance Areas: 
++------+----------------+----------------+------+
+|      |Instance        |Module          |Cells |
++------+----------------+----------------+------+
+|1     |top             |                |  1558|
+|2     |  command_dec   |cmd_decode      |    35|
+|3     |  fsm           |adc_fft_fsmV3   |   339|
+|4     |  uart_receive  |uart_rx         |    85|
+|5     |  uart_transmit |uart_tx_generic |   106|
++------+----------------+----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:32 ; elapsed = 00:01:20 . Memory (MB): peak = 575.137 ; gain = 444.719
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 63 warnings.
+Synthesis Optimization Complete : Time (s): cpu = 00:00:32 ; elapsed = 00:01:20 . Memory (MB): peak = 575.137 ; gain = 444.719
+INFO: [Netlist 29-17] Analyzing 186 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Opt 31-140] Inserted 0 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 0 OBUFs to IO ports without IO buffers.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+77 Infos, 82 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:33 ; elapsed = 00:01:15 . Memory (MB): peak = 575.137 ; gain = 390.105
+# write_checkpoint topv4.dcp
+# report_utilization -file topv4_utilization_synth.rpt -pb topv4_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.102 . Memory (MB): peak = 575.137 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Mon Mar 30 19:25:37 2015...

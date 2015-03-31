@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="Z:/jtobin/vivado_projects/adc_fft_to_pc2/adc_fft_to_pc2.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wdb" id="1">
+         <top_modules>
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="29" />
+   <wave_markers>
+   </wave_markers>
+   <wvobject db_ref_id="1" fp_name="busy_IBUF" type="logic">
+      <obj_property name="ElementShortName">busy_IBUF</obj_property>
+      <obj_property name="ObjectShortName">busy_IBUF</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="event_data_in_channel_halt" type="logic">
+      <obj_property name="ElementShortName">event_data_in_channel_halt</obj_property>
+      <obj_property name="ObjectShortName">event_data_in_channel_halt</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="event_data_out_channel_halt" type="logic">
+      <obj_property name="ElementShortName">event_data_out_channel_halt</obj_property>
+      <obj_property name="ObjectShortName">event_data_out_channel_halt</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="event_frame_started" type="logic">
+      <obj_property name="ElementShortName">event_frame_started</obj_property>
+      <obj_property name="ObjectShortName">event_frame_started</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="event_status_channel_halt" type="logic">
+      <obj_property name="ElementShortName">event_status_channel_halt</obj_property>
+      <obj_property name="ObjectShortName">event_status_channel_halt</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="event_tlast_missing" type="logic">
+      <obj_property name="ElementShortName">event_tlast_missing</obj_property>
+      <obj_property name="ObjectShortName">event_tlast_missing</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="event_tlast_unexpected" type="logic">
+      <obj_property name="ElementShortName">event_tlast_unexpected</obj_property>
+      <obj_property name="ObjectShortName">event_tlast_unexpected</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="rxbyte_ready" type="logic">
+      <obj_property name="ElementShortName">rxbyte_ready</obj_property>
+      <obj_property name="ObjectShortName">rxbyte_ready</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="run" type="logic">
+      <obj_property name="ElementShortName">run</obj_property>
+      <obj_property name="ObjectShortName">run</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="fft_points" type="array">
+      <obj_property name="ElementShortName">fft_points[4:0]</obj_property>
+      <obj_property name="ObjectShortName">fft_points[4:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="fft_rst" type="logic">
+      <obj_property name="ElementShortName">fft_rst</obj_property>
+      <obj_property name="ObjectShortName">fft_rst</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="ram_initialized" type="logic">
+      <obj_property name="ElementShortName">ram_initialized</obj_property>
+      <obj_property name="ObjectShortName">ram_initialized</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="m_axis_data_tlast" type="logic">
+      <obj_property name="ElementShortName">m_axis_data_tlast</obj_property>
+      <obj_property name="ObjectShortName">m_axis_data_tlast</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="m_axis_data_tready" type="logic">
+      <obj_property name="ElementShortName">m_axis_data_tready</obj_property>
+      <obj_property name="ObjectShortName">m_axis_data_tready</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="m_axis_data_tvalid" type="logic">
+      <obj_property name="ElementShortName">m_axis_data_tvalid</obj_property>
+      <obj_property name="ObjectShortName">m_axis_data_tvalid</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="n_1_fsm" type="logic">
+      <obj_property name="ElementShortName">n_1_fsm</obj_property>
+      <obj_property name="ObjectShortName">n_1_fsm</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="n_1_uart_transmit" type="logic">
+      <obj_property name="ElementShortName">n_1_uart_transmit</obj_property>
+      <obj_property name="ObjectShortName">n_1_uart_transmit</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="ram1_max_addr0" type="array">
+      <obj_property name="ElementShortName">ram1_max_addr0[12:1]</obj_property>
+      <obj_property name="ObjectShortName">ram1_max_addr0[12:1]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="rxbyte" type="array">
+      <obj_property name="ElementShortName">rxbyte[7:0]</obj_property>
+      <obj_property name="ObjectShortName">rxbyte[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="s_axis_config_tdata" type="array">
+      <obj_property name="ElementShortName">s_axis_config_tdata[4:0]</obj_property>
+      <obj_property name="ObjectShortName">s_axis_config_tdata[4:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="s_axis_config_tdata_1" type="array">
+      <obj_property name="ElementShortName">s_axis_config_tdata_1[8:8]</obj_property>
+      <obj_property name="ObjectShortName">s_axis_config_tdata_1[8:8]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="s_axis_config_tready" type="logic">
+      <obj_property name="ElementShortName">s_axis_config_tready</obj_property>
+      <obj_property name="ObjectShortName">s_axis_config_tready</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="s_axis_config_tvalid" type="logic">
+      <obj_property name="ElementShortName">s_axis_config_tvalid</obj_property>
+      <obj_property name="ObjectShortName">s_axis_config_tvalid</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="s_axis_data_tlast" type="logic">
+      <obj_property name="ElementShortName">s_axis_data_tlast</obj_property>
+      <obj_property name="ObjectShortName">s_axis_data_tlast</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="s_axis_data_tready" type="logic">
+      <obj_property name="ElementShortName">s_axis_data_tready</obj_property>
+      <obj_property name="ObjectShortName">s_axis_data_tready</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="s_axis_data_tvalid" type="logic">
+      <obj_property name="ElementShortName">s_axis_data_tvalid</obj_property>
+      <obj_property name="ObjectShortName">s_axis_data_tvalid</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="txfinished" type="logic">
+      <obj_property name="ElementShortName">txfinished</obj_property>
+      <obj_property name="ObjectShortName">txfinished</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="txready" type="logic">
+      <obj_property name="ElementShortName">txready</obj_property>
+      <obj_property name="ObjectShortName">txready</obj_property>
+   </wvobject>
+</wave_config>
