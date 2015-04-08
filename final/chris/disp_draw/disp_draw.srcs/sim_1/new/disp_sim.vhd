@@ -72,7 +72,7 @@ architecture Behavioral of disp_sim is
     signal VGA_data : std_logic_vector (11 downto 0);
     signal VGA_wren : std_logic;
     signal VGA_trig : std_logic;
-    signal sw : std_logic_vector (2 downto 0) := "010";
+    signal sw : std_logic_vector (2 downto 0) := "000";
     signal clk : std_logic;
     
     constant clk_period : time := 10 ns;
