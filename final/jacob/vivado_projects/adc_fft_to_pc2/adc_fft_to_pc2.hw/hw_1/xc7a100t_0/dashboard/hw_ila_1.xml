@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component>
+    <DashboardHolder activeDashboard="ILA">
+        <Dashboard columnResizable="1" key="ILA" rowResizable="0" title="ILA">
+            <Settings/>
+            <GadgetContainer boxAxis="1" count="2" height="689"
+                layout="JideBoxLayout" vgap="6" width="806">
+                <Gadget height="95" key="Trigger Capture Status" width="806">
+                    <Ila capture_condition="AND" capture_mode="ALWAYS"
+                        data_depth="8192" trigger_condition="AND"
+                        trigger_mode="BASIC_ONLY" trigger_position="500"
+                        trigout_mode="DISABLED" tsm_file="" window_count="1"/>
+                </Gadget>
+                <Gadget height="401" key="Basic Trigger Setup" width="806">
+                    <Probe name="run"/>
+                    <Probe name="txfinished"/>
+                    <Probe name="txready"/>
+                    <Probe name="event_tlast_missing"/>
+                    <Probe name="event_tlast_unexpected"/>
+                    <Probe name="m_axis_data_tready"/>
+                    <Probe name="rxbyte[7:0]"/>
+                    <Probe name="rxbyte_ready"/>
+                    <Probe name="event_data_in_channel_halt"/>
+                    <Probe name="event_data_out_channel_halt"/>
+                    <Probe name="event_frame_started"/>
+                    <Probe name="event_status_channel_halt"/>
+                    <Probe name="s_axis_config_tvalid"/>
+                </Gadget>
+                <Settings/>
+            </GadgetContainer>
+        </Dashboard>
+    </DashboardHolder>
+</component>

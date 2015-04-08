@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# Vivado v2014.2 (64-bit)
+# SW Build 932637 on Wed Jun 11 13:33:10 MDT 2014
+# IP Build 924643 on Fri May 30 09:20:16 MDT 2014
+# Start of session at: Tue Feb 10 17:25:16 2015
+# Process ID: 32568
+# Log file: Z:/jtobin/adc_fft_to_pc2/adc_fft_to_pc2.runs/xfft_0_synth_1/xfft_0.vds
+# Journal file: Z:/jtobin/adc_fft_to_pc2/adc_fft_to_pc2.runs/xfft_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source xfft_0.tcl
