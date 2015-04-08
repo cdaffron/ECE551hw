@@ -35,6 +35,7 @@ set_msg_config -id {IP_Flow 19-2162} -severity warning -new_severity info
 set_property is_locked true [get_files /data1/cdaffron/git/ece551hw/final/chris/disp_draw/disp_draw.srcs/sources_1/ip/cordic_0/cordic_0.xci]
 
 read_vhdl -library xil_defaultlib {
+  /data1/cdaffron/git/ece551hw/final/chris/disp_draw/disp_draw.srcs/sources_1/new/type_pkg.vhd
   /data1/cdaffron/git/ece551hw/final/chris/disp_draw/disp_draw.srcs/sources_1/imports/chris/magnitude/magnitude.srcs/sources_1/new/magnitude.vhd
   /data1/cdaffron/git/ece551hw/final/chris/disp_draw/disp_draw.srcs/sources_1/imports/chris/averager/averager.srcs/sources_1/new/averager.vhd
   /data1/cdaffron/git/ece551hw/final/chris/disp_draw/disp_draw.srcs/sources_1/new/disp_draw.vhd

@@ -26,6 +26,8 @@ use IEEE.STD_LOGIC_1164.ALL;
 -- arithmetic functions with Signed or Unsigned values
 use IEEE.NUMERIC_STD.ALL;
 
+use work.type_pkg.all;
+
 -- Uncomment the following library declaration if instantiating
 -- any Xilinx leaf cells in this code.
 --library UNISIM;
@@ -35,14 +37,17 @@ use IEEE.NUMERIC_STD.ALL;
 --   Pause/Run: sw(2)
 --   nBars: sw(1 downto 0)
 
+
+
 entity disp_draw is
     Port ( 
         FFT_addr    : out std_logic_vector (9 downto 0);
         FFT_data    : in  std_logic_vector (31 downto 0);
         FFT_rden    : out std_logic;
-        VGA_addr    : out std_logic_vector (18 downto 0);
-        VGA_data    : out std_logic_vector (11 downto 0);
-        VGA_wren    : out std_logic;
+--        VGA_addr    : out std_logic_vector (18 downto 0);
+--        VGA_data    : out std_logic_vector (11 downto 0);
+--        VGA_wren    : out std_logic;
+        barHeights  : out barArray;
         VGA_trig    : in  std_logic;
         sw          : in  std_logic_vector (2 downto 0);
         clk         : in  std_logic        
@@ -140,8 +145,8 @@ architecture Behavioral of disp_draw is
     signal avgIn : avgArray;
     signal tmp : avgArray;
     
-    type barArray is array (63 downto 0) of std_logic_vector (7 downto 0);
-    signal barHeights : barArray;
+--    type barArray is array (63 downto 0) of std_logic_vector (7 downto 0);
+    signal barHeightsWrk : barArray;
     
 --    signal avgIn0   : std_logic_vector (15 downto 0) := X"0000";
 --    signal avgIn1   : std_logic_vector (15 downto 0) := X"0000";
@@ -515,8 +520,15 @@ begin
     begin
         if( rising_edge( clk ) ) then
             if( magValid = '1' ) then
-                barHeights(to_integer(unsigned(barNumOut))) <= mag(16 downto 9);
+                barHeightsWrk(to_integer(unsigned(barNumOut))) <= mag(16 downto 9);
             end if;
+        end if;
+    end process;
+    
+    heightLatch : process ( VGA_trig )
+    begin
+        if( rising_edge( VGA_trig ) ) then
+            barHeights <= barHeightsWrk;
         end if;
     end process;
 
