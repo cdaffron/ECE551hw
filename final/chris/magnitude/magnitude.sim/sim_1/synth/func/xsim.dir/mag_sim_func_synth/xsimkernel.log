@@ -1,0 +1,7 @@
+Running: xsim.dir/mag_sim_func_synth/xsimk -simmode gui -wdb mag_sim_func_synth.wdb -simrunnum 0 -socket 54349
+Design successfully loaded
+Design Loading Memory Usage: 166152 KB (Peak: 167276 KB)
+Design Loading CPU Usage: 60 ms
+Simulation completed
+Simulation Memory Usage: 250136 KB (Peak: 307472 KB)
+Simulation CPU Usage: 90 ms

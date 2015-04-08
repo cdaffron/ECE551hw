@@ -1,0 +1,1 @@
+--debug "typical" --relax -L "xil_defaultlib" -L "secureip" --snapshot "mag_sim_func_synth" --prj "/data1/cdaffron/git/ece551hw/final/chris/magnitude/magnitude.sim/sim_1/synth/func/mag_sim.prj" "xil_defaultlib.mag_sim" 

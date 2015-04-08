@@ -1,7 +1,7 @@
 Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2014.2 (lin64) Build 932637 Wed Jun 11 13:08:52 MDT 2014
-| Date         : Sat Mar 28 16:45:12 2015
+| Date         : Tue Apr  7 11:57:36 2015
 | Host         : com1548.eecs.utk.edu running 64-bit Red Hat Enterprise Linux Server release 6.5 (Santiago)
 | Command      : report_control_sets -verbose -file magnitude_control_sets_placed.rpt
 | Design       : magnitude
@@ -23,7 +23,7 @@ Table of Contents
 |                               Status                              | Count |
 +-------------------------------------------------------------------+-------+
 | Number of unique control sets                                     |     2 |
-| Minimum Number of register sites lost to control set restrictions |    12 |
+| Minimum Number of register sites lost to control set restrictions |     8 |
 +-------------------------------------------------------------------+-------+
 
 
@@ -33,10 +33,10 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |             251 |          109 |
+| No           | No                    | No                     |             263 |          115 |
 | No           | No                    | Yes                    |               0 |            0 |
 | No           | Yes                   | No                     |               0 |            0 |
-| Yes          | No                    | No                     |              17 |            6 |
+| Yes          | No                    | No                     |              17 |           10 |
 | Yes          | No                    | Yes                    |               0 |            0 |
 | Yes          | Yes                   | No                     |               0 |            0 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
@@ -48,8 +48,8 @@ Table of Contents
 +---------------+----------------------------------------------------------------+------------------+------------------+----------------+
 |  Clock Signal |                          Enable Signal                         | Set/Reset Signal | Slice Load Count | Bel Load Count |
 +---------------+----------------------------------------------------------------+------------------+------------------+----------------+
-|  xlnx_opt__19 | magSqRt/U0/i_synth/i_synth/gen_sqrt.square_root/gen_rdy_int/O1 |                  |                6 |             17 |
-|  xlnx_opt__19 |                                                                |                  |              118 |            268 |
+|  xlnx_opt__19 | magSqRt/U0/i_synth/i_synth/gen_sqrt.square_root/gen_rdy_int/O1 |                  |               10 |             17 |
+|  xlnx_opt__19 |                                                                |                  |              125 |            286 |
 +---------------+----------------------------------------------------------------+------------------+------------------+----------------+
 
 

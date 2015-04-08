@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1427575435">
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1428421953">
   <File Type="VDS-TIMING-PB" Name="magnitude_timing_summary_synth.pb"/>
   <File Type="VDS-TIMINGSUMMARY" Name="magnitude_timing_summary_synth.rpt"/>
   <File Type="RDS-DCP" Name="magnitude.dcp"/>
   <File Type="RDS-UTIL-PB" Name="magnitude_utilization_synth.pb"/>
-  <File Type="RUN-CONSTRS" Name="$PDATADIR/runs/synth_1/constrs_in.xml"/>
+  <File Type="RDS-UTIL" Name="magnitude_utilization_synth.rpt"/>
   <File Type="RDS-RDS" Name="magnitude.vds"/>
+  <File Type="PA-TCL" Name="magnitude.tcl"/>
+  <File Type="RUN-STRAT" Name="$PDATADIR/runs/synth_1/synth_1.psg"/>
   <File Type="VDS-HWDEF" Name="magnitude.hwdef"/>
   <File Type="RUN-SRCS" Name="$PDATADIR/runs/synth_1/sources.xml"/>
-  <File Type="RUN-STRAT" Name="$PDATADIR/runs/synth_1/synth_1.psg"/>
-  <File Type="PA-TCL" Name="magnitude.tcl"/>
-  <File Type="RDS-UTIL" Name="magnitude_utilization_synth.rpt"/>
+  <File Type="RUN-CONSTRS" Name="$PDATADIR/runs/synth_1/constrs_in.xml"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/new/magnitude.vhd">
@@ -33,12 +33,10 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2014">
-      <Desc>Vivado Synthesis Defaults</Desc>
-    </StratHandle>
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2014"/>
     <Step Id="synth_design"/>
   </Strategy>
   <BlockFileSet Type="BlockSrcs" Name="c_addsub_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="mult_gen_0"/>
   <BlockFileSet Type="BlockSrcs" Name="cordic_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="mult_gen_0"/>
 </GenRun>

@@ -9,6 +9,9 @@ create_project -in_memory -part xc7a100tcsg324-1
 set_property target_language VHDL [current_project]
 set_param project.compositeFile.enableAutoGeneration 0
 set_property default_lib xil_defaultlib [current_project]
+add_files /data1/cdaffron/git/ece551hw/final/chris/disp_draw/simRAM.coe
+add_files -quiet /data1/cdaffron/git/ece551hw/final/chris/disp_draw/disp_draw.runs/blk_mem_gen_0_synth_1/blk_mem_gen_0.dcp
+set_property used_in_implementation false [get_files /data1/cdaffron/git/ece551hw/final/chris/disp_draw/disp_draw.runs/blk_mem_gen_0_synth_1/blk_mem_gen_0.dcp]
 
 read_ip /data1/cdaffron/git/ece551hw/final/chris/disp_draw/disp_draw.srcs/sources_1/ip/mult_gen_0/mult_gen_0.xci
 set_property used_in_implementation false [get_files /data1/cdaffron/git/ece551hw/final/chris/disp_draw/disp_draw.srcs/sources_1/ip/mult_gen_0/mult_gen_0.dcp]

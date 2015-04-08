@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="disp_sim_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="disp_sim" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="31" />
+   <wvobject db_ref_id="1" type="array" fp_name="/disp_sim/FFT_addr">
+      <obj_property name="ElementShortName">FFT_addr[9:0]</obj_property>
+      <obj_property name="ObjectShortName">FFT_addr[9:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/disp_sim/FFT_data">
+      <obj_property name="ElementShortName">FFT_data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">FFT_data[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/disp_sim/FFT_rden">
+      <obj_property name="ElementShortName">FFT_rden</obj_property>
+      <obj_property name="ObjectShortName">FFT_rden</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/disp_sim/VGA_addr">
+      <obj_property name="ElementShortName">VGA_addr[18:0]</obj_property>
+      <obj_property name="ObjectShortName">VGA_addr[18:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/disp_sim/VGA_data">
+      <obj_property name="ElementShortName">VGA_data[11:0]</obj_property>
+      <obj_property name="ObjectShortName">VGA_data[11:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/disp_sim/VGA_wren">
+      <obj_property name="ElementShortName">VGA_wren</obj_property>
+      <obj_property name="ObjectShortName">VGA_wren</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/disp_sim/VGA_trig">
+      <obj_property name="ElementShortName">VGA_trig</obj_property>
+      <obj_property name="ObjectShortName">VGA_trig</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/disp_sim/sw">
+      <obj_property name="ElementShortName">sw[2:0]</obj_property>
+      <obj_property name="ObjectShortName">sw[2:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/disp_sim/clk">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="other" fp_name="/disp_sim/clk_period">
+      <obj_property name="ElementShortName">clk_period</obj_property>
+      <obj_property name="ObjectShortName">clk_period</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="other" fp_name="/disp_sim/UUT/s_curr">
+      <obj_property name="ElementShortName">s_curr</obj_property>
+      <obj_property name="ObjectShortName">s_curr</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/disp_sim/UUT/average">
+      <obj_property name="ElementShortName">average[15:0]</obj_property>
+      <obj_property name="ObjectShortName">average[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/disp_sim/UUT/realVal">
+      <obj_property name="ElementShortName">realVal[15:0]</obj_property>
+      <obj_property name="ObjectShortName">realVal[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/disp_sim/UUT/imagVal">
+      <obj_property name="ElementShortName">imagVal[15:0]</obj_property>
+      <obj_property name="ObjectShortName">imagVal[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/disp_sim/UUT/counter2">
+      <obj_property name="ElementShortName">counter2[7:0]</obj_property>
+      <obj_property name="ObjectShortName">counter2[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/disp_sim/UUT/avgIn[15]">
+      <obj_property name="ElementShortName">[15][15:0]</obj_property>
+      <obj_property name="ObjectShortName">avgIn[15][15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/disp_sim/UUT/avgIn[14]">
+      <obj_property name="ElementShortName">[14][15:0]</obj_property>
+      <obj_property name="ObjectShortName">avgIn[14][15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/disp_sim/UUT/avgIn[13]">
+      <obj_property name="ElementShortName">[13][15:0]</obj_property>
+      <obj_property name="ObjectShortName">avgIn[13][15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/disp_sim/UUT/avgIn[12]">
+      <obj_property name="ElementShortName">[12][15:0]</obj_property>
+      <obj_property name="ObjectShortName">avgIn[12][15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/disp_sim/UUT/avgIn[11]">
+      <obj_property name="ElementShortName">[11][15:0]</obj_property>
+      <obj_property name="ObjectShortName">avgIn[11][15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/disp_sim/UUT/avgIn[10]">
+      <obj_property name="ElementShortName">[10][15:0]</obj_property>
+      <obj_property name="ObjectShortName">avgIn[10][15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/disp_sim/UUT/avgIn[9]">
+      <obj_property name="ElementShortName">[9][15:0]</obj_property>
+      <obj_property name="ObjectShortName">avgIn[9][15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/disp_sim/UUT/avgIn[8]">
+      <obj_property name="ElementShortName">[8][15:0]</obj_property>
+      <obj_property name="ObjectShortName">avgIn[8][15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/disp_sim/UUT/avgIn[7]">
+      <obj_property name="ElementShortName">[7][15:0]</obj_property>
+      <obj_property name="ObjectShortName">avgIn[7][15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/disp_sim/UUT/avgIn[6]">
+      <obj_property name="ElementShortName">[6][15:0]</obj_property>
+      <obj_property name="ObjectShortName">avgIn[6][15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/disp_sim/UUT/avgIn[5]">
+      <obj_property name="ElementShortName">[5][15:0]</obj_property>
+      <obj_property name="ObjectShortName">avgIn[5][15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/disp_sim/UUT/avgIn[4]">
+      <obj_property name="ElementShortName">[4][15:0]</obj_property>
+      <obj_property name="ObjectShortName">avgIn[4][15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/disp_sim/UUT/avgIn[3]">
+      <obj_property name="ElementShortName">[3][15:0]</obj_property>
+      <obj_property name="ObjectShortName">avgIn[3][15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/disp_sim/UUT/avgIn[2]">
+      <obj_property name="ElementShortName">[2][15:0]</obj_property>
+      <obj_property name="ObjectShortName">avgIn[2][15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/disp_sim/UUT/avgIn[1]">
+      <obj_property name="ElementShortName">[1][15:0]</obj_property>
+      <obj_property name="ObjectShortName">avgIn[1][15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/disp_sim/UUT/avgIn[0]">
+      <obj_property name="ElementShortName">[0][15:0]</obj_property>
+      <obj_property name="ObjectShortName">avgIn[0][15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+</wave_config>

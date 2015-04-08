@@ -1,7 +1,7 @@
 Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2014.2 (lin64) Build 932637 Wed Jun 11 13:08:52 MDT 2014
-| Date         : Sat Mar 28 16:45:39 2015
+| Date         : Tue Apr  7 11:58:02 2015
 | Host         : com1548.eecs.utk.edu running 64-bit Red Hat Enterprise Linux Server release 6.5 (Santiago)
 | Command      : report_timing_summary -warn_on_violation -file magnitude_timing_summary_routed.rpt -pb magnitude_timing_summary_routed.pb
 | Design       : magnitude
@@ -51,7 +51,7 @@ Table of Contents
 
 1. checking no_clock
 --------------------
- There are 288 register/latch pins with no clock driven by root clock pin: clk (HIGH)
+ There are 306 register/latch pins with no clock driven by root clock pin: clk (HIGH)
 
 
 2. checking constant clock
@@ -66,21 +66,21 @@ Table of Contents
 
 4. checking unconstrained_internal_endpoints
 --------------------------------------------
- There are 493 pins that are not constrained for maximum delay. (HIGH)
+ There are 511 pins that are not constrained for maximum delay. (HIGH)
 
  There are 0 pins that are not constrained for maximum delay due to constant clock.
 
 
 5. checking no_input_delay
 --------------------------
- There are 34 input ports with no input delay specified. (HIGH)
+ There are 40 input ports with no input delay specified. (HIGH)
 
  There are 0 input ports with no input delay but user has a false path constraint.
 
 
 6. checking no_output_delay
 ---------------------------
- There are 18 ports with no output delay specified. (HIGH)
+ There are 24 ports with no output delay specified. (HIGH)
 
  There are 0 ports with no output delay but user has a false path constraint
 

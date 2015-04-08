@@ -40,17 +40,21 @@ architecture Behavioral of mag_sim is
         Port (
             realVal     : in  std_logic_vector (15 downto 0);
             imagVal     : in  std_logic_vector (15 downto 0);
+            barNumIn    : in  std_logic_vector (5 downto 0);
             inValid     : in  std_logic;
             clk         : in  std_logic;
             mag         : out std_logic_vector (16 downto 0);
+            barNumOut   : out std_logic_vector (5 downto 0);
             magValid    : out std_logic
         );
     end component;
     
     signal realVal : std_logic_vector (15 downto 0) := X"0000";
     signal imagVal : std_logic_vector (15 downto 0) := X"0000";
+    signal barNumIn : std_logic_vector (5 downto 0) := "000000";
     signal clk : std_logic := '0';
     signal mag : std_logic_vector (16 downto 0) := "00000000000000000";
+    signal barNumOut : std_logic_vector (5 downto 0) := "000000";
     signal magValid : std_logic := '0';
     signal inValid : std_logic := '0';
     
@@ -62,9 +66,11 @@ begin
     Port Map (
         realVal => realVal,
         imagVal => imagVal,
+        barNumIn => barNumIn,
         inValid => inValid,
         clk => clk,
         mag => mag,
+        barNumOut => barNumOut,
         magValid => magValid
     );
     
@@ -81,10 +87,12 @@ begin
         wait for 150 ns;
         realVal <= X"7FFF";
         imagVal <= X"7FFF";
+        barNumIn <= "000001";
         inValid <= '1';
         wait for 100 ns;
         realVal <= X"0000";
         imagVal <= X"0000";
+        barNumIn <= "000000";
         inValid <= '0';
         wait;
     end process;

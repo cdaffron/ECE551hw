@@ -1,0 +1,4 @@
+Vivado Simulator 2014.2
+Time resolution is 1 ps
+Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+Time: 0 ps  Iteration: 4  Process: /mag_sim/UUT/sumOfSquares/U0/xst_addsub/\xbip_addsub.i_a_b_nogrowth.i_xbip_addsub\/\addsub_usecase.i_addsub\/\i_synth_option.i_synth_model\/\opt_vx7.i_uniwrap\/i_primitive/line__1425  File: /proj/buildscratch/builds/2014.2/continuous/20140611121610/data/vhdl/src/unisims/primitive/DSP48E1.vhd

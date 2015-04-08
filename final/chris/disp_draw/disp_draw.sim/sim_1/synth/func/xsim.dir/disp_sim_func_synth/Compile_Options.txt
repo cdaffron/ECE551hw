@@ -1,0 +1,1 @@
+--debug "typical" --relax -L "xil_defaultlib" -L "secureip" --snapshot "disp_sim_func_synth" --prj "/data1/cdaffron/git/ece551hw/final/chris/disp_draw/disp_draw.sim/sim_1/synth/func/disp_sim.prj" "xil_defaultlib.disp_sim" 

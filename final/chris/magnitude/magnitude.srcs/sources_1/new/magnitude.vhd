@@ -35,9 +35,11 @@ entity magnitude is
     Port (
         realVal     : in  std_logic_vector (15 downto 0);
         imagVal     : in  std_logic_vector (15 downto 0);
+        barNumIn    : in  std_logic_vector (5 downto 0);
         inValid     : in  std_logic;
         clk         : in  std_logic;
         mag         : out std_logic_vector (16 downto 0);
+        barNumOut   : out std_logic_vector (5 downto 0);
         magValid    : out std_logic
     );
 end magnitude;
@@ -91,7 +93,18 @@ architecture Behavioral of magnitude is
     signal inValidPipe1 : std_logic := '0';
     signal inValidPipe2 : std_logic := '0';
     signal inValidPipe3 : std_logic := '0';
---    signal inValidPipe4 : std_logic; 
+
+    signal barNumStage1  : std_logic_vector (5 downto 0);
+    signal barNumStage2  : std_logic_vector (5 downto 0);
+    signal barNumStage3  : std_logic_vector (5 downto 0);
+    signal barNumStage4  : std_logic_vector (5 downto 0);
+    signal barNumStage5  : std_logic_vector (5 downto 0);
+    signal barNumStage6  : std_logic_vector (5 downto 0);
+    signal barNumStage7  : std_logic_vector (5 downto 0);
+    signal barNumStage8  : std_logic_vector (5 downto 0);
+    signal barNumStage9  : std_logic_vector (5 downto 0);
+    signal barNumStage10 : std_logic_vector (5 downto 0);
+    signal barNumStage11 : std_logic_vector (5 downto 0); 
 
 begin
 
@@ -108,9 +121,21 @@ begin
             inValidPipe1 <= inValid;
             inValidPipe2 <= inValidPipe1;
             inValidPipe3 <= inValidPipe2;
+            barNumStage1 <= barNumIn;
+            barNumStage2 <= barNumStage1;
+            barNumStage3 <= barNumStage2;
+            barNumStage4 <= barNumStage3;
+            barNumStage5 <= barNumStage4;
+            barNumStage6 <= barNumStage5;
+            barNumStage7 <= barNumStage6;
+            barNumStage8 <= barNumStage7;
+            barNumStage9 <= barNumStage8;
+            barNumStage10 <= barNumStage9;
+            barNumStage11 <= barNumStage10;
+            barNumOut <= barNumStage11;
         end if;
     end process;
-
+    
     realSquare : mult_gen_0
     PORT MAP (
         CLK => clk,

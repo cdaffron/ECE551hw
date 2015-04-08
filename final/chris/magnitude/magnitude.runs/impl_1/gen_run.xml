@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1427575486">
+<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1428422230">
   <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
   <File Type="RDI-RDI" Name="magnitude.vdi"/>
   <File Type="BG-DRC" Name="magnitude.drc"/>
@@ -8,41 +8,41 @@
   <File Type="BITSTR-MMI" Name="magnitude.mmi"/>
   <File Type="BITSTR-BMM" Name="magnitude_bd.bmm"/>
   <File Type="BITSTR-NKY" Name="magnitude.nky"/>
+  <File Type="BITSTR-RBT" Name="magnitude.rbt"/>
+  <File Type="BITSTR-MSK" Name="magnitude.msk"/>
+  <File Type="BG-BIN" Name="magnitude.bin"/>
+  <File Type="BG-BIT" Name="magnitude.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="magnitude_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="magnitude_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="magnitude_postroute_physopt.dcp"/>
+  <File Type="ROUTE-SIMILARITY" Name="magnitude_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="magnitude_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="magnitude_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="magnitude_route_status.pb"/>
+  <File Type="ROUTE-STATUS" Name="magnitude_route_status.rpt"/>
+  <File Type="ROUTE-PWR-SUM" Name="magnitude_power_summary_routed.pb"/>
+  <File Type="ROUTE-PWR" Name="magnitude_power_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="magnitude_drc_routed.pb"/>
+  <File Type="ROUTE-DRC" Name="magnitude_drc_routed.rpt"/>
+  <File Type="ROUTE-DCP" Name="magnitude_routed.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="magnitude_drc_physopted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="magnitude_physopt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="magnitude_postplace_pwropt.dcp"/>
   <File Type="PLACE-PRE-SIMILARITY" Name="magnitude_incremental_reuse_pre_placed.rpt"/>
   <File Type="PLACE-SIMILARITY" Name="magnitude_incremental_reuse_placed.rpt"/>
-  <File Type="PLACE-UTIL-PB" Name="magnitude_utilization_placed.pb"/>
-  <File Type="PLACE-CLK" Name="magnitude_clock_utilization_placed.rpt"/>
-  <File Type="PLACE-DCP" Name="magnitude_placed.dcp"/>
   <File Type="PLACE-CTRL" Name="magnitude_control_sets_placed.rpt"/>
-  <File Type="PWROPT-DRC" Name="magnitude_drc_pwropted.rpt"/>
-  <File Type="BITSTR-MSK" Name="magnitude.msk"/>
-  <File Type="RUN-CONSTRS" Name="$PDATADIR/runs/impl_1/constrs_in.xml"/>
-  <File Type="PLACE-IO" Name="magnitude_io_placed.rpt"/>
-  <File Type="OPT-DCP" Name="magnitude_opt.dcp"/>
-  <File Type="BG-BIT" Name="magnitude.bit"/>
-  <File Type="RUN-STRAT" Name="$PDATADIR/runs/impl_1/impl_1.psg"/>
+  <File Type="PLACE-UTIL-PB" Name="magnitude_utilization_placed.pb"/>
   <File Type="PLACE-UTIL" Name="magnitude_utilization_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="magnitude_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-IO" Name="magnitude_io_placed.rpt"/>
+  <File Type="PLACE-DCP" Name="magnitude_placed.dcp"/>
+  <File Type="PWROPT-DRC" Name="magnitude_drc_pwropted.rpt"/>
   <File Type="PWROPT-DCP" Name="magnitude_pwropt.dcp"/>
-  <File Type="PA-TCL" Name="magnitude.tcl"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="magnitude_timing_summary_postroute_physopted.rpt"/>
   <File Type="OPT-DRC" Name="magnitude_drc_opted.rpt"/>
-  <File Type="POSTPLACE-PWROPT-DCP" Name="magnitude_postplace_pwropt.dcp"/>
-  <File Type="BG-BIN" Name="magnitude.bin"/>
-  <File Type="PHYSOPT-DCP" Name="magnitude_physopt.dcp"/>
-  <File Type="BITSTR-RBT" Name="magnitude.rbt"/>
-  <File Type="PHYSOPT-DRC" Name="magnitude_drc_physopted.rpt"/>
-  <File Type="ROUTE-DCP" Name="magnitude_routed.dcp"/>
-  <File Type="ROUTE-DRC" Name="magnitude_drc_routed.rpt"/>
-  <File Type="ROUTE-DRC-PB" Name="magnitude_drc_routed.pb"/>
-  <File Type="ROUTE-PWR" Name="magnitude_power_routed.rpt"/>
-  <File Type="ROUTE-PWR-SUM" Name="magnitude_power_summary_routed.pb"/>
-  <File Type="ROUTE-STATUS" Name="magnitude_route_status.rpt"/>
-  <File Type="ROUTE-STATUS-PB" Name="magnitude_route_status.pb"/>
-  <File Type="ROUTE-TIMINGSUMMARY" Name="magnitude_timing_summary_routed.rpt"/>
-  <File Type="ROUTE-TIMING-PB" Name="magnitude_timing_summary_routed.pb"/>
-  <File Type="ROUTE-SIMILARITY" Name="magnitude_incremental_reuse_routed.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-DCP" Name="magnitude_postroute_physopt.dcp"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="magnitude_timing_summary_postroute_physopted.pb"/>
+  <File Type="OPT-DCP" Name="magnitude_opt.dcp"/>
+  <File Type="PA-TCL" Name="magnitude.tcl"/>
+  <File Type="RUN-STRAT" Name="$PDATADIR/runs/impl_1/impl_1.psg"/>
+  <File Type="RUN-CONSTRS" Name="$PDATADIR/runs/impl_1/constrs_in.xml"/>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
     <Filter Type="Constrs"/>
     <Config>
@@ -50,9 +50,7 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2014">
-      <Desc>Vivado Implementation Defaults</Desc>
-    </StratHandle>
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2014"/>
     <Step Id="init_design"/>
     <Step Id="opt_design"/>
     <Step Id="power_opt_design"/>
@@ -64,6 +62,6 @@
     <Step Id="write_bitstream"/>
   </Strategy>
   <BlockFileSet Type="BlockSrcs" Name="c_addsub_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="mult_gen_0"/>
   <BlockFileSet Type="BlockSrcs" Name="cordic_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="mult_gen_0"/>
 </GenRun>

@@ -127,95 +127,114 @@ architecture Behavioral of disp_draw is
         Port (
             realVal     : in  std_logic_vector (15 downto 0);
             imagVal     : in  std_logic_vector (15 downto 0);
+            barNumIn    : in  std_logic_vector (5 downto 0);
             inValid     : in  std_logic;
             clk         : in  std_logic;
             mag         : out std_logic_vector (16 downto 0);
+            barNumOut   : out std_logic_vector (5 downto 0);
             magValid    : out std_logic
         );
     end component;
     
-    signal avgIn0   : std_logic_vector (15 downto 0) := X"0000";
-    signal avgIn1   : std_logic_vector (15 downto 0) := X"0000";
-    signal avgIn2   : std_logic_vector (15 downto 0) := X"0000";
-    signal avgIn3   : std_logic_vector (15 downto 0) := X"0000";
-    signal avgIn4   : std_logic_vector (15 downto 0) := X"0000";
-    signal avgIn5   : std_logic_vector (15 downto 0) := X"0000";
-    signal avgIn6   : std_logic_vector (15 downto 0) := X"0000";
-    signal avgIn7   : std_logic_vector (15 downto 0) := X"0000";
-    signal avgIn8   : std_logic_vector (15 downto 0) := X"0000";
-    signal avgIn9   : std_logic_vector (15 downto 0) := X"0000";
-    signal avgIn10  : std_logic_vector (15 downto 0) := X"0000";
-    signal avgIn11  : std_logic_vector (15 downto 0) := X"0000";
-    signal avgIn12  : std_logic_vector (15 downto 0) := X"0000";
-    signal avgIn13  : std_logic_vector (15 downto 0) := X"0000";
-    signal avgIn14  : std_logic_vector (15 downto 0) := X"0000";
-    signal avgIn15  : std_logic_vector (15 downto 0) := X"0000";
-    signal avgIn16  : std_logic_vector (15 downto 0) := X"0000";
-    signal avgIn17  : std_logic_vector (15 downto 0) := X"0000";
-    signal avgIn18  : std_logic_vector (15 downto 0) := X"0000";
-    signal avgIn19  : std_logic_vector (15 downto 0) := X"0000";
-    signal avgIn20  : std_logic_vector (15 downto 0) := X"0000";
-    signal avgIn21  : std_logic_vector (15 downto 0) := X"0000";
-    signal avgIn22  : std_logic_vector (15 downto 0) := X"0000";
-    signal avgIn23  : std_logic_vector (15 downto 0) := X"0000";
-    signal avgIn24  : std_logic_vector (15 downto 0) := X"0000";
-    signal avgIn25  : std_logic_vector (15 downto 0) := X"0000";
-    signal avgIn26  : std_logic_vector (15 downto 0) := X"0000";
-    signal avgIn27  : std_logic_vector (15 downto 0) := X"0000";
-    signal avgIn28  : std_logic_vector (15 downto 0) := X"0000";
-    signal avgIn29  : std_logic_vector (15 downto 0) := X"0000";
-    signal avgIn30  : std_logic_vector (15 downto 0) := X"0000";
-    signal avgIn31  : std_logic_vector (15 downto 0) := X"0000";
-    signal avgIn32  : std_logic_vector (15 downto 0) := X"0000";
-    signal avgIn33  : std_logic_vector (15 downto 0) := X"0000";
-    signal avgIn34  : std_logic_vector (15 downto 0) := X"0000";
-    signal avgIn35  : std_logic_vector (15 downto 0) := X"0000";
-    signal avgIn36  : std_logic_vector (15 downto 0) := X"0000";
-    signal avgIn37  : std_logic_vector (15 downto 0) := X"0000";
-    signal avgIn38  : std_logic_vector (15 downto 0) := X"0000";
-    signal avgIn39  : std_logic_vector (15 downto 0) := X"0000";
-    signal avgIn40  : std_logic_vector (15 downto 0) := X"0000";
-    signal avgIn41  : std_logic_vector (15 downto 0) := X"0000";
-    signal avgIn42  : std_logic_vector (15 downto 0) := X"0000";
-    signal avgIn43  : std_logic_vector (15 downto 0) := X"0000";
-    signal avgIn44  : std_logic_vector (15 downto 0) := X"0000";
-    signal avgIn45  : std_logic_vector (15 downto 0) := X"0000";
-    signal avgIn46  : std_logic_vector (15 downto 0) := X"0000";
-    signal avgIn47  : std_logic_vector (15 downto 0) := X"0000";
-    signal avgIn48  : std_logic_vector (15 downto 0) := X"0000";
-    signal avgIn49  : std_logic_vector (15 downto 0) := X"0000";
-    signal avgIn50  : std_logic_vector (15 downto 0) := X"0000";
-    signal avgIn51  : std_logic_vector (15 downto 0) := X"0000";
-    signal avgIn52  : std_logic_vector (15 downto 0) := X"0000";
-    signal avgIn53  : std_logic_vector (15 downto 0) := X"0000";
-    signal avgIn54  : std_logic_vector (15 downto 0) := X"0000";
-    signal avgIn55  : std_logic_vector (15 downto 0) := X"0000";
-    signal avgIn56  : std_logic_vector (15 downto 0) := X"0000";
-    signal avgIn57  : std_logic_vector (15 downto 0) := X"0000";
-    signal avgIn58  : std_logic_vector (15 downto 0) := X"0000";
-    signal avgIn59  : std_logic_vector (15 downto 0) := X"0000";
-    signal avgIn60  : std_logic_vector (15 downto 0) := X"0000";
-    signal avgIn61  : std_logic_vector (15 downto 0) := X"0000";
-    signal avgIn62  : std_logic_vector (15 downto 0) := X"0000";
-    signal avgIn63  : std_logic_vector (15 downto 0) := X"0000";
-    signal average  : std_logic_vector (15 downto 0) := X"0000";
-    signal addr     : std_logic_vector (9 downto 0);
-    signal addr1    : std_logic_vector (9 downto 0);
-    signal addr2    : std_logic_vector (9 downto 0);
+    type avgArray is array (63 downto 0) of std_logic_vector (15 downto 0);
+    signal avgIn : avgArray;
+    signal tmp : avgArray;
     
-    signal realVal  : std_logic_vector (15 downto 0);
-    signal imagVal  : std_logic_vector (15 downto 0);
-    signal inValid  : std_logic;
-    signal mag      : std_logic_vector (16 downto 0);
-    signal magValid : std_logic;
+    type barArray is array (63 downto 0) of std_logic_vector (7 downto 0);
+    signal barHeights : barArray;
     
-    signal tmp1 : std_logic_vector (15 downto 0);
-    signal tmp2 : std_logic_vector (15 downto 0);
+--    signal avgIn0   : std_logic_vector (15 downto 0) := X"0000";
+--    signal avgIn1   : std_logic_vector (15 downto 0) := X"0000";
+--    signal avgIn2   : std_logic_vector (15 downto 0) := X"0000";
+--    signal avgIn3   : std_logic_vector (15 downto 0) := X"0000";
+--    signal avgIn4   : std_logic_vector (15 downto 0) := X"0000";
+--    signal avgIn5   : std_logic_vector (15 downto 0) := X"0000";
+--    signal avgIn6   : std_logic_vector (15 downto 0) := X"0000";
+--    signal avgIn7   : std_logic_vector (15 downto 0) := X"0000";
+--    signal avgIn8   : std_logic_vector (15 downto 0) := X"0000";
+--    signal avgIn9   : std_logic_vector (15 downto 0) := X"0000";
+--    signal avgIn10  : std_logic_vector (15 downto 0) := X"0000";
+--    signal avgIn11  : std_logic_vector (15 downto 0) := X"0000";
+--    signal avgIn12  : std_logic_vector (15 downto 0) := X"0000";
+--    signal avgIn13  : std_logic_vector (15 downto 0) := X"0000";
+--    signal avgIn14  : std_logic_vector (15 downto 0) := X"0000";
+--    signal avgIn15  : std_logic_vector (15 downto 0) := X"0000";
+--    signal avgIn16  : std_logic_vector (15 downto 0) := X"0000";
+--    signal avgIn17  : std_logic_vector (15 downto 0) := X"0000";
+--    signal avgIn18  : std_logic_vector (15 downto 0) := X"0000";
+--    signal avgIn19  : std_logic_vector (15 downto 0) := X"0000";
+--    signal avgIn20  : std_logic_vector (15 downto 0) := X"0000";
+--    signal avgIn21  : std_logic_vector (15 downto 0) := X"0000";
+--    signal avgIn22  : std_logic_vector (15 downto 0) := X"0000";
+--    signal avgIn23  : std_logic_vector (15 downto 0) := X"0000";
+--    signal avgIn24  : std_logic_vector (15 downto 0) := X"0000";
+--    signal avgIn25  : std_logic_vector (15 downto 0) := X"0000";
+--    signal avgIn26  : std_logic_vector (15 downto 0) := X"0000";
+--    signal avgIn27  : std_logic_vector (15 downto 0) := X"0000";
+--    signal avgIn28  : std_logic_vector (15 downto 0) := X"0000";
+--    signal avgIn29  : std_logic_vector (15 downto 0) := X"0000";
+--    signal avgIn30  : std_logic_vector (15 downto 0) := X"0000";
+--    signal avgIn31  : std_logic_vector (15 downto 0) := X"0000";
+--    signal avgIn32  : std_logic_vector (15 downto 0) := X"0000";
+--    signal avgIn33  : std_logic_vector (15 downto 0) := X"0000";
+--    signal avgIn34  : std_logic_vector (15 downto 0) := X"0000";
+--    signal avgIn35  : std_logic_vector (15 downto 0) := X"0000";
+--    signal avgIn36  : std_logic_vector (15 downto 0) := X"0000";
+--    signal avgIn37  : std_logic_vector (15 downto 0) := X"0000";
+--    signal avgIn38  : std_logic_vector (15 downto 0) := X"0000";
+--    signal avgIn39  : std_logic_vector (15 downto 0) := X"0000";
+--    signal avgIn40  : std_logic_vector (15 downto 0) := X"0000";
+--    signal avgIn41  : std_logic_vector (15 downto 0) := X"0000";
+--    signal avgIn42  : std_logic_vector (15 downto 0) := X"0000";
+--    signal avgIn43  : std_logic_vector (15 downto 0) := X"0000";
+--    signal avgIn44  : std_logic_vector (15 downto 0) := X"0000";
+--    signal avgIn45  : std_logic_vector (15 downto 0) := X"0000";
+--    signal avgIn46  : std_logic_vector (15 downto 0) := X"0000";
+--    signal avgIn47  : std_logic_vector (15 downto 0) := X"0000";
+--    signal avgIn48  : std_logic_vector (15 downto 0) := X"0000";
+--    signal avgIn49  : std_logic_vector (15 downto 0) := X"0000";
+--    signal avgIn50  : std_logic_vector (15 downto 0) := X"0000";
+--    signal avgIn51  : std_logic_vector (15 downto 0) := X"0000";
+--    signal avgIn52  : std_logic_vector (15 downto 0) := X"0000";
+--    signal avgIn53  : std_logic_vector (15 downto 0) := X"0000";
+--    signal avgIn54  : std_logic_vector (15 downto 0) := X"0000";
+--    signal avgIn55  : std_logic_vector (15 downto 0) := X"0000";
+--    signal avgIn56  : std_logic_vector (15 downto 0) := X"0000";
+--    signal avgIn57  : std_logic_vector (15 downto 0) := X"0000";
+--    signal avgIn58  : std_logic_vector (15 downto 0) := X"0000";
+--    signal avgIn59  : std_logic_vector (15 downto 0) := X"0000";
+--    signal avgIn60  : std_logic_vector (15 downto 0) := X"0000";
+--    signal avgIn61  : std_logic_vector (15 downto 0) := X"0000";
+--    signal avgIn62  : std_logic_vector (15 downto 0) := X"0000";
+--    signal avgIn63  : std_logic_vector (15 downto 0) := X"0000";
+    signal average      : std_logic_vector (15 downto 0) := X"0000";
+    signal addr         : std_logic_vector (9 downto 0);
+    signal addr1        : std_logic_vector (9 downto 0);
+    signal addr2        : std_logic_vector (9 downto 0);
+    
+    signal realVal      : std_logic_vector (15 downto 0);
+    signal imagVal      : std_logic_vector (15 downto 0);
+    signal barNumIn     : std_logic_vector (5 downto 0);
+    signal barNumOut    : std_logic_vector (5 downto 0);
+    signal inValid      : std_logic;
+    signal mag          : std_logic_vector (16 downto 0);
+    signal magValid     : std_logic;
+    
+--    signal tmp1 : std_logic_vector (15 downto 0);
+--    signal tmp2 : std_logic_vector (15 downto 0);
+    
+--    signal counter : integer;
+    signal counter : std_logic_vector (7 downto 0);
+--    signal counter2 : integer;
+    signal counter2 : std_logic_vector (7 downto 0);
+    signal delay : integer;
+    
+    signal waitCycle : std_logic_vector (1 downto 0);
     
     signal barMag   : std_logic_vector (7 downto 0);
     
 --    type state is (rst, div, bars512, bars512a, bars512b, bars512c, bars256, bars128, bars64, bars32, bars16);
-    type state is(rst, div, bars64, bars64a, bars64b, bars32, bars16);
+    type state is(rst, div, bars64, bars64_barLoop, bars64_addrLoop, bars64_avg, bars64_mag, bars32, bars32_barLoop, bars32_addrLoop, bars32_avg, bars32_mag, bars16, bars16_barLoop, bars16_addrLoop, bars16_avg, bars16_mag);
     signal s_curr : state := rst;
 
 begin
@@ -225,70 +244,70 @@ begin
     avg_inst : averager
     Port Map ( 
         nBins => sw(1 downto 0),
-        in0 => avgIn0,
-        in1 => avgIn1,
-        in2 => avgIn2,
-        in3 => avgIn3,
-        in4 => avgIn4,
-        in5 => avgIn5,
-        in6 => avgIn6,
-        in7 => avgIn7,
-        in8 => avgIn8,
-        in9 => avgIn9,
-        in10 => avgIn10,
-        in11 => avgIn11,
-        in12 => avgIn12,
-        in13 => avgIn13,
-        in14 => avgIn14,
-        in15 => avgIn15,
-        in16 => avgIn16,
-        in17 => avgIn17,
-        in18 => avgIn18,
-        in19 => avgIn19,
-        in20 => avgIn20,
-        in21 => avgIn21,
-        in22 => avgIn22,
-        in23 => avgIn23,
-        in24 => avgIn24,
-        in25 => avgIn25,
-        in26 => avgIn26,
-        in27 => avgIn27,
-        in28 => avgIn28,
-        in29 => avgIn29,
-        in30 => avgIn30,
-        in31 => avgIn31,
-        in32 => avgIn32,
-        in33 => avgIn33,
-        in34 => avgIn34,
-        in35 => avgIn35,
-        in36 => avgIn36,
-        in37 => avgIn37,
-        in38 => avgIn38,
-        in39 => avgIn39,
-        in40 => avgIn40,
-        in41 => avgIn41,
-        in42 => avgIn42,
-        in43 => avgIn43,
-        in44 => avgIn44,
-        in45 => avgIn45,
-        in46 => avgIn46,
-        in47 => avgIn47,
-        in48 => avgIn48,
-        in49 => avgIn49,
-        in50 => avgIn50,
-        in51 => avgIn51,
-        in52 => avgIn52,
-        in53 => avgIn53,
-        in54 => avgIn54,
-        in55 => avgIn55,
-        in56 => avgIn56,
-        in57 => avgIn57,
-        in58 => avgIn58,
-        in59 => avgIn59,
-        in60 => avgIn60,
-        in61 => avgIn61,
-        in62 => avgIn62,
-        in63 => avgIn63,
+        in0 => avgIn(0),
+        in1 => avgIn(1),
+        in2 => avgIn(2),
+        in3 => avgIn(3),
+        in4 => avgIn(4),
+        in5 => avgIn(5),
+        in6 => avgIn(6),
+        in7 => avgIn(7),
+        in8 => avgIn(8),
+        in9 => avgIn(9),
+        in10 => avgIn(10),
+        in11 => avgIn(11),
+        in12 => avgIn(12),
+        in13 => avgIn(13),
+        in14 => avgIn(14),
+        in15 => avgIn(15),
+        in16 => avgIn(16),
+        in17 => avgIn(17),
+        in18 => avgIn(18),
+        in19 => avgIn(19),
+        in20 => avgIn(20),
+        in21 => avgIn(21),
+        in22 => avgIn(22),
+        in23 => avgIn(23),
+        in24 => avgIn(24),
+        in25 => avgIn(25),
+        in26 => avgIn(26),
+        in27 => avgIn(27),
+        in28 => avgIn(28),
+        in29 => avgIn(29),
+        in30 => avgIn(30),
+        in31 => avgIn(31),
+        in32 => avgIn(32),
+        in33 => avgIn(33),
+        in34 => avgIn(34),
+        in35 => avgIn(35),
+        in36 => avgIn(36),
+        in37 => avgIn(37),
+        in38 => avgIn(38),
+        in39 => avgIn(39),
+        in40 => avgIn(40),
+        in41 => avgIn(41),
+        in42 => avgIn(42),
+        in43 => avgIn(43),
+        in44 => avgIn(44),
+        in45 => avgIn(45),
+        in46 => avgIn(46),
+        in47 => avgIn(47),
+        in48 => avgIn(48),
+        in49 => avgIn(49),
+        in50 => avgIn(50),
+        in51 => avgIn(51),
+        in52 => avgIn(52),
+        in53 => avgIn(53),
+        in54 => avgIn(54),
+        in55 => avgIn(55),
+        in56 => avgIn(56),
+        in57 => avgIn(57),
+        in58 => avgIn(58),
+        in59 => avgIn(59),
+        in60 => avgIn(60),
+        in61 => avgIn(61),
+        in62 => avgIn(62),
+        in63 => avgIn(63),
         average => average,
         clk => clk
     );
@@ -297,9 +316,11 @@ begin
     Port  Map (
         realVal => realVal,
         imagVal => imagVal,
+        barNumIn => barNumIn,
         inValid => inValid,
         clk => clk,
         mag => mag,
+        barNumOut => barNumOut,
         magValid => magValid
     );
     
@@ -311,8 +332,8 @@ begin
     FSM : process ( clk, VGA_trig )
 --        variable addr1 : std_logic_vector (10 downto 0);
 --        variable addr2 : std_logic_vector (10 downto 0);
-        variable counter : integer;
-        variable delay : integer;
+--        variable counter : integer;
+--        variable delay : integer;
     begin
         if( rising_edge( clk ) ) then
             case s_curr is
@@ -323,12 +344,6 @@ begin
                     end if;
                 -- Go to appropriate state based on switches
                 when div =>
---                    if( sw(2 downto 0) = "000" ) then
---                        s_curr <= bars512;
---                    elsif( sw(2 downto 0) = "001" ) then
---                        s_curr <= bars256;
---                    elsif( sw(2 downto 0) = "010" ) then
---                        s_curr <= bars128;
                     if( sw(1 downto 0) = "00" ) then
                         s_curr <= bars64;
                     elsif( sw(1 downto 0) = "01" ) then
@@ -340,130 +355,168 @@ begin
                     end if;
                     
                 when bars64 =>
-                    counter := 0;
+                    counter <= X"00";
                     addr <= "0000000000";
-                    FFT_rden <= '1';
-                    s_curr <= bars64a;
+                    inValid <= '0';
+                    s_curr <= bars64_barLoop;
                 
-                when bars64a =>
-                    if( counter = 0 ) then
-                        counter := counter + 1;
-                    elsif( counter = 1 ) then
-                        avgIn0 <= FFT_data( 31 downto 16 );     -- Imag
-                        tmp1 <= FFT_data( 15 downto 0 );        -- Real
-                        addr <= std_logic_vector(unsigned(addr) + 1);
-                        counter := counter + 1;
-                    elsif( counter = 2 ) then
-                        avgIn1 <= FFT_data( 31 downto 16 );     -- Imag
-                        tmp2 <= FFT_data( 15 downto 0 );        -- Real
-                        FFT_rden <= '0';
-                        s_curr <= bars64b;
-                    end if;
-                    
-                when bars64b =>
-                    if( counter = 3 ) then
-                        imagVal <= average;
-                        counter := counter + 1;
-                        avgIn0 <= tmp1;
-                        avgIn1 <= tmp2;
-                    elsif( counter = 4 ) then
-                        realVal <= average;
-                        inValid <= '1';
-                        counter := counter + 1;
-                    elsif( counter = 5 ) then
+                when bars64_barLoop =>
+                    if( counter /= X"40" ) then
+                        counter2 <= X"00";
+                        FFT_rden <= '1';
                         inValid <= '0';
+                        waitCycle <= "10";
+                        s_curr <= bars64_addrLoop;
+                    else
+                        inValid <= '0';
+                        s_curr <= rst;
                     end if;
                 
+                when bars64_addrLoop =>
+                    if( waitCycle = "10" ) then
+                        addr <= std_logic_vector(unsigned(addr) + 1 );
+                        waitCycle <= "01";
+                    elsif( waitCycle = "01" ) then
+                        addr <= std_logic_vector(unsigned(addr) + 1 );
+                        waitCycle <= "00";
+                    elsif( counter2 < X"0E" ) then
+                        avgIn(to_integer(unsigned(counter2))) <= FFT_data( 31 downto 16 );
+                        tmp(to_integer(unsigned(counter2))) <= FFT_data( 15 downto 0 );
+                        addr <= std_logic_vector(unsigned(addr) + 1);
+                        counter2 <= std_logic_vector( unsigned(counter2) + 1 );
+                    elsif( counter2 = X"0E" or counter2 = X"0F" ) then
+                        FFT_rden <= '0';
+                        avgIn(to_integer(unsigned(counter2))) <= FFT_data( 31 downto 16 );
+                        tmp(to_integer(unsigned(counter2))) <= FFT_data( 15 downto 0 );
+                        counter2 <= std_logic_vector( unsigned(counter2) + 1 );
+                    else
+                        s_curr <= bars64_avg;
+                    end if;
+                
+                when bars64_avg =>
+                    imagVal <= average;
+                    avgIn <= tmp;
+                    s_curr <= bars64_mag;
+                    
+                when bars64_mag =>
+                    realVal <= average;
+                    inValid <= '1';
+                    barNumIn <= counter(5 downto 0);
+                    counter <= std_logic_vector( unsigned( counter ) + 1 );
+                    s_curr <= bars64_barLoop;
+                    
                 when bars32 =>
+                    counter <= X"00";
+                    addr <= "0000000000";
+                    inValid <= '0';
+                    s_curr <= bars32_barLoop;
+                
+                when bars32_barLoop =>
+                    if( counter /= X"20" ) then
+                        counter2 <= X"00";
+                        FFT_rden <= '1';
+                        inValid <= '0';
+                        waitCycle <= "10";
+                        s_curr <= bars32_addrLoop;
+                    else
+                        inValid <= '0';
+                        s_curr <= rst;
+                    end if;
+                
+                when bars32_addrLoop =>
+                    if( waitCycle = "10" ) then
+                        addr <= std_logic_vector(unsigned(addr) + 1 );
+                        waitCycle <= "01";
+                    elsif( waitCycle = "01" ) then
+                        addr <= std_logic_vector(unsigned(addr) + 1 );
+                        waitCycle <= "00";
+                    elsif( counter2 < X"1E" ) then
+                        avgIn(to_integer(unsigned(counter2))) <= FFT_data( 31 downto 16 );
+                        tmp(to_integer(unsigned(counter2))) <= FFT_data( 15 downto 0 );
+                        addr <= std_logic_vector(unsigned(addr) + 1);
+                        counter2 <= std_logic_vector( unsigned(counter2) + 1 );
+                    elsif( counter2 = X"1E" or counter2 = X"1F" ) then
+                        FFT_rden <= '0';
+                        avgIn(to_integer(unsigned(counter2))) <= FFT_data( 31 downto 16 );
+                        tmp(to_integer(unsigned(counter2))) <= FFT_data( 15 downto 0 );
+                        counter2 <= std_logic_vector( unsigned(counter2) + 1 );
+                    else
+                        s_curr <= bars32_avg;
+                    end if;
+                
+                when bars32_avg =>
+                    imagVal <= average;
+                    avgIn <= tmp;
+                    s_curr <= bars32_mag;
+                
+                when bars32_mag =>
+                    realVal <= average;
+                    inValid <= '1';
+                    barNumIn <= counter(5 downto 0);
+                    counter <= std_logic_vector( unsigned( counter ) + 1 );
+                    s_curr <= bars32_barLoop;
                 
                 when bars16 =>
+                    counter <= X"00";
+                    addr <= "0000000000";
+                    inValid <= '0';
+                    s_curr <= bars16_barLoop;
                     
---                when bars512 =>
---                    counter := 0;
---                    addr  <= "00000000000";
---                    addr1 <= "00000000000";
---                    addr2 <= "00000000010";
---                    FFT_rden <= '1';
---                    s_curr <= bars512a;
+                when bars16_barLoop =>
+                    if( counter /= X"10" ) then
+                        counter2 <= X"00";
+                        FFT_rden <= '1';
+                        inValid <= '0';
+                        waitCycle <= "10";
+                        s_curr <= bars16_addrLoop;
+                    else
+                        inValid <= '0';
+                        s_curr <= rst;
+                    end if;
                     
---                when bars512a =>
---                    if( counter = 0 ) then
--- --                        avgIn0 <= FFT_data;
---                        addr <= addr2;
---                        addr1 <= std_logic_vector(unsigned(addr1) + 1);
---                        counter := counter + 1;
---                    elsif( counter = 1 ) then
---                        avgIn0 <= FFT_data;
--- --                        avgIn1 <= FFT_data;
---                        addr2 <= std_logic_vector(unsigned(addr2) + 1);
-----                        FFT_rden <= '0';
---                        counter := counter + 1;
-----                        s_curr <= bars512b;
---                    elsif( counter = 2 ) then
---                        avgIn1 <= FFT_data;
---                        counter := counter + 1;
---                        FFT_rden <= '0';
---                        delay := 0;
---                        s_curr <= bars512b;                        
---                    elsif( counter = 3 ) then
-----                        avgIn0 <= FFT_data;
---                        addr <= addr2;
---                        addr1 <= std_logic_vector(unsigned(addr1) + 1);
---                        counter := counter + 1;
---                    elsif( counter = 4 ) then
-----                        avgIn1 <= FFT_data;
---                        avgIn0 <= FFT_data;
---                        addr2 <= std_logic_vector(unsigned(addr2) + 1);
-----                        FFT_rden <= '0';
---                        counter := counter + 1;
-----                        delay := 0;
-----                        s_curr <= bars512b;
---                    elsif( counter = 5 ) then
---                        avgIn1 <= FFT_data;
---                        counter := counter + 1;
---                        FFT_rden <= '0';
---                        delay := 0;
---                        s_curr <= bars512b;
---                    else
---                        s_curr <= rst;
---                    end if;
+                when bars16_addrLoop =>
+                    if( waitCycle = "10" ) then
+                        addr <= std_logic_vector(unsigned(addr) + 1 );
+                        waitCycle <= "01";
+                    elsif( waitCycle = "01" ) then
+                        addr <= std_logic_vector(unsigned(addr) + 1 );
+                        waitCycle <= "00";
+                    elsif( counter2 < X"3E" ) then
+                        avgIn(to_integer(unsigned(counter2))) <= FFT_data( 31 downto 16 );
+                        tmp(to_integer(unsigned(counter2))) <= FFT_data( 15 downto 0 );
+                        addr <= std_logic_vector(unsigned(addr) + 1);
+                        counter2 <= std_logic_vector( unsigned(counter2) + 1 );
+                    elsif( counter2 = X"3E" or counter2 = X"3F" ) then
+                        FFT_rden <= '0';
+                        avgIn(to_integer(unsigned(counter2))) <= FFT_data( 31 downto 16 );
+                        tmp(to_integer(unsigned(counter2))) <= FFT_data( 15 downto 0 );
+                        counter2 <= std_logic_vector( unsigned(counter2) + 1 );
+                    else
+                        s_curr <= bars16_avg;
+                    end if;
                     
---                when bars512b =>
---                    if( counter = 3 ) then
---                        if( delay = 0 ) then
---                            delay := delay + 1;
---                        else
---                            realVal <= average;
---                            addr <= addr1;
---                            FFT_rden <= '1';
---                            s_curr <= bars512a;
---                        end if;
---                    elsif( counter = 6 ) then
---                        if( delay = 0 ) then
---                            delay := delay + 1;
---                        else
---                            imagVal <= average;
---                            inValid <= '1';
---                            addr <= addr1;
---                            delay := 0;
---                            s_curr <= bars512c;
---                        end if;
---                    else
---                        s_curr <= rst;
---                    end if;
+                when bars16_avg =>
+                    imagVal <= average;
+                    avgIn <= tmp;
+                    s_curr <= bars16_mag;
                     
---                when bars512c =>
---                    inValid <= '0';
---                    if( delay = 11 ) then
---                        barMag <= mag(16 downto 9);
---                    else
---                        delay := delay + 1;
---                    end if;
---                when bars256 =>
+                when bars16_mag =>
+                    realVal <= average;
+                    inValid <= '1';
+                    barNumIn <= counter(5 downto 0);
+                    counter <= std_logic_vector( unsigned( counter ) + 1 );
+                    s_curr <= bars16_barLoop;
                 
---                when bars128 =>
-
             end case;
+        end if;
+    end process;
+    
+    heightCalc : process ( clk )
+    begin
+        if( rising_edge( clk ) ) then
+            if( magValid = '1' ) then
+                barHeights(to_integer(unsigned(barNumOut))) <= mag(16 downto 9);
+            end if;
         end if;
     end process;
 
