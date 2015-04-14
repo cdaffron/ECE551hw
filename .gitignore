@@ -129,3 +129,4 @@ Temporary Items
 !*.elf
 !*.bmm
 !*.xmp
+!*.cpp
