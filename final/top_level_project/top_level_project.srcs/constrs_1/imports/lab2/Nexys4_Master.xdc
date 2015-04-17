@@ -7,7 +7,7 @@
 #Bank = 35, Pin name = IO_L12P_T1_MRCC_35,					Sch name = CLK100MHZ
 set_property PACKAGE_PIN E3 [get_ports clk]
 set_property IOSTANDARD LVCMOS33 [get_ports clk]
-create_clock -period 10.00000000000000000 -name sys_clk_pin -waveform {0.00000000000000000 5.00000000000000000} -add [get_ports clk]
+create_clock -period 10.000 -name sys_clk_pin -waveform {0.000 5.000} -add [get_ports clk]
 
 ## Switches
 #Bank = 34, Pin name = IO_L21P_T3_DQS_34,					Sch name = SW0
@@ -798,25 +798,18 @@ set_property IOSTANDARD LVCMOS33 [get_ports rc]
 #set_property PACKAGE_PIN E18 [get_ports {JA[7]}]
 #set_property IOSTANDARD LVCMOS33 [get_ports {JA[7]}]
 
+
 set_property MARK_DEBUG true [get_nets fft/event_tlast_missing]
-set_property MARK_DEBUG true [get_nets fft/event_tlast_unexpected]
 set_property MARK_DEBUG true [get_nets fft/event_frame_started]
+set_property MARK_DEBUG true [get_nets fft/event_tlast_unexpected]
 set_property MARK_DEBUG true [get_nets fft/m_axis_data_tlast]
 set_property MARK_DEBUG true [get_nets {fft_fsm/state[4]}]
 set_property MARK_DEBUG true [get_nets {fft_fsm/state[3]}]
 set_property MARK_DEBUG true [get_nets {fft_fsm/state[2]}]
 set_property MARK_DEBUG true [get_nets {fft_fsm/state[1]}]
 set_property MARK_DEBUG true [get_nets {fft_fsm/state[0]}]
-set_property MARK_DEBUG true [get_nets disp_draw_inst/FFT_done]
-set_property MARK_DEBUG true [get_nets disp_draw_inst/clk]
-set_property MARK_DEBUG false [get_nets {disp_draw_inst/barHeightsWrk_reg[0]_63[0]}]
-set_property MARK_DEBUG false [get_nets {disp_draw_inst/barHeightsWrk_reg[0]_63[7]}]
-set_property MARK_DEBUG false [get_nets {disp_draw_inst/barHeightsWrk_reg[0]_63[5]}]
-set_property MARK_DEBUG false [get_nets {disp_draw_inst/barHeightsWrk_reg[0]_63[4]}]
-set_property MARK_DEBUG false [get_nets {disp_draw_inst/barHeightsWrk_reg[0]_63[3]}]
-set_property MARK_DEBUG false [get_nets {disp_draw_inst/barHeightsWrk_reg[0]_63[1]}]
-set_property MARK_DEBUG false [get_nets {disp_draw_inst/barHeightsWrk_reg[0]_63[6]}]
-set_property MARK_DEBUG false [get_nets {disp_draw_inst/barHeightsWrk_reg[0]_63[2]}]
+set_property MARK_DEBUG true [get_nets fft_fsm/FFT_done]
+set_property MARK_DEBUG true [get_nets fft_fsm/VGA_trig]
 set_property MARK_DEBUG true [get_nets {barHeights[0][0]}]
 set_property MARK_DEBUG true [get_nets {barHeights[0][1]}]
 set_property MARK_DEBUG true [get_nets {barHeights[0][2]}]
@@ -825,7 +818,6 @@ set_property MARK_DEBUG true [get_nets {barHeights[0][4]}]
 set_property MARK_DEBUG true [get_nets {barHeights[0][5]}]
 set_property MARK_DEBUG true [get_nets {barHeights[0][6]}]
 set_property MARK_DEBUG true [get_nets {barHeights[0][7]}]
-set_property MARK_DEBUG true [get_nets fft_fsm/delay_trig]
 create_debug_core u_ila_0 ila
 set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0]
 set_property ALL_PROBE_SAME_MU_CNT 1 [get_debug_cores u_ila_0]
@@ -844,31 +836,28 @@ set_property port_width 8 [get_debug_ports u_ila_0/probe1]
 connect_debug_port u_ila_0/probe1 [get_nets [list {barHeights[0][0]} {barHeights[0][1]} {barHeights[0][2]} {barHeights[0][3]} {barHeights[0][4]} {barHeights[0][5]} {barHeights[0][6]} {barHeights[0][7]}]]
 create_debug_port u_ila_0 probe
 set_property port_width 1 [get_debug_ports u_ila_0/probe2]
-connect_debug_port u_ila_0/probe2 [get_nets [list disp_draw_inst/clk]]
+connect_debug_port u_ila_0/probe2 [get_nets [list fft/event_frame_started]]
 create_debug_port u_ila_0 probe
 set_property port_width 1 [get_debug_ports u_ila_0/probe3]
-connect_debug_port u_ila_0/probe3 [get_nets [list fft_fsm/delay_trig]]
+connect_debug_port u_ila_0/probe3 [get_nets [list fft/event_tlast_missing]]
 create_debug_port u_ila_0 probe
 set_property port_width 1 [get_debug_ports u_ila_0/probe4]
-connect_debug_port u_ila_0/probe4 [get_nets [list fft/event_frame_started]]
+connect_debug_port u_ila_0/probe4 [get_nets [list fft/event_tlast_unexpected]]
 create_debug_port u_ila_0 probe
 set_property port_width 1 [get_debug_ports u_ila_0/probe5]
-connect_debug_port u_ila_0/probe5 [get_nets [list fft/event_tlast_missing]]
+connect_debug_port u_ila_0/probe5 [get_nets [list fft_fsm/FFT_done]]
 create_debug_port u_ila_0 probe
 set_property port_width 1 [get_debug_ports u_ila_0/probe6]
-connect_debug_port u_ila_0/probe6 [get_nets [list fft/event_tlast_unexpected]]
+connect_debug_port u_ila_0/probe6 [get_nets [list fft/m_axis_data_tlast]]
 create_debug_port u_ila_0 probe
 set_property port_width 1 [get_debug_ports u_ila_0/probe7]
-connect_debug_port u_ila_0/probe7 [get_nets [list disp_draw_inst/FFT_done]]
+connect_debug_port u_ila_0/probe7 [get_nets [list reset]]
 create_debug_port u_ila_0 probe
 set_property port_width 1 [get_debug_ports u_ila_0/probe8]
-connect_debug_port u_ila_0/probe8 [get_nets [list fft/m_axis_data_tlast]]
+connect_debug_port u_ila_0/probe8 [get_nets [list trigger]]
 create_debug_port u_ila_0 probe
 set_property port_width 1 [get_debug_ports u_ila_0/probe9]
-connect_debug_port u_ila_0/probe9 [get_nets [list reset]]
-create_debug_port u_ila_0 probe
-set_property port_width 1 [get_debug_ports u_ila_0/probe10]
-connect_debug_port u_ila_0/probe10 [get_nets [list trigger]]
+connect_debug_port u_ila_0/probe9 [get_nets [list fft_fsm/VGA_trig]]
 set_property C_CLK_INPUT_FREQ_HZ 300000000 [get_debug_cores dbg_hub]
 set_property C_ENABLE_CLK_DIVIDER false [get_debug_cores dbg_hub]
 set_property C_USER_SCAN_CHAIN 1 [get_debug_cores dbg_hub]
