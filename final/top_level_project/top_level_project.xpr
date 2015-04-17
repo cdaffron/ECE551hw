@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright (c) 2001-2013 Xilinx Inc, All rights reserved -->
 
-<Project Version="7" Minor="1" Path="C:/Users/cdaffron/Documents/ECE 551/final/top_level_project/top_level_project.xpr">
+<Project Version="7" Minor="1" Path="/data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="821abdbebbe14a53b6173e8f3784dfea"/>
