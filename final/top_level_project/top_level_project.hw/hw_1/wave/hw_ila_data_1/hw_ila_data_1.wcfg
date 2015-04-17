@@ -1,0 +1,71 @@
+<?xml version="1.0"?>
+<wave_config>
+	<wave_state>
+	</wave_state>
+	<db_ref_list>
+		<db_ref path="C:/Users/cdaffron/Documents/ECE 551/final/top_level_project/top_level_project.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wdb" id="1" type="auto">
+			<top_modules>
+				<top_module name="top">
+				</top_module>
+			</top_modules>
+		</db_ref>
+	</db_ref_list>
+	<WVObjectSize size="11">
+	</WVObjectSize>
+	<wvobject fp_name="fft_fsm/state" type="array" db_ref_id="1">
+		<obj_property name="ElementShortName">fft_fsm/state[4:0]</obj_property>
+		<obj_property name="ObjectShortName">fft_fsm/state[4:0]</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="barHeights[0]" type="array" db_ref_id="1">
+		<obj_property name="ElementShortName">barHeights[0][7:0]</obj_property>
+		<obj_property name="ObjectShortName">barHeights[0][7:0]</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="disp_draw_inst/clk" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">disp_draw_inst/clk</obj_property>
+		<obj_property name="ObjectShortName">disp_draw_inst/clk</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="fft_fsm/delay_trig" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">fft_fsm/delay_trig</obj_property>
+		<obj_property name="ObjectShortName">fft_fsm/delay_trig</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="fft/event_frame_started" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">fft/event_frame_started</obj_property>
+		<obj_property name="ObjectShortName">fft/event_frame_started</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="fft/event_tlast_missing" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">fft/event_tlast_missing</obj_property>
+		<obj_property name="ObjectShortName">fft/event_tlast_missing</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="fft/event_tlast_unexpected" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">fft/event_tlast_unexpected</obj_property>
+		<obj_property name="ObjectShortName">fft/event_tlast_unexpected</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="disp_draw_inst/FFT_done" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">disp_draw_inst/FFT_done</obj_property>
+		<obj_property name="ObjectShortName">disp_draw_inst/FFT_done</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="fft/m_axis_data_tlast" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">fft/m_axis_data_tlast</obj_property>
+		<obj_property name="ObjectShortName">fft/m_axis_data_tlast</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="reset_1" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">reset_1</obj_property>
+		<obj_property name="ObjectShortName">reset_1</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="trigger_1" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">trigger_1</obj_property>
+		<obj_property name="ObjectShortName">trigger_1</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+</wave_config>
+

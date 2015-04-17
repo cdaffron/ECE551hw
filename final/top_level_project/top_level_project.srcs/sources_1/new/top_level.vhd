@@ -217,15 +217,25 @@ begin
     
     process( trigger(0), clk )
     begin
-        if( rising_edge(trigger(0)) ) then
-            VGA_trig <= '1';
-            delay_trig <= '1';
-        end if;
-        
-        if( delay_trig = '1' ) then
-            VGA_trig <= '0';
+        if( delay_trig = '0' ) then
+            if( rising_edge(trigger(0))) then
+                delay_trig <= '1';
+                VGA_trig <= '1';
+            end if;
+        else
             delay_trig <= '0';
+            VGA_trig <= '0';
         end if;
+    
+--        if( rising_edge(trigger(0)) ) then
+--            VGA_trig <= '1';
+--            delay_trig <= '1';
+--        end if;
+        
+--        if( delay_trig = '1' ) then
+--            VGA_trig <= '0';
+--            delay_trig <= '0';
+--        end if;
         
     end process;
 
