@@ -100,14 +100,14 @@
         <Option Id="PROBE_PORT_BIT_COUNT" value="8"/>
       </probeOptions>
       <nets>
-        <net name="barHeights[16][7]"/>
-        <net name="barHeights[16][6]"/>
-        <net name="barHeights[16][5]"/>
-        <net name="barHeights[16][4]"/>
-        <net name="barHeights[16][3]"/>
-        <net name="barHeights[16][2]"/>
-        <net name="barHeights[16][1]"/>
-        <net name="barHeights[16][0]"/>
+        <net name="barHeights[7][7]"/>
+        <net name="barHeights[7][6]"/>
+        <net name="barHeights[7][5]"/>
+        <net name="barHeights[7][4]"/>
+        <net name="barHeights[7][3]"/>
+        <net name="barHeights[7][2]"/>
+        <net name="barHeights[7][1]"/>
+        <net name="barHeights[7][0]"/>
       </nets>
     </probe>
     <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
@@ -120,14 +120,14 @@
         <Option Id="PROBE_PORT_BIT_COUNT" value="8"/>
       </probeOptions>
       <nets>
-        <net name="barHeights[15][7]"/>
-        <net name="barHeights[15][6]"/>
-        <net name="barHeights[15][5]"/>
-        <net name="barHeights[15][4]"/>
-        <net name="barHeights[15][3]"/>
-        <net name="barHeights[15][2]"/>
-        <net name="barHeights[15][1]"/>
-        <net name="barHeights[15][0]"/>
+        <net name="barHeights[8][7]"/>
+        <net name="barHeights[8][6]"/>
+        <net name="barHeights[8][5]"/>
+        <net name="barHeights[8][4]"/>
+        <net name="barHeights[8][3]"/>
+        <net name="barHeights[8][2]"/>
+        <net name="barHeights[8][1]"/>
+        <net name="barHeights[8][0]"/>
       </nets>
     </probe>
     <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
@@ -140,14 +140,14 @@
         <Option Id="PROBE_PORT_BIT_COUNT" value="8"/>
       </probeOptions>
       <nets>
-        <net name="barHeights[17][7]"/>
-        <net name="barHeights[17][6]"/>
-        <net name="barHeights[17][5]"/>
-        <net name="barHeights[17][4]"/>
-        <net name="barHeights[17][3]"/>
-        <net name="barHeights[17][2]"/>
-        <net name="barHeights[17][1]"/>
-        <net name="barHeights[17][0]"/>
+        <net name="barHeights[9][7]"/>
+        <net name="barHeights[9][6]"/>
+        <net name="barHeights[9][5]"/>
+        <net name="barHeights[9][4]"/>
+        <net name="barHeights[9][3]"/>
+        <net name="barHeights[9][2]"/>
+        <net name="barHeights[9][1]"/>
+        <net name="barHeights[9][0]"/>
       </nets>
     </probe>
     <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
@@ -212,7 +212,7 @@
         <Option Id="PROBE_PORT_BIT_COUNT" value="1"/>
       </probeOptions>
       <nets>
-        <net name="fft/m_axis_data_tlast"/>
+        <net name="fft_rst"/>
       </nets>
     </probe>
     <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
@@ -225,7 +225,7 @@
         <Option Id="PROBE_PORT_BIT_COUNT" value="1"/>
       </probeOptions>
       <nets>
-        <net name="reset_1"/>
+        <net name="fft/m_axis_data_tlast"/>
       </nets>
     </probe>
     <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
@@ -238,7 +238,7 @@
         <Option Id="PROBE_PORT_BIT_COUNT" value="1"/>
       </probeOptions>
       <nets>
-        <net name="fft/s_axis_data_tlast"/>
+        <net name="reset_1"/>
       </nets>
     </probe>
     <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
@@ -251,7 +251,7 @@
         <Option Id="PROBE_PORT_BIT_COUNT" value="1"/>
       </probeOptions>
       <nets>
-        <net name="trigger_1"/>
+        <net name="fft/s_axis_data_tlast"/>
       </nets>
     </probe>
     <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
@@ -264,7 +264,7 @@
         <Option Id="PROBE_PORT_BIT_COUNT" value="1"/>
       </probeOptions>
       <nets>
-        <net name="VGA_trig"/>
+        <net name="trigger_1"/>
       </nets>
     </probe>
     <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
@@ -273,6 +273,19 @@
         <Option Id="CORE_LOCATION" value="1:1"/>
         <Option Id="HW_ILA" value="u_ila_0"/>
         <Option Id="PROBE_PORT" value="14"/>
+        <Option Id="PROBE_PORT_BITS" value="0"/>
+        <Option Id="PROBE_PORT_BIT_COUNT" value="1"/>
+      </probeOptions>
+      <nets>
+        <net name="VGA_trig"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
+        <Option Id="CORE_LOCATION" value="1:1"/>
+        <Option Id="HW_ILA" value="u_ila_0"/>
+        <Option Id="PROBE_PORT" value="15"/>
         <Option Id="PROBE_PORT_BITS" value="0"/>
         <Option Id="PROBE_PORT_BIT_COUNT" value="1"/>
       </probeOptions>
