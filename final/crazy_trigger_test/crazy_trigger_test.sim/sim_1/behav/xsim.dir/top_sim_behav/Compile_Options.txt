@@ -1,0 +1,1 @@
+--debug "typical" --relax -L "xil_defaultlib" -L "secureip" --snapshot "top_sim_behav" --prj "C:/Users/cdaffron/Documents/ECE 551/final/crazy_trigger_test/crazy_trigger_test.sim/sim_1/behav/top_sim.prj" "xil_defaultlib.top_sim" 

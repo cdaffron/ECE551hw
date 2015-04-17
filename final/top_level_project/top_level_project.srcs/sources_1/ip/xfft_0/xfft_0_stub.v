@@ -1,10 +1,10 @@
 // Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
-// Tool Version: Vivado v.2014.2 (lin64) Build 932637 Wed Jun 11 13:08:52 MDT 2014
-// Date        : Fri Apr 17 14:07:58 2015
-// Host        : com1548.eecs.utk.edu running 64-bit Red Hat Enterprise Linux Server release 6.5 (Santiago)
-// Command     : write_verilog -force -mode synth_stub
-//               /data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.srcs/sources_1/ip/xfft_0/xfft_0_stub.v
+// Tool Version: Vivado v.2014.2 (win64) Build 932637 Wed Jun 11 13:33:10 MDT 2014
+// Date        : Fri Apr 17 15:41:40 2015
+// Host        : COM1599 running 64-bit Service Pack 1  (build 7601)
+// Command     : write_verilog -force -mode synth_stub {C:/Users/cdaffron/Documents/ECE
+//               551/final/top_level_project/top_level_project.srcs/sources_1/ip/xfft_0/xfft_0_stub.v}
 // Design      : xfft_0
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xc7a100tcsg324-1

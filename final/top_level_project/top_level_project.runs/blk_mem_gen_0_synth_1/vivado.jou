@@ -1,10 +1,10 @@
 #-----------------------------------------------------------
 # Vivado v2014.2 (64-bit)
-# SW Build 932637 on Wed Jun 11 13:08:52 MDT 2014
+# SW Build 932637 on Wed Jun 11 13:33:10 MDT 2014
 # IP Build 924643 on Fri May 30 09:20:16 MDT 2014
-# Start of session at: Fri Apr 17 13:34:20 2015
-# Process ID: 4650
-# Log file: /data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.runs/blk_mem_gen_0_synth_1/blk_mem_gen_0.vds
-# Journal file: /data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.runs/blk_mem_gen_0_synth_1/vivado.jou
+# Start of session at: Fri Apr 17 15:35:06 2015
+# Process ID: 7472
+# Log file: C:/Users/cdaffron/Documents/ECE 551/final/top_level_project/top_level_project.runs/blk_mem_gen_0_synth_1/blk_mem_gen_0.vds
+# Journal file: C:/Users/cdaffron/Documents/ECE 551/final/top_level_project/top_level_project.runs/blk_mem_gen_0_synth_1\vivado.jou
 #-----------------------------------------------------------
 source blk_mem_gen_0.tcl

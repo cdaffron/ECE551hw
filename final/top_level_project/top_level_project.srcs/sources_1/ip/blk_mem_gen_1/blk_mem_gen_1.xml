@@ -732,33 +732,6 @@
   <spirit:model>
     <spirit:views>
       <spirit:view>
-        <spirit:name>xilinx_vhdlinstantiationtemplate</spirit:name>
-        <spirit:displayName>VHDL Instantiation Template</spirit:displayName>
-        <spirit:envIdentifier>vhdlSource:vivado.xilinx.com:synthesis.template</spirit:envIdentifier>
-        <spirit:language>vhdl</spirit:language>
-        <spirit:fileSetRef>
-          <spirit:localName>xilinx_vhdlinstantiationtemplate_view_fileset</spirit:localName>
-        </spirit:fileSetRef>
-        <spirit:parameters>
-          <spirit:parameter>
-            <spirit:name>customizationCRC</spirit:name>
-            <spirit:value>0fce48cb</spirit:value>
-          </spirit:parameter>
-          <spirit:parameter>
-            <spirit:name>customizationCRCversion</spirit:name>
-            <spirit:value>4</spirit:value>
-          </spirit:parameter>
-          <spirit:parameter>
-            <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Fri Apr 17 17:35:45 UTC 2015</spirit:value>
-          </spirit:parameter>
-          <spirit:parameter>
-            <spirit:name>StaleAtRelink</spirit:name>
-            <spirit:value>false</spirit:value>
-          </spirit:parameter>
-        </spirit:parameters>
-      </spirit:view>
-      <spirit:view>
         <spirit:name>xilinx_vhdlsynthesis</spirit:name>
         <spirit:displayName>VHDL Synthesis</spirit:displayName>
         <spirit:envIdentifier>vhdlSource:vivado.xilinx.com:synthesis</spirit:envIdentifier>
@@ -867,11 +840,11 @@
         </spirit:parameters>
       </spirit:view>
       <spirit:view>
-        <spirit:name>xilinx_miscfiles</spirit:name>
-        <spirit:displayName>Miscellaneous</spirit:displayName>
-        <spirit:envIdentifier>:vivado.xilinx.com:misc.files</spirit:envIdentifier>
+        <spirit:name>xilinx_versioninformation</spirit:name>
+        <spirit:displayName>Version Information</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:docs.versioninfo</spirit:envIdentifier>
         <spirit:fileSetRef>
-          <spirit:localName>xilinx_miscfiles_view_fileset</spirit:localName>
+          <spirit:localName>xilinx_versioninformation_view_fileset</spirit:localName>
         </spirit:fileSetRef>
         <spirit:parameters>
           <spirit:parameter>
@@ -893,11 +866,12 @@
         </spirit:parameters>
       </spirit:view>
       <spirit:view>
-        <spirit:name>xilinx_versioninformation</spirit:name>
-        <spirit:displayName>Version Information</spirit:displayName>
-        <spirit:envIdentifier>:vivado.xilinx.com:docs.versioninfo</spirit:envIdentifier>
+        <spirit:name>xilinx_vhdlinstantiationtemplate</spirit:name>
+        <spirit:displayName>VHDL Instantiation Template</spirit:displayName>
+        <spirit:envIdentifier>vhdlSource:vivado.xilinx.com:synthesis.template</spirit:envIdentifier>
+        <spirit:language>vhdl</spirit:language>
         <spirit:fileSetRef>
-          <spirit:localName>xilinx_versioninformation_view_fileset</spirit:localName>
+          <spirit:localName>xilinx_vhdlinstantiationtemplate_view_fileset</spirit:localName>
         </spirit:fileSetRef>
         <spirit:parameters>
           <spirit:parameter>
@@ -910,7 +884,33 @@
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Fri Apr 17 17:35:45 UTC 2015</spirit:value>
+            <spirit:value>Fri Apr 17 19:36:42 UTC 2015</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>StaleAtRelink</spirit:name>
+            <spirit:value>false</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_miscfiles</spirit:name>
+        <spirit:displayName>Miscellaneous</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:misc.files</spirit:envIdentifier>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_miscfiles_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>customizationCRC</spirit:name>
+            <spirit:value>0fce48cb</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>customizationCRCversion</spirit:name>
+            <spirit:value>4</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>GENtimestamp</spirit:name>
+            <spirit:value>Fri Apr 17 19:36:42 UTC 2015</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>StaleAtRelink</spirit:name>
@@ -2849,13 +2849,6 @@
   </spirit:choices>
   <spirit:fileSets>
     <spirit:fileSet>
-      <spirit:name>xilinx_vhdlinstantiationtemplate_view_fileset</spirit:name>
-      <spirit:file>
-        <spirit:name>blk_mem_gen_1.vho</spirit:name>
-        <spirit:userFileType>vhdlTemplate</spirit:userFileType>
-      </spirit:file>
-    </spirit:fileSet>
-    <spirit:fileSet>
       <spirit:name>xilinx_vhdlsynthesis_view_fileset</spirit:name>
       <spirit:file>
         <spirit:name>blk_mem_gen_1_ooc.xdc</spirit:name>
@@ -3005,17 +2998,24 @@
       </spirit:file>
     </spirit:fileSet>
     <spirit:fileSet>
-      <spirit:name>xilinx_miscfiles_view_fileset</spirit:name>
-      <spirit:file>
-        <spirit:name>summary.log</spirit:name>
-        <spirit:userFileType>log</spirit:userFileType>
-      </spirit:file>
-    </spirit:fileSet>
-    <spirit:fileSet>
       <spirit:name>xilinx_versioninformation_view_fileset</spirit:name>
       <spirit:file>
         <spirit:name>doc/blk_mem_gen_v8_2_changelog.txt</spirit:name>
         <spirit:userFileType>text</spirit:userFileType>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_vhdlinstantiationtemplate_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>blk_mem_gen_1.vho</spirit:name>
+        <spirit:userFileType>vhdlTemplate</spirit:userFileType>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_miscfiles_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>summary.log</spirit:name>
+        <spirit:userFileType>log</spirit:userFileType>
       </spirit:file>
     </spirit:fileSet>
     <spirit:fileSet>
