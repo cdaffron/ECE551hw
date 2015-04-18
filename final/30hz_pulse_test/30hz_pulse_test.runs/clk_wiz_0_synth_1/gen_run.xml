@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="clk_wiz_0_synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1429384939">
   <File Type="VDS-TIMING-PB" Name="clk_wiz_0_timing_summary_synth.pb"/>
+  <File Type="PA-TCL" Name="clk_wiz_0.tcl"/>
   <File Type="VDS-TIMINGSUMMARY" Name="clk_wiz_0_timing_summary_synth.rpt"/>
   <File Type="RDS-DCP" Name="clk_wiz_0.dcp"/>
   <File Type="RDS-UTIL-PB" Name="clk_wiz_0_utilization_synth.pb"/>
   <File Type="RDS-UTIL" Name="clk_wiz_0_utilization_synth.rpt"/>
   <File Type="RDS-RDS" Name="clk_wiz_0.vds"/>
-  <File Type="PA-TCL" Name="clk_wiz_0.tcl"/>
   <File Type="RUN-STRAT" Name="$PDATADIR/runs/clk_wiz_0_synth_1/clk_wiz_0_synth_1.psg"/>
   <File Type="VDS-HWDEF" Name="clk_wiz_0.hwdef"/>
   <File Type="RUN-SRCS" Name="$PDATADIR/runs/clk_wiz_0_synth_1/sources.xml"/>
@@ -40,9 +40,7 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2014">
-      <Desc>Vivado Synthesis Defaults</Desc>
-    </StratHandle>
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2014"/>
     <Step Id="synth_design"/>
   </Strategy>
 </GenRun>

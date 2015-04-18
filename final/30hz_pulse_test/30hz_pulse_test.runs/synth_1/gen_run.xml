@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1429385124">
   <File Type="VDS-TIMING-PB" Name="pulse_test_timing_summary_synth.pb"/>
+  <File Type="PA-TCL" Name="pulse_test.tcl"/>
   <File Type="VDS-TIMINGSUMMARY" Name="pulse_test_timing_summary_synth.rpt"/>
   <File Type="RDS-DCP" Name="pulse_test.dcp"/>
   <File Type="RDS-UTIL-PB" Name="pulse_test_utilization_synth.pb"/>
   <File Type="RDS-UTIL" Name="pulse_test_utilization_synth.rpt"/>
   <File Type="RDS-RDS" Name="pulse_test.vds"/>
-  <File Type="PA-TCL" Name="pulse_test.tcl"/>
   <File Type="RUN-STRAT" Name="$PDATADIR/runs/synth_1/synth_1.psg"/>
   <File Type="VDS-HWDEF" Name="pulse_test.hwdef"/>
   <File Type="RUN-SRCS" Name="$PDATADIR/runs/synth_1/sources.xml"/>

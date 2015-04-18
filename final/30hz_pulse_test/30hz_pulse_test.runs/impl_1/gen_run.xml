@@ -1,21 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1429385132">
+  <File Type="BITSTR-RBT" Name="pulse_test.rbt"/>
   <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="BITSTR-NKY" Name="pulse_test.nky"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="pulse_test_timing_summary_postroute_physopted.pb"/>
   <File Type="RDI-RDI" Name="pulse_test.vdi"/>
+  <File Type="BITSTR-SYSDEF" Name="pulse_test.sysdef"/>
   <File Type="BG-DRC" Name="pulse_test.drc"/>
   <File Type="BG-BGN" Name="pulse_test.bgn"/>
-  <File Type="BITSTR-SYSDEF" Name="pulse_test.sysdef"/>
   <File Type="BITSTR-MMI" Name="pulse_test.mmi"/>
   <File Type="BITSTR-BMM" Name="pulse_test_bd.bmm"/>
-  <File Type="BITSTR-NKY" Name="pulse_test.nky"/>
-  <File Type="BITSTR-RBT" Name="pulse_test.rbt"/>
   <File Type="BITSTR-MSK" Name="pulse_test.msk"/>
   <File Type="BG-BIN" Name="pulse_test.bin"/>
   <File Type="BG-BIT" Name="pulse_test.bit"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="pulse_test_timing_summary_postroute_physopted.pb"/>
   <File Type="POSTROUTE-PHYSOPT-TIMING" Name="pulse_test_timing_summary_postroute_physopted.rpt"/>
   <File Type="POSTROUTE-PHYSOPT-DCP" Name="pulse_test_postroute_physopt.dcp"/>
   <File Type="ROUTE-SIMILARITY" Name="pulse_test_incremental_reuse_routed.rpt"/>
+  <File Type="PA-TCL" Name="pulse_test.tcl"/>
   <File Type="ROUTE-TIMING-PB" Name="pulse_test_timing_summary_routed.pb"/>
   <File Type="ROUTE-TIMINGSUMMARY" Name="pulse_test_timing_summary_routed.rpt"/>
   <File Type="ROUTE-STATUS-PB" Name="pulse_test_route_status.pb"/>
@@ -40,7 +41,6 @@
   <File Type="PWROPT-DCP" Name="pulse_test_pwropt.dcp"/>
   <File Type="OPT-DRC" Name="pulse_test_drc_opted.rpt"/>
   <File Type="OPT-DCP" Name="pulse_test_opt.dcp"/>
-  <File Type="PA-TCL" Name="pulse_test.tcl"/>
   <File Type="RUN-STRAT" Name="$PDATADIR/runs/impl_1/impl_1.psg"/>
   <File Type="RUN-CONSTRS" Name="$PDATADIR/runs/impl_1/constrs_in.xml"/>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">

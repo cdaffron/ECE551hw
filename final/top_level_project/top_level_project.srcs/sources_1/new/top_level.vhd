@@ -85,7 +85,10 @@ architecture Behavioral of top_level is
     signal m_axis_data_tlast : STD_LOGIC := '0';
     signal s_axis_data_tdata : STD_LOGIC_VECTOR(31 DOWNTO 0) := X"00000000";
     signal m_axis_data_tdata : STD_LOGIC_VECTOR(31 DOWNTO 0) := (others => '0');
-    signal trigger : std_logic_vector(0 downto 0) := (others => '0');
+--    signal trigger : std_logic_vector(0 downto 0) := (others => '0');
+    signal trigger : std_logic := '0';
+    signal counterOut : std_logic_vector(17 downto 0) := (others => '0');
+    signal clk6MHz : std_logic := '0';
     signal debug_clk : std_logic := '0';
     signal delay_trig : std_logic := '0';
     signal trig_prev : std_logic := '0';
@@ -204,6 +207,7 @@ begin
       clk_in1 => clk,
       -- Clock out ports
       clk_out1 => debug_clk,
+      clk_out2 => clk6MHz,
       -- Status and control signals
       reset => '0',
       locked => open
@@ -213,35 +217,29 @@ begin
     PORT map (
         clk => debug_clk,
         probe_out0 => reset,
-        probe_out1 => trigger
+--        probe_out1 => trigger
+        probe_out1 => open
     );
     
---    process( trigger(0), clk )
---    begin
---        if( VGA_trig = '0' ) then
---            if( rising_edge(trigger(0))) then
---                VGA_trig <= '1';
---            end if;
---        else
---            VGA_trig <= '0';
---        end if;
+    pulse30Hz : entity work.c_counter_binary_0
+    Port Map (
+        CLK => clk6MHz,
+        Q => counterOut
+    );
     
-----        if( rising_edge(trigger(0)) ) then
-----            VGA_trig <= '1';
-----            delay_trig <= '1';
-----        end if;
-        
-----        if( delay_trig = '1' ) then
-----            VGA_trig <= '0';
-----            delay_trig <= '0';
-----        end if;
-        
---    end process;
+    process( counterOut )
+    begin
+        if( counterOut = "000000000000000000" ) then
+            trigger <= '1';
+        else
+            trigger <= '0';
+        end if;
+    end process;
     
     process( clk )
     begin
         if( rising_edge( clk ) ) then
-            if( trigger(0) = '1' and trig_prev = '0' ) then
+            if( trigger = '1' and trig_prev = '0' ) then
                 VGA_trig <= '1';
             else
                 VGA_trig <= '0';
@@ -252,7 +250,7 @@ begin
     process( clk )
     begin
         if( rising_edge(clk) ) then
-            trig_prev <= trigger(0);
+            trig_prev <= trigger;
         end if;
     end process;
 
