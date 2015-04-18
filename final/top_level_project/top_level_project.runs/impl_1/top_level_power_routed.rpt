@@ -1,7 +1,7 @@
 Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2014.2 (lin64) Build 932637 Wed Jun 11 13:08:52 MDT 2014
-| Date             : Sat Apr 18 18:39:00 2015
+| Date             : Sat Apr 18 19:17:28 2015
 | Host             : com1548.eecs.utk.edu running 64-bit Red Hat Enterprise Linux Server release 6.5 (Santiago)
 | Command          : report_power -file top_level_power_routed.rpt -pb top_level_power_summary_routed.pb
 | Design           : top_level
@@ -30,10 +30,9 @@ Table of Contents
 ----------
 
 +--------------------------+--------+
-| Total On-Chip Power (W)  | 0.301  |
-| Dynamic (W)              | 0.203  |
+| Total On-Chip Power (W)  | 0.302  |
+| Dynamic (W)              | 0.204  |
 | Device Static (W)        | 0.098  |
-| Total Off-Chip Power (W) | 0.000  |
 | Effective TJA (C/W)      | 4.6    |
 | Max Ambient (C)          | 83.6   |
 | Junction Temperature (C) | 26.4   |
@@ -50,22 +49,22 @@ Table of Contents
 +--------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
-| Clocks                   |     0.050 |        7 |       --- |             --- |
-| Slice Logic              |     0.015 |    18293 |       --- |             --- |
-|   LUT as Logic           |     0.013 |     4834 |     63400 |            7.62 |
-|   LUT as Shift Register  |    <0.001 |      646 |     19000 |            3.40 |
+| Clocks                   |     0.046 |        7 |       --- |             --- |
+| Slice Logic              |     0.016 |    18320 |       --- |             --- |
+|   LUT as Logic           |     0.014 |     4861 |     63400 |            7.66 |
 |   Register               |    <0.001 |     9441 |    126800 |            7.44 |
+|   LUT as Shift Register  |    <0.001 |      646 |     19000 |            3.40 |
 |   CARRY4                 |    <0.001 |      338 |     15850 |            2.13 |
 |   LUT as Distributed RAM |    <0.001 |       24 |     19000 |            0.12 |
 |   F7/F8 Muxes            |    <0.001 |      172 |     63400 |            0.27 |
 |   Others                 |     0.000 |      990 |       --- |             --- |
-| Signals                  |     0.015 |    14323 |       --- |             --- |
-| Block RAM                |     0.017 |       27 |       135 |           20.00 |
+| Signals                  |     0.018 |    14077 |       --- |             --- |
+| Block RAM                |     0.019 |       27 |       135 |           20.00 |
 | MMCM                     |     0.105 |        1 |         6 |           16.66 |
 | DSPs                     |    <0.001 |       17 |       240 |            7.08 |
 | I/O                      |    <0.001 |       35 |       210 |           16.66 |
 | Static Power             |     0.098 |          |           |                 |
-| Total                    |     0.301 |          |           |                 |
+| Total                    |     0.302 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -75,7 +74,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.112 |       0.096 |      0.016 |
+| Vccint    |       1.000 |     0.113 |       0.098 |      0.016 |
 | Vccaux    |       1.800 |     0.076 |       0.058 |      0.018 |
 | Vcco33    |       3.300 |     0.004 |       0.000 |      0.004 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -150,12 +149,12 @@ Table of Contents
 +--------------------------------------------------------------------------------------------+-----------+
 | Name                                                                                       | Power (W) |
 +--------------------------------------------------------------------------------------------+-----------+
-| top_level                                                                                  |     0.203 |
+| top_level                                                                                  |     0.204 |
 |   clk_debug                                                                                |     0.106 |
 |     U0                                                                                     |     0.106 |
 |   dbg_hub                                                                                  |     0.007 |
 |     inst                                                                                   |     0.007 |
-|       UUT_MASTER                                                                           |     0.006 |
+|       UUT_MASTER                                                                           |     0.007 |
 |         U_ICON_INTERFACE                                                                   |     0.004 |
 |           U_CMD1                                                                           |    <0.001 |
 |           U_CMD2                                                                           |    <0.001 |
@@ -226,8 +225,8 @@ Table of Contents
 |         U_STAT                                                                             |    <0.001 |
 |         U_SYNC                                                                             |    <0.001 |
 |       bscan_inst                                                                           |    <0.001 |
-|   disp_draw_inst                                                                           |     0.015 |
-|     avg_inst                                                                               |     0.006 |
+|   disp_draw_inst                                                                           |     0.013 |
+|     avg_inst                                                                               |     0.004 |
 |     mag_inst                                                                               |     0.000 |
 |       imagSquare                                                                           |     0.000 |
 |         U0                                                                                 |     0.000 |
@@ -246,7 +245,7 @@ Table of Contents
 |   fft                                                                                      |     0.015 |
 |     U0                                                                                     |     0.015 |
 |       i_synth                                                                              |     0.015 |
-|         axi_wrapper                                                                        |     0.001 |
+|         axi_wrapper                                                                        |    <0.001 |
 |           config_channel_fifo                                                              |    <0.001 |
 |             gen_non_real_time.data_in_fifo_pt1                                             |    <0.001 |
 |               fifo0                                                                        |    <0.001 |
@@ -271,7 +270,7 @@ Table of Contents
 |                     i_baseblox.i_baseblox_addsub                                           |     0.000 |
 |                       no_pipelining.the_addsub                                             |     0.000 |
 |                         i_lut6.i_lut6_addsub                                               |     0.000 |
-|                   threshold                                                                |    <0.001 |
+|                   threshold                                                                |     0.000 |
 |                 need_output_sclr.sclr_register                                             |    <0.001 |
 |                 need_we_process_sclr.delay_i_we                                            |    <0.001 |
 |                   no_sclr_lut.real_shift_ram.use_baseblock.not_use_hlutnm_srls.i_shift_ram |    <0.001 |
@@ -282,7 +281,7 @@ Table of Contents
 |                     i_baseblox.i_baseblox_addsub                                           |     0.000 |
 |                       no_pipelining.the_addsub                                             |     0.000 |
 |                         i_lut6.i_lut6_addsub                                               |     0.000 |
-|                   threshold                                                                |    <0.001 |
+|                   threshold                                                                |     0.000 |
 |                 processing_state                                                           |    <0.001 |
 |                 rank_0_cnt                                                                 |    <0.001 |
 |                   cnt_async                                                                |     0.000 |
@@ -294,13 +293,13 @@ Table of Contents
 |                     i_baseblox.i_baseblox_addsub                                           |     0.000 |
 |                       no_pipelining.the_addsub                                             |     0.000 |
 |                         i_lut6.i_lut6_addsub                                               |     0.000 |
-|                   threshold                                                                |    <0.001 |
+|                   threshold                                                                |     0.000 |
 |                 xn_index_counter                                                           |    <0.001 |
 |                   cnt_async                                                                |     0.000 |
 |                     i_baseblox.i_baseblox_addsub                                           |     0.000 |
 |                       no_pipelining.the_addsub                                             |     0.000 |
 |                         i_lut6.i_lut6_addsub                                               |     0.000 |
-|                   threshold                                                                |    <0.001 |
+|                   threshold                                                                |     0.000 |
 |               delay_line2_for_rfd                                                          |    <0.001 |
 |                 no_sclr_lut.real_shift_ram.use_baseblock.not_use_hlutnm_srls.i_shift_ram   |    <0.001 |
 |                   i_bb_inst                                                                |    <0.001 |
@@ -642,13 +641,13 @@ Table of Contents
 |                 scaler_gen.scaler_3r                                                       |    <0.001 |
 |                   scale_mux                                                                |    <0.001 |
 |   fft_fsm                                                                                  |    <0.001 |
-|   fft_ram                                                                                  |     0.002 |
-|     U0                                                                                     |     0.002 |
-|       inst_blk_mem_gen                                                                     |     0.002 |
-|         gnativebmg.native_blk_mem_gen                                                      |     0.002 |
-|           valid.cstr                                                                       |     0.002 |
-|             ramloop[0].ram.r                                                               |     0.002 |
-|               prim_noinit.ram                                                              |     0.002 |
+|   fft_ram                                                                                  |     0.007 |
+|     U0                                                                                     |     0.007 |
+|       inst_blk_mem_gen                                                                     |     0.007 |
+|         gnativebmg.native_blk_mem_gen                                                      |     0.007 |
+|           valid.cstr                                                                       |     0.007 |
+|             ramloop[0].ram.r                                                               |     0.007 |
+|               prim_noinit.ram                                                              |     0.007 |
 |   input_ram                                                                                |     0.004 |
 |     U0                                                                                     |     0.004 |
 |       inst_blk_mem_gen                                                                     |     0.004 |
@@ -666,9 +665,9 @@ Table of Contents
 |             no_pipelining.the_addsub                                                       |    <0.001 |
 |               i_lut6.i_lut6_addsub                                                         |    <0.001 |
 |                 i_q.i_simple.qreg                                                          |    <0.001 |
-|   u_ila_0                                                                                  |     0.051 |
-|     inst                                                                                   |     0.051 |
-|       ila_core_inst                                                                        |     0.051 |
+|   u_ila_0                                                                                  |     0.049 |
+|     inst                                                                                   |     0.049 |
+|       ila_core_inst                                                                        |     0.049 |
 |         ila_trace_memory_inst                                                              |     0.007 |
 |           SUBCORE_RAM_BLK_MEM_1.trace_block_memory                                         |     0.007 |
 |             inst_blk_mem_gen                                                               |     0.007 |
@@ -912,8 +911,8 @@ Table of Contents
 |           asyncrounous_transfer.halt_in_transfer_inst                                      |    <0.001 |
 |           asyncrounous_transfer.halt_out_transfer_inst                                     |    <0.001 |
 |           halt_detection_inst                                                              |    <0.001 |
-|         u_trig                                                                             |     0.010 |
-|           U_TM                                                                             |     0.010 |
+|         u_trig                                                                             |     0.009 |
+|           U_TM                                                                             |     0.009 |
 |             G_NMU[0].U_M                                                                   |    <0.001 |
 |               allx_typeA_match_detection.cs_allx_typeA_inst                                |    <0.001 |
 |                 DUT                                                                        |    <0.001 |
@@ -1057,8 +1056,8 @@ Table of Contents
 |                     u_srlB                                                                 |    <0.001 |
 |                     u_srlC                                                                 |    <0.001 |
 |                     u_srlD                                                                 |    <0.001 |
-|             G_NMU[1].U_M                                                                   |    <0.001 |
-|               allx_typeA_match_detection.cs_allx_typeA_inst                                |    <0.001 |
+|             G_NMU[1].U_M                                                                   |     0.001 |
+|               allx_typeA_match_detection.cs_allx_typeA_inst                                |     0.001 |
 |                 DUT                                                                        |    <0.001 |
 |                   I_WHOLE_SLICE.G_SLICE_IDX[0].U_ALL_SRL_SLICE                             |    <0.001 |
 |                     u_srlA                                                                 |    <0.001 |
