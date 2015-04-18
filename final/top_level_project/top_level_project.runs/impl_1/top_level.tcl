@@ -59,8 +59,6 @@ set rc [catch {
   set_property netlist_only true [get_files /data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.runs/blk_mem_gen_1_synth_1/blk_mem_gen_1.dcp]
   add_files -quiet /data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.runs/xfft_0_synth_1/xfft_0.dcp
   set_property netlist_only true [get_files /data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.runs/xfft_0_synth_1/xfft_0.dcp]
-  add_files -quiet /data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.runs/clk_wiz_0_synth_1/clk_wiz_0.dcp
-  set_property netlist_only true [get_files /data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.runs/clk_wiz_0_synth_1/clk_wiz_0.dcp]
   add_files -quiet /data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.runs/vio_0_synth_1/vio_0.dcp
   set_property netlist_only true [get_files /data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.runs/vio_0_synth_1/vio_0.dcp]
   add_files -quiet /data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.runs/mult_gen_0_synth_1/mult_gen_0.dcp
@@ -69,18 +67,16 @@ set rc [catch {
   set_property netlist_only true [get_files /data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.runs/c_addsub_0_synth_1/c_addsub_0.dcp]
   add_files -quiet /data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.runs/cordic_0_synth_1/cordic_0.dcp
   set_property netlist_only true [get_files /data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.runs/cordic_0_synth_1/cordic_0.dcp]
+  add_files -quiet /data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.runs/clk_wiz_0_synth_1/clk_wiz_0.dcp
+  set_property netlist_only true [get_files /data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.runs/clk_wiz_0_synth_1/clk_wiz_0.dcp]
+  add_files -quiet /data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.runs/c_counter_binary_0_synth_1/c_counter_binary_0.dcp
+  set_property netlist_only true [get_files /data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.runs/c_counter_binary_0_synth_1/c_counter_binary_0.dcp]
   read_xdc -mode out_of_context -ref blk_mem_gen_0 /data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_ooc.xdc
   set_property processing_order EARLY [get_files /data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_ooc.xdc]
   read_xdc -mode out_of_context -ref blk_mem_gen_1 -cells U0 /data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1_ooc.xdc
   set_property processing_order EARLY [get_files /data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1_ooc.xdc]
   read_xdc -mode out_of_context -ref xfft_0 -cells U0 /data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.srcs/sources_1/ip/xfft_0/xfft_0_ooc.xdc
   set_property processing_order EARLY [get_files /data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.srcs/sources_1/ip/xfft_0/xfft_0_ooc.xdc]
-  read_xdc -mode out_of_context -ref clk_wiz_0 -cells U0 /data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_ooc.xdc
-  set_property processing_order EARLY [get_files /data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_ooc.xdc]
-  read_xdc -ref clk_wiz_0 -cells U0 /data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc
-  set_property processing_order EARLY [get_files /data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc]
-  read_xdc -prop_thru_buffers -ref clk_wiz_0 -cells U0 /data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc
-  set_property processing_order EARLY [get_files /data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc]
   read_xdc -mode out_of_context -ref vio_0 -cells inst /data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.srcs/sources_1/ip/vio_0/vio_0_ooc.xdc
   set_property processing_order EARLY [get_files /data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.srcs/sources_1/ip/vio_0/vio_0_ooc.xdc]
   read_xdc -ref vio_0 -cells inst /data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.srcs/sources_1/ip/vio_0/vio_0.xdc
@@ -91,6 +87,14 @@ set rc [catch {
   set_property processing_order EARLY [get_files /data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.srcs/sources_1/ip/c_addsub_0/c_addsub_0_ooc.xdc]
   read_xdc -mode out_of_context -ref cordic_0 -cells U0 /data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.srcs/sources_1/ip/cordic_0/cordic_0_ooc.xdc
   set_property processing_order EARLY [get_files /data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.srcs/sources_1/ip/cordic_0/cordic_0_ooc.xdc]
+  read_xdc -mode out_of_context -ref clk_wiz_0 -cells U0 /data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_ooc.xdc
+  set_property processing_order EARLY [get_files /data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_ooc.xdc]
+  read_xdc -ref clk_wiz_0 -cells U0 /data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc
+  set_property processing_order EARLY [get_files /data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc]
+  read_xdc -prop_thru_buffers -ref clk_wiz_0 -cells U0 /data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc
+  set_property processing_order EARLY [get_files /data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc]
+  read_xdc -mode out_of_context -ref c_counter_binary_0 -cells U0 /data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.srcs/sources_1/ip/c_counter_binary_0/c_counter_binary_0_ooc.xdc
+  set_property processing_order EARLY [get_files /data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.srcs/sources_1/ip/c_counter_binary_0/c_counter_binary_0_ooc.xdc]
   read_xdc /data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.srcs/constrs_1/imports/lab2/Nexys4_Master.xdc
   link_design -top top_level -part xc7a100tcsg324-1
   close_msg_db -file init_design.pb

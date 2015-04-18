@@ -16,8 +16,6 @@ add_files -quiet /data1/cdaffron/git/ece551hw/final/top_level_project/top_level_
 set_property used_in_implementation false [get_files /data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.runs/blk_mem_gen_1_synth_1/blk_mem_gen_1.dcp]
 add_files -quiet /data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.runs/xfft_0_synth_1/xfft_0.dcp
 set_property used_in_implementation false [get_files /data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.runs/xfft_0_synth_1/xfft_0.dcp]
-add_files -quiet /data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.runs/clk_wiz_0_synth_1/clk_wiz_0.dcp
-set_property used_in_implementation false [get_files /data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.runs/clk_wiz_0_synth_1/clk_wiz_0.dcp]
 add_files -quiet /data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.runs/vio_0_synth_1/vio_0.dcp
 set_property used_in_implementation false [get_files /data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.runs/vio_0_synth_1/vio_0.dcp]
 add_files -quiet /data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.runs/mult_gen_0_synth_1/mult_gen_0.dcp
@@ -26,6 +24,10 @@ add_files -quiet /data1/cdaffron/git/ece551hw/final/top_level_project/top_level_
 set_property used_in_implementation false [get_files /data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.runs/c_addsub_0_synth_1/c_addsub_0.dcp]
 add_files -quiet /data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.runs/cordic_0_synth_1/cordic_0.dcp
 set_property used_in_implementation false [get_files /data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.runs/cordic_0_synth_1/cordic_0.dcp]
+add_files -quiet /data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.runs/clk_wiz_0_synth_1/clk_wiz_0.dcp
+set_property used_in_implementation false [get_files /data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.runs/clk_wiz_0_synth_1/clk_wiz_0.dcp]
+add_files -quiet /data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.runs/c_counter_binary_0_synth_1/c_counter_binary_0.dcp
+set_property used_in_implementation false [get_files /data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.runs/c_counter_binary_0_synth_1/c_counter_binary_0.dcp]
 read_vhdl -library xil_defaultlib {
   /data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.srcs/sources_1/imports/chris/magnitude/magnitude.srcs/sources_1/new/magnitude.vhd
   /data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.srcs/sources_1/imports/chris/disp_draw/disp_draw.srcs/sources_1/new/type_pkg.vhd

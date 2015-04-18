@@ -1,7 +1,7 @@
 Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2014.2 (lin64) Build 932637 Wed Jun 11 13:08:52 MDT 2014
-| Date             : Fri Apr 17 17:55:41 2015
+| Date             : Sat Apr 18 16:03:28 2015
 | Host             : com1548.eecs.utk.edu running 64-bit Red Hat Enterprise Linux Server release 6.5 (Santiago)
 | Command          : report_power -file top_level_power_routed.rpt -pb top_level_power_summary_routed.pb
 | Design           : top_level
@@ -30,12 +30,12 @@ Table of Contents
 ----------
 
 +--------------------------+--------+
-| Total On-Chip Power (W)  | 0.318  |
-| Dynamic (W)              | 0.220  |
+| Total On-Chip Power (W)  | 0.303  |
+| Dynamic (W)              | 0.204  |
 | Device Static (W)        | 0.099  |
 | Effective TJA (C/W)      | 4.6    |
-| Max Ambient (C)          | 83.5   |
-| Junction Temperature (C) | 26.5   |
+| Max Ambient (C)          | 83.6   |
+| Junction Temperature (C) | 26.4   |
 | Confidence Level         | Medium |
 | Setting File             | ---    |
 | Simulation Activity File | ---    |
@@ -49,23 +49,23 @@ Table of Contents
 +--------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
-| Clocks                   |     0.058 |        7 |       --- |             --- |
-| Slice Logic              |     0.019 |    17686 |       --- |             --- |
-|   LUT as Logic           |     0.017 |     5131 |     63400 |            8.09 |
-|   CARRY4                 |     0.001 |      378 |     15850 |            2.38 |
-|   Register               |    <0.001 |     8686 |    126800 |            6.85 |
-|   LUT as Shift Register  |    <0.001 |      477 |     19000 |            2.51 |
+| Clocks                   |     0.047 |        7 |       --- |             --- |
+| Slice Logic              |     0.017 |    17882 |       --- |             --- |
+|   LUT as Logic           |     0.015 |     5124 |     63400 |            8.08 |
+|   CARRY4                 |    <0.001 |      352 |     15850 |            2.22 |
+|   Register               |    <0.001 |     8835 |    126800 |            6.96 |
+|   LUT as Shift Register  |    <0.001 |      488 |     19000 |            2.56 |
 |   LUT as Distributed RAM |    <0.001 |       24 |     19000 |            0.12 |
-|   F7/F8 Muxes            |    <0.001 |      167 |     63400 |            0.26 |
-|   Others                 |     0.000 |     1190 |       --- |             --- |
-|   BUFG                   |     0.000 |        1 |        32 |            3.12 |
-| Signals                  |     0.020 |    13540 |       --- |             --- |
-| Block RAM                |     0.016 |       57 |       135 |           42.22 |
-| MMCM                     |     0.106 |        1 |         6 |           16.66 |
+|   F7/F8 Muxes            |    <0.001 |      229 |     63400 |            0.36 |
+|   BUFG                   |    <0.001 |        1 |        32 |            3.12 |
+|   Others                 |     0.000 |     1165 |       --- |             --- |
+| Signals                  |     0.017 |    13602 |       --- |             --- |
+| Block RAM                |     0.017 |     60.5 |       135 |           44.81 |
+| MMCM                     |     0.105 |        1 |         6 |           16.66 |
 | DSPs                     |    <0.001 |       20 |       240 |            8.33 |
 | I/O                      |    <0.001 |       35 |       210 |           16.66 |
 | Static Power             |     0.099 |          |           |                 |
-| Total                    |     0.318 |          |           |                 |
+| Total                    |     0.303 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -75,8 +75,8 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.128 |       0.112 |      0.016 |
-| Vccaux    |       1.800 |     0.077 |       0.059 |      0.018 |
+| Vccint    |       1.000 |     0.113 |       0.097 |      0.016 |
+| Vccaux    |       1.800 |     0.076 |       0.058 |      0.018 |
 | Vcco33    |       3.300 |     0.004 |       0.000 |      0.004 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |
@@ -133,8 +133,9 @@ Table of Contents
 +---------------------------------------------------------+---------------------------------+-----------------+
 | dbg_hub/inst/bscan_inst/SERIES7_BSCAN.bscan_inst/UPDATE | dbg_hub/inst/bscan_inst/UPDATE  |            60.0 |
 | dbg_hub/inst/bscan_inst/SERIES7_BSCAN.bscan_inst/DRCK   | dbg_hub/inst/bscan_inst/DRCK    |            30.0 |
-| sys_clk_pin                                             | xlnx_opt_                       |            10.0 |
+| sys_clk_pin                                             | xlnx_opt__1                     |            10.0 |
 | sys_clk_pin                                             | clk                             |            10.0 |
+| clk_out2_clk_wiz_0                                      | clk_debug/U0/clk_out2_clk_wiz_0 |           166.7 |
 | clk_out1_clk_wiz_0                                      | clk_debug/U0/clk_out1_clk_wiz_0 |             5.0 |
 | clkfbout_clk_wiz_0                                      | clk_debug/U0/clkfbout_clk_wiz_0 |            10.0 |
 +---------------------------------------------------------+---------------------------------+-----------------+
@@ -149,9 +150,9 @@ Table of Contents
 +--------------------------------------------------------------------------------------------+-----------+
 | Name                                                                                       | Power (W) |
 +--------------------------------------------------------------------------------------------+-----------+
-| top_level                                                                                  |     0.220 |
-|   clk_debug                                                                                |     0.107 |
-|     U0                                                                                     |     0.107 |
+| top_level                                                                                  |     0.204 |
+|   clk_debug                                                                                |     0.106 |
+|     U0                                                                                     |     0.106 |
 |   dbg_hub                                                                                  |     0.008 |
 |     inst                                                                                   |     0.008 |
 |       UUT_MASTER                                                                           |     0.007 |
@@ -185,7 +186,7 @@ Table of Contents
 |                           RAM_reg_0_15_12_15                                               |    <0.001 |
 |                           RAM_reg_0_15_6_11                                                |    <0.001 |
 |                       rstblk                                                               |    <0.001 |
-|           U_CMD6_WR                                                                        |     0.002 |
+|           U_CMD6_WR                                                                        |     0.001 |
 |             U_WR_FIFO                                                                      |     0.001 |
 |               SUBCORE_FIFO.xsdb_wrfifo_inst                                                |     0.001 |
 |                 inst_fifo_gen                                                              |     0.001 |
@@ -213,11 +214,11 @@ Table of Contents
 |           U_STATIC_STATUS                                                                  |    <0.001 |
 |         U_XSDB_ADDRESS_CONTROLLER                                                          |    <0.001 |
 |         U_XSDB_BURST_WD_LEN_CONTROLLER                                                     |    <0.001 |
-|         U_XSDB_BUS_CONTROLLER                                                              |     0.002 |
+|         U_XSDB_BUS_CONTROLLER                                                              |     0.003 |
 |           U_CLR_ERROR_FLAG                                                                 |    <0.001 |
 |           U_RD_ABORT_FLAG                                                                  |    <0.001 |
 |           U_RD_REQ_FLAG                                                                    |    <0.001 |
-|           U_TIMER                                                                          |     0.001 |
+|           U_TIMER                                                                          |     0.002 |
 |         U_XSDB_BUS_MSTR2SL_PORT_IFACE                                                      |    <0.001 |
 |           U_RD_DIN_BUS_MUX                                                                 |    <0.001 |
 |       U_ICON                                                                               |    <0.001 |
@@ -225,53 +226,25 @@ Table of Contents
 |         U_STAT                                                                             |    <0.001 |
 |         U_SYNC                                                                             |    <0.001 |
 |       bscan_inst                                                                           |    <0.001 |
-|   disp_draw_inst                                                                           |     0.027 |
-|     avg_inst                                                                               |     0.005 |
-|     mag_inst                                                                               |     0.007 |
+|   disp_draw_inst                                                                           |     0.017 |
+|     avg_inst                                                                               |     0.004 |
+|     mag_inst                                                                               |    <0.001 |
 |       imagSquare                                                                           |    <0.001 |
 |         U0                                                                                 |    <0.001 |
 |           i_mult                                                                           |    <0.001 |
 |             gDSP.gDSP_only.iDSP                                                            |    <0.001 |
 |               inferred_dsp.Pdelay                                                          |     0.000 |
-|       magSqRt                                                                              |     0.006 |
-|         U0                                                                                 |     0.006 |
-|           i_synth                                                                          |     0.006 |
+|       magSqRt                                                                              |    <0.001 |
+|         U0                                                                                 |    <0.001 |
+|           i_synth                                                                          |    <0.001 |
 |             i_nd_to_rdy                                                                    |    <0.001 |
-|             i_synth                                                                        |     0.006 |
-|               gen_sqrt.square_root                                                         |     0.006 |
-|                 gen_iterations[10].gen_post_mid.gen_rem                                    |    <0.001 |
-|                   gen_data_int                                                             |    <0.001 |
-|                   gen_rem_inc                                                              |    <0.001 |
-|                     inst                                                                   |    <0.001 |
-|                       i_baseblox.i_baseblox_addsub                                         |    <0.001 |
-|                         no_pipelining.the_addsub                                           |    <0.001 |
-|                           i_lut6.i_lut6_addsub                                             |    <0.001 |
+|             i_synth                                                                        |    <0.001 |
+|               gen_sqrt.square_root                                                         |    <0.001 |
 |                 gen_iterations[10].gen_pre_mid.gen_rem                                     |    <0.001 |
-|                   gen_data_int                                                             |    <0.001 |
 |                   gen_inv_sqrt_out                                                         |    <0.001 |
-|                   gen_rem.gen_rem_out                                                      |    <0.001 |
-|                   gen_rem_inc                                                              |    <0.001 |
-|                     inst                                                                   |    <0.001 |
-|                       i_baseblox.i_baseblox_addsub                                         |    <0.001 |
-|                         no_pipelining.the_addsub                                           |    <0.001 |
-|                           i_lut6.i_lut6_addsub                                             |    <0.001 |
 |                 gen_iterations[11].gen_post_mid.gen_rem                                    |    <0.001 |
-|                   gen_data_int                                                             |    <0.001 |
 |                   gen_inv_sqrt_out                                                         |    <0.001 |
-|                   gen_rem.gen_rem_out                                                      |    <0.001 |
-|                   gen_rem_inc                                                              |    <0.001 |
-|                     inst                                                                   |    <0.001 |
-|                       i_baseblox.i_baseblox_addsub                                         |    <0.001 |
-|                         no_pipelining.the_addsub                                           |    <0.001 |
-|                           i_lut6.i_lut6_addsub                                             |    <0.001 |
 |                 gen_iterations[11].gen_pre_mid.gen_rem                                     |    <0.001 |
-|                   gen_data_int                                                             |    <0.001 |
-|                   gen_rem_inc                                                              |    <0.001 |
-|                     inst                                                                   |    <0.001 |
-|                       i_baseblox.i_baseblox_addsub                                         |    <0.001 |
-|                         no_pipelining.the_addsub                                           |    <0.001 |
-|                           i_lut6.i_lut6_addsub                                             |    <0.001 |
-|                 gen_iterations[12].gen_post_mid.gen_rem                                    |    <0.001 |
 |                   gen_data_int                                                             |    <0.001 |
 |                   gen_rem_inc                                                              |    <0.001 |
 |                     inst                                                                   |    <0.001 |
@@ -288,22 +261,8 @@ Table of Contents
 |                         no_pipelining.the_addsub                                           |    <0.001 |
 |                           i_lut6.i_lut6_addsub                                             |    <0.001 |
 |                 gen_iterations[13].gen_post_mid.gen_rem                                    |    <0.001 |
-|                   gen_data_int                                                             |    <0.001 |
 |                   gen_inv_sqrt_out                                                         |    <0.001 |
-|                   gen_rem.gen_rem_out                                                      |    <0.001 |
-|                   gen_rem_inc                                                              |    <0.001 |
-|                     inst                                                                   |    <0.001 |
-|                       i_baseblox.i_baseblox_addsub                                         |    <0.001 |
-|                         no_pipelining.the_addsub                                           |    <0.001 |
-|                           i_lut6.i_lut6_addsub                                             |    <0.001 |
 |                 gen_iterations[13].gen_pre_mid.gen_rem                                     |    <0.001 |
-|                   gen_data_int                                                             |    <0.001 |
-|                   gen_rem_inc                                                              |    <0.001 |
-|                     inst                                                                   |    <0.001 |
-|                       i_baseblox.i_baseblox_addsub                                         |    <0.001 |
-|                         no_pipelining.the_addsub                                           |    <0.001 |
-|                           i_lut6.i_lut6_addsub                                             |    <0.001 |
-|                 gen_iterations[14].gen_post_mid.gen_rem                                    |    <0.001 |
 |                   gen_data_int                                                             |    <0.001 |
 |                   gen_rem_inc                                                              |    <0.001 |
 |                     inst                                                                   |    <0.001 |
@@ -320,14 +279,7 @@ Table of Contents
 |                         no_pipelining.the_addsub                                           |    <0.001 |
 |                           i_lut6.i_lut6_addsub                                             |    <0.001 |
 |                 gen_iterations[15].gen_post_mid.gen_rem                                    |    <0.001 |
-|                   gen_data_int                                                             |    <0.001 |
 |                   gen_inv_sqrt_out                                                         |    <0.001 |
-|                   gen_rem.gen_rem_out                                                      |    <0.001 |
-|                   gen_rem_inc                                                              |    <0.001 |
-|                     inst                                                                   |    <0.001 |
-|                       i_baseblox.i_baseblox_addsub                                         |    <0.001 |
-|                         no_pipelining.the_addsub                                           |    <0.001 |
-|                           i_lut6.i_lut6_addsub                                             |    <0.001 |
 |                 gen_iterations[15].gen_pre_mid.gen_rem                                     |    <0.001 |
 |                   gen_data_int                                                             |    <0.001 |
 |                   gen_rem_inc                                                              |     0.000 |
@@ -335,13 +287,6 @@ Table of Contents
 |                       i_baseblox.i_baseblox_addsub                                         |     0.000 |
 |                         no_pipelining.the_addsub                                           |     0.000 |
 |                           i_lut6.i_lut6_addsub                                             |     0.000 |
-|                 gen_iterations[16].gen_post_mid.gen_rem                                    |    <0.001 |
-|                   gen_data_int                                                             |    <0.001 |
-|                   gen_rem_inc                                                              |    <0.001 |
-|                     inst                                                                   |    <0.001 |
-|                       i_baseblox.i_baseblox_addsub                                         |    <0.001 |
-|                         no_pipelining.the_addsub                                           |    <0.001 |
-|                           i_lut6.i_lut6_addsub                                             |    <0.001 |
 |                 gen_iterations[16].gen_pre_mid.gen_rem                                     |    <0.001 |
 |                   gen_inv_sqrt_out                                                         |    <0.001 |
 |                   gen_rem.gen_rem_out                                                      |    <0.001 |
@@ -352,13 +297,7 @@ Table of Contents
 |                           i_lut6.i_lut6_addsub                                             |     0.000 |
 |                 gen_iterations[17].gen_last.gen_no_round.gen_sqrt_tmp                      |    <0.001 |
 |                 gen_iterations[17].gen_last.gen_rem                                        |    <0.001 |
-|                   gen_data_int                                                             |    <0.001 |
 |                   gen_inv_sqrt_out                                                         |    <0.001 |
-|                   gen_rem_inc                                                              |    <0.001 |
-|                     inst                                                                   |    <0.001 |
-|                       i_baseblox.i_baseblox_addsub                                         |    <0.001 |
-|                         no_pipelining.the_addsub                                           |    <0.001 |
-|                           i_lut6.i_lut6_addsub                                             |    <0.001 |
 |                 gen_rdy_int                                                                |    <0.001 |
 |       realSquare                                                                           |    <0.001 |
 |         U0                                                                                 |    <0.001 |
@@ -372,10 +311,10 @@ Table of Contents
 |               addsub_usecase.i_addsub                                                      |    <0.001 |
 |                 i_synth_option.i_synth_model                                               |    <0.001 |
 |                   opt_vx7.i_uniwrap                                                        |    <0.001 |
-|   fft                                                                                      |     0.023 |
-|     U0                                                                                     |     0.023 |
-|       i_synth                                                                              |     0.023 |
-|         axi_wrapper                                                                        |     0.002 |
+|   fft                                                                                      |     0.015 |
+|     U0                                                                                     |     0.015 |
+|       i_synth                                                                              |     0.015 |
+|         axi_wrapper                                                                        |     0.001 |
 |           config_channel_fifo                                                              |    <0.001 |
 |             gen_non_real_time.data_in_fifo_pt1                                             |    <0.001 |
 |               fifo0                                                                        |    <0.001 |
@@ -388,9 +327,9 @@ Table of Contents
 |           gen_status_channel.status_fifo                                                   |    <0.001 |
 |             gen_non_real_time.fifo                                                         |    <0.001 |
 |               fifo0                                                                        |    <0.001 |
-|         xfft_inst                                                                          |     0.021 |
-|           non_floating_point.arch_b.xfft_inst                                              |     0.021 |
-|             control                                                                        |     0.006 |
+|         xfft_inst                                                                          |     0.014 |
+|           non_floating_point.arch_b.xfft_inst                                              |     0.014 |
+|             control                                                                        |     0.004 |
 |               control                                                                      |    <0.001 |
 |                 bfp_sclr_gen.sclr_register_bfp                                             |    <0.001 |
 |                 has_unload.unloading_state                                                 |    <0.001 |
@@ -537,8 +476,8 @@ Table of Contents
 |                     i_baseblox.i_baseblox_addsub                                           |     0.000 |
 |                       no_pipelining.the_addsub                                             |     0.000 |
 |                         i_lut6.i_lut6_addsub                                               |     0.000 |
-|               twiddle_generator1                                                           |     0.001 |
-|                 tw1.twgen1                                                                 |     0.001 |
+|               twiddle_generator1                                                           |    <0.001 |
+|                 tw1.twgen1                                                                 |    <0.001 |
 |                   cos_addr_2s_comp                                                         |    <0.001 |
 |                   rom_addr_zero_compare                                                    |    <0.001 |
 |                   sin_addr_2s_comp                                                         |    <0.001 |
@@ -552,7 +491,7 @@ Table of Contents
 |                   cos_addr_2s_comp                                                         |    <0.001 |
 |                   rom_addr_zero_compare                                                    |    <0.001 |
 |                   sin_addr_2s_comp                                                         |    <0.001 |
-|             single_channel.datapath                                                        |     0.015 |
+|             single_channel.datapath                                                        |     0.010 |
 |               bfp_scaling.input_ranger_inst                                                |    <0.001 |
 |                 max_finder                                                                 |     0.000 |
 |               bfp_scaling.pe_ranger_inst                                                   |    <0.001 |
@@ -604,10 +543,10 @@ Table of Contents
 |                 o3_gen                                                                     |    <0.001 |
 |               output_selector_im                                                           |    <0.001 |
 |               output_selector_re                                                           |    <0.001 |
-|               pe                                                                           |     0.008 |
-|                 mult_gen.Mult1                                                             |     0.001 |
-|                   i_cmpy                                                                   |     0.001 |
-|                     three_mult_structure.use_dsp.i_dsp48                                   |     0.001 |
+|               pe                                                                           |     0.005 |
+|                 mult_gen.Mult1                                                             |    <0.001 |
+|                   i_cmpy                                                                   |    <0.001 |
+|                     three_mult_structure.use_dsp.i_dsp48                                   |    <0.001 |
 |                       dsp_preadder_1.reg_bi_inv                                            |     0.000 |
 |                       dsp_preadder_1.reg_mult1_preadd_d                                    |    <0.001 |
 |                       dsp_preadder_1.reg_mult1_preadd_sum                                  |     0.000 |
@@ -632,9 +571,9 @@ Table of Contents
 |                       optionally_negate_inputs                                             |    <0.001 |
 |                       pi_post_delay                                                        |     0.000 |
 |                       pr_post_delay                                                        |     0.000 |
-|                 mult_gen.Mult2                                                             |     0.001 |
-|                   i_cmpy                                                                   |     0.001 |
-|                     three_mult_structure.use_dsp.i_dsp48                                   |     0.001 |
+|                 mult_gen.Mult2                                                             |    <0.001 |
+|                   i_cmpy                                                                   |    <0.001 |
+|                     three_mult_structure.use_dsp.i_dsp48                                   |    <0.001 |
 |                       dsp_preadder_1.reg_bi_inv                                            |     0.000 |
 |                       dsp_preadder_1.reg_mult1_preadd_d                                    |    <0.001 |
 |                       dsp_preadder_1.reg_mult1_preadd_sum                                  |     0.000 |
@@ -659,9 +598,9 @@ Table of Contents
 |                       optionally_negate_inputs                                             |    <0.001 |
 |                       pi_post_delay                                                        |     0.000 |
 |                       pr_post_delay                                                        |     0.000 |
-|                 mult_gen.Mult3                                                             |     0.001 |
-|                   i_cmpy                                                                   |     0.001 |
-|                     three_mult_structure.use_dsp.i_dsp48                                   |     0.001 |
+|                 mult_gen.Mult3                                                             |    <0.001 |
+|                   i_cmpy                                                                   |    <0.001 |
+|                     three_mult_structure.use_dsp.i_dsp48                                   |    <0.001 |
 |                       dsp_preadder_1.reg_bi_inv                                            |     0.000 |
 |                       dsp_preadder_1.reg_mult1_preadd_d                                    |    <0.001 |
 |                       dsp_preadder_1.reg_mult1_preadd_sum                                  |     0.000 |
@@ -770,14 +709,14 @@ Table of Contents
 |                   scale_mux                                                                |    <0.001 |
 |                 scaler_gen.scaler_3r                                                       |    <0.001 |
 |                   scale_mux                                                                |    <0.001 |
-|   fft_fsm                                                                                  |     0.001 |
-|   fft_ram                                                                                  |     0.006 |
-|     U0                                                                                     |     0.006 |
-|       inst_blk_mem_gen                                                                     |     0.006 |
-|         gnativebmg.native_blk_mem_gen                                                      |     0.006 |
-|           valid.cstr                                                                       |     0.006 |
-|             ramloop[0].ram.r                                                               |     0.006 |
-|               prim_noinit.ram                                                              |     0.006 |
+|   fft_fsm                                                                                  |    <0.001 |
+|   fft_ram                                                                                  |     0.007 |
+|     U0                                                                                     |     0.007 |
+|       inst_blk_mem_gen                                                                     |     0.007 |
+|         gnativebmg.native_blk_mem_gen                                                      |     0.007 |
+|           valid.cstr                                                                       |     0.007 |
+|             ramloop[0].ram.r                                                               |     0.007 |
+|               prim_noinit.ram                                                              |     0.007 |
 |   input_ram                                                                                |     0.004 |
 |     U0                                                                                     |     0.004 |
 |       inst_blk_mem_gen                                                                     |     0.004 |
@@ -787,15 +726,23 @@ Table of Contents
 |               prim_init.ram                                                                |     0.002 |
 |             ramloop[1].ram.r                                                               |     0.002 |
 |               prim_init.ram                                                                |     0.002 |
-|   u_ila_0                                                                                  |     0.040 |
-|     inst                                                                                   |     0.040 |
-|       ila_core_inst                                                                        |     0.040 |
+|   pulse30Hz                                                                                |    <0.001 |
+|     U0                                                                                     |    <0.001 |
+|       i_synth                                                                              |    <0.001 |
+|         i_baseblox.i_baseblox_counter                                                      |    <0.001 |
+|           the_addsub                                                                       |    <0.001 |
+|             no_pipelining.the_addsub                                                       |    <0.001 |
+|               i_lut6.i_lut6_addsub                                                         |    <0.001 |
+|                 i_q.i_simple.qreg                                                          |    <0.001 |
+|   u_ila_0                                                                                  |     0.043 |
+|     inst                                                                                   |     0.043 |
+|       ila_core_inst                                                                        |     0.043 |
 |         ila_trace_memory_inst                                                              |     0.007 |
 |           SUBCORE_RAM_BLK_MEM_1.trace_block_memory                                         |     0.007 |
 |             inst_blk_mem_gen                                                               |     0.007 |
 |               gnativebmg.native_blk_mem_gen                                                |     0.007 |
 |                 valid.cstr                                                                 |     0.007 |
-|                   has_mux_b.B                                                              |     0.001 |
+|                   has_mux_b.B                                                              |    <0.001 |
 |                   ramloop[0].ram.r                                                         |    <0.001 |
 |                     prim_noinit.ram                                                        |    <0.001 |
 |                   ramloop[10].ram.r                                                        |    <0.001 |
@@ -882,7 +829,13 @@ Table of Contents
 |                     prim_noinit.ram                                                        |    <0.001 |
 |                   ramloop[48].ram.r                                                        |    <0.001 |
 |                     prim_noinit.ram                                                        |    <0.001 |
+|                   ramloop[49].ram.r                                                        |    <0.001 |
+|                     prim_noinit.ram                                                        |    <0.001 |
 |                   ramloop[4].ram.r                                                         |    <0.001 |
+|                     prim_noinit.ram                                                        |    <0.001 |
+|                   ramloop[50].ram.r                                                        |    <0.001 |
+|                     prim_noinit.ram                                                        |    <0.001 |
+|                   ramloop[51].ram.r                                                        |    <0.001 |
 |                     prim_noinit.ram                                                        |    <0.001 |
 |                   ramloop[5].ram.r                                                         |    <0.001 |
 |                     prim_noinit.ram                                                        |    <0.001 |
@@ -947,7 +900,7 @@ Table of Contents
 |                       u_srlB                                                               |    <0.001 |
 |                       u_srlC                                                               |    <0.001 |
 |                       u_srlD                                                               |    <0.001 |
-|         u_ila_regs                                                                         |     0.020 |
+|         u_ila_regs                                                                         |     0.023 |
 |           MU_SRL[0].mu_srl_reg                                                             |    <0.001 |
 |           MU_SRL[10].mu_srl_reg                                                            |    <0.001 |
 |           MU_SRL[11].mu_srl_reg                                                            |    <0.001 |
@@ -958,7 +911,11 @@ Table of Contents
 |           MU_SRL[16].mu_srl_reg                                                            |    <0.001 |
 |           MU_SRL[17].mu_srl_reg                                                            |    <0.001 |
 |           MU_SRL[18].mu_srl_reg                                                            |    <0.001 |
+|           MU_SRL[19].mu_srl_reg                                                            |    <0.001 |
 |           MU_SRL[1].mu_srl_reg                                                             |    <0.001 |
+|           MU_SRL[20].mu_srl_reg                                                            |    <0.001 |
+|           MU_SRL[21].mu_srl_reg                                                            |    <0.001 |
+|           MU_SRL[22].mu_srl_reg                                                            |    <0.001 |
 |           MU_SRL[2].mu_srl_reg                                                             |    <0.001 |
 |           MU_SRL[3].mu_srl_reg                                                             |    <0.001 |
 |           MU_SRL[4].mu_srl_reg                                                             |    <0.001 |
@@ -968,8 +925,6 @@ Table of Contents
 |           MU_SRL[8].mu_srl_reg                                                             |    <0.001 |
 |           MU_SRL[9].mu_srl_reg                                                             |    <0.001 |
 |           MU_STATUS[0].mu_width_reg                                                        |    <0.001 |
-|             I_EN_STAT_EQ1.U_STAT                                                           |    <0.001 |
-|           MU_STATUS[10].mu_tpid_reg                                                        |    <0.001 |
 |             I_EN_STAT_EQ1.U_STAT                                                           |    <0.001 |
 |           MU_STATUS[11].mu_tpid_reg                                                        |    <0.001 |
 |             I_EN_STAT_EQ1.U_STAT                                                           |    <0.001 |
@@ -981,11 +936,21 @@ Table of Contents
 |             I_EN_STAT_EQ1.U_STAT                                                           |    <0.001 |
 |           MU_STATUS[15].mu_tpid_reg                                                        |    <0.001 |
 |             I_EN_STAT_EQ1.U_STAT                                                           |    <0.001 |
+|           MU_STATUS[16].mu_tpid_reg                                                        |    <0.001 |
+|             I_EN_STAT_EQ1.U_STAT                                                           |    <0.001 |
 |           MU_STATUS[17].mu_tpid_reg                                                        |    <0.001 |
 |             I_EN_STAT_EQ1.U_STAT                                                           |    <0.001 |
 |           MU_STATUS[18].mu_tpid_reg                                                        |    <0.001 |
 |             I_EN_STAT_EQ1.U_STAT                                                           |    <0.001 |
-|           MU_STATUS[1].mu_width_reg                                                        |    <0.001 |
+|           MU_STATUS[19].mu_tpid_reg                                                        |    <0.001 |
+|             I_EN_STAT_EQ1.U_STAT                                                           |    <0.001 |
+|           MU_STATUS[20].mu_tpid_reg                                                        |    <0.001 |
+|             I_EN_STAT_EQ1.U_STAT                                                           |    <0.001 |
+|           MU_STATUS[21].mu_tpid_reg                                                        |    <0.001 |
+|             I_EN_STAT_EQ1.U_STAT                                                           |    <0.001 |
+|           MU_STATUS[22].mu_tpid_reg                                                        |    <0.001 |
+|             I_EN_STAT_EQ1.U_STAT                                                           |    <0.001 |
+|           MU_STATUS[2].mu_tpid_reg                                                         |    <0.001 |
 |             I_EN_STAT_EQ1.U_STAT                                                           |    <0.001 |
 |           MU_STATUS[2].mu_width_reg                                                        |    <0.001 |
 |             I_EN_STAT_EQ1.U_STAT                                                           |    <0.001 |
@@ -995,13 +960,11 @@ Table of Contents
 |             I_EN_STAT_EQ1.U_STAT                                                           |    <0.001 |
 |           MU_STATUS[4].mu_tpid_reg                                                         |    <0.001 |
 |             I_EN_STAT_EQ1.U_STAT                                                           |    <0.001 |
-|           MU_STATUS[5].mu_width_reg                                                        |    <0.001 |
+|           MU_STATUS[5].mu_tpid_reg                                                         |    <0.001 |
 |             I_EN_STAT_EQ1.U_STAT                                                           |    <0.001 |
 |           MU_STATUS[6].mu_tpid_reg                                                         |    <0.001 |
 |             I_EN_STAT_EQ1.U_STAT                                                           |    <0.001 |
 |           MU_STATUS[7].mu_tpid_reg                                                         |    <0.001 |
-|             I_EN_STAT_EQ1.U_STAT                                                           |    <0.001 |
-|           MU_STATUS[8].mu_tpid_reg                                                         |    <0.001 |
 |             I_EN_STAT_EQ1.U_STAT                                                           |    <0.001 |
 |           MU_STATUS[9].mu_tpid_reg                                                         |    <0.001 |
 |             I_EN_STAT_EQ1.U_STAT                                                           |    <0.001 |
@@ -1012,10 +975,6 @@ Table of Contents
 |           reg_1                                                                            |    <0.001 |
 |             I_EN_STAT_EQ1.U_STAT                                                           |    <0.001 |
 |           reg_10                                                                           |    <0.001 |
-|             I_EN_STAT_EQ1.U_STAT                                                           |    <0.001 |
-|           reg_11                                                                           |    <0.001 |
-|             I_EN_STAT_EQ1.U_STAT                                                           |    <0.001 |
-|           reg_12                                                                           |    <0.001 |
 |             I_EN_STAT_EQ1.U_STAT                                                           |    <0.001 |
 |           reg_13                                                                           |    <0.001 |
 |             I_EN_STAT_EQ1.U_STAT                                                           |    <0.001 |
@@ -1065,14 +1024,14 @@ Table of Contents
 |             I_EN_STAT_EQ1.U_STAT                                                           |    <0.001 |
 |           reg_a                                                                            |    <0.001 |
 |             I_EN_STAT_EQ1.U_STAT                                                           |    <0.001 |
-|           reg_b                                                                            |    <0.001 |
-|             I_EN_STAT_EQ1.U_STAT                                                           |    <0.001 |
-|           reg_c                                                                            |    <0.001 |
-|             I_EN_STAT_EQ1.U_STAT                                                           |    <0.001 |
-|           reg_d                                                                            |    <0.001 |
-|             I_EN_STAT_EQ1.U_STAT                                                           |    <0.001 |
-|           reg_e                                                                            |    <0.001 |
-|             I_EN_STAT_EQ1.U_STAT                                                           |    <0.001 |
+|           reg_b                                                                            |     0.000 |
+|             I_EN_STAT_EQ1.U_STAT                                                           |     0.000 |
+|           reg_c                                                                            |     0.000 |
+|             I_EN_STAT_EQ1.U_STAT                                                           |     0.000 |
+|           reg_d                                                                            |     0.000 |
+|             I_EN_STAT_EQ1.U_STAT                                                           |     0.000 |
+|           reg_e                                                                            |     0.000 |
+|             I_EN_STAT_EQ1.U_STAT                                                           |     0.000 |
 |           reg_f                                                                            |    <0.001 |
 |             I_EN_STAT_EQ1.U_STAT                                                           |    <0.001 |
 |           reg_srl_fff                                                                      |    <0.001 |
@@ -1087,12 +1046,27 @@ Table of Contents
 |           asyncrounous_transfer.halt_in_transfer_inst                                      |    <0.001 |
 |           asyncrounous_transfer.halt_out_transfer_inst                                     |    <0.001 |
 |           halt_detection_inst                                                              |    <0.001 |
-|         u_trig                                                                             |     0.005 |
+|         u_trig                                                                             |     0.006 |
 |           U_TM                                                                             |     0.005 |
-|             G_NMU[0].U_M                                                                   |    <0.001 |
-|               allx_typeA_match_detection.cs_allx_typeA_inst                                |    <0.001 |
+|             G_NMU[0].U_M                                                                   |     0.001 |
+|               allx_typeA_match_detection.cs_allx_typeA_inst                                |     0.001 |
 |                 DUT                                                                        |    <0.001 |
 |                   I_WHOLE_SLICE.G_SLICE_IDX[0].U_ALL_SRL_SLICE                             |    <0.001 |
+|                     u_srlA                                                                 |    <0.001 |
+|                     u_srlB                                                                 |    <0.001 |
+|                     u_srlC                                                                 |    <0.001 |
+|                     u_srlD                                                                 |    <0.001 |
+|                   I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE                             |    <0.001 |
+|                     u_srlA                                                                 |    <0.001 |
+|                     u_srlB                                                                 |    <0.001 |
+|                     u_srlC                                                                 |    <0.001 |
+|                     u_srlD                                                                 |    <0.001 |
+|                   I_WHOLE_SLICE.G_SLICE_IDX[2].U_ALL_SRL_SLICE                             |    <0.001 |
+|                     u_srlA                                                                 |    <0.001 |
+|                     u_srlB                                                                 |    <0.001 |
+|                     u_srlC                                                                 |    <0.001 |
+|                     u_srlD                                                                 |    <0.001 |
+|                   I_WHOLE_SLICE.G_SLICE_IDX[3].U_ALL_SRL_SLICE                             |    <0.001 |
 |                     u_srlA                                                                 |    <0.001 |
 |                     u_srlB                                                                 |    <0.001 |
 |                     u_srlC                                                                 |    <0.001 |
@@ -1169,7 +1143,7 @@ Table of Contents
 |                     u_srlB                                                                 |    <0.001 |
 |                     u_srlC                                                                 |    <0.001 |
 |                     u_srlD                                                                 |    <0.001 |
-|             G_NMU[1].U_M                                                                   |    <0.001 |
+|             G_NMU[19].U_M                                                                  |    <0.001 |
 |               allx_typeA_match_detection.cs_allx_typeA_inst                                |    <0.001 |
 |                 DUT                                                                        |    <0.001 |
 |                   I_WHOLE_SLICE.G_SLICE_IDX[0].U_ALL_SRL_SLICE                             |    <0.001 |
@@ -1177,7 +1151,7 @@ Table of Contents
 |                     u_srlB                                                                 |    <0.001 |
 |                     u_srlC                                                                 |    <0.001 |
 |                     u_srlD                                                                 |    <0.001 |
-|             G_NMU[2].U_M                                                                   |    <0.001 |
+|             G_NMU[1].U_M                                                                   |    <0.001 |
 |               allx_typeA_match_detection.cs_allx_typeA_inst                                |    <0.001 |
 |                 DUT                                                                        |    <0.001 |
 |                   I_WHOLE_SLICE.G_SLICE_IDX[0].U_ALL_SRL_SLICE                             |    <0.001 |
@@ -1200,7 +1174,31 @@ Table of Contents
 |                     u_srlB                                                                 |    <0.001 |
 |                     u_srlC                                                                 |    <0.001 |
 |                     u_srlD                                                                 |    <0.001 |
-|             G_NMU[3].U_M                                                                   |    <0.001 |
+|             G_NMU[20].U_M                                                                  |    <0.001 |
+|               allx_typeA_match_detection.cs_allx_typeA_inst                                |    <0.001 |
+|                 DUT                                                                        |    <0.001 |
+|                   I_WHOLE_SLICE.G_SLICE_IDX[0].U_ALL_SRL_SLICE                             |    <0.001 |
+|                     u_srlA                                                                 |    <0.001 |
+|                     u_srlB                                                                 |    <0.001 |
+|                     u_srlC                                                                 |    <0.001 |
+|                     u_srlD                                                                 |    <0.001 |
+|             G_NMU[21].U_M                                                                  |    <0.001 |
+|               allx_typeA_match_detection.cs_allx_typeA_inst                                |    <0.001 |
+|                 DUT                                                                        |    <0.001 |
+|                   I_WHOLE_SLICE.G_SLICE_IDX[0].U_ALL_SRL_SLICE                             |    <0.001 |
+|                     u_srlA                                                                 |    <0.001 |
+|                     u_srlB                                                                 |    <0.001 |
+|                     u_srlC                                                                 |    <0.001 |
+|                     u_srlD                                                                 |    <0.001 |
+|             G_NMU[22].U_M                                                                  |    <0.001 |
+|               allx_typeA_match_detection.cs_allx_typeA_inst                                |    <0.001 |
+|                 DUT                                                                        |    <0.001 |
+|                   I_WHOLE_SLICE.G_SLICE_IDX[0].U_ALL_SRL_SLICE                             |    <0.001 |
+|                     u_srlA                                                                 |    <0.001 |
+|                     u_srlB                                                                 |    <0.001 |
+|                     u_srlC                                                                 |    <0.001 |
+|                     u_srlD                                                                 |    <0.001 |
+|             G_NMU[2].U_M                                                                   |    <0.001 |
 |               allx_typeA_match_detection.cs_allx_typeA_inst                                |    <0.001 |
 |                 DUT                                                                        |    <0.001 |
 |                   I_WHOLE_SLICE.G_SLICE_IDX[0].U_ALL_SRL_SLICE                             |    <0.001 |
@@ -1209,6 +1207,14 @@ Table of Contents
 |                     u_srlC                                                                 |    <0.001 |
 |                     u_srlD                                                                 |    <0.001 |
 |                   I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE                             |    <0.001 |
+|                     u_srlA                                                                 |    <0.001 |
+|                     u_srlB                                                                 |    <0.001 |
+|                     u_srlC                                                                 |    <0.001 |
+|                     u_srlD                                                                 |    <0.001 |
+|             G_NMU[3].U_M                                                                   |    <0.001 |
+|               allx_typeA_match_detection.cs_allx_typeA_inst                                |    <0.001 |
+|                 DUT                                                                        |    <0.001 |
+|                   I_WHOLE_SLICE.G_SLICE_IDX[0].U_ALL_SRL_SLICE                             |    <0.001 |
 |                     u_srlA                                                                 |    <0.001 |
 |                     u_srlB                                                                 |    <0.001 |
 |                     u_srlC                                                                 |    <0.001 |
@@ -1221,25 +1227,10 @@ Table of Contents
 |                     u_srlB                                                                 |    <0.001 |
 |                     u_srlC                                                                 |    <0.001 |
 |                     u_srlD                                                                 |    <0.001 |
-|                   I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE                             |    <0.001 |
-|                     u_srlA                                                                 |    <0.001 |
-|                     u_srlB                                                                 |    <0.001 |
-|                     u_srlC                                                                 |    <0.001 |
-|                     u_srlD                                                                 |    <0.001 |
 |             G_NMU[5].U_M                                                                   |    <0.001 |
 |               allx_typeA_match_detection.cs_allx_typeA_inst                                |    <0.001 |
 |                 DUT                                                                        |    <0.001 |
 |                   I_WHOLE_SLICE.G_SLICE_IDX[0].U_ALL_SRL_SLICE                             |    <0.001 |
-|                     u_srlA                                                                 |    <0.001 |
-|                     u_srlB                                                                 |    <0.001 |
-|                     u_srlC                                                                 |    <0.001 |
-|                     u_srlD                                                                 |    <0.001 |
-|                   I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE                             |    <0.001 |
-|                     u_srlA                                                                 |    <0.001 |
-|                     u_srlB                                                                 |    <0.001 |
-|                     u_srlC                                                                 |    <0.001 |
-|                     u_srlD                                                                 |    <0.001 |
-|                   I_WHOLE_SLICE.G_SLICE_IDX[2].U_ALL_SRL_SLICE                             |    <0.001 |
 |                     u_srlA                                                                 |    <0.001 |
 |                     u_srlB                                                                 |    <0.001 |
 |                     u_srlC                                                                 |    <0.001 |
@@ -1294,7 +1285,7 @@ Table of Contents
 |                   u_srlB                                                                   |    <0.001 |
 |                   u_srlC                                                                   |    <0.001 |
 |                   u_srlD                                                                   |    <0.001 |
-|         xsdb_memory_read_inst                                                              |     0.002 |
+|         xsdb_memory_read_inst                                                              |     0.001 |
 |   vio                                                                                      |     0.001 |
 |     inst                                                                                   |     0.001 |
 |       DECODER_INST                                                                         |    <0.001 |

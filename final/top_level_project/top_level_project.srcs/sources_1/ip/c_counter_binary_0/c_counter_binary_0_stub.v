@@ -1,10 +1,10 @@
 // Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2014.2 (lin64) Build 932637 Wed Jun 11 13:08:52 MDT 2014
-// Date        : Sat Apr 18 15:20:00 2015
+// Date        : Sat Apr 18 15:47:52 2015
 // Host        : com1548.eecs.utk.edu running 64-bit Red Hat Enterprise Linux Server release 6.5 (Santiago)
 // Command     : write_verilog -force -mode synth_stub
-//               /data1/cdaffron/git/ece551hw/final/30hz_pulse_test/30hz_pulse_test.srcs/sources_1/ip/c_counter_binary_0/c_counter_binary_0_stub.v
+//               /data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.srcs/sources_1/ip/c_counter_binary_0/c_counter_binary_0_stub.v
 // Design      : c_counter_binary_0
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xc7a100tcsg324-1
