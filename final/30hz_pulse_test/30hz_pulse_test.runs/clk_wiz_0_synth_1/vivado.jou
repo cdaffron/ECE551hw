@@ -1,10 +1,10 @@
 #-----------------------------------------------------------
 # Vivado v2014.2 (64-bit)
-# SW Build 932637 on Wed Jun 11 13:33:10 MDT 2014
+# SW Build 932637 on Wed Jun 11 13:08:52 MDT 2014
 # IP Build 924643 on Fri May 30 09:20:16 MDT 2014
-# Start of session at: Sat Apr 18 14:40:55 2015
-# Process ID: 7656
-# Log file: C:/Users/cdaffron/Documents/ECE 551/final/30hz_pulse_test/30hz_pulse_test.runs/clk_wiz_0_synth_1/clk_wiz_0.vds
-# Journal file: C:/Users/cdaffron/Documents/ECE 551/final/30hz_pulse_test/30hz_pulse_test.runs/clk_wiz_0_synth_1\vivado.jou
+# Start of session at: Sat Apr 18 15:22:20 2015
+# Process ID: 31678
+# Log file: /data1/cdaffron/git/ece551hw/final/30hz_pulse_test/30hz_pulse_test.runs/clk_wiz_0_synth_1/clk_wiz_0.vds
+# Journal file: /data1/cdaffron/git/ece551hw/final/30hz_pulse_test/30hz_pulse_test.runs/clk_wiz_0_synth_1/vivado.jou
 #-----------------------------------------------------------
 source clk_wiz_0.tcl

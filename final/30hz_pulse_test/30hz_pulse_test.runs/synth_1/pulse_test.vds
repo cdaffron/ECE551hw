@@ -1,36 +1,32 @@
 #-----------------------------------------------------------
 # Vivado v2014.2 (64-bit)
-# SW Build 932637 on Wed Jun 11 13:33:10 MDT 2014
+# SW Build 932637 on Wed Jun 11 13:08:52 MDT 2014
 # IP Build 924643 on Fri May 30 09:20:16 MDT 2014
-# Start of session at: Sat Apr 18 14:50:24 2015
-# Process ID: 1384
-# Log file: C:/Users/cdaffron/Documents/ECE 551/final/30hz_pulse_test/30hz_pulse_test.runs/synth_1/pulse_test.vds
-# Journal file: C:/Users/cdaffron/Documents/ECE 551/final/30hz_pulse_test/30hz_pulse_test.runs/synth_1\vivado.jou
+# Start of session at: Sat Apr 18 15:23:27 2015
+# Process ID: 31933
+# Log file: /data1/cdaffron/git/ece551hw/final/30hz_pulse_test/30hz_pulse_test.runs/synth_1/pulse_test.vds
+# Journal file: /data1/cdaffron/git/ece551hw/final/30hz_pulse_test/30hz_pulse_test.runs/synth_1/vivado.jou
 #-----------------------------------------------------------
 source pulse_test.tcl
 # set_param gui.test TreeTableDev
-# set_param xicom.use_bs_reader 1
 # set_msg_config -id {HDL 9-1061} -limit 100000
 # set_msg_config -id {HDL 9-1654} -limit 100000
-# set_msg_config -id {Labtools 27-147} -limit 4294967295
-# set_msg_config -id {Synth 8-256} -limit 10000
-# set_msg_config -id {Synth 8-638} -limit 10000
 # create_project -in_memory -part xc7a100tcsg324-1
 # set_property target_language VHDL [current_project]
 # set_param project.compositeFile.enableAutoGeneration 0
 # set_property default_lib xil_defaultlib [current_project]
-# add_files -quiet {{C:/Users/cdaffron/Documents/ECE 551/final/30hz_pulse_test/30hz_pulse_test.runs/clk_wiz_0_synth_1/clk_wiz_0.dcp}}
-# set_property used_in_implementation false [get_files {{C:/Users/cdaffron/Documents/ECE 551/final/30hz_pulse_test/30hz_pulse_test.runs/clk_wiz_0_synth_1/clk_wiz_0.dcp}}]
-# add_files -quiet {{C:/Users/cdaffron/Documents/ECE 551/final/30hz_pulse_test/30hz_pulse_test.runs/c_counter_binary_0_synth_1/c_counter_binary_0.dcp}}
-# set_property used_in_implementation false [get_files {{C:/Users/cdaffron/Documents/ECE 551/final/30hz_pulse_test/30hz_pulse_test.runs/c_counter_binary_0_synth_1/c_counter_binary_0.dcp}}]
-# read_vhdl -library xil_defaultlib {{C:/Users/cdaffron/Documents/ECE 551/final/30hz_pulse_test/30hz_pulse_test.srcs/sources_1/new/pulse_test.vhd}}
-# read_xdc {{C:/Users/cdaffron/Documents/ECE 551/final/30hz_pulse_test/30hz_pulse_test.srcs/constrs_1/imports/lab2/Nexys4_Master.xdc}}
-# set_property used_in_implementation false [get_files {{C:/Users/cdaffron/Documents/ECE 551/final/30hz_pulse_test/30hz_pulse_test.srcs/constrs_1/imports/lab2/Nexys4_Master.xdc}}]
+# add_files -quiet /data1/cdaffron/git/ece551hw/final/30hz_pulse_test/30hz_pulse_test.runs/clk_wiz_0_synth_1/clk_wiz_0.dcp
+# set_property used_in_implementation false [get_files /data1/cdaffron/git/ece551hw/final/30hz_pulse_test/30hz_pulse_test.runs/clk_wiz_0_synth_1/clk_wiz_0.dcp]
+# add_files -quiet /data1/cdaffron/git/ece551hw/final/30hz_pulse_test/30hz_pulse_test.runs/c_counter_binary_0_synth_1/c_counter_binary_0.dcp
+# set_property used_in_implementation false [get_files /data1/cdaffron/git/ece551hw/final/30hz_pulse_test/30hz_pulse_test.runs/c_counter_binary_0_synth_1/c_counter_binary_0.dcp]
+# read_vhdl -library xil_defaultlib /data1/cdaffron/git/ece551hw/final/30hz_pulse_test/30hz_pulse_test.srcs/sources_1/new/pulse_test.vhd
+# read_xdc /data1/cdaffron/git/ece551hw/final/30hz_pulse_test/30hz_pulse_test.srcs/constrs_1/imports/lab2/Nexys4_Master.xdc
+# set_property used_in_implementation false [get_files /data1/cdaffron/git/ece551hw/final/30hz_pulse_test/30hz_pulse_test.srcs/constrs_1/imports/lab2/Nexys4_Master.xdc]
 # read_xdc dont_buffer.xdc
 # set_property used_in_implementation false [get_files dont_buffer.xdc]
 # set_param synth.vivado.isSynthRun true
-# set_property webtalk.parent_dir {C:/Users/cdaffron/Documents/ECE 551/final/30hz_pulse_test/30hz_pulse_test.cache/wt} [current_project]
-# set_property parent.project_dir {C:/Users/cdaffron/Documents/ECE 551/final/30hz_pulse_test} [current_project]
+# set_property webtalk.parent_dir /data1/cdaffron/git/ece551hw/final/30hz_pulse_test/30hz_pulse_test.cache/wt [current_project]
+# set_property parent.project_dir /data1/cdaffron/git/ece551hw/final/30hz_pulse_test [current_project]
 # catch { write_hwdef -file pulse_test.hwdef }
 INFO: [Vivado_Tcl 4-279] hardware handoff file cannot be generated as there is no block diagram instance in the design
 # synth_design -top pulse_test -part xc7a100tcsg324-1
@@ -41,14 +37,14 @@ Starting synthesis...
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 227.742 ; gain = 96.914
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 846.172 ; gain = 156.125
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'pulse_test' [C:/Users/cdaffron/Documents/ECE 551/final/30hz_pulse_test/30hz_pulse_test.srcs/sources_1/new/pulse_test.vhd:41]
-INFO: [Synth 8-637] synthesizing blackbox instance 'clk6MHzGen' of component 'clk_wiz_0' [C:/Users/cdaffron/Documents/ECE 551/final/30hz_pulse_test/30hz_pulse_test.srcs/sources_1/new/pulse_test.vhd:83]
-INFO: [Synth 8-637] synthesizing blackbox instance 'pulse30Hz' of component 'c_counter_binary_0' [C:/Users/cdaffron/Documents/ECE 551/final/30hz_pulse_test/30hz_pulse_test.srcs/sources_1/new/pulse_test.vhd:90]
-INFO: [Synth 8-256] done synthesizing module 'pulse_test' (1#1) [C:/Users/cdaffron/Documents/ECE 551/final/30hz_pulse_test/30hz_pulse_test.srcs/sources_1/new/pulse_test.vhd:41]
+INFO: [Synth 8-638] synthesizing module 'pulse_test' [/data1/cdaffron/git/ece551hw/final/30hz_pulse_test/30hz_pulse_test.srcs/sources_1/new/pulse_test.vhd:41]
+INFO: [Synth 8-637] synthesizing blackbox instance 'clk6MHzGen' of component 'clk_wiz_0' [/data1/cdaffron/git/ece551hw/final/30hz_pulse_test/30hz_pulse_test.srcs/sources_1/new/pulse_test.vhd:83]
+INFO: [Synth 8-637] synthesizing blackbox instance 'pulse30Hz' of component 'c_counter_binary_0' [/data1/cdaffron/git/ece551hw/final/30hz_pulse_test/30hz_pulse_test.srcs/sources_1/new/pulse_test.vhd:90]
+INFO: [Synth 8-256] done synthesizing module 'pulse_test' (1#1) [/data1/cdaffron/git/ece551hw/final/30hz_pulse_test/30hz_pulse_test.srcs/sources_1/new/pulse_test.vhd:41]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 261.563 ; gain = 130.734
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 881.055 ; gain = 191.008
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Optimization
@@ -60,21 +56,21 @@ Report Check Netlist:
 +------+------------------+-------+---------+-------+------------------+
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
-Loading clock regions from C:/Xilinx/Vivado/2014.2/data\parts/xilinx/artix7/artix7/xc7a100t/ClockRegion.xml
-Loading clock buffers from C:/Xilinx/Vivado/2014.2/data\parts/xilinx/artix7/artix7/xc7a100t/ClockBuffers.xml
-Loading clock placement rules from C:/Xilinx/Vivado/2014.2/data/parts/xilinx/artix7/ClockPlacerRules.xml
-Loading package pin functions from C:/Xilinx/Vivado/2014.2/data\parts/xilinx/artix7/PinFunctions.xml...
-Loading package from C:/Xilinx/Vivado/2014.2/data\parts/xilinx/artix7/artix7/xc7a100t/csg324/Package.xml
-Loading io standards from C:/Xilinx/Vivado/2014.2/data\./parts/xilinx/artix7/IOStandards.xml
-Loading device configuration modes from C:/Xilinx/Vivado/2014.2/data\parts/xilinx/artix7/ConfigModes.xml
+Loading clock regions from /opt/Xilinx/Vivado/2014.2/data/parts/xilinx/artix7/artix7/xc7a100t/ClockRegion.xml
+Loading clock buffers from /opt/Xilinx/Vivado/2014.2/data/parts/xilinx/artix7/artix7/xc7a100t/ClockBuffers.xml
+Loading clock placement rules from /opt/Xilinx/Vivado/2014.2/data/parts/xilinx/artix7/ClockPlacerRules.xml
+Loading package pin functions from /opt/Xilinx/Vivado/2014.2/data/parts/xilinx/artix7/PinFunctions.xml...
+Loading package from /opt/Xilinx/Vivado/2014.2/data/parts/xilinx/artix7/artix7/xc7a100t/csg324/Package.xml
+Loading io standards from /opt/Xilinx/Vivado/2014.2/data/./parts/xilinx/artix7/IOStandards.xml
+Loading device configuration modes from /opt/Xilinx/Vivado/2014.2/data/parts/xilinx/artix7/ConfigModes.xml
 
 Processing XDC Constraints
-Parsing XDC File [C:/Users/cdaffron/Documents/ECE 551/final/30hz_pulse_test/30hz_pulse_test.runs/synth_1/.Xil/Vivado-1384-COM1599/dcp/clk_wiz_0_in_context.xdc] for cell 'clk6MHzGen'
-Finished Parsing XDC File [C:/Users/cdaffron/Documents/ECE 551/final/30hz_pulse_test/30hz_pulse_test.runs/synth_1/.Xil/Vivado-1384-COM1599/dcp/clk_wiz_0_in_context.xdc] for cell 'clk6MHzGen'
-Parsing XDC File [C:/Users/cdaffron/Documents/ECE 551/final/30hz_pulse_test/30hz_pulse_test.srcs/constrs_1/imports/lab2/Nexys4_Master.xdc]
-Finished Parsing XDC File [C:/Users/cdaffron/Documents/ECE 551/final/30hz_pulse_test/30hz_pulse_test.srcs/constrs_1/imports/lab2/Nexys4_Master.xdc]
-Parsing XDC File [C:/Users/cdaffron/Documents/ECE 551/final/30hz_pulse_test/30hz_pulse_test.runs/synth_1/dont_buffer.xdc]
-Finished Parsing XDC File [C:/Users/cdaffron/Documents/ECE 551/final/30hz_pulse_test/30hz_pulse_test.runs/synth_1/dont_buffer.xdc]
+Parsing XDC File [/data1/cdaffron/git/ece551hw/final/30hz_pulse_test/30hz_pulse_test.runs/synth_1/.Xil/Vivado-31933-com1548.eecs.utk.edu/dcp/clk_wiz_0_in_context.xdc] for cell 'clk6MHzGen'
+Finished Parsing XDC File [/data1/cdaffron/git/ece551hw/final/30hz_pulse_test/30hz_pulse_test.runs/synth_1/.Xil/Vivado-31933-com1548.eecs.utk.edu/dcp/clk_wiz_0_in_context.xdc] for cell 'clk6MHzGen'
+Parsing XDC File [/data1/cdaffron/git/ece551hw/final/30hz_pulse_test/30hz_pulse_test.srcs/constrs_1/imports/lab2/Nexys4_Master.xdc]
+Finished Parsing XDC File [/data1/cdaffron/git/ece551hw/final/30hz_pulse_test/30hz_pulse_test.srcs/constrs_1/imports/lab2/Nexys4_Master.xdc]
+Parsing XDC File [/data1/cdaffron/git/ece551hw/final/30hz_pulse_test/30hz_pulse_test.runs/synth_1/dont_buffer.xdc]
+Finished Parsing XDC File [/data1/cdaffron/git/ece551hw/final/30hz_pulse_test/30hz_pulse_test.runs/synth_1/dont_buffer.xdc]
 Completed Processing XDC Constraints
 
 INFO: [Project 1-111] Unisim Transformation Summary:
@@ -88,17 +84,17 @@ Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 471.199 ; gain = 340.371
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1151.281 ; gain = 461.234
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property BUFFER_TYPE = NONE for clk. (constraint file  {C:/Users/cdaffron/Documents/ECE 551/final/30hz_pulse_test/30hz_pulse_test.runs/synth_1/dont_buffer.xdc}, line 4).
+Applied set_property BUFFER_TYPE = NONE for clk. (constraint file  /data1/cdaffron/git/ece551hw/final/30hz_pulse_test/30hz_pulse_test.runs/synth_1/dont_buffer.xdc, line 4).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 471.199 ; gain = 340.371
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1151.281 ; gain = 461.234
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 471.199 ; gain = 340.371
+Finished RTL Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1151.281 ; gain = 461.234
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -139,14 +135,14 @@ BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
 ---------------------------------------------------------------------------------
 Finished Part Resource Summary
 ---------------------------------------------------------------------------------
-Workers Ready, Starting Parallel Section  : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 472.465 ; gain = 341.637
+Workers Ready, Starting Parallel Section  : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1151.281 ; gain = 461.234
 ---------------------------------------------------------------------------------
 Start Cross Boundary Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Cross Boundary Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 472.465 ; gain = 341.637
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1151.281 ; gain = 461.234
 ---------------------------------------------------------------------------------
-Finished Parallel Reinfer  : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 472.465 ; gain = 341.637
+Finished Parallel Reinfer  : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1151.281 ; gain = 461.234
 ---------------------------------------------------------------------------------
 Start RAM, DSP and Shift Register Reporting
 ---------------------------------------------------------------------------------
@@ -157,10 +153,10 @@ Finished RAM, DSP and Shift Register Reporting
 Start Area Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 500.609 ; gain = 369.781
+Finished Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1151.281 ; gain = 461.234
 ---------------------------------------------------------------------------------
-Finished Parallel Area Opt  : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 500.609 ; gain = 369.781
-Finished Parallel Section  : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 500.609 ; gain = 369.781
+Finished Parallel Area Opt  : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1151.281 ; gain = 461.234
+Finished Parallel Section  : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1151.281 ; gain = 461.234
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
@@ -169,16 +165,16 @@ Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 INFO: Moved 2 constraints on hierarchical pins to their respective driving/loading pins
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 543.777 ; gain = 412.949
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 1168.297 ; gain = 478.250
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 543.777 ; gain = 412.949
+Finished Timing Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 1168.297 ; gain = 478.250
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 554.270 ; gain = 423.441
+Finished Technology Mapping : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 1179.309 ; gain = 489.262
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -196,7 +192,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:26 ; elapsed = 00:00:29 . Memory (MB): peak = 554.270 ; gain = 423.441
+Finished IO Insertion : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 1179.309 ; gain = 489.262
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -209,13 +205,13 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:26 ; elapsed = 00:00:29 . Memory (MB): peak = 554.270 ; gain = 423.441
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 1179.309 ; gain = 489.262
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:26 ; elapsed = 00:00:29 . Memory (MB): peak = 554.270 ; gain = 423.441
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 1179.309 ; gain = 489.262
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RAM, DSP and Shift Register Reporting
@@ -255,10 +251,10 @@ Report Instance Areas:
 |1     |top      |       |    28|
 +------+---------+-------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:26 ; elapsed = 00:00:29 . Memory (MB): peak = 554.270 ; gain = 423.441
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 1179.309 ; gain = 489.262
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Complete : Time (s): cpu = 00:00:26 ; elapsed = 00:00:29 . Memory (MB): peak = 554.270 ; gain = 423.441
+Synthesis Optimization Complete : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 1179.309 ; gain = 489.262
 INFO: [Opt 31-140] Inserted 0 IBUFs to IO ports without IO buffers.
 INFO: [Opt 31-141] Inserted 0 OBUFs to IO ports without IO buffers.
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
@@ -268,8 +264,8 @@ No Unisim elements were transformed.
 INFO: [Common 17-83] Releasing license: Synthesis
 11 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 554.773 ; gain = 370.949
+synth_design: Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1184.309 ; gain = 380.133
 # write_checkpoint pulse_test.dcp
 # report_utilization -file pulse_test_utilization_synth.rpt -pb pulse_test_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.029 . Memory (MB): peak = 554.773 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Sat Apr 18 14:50:55 2015...
+report_utilization: Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.05 . Memory (MB): peak = 1184.312 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sat Apr 18 15:23:55 2015...

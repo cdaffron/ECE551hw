@@ -1,48 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1429383252">
-  <File Type="RUN-CONSTRS" Name="$PDATADIR/runs/impl_1/constrs_in.xml"/>
-  <File Type="PWROPT-DCP" Name="pulse_test_pwropt.dcp"/>
-  <File Type="RUN-STRAT" Name="$PDATADIR/runs/impl_1/impl_1.psg"/>
-  <File Type="OPT-DRC" Name="pulse_test_drc_opted.rpt"/>
-  <File Type="ROUTE-TIMING-PB" Name="pulse_test_timing_summary_routed.pb"/>
-  <File Type="PA-TCL" Name="pulse_test.tcl"/>
-  <File Type="OPT-DCP" Name="pulse_test_opt.dcp"/>
-  <File Type="PWROPT-DRC" Name="pulse_test_drc_pwropted.rpt"/>
-  <File Type="PLACE-DCP" Name="pulse_test_placed.dcp"/>
-  <File Type="PLACE-IO" Name="pulse_test_io_placed.rpt"/>
-  <File Type="PLACE-CLK" Name="pulse_test_clock_utilization_placed.rpt"/>
-  <File Type="PLACE-UTIL" Name="pulse_test_utilization_placed.rpt"/>
-  <File Type="PLACE-UTIL-PB" Name="pulse_test_utilization_placed.pb"/>
-  <File Type="PLACE-CTRL" Name="pulse_test_control_sets_placed.rpt"/>
-  <File Type="PLACE-SIMILARITY" Name="pulse_test_incremental_reuse_placed.rpt"/>
-  <File Type="PLACE-PRE-SIMILARITY" Name="pulse_test_incremental_reuse_pre_placed.rpt"/>
-  <File Type="POSTPLACE-PWROPT-DCP" Name="pulse_test_postplace_pwropt.dcp"/>
-  <File Type="PHYSOPT-DCP" Name="pulse_test_physopt.dcp"/>
-  <File Type="PHYSOPT-DRC" Name="pulse_test_drc_physopted.rpt"/>
-  <File Type="ROUTE-DCP" Name="pulse_test_routed.dcp"/>
-  <File Type="ROUTE-DRC" Name="pulse_test_drc_routed.rpt"/>
-  <File Type="ROUTE-DRC-PB" Name="pulse_test_drc_routed.pb"/>
-  <File Type="ROUTE-PWR" Name="pulse_test_power_routed.rpt"/>
-  <File Type="ROUTE-PWR-SUM" Name="pulse_test_power_summary_routed.pb"/>
-  <File Type="ROUTE-STATUS" Name="pulse_test_route_status.rpt"/>
-  <File Type="ROUTE-STATUS-PB" Name="pulse_test_route_status.pb"/>
-  <File Type="ROUTE-TIMINGSUMMARY" Name="pulse_test_timing_summary_routed.rpt"/>
-  <File Type="ROUTE-SIMILARITY" Name="pulse_test_incremental_reuse_routed.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-DCP" Name="pulse_test_postroute_physopt.dcp"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="pulse_test_timing_summary_postroute_physopted.rpt"/>
-  <File Type="RDI-RDI" Name="pulse_test.vdi"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="pulse_test_timing_summary_postroute_physopted.pb"/>
-  <File Type="BG-BIT" Name="pulse_test.bit"/>
-  <File Type="BG-BIN" Name="pulse_test.bin"/>
-  <File Type="BITSTR-MSK" Name="pulse_test.msk"/>
-  <File Type="BITSTR-RBT" Name="pulse_test.rbt"/>
-  <File Type="BITSTR-NKY" Name="pulse_test.nky"/>
-  <File Type="BITSTR-BMM" Name="pulse_test_bd.bmm"/>
-  <File Type="BITSTR-MMI" Name="pulse_test.mmi"/>
-  <File Type="BITSTR-SYSDEF" Name="pulse_test.sysdef"/>
-  <File Type="BG-BGN" Name="pulse_test.bgn"/>
-  <File Type="BG-DRC" Name="pulse_test.drc"/>
+<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1429385132">
   <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="RDI-RDI" Name="pulse_test.vdi"/>
+  <File Type="BG-DRC" Name="pulse_test.drc"/>
+  <File Type="BG-BGN" Name="pulse_test.bgn"/>
+  <File Type="BITSTR-SYSDEF" Name="pulse_test.sysdef"/>
+  <File Type="BITSTR-MMI" Name="pulse_test.mmi"/>
+  <File Type="BITSTR-BMM" Name="pulse_test_bd.bmm"/>
+  <File Type="BITSTR-NKY" Name="pulse_test.nky"/>
+  <File Type="BITSTR-RBT" Name="pulse_test.rbt"/>
+  <File Type="BITSTR-MSK" Name="pulse_test.msk"/>
+  <File Type="BG-BIN" Name="pulse_test.bin"/>
+  <File Type="BG-BIT" Name="pulse_test.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="pulse_test_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="pulse_test_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="pulse_test_postroute_physopt.dcp"/>
+  <File Type="ROUTE-SIMILARITY" Name="pulse_test_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="pulse_test_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="pulse_test_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="pulse_test_route_status.pb"/>
+  <File Type="ROUTE-STATUS" Name="pulse_test_route_status.rpt"/>
+  <File Type="ROUTE-PWR-SUM" Name="pulse_test_power_summary_routed.pb"/>
+  <File Type="ROUTE-PWR" Name="pulse_test_power_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="pulse_test_drc_routed.pb"/>
+  <File Type="ROUTE-DRC" Name="pulse_test_drc_routed.rpt"/>
+  <File Type="ROUTE-DCP" Name="pulse_test_routed.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="pulse_test_drc_physopted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="pulse_test_physopt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="pulse_test_postplace_pwropt.dcp"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="pulse_test_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="pulse_test_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-CTRL" Name="pulse_test_control_sets_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="pulse_test_utilization_placed.pb"/>
+  <File Type="PLACE-UTIL" Name="pulse_test_utilization_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="pulse_test_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-IO" Name="pulse_test_io_placed.rpt"/>
+  <File Type="PLACE-DCP" Name="pulse_test_placed.dcp"/>
+  <File Type="PWROPT-DRC" Name="pulse_test_drc_pwropted.rpt"/>
+  <File Type="PWROPT-DCP" Name="pulse_test_pwropt.dcp"/>
+  <File Type="OPT-DRC" Name="pulse_test_drc_opted.rpt"/>
+  <File Type="OPT-DCP" Name="pulse_test_opt.dcp"/>
+  <File Type="PA-TCL" Name="pulse_test.tcl"/>
+  <File Type="RUN-STRAT" Name="$PDATADIR/runs/impl_1/impl_1.psg"/>
+  <File Type="RUN-CONSTRS" Name="$PDATADIR/runs/impl_1/constrs_in.xml"/>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
     <Filter Type="Constrs"/>
     <File Path="$PSRCDIR/constrs_1/imports/lab2/Nexys4_Master.xdc">
@@ -70,9 +70,7 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2014">
-      <Desc>Vivado Implementation Defaults</Desc>
-    </StratHandle>
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2014"/>
     <Step Id="init_design"/>
     <Step Id="opt_design"/>
     <Step Id="power_opt_design"/>
@@ -83,6 +81,6 @@
     <Step Id="post_route_phys_opt_design"/>
     <Step Id="write_bitstream"/>
   </Strategy>
-  <BlockFileSet Type="BlockSrcs" Name="clk_wiz_0"/>
   <BlockFileSet Type="BlockSrcs" Name="c_counter_binary_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="clk_wiz_0"/>
 </GenRun>

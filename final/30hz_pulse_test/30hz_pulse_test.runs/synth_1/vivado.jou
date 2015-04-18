@@ -1,10 +1,10 @@
 #-----------------------------------------------------------
 # Vivado v2014.2 (64-bit)
-# SW Build 932637 on Wed Jun 11 13:33:10 MDT 2014
+# SW Build 932637 on Wed Jun 11 13:08:52 MDT 2014
 # IP Build 924643 on Fri May 30 09:20:16 MDT 2014
-# Start of session at: Sat Apr 18 14:50:24 2015
-# Process ID: 1384
-# Log file: C:/Users/cdaffron/Documents/ECE 551/final/30hz_pulse_test/30hz_pulse_test.runs/synth_1/pulse_test.vds
-# Journal file: C:/Users/cdaffron/Documents/ECE 551/final/30hz_pulse_test/30hz_pulse_test.runs/synth_1\vivado.jou
+# Start of session at: Sat Apr 18 15:23:27 2015
+# Process ID: 31933
+# Log file: /data1/cdaffron/git/ece551hw/final/30hz_pulse_test/30hz_pulse_test.runs/synth_1/pulse_test.vds
+# Journal file: /data1/cdaffron/git/ece551hw/final/30hz_pulse_test/30hz_pulse_test.runs/synth_1/vivado.jou
 #-----------------------------------------------------------
 source pulse_test.tcl

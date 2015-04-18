@@ -1,40 +1,38 @@
 #-----------------------------------------------------------
 # Vivado v2014.2 (64-bit)
-# SW Build 932637 on Wed Jun 11 13:33:10 MDT 2014
+# SW Build 932637 on Wed Jun 11 13:08:52 MDT 2014
 # IP Build 924643 on Fri May 30 09:20:16 MDT 2014
-# Start of session at: Sat Apr 18 14:40:55 2015
-# Process ID: 7656
-# Log file: C:/Users/cdaffron/Documents/ECE 551/final/30hz_pulse_test/30hz_pulse_test.runs/clk_wiz_0_synth_1/clk_wiz_0.vds
-# Journal file: C:/Users/cdaffron/Documents/ECE 551/final/30hz_pulse_test/30hz_pulse_test.runs/clk_wiz_0_synth_1\vivado.jou
+# Start of session at: Sat Apr 18 15:22:20 2015
+# Process ID: 31678
+# Log file: /data1/cdaffron/git/ece551hw/final/30hz_pulse_test/30hz_pulse_test.runs/clk_wiz_0_synth_1/clk_wiz_0.vds
+# Journal file: /data1/cdaffron/git/ece551hw/final/30hz_pulse_test/30hz_pulse_test.runs/clk_wiz_0_synth_1/vivado.jou
 #-----------------------------------------------------------
 source clk_wiz_0.tcl
 # set_param gui.test TreeTableDev
-# set_param xicom.use_bs_reader 1
 # set_msg_config -id {HDL 9-1061} -limit 100000
 # set_msg_config -id {HDL 9-1654} -limit 100000
-# set_msg_config -id {Labtools 27-147} -limit 4294967295
 # create_project -in_memory -part xc7a100tcsg324-1
 # set_property target_language VHDL [current_project]
 # set_param project.compositeFile.enableAutoGeneration 0
 # set_property default_lib xil_defaultlib [current_project]
-# read_ip {{c:/Users/cdaffron/Documents/ECE 551/final/30hz_pulse_test/30hz_pulse_test.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci}}
+# read_ip /data1/cdaffron/git/ece551hw/final/30hz_pulse_test/30hz_pulse_test.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
-INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2014.2/data/ip'.
-WARNING: [IP_Flow 19-3664] IP 'clk_wiz_0' generated file not found 'c:/Users/cdaffron/Documents/ECE 551/final/30hz_pulse_test/30hz_pulse_test.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.dcp'. Please regenerate to continue.
-WARNING: [IP_Flow 19-3664] IP 'clk_wiz_0' generated file not found 'c:/Users/cdaffron/Documents/ECE 551/final/30hz_pulse_test/30hz_pulse_test.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_stub.v'. Please regenerate to continue.
-WARNING: [IP_Flow 19-3664] IP 'clk_wiz_0' generated file not found 'c:/Users/cdaffron/Documents/ECE 551/final/30hz_pulse_test/30hz_pulse_test.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_stub.vhdl'. Please regenerate to continue.
-WARNING: [IP_Flow 19-3664] IP 'clk_wiz_0' generated file not found 'c:/Users/cdaffron/Documents/ECE 551/final/30hz_pulse_test/30hz_pulse_test.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_funcsim.v'. Please regenerate to continue.
-WARNING: [IP_Flow 19-3664] IP 'clk_wiz_0' generated file not found 'c:/Users/cdaffron/Documents/ECE 551/final/30hz_pulse_test/30hz_pulse_test.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_funcsim.vhdl'. Please regenerate to continue.
-# set_property used_in_implementation false [get_files {{c:/Users/cdaffron/Documents/ECE 551/final/30hz_pulse_test/30hz_pulse_test.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.dcp}}]
-# set_property used_in_implementation false [get_files -all {{c:/Users/cdaffron/Documents/ECE 551/final/30hz_pulse_test/30hz_pulse_test.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.dcp}}]
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2014.2/data/ip'.
+WARNING: [IP_Flow 19-3664] IP 'clk_wiz_0' generated file not found '/data1/cdaffron/git/ece551hw/final/30hz_pulse_test/30hz_pulse_test.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'clk_wiz_0' generated file not found '/data1/cdaffron/git/ece551hw/final/30hz_pulse_test/30hz_pulse_test.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'clk_wiz_0' generated file not found '/data1/cdaffron/git/ece551hw/final/30hz_pulse_test/30hz_pulse_test.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'clk_wiz_0' generated file not found '/data1/cdaffron/git/ece551hw/final/30hz_pulse_test/30hz_pulse_test.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_funcsim.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'clk_wiz_0' generated file not found '/data1/cdaffron/git/ece551hw/final/30hz_pulse_test/30hz_pulse_test.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_funcsim.vhdl'. Please regenerate to continue.
+# set_property used_in_implementation false [get_files /data1/cdaffron/git/ece551hw/final/30hz_pulse_test/30hz_pulse_test.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.dcp]
+# set_property used_in_implementation false [get_files -all /data1/cdaffron/git/ece551hw/final/30hz_pulse_test/30hz_pulse_test.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.dcp]
 # set_msg_config -id {IP_Flow 19-2162} -severity warning -new_severity info
-# set_property is_locked true [get_files {{c:/Users/cdaffron/Documents/ECE 551/final/30hz_pulse_test/30hz_pulse_test.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci}}]
+# set_property is_locked true [get_files /data1/cdaffron/git/ece551hw/final/30hz_pulse_test/30hz_pulse_test.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci]
 # read_xdc dont_touch.xdc
 # set_property used_in_implementation false [get_files dont_touch.xdc]
 # set_param synth.vivado.isSynthRun true
-# set_property webtalk.parent_dir {C:/Users/cdaffron/Documents/ECE 551/final/30hz_pulse_test/30hz_pulse_test.cache/wt} [current_project]
-# set_property parent.project_dir {C:/Users/cdaffron/Documents/ECE 551/final/30hz_pulse_test} [current_project]
+# set_property webtalk.parent_dir /data1/cdaffron/git/ece551hw/final/30hz_pulse_test/30hz_pulse_test.cache/wt [current_project]
+# set_property parent.project_dir /data1/cdaffron/git/ece551hw/final/30hz_pulse_test [current_project]
 # catch { write_hwdef -file clk_wiz_0.hwdef }
 INFO: [Vivado_Tcl 4-279] hardware handoff file cannot be generated as there is no block diagram instance in the design
 # synth_design -top clk_wiz_0 -part xc7a100tcsg324-1 -mode out_of_context
@@ -45,30 +43,30 @@ Starting synthesis...
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 234.535 ; gain = 103.582
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 852.172 ; gain = 162.125
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'clk_wiz_0' [c:/Users/cdaffron/Documents/ECE 551/final/30hz_pulse_test/30hz_pulse_test.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.vhd:85]
-INFO: [Synth 8-3491] module 'clk_wiz_0_clk_wiz' declared at 'c:/Users/cdaffron/Documents/ECE 551/final/30hz_pulse_test/30hz_pulse_test.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.vhd:75' bound to instance 'U0' of component 'clk_wiz_0_clk_wiz' [c:/Users/cdaffron/Documents/ECE 551/final/30hz_pulse_test/30hz_pulse_test.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.vhd:101]
-INFO: [Synth 8-638] synthesizing module 'clk_wiz_0_clk_wiz' [c:/Users/cdaffron/Documents/ECE 551/final/30hz_pulse_test/30hz_pulse_test.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.vhd:85]
-INFO: [Synth 8-4472] Detected and applied attribute async_reg = TRUE [c:/Users/cdaffron/Documents/ECE 551/final/30hz_pulse_test/30hz_pulse_test.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.vhd:114]
-INFO: [Synth 8-4472] Detected and applied attribute async_reg = TRUE [c:/Users/cdaffron/Documents/ECE 551/final/30hz_pulse_test/30hz_pulse_test.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.vhd:115]
+INFO: [Synth 8-638] synthesizing module 'clk_wiz_0' [/data1/cdaffron/git/ece551hw/final/30hz_pulse_test/30hz_pulse_test.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.vhd:85]
+INFO: [Synth 8-3491] module 'clk_wiz_0_clk_wiz' declared at '/data1/cdaffron/git/ece551hw/final/30hz_pulse_test/30hz_pulse_test.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.vhd:75' bound to instance 'U0' of component 'clk_wiz_0_clk_wiz' [/data1/cdaffron/git/ece551hw/final/30hz_pulse_test/30hz_pulse_test.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.vhd:101]
+INFO: [Synth 8-638] synthesizing module 'clk_wiz_0_clk_wiz' [/data1/cdaffron/git/ece551hw/final/30hz_pulse_test/30hz_pulse_test.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.vhd:85]
+INFO: [Synth 8-4472] Detected and applied attribute async_reg = TRUE [/data1/cdaffron/git/ece551hw/final/30hz_pulse_test/30hz_pulse_test.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.vhd:114]
+INFO: [Synth 8-4472] Detected and applied attribute async_reg = TRUE [/data1/cdaffron/git/ece551hw/final/30hz_pulse_test/30hz_pulse_test.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.vhd:115]
 	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
 	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
 	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
 	Parameter IFD_DELAY_VALUE bound to: AUTO - type: string 
 	Parameter IOSTANDARD bound to: DEFAULT - type: string 
-INFO: [Synth 8-113] binding component instance 'clkin1_ibufg' to cell 'IBUF' [c:/Users/cdaffron/Documents/ECE 551/final/30hz_pulse_test/30hz_pulse_test.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.vhd:128]
+INFO: [Synth 8-113] binding component instance 'clkin1_ibufg' to cell 'IBUF' [/data1/cdaffron/git/ece551hw/final/30hz_pulse_test/30hz_pulse_test.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.vhd:128]
 	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
-	Parameter CLKFBOUT_MULT_F bound to: 7.500000 - type: float 
+	Parameter CLKFBOUT_MULT_F bound to: 6.000000 - type: float 
 	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: float 
 	Parameter CLKFBOUT_USE_FINE_PS bound to: 0 - type: bool 
 	Parameter CLKIN1_PERIOD bound to: 10.000000 - type: float 
 	Parameter CLKIN2_PERIOD bound to: 0.000000 - type: float 
-	Parameter CLKOUT0_DIVIDE_F bound to: 125.000000 - type: float 
+	Parameter CLKOUT0_DIVIDE_F bound to: 100.000000 - type: float 
 	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: float 
 	Parameter CLKOUT0_PHASE bound to: 0.000000 - type: float 
 	Parameter CLKOUT0_USE_FINE_PS bound to: 0 - type: bool 
-	Parameter CLKOUT1_DIVIDE bound to: 25 - type: integer 
+	Parameter CLKOUT1_DIVIDE bound to: 3 - type: integer 
 	Parameter CLKOUT1_DUTY_CYCLE bound to: 0.500000 - type: float 
 	Parameter CLKOUT1_PHASE bound to: 0.000000 - type: float 
 	Parameter CLKOUT1_USE_FINE_PS bound to: 0 - type: bool 
@@ -106,22 +104,22 @@ INFO: [Synth 8-113] binding component instance 'clkin1_ibufg' to cell 'IBUF' [c:
 	Parameter SS_MODE bound to: CENTER_HIGH - type: string 
 	Parameter SS_MOD_PERIOD bound to: 10000 - type: integer 
 	Parameter STARTUP_WAIT bound to: 0 - type: bool 
-INFO: [Synth 8-113] binding component instance 'mmcm_adv_inst' to cell 'MMCME2_ADV' [c:/Users/cdaffron/Documents/ECE 551/final/30hz_pulse_test/30hz_pulse_test.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.vhd:140]
-INFO: [Synth 8-113] binding component instance 'clkf_buf' to cell 'BUFG' [c:/Users/cdaffron/Documents/ECE 551/final/30hz_pulse_test/30hz_pulse_test.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.vhd:206]
+INFO: [Synth 8-113] binding component instance 'mmcm_adv_inst' to cell 'MMCME2_ADV' [/data1/cdaffron/git/ece551hw/final/30hz_pulse_test/30hz_pulse_test.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.vhd:140]
+INFO: [Synth 8-113] binding component instance 'clkf_buf' to cell 'BUFG' [/data1/cdaffron/git/ece551hw/final/30hz_pulse_test/30hz_pulse_test.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.vhd:206]
 	Parameter CE_TYPE bound to: SYNC - type: string 
 	Parameter IS_CE_INVERTED bound to: 1'b0 
 	Parameter IS_I_INVERTED bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'clkout1_buf' to cell 'BUFGCE' [c:/Users/cdaffron/Documents/ECE 551/final/30hz_pulse_test/30hz_pulse_test.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.vhd:213]
-INFO: [Synth 8-113] binding component instance 'clkout1_buf_en' to cell 'BUFH' [c:/Users/cdaffron/Documents/ECE 551/final/30hz_pulse_test/30hz_pulse_test.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.vhd:219]
+INFO: [Synth 8-113] binding component instance 'clkout1_buf' to cell 'BUFGCE' [/data1/cdaffron/git/ece551hw/final/30hz_pulse_test/30hz_pulse_test.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.vhd:213]
+INFO: [Synth 8-113] binding component instance 'clkout1_buf_en' to cell 'BUFH' [/data1/cdaffron/git/ece551hw/final/30hz_pulse_test/30hz_pulse_test.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.vhd:219]
 	Parameter CE_TYPE bound to: SYNC - type: string 
 	Parameter IS_CE_INVERTED bound to: 1'b0 
 	Parameter IS_I_INVERTED bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'clkout2_buf' to cell 'BUFGCE' [c:/Users/cdaffron/Documents/ECE 551/final/30hz_pulse_test/30hz_pulse_test.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.vhd:232]
-INFO: [Synth 8-113] binding component instance 'clkout2_buf_en' to cell 'BUFH' [c:/Users/cdaffron/Documents/ECE 551/final/30hz_pulse_test/30hz_pulse_test.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.vhd:238]
-INFO: [Synth 8-256] done synthesizing module 'clk_wiz_0_clk_wiz' (1#1) [c:/Users/cdaffron/Documents/ECE 551/final/30hz_pulse_test/30hz_pulse_test.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.vhd:85]
-INFO: [Synth 8-256] done synthesizing module 'clk_wiz_0' (2#1) [c:/Users/cdaffron/Documents/ECE 551/final/30hz_pulse_test/30hz_pulse_test.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.vhd:85]
+INFO: [Synth 8-113] binding component instance 'clkout2_buf' to cell 'BUFGCE' [/data1/cdaffron/git/ece551hw/final/30hz_pulse_test/30hz_pulse_test.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.vhd:232]
+INFO: [Synth 8-113] binding component instance 'clkout2_buf_en' to cell 'BUFH' [/data1/cdaffron/git/ece551hw/final/30hz_pulse_test/30hz_pulse_test.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.vhd:238]
+INFO: [Synth 8-256] done synthesizing module 'clk_wiz_0_clk_wiz' (1#1) [/data1/cdaffron/git/ece551hw/final/30hz_pulse_test/30hz_pulse_test.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.vhd:85]
+INFO: [Synth 8-256] done synthesizing module 'clk_wiz_0' (2#1) [/data1/cdaffron/git/ece551hw/final/30hz_pulse_test/30hz_pulse_test.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.vhd:85]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 268.387 ; gain = 137.434
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 887.055 ; gain = 197.008
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Optimization
@@ -135,29 +133,29 @@ Report Check Netlist:
 +------+------------------+-------+---------+-------+------------------+
 INFO: [Netlist 29-17] Analyzing 4 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
-Loading clock regions from C:/Xilinx/Vivado/2014.2/data\parts/xilinx/artix7/artix7/xc7a100t/ClockRegion.xml
-Loading clock buffers from C:/Xilinx/Vivado/2014.2/data\parts/xilinx/artix7/artix7/xc7a100t/ClockBuffers.xml
-Loading clock placement rules from C:/Xilinx/Vivado/2014.2/data/parts/xilinx/artix7/ClockPlacerRules.xml
-Loading package pin functions from C:/Xilinx/Vivado/2014.2/data\parts/xilinx/artix7/PinFunctions.xml...
-Loading package from C:/Xilinx/Vivado/2014.2/data\parts/xilinx/artix7/artix7/xc7a100t/csg324/Package.xml
-Loading io standards from C:/Xilinx/Vivado/2014.2/data\./parts/xilinx/artix7/IOStandards.xml
-Loading device configuration modes from C:/Xilinx/Vivado/2014.2/data\parts/xilinx/artix7/ConfigModes.xml
+Loading clock regions from /opt/Xilinx/Vivado/2014.2/data/parts/xilinx/artix7/artix7/xc7a100t/ClockRegion.xml
+Loading clock buffers from /opt/Xilinx/Vivado/2014.2/data/parts/xilinx/artix7/artix7/xc7a100t/ClockBuffers.xml
+Loading clock placement rules from /opt/Xilinx/Vivado/2014.2/data/parts/xilinx/artix7/ClockPlacerRules.xml
+Loading package pin functions from /opt/Xilinx/Vivado/2014.2/data/parts/xilinx/artix7/PinFunctions.xml...
+Loading package from /opt/Xilinx/Vivado/2014.2/data/parts/xilinx/artix7/artix7/xc7a100t/csg324/Package.xml
+Loading io standards from /opt/Xilinx/Vivado/2014.2/data/./parts/xilinx/artix7/IOStandards.xml
+Loading device configuration modes from /opt/Xilinx/Vivado/2014.2/data/parts/xilinx/artix7/ConfigModes.xml
 
 Processing XDC Constraints
-Parsing XDC File [c:/Users/cdaffron/Documents/ECE 551/final/30hz_pulse_test/30hz_pulse_test.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_ooc.xdc] for cell 'U0'
-Finished Parsing XDC File [c:/Users/cdaffron/Documents/ECE 551/final/30hz_pulse_test/30hz_pulse_test.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_ooc.xdc] for cell 'U0'
-Parsing XDC File [c:/Users/cdaffron/Documents/ECE 551/final/30hz_pulse_test/30hz_pulse_test.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'U0'
-Finished Parsing XDC File [c:/Users/cdaffron/Documents/ECE 551/final/30hz_pulse_test/30hz_pulse_test.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'U0'
+Parsing XDC File [/data1/cdaffron/git/ece551hw/final/30hz_pulse_test/30hz_pulse_test.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [/data1/cdaffron/git/ece551hw/final/30hz_pulse_test/30hz_pulse_test.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_ooc.xdc] for cell 'U0'
+Parsing XDC File [/data1/cdaffron/git/ece551hw/final/30hz_pulse_test/30hz_pulse_test.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'U0'
+Finished Parsing XDC File [/data1/cdaffron/git/ece551hw/final/30hz_pulse_test/30hz_pulse_test.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'U0'
 INFO: [Timing 38-2] Deriving generated clocks
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Users/cdaffron/Documents/ECE 551/final/30hz_pulse_test/30hz_pulse_test.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/clk_wiz_0_propImpl.xdc].
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/data1/cdaffron/git/ece551hw/final/30hz_pulse_test/30hz_pulse_test.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/clk_wiz_0_propImpl.xdc].
 Resolution: To avoid this message, exclude constraints listed in [.Xil/clk_wiz_0_propImpl.xdc] from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
-Parsing XDC File [c:/Users/cdaffron/Documents/ECE 551/final/30hz_pulse_test/30hz_pulse_test.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'U0'
-Finished Parsing XDC File [c:/Users/cdaffron/Documents/ECE 551/final/30hz_pulse_test/30hz_pulse_test.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'U0'
-Parsing XDC File [C:/Users/cdaffron/Documents/ECE 551/final/30hz_pulse_test/30hz_pulse_test.runs/clk_wiz_0_synth_1/dont_touch.xdc]
-Finished Parsing XDC File [C:/Users/cdaffron/Documents/ECE 551/final/30hz_pulse_test/30hz_pulse_test.runs/clk_wiz_0_synth_1/dont_touch.xdc]
-Parsing XDC File [c:/Users/cdaffron/Documents/ECE 551/final/30hz_pulse_test/30hz_pulse_test.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_late.xdc] for cell 'U0'
-Finished Parsing XDC File [c:/Users/cdaffron/Documents/ECE 551/final/30hz_pulse_test/30hz_pulse_test.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_late.xdc] for cell 'U0'
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Users/cdaffron/Documents/ECE 551/final/30hz_pulse_test/30hz_pulse_test.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_late.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/clk_wiz_0_propImpl.xdc].
+Parsing XDC File [/data1/cdaffron/git/ece551hw/final/30hz_pulse_test/30hz_pulse_test.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'U0'
+Finished Parsing XDC File [/data1/cdaffron/git/ece551hw/final/30hz_pulse_test/30hz_pulse_test.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'U0'
+Parsing XDC File [/data1/cdaffron/git/ece551hw/final/30hz_pulse_test/30hz_pulse_test.runs/clk_wiz_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/data1/cdaffron/git/ece551hw/final/30hz_pulse_test/30hz_pulse_test.runs/clk_wiz_0_synth_1/dont_touch.xdc]
+Parsing XDC File [/data1/cdaffron/git/ece551hw/final/30hz_pulse_test/30hz_pulse_test.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_late.xdc] for cell 'U0'
+Finished Parsing XDC File [/data1/cdaffron/git/ece551hw/final/30hz_pulse_test/30hz_pulse_test.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_late.xdc] for cell 'U0'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/data1/cdaffron/git/ece551hw/final/30hz_pulse_test/30hz_pulse_test.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_late.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/clk_wiz_0_propImpl.xdc].
 Resolution: To avoid this message, exclude constraints listed in [.Xil/clk_wiz_0_propImpl.xdc] from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
@@ -173,17 +171,17 @@ Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 475.945 ; gain = 344.992
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1154.281 ; gain = 464.234
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property DONT_TOUCH = true for U0. (constraint file  {C:/Users/cdaffron/Documents/ECE 551/final/30hz_pulse_test/30hz_pulse_test.runs/clk_wiz_0_synth_1/dont_touch.xdc}, line 9).
+Applied set_property DONT_TOUCH = true for U0. (constraint file  /data1/cdaffron/git/ece551hw/final/30hz_pulse_test/30hz_pulse_test.runs/clk_wiz_0_synth_1/dont_touch.xdc, line 9).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 475.945 ; gain = 344.992
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1154.281 ; gain = 464.234
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 475.945 ; gain = 344.992
+Finished RTL Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1154.281 ; gain = 464.234
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -222,14 +220,14 @@ BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
 ---------------------------------------------------------------------------------
 Finished Part Resource Summary
 ---------------------------------------------------------------------------------
-Workers Ready, Starting Parallel Section  : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 475.945 ; gain = 344.992
+Workers Ready, Starting Parallel Section  : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1154.281 ; gain = 464.234
 ---------------------------------------------------------------------------------
 Start Cross Boundary Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Cross Boundary Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 475.945 ; gain = 344.992
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1154.281 ; gain = 464.234
 ---------------------------------------------------------------------------------
-Finished Parallel Reinfer  : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 475.945 ; gain = 344.992
+Finished Parallel Reinfer  : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1154.281 ; gain = 464.234
 ---------------------------------------------------------------------------------
 Start RAM, DSP and Shift Register Reporting
 ---------------------------------------------------------------------------------
@@ -240,10 +238,10 @@ Finished RAM, DSP and Shift Register Reporting
 Start Area Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 484.820 ; gain = 353.867
+Finished Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1154.281 ; gain = 464.234
 ---------------------------------------------------------------------------------
-Finished Parallel Area Opt  : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 484.820 ; gain = 353.867
-Finished Parallel Section  : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 484.820 ; gain = 353.867
+Finished Parallel Area Opt  : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1154.281 ; gain = 464.234
+Finished Parallel Section  : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1154.281 ; gain = 464.234
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
@@ -251,16 +249,16 @@ Start Timing Optimization
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 539.129 ; gain = 408.176
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1163.281 ; gain = 473.234
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 539.129 ; gain = 408.176
+Finished Timing Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1163.281 ; gain = 473.234
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 548.285 ; gain = 417.332
+Finished Technology Mapping : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1173.293 ; gain = 483.246
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -278,7 +276,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:26 ; elapsed = 00:00:29 . Memory (MB): peak = 548.285 ; gain = 417.332
+Finished IO Insertion : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 1173.293 ; gain = 483.246
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -291,13 +289,13 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:26 ; elapsed = 00:00:29 . Memory (MB): peak = 548.285 ; gain = 417.332
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 1173.293 ; gain = 483.246
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:26 ; elapsed = 00:00:29 . Memory (MB): peak = 548.285 ; gain = 417.332
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 1173.293 ; gain = 483.246
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RAM, DSP and Shift Register Reporting
@@ -335,25 +333,25 @@ Report Instance Areas:
 |2     |  U0     |clk_wiz_0_clk_wiz |    23|
 +------+---------+------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:26 ; elapsed = 00:00:29 . Memory (MB): peak = 548.285 ; gain = 417.332
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 1173.293 ; gain = 483.246
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Complete : Time (s): cpu = 00:00:26 ; elapsed = 00:00:29 . Memory (MB): peak = 548.285 ; gain = 417.332
+Synthesis Optimization Complete : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 1173.293 ; gain = 483.246
 INFO: [Netlist 29-17] Analyzing 4 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
-Parsing XDC File [c:/Users/cdaffron/Documents/ECE 551/final/30hz_pulse_test/30hz_pulse_test.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_ooc.xdc] for cell 'U0'
-Finished Parsing XDC File [c:/Users/cdaffron/Documents/ECE 551/final/30hz_pulse_test/30hz_pulse_test.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_ooc.xdc] for cell 'U0'
-Parsing XDC File [c:/Users/cdaffron/Documents/ECE 551/final/30hz_pulse_test/30hz_pulse_test.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'U0'
-INFO: [Timing 38-35] Done setting XDC timing constraints. [c:/Users/cdaffron/Documents/ECE 551/final/30hz_pulse_test/30hz_pulse_test.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc:56]
-INFO: [Timing 38-2] Deriving generated clocks [c:/Users/cdaffron/Documents/ECE 551/final/30hz_pulse_test/30hz_pulse_test.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc:56]
-get_clocks: Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 974.734 ; gain = 415.898
-WARNING: [Timing 38-242] The property HD.CLK_SRC of clock port "clk_in1" is not set. In out-of-context mode, this prevents timing estimation for clock delay/skew [c:/Users/cdaffron/Documents/ECE 551/final/30hz_pulse_test/30hz_pulse_test.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc:59]
+Parsing XDC File [/data1/cdaffron/git/ece551hw/final/30hz_pulse_test/30hz_pulse_test.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [/data1/cdaffron/git/ece551hw/final/30hz_pulse_test/30hz_pulse_test.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_ooc.xdc] for cell 'U0'
+Parsing XDC File [/data1/cdaffron/git/ece551hw/final/30hz_pulse_test/30hz_pulse_test.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'U0'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [/data1/cdaffron/git/ece551hw/final/30hz_pulse_test/30hz_pulse_test.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc:56]
+INFO: [Timing 38-2] Deriving generated clocks [/data1/cdaffron/git/ece551hw/final/30hz_pulse_test/30hz_pulse_test.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc:56]
+get_clocks: Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1603.746 ; gain = 416.453
+WARNING: [Timing 38-242] The property HD.CLK_SRC of clock port "clk_in1" is not set. In out-of-context mode, this prevents timing estimation for clock delay/skew [/data1/cdaffron/git/ece551hw/final/30hz_pulse_test/30hz_pulse_test.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc:59]
 Resolution: Set the HD.CLK_SRC property of the out-of-context port to the location of the clock buffer instance in the top-level design
-Finished Parsing XDC File [c:/Users/cdaffron/Documents/ECE 551/final/30hz_pulse_test/30hz_pulse_test.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'U0'
-Parsing XDC File [c:/Users/cdaffron/Documents/ECE 551/final/30hz_pulse_test/30hz_pulse_test.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'U0'
-Finished Parsing XDC File [c:/Users/cdaffron/Documents/ECE 551/final/30hz_pulse_test/30hz_pulse_test.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'U0'
-Parsing XDC File [c:/Users/cdaffron/Documents/ECE 551/final/30hz_pulse_test/30hz_pulse_test.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_late.xdc] for cell 'U0'
-Finished Parsing XDC File [c:/Users/cdaffron/Documents/ECE 551/final/30hz_pulse_test/30hz_pulse_test.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_late.xdc] for cell 'U0'
+Finished Parsing XDC File [/data1/cdaffron/git/ece551hw/final/30hz_pulse_test/30hz_pulse_test.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'U0'
+Parsing XDC File [/data1/cdaffron/git/ece551hw/final/30hz_pulse_test/30hz_pulse_test.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'U0'
+Finished Parsing XDC File [/data1/cdaffron/git/ece551hw/final/30hz_pulse_test/30hz_pulse_test.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'U0'
+Parsing XDC File [/data1/cdaffron/git/ece551hw/final/30hz_pulse_test/30hz_pulse_test.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_late.xdc] for cell 'U0'
+Finished Parsing XDC File [/data1/cdaffron/git/ece551hw/final/30hz_pulse_test/30hz_pulse_test.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_late.xdc] for cell 'U0'
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 2 instances were transformed.
@@ -362,19 +360,19 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 INFO: [Common 17-83] Releasing license: Synthesis
 28 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:40 ; elapsed = 00:00:43 . Memory (MB): peak = 974.734 ; gain = 786.930
+synth_design: Time (s): cpu = 00:00:34 ; elapsed = 00:00:34 . Memory (MB): peak = 1603.746 ; gain = 795.570
 # rename_ref -prefix_all clk_wiz_0_
 # write_checkpoint -noxdef clk_wiz_0.dcp
 # report_utilization -file clk_wiz_0_utilization_synth.rpt -pb clk_wiz_0_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.030 . Memory (MB): peak = 974.734 ; gain = 0.000
+report_utilization: Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.07 . Memory (MB): peak = 1603.750 ; gain = 0.000
 # if { [catch {
-#   file copy -force {C:/Users/cdaffron/Documents/ECE 551/final/30hz_pulse_test/30hz_pulse_test.runs/clk_wiz_0_synth_1/clk_wiz_0.dcp} {c:/Users/cdaffron/Documents/ECE 551/final/30hz_pulse_test/30hz_pulse_test.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.dcp}
-#   write_verilog -force -mode synth_stub {c:/Users/cdaffron/Documents/ECE 551/final/30hz_pulse_test/30hz_pulse_test.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_stub.v}
-#   write_vhdl -force -mode synth_stub {c:/Users/cdaffron/Documents/ECE 551/final/30hz_pulse_test/30hz_pulse_test.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_stub.vhdl}
-#   write_verilog -force -mode funcsim {c:/Users/cdaffron/Documents/ECE 551/final/30hz_pulse_test/30hz_pulse_test.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_funcsim.v}
-#   write_vhdl -force -mode funcsim {c:/Users/cdaffron/Documents/ECE 551/final/30hz_pulse_test/30hz_pulse_test.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_funcsim.vhdl}
+#   file copy -force /data1/cdaffron/git/ece551hw/final/30hz_pulse_test/30hz_pulse_test.runs/clk_wiz_0_synth_1/clk_wiz_0.dcp /data1/cdaffron/git/ece551hw/final/30hz_pulse_test/30hz_pulse_test.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.dcp
+#   write_verilog -force -mode synth_stub /data1/cdaffron/git/ece551hw/final/30hz_pulse_test/30hz_pulse_test.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_stub.v
+#   write_vhdl -force -mode synth_stub /data1/cdaffron/git/ece551hw/final/30hz_pulse_test/30hz_pulse_test.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_stub.vhdl
+#   write_verilog -force -mode funcsim /data1/cdaffron/git/ece551hw/final/30hz_pulse_test/30hz_pulse_test.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_funcsim.v
+#   write_vhdl -force -mode funcsim /data1/cdaffron/git/ece551hw/final/30hz_pulse_test/30hz_pulse_test.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_funcsim.vhdl
 # } _RESULT ] } { 
 #   send_msg_id runtcl-3 error "Unable to successfully create or copy supporting IP files."
 #   return -code error
 # }
-INFO: [Common 17-206] Exiting Vivado at Sat Apr 18 14:41:41 2015...
+INFO: [Common 17-206] Exiting Vivado at Sat Apr 18 15:23:01 2015...
