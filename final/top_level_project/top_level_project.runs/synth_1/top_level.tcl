@@ -45,6 +45,6 @@ set_param synth.vivado.isSynthRun true
 set_property webtalk.parent_dir /data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.cache/wt [current_project]
 set_property parent.project_dir /data1/cdaffron/git/ece551hw/final/top_level_project [current_project]
 catch { write_hwdef -file top_level.hwdef }
-synth_design -top top_level -part xc7a100tcsg324-1
+synth_design -top top_level -part xc7a100tcsg324-1 -flatten_hierarchy none
 write_checkpoint top_level.dcp
 report_utilization -file top_level_utilization_synth.rpt -pb top_level_utilization_synth.pb

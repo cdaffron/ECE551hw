@@ -236,6 +236,7 @@ architecture Behavioral of disp_draw is
     signal delay : integer;
     
     signal waitCycle : std_logic_vector (1 downto 0);
+    signal magWait : std_logic;
     
     signal barMag   : std_logic_vector (7 downto 0);
     
@@ -403,13 +404,19 @@ begin
                     imagVal <= average;
                     avgIn <= tmp;
                     s_curr <= bars64_mag;
+                    magWait <= '1';
                     
                 when bars64_mag =>
-                    realVal <= average;
-                    inValid <= '1';
-                    barNumIn <= counter(5 downto 0);
-                    counter <= std_logic_vector( unsigned( counter ) + 1 );
-                    s_curr <= bars64_barLoop;
+                    if( magWait = '1' ) then
+                        magWait <= '0';
+                        s_curr <= bars64_mag;
+                    else
+                        realVal <= average;
+                        inValid <= '1';
+                        barNumIn <= counter(5 downto 0);
+                        counter <= std_logic_vector( unsigned( counter ) + 1 );
+                        s_curr <= bars64_barLoop;
+                    end if;
                     
                 when bars32 =>
                     counter <= X"00";

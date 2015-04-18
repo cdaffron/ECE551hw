@@ -2,8 +2,8 @@
 # Vivado v2014.2 (64-bit)
 # SW Build 932637 on Wed Jun 11 13:08:52 MDT 2014
 # IP Build 924643 on Fri May 30 09:20:16 MDT 2014
-# Start of session at: Sat Apr 18 15:48:01 2015
-# Process ID: 1863
+# Start of session at: Sat Apr 18 17:56:56 2015
+# Process ID: 8300
 # Log file: /data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.runs/synth_1/top_level.vds
 # Journal file: /data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.runs/synth_1/vivado.jou
 #-----------------------------------------------------------
@@ -51,23 +51,23 @@ source top_level.tcl
 # set_property parent.project_dir /data1/cdaffron/git/ece551hw/final/top_level_project [current_project]
 # catch { write_hwdef -file top_level.hwdef }
 INFO: [Vivado_Tcl 4-279] hardware handoff file cannot be generated as there is no block diagram instance in the design
-# synth_design -top top_level -part xc7a100tcsg324-1
-Command: synth_design -top top_level -part xc7a100tcsg324-1
+# synth_design -top top_level -part xc7a100tcsg324-1 -flatten_hierarchy none
+Command: synth_design -top top_level -part xc7a100tcsg324-1 -flatten_hierarchy none
 
 Starting synthesis...
 
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 846.168 ; gain = 156.125
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 846.168 ; gain = 156.125
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'top_level' [/data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.srcs/sources_1/new/top_level.vhd:47]
 INFO: [Synth 8-3491] module 'disp_draw' declared at '/data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.srcs/sources_1/imports/chris/disp_draw/disp_draw.srcs/sources_1/new/disp_draw.vhd:42' bound to instance 'disp_draw_inst' of component 'disp_draw' [/data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.srcs/sources_1/new/top_level.vhd:102]
 INFO: [Synth 8-638] synthesizing module 'disp_draw' [/data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.srcs/sources_1/imports/chris/disp_draw/disp_draw.srcs/sources_1/new/disp_draw.vhd:58]
-INFO: [Synth 8-3491] module 'averager' declared at '/data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.srcs/sources_1/imports/chris/averager/averager.srcs/sources_1/new/averager.vhd:39' bound to instance 'avg_inst' of component 'averager' [/data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.srcs/sources_1/imports/chris/disp_draw/disp_draw.srcs/sources_1/new/disp_draw.vhd:250]
+INFO: [Synth 8-3491] module 'averager' declared at '/data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.srcs/sources_1/imports/chris/averager/averager.srcs/sources_1/new/averager.vhd:39' bound to instance 'avg_inst' of component 'averager' [/data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.srcs/sources_1/imports/chris/disp_draw/disp_draw.srcs/sources_1/new/disp_draw.vhd:251]
 INFO: [Synth 8-638] synthesizing module 'averager' [/data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.srcs/sources_1/imports/chris/averager/averager.srcs/sources_1/new/averager.vhd:111]
 INFO: [Synth 8-256] done synthesizing module 'averager' (1#1) [/data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.srcs/sources_1/imports/chris/averager/averager.srcs/sources_1/new/averager.vhd:111]
-INFO: [Synth 8-3491] module 'magnitude' declared at '/data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.srcs/sources_1/imports/chris/magnitude/magnitude.srcs/sources_1/new/magnitude.vhd:34' bound to instance 'mag_inst' of component 'magnitude' [/data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.srcs/sources_1/imports/chris/disp_draw/disp_draw.srcs/sources_1/new/disp_draw.vhd:321]
+INFO: [Synth 8-3491] module 'magnitude' declared at '/data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.srcs/sources_1/imports/chris/magnitude/magnitude.srcs/sources_1/new/magnitude.vhd:34' bound to instance 'mag_inst' of component 'magnitude' [/data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.srcs/sources_1/imports/chris/disp_draw/disp_draw.srcs/sources_1/new/disp_draw.vhd:322]
 INFO: [Synth 8-638] synthesizing module 'magnitude' [/data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.srcs/sources_1/imports/chris/magnitude/magnitude.srcs/sources_1/new/magnitude.vhd:47]
 INFO: [Synth 8-637] synthesizing blackbox instance 'realSquare' of component 'mult_gen_0' [/data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.srcs/sources_1/imports/chris/magnitude/magnitude.srcs/sources_1/new/magnitude.vhd:139]
 INFO: [Synth 8-637] synthesizing blackbox instance 'imagSquare' of component 'mult_gen_0' [/data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.srcs/sources_1/imports/chris/magnitude/magnitude.srcs/sources_1/new/magnitude.vhd:147]
@@ -80,12 +80,12 @@ INFO: [Synth 8-638] synthesizing module 'adc_fft_fsmV3' [/data1/cdaffron/git/ece
 INFO: [Synth 8-4472] Detected and applied attribute keep = true [/data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.srcs/sources_1/imports/adc_fft_to_pc/adc_fft_fsmV3_noUART.vhd:66]
 INFO: [Synth 8-4472] Detected and applied attribute keep = true [/data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.srcs/sources_1/imports/adc_fft_to_pc/adc_fft_fsmV3_noUART.vhd:67]
 INFO: [Synth 8-256] done synthesizing module 'adc_fft_fsmV3' (4#1) [/data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.srcs/sources_1/imports/adc_fft_to_pc/adc_fft_fsmV3_noUART.vhd:63]
-INFO: [Synth 8-638] synthesizing module 'xfft_0' [/data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.runs/synth_1/.Xil/Vivado-1863-com1548.eecs.utk.edu/realtime/xfft_0_stub.vhdl:35]
-INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_0' [/data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.runs/synth_1/.Xil/Vivado-1863-com1548.eecs.utk.edu/realtime/blk_mem_gen_0_stub.vhdl:18]
-INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_1' [/data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.runs/synth_1/.Xil/Vivado-1863-com1548.eecs.utk.edu/realtime/blk_mem_gen_1_stub.vhdl:20]
-INFO: [Synth 8-638] synthesizing module 'clk_wiz_0' [/data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.runs/synth_1/.Xil/Vivado-1863-com1548.eecs.utk.edu/realtime/clk_wiz_0_stub.vhdl:16]
-INFO: [Synth 8-638] synthesizing module 'vio_0' [/data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.runs/synth_1/.Xil/Vivado-1863-com1548.eecs.utk.edu/realtime/vio_0_stub.vhdl:14]
-INFO: [Synth 8-638] synthesizing module 'c_counter_binary_0' [/data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.runs/synth_1/.Xil/Vivado-1863-com1548.eecs.utk.edu/realtime/c_counter_binary_0_stub.vhdl:13]
+INFO: [Synth 8-638] synthesizing module 'xfft_0' [/data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.runs/synth_1/.Xil/Vivado-8300-com1548.eecs.utk.edu/realtime/xfft_0_stub.vhdl:35]
+INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_0' [/data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.runs/synth_1/.Xil/Vivado-8300-com1548.eecs.utk.edu/realtime/blk_mem_gen_0_stub.vhdl:18]
+INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_1' [/data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.runs/synth_1/.Xil/Vivado-8300-com1548.eecs.utk.edu/realtime/blk_mem_gen_1_stub.vhdl:20]
+INFO: [Synth 8-638] synthesizing module 'clk_wiz_0' [/data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.runs/synth_1/.Xil/Vivado-8300-com1548.eecs.utk.edu/realtime/clk_wiz_0_stub.vhdl:16]
+INFO: [Synth 8-638] synthesizing module 'vio_0' [/data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.runs/synth_1/.Xil/Vivado-8300-com1548.eecs.utk.edu/realtime/vio_0_stub.vhdl:14]
+INFO: [Synth 8-638] synthesizing module 'c_counter_binary_0' [/data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.runs/synth_1/.Xil/Vivado-8300-com1548.eecs.utk.edu/realtime/c_counter_binary_0_stub.vhdl:13]
 INFO: [Synth 8-256] done synthesizing module 'top_level' (5#1) [/data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.srcs/sources_1/new/top_level.vhd:47]
 WARNING: [Synth 8-3331] design top_level has unconnected port din[15]
 WARNING: [Synth 8-3331] design top_level has unconnected port din[14]
@@ -118,7 +118,7 @@ WARNING: [Synth 8-3331] design top_level has unconnected port sw[4]
 WARNING: [Synth 8-3331] design top_level has unconnected port sw[3]
 WARNING: [Synth 8-3331] design top_level has unconnected port sw[2]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 927.051 ; gain = 237.008
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 928.051 ; gain = 238.008
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Optimization
@@ -139,8 +139,8 @@ Loading io standards from /opt/Xilinx/Vivado/2014.2/data/./parts/xilinx/artix7/I
 Loading device configuration modes from /opt/Xilinx/Vivado/2014.2/data/parts/xilinx/artix7/ConfigModes.xml
 
 Processing XDC Constraints
-Parsing XDC File [/data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.runs/synth_1/.Xil/Vivado-1863-com1548.eecs.utk.edu/dcp_8/clk_wiz_0_in_context.xdc] for cell 'clk_debug'
-Finished Parsing XDC File [/data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.runs/synth_1/.Xil/Vivado-1863-com1548.eecs.utk.edu/dcp_8/clk_wiz_0_in_context.xdc] for cell 'clk_debug'
+Parsing XDC File [/data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.runs/synth_1/.Xil/Vivado-8300-com1548.eecs.utk.edu/dcp_8/clk_wiz_0_in_context.xdc] for cell 'clk_debug'
+Finished Parsing XDC File [/data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.runs/synth_1/.Xil/Vivado-8300-com1548.eecs.utk.edu/dcp_8/clk_wiz_0_in_context.xdc] for cell 'clk_debug'
 Parsing XDC File [/data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.srcs/constrs_1/imports/lab2/Nexys4_Master.xdc]
 Finished Parsing XDC File [/data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.srcs/constrs_1/imports/lab2/Nexys4_Master.xdc]
 Parsing XDC File [/data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.runs/synth_1/dont_buffer.xdc]
@@ -158,17 +158,17 @@ Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1203.285 ; gain = 513.242
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1203.293 ; gain = 513.250
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 Applied set_property BUFFER_TYPE = NONE for clk. (constraint file  /data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.runs/synth_1/dont_buffer.xdc, line 11).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1203.285 ; gain = 513.242
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1203.293 ; gain = 513.250
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1203.285 ; gain = 513.242
+Finished RTL Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1203.293 ; gain = 513.250
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 's_curr_reg' in module 'disp_draw'
 INFO: [Synth 8-3354] encoded FSM with state register 's_curr_reg' using encoding 'one-hot' in module 'disp_draw'
@@ -198,15 +198,15 @@ Detailed RTL Component Info :
 	                8 Bit    Registers := 130   
 	                6 Bit    Registers := 13    
 	                5 Bit    Registers := 2     
-	                1 Bit    Registers := 18    
+	                1 Bit    Registers := 19    
 +---Muxes : 
-	  23 Input     18 Bit        Muxes := 1     
+	  24 Input     18 Bit        Muxes := 1     
 	  18 Input     16 Bit        Muxes := 64    
 	   3 Input     16 Bit        Muxes := 1     
 	   2 Input     16 Bit        Muxes := 2     
-	   2 Input     13 Bit        Muxes := 4     
-	   4 Input     13 Bit        Muxes := 1     
 	   3 Input     13 Bit        Muxes := 1     
+	   4 Input     13 Bit        Muxes := 1     
+	   2 Input     13 Bit        Muxes := 4     
 	  18 Input     10 Bit        Muxes := 1     
 	  18 Input      8 Bit        Muxes := 2     
 	   2 Input      5 Bit        Muxes := 1     
@@ -215,15 +215,15 @@ Detailed RTL Component Info :
 	   2 Input      4 Bit        Muxes := 5     
 	   2 Input      3 Bit        Muxes := 2     
 	  18 Input      2 Bit        Muxes := 1     
-	   8 Input      1 Bit        Muxes := 1     
 	   2 Input      1 Bit        Muxes := 334   
-	  18 Input      1 Bit        Muxes := 139   
-	  11 Input      1 Bit        Muxes := 2     
+	   8 Input      1 Bit        Muxes := 1     
 	   3 Input      1 Bit        Muxes := 206   
-	  12 Input      1 Bit        Muxes := 3     
-	   6 Input      1 Bit        Muxes := 2     
-	  10 Input      1 Bit        Muxes := 2     
 	   4 Input      1 Bit        Muxes := 2     
+	  12 Input      1 Bit        Muxes := 3     
+	  18 Input      1 Bit        Muxes := 141   
+	  10 Input      1 Bit        Muxes := 2     
+	   6 Input      1 Bit        Muxes := 2     
+	  11 Input      1 Bit        Muxes := 2     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -265,15 +265,15 @@ Detailed RTL Component Info :
 	                8 Bit    Registers := 130   
 	                6 Bit    Registers := 1     
 	                5 Bit    Registers := 1     
-	                1 Bit    Registers := 2     
+	                1 Bit    Registers := 3     
 +---Muxes : 
-	  23 Input     18 Bit        Muxes := 1     
+	  24 Input     18 Bit        Muxes := 1     
 	  18 Input     16 Bit        Muxes := 64    
 	  18 Input     10 Bit        Muxes := 1     
 	  18 Input      8 Bit        Muxes := 2     
 	  18 Input      5 Bit        Muxes := 1     
 	  18 Input      2 Bit        Muxes := 1     
-	  18 Input      1 Bit        Muxes := 139   
+	  18 Input      1 Bit        Muxes := 141   
 	   2 Input      1 Bit        Muxes := 324   
 	   3 Input      1 Bit        Muxes := 205   
 Module adc_fft_fsmV3 
@@ -289,21 +289,21 @@ Detailed RTL Component Info :
 	                1 Bit    Registers := 11    
 +---Muxes : 
 	   2 Input     16 Bit        Muxes := 2     
+	   3 Input     13 Bit        Muxes := 1     
 	   2 Input     13 Bit        Muxes := 4     
 	   4 Input     13 Bit        Muxes := 1     
-	   3 Input     13 Bit        Muxes := 1     
 	   2 Input      5 Bit        Muxes := 1     
 	  12 Input      5 Bit        Muxes := 1     
 	   2 Input      4 Bit        Muxes := 5     
 	   2 Input      3 Bit        Muxes := 2     
-	  10 Input      1 Bit        Muxes := 2     
-	   6 Input      1 Bit        Muxes := 2     
-	   3 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 9     
 	   4 Input      1 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 2     
+	  11 Input      1 Bit        Muxes := 2     
+	  10 Input      1 Bit        Muxes := 2     
 	   8 Input      1 Bit        Muxes := 1     
 	  12 Input      1 Bit        Muxes := 3     
-	  11 Input      1 Bit        Muxes := 2     
-	   2 Input      1 Bit        Muxes := 9     
+	   3 Input      1 Bit        Muxes := 1     
 ---------------------------------------------------------------------------------
 Finished RTL Hierarchical Component Statistics
 ---------------------------------------------------------------------------------
@@ -316,7 +316,7 @@ BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
 ---------------------------------------------------------------------------------
 Finished Part Resource Summary
 ---------------------------------------------------------------------------------
-Workers Ready, Starting Parallel Section  : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1203.285 ; gain = 513.242
+Workers Ready, Starting Parallel Section  : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1203.293 ; gain = 513.250
 ---------------------------------------------------------------------------------
 Start Cross Boundary Optimization
 ---------------------------------------------------------------------------------
@@ -351,9 +351,9 @@ WARNING: [Synth 8-3331] design top_level has unconnected port sw[4]
 WARNING: [Synth 8-3331] design top_level has unconnected port sw[3]
 WARNING: [Synth 8-3331] design top_level has unconnected port sw[2]
 ---------------------------------------------------------------------------------
-Finished Cross Boundary Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 1203.285 ; gain = 513.242
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1203.293 ; gain = 513.250
 ---------------------------------------------------------------------------------
-Finished Parallel Reinfer  : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 1203.285 ; gain = 513.242
+Finished Parallel Reinfer  : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1203.293 ; gain = 513.250
 ---------------------------------------------------------------------------------
 Start RAM, DSP and Shift Register Reporting
 ---------------------------------------------------------------------------------
@@ -363,45 +363,45 @@ Finished RAM, DSP and Shift Register Reporting
 ---------------------------------------------------------------------------------
 Start Area Optimization
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\fft_fsm/ram1_rst_reg )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\fft_fsm/fft_config_reg[7] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (\fft_fsm/m_axis_data_tready_reg )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\fft_fsm/s_axis_config_tdata_reg[15] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\fft_fsm/s_axis_config_tdata_reg[7] )
-WARNING: [Synth 8-3332] Sequential element (\fft_fsm/ram1_rst_reg ) is unused and will be removed from module top_level.
-WARNING: [Synth 8-3332] Sequential element (\fft_fsm/ram2_rst_reg ) is unused and will be removed from module top_level.
-WARNING: [Synth 8-3332] Sequential element (\fft_fsm/ram2_addra_s_reg[12] ) is unused and will be removed from module top_level.
-WARNING: [Synth 8-3332] Sequential element (\fft_fsm/ram2_addra_s_reg[11] ) is unused and will be removed from module top_level.
-WARNING: [Synth 8-3332] Sequential element (\fft_fsm/ram2_addra_s_reg[10] ) is unused and will be removed from module top_level.
-WARNING: [Synth 8-3332] Sequential element (\fft_fsm/s_axis_config_tdata_reg[15] ) is unused and will be removed from module top_level.
-WARNING: [Synth 8-3332] Sequential element (\fft_fsm/s_axis_config_tdata_reg[14] ) is unused and will be removed from module top_level.
-WARNING: [Synth 8-3332] Sequential element (\fft_fsm/s_axis_config_tdata_reg[13] ) is unused and will be removed from module top_level.
-WARNING: [Synth 8-3332] Sequential element (\fft_fsm/s_axis_config_tdata_reg[12] ) is unused and will be removed from module top_level.
-WARNING: [Synth 8-3332] Sequential element (\fft_fsm/s_axis_config_tdata_reg[11] ) is unused and will be removed from module top_level.
-WARNING: [Synth 8-3332] Sequential element (\fft_fsm/s_axis_config_tdata_reg[10] ) is unused and will be removed from module top_level.
-WARNING: [Synth 8-3332] Sequential element (\fft_fsm/s_axis_config_tdata_reg[9] ) is unused and will be removed from module top_level.
-WARNING: [Synth 8-3332] Sequential element (\fft_fsm/s_axis_config_tdata_reg[7] ) is unused and will be removed from module top_level.
-WARNING: [Synth 8-3332] Sequential element (\fft_fsm/s_axis_config_tdata_reg[6] ) is unused and will be removed from module top_level.
-WARNING: [Synth 8-3332] Sequential element (\fft_fsm/s_axis_config_tdata_reg[5] ) is unused and will be removed from module top_level.
-WARNING: [Synth 8-3332] Sequential element (\fft_fsm/s_axis_config_tdata_reg[4] ) is unused and will be removed from module top_level.
-WARNING: [Synth 8-3332] Sequential element (\fft_fsm/s_axis_config_tdata_reg[3] ) is unused and will be removed from module top_level.
-WARNING: [Synth 8-3332] Sequential element (\fft_fsm/s_axis_config_tdata_reg[2] ) is unused and will be removed from module top_level.
-WARNING: [Synth 8-3332] Sequential element (\fft_fsm/s_axis_config_tdata_reg[1] ) is unused and will be removed from module top_level.
-WARNING: [Synth 8-3332] Sequential element (\fft_fsm/s_axis_config_tdata_reg[0] ) is unused and will be removed from module top_level.
-WARNING: [Synth 8-3332] Sequential element (\fft_fsm/m_axis_data_tready_reg ) is unused and will be removed from module top_level.
-WARNING: [Synth 8-3332] Sequential element (\fft_fsm/fft_config_reg[7] ) is unused and will be removed from module top_level.
-WARNING: [Synth 8-3332] Sequential element (\fft_fsm/fft_config_reg[6] ) is unused and will be removed from module top_level.
-WARNING: [Synth 8-3332] Sequential element (\fft_fsm/fft_config_reg[5] ) is unused and will be removed from module top_level.
-WARNING: [Synth 8-3332] Sequential element (\fft_fsm/fft_config_reg[4] ) is unused and will be removed from module top_level.
-WARNING: [Synth 8-3332] Sequential element (\fft_fsm/fft_config_reg[3] ) is unused and will be removed from module top_level.
-WARNING: [Synth 8-3332] Sequential element (\fft_fsm/fft_config_reg[2] ) is unused and will be removed from module top_level.
-WARNING: [Synth 8-3332] Sequential element (\fft_fsm/fft_config_reg[1] ) is unused and will be removed from module top_level.
-WARNING: [Synth 8-3332] Sequential element (\fft_fsm/fft_config_reg[0] ) is unused and will be removed from module top_level.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (fft_fsm/ram1_rst_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (fft_fsm/\fft_config_reg[7] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (fft_fsm/m_axis_data_tready_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (fft_fsm/\s_axis_config_tdata_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (fft_fsm/\s_axis_config_tdata_reg[7] )
+WARNING: [Synth 8-3332] Sequential element (ram1_rst_reg) is unused and will be removed from module adc_fft_fsmV3.
+WARNING: [Synth 8-3332] Sequential element (ram2_rst_reg) is unused and will be removed from module adc_fft_fsmV3.
+WARNING: [Synth 8-3332] Sequential element (\ram2_addra_s_reg[12] ) is unused and will be removed from module adc_fft_fsmV3.
+WARNING: [Synth 8-3332] Sequential element (\ram2_addra_s_reg[11] ) is unused and will be removed from module adc_fft_fsmV3.
+WARNING: [Synth 8-3332] Sequential element (\ram2_addra_s_reg[10] ) is unused and will be removed from module adc_fft_fsmV3.
+WARNING: [Synth 8-3332] Sequential element (\s_axis_config_tdata_reg[15] ) is unused and will be removed from module adc_fft_fsmV3.
+WARNING: [Synth 8-3332] Sequential element (\s_axis_config_tdata_reg[14] ) is unused and will be removed from module adc_fft_fsmV3.
+WARNING: [Synth 8-3332] Sequential element (\s_axis_config_tdata_reg[13] ) is unused and will be removed from module adc_fft_fsmV3.
+WARNING: [Synth 8-3332] Sequential element (\s_axis_config_tdata_reg[12] ) is unused and will be removed from module adc_fft_fsmV3.
+WARNING: [Synth 8-3332] Sequential element (\s_axis_config_tdata_reg[11] ) is unused and will be removed from module adc_fft_fsmV3.
+WARNING: [Synth 8-3332] Sequential element (\s_axis_config_tdata_reg[10] ) is unused and will be removed from module adc_fft_fsmV3.
+WARNING: [Synth 8-3332] Sequential element (\s_axis_config_tdata_reg[9] ) is unused and will be removed from module adc_fft_fsmV3.
+WARNING: [Synth 8-3332] Sequential element (\s_axis_config_tdata_reg[7] ) is unused and will be removed from module adc_fft_fsmV3.
+WARNING: [Synth 8-3332] Sequential element (\s_axis_config_tdata_reg[6] ) is unused and will be removed from module adc_fft_fsmV3.
+WARNING: [Synth 8-3332] Sequential element (\s_axis_config_tdata_reg[5] ) is unused and will be removed from module adc_fft_fsmV3.
+WARNING: [Synth 8-3332] Sequential element (\s_axis_config_tdata_reg[4] ) is unused and will be removed from module adc_fft_fsmV3.
+WARNING: [Synth 8-3332] Sequential element (\s_axis_config_tdata_reg[3] ) is unused and will be removed from module adc_fft_fsmV3.
+WARNING: [Synth 8-3332] Sequential element (\s_axis_config_tdata_reg[2] ) is unused and will be removed from module adc_fft_fsmV3.
+WARNING: [Synth 8-3332] Sequential element (\s_axis_config_tdata_reg[1] ) is unused and will be removed from module adc_fft_fsmV3.
+WARNING: [Synth 8-3332] Sequential element (\s_axis_config_tdata_reg[0] ) is unused and will be removed from module adc_fft_fsmV3.
+WARNING: [Synth 8-3332] Sequential element (m_axis_data_tready_reg) is unused and will be removed from module adc_fft_fsmV3.
+WARNING: [Synth 8-3332] Sequential element (\fft_config_reg[7] ) is unused and will be removed from module adc_fft_fsmV3.
+WARNING: [Synth 8-3332] Sequential element (\fft_config_reg[6] ) is unused and will be removed from module adc_fft_fsmV3.
+WARNING: [Synth 8-3332] Sequential element (\fft_config_reg[5] ) is unused and will be removed from module adc_fft_fsmV3.
+WARNING: [Synth 8-3332] Sequential element (\fft_config_reg[4] ) is unused and will be removed from module adc_fft_fsmV3.
+WARNING: [Synth 8-3332] Sequential element (\fft_config_reg[3] ) is unused and will be removed from module adc_fft_fsmV3.
+WARNING: [Synth 8-3332] Sequential element (\fft_config_reg[2] ) is unused and will be removed from module adc_fft_fsmV3.
+WARNING: [Synth 8-3332] Sequential element (\fft_config_reg[1] ) is unused and will be removed from module adc_fft_fsmV3.
+WARNING: [Synth 8-3332] Sequential element (\fft_config_reg[0] ) is unused and will be removed from module adc_fft_fsmV3.
 ---------------------------------------------------------------------------------
-Finished Area Optimization : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1203.285 ; gain = 513.242
+Finished Area Optimization : Time (s): cpu = 00:00:30 ; elapsed = 00:00:30 . Memory (MB): peak = 1203.293 ; gain = 513.250
 ---------------------------------------------------------------------------------
-Finished Parallel Area Opt  : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1203.285 ; gain = 513.242
-Finished Parallel Section  : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1203.285 ; gain = 513.242
+Finished Parallel Area Opt  : Time (s): cpu = 00:00:30 ; elapsed = 00:00:30 . Memory (MB): peak = 1203.293 ; gain = 513.250
+Finished Parallel Section  : Time (s): cpu = 00:00:30 ; elapsed = 00:00:30 . Memory (MB): peak = 1203.293 ; gain = 513.250
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
@@ -410,46 +410,24 @@ Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 INFO: Moved 2 constraints on hierarchical pins to their respective driving/loading pins
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:39 ; elapsed = 00:00:39 . Memory (MB): peak = 1231.305 ; gain = 541.262
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:40 ; elapsed = 00:00:40 . Memory (MB): peak = 1231.316 ; gain = 541.273
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:41 ; elapsed = 00:00:41 . Memory (MB): peak = 1237.305 ; gain = 547.262
+Finished Timing Optimization : Time (s): cpu = 00:00:41 ; elapsed = 00:00:42 . Memory (MB): peak = 1237.312 ; gain = 547.270
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
-WARNING: [Synth 8-3332] Sequential element (\disp_draw_inst/avg_inst/average_reg[15] ) is unused and will be removed from module top_level.
-WARNING: [Synth 8-3332] Sequential element (\disp_draw_inst/avg_inst/average_reg[14] ) is unused and will be removed from module top_level.
-WARNING: [Synth 8-3332] Sequential element (\disp_draw_inst/avg_inst/average_reg[13] ) is unused and will be removed from module top_level.
-WARNING: [Synth 8-3332] Sequential element (\disp_draw_inst/avg_inst/average_reg[12] ) is unused and will be removed from module top_level.
-WARNING: [Synth 8-3332] Sequential element (\disp_draw_inst/FSM_onehot_s_curr_reg[0] ) is unused and will be removed from module top_level.
-WARNING: [Synth 8-3332] Sequential element (\disp_draw_inst/mag_inst/realValReg_reg[15] ) is unused and will be removed from module top_level.
-WARNING: [Synth 8-3332] Sequential element (\disp_draw_inst/mag_inst/realValReg_reg[14] ) is unused and will be removed from module top_level.
-WARNING: [Synth 8-3332] Sequential element (\disp_draw_inst/mag_inst/realValReg_reg[13] ) is unused and will be removed from module top_level.
-WARNING: [Synth 8-3332] Sequential element (\disp_draw_inst/mag_inst/realValReg_reg[12] ) is unused and will be removed from module top_level.
-WARNING: [Synth 8-3332] Sequential element (\disp_draw_inst/mag_inst/imagValReg_reg[15] ) is unused and will be removed from module top_level.
-WARNING: [Synth 8-3332] Sequential element (\disp_draw_inst/mag_inst/imagValReg_reg[14] ) is unused and will be removed from module top_level.
-WARNING: [Synth 8-3332] Sequential element (\disp_draw_inst/mag_inst/imagValReg_reg[13] ) is unused and will be removed from module top_level.
-WARNING: [Synth 8-3332] Sequential element (\disp_draw_inst/mag_inst/imagValReg_reg[12] ) is unused and will be removed from module top_level.
-WARNING: [Synth 8-3332] Sequential element (\disp_draw_inst/realVal_reg[15] ) is unused and will be removed from module top_level.
-WARNING: [Synth 8-3332] Sequential element (\disp_draw_inst/realVal_reg[14] ) is unused and will be removed from module top_level.
-WARNING: [Synth 8-3332] Sequential element (\disp_draw_inst/realVal_reg[13] ) is unused and will be removed from module top_level.
-WARNING: [Synth 8-3332] Sequential element (\disp_draw_inst/realVal_reg[12] ) is unused and will be removed from module top_level.
-WARNING: [Synth 8-3332] Sequential element (\disp_draw_inst/imagVal_reg[15] ) is unused and will be removed from module top_level.
-WARNING: [Synth 8-3332] Sequential element (\disp_draw_inst/imagVal_reg[14] ) is unused and will be removed from module top_level.
-WARNING: [Synth 8-3332] Sequential element (\disp_draw_inst/imagVal_reg[13] ) is unused and will be removed from module top_level.
-WARNING: [Synth 8-3332] Sequential element (\disp_draw_inst/imagVal_reg[12] ) is unused and will be removed from module top_level.
+WARNING: [Synth 8-3332] Sequential element (\average_reg[15] ) is unused and will be removed from module averager.
+WARNING: [Synth 8-3332] Sequential element (\average_reg[14] ) is unused and will be removed from module averager.
+WARNING: [Synth 8-3332] Sequential element (\average_reg[13] ) is unused and will be removed from module averager.
+WARNING: [Synth 8-3332] Sequential element (\average_reg[12] ) is unused and will be removed from module averager.
+WARNING: [Synth 8-3332] Sequential element (\FSM_onehot_s_curr_reg[0] ) is unused and will be removed from module disp_draw.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:45 ; elapsed = 00:00:45 . Memory (MB): peak = 1283.820 ; gain = 593.777
+Finished Technology Mapping : Time (s): cpu = 00:00:47 ; elapsed = 00:00:48 . Memory (MB): peak = 1269.586 ; gain = 579.543
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Flattening Before IO Insertion
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Flattening Before IO Insertion
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Final Netlist Cleanup
@@ -457,8 +435,71 @@ Start Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
+WARNING: [Synth 8-3295] tying undriven pin fft_fsm:fft_points[4] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin fft_fsm:fft_points[3] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin fft_fsm:fft_points[2] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin fft_fsm:fft_points[1] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin fft_fsm:fft_points[0] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin fft_fsm:n_samples[12] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin fft_fsm:n_samples[11] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin fft_fsm:n_samples[10] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin fft_fsm:n_samples[9] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin fft_fsm:n_samples[8] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin fft_fsm:n_samples[7] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin fft_fsm:n_samples[6] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin fft_fsm:n_samples[5] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin fft_fsm:n_samples[4] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin fft_fsm:n_samples[3] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin fft_fsm:n_samples[2] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin fft_fsm:n_samples[1] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin fft_fsm:n_samples[0] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin fft_fsm:sample_rate[30] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin fft_fsm:sample_rate[29] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin fft_fsm:sample_rate[28] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin fft_fsm:sample_rate[27] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin fft_fsm:sample_rate[26] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin fft_fsm:sample_rate[25] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin fft_fsm:sample_rate[24] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin fft_fsm:sample_rate[23] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin fft_fsm:sample_rate[22] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin fft_fsm:sample_rate[21] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin fft_fsm:sample_rate[20] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin fft_fsm:sample_rate[19] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin fft_fsm:sample_rate[18] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin fft_fsm:sample_rate[17] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin fft_fsm:sample_rate[16] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin fft_fsm:sample_rate[15] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin fft_fsm:sample_rate[14] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin fft_fsm:sample_rate[13] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin fft_fsm:sample_rate[12] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin fft_fsm:sample_rate[11] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin fft_fsm:sample_rate[10] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin fft_fsm:sample_rate[9] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin fft_fsm:sample_rate[8] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin fft_fsm:sample_rate[7] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin fft_fsm:sample_rate[6] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin fft_fsm:sample_rate[5] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin fft_fsm:sample_rate[4] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin fft_fsm:sample_rate[3] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin fft_fsm:sample_rate[2] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin fft_fsm:sample_rate[1] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin fft_fsm:sample_rate[0] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin fft_fsm:init_max_addr[12] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin fft_fsm:init_max_addr[11] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin fft_fsm:init_max_addr[10] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin fft_fsm:init_max_addr[9] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin fft_fsm:init_max_addr[8] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin fft_fsm:init_max_addr[7] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin fft_fsm:init_max_addr[6] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin fft_fsm:init_max_addr[5] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin fft_fsm:init_max_addr[4] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin fft_fsm:init_max_addr[3] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin fft_fsm:init_max_addr[2] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin fft_fsm:init_max_addr[1] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin fft_fsm:init_max_addr[0] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin fft_fsm:ram_initialized to constant 0
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:45 ; elapsed = 00:00:46 . Memory (MB): peak = 1283.820 ; gain = 593.777
+Finished IO Insertion : Time (s): cpu = 00:00:48 ; elapsed = 00:00:49 . Memory (MB): peak = 1269.586 ; gain = 579.543
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -471,25 +512,19 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:45 ; elapsed = 00:00:46 . Memory (MB): peak = 1283.820 ; gain = 593.777
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Rebuilding User Hierarchy
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:46 ; elapsed = 00:00:46 . Memory (MB): peak = 1283.820 ; gain = 593.777
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:48 ; elapsed = 00:00:49 . Memory (MB): peak = 1269.586 ; gain = 579.543
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RAM, DSP and Shift Register Reporting
 ---------------------------------------------------------------------------------
 
 Static Shift Register:
-+------------+------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
-|Module Name | RTL Name                                 | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
-+------------+------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
-|top_level   | disp_draw_inst/mag_inst/barNumOut_reg[5] | 12     | 6     | NO           | NO                 | YES               | 6      | 0       | 
-|top_level   | disp_draw_inst/mag_inst/inValidPipe3_reg | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
-+------------+------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
++------------+------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name         | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|magnitude   | barNumOut_reg[5] | 12     | 6     | NO           | NO                 | YES               | 6      | 0       | 
+|magnitude   | inValidPipe3_reg | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
++------------+------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
 
 ---------------------------------------------------------------------------------
 Finished RAM, DSP and Shift Register Reporting
@@ -502,15 +537,15 @@ Report BlackBoxes:
 +------+-------------------+----------+
 |      |BlackBox name      |Instances |
 +------+-------------------+----------+
-|1     |xfft_0             |         1|
-|2     |blk_mem_gen_0      |         1|
-|3     |blk_mem_gen_1      |         1|
-|4     |clk_wiz_0          |         1|
-|5     |vio_0              |         1|
-|6     |c_counter_binary_0 |         1|
-|7     |mult_gen_0         |         2|
-|8     |c_addsub_0         |         1|
-|9     |cordic_0           |         1|
+|1     |mult_gen_0         |         2|
+|2     |c_addsub_0         |         1|
+|3     |cordic_0           |         1|
+|4     |xfft_0             |         1|
+|5     |blk_mem_gen_0      |         1|
+|6     |blk_mem_gen_1      |         1|
+|7     |clk_wiz_0          |         1|
+|8     |vio_0              |         1|
+|9     |c_counter_binary_0 |         1|
 +------+-------------------+----------+
 
 Report Cell Usage: 
@@ -527,18 +562,18 @@ Report Cell Usage:
 |8     |mult_gen_0_bbox_0  |     1|
 |9     |vio_0              |     1|
 |10    |xfft_0             |     1|
-|11    |BUFG               |     1|
-|12    |CARRY4             |   142|
-|13    |LUT1               |    51|
-|14    |LUT2               |    33|
-|15    |LUT3               |  1470|
-|16    |LUT4               |   448|
-|17    |LUT5               |   207|
-|18    |LUT6               |   285|
+|11    |CARRY4             |   142|
+|12    |LUT1               |    51|
+|13    |LUT2               |    38|
+|14    |LUT3               |  1477|
+|15    |LUT4               |   446|
+|16    |LUT5               |   214|
+|17    |LUT6               |   288|
+|18    |MUXF7              |     1|
 |19    |SRL16E             |     7|
 |20    |FDCE               |    47|
 |21    |FDPE               |     1|
-|22    |FDRE               |  3200|
+|22    |FDRE               |  3217|
 |23    |FDSE               |    10|
 |24    |IBUF               |     3|
 |25    |OBUF               |     1|
@@ -548,20 +583,19 @@ Report Instance Areas:
 +------+-----------------+--------------+------+
 |      |Instance         |Module        |Cells |
 +------+-----------------+--------------+------+
-|1     |top              |              |  6158|
-|2     |  disp_draw_inst |disp_draw     |  5700|
-|3     |    avg_inst     |averager      |   579|
-|4     |    mag_inst     |magnitude     |   228|
-|5     |  fft_fsm        |adc_fft_fsmV3 |   230|
+|1     |top              |              |  6195|
+|2     |  disp_draw_inst |disp_draw     |  5817|
+|3     |    avg_inst     |averager      |  1074|
+|4     |    mag_inst     |magnitude     |   168|
+|5     |  fft_fsm        |adc_fft_fsmV3 |   234|
 +------+-----------------+--------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:46 ; elapsed = 00:00:47 . Memory (MB): peak = 1283.820 ; gain = 593.777
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:49 ; elapsed = 00:00:49 . Memory (MB): peak = 1269.586 ; gain = 579.543
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 80 warnings.
-Synthesis Optimization Complete : Time (s): cpu = 00:00:46 ; elapsed = 00:00:47 . Memory (MB): peak = 1283.820 ; gain = 593.777
+Synthesis finished with 0 errors, 0 critical warnings and 127 warnings.
+Synthesis Optimization Complete : Time (s): cpu = 00:00:49 ; elapsed = 00:00:49 . Memory (MB): peak = 1269.586 ; gain = 579.543
 INFO: [Netlist 29-17] Analyzing 145 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
-WARNING: [Netlist 29-101] Netlist 'top_level' is not ideal for floorplanning, since the cellview 'disp_draw' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
 INFO: [Opt 31-140] Inserted 0 IBUFs to IO ports without IO buffers.
 INFO: [Opt 31-141] Inserted 0 OBUFs to IO ports without IO buffers.
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
@@ -569,10 +603,10 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-41 Infos, 111 Warnings, 0 Critical Warnings and 0 Errors encountered.
+41 Infos, 157 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:47 ; elapsed = 00:00:48 . Memory (MB): peak = 1283.824 ; gain = 479.652
+synth_design: Time (s): cpu = 00:00:50 ; elapsed = 00:00:50 . Memory (MB): peak = 1269.590 ; gain = 465.418
 # write_checkpoint top_level.dcp
 # report_utilization -file top_level_utilization_synth.rpt -pb top_level_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00.09 ; elapsed = 00:00:00.13 . Memory (MB): peak = 1283.824 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Sat Apr 18 15:48:54 2015...
+report_utilization: Time (s): cpu = 00:00:00.09 ; elapsed = 00:00:00.12 . Memory (MB): peak = 1269.590 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sat Apr 18 17:57:52 2015...
