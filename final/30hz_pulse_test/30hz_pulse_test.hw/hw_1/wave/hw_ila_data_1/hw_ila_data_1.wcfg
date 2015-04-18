@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<wave_config>
+	<wave_state>
+	</wave_state>
+	<db_ref_list>
+		<db_ref path="C:/Users/cdaffron/Documents/ECE 551/final/30hz_pulse_test/30hz_pulse_test.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wdb" id="1" type="auto">
+			<top_modules>
+				<top_module name="top">
+				</top_module>
+			</top_modules>
+		</db_ref>
+	</db_ref_list>
+	<WVObjectSize size="4">
+	</WVObjectSize>
+	<wvobject fp_name="counterOut" type="array" db_ref_id="1">
+		<obj_property name="ElementShortName">counterOut[17:0]</obj_property>
+		<obj_property name="ObjectShortName">counterOut[17:0]</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="clk_out1" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">clk_out1</obj_property>
+		<obj_property name="ObjectShortName">clk_out1</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="n_0_VGA_trig_reg" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">n_0_VGA_trig_reg</obj_property>
+		<obj_property name="ObjectShortName">n_0_VGA_trig_reg</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="xlnx_opt_" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">xlnx_opt_</obj_property>
+		<obj_property name="ObjectShortName">xlnx_opt_</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+</wave_config>
+
