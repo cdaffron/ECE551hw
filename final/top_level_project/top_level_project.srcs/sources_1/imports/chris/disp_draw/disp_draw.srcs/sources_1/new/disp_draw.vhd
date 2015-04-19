@@ -235,6 +235,9 @@ architecture Behavioral of disp_draw is
     signal counter2 : std_logic_vector (7 downto 0);
     signal delay : integer;
     
+    attribute MARK_DEBUG : BOOLEAN;
+    attribute MARK_DEBUG of counter2 : signal is TRUE;
+    
     signal waitCycle : std_logic_vector (1 downto 0);
     signal magWait : std_logic;
     
