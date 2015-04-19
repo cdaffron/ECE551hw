@@ -257,8 +257,14 @@ begin
         variable index : integer;
     begin
         index := to_integer(unsigned(sw(15 downto 11)));
-        seven_seg_data(16 downto 0) <= fullBarHeights(index);
-        seven_seg_data(31 downto 17) <= "000000000000000";
+--        seven_seg_data(16 downto 0) <= fullBarHeights(index);
+--        seven_seg_data(31 downto 17) <= "000000000000000";
+        seven_seg_data(31 downto 28) <= fullBarHeights(index)(3 downto 0);
+        seven_seg_data(27 downto 24) <= fullBarHeights(index)(7 downto 4);
+        seven_seg_data(23 downto 20) <= fullBarHeights(index)(11 downto 8);
+        seven_seg_data(19 downto 16) <= fullBarHeights(index)(15 downto 12);
+        seven_seg_data(15) <= fullBarHeights(index)(16);
+        seven_seg_data(14 downto 0) <= "000000000000000";
     end process;
     
     process( counterOut )
