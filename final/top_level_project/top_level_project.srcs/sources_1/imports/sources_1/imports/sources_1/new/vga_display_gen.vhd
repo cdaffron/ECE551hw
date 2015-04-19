@@ -4,8 +4,9 @@
 
 library ieee;
 use ieee.std_logic_1164.all;
-use ieee.std_logic_arith.all;
-use ieee.std_logic_unsigned.all;
+--use ieee.std_logic_arith.all;
+--use ieee.std_logic_unsigned.all;
+use ieee.numeric_std.all;
 
 use work.type_pkg.all;
 use work.vga_pkg.all;
@@ -228,11 +229,11 @@ begin
     end process y_diff;
 
 
-    redVal <= redRom(conv_integer(ydiff & xdiff)) when rising_edge(clk_25);
-    greenVal <= greenRom(conv_integer(ydiff & xdiff)) when rising_edge(clk_25);
-    blueVal <= blueRom(conv_integer(ydiff & xdiff)) when rising_edge(clk_25);
+    redVal <= redRom(to_integer(unsigned(ydiff & xdiff))) when rising_edge(clk_25);
+    greenVal <= greenRom(to_integer(ydiff & xdiff)) when rising_edge(clk_25);
+    blueVal <= blueRom(to_integer(ydiff & xdiff)) when rising_edge(clk_25);
 
-    barRomVal <= curBarRom(conv_integer(hcount sra shiftVal)) when rising_edge(clk_25);
+    barRomVal <= curBarRom(shift_right(unsigned(hcount), shiftVal)) when rising_edge(clk_25);
 
 
     process(barNumSws)
