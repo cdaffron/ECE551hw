@@ -2,8 +2,8 @@
 # Vivado v2014.2 (64-bit)
 # SW Build 932637 on Wed Jun 11 13:08:52 MDT 2014
 # IP Build 924643 on Fri May 30 09:20:16 MDT 2014
-# Start of session at: Sun Apr 19 17:51:32 2015
-# Process ID: 29454
+# Start of session at: Sun Apr 19 18:26:52 2015
+# Process ID: 32386
 # Log file: /data1/cdaffron/git/ece551hw/final/chris/bars_to_seg_disp/bars_to_seg_disp.runs/synth_1/top_level.vds
 # Journal file: /data1/cdaffron/git/ece551hw/final/chris/bars_to_seg_disp/bars_to_seg_disp.runs/synth_1/vivado.jou
 #-----------------------------------------------------------
@@ -64,10 +64,10 @@ Starting synthesis...
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 846.172 ; gain = 156.125
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 846.176 ; gain = 156.125
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'top_level' [/data1/cdaffron/git/ece551hw/final/chris/bars_to_seg_disp/bars_to_seg_disp.srcs/sources_1/new/top_level.vhd:49]
-INFO: [Synth 8-3491] module 'disp_draw' declared at '/data1/cdaffron/git/ece551hw/final/chris/bars_to_seg_disp/bars_to_seg_disp.srcs/sources_1/imports/chris/disp_draw/disp_draw.srcs/sources_1/new/disp_draw.vhd:42' bound to instance 'disp_draw_inst' of component 'disp_draw' [/data1/cdaffron/git/ece551hw/final/chris/bars_to_seg_disp/bars_to_seg_disp.srcs/sources_1/new/top_level.vhd:113]
+INFO: [Synth 8-638] synthesizing module 'top_level' [/data1/cdaffron/git/ece551hw/final/chris/bars_to_seg_disp/bars_to_seg_disp.srcs/sources_1/new/top_level.vhd:50]
+INFO: [Synth 8-3491] module 'disp_draw' declared at '/data1/cdaffron/git/ece551hw/final/chris/bars_to_seg_disp/bars_to_seg_disp.srcs/sources_1/imports/chris/disp_draw/disp_draw.srcs/sources_1/new/disp_draw.vhd:42' bound to instance 'disp_draw_inst' of component 'disp_draw' [/data1/cdaffron/git/ece551hw/final/chris/bars_to_seg_disp/bars_to_seg_disp.srcs/sources_1/new/top_level.vhd:115]
 INFO: [Synth 8-638] synthesizing module 'disp_draw' [/data1/cdaffron/git/ece551hw/final/chris/bars_to_seg_disp/bars_to_seg_disp.srcs/sources_1/imports/chris/disp_draw/disp_draw.srcs/sources_1/new/disp_draw.vhd:59]
 INFO: [Synth 8-3491] module 'averager' declared at '/data1/cdaffron/git/ece551hw/final/chris/bars_to_seg_disp/bars_to_seg_disp.srcs/sources_1/imports/chris/averager/averager.srcs/sources_1/new/averager.vhd:39' bound to instance 'avg_inst' of component 'averager' [/data1/cdaffron/git/ece551hw/final/chris/bars_to_seg_disp/bars_to_seg_disp.srcs/sources_1/imports/chris/disp_draw/disp_draw.srcs/sources_1/new/disp_draw.vhd:262]
 INFO: [Synth 8-638] synthesizing module 'averager' [/data1/cdaffron/git/ece551hw/final/chris/bars_to_seg_disp/bars_to_seg_disp.srcs/sources_1/imports/chris/averager/averager.srcs/sources_1/new/averager.vhd:111]
@@ -85,12 +85,12 @@ INFO: [Synth 8-638] synthesizing module 'adc_fft_fsmV3' [/data1/cdaffron/git/ece
 INFO: [Synth 8-4472] Detected and applied attribute keep = true [/data1/cdaffron/git/ece551hw/final/chris/bars_to_seg_disp/bars_to_seg_disp.srcs/sources_1/imports/adc_fft_to_pc/adc_fft_fsmV3_noUART.vhd:66]
 INFO: [Synth 8-4472] Detected and applied attribute keep = true [/data1/cdaffron/git/ece551hw/final/chris/bars_to_seg_disp/bars_to_seg_disp.srcs/sources_1/imports/adc_fft_to_pc/adc_fft_fsmV3_noUART.vhd:67]
 INFO: [Synth 8-256] done synthesizing module 'adc_fft_fsmV3' (4#1) [/data1/cdaffron/git/ece551hw/final/chris/bars_to_seg_disp/bars_to_seg_disp.srcs/sources_1/imports/adc_fft_to_pc/adc_fft_fsmV3_noUART.vhd:63]
-INFO: [Synth 8-638] synthesizing module 'xfft_0' [/data1/cdaffron/git/ece551hw/final/chris/bars_to_seg_disp/bars_to_seg_disp.runs/synth_1/.Xil/Vivado-29454-com1548.eecs.utk.edu/realtime/xfft_0_stub.vhdl:35]
-INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_0' [/data1/cdaffron/git/ece551hw/final/chris/bars_to_seg_disp/bars_to_seg_disp.runs/synth_1/.Xil/Vivado-29454-com1548.eecs.utk.edu/realtime/blk_mem_gen_0_stub.vhdl:18]
-INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_1' [/data1/cdaffron/git/ece551hw/final/chris/bars_to_seg_disp/bars_to_seg_disp.runs/synth_1/.Xil/Vivado-29454-com1548.eecs.utk.edu/realtime/blk_mem_gen_1_stub.vhdl:20]
-INFO: [Synth 8-638] synthesizing module 'clk_wiz_0' [/data1/cdaffron/git/ece551hw/final/chris/bars_to_seg_disp/bars_to_seg_disp.runs/synth_1/.Xil/Vivado-29454-com1548.eecs.utk.edu/realtime/clk_wiz_0_stub.vhdl:17]
-INFO: [Synth 8-638] synthesizing module 'vio_0' [/data1/cdaffron/git/ece551hw/final/chris/bars_to_seg_disp/bars_to_seg_disp.runs/synth_1/.Xil/Vivado-29454-com1548.eecs.utk.edu/realtime/vio_0_stub.vhdl:14]
-INFO: [Synth 8-638] synthesizing module 'c_counter_binary_0' [/data1/cdaffron/git/ece551hw/final/chris/bars_to_seg_disp/bars_to_seg_disp.runs/synth_1/.Xil/Vivado-29454-com1548.eecs.utk.edu/realtime/c_counter_binary_0_stub.vhdl:13]
+INFO: [Synth 8-638] synthesizing module 'xfft_0' [/data1/cdaffron/git/ece551hw/final/chris/bars_to_seg_disp/bars_to_seg_disp.runs/synth_1/.Xil/Vivado-32386-com1548.eecs.utk.edu/realtime/xfft_0_stub.vhdl:35]
+INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_0' [/data1/cdaffron/git/ece551hw/final/chris/bars_to_seg_disp/bars_to_seg_disp.runs/synth_1/.Xil/Vivado-32386-com1548.eecs.utk.edu/realtime/blk_mem_gen_0_stub.vhdl:18]
+INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_1' [/data1/cdaffron/git/ece551hw/final/chris/bars_to_seg_disp/bars_to_seg_disp.runs/synth_1/.Xil/Vivado-32386-com1548.eecs.utk.edu/realtime/blk_mem_gen_1_stub.vhdl:20]
+INFO: [Synth 8-638] synthesizing module 'clk_wiz_0' [/data1/cdaffron/git/ece551hw/final/chris/bars_to_seg_disp/bars_to_seg_disp.runs/synth_1/.Xil/Vivado-32386-com1548.eecs.utk.edu/realtime/clk_wiz_0_stub.vhdl:17]
+INFO: [Synth 8-638] synthesizing module 'vio_0' [/data1/cdaffron/git/ece551hw/final/chris/bars_to_seg_disp/bars_to_seg_disp.runs/synth_1/.Xil/Vivado-32386-com1548.eecs.utk.edu/realtime/vio_0_stub.vhdl:14]
+INFO: [Synth 8-638] synthesizing module 'c_counter_binary_0' [/data1/cdaffron/git/ece551hw/final/chris/bars_to_seg_disp/bars_to_seg_disp.runs/synth_1/.Xil/Vivado-32386-com1548.eecs.utk.edu/realtime/c_counter_binary_0_stub.vhdl:13]
 INFO: [Synth 8-638] synthesizing module 'CDiv' [/data1/cdaffron/git/ece551hw/final/chris/bars_to_seg_disp/bars_to_seg_disp.srcs/sources_1/imports/new/CDiv.vhd:24]
 WARNING: [Synth 8-614] signal 'D' is read in the process but is not in the sensitivity list [/data1/cdaffron/git/ece551hw/final/chris/bars_to_seg_disp/bars_to_seg_disp.srcs/sources_1/imports/new/CDiv.vhd:30]
 INFO: [Synth 8-256] done synthesizing module 'CDiv' (5#1) [/data1/cdaffron/git/ece551hw/final/chris/bars_to_seg_disp/bars_to_seg_disp.srcs/sources_1/imports/new/CDiv.vhd:24]
@@ -99,9 +99,10 @@ INFO: [Synth 8-638] synthesizing module 'Hex2SSeg' [/data1/cdaffron/git/ece551hw
 INFO: [Synth 8-256] done synthesizing module 'Hex2SSeg' (6#1) [/data1/cdaffron/git/ece551hw/final/chris/bars_to_seg_disp/bars_to_seg_disp.srcs/sources_1/imports/new/Hex2SSegDecoder.vhd:17]
 INFO: [Synth 8-226] default block is never used [/data1/cdaffron/git/ece551hw/final/chris/bars_to_seg_disp/bars_to_seg_disp.srcs/sources_1/imports/new/HexDigs2SSeg.vhd:45]
 INFO: [Synth 8-256] done synthesizing module 'HexDigs2SSeg' (7#1) [/data1/cdaffron/git/ece551hw/final/chris/bars_to_seg_disp/bars_to_seg_disp.srcs/sources_1/imports/new/HexDigs2SSeg.vhd:16]
-WARNING: [Synth 8-614] signal 'sw' is read in the process but is not in the sensitivity list [/data1/cdaffron/git/ece551hw/final/chris/bars_to_seg_disp/bars_to_seg_disp.srcs/sources_1/new/top_level.vhd:256]
-WARNING: [Synth 8-614] signal 'fullBarHeights' is read in the process but is not in the sensitivity list [/data1/cdaffron/git/ece551hw/final/chris/bars_to_seg_disp/bars_to_seg_disp.srcs/sources_1/new/top_level.vhd:256]
-INFO: [Synth 8-256] done synthesizing module 'top_level' (8#1) [/data1/cdaffron/git/ece551hw/final/chris/bars_to_seg_disp/bars_to_seg_disp.srcs/sources_1/new/top_level.vhd:49]
+WARNING: [Synth 8-614] signal 'sw' is read in the process but is not in the sensitivity list [/data1/cdaffron/git/ece551hw/final/chris/bars_to_seg_disp/bars_to_seg_disp.srcs/sources_1/new/top_level.vhd:258]
+WARNING: [Synth 8-614] signal 'fullBarHeights' is read in the process but is not in the sensitivity list [/data1/cdaffron/git/ece551hw/final/chris/bars_to_seg_disp/bars_to_seg_disp.srcs/sources_1/new/top_level.vhd:258]
+WARNING: [Synth 8-614] signal 'sw' is read in the process but is not in the sensitivity list [/data1/cdaffron/git/ece551hw/final/chris/bars_to_seg_disp/bars_to_seg_disp.srcs/sources_1/new/top_level.vhd:272]
+INFO: [Synth 8-256] done synthesizing module 'top_level' (8#1) [/data1/cdaffron/git/ece551hw/final/chris/bars_to_seg_disp/bars_to_seg_disp.srcs/sources_1/new/top_level.vhd:50]
 WARNING: [Synth 8-3331] design top_level has unconnected port din[15]
 WARNING: [Synth 8-3331] design top_level has unconnected port din[14]
 WARNING: [Synth 8-3331] design top_level has unconnected port din[13]
@@ -118,17 +119,8 @@ WARNING: [Synth 8-3331] design top_level has unconnected port din[3]
 WARNING: [Synth 8-3331] design top_level has unconnected port din[2]
 WARNING: [Synth 8-3331] design top_level has unconnected port din[1]
 WARNING: [Synth 8-3331] design top_level has unconnected port din[0]
-WARNING: [Synth 8-3331] design top_level has unconnected port sw[10]
-WARNING: [Synth 8-3331] design top_level has unconnected port sw[9]
-WARNING: [Synth 8-3331] design top_level has unconnected port sw[8]
-WARNING: [Synth 8-3331] design top_level has unconnected port sw[7]
-WARNING: [Synth 8-3331] design top_level has unconnected port sw[6]
-WARNING: [Synth 8-3331] design top_level has unconnected port sw[5]
-WARNING: [Synth 8-3331] design top_level has unconnected port sw[4]
-WARNING: [Synth 8-3331] design top_level has unconnected port sw[3]
-WARNING: [Synth 8-3331] design top_level has unconnected port sw[2]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 934.055 ; gain = 244.008
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 935.059 ; gain = 245.008
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Optimization
@@ -149,8 +141,8 @@ Loading io standards from /opt/Xilinx/Vivado/2014.2/data/./parts/xilinx/artix7/I
 Loading device configuration modes from /opt/Xilinx/Vivado/2014.2/data/parts/xilinx/artix7/ConfigModes.xml
 
 Processing XDC Constraints
-Parsing XDC File [/data1/cdaffron/git/ece551hw/final/chris/bars_to_seg_disp/bars_to_seg_disp.runs/synth_1/.Xil/Vivado-29454-com1548.eecs.utk.edu/dcp_8/clk_wiz_0_in_context.xdc] for cell 'clk_debug'
-Finished Parsing XDC File [/data1/cdaffron/git/ece551hw/final/chris/bars_to_seg_disp/bars_to_seg_disp.runs/synth_1/.Xil/Vivado-29454-com1548.eecs.utk.edu/dcp_8/clk_wiz_0_in_context.xdc] for cell 'clk_debug'
+Parsing XDC File [/data1/cdaffron/git/ece551hw/final/chris/bars_to_seg_disp/bars_to_seg_disp.runs/synth_1/.Xil/Vivado-32386-com1548.eecs.utk.edu/dcp_8/clk_wiz_0_in_context.xdc] for cell 'clk_debug'
+Finished Parsing XDC File [/data1/cdaffron/git/ece551hw/final/chris/bars_to_seg_disp/bars_to_seg_disp.runs/synth_1/.Xil/Vivado-32386-com1548.eecs.utk.edu/dcp_8/clk_wiz_0_in_context.xdc] for cell 'clk_debug'
 Parsing XDC File [/data1/cdaffron/git/ece551hw/final/chris/bars_to_seg_disp/bars_to_seg_disp.srcs/constrs_1/imports/lab2/Nexys4_Master.xdc]
 WARNING: [Vivado 12-507] No nets matched 'disp_draw_inst/n_0_barNumIn_reg[5]'. [/data1/cdaffron/git/ece551hw/final/chris/bars_to_seg_disp/bars_to_seg_disp.srcs/constrs_1/imports/lab2/Nexys4_Master.xdc:817]
 WARNING: [Vivado 12-507] No nets matched 'disp_draw_inst/n_0_barNumIn_reg[2]'. [/data1/cdaffron/git/ece551hw/final/chris/bars_to_seg_disp/bars_to_seg_disp.srcs/constrs_1/imports/lab2/Nexys4_Master.xdc:818]
@@ -178,7 +170,7 @@ Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1225.812 ; gain = 535.766
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 1225.832 ; gain = 535.781
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -192,10 +184,10 @@ Applied set_property MARK_DEBUG = true for FFT_addr[6]. (constraint file  /data1
 Applied set_property MARK_DEBUG = true for FFT_data[28]. (constraint file  /data1/cdaffron/git/ece551hw/final/chris/bars_to_seg_disp/bars_to_seg_disp.srcs/constrs_1/imports/lab2/Nexys4_Master.xdc, line 890).
 Applied set_property BUFFER_TYPE = NONE for clk. (constraint file  /data1/cdaffron/git/ece551hw/final/chris/bars_to_seg_disp/bars_to_seg_disp.runs/synth_1/dont_buffer.xdc, line 11).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1225.812 ; gain = 535.766
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1225.832 ; gain = 535.781
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1225.812 ; gain = 535.766
+Finished RTL Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1225.832 ; gain = 535.781
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 's_curr_reg' in module 'disp_draw'
 INFO: [Synth 8-3354] encoded FSM with state register 's_curr_reg' using encoding 'one-hot' in module 'disp_draw'
@@ -211,9 +203,9 @@ Start RTL Component Statistics
 Detailed RTL Component Info : 
 +---Adders : 
 	   2 Input     32 Bit       Adders := 1     
-	  16 Input     20 Bit       Adders := 1     
-	  33 Input     16 Bit       Adders := 1     
-	  32 Input     16 Bit       Adders := 1     
+	  33 Input     22 Bit       Adders := 1     
+	  17 Input     22 Bit       Adders := 1     
+	  16 Input     22 Bit       Adders := 1     
 	   2 Input     13 Bit       Adders := 5     
 	   2 Input     10 Bit       Adders := 5     
 	   2 Input      8 Bit       Adders := 2     
@@ -231,37 +223,37 @@ Detailed RTL Component Info :
 	                1 Bit    Registers := 20    
 +---Muxes : 
 	  24 Input     18 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 3     
 	  18 Input     16 Bit        Muxes := 66    
 	   3 Input     16 Bit        Muxes := 1     
-	   2 Input     16 Bit        Muxes := 3     
-	   3 Input     13 Bit        Muxes := 1     
-	   2 Input     13 Bit        Muxes := 4     
 	   4 Input     13 Bit        Muxes := 1     
+	   2 Input     13 Bit        Muxes := 4     
+	   3 Input     13 Bit        Muxes := 1     
 	  18 Input     10 Bit        Muxes := 1     
-	   2 Input      8 Bit        Muxes := 3     
-	  18 Input      8 Bit        Muxes := 2     
-	   3 Input      8 Bit        Muxes := 6     
 	   8 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 3     
+	   3 Input      8 Bit        Muxes := 6     
+	  18 Input      8 Bit        Muxes := 2     
 	  16 Input      8 Bit        Muxes := 8     
-	   2 Input      5 Bit        Muxes := 1     
 	  12 Input      5 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
 	  18 Input      5 Bit        Muxes := 1     
 	   2 Input      4 Bit        Muxes := 5     
 	   2 Input      3 Bit        Muxes := 2     
 	  18 Input      2 Bit        Muxes := 1     
-	  18 Input      1 Bit        Muxes := 139   
-	   7 Input      1 Bit        Muxes := 1     
-	   6 Input      1 Bit        Muxes := 3     
-	  11 Input      1 Bit        Muxes := 3     
-	   4 Input      1 Bit        Muxes := 4     
-	   3 Input      1 Bit        Muxes := 155   
-	   2 Input      1 Bit        Muxes := 283   
-	  13 Input      1 Bit        Muxes := 1     
-	  10 Input      1 Bit        Muxes := 3     
-	   8 Input      1 Bit        Muxes := 3     
-	  12 Input      1 Bit        Muxes := 4     
-	  14 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 282   
 	  15 Input      1 Bit        Muxes := 1     
+	   8 Input      1 Bit        Muxes := 3     
+	  10 Input      1 Bit        Muxes := 3     
+	  14 Input      1 Bit        Muxes := 1     
+	  18 Input      1 Bit        Muxes := 139   
+	   6 Input      1 Bit        Muxes := 3     
+	   3 Input      1 Bit        Muxes := 155   
+	  12 Input      1 Bit        Muxes := 4     
+	   7 Input      1 Bit        Muxes := 1     
+	  11 Input      1 Bit        Muxes := 3     
+	   4 Input      1 Bit        Muxes := 3     
+	  13 Input      1 Bit        Muxes := 1     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -273,19 +265,16 @@ Module top_level
 Detailed RTL Component Info : 
 +---Registers : 
 	                1 Bit    Registers := 2     
-+---Muxes : 
-	   2 Input      1 Bit        Muxes := 1     
 Module averager 
 Detailed RTL Component Info : 
 +---Adders : 
-	  16 Input     20 Bit       Adders := 1     
-	  33 Input     16 Bit       Adders := 1     
-	  32 Input     16 Bit       Adders := 1     
+	  33 Input     22 Bit       Adders := 1     
+	  17 Input     22 Bit       Adders := 1     
+	  16 Input     22 Bit       Adders := 1     
 +---Registers : 
 	               16 Bit    Registers := 1     
 +---Muxes : 
 	   3 Input     16 Bit        Muxes := 1     
-	   4 Input      1 Bit        Muxes := 1     
 Module magnitude 
 Detailed RTL Component Info : 
 +---Registers : 
@@ -307,27 +296,27 @@ Detailed RTL Component Info :
 	                1 Bit    Registers := 3     
 +---Muxes : 
 	  24 Input     18 Bit        Muxes := 1     
-	   2 Input     16 Bit        Muxes := 1     
 	  18 Input     16 Bit        Muxes := 66    
+	   2 Input     16 Bit        Muxes := 1     
 	  18 Input     10 Bit        Muxes := 1     
 	   2 Input      8 Bit        Muxes := 3     
 	  18 Input      8 Bit        Muxes := 2     
 	   3 Input      8 Bit        Muxes := 6     
 	  18 Input      5 Bit        Muxes := 1     
 	  18 Input      2 Bit        Muxes := 1     
-	  11 Input      1 Bit        Muxes := 1     
+	  15 Input      1 Bit        Muxes := 1     
 	  18 Input      1 Bit        Muxes := 139   
+	  13 Input      1 Bit        Muxes := 1     
+	  12 Input      1 Bit        Muxes := 1     
 	   7 Input      1 Bit        Muxes := 1     
 	   2 Input      1 Bit        Muxes := 273   
-	  10 Input      1 Bit        Muxes := 1     
+	   8 Input      1 Bit        Muxes := 2     
 	   3 Input      1 Bit        Muxes := 154   
 	  14 Input      1 Bit        Muxes := 1     
-	   4 Input      1 Bit        Muxes := 2     
-	   8 Input      1 Bit        Muxes := 2     
-	  12 Input      1 Bit        Muxes := 1     
+	  10 Input      1 Bit        Muxes := 1     
 	   6 Input      1 Bit        Muxes := 1     
-	  15 Input      1 Bit        Muxes := 1     
-	  13 Input      1 Bit        Muxes := 1     
+	  11 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 2     
 Module adc_fft_fsmV3 
 Detailed RTL Component Info : 
 +---Adders : 
@@ -341,21 +330,21 @@ Detailed RTL Component Info :
 	                1 Bit    Registers := 11    
 +---Muxes : 
 	   2 Input     16 Bit        Muxes := 2     
-	   3 Input     13 Bit        Muxes := 1     
-	   2 Input     13 Bit        Muxes := 4     
 	   4 Input     13 Bit        Muxes := 1     
-	  12 Input      5 Bit        Muxes := 1     
+	   2 Input     13 Bit        Muxes := 4     
+	   3 Input     13 Bit        Muxes := 1     
 	   2 Input      5 Bit        Muxes := 1     
+	  12 Input      5 Bit        Muxes := 1     
 	   2 Input      4 Bit        Muxes := 5     
 	   2 Input      3 Bit        Muxes := 2     
-	   8 Input      1 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 9     
 	  11 Input      1 Bit        Muxes := 2     
-	   4 Input      1 Bit        Muxes := 1     
-	  10 Input      1 Bit        Muxes := 2     
-	   6 Input      1 Bit        Muxes := 2     
-	   3 Input      1 Bit        Muxes := 1     
 	  12 Input      1 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 9     
+	  10 Input      1 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+	   8 Input      1 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 2     
 Module CDiv 
 Detailed RTL Component Info : 
 +---Adders : 
@@ -388,7 +377,7 @@ BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
 ---------------------------------------------------------------------------------
 Finished Part Resource Summary
 ---------------------------------------------------------------------------------
-Workers Ready, Starting Parallel Section  : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1225.812 ; gain = 535.766
+Workers Ready, Starting Parallel Section  : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 1225.832 ; gain = 535.781
 ---------------------------------------------------------------------------------
 Start Cross Boundary Optimization
 ---------------------------------------------------------------------------------
@@ -408,19 +397,10 @@ WARNING: [Synth 8-3331] design top_level has unconnected port din[3]
 WARNING: [Synth 8-3331] design top_level has unconnected port din[2]
 WARNING: [Synth 8-3331] design top_level has unconnected port din[1]
 WARNING: [Synth 8-3331] design top_level has unconnected port din[0]
-WARNING: [Synth 8-3331] design top_level has unconnected port sw[10]
-WARNING: [Synth 8-3331] design top_level has unconnected port sw[9]
-WARNING: [Synth 8-3331] design top_level has unconnected port sw[8]
-WARNING: [Synth 8-3331] design top_level has unconnected port sw[7]
-WARNING: [Synth 8-3331] design top_level has unconnected port sw[6]
-WARNING: [Synth 8-3331] design top_level has unconnected port sw[5]
-WARNING: [Synth 8-3331] design top_level has unconnected port sw[4]
-WARNING: [Synth 8-3331] design top_level has unconnected port sw[3]
-WARNING: [Synth 8-3331] design top_level has unconnected port sw[2]
 ---------------------------------------------------------------------------------
-Finished Cross Boundary Optimization : Time (s): cpu = 00:00:29 ; elapsed = 00:00:29 . Memory (MB): peak = 1225.812 ; gain = 535.766
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:28 . Memory (MB): peak = 1225.832 ; gain = 535.781
 ---------------------------------------------------------------------------------
-Finished Parallel Reinfer  : Time (s): cpu = 00:00:29 ; elapsed = 00:00:29 . Memory (MB): peak = 1225.812 ; gain = 535.766
+Finished Parallel Reinfer  : Time (s): cpu = 00:00:28 ; elapsed = 00:00:28 . Memory (MB): peak = 1225.832 ; gain = 535.781
 ---------------------------------------------------------------------------------
 Start RAM, DSP and Shift Register Reporting
 ---------------------------------------------------------------------------------
@@ -538,10 +518,10 @@ WARNING: [Synth 8-3332] Sequential element (\fullBarHeights_reg[53][1] ) is unus
 WARNING: [Synth 8-3332] Sequential element (\fullBarHeights_reg[53][0] ) is unused and will be removed from module disp_draw.
 INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished Area Optimization : Time (s): cpu = 00:00:36 ; elapsed = 00:00:36 . Memory (MB): peak = 1225.812 ; gain = 535.766
+Finished Area Optimization : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 1225.832 ; gain = 535.781
 ---------------------------------------------------------------------------------
-Finished Parallel Area Opt  : Time (s): cpu = 00:00:36 ; elapsed = 00:00:36 . Memory (MB): peak = 1225.812 ; gain = 535.766
-Finished Parallel Section  : Time (s): cpu = 00:00:36 ; elapsed = 00:00:36 . Memory (MB): peak = 1225.812 ; gain = 535.766
+Finished Parallel Area Opt  : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 1225.832 ; gain = 535.781
+Finished Parallel Section  : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 1225.832 ; gain = 535.781
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
@@ -550,16 +530,16 @@ Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 INFO: Moved 3 constraints on hierarchical pins to their respective driving/loading pins
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:47 ; elapsed = 00:00:48 . Memory (MB): peak = 1242.836 ; gain = 552.789
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:46 ; elapsed = 00:00:47 . Memory (MB): peak = 1234.848 ; gain = 544.797
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:50 ; elapsed = 00:00:51 . Memory (MB): peak = 1249.832 ; gain = 559.785
+Finished Timing Optimization : Time (s): cpu = 00:00:48 ; elapsed = 00:00:49 . Memory (MB): peak = 1242.844 ; gain = 552.793
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:58 ; elapsed = 00:00:59 . Memory (MB): peak = 1272.004 ; gain = 581.957
+Finished Technology Mapping : Time (s): cpu = 00:00:57 ; elapsed = 00:00:57 . Memory (MB): peak = 1265.430 ; gain = 575.379
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -672,7 +652,7 @@ WARNING: [Synth 8-3295] tying undriven pin decoder:data[14] to constant 0
 WARNING: [Synth 8-3295] tying undriven pin decoder:data[13] to constant 0
 INFO: [Common 17-14] Message 'Synth 8-3295' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:59 ; elapsed = 00:01:00 . Memory (MB): peak = 1272.004 ; gain = 581.957
+Finished IO Insertion : Time (s): cpu = 00:00:57 ; elapsed = 00:00:58 . Memory (MB): peak = 1265.430 ; gain = 575.379
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -685,7 +665,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:59 ; elapsed = 00:01:00 . Memory (MB): peak = 1272.004 ; gain = 581.957
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:57 ; elapsed = 00:00:58 . Memory (MB): peak = 1265.430 ; gain = 575.379
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RAM, DSP and Shift Register Reporting
@@ -735,30 +715,30 @@ Report Cell Usage:
 |8     |mult_gen_0_bbox_0  |     1|
 |9     |vio_0              |     1|
 |10    |xfft_0             |     1|
-|11    |CARRY4             |   181|
+|11    |CARRY4             |   199|
 |12    |LUT1               |    60|
-|13    |LUT2               |    67|
-|14    |LUT3               |  1637|
-|15    |LUT4               |   490|
-|16    |LUT5               |   185|
-|17    |LUT6               |   614|
+|13    |LUT2               |    79|
+|14    |LUT3               |  1600|
+|15    |LUT4               |   476|
+|16    |LUT5               |   187|
+|17    |LUT6               |   564|
 |18    |MUXF7              |    70|
 |19    |SRL16E             |     7|
 |20    |FDCE               |    47|
 |21    |FDPE               |     1|
 |22    |FDRE               |  3560|
 |23    |FDSE               |    18|
-|24    |IBUF               |     8|
-|25    |OBUF               |    16|
+|24    |IBUF               |    17|
+|25    |OBUF               |    32|
 +------+-------------------+------+
 
 Report Instance Areas: 
 +------+-----------------+--------------+------+
 |      |Instance         |Module        |Cells |
 +------+-----------------+--------------+------+
-|1     |top              |              |  7214|
-|2     |  disp_draw_inst |disp_draw     |  6422|
-|3     |    avg_inst     |averager      |  1375|
+|1     |top              |              |  7170|
+|2     |  disp_draw_inst |disp_draw     |  6353|
+|3     |    avg_inst     |averager      |  1306|
 |4     |    mag_inst     |magnitude     |   168|
 |5     |  fft_fsm        |adc_fft_fsmV3 |   233|
 |6     |  divide         |CDiv          |   109|
@@ -770,11 +750,11 @@ Report Instance Areas:
 |12    |    dig7         |Hex2SSeg      |     7|
 +------+-----------------+--------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:01:00 ; elapsed = 00:01:00 . Memory (MB): peak = 1272.004 ; gain = 581.957
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:58 ; elapsed = 00:00:59 . Memory (MB): peak = 1265.430 ; gain = 575.379
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 969 warnings.
-Synthesis Optimization Complete : Time (s): cpu = 00:01:00 ; elapsed = 00:01:00 . Memory (MB): peak = 1272.004 ; gain = 581.957
-INFO: [Netlist 29-17] Analyzing 189 Unisim elements for replacement
+Synthesis finished with 0 errors, 0 critical warnings and 960 warnings.
+Synthesis Optimization Complete : Time (s): cpu = 00:00:58 ; elapsed = 00:00:59 . Memory (MB): peak = 1265.430 ; gain = 575.379
+INFO: [Netlist 29-17] Analyzing 216 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Opt 31-140] Inserted 0 IBUFs to IO ports without IO buffers.
 INFO: [Opt 31-141] Inserted 0 OBUFs to IO ports without IO buffers.
@@ -783,10 +763,10 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-50 Infos, 261 Warnings, 0 Critical Warnings and 0 Errors encountered.
+50 Infos, 244 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:01 ; elapsed = 00:01:01 . Memory (MB): peak = 1272.008 ; gain = 467.832
+synth_design: Time (s): cpu = 00:00:59 ; elapsed = 00:01:00 . Memory (MB): peak = 1265.434 ; gain = 461.254
 # write_checkpoint top_level.dcp
 # report_utilization -file top_level_utilization_synth.rpt -pb top_level_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00.09 ; elapsed = 00:00:00.13 . Memory (MB): peak = 1272.008 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Sun Apr 19 17:52:39 2015...
+report_utilization: Time (s): cpu = 00:00:00.09 ; elapsed = 00:00:00.15 . Memory (MB): peak = 1265.434 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sun Apr 19 18:27:58 2015...

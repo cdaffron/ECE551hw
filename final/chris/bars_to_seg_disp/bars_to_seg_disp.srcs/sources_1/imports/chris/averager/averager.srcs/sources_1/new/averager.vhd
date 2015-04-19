@@ -116,36 +116,29 @@ architecture Behavioral of averager is
 begin
 
     process( clk )
-        variable temp : std_logic_vector (19 downto 0);
+        variable temp : std_logic_vector (21 downto 0);
     begin
         if( rising_edge(clk) ) then
---            if( nBins = "00" ) then
---                average <= std_logic_vector(( signed(in0) + signed(in1) ) srl 1);
---            elsif( nBins = "01" ) then
---                average <= std_logic_vector(( signed(in0) + signed(in1) + signed(in2) + signed(in3) ) srl 2);
---            elsif( nBins = "10" ) then
---                average <= std_logic_vector(( signed(in0) + signed(in1) + signed(in2) + signed(in3) + signed(in4) + signed(in5) + signed(in6) + signed(in7) ) srl 3);
             if( nBins = "00" ) then
-                temp := std_logic_vector(resize(signed(in0), 20) + resize(signed(in1), 20) + resize(signed(in2), 20) + resize(signed(in3), 20) + resize(signed(in4), 20) + resize(signed(in5), 20) + resize(signed(in6), 20) + resize(signed(in7), 20) + resize(signed(in8), 20) + resize(signed(in9), 20) + resize(signed(in10), 20) + resize(signed(in11), 20) + resize(signed(in12), 20) + resize(signed(in13), 20) + resize(signed(in14), 20) + resize(signed(in15), 20));
---                average <= std_logic_vector(shift_right( signed(in0) + signed(in1) + signed(in2 ) + signed(in3 ) + signed(in4 ) + signed(in5 ) + signed(in6 ) + signed(in7 ) + 
---                                              signed(in8) + signed(in9) + signed(in10) + signed(in11) + signed(in12) + signed(in13) + signed(in14) + signed(in15), 4));
+                temp := std_logic_vector(resize(signed(in0), 22) + resize(signed(in1), 22) + resize(signed(in2 ), 22) + resize(signed(in3 ), 22) + resize(signed(in4 ), 22) + resize(signed(in5 ), 22) + resize(signed(in6 ), 22) + resize(signed(in7 ), 22) + 
+                                         resize(signed(in8), 22) + resize(signed(in9), 22) + resize(signed(in10), 22) + resize(signed(in11), 22) + resize(signed(in12), 22) + resize(signed(in13), 22) + resize(signed(in14), 22) + resize(signed(in15), 22));
                 average <= std_logic_vector( resize(shift_right( signed(temp), 4 ), 16));
             elsif( nBins = "01" ) then
-                average <= std_logic_vector(shift_right( signed(in0 ) + signed(in1 ) + signed(in2 ) + signed(in3 ) + signed(in4 ) + signed(in5 ) + signed(in6 ) + signed(in7 ) + 
-                                              signed(in8 ) + signed(in9 ) + signed(in10) + signed(in11) + signed(in12) + signed(in13) + signed(in14) + signed(in15) +
-                                              signed(in16) + signed(in17) + signed(in18) + signed(in19) + signed(in20) + signed(in21) + signed(in22) + signed(in23) +
-                                              signed(in24) + signed(in25) + signed(in26) + signed(in27) + signed(in28) + signed(in29) + signed(in30) + signed(in31), 5));
-            elsif( nBins = "10" ) then
-                average <= std_logic_vector(shift_right( signed(in0 ) + signed(in1 ) + signed(in2 ) + signed(in3 ) + signed(in4 ) + signed(in5 ) + signed(in6 ) + signed(in7 ) + 
-                                              signed(in8 ) + signed(in9 ) + signed(in10) + signed(in11) + signed(in12) + signed(in13) + signed(in14) + signed(in15) +
-                                              signed(in16) + signed(in17) + signed(in18) + signed(in19) + signed(in20) + signed(in21) + signed(in22) + signed(in23) +
-                                              signed(in24) + signed(in25) + signed(in26) + signed(in27) + signed(in28) + signed(in29) + signed(in30) + signed(in31) +
-                                              signed(in32) + signed(in33) + signed(in34) + signed(in35) + signed(in36) + signed(in37) + signed(in38) + signed(in39) +
-                                              signed(in40) + signed(in41) + signed(in42) + signed(in43) + signed(in44) + signed(in45) + signed(in46) + signed(in47) +
-                                              signed(in48) + signed(in49) + signed(in50) + signed(in51) + signed(in52) + signed(in53) + signed(in54) + signed(in55) +
-                                              signed(in56) + signed(in57) + signed(in58) + signed(in59) + signed(in60) + signed(in61) + signed(in62) + signed(in63), 6));
+                temp := std_logic_vector( resize(signed(in0 ), 22) + resize(signed(in1 ), 22) + resize(signed(in2 ), 22) + resize(signed(in3 ), 22) + resize(signed(in4 ), 22) + resize(signed(in5 ), 22) + resize(signed(in6 ), 22) + resize(signed(in7 ), 22) + 
+                                          resize(signed(in8 ), 22) + resize(signed(in9 ), 22) + resize(signed(in10), 22) + resize(signed(in11), 22) + resize(signed(in12), 22) + resize(signed(in13), 22) + resize(signed(in14), 22) + resize(signed(in15), 22) +
+                                          resize(signed(in16), 22) + resize(signed(in17), 22) + resize(signed(in18), 22) + resize(signed(in19), 22) + resize(signed(in20), 22) + resize(signed(in21), 22) + resize(signed(in22), 22) + resize(signed(in23), 22) +
+                                          resize(signed(in24), 22) + resize(signed(in25), 22) + resize(signed(in26), 22) + resize(signed(in27), 22) + resize(signed(in28), 22) + resize(signed(in29), 22) + resize(signed(in30), 22) + resize(signed(in31), 22) );
+                average <= std_logic_vector( resize(shift_right( signed(temp), 5), 16));
             else
-                average <= X"0000";
+                temp := std_logic_vector( resize(signed(in0 ), 22) + resize(signed(in1 ), 22) + resize(signed(in2 ), 22) + resize(signed(in3 ), 22) + resize(signed(in4 ), 22) + resize(signed(in5 ), 22) + resize(signed(in6 ), 22) + resize(signed(in7 ), 22) + 
+                                          resize(signed(in8 ), 22) + resize(signed(in9 ), 22) + resize(signed(in10), 22) + resize(signed(in11), 22) + resize(signed(in12), 22) + resize(signed(in13), 22) + resize(signed(in14), 22) + resize(signed(in15), 22) +
+                                          resize(signed(in16), 22) + resize(signed(in17), 22) + resize(signed(in18), 22) + resize(signed(in19), 22) + resize(signed(in20), 22) + resize(signed(in21), 22) + resize(signed(in22), 22) + resize(signed(in23), 22) +
+                                          resize(signed(in24), 22) + resize(signed(in25), 22) + resize(signed(in26), 22) + resize(signed(in27), 22) + resize(signed(in28), 22) + resize(signed(in29), 22) + resize(signed(in30), 22) + resize(signed(in31), 22) +
+                                          resize(signed(in32), 22) + resize(signed(in33), 22) + resize(signed(in34), 22) + resize(signed(in35), 22) + resize(signed(in36), 22) + resize(signed(in37), 22) + resize(signed(in38), 22) + resize(signed(in39), 22) +
+                                          resize(signed(in40), 22) + resize(signed(in41), 22) + resize(signed(in42), 22) + resize(signed(in43), 22) + resize(signed(in44), 22) + resize(signed(in45), 22) + resize(signed(in46), 22) + resize(signed(in47), 22) +
+                                          resize(signed(in48), 22) + resize(signed(in49), 22) + resize(signed(in50), 22) + resize(signed(in51), 22) + resize(signed(in52), 22) + resize(signed(in53), 22) + resize(signed(in54), 22) + resize(signed(in55), 22) +
+                                          resize(signed(in56), 22) + resize(signed(in57), 22) + resize(signed(in58), 22) + resize(signed(in59), 22) + resize(signed(in60), 22) + resize(signed(in61), 22) + resize(signed(in62), 22) + resize(signed(in63), 22));
+                average <= std_logic_vector( resize(shift_right( signed(temp), 6), 16));
             end if;
         end if;
     end process;

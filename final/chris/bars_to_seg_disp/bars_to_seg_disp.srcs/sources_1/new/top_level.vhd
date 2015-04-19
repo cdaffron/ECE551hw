@@ -42,6 +42,7 @@ entity top_level is
         rc              : out std_logic;
         sw              : in  std_logic_vector(15 downto 0);
         seg             : out std_logic_vector (6 downto 0);
+        led             : out std_logic_vector(15 downto 0);
         an              : out std_logic_vector (7 downto 0)
     );
 end top_level;
@@ -108,6 +109,7 @@ begin
 
 --    seg7(7) <= '0';
     seg <= seg7(6 downto 0);
+    led <= sw;
 
 
     disp_draw_inst : disp_draw
@@ -269,7 +271,7 @@ begin
     
     process( counterOut )
     begin
-        if( counterOut = "000000000000000000" ) then
+        if( counterOut = "000000000000000000" and sw(2) = '1' ) then
             trigger <= '1';
         else
             trigger <= '0';
