@@ -1,7 +1,7 @@
 Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2014.2 (lin64) Build 932637 Wed Jun 11 13:08:52 MDT 2014
-| Date         : Sun Apr 19 18:27:58 2015
+| Date         : Sun Apr 19 18:44:04 2015
 | Host         : com1548.eecs.utk.edu running 64-bit Red Hat Enterprise Linux Server release 6.5 (Santiago)
 | Command      : report_utilization -file top_level_utilization_synth.rpt -pb top_level_utilization_synth.pb
 | Design       : top_level
@@ -29,8 +29,8 @@ Table of Contents
 +----------------------------+------+-------+-----------+-------+
 |          Site Type         | Used | Fixed | Available | Util% |
 +----------------------------+------+-------+-----------+-------+
-| Slice LUTs*                | 2145 |     0 |     63400 |  3.38 |
-|   LUT as Logic             | 2138 |     0 |     63400 |  3.37 |
+| Slice LUTs*                | 2132 |     0 |     63400 |  3.36 |
+|   LUT as Logic             | 2125 |     0 |     63400 |  3.35 |
 |   LUT as Memory            |    7 |     0 |     19000 |  0.03 |
 |     LUT as Distributed RAM |    0 |     0 |           |       |
 |     LUT as Shift Register  |    7 |     0 |           |       |
@@ -130,12 +130,12 @@ Table of Contents
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
 | FDRE     | 3560 |        Flop & Latch |
-| LUT3     | 1600 |                 LUT |
-| LUT6     |  564 |                 LUT |
-| LUT4     |  476 |                 LUT |
+| LUT3     | 1604 |                 LUT |
+| LUT6     |  567 |                 LUT |
+| LUT4     |  479 |                 LUT |
 | CARRY4   |  199 |          CarryLogic |
-| LUT5     |  187 |                 LUT |
-| LUT2     |   79 |                 LUT |
+| LUT5     |  188 |                 LUT |
+| LUT2     |   71 |                 LUT |
 | MUXF7    |   70 |               MuxFx |
 | LUT1     |   60 |                 LUT |
 | FDCE     |   47 |        Flop & Latch |

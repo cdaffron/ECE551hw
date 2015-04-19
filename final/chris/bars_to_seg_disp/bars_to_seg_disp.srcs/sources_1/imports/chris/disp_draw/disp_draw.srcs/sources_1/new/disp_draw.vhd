@@ -522,13 +522,19 @@ begin
                     imagVal <= average;
                     avgIn <= tmp;
                     s_curr <= bars32_mag;
+                    magWait <= '1';
                 
                 when bars32_mag =>
-                    realVal <= average;
-                    inValid <= '1';
-                    barNumIn <= counter(5 downto 0);
-                    counter <= std_logic_vector( unsigned( counter ) + 1 );
-                    s_curr <= bars32_barLoop;
+                    if( magWait = '1' ) then
+                        magWait <= '0';
+                        s_curr <= bars32_mag;
+                    else
+                        realVal <= average;
+                        inValid <= '1';
+                        barNumIn <= counter(5 downto 0);
+                        counter <= std_logic_vector( unsigned( counter ) + 1 );
+                        s_curr <= bars32_barLoop;
+                    end if;
                 
                 when bars16 =>
                     counter <= X"00";
@@ -573,14 +579,19 @@ begin
                     imagVal <= average;
                     avgIn <= tmp;
                     s_curr <= bars16_mag;
+                    magWait <= '1';
                     
                 when bars16_mag =>
-                    realVal <= average;
-                    inValid <= '1';
-                    barNumIn <= counter(5 downto 0);
-                    counter <= std_logic_vector( unsigned( counter ) + 1 );
-                    s_curr <= bars16_barLoop;
-                
+                    if( magWait = '1' ) then
+                        magWait <= '0';
+                        s_curr <= bars16_mag;
+                    else
+                        realVal <= average;
+                        inValid <= '1';
+                        barNumIn <= counter(5 downto 0);
+                        counter <= std_logic_vector( unsigned( counter ) + 1 );
+                        s_curr <= bars16_barLoop;
+                    end if;
             end case;
         end if;
     end process;
