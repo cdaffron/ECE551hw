@@ -42,6 +42,7 @@ proc step_failed { step } {
   close $ch
 }
 
+set_msg_config -id {Common-41} -limit 4294967295
 set_msg_config -id {HDL 9-1061} -limit 100000
 set_msg_config -id {HDL 9-1654} -limit 100000
 
@@ -110,7 +111,7 @@ start_step opt_design
 set rc [catch {
   create_msg_db opt_design.pb
   catch {write_debug_probes -quiet -force debug_nets}
-  catch {update_ip_catalog -quiet -current_ip_cache {/data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.cache} }
+  catch {update_ip_catalog -quiet -current_ip_cache {/data1/cdaffron/git/ece551hw/final/chris/bars_to_seg_disp/bars_to_seg_disp.cache} }
   opt_design 
   write_checkpoint -force top_level_opt.dcp
   close_msg_db -file opt_design.pb
