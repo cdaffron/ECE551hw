@@ -187,6 +187,7 @@ architecture behavioral of vga_display_gen is
 
   signal numBars    : integer := 0;
   signal curBarNum  : integer := 0;
+  signal shiftVal   : integer := 0;
   signal curBarRom  : barDispRom;
   signal currentBar : std_logic_vector(7 downto 0);
 
@@ -196,38 +197,42 @@ architecture behavioral of vga_display_gen is
 
   signal barRomVal  : std_logic := '0';
 
-  -- difference in range 0-64 between the vga counters and mouse position
-  signal xpos: std_logic_vector(6 downto 0) := (others => '0');
-  signal ypos: std_logic_vector(6 downto 0) := (others => '0');
+  
+  signal xpos: std_logic_vector(10 downto 0) := (others => '0');
+  signal ypos: std_logic_vector(10 downto 0) := (others => '0');
+
+  -- difference in range 0-64 between the vga counters
+  signal xdiff: std_logic_vector(6 downto 0) := (others => '0');
+  signal ydiff: std_logic_vector(6 downto 0) := (others => '0');
 
 begin
 
     -- compute xdiff
-    x_pos: process(clk)
+    x_diff: process(clk)
     variable temp_diff: std_logic_vector(10 downto 0) := (others => '0');
     begin
         if rising_edge(clk) then
             temp_diff := hcount;
-            xpos <= temp_diff(6 downto 0);
+            xdiff <= temp_diff(6 downto 0);
         end if;
-    end process x_pos;
+    end process x_diff;
 
     -- compute ydiff
-    y_pos: process(clk)
+    y_diff: process(clk)
     variable temp_diff: std_logic_vector(10 downto 0) := (others => '0');
     begin
         if rising_edge(clk) then
             temp_diff := vcount;
-            ypos <= temp_diff(6 downto 0);
+            ydiff <= temp_diff(6 downto 0);
         end if;
-    end process y_pos;
+    end process y_diff;
 
 
-    redVal <= redRom(conv_integer(ypos)) when rising_edge(clk_25);
-    greenVal <= greenRom(conv_integer(ypos)) when rising_edge(clk_25);
-    blueVal <= blueRom(conv_integer(ypos)) when rising_edge(clk_25);
+    redVal <= redRom(conv_integer(ydiff & xdiff)) when rising_edge(clk_25);
+    greenVal <= greenRom(conv_integer(ydiff & xdiff)) when rising_edge(clk_25);
+    blueVal <= blueRom(conv_integer(ydiff & xdiff)) when rising_edge(clk_25);
 
-    barRomVal <= curBarRom(conv_integer(xpos)) when rising_edge(clk_25);
+    barRomVal <= curBarRom(conv_integer(hcount sra shiftVal)) when rising_edge(clk_25);
 
 
     process(barNumSws)
@@ -236,16 +241,20 @@ begin
         when "00" =>
           numBars <= 64;
           curBarRom <= bars64Rom;
+          shiftVal <= 6;
         when "01" =>
           numBars <= 32;
           curBarRom <= bars32Rom;
+          shiftVal <= 5;
         when "11" =>
           numBars <= 16;
           curBarRom <= bars16Rom;
+          shiftVal <= 4;
         when others =>
           -- Same as "11"
           numBars <= 16;
           curBarRom <= bars16Rom;
+          shiftVal <= 4;
       end case;
     end process;
 
