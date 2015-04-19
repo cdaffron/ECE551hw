@@ -1,0 +1,263 @@
+#-----------------------------------------------------------
+# Vivado v2014.2 (64-bit)
+# SW Build 932637 on Wed Jun 11 13:33:10 MDT 2014
+# IP Build 924643 on Fri May 30 09:20:16 MDT 2014
+# Start of session at: Fri Apr 17 15:34:25 2015
+# Process ID: 5148
+# Log file: C:/Users/cdaffron/Documents/ECE 551/final/top_level_project/top_level_project.runs/mult_gen_0_synth_1/mult_gen_0.vds
+# Journal file: C:/Users/cdaffron/Documents/ECE 551/final/top_level_project/top_level_project.runs/mult_gen_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source mult_gen_0.tcl
+# set_param gui.test TreeTableDev
+# set_param xicom.use_bs_reader 1
+# set_msg_config -id {HDL 9-1061} -limit 100000
+# set_msg_config -id {HDL 9-1654} -limit 100000
+# set_msg_config -id {Labtools 27-147} -limit 4294967295
+# create_project -in_memory -part xc7a100tcsg324-1
+# set_property target_language VHDL [current_project]
+# set_param project.compositeFile.enableAutoGeneration 0
+# set_property default_lib xil_defaultlib [current_project]
+# read_ip {{C:/Users/cdaffron/Documents/ECE 551/final/top_level_project/top_level_project.srcs/sources_1/ip/mult_gen_0/mult_gen_0.xci}}
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2014.2/data/ip'.
+WARNING: [IP_Flow 19-3664] IP 'mult_gen_0' generated file not found 'c:/Users/cdaffron/Documents/ECE 551/final/top_level_project/top_level_project.srcs/sources_1/ip/mult_gen_0/mult_gen_0.vho'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'mult_gen_0' generated file not found 'c:/Users/cdaffron/Documents/ECE 551/final/top_level_project/top_level_project.srcs/sources_1/ip/mult_gen_0/mult_gen_0.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'mult_gen_0' generated file not found 'c:/Users/cdaffron/Documents/ECE 551/final/top_level_project/top_level_project.srcs/sources_1/ip/mult_gen_0/mult_gen_0_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'mult_gen_0' generated file not found 'c:/Users/cdaffron/Documents/ECE 551/final/top_level_project/top_level_project.srcs/sources_1/ip/mult_gen_0/mult_gen_0_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'mult_gen_0' generated file not found 'c:/Users/cdaffron/Documents/ECE 551/final/top_level_project/top_level_project.srcs/sources_1/ip/mult_gen_0/mult_gen_0_funcsim.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'mult_gen_0' generated file not found 'c:/Users/cdaffron/Documents/ECE 551/final/top_level_project/top_level_project.srcs/sources_1/ip/mult_gen_0/mult_gen_0_funcsim.vhdl'. Please regenerate to continue.
+# set_property used_in_implementation false [get_files {{c:/Users/cdaffron/Documents/ECE 551/final/top_level_project/top_level_project.srcs/sources_1/ip/mult_gen_0/mult_gen_0.dcp}}]
+# set_property used_in_implementation false [get_files -all {{c:/Users/cdaffron/Documents/ECE 551/final/top_level_project/top_level_project.srcs/sources_1/ip/mult_gen_0/mult_gen_0.dcp}}]
+# set_msg_config -id {IP_Flow 19-2162} -severity warning -new_severity info
+# set_property is_locked true [get_files {{C:/Users/cdaffron/Documents/ECE 551/final/top_level_project/top_level_project.srcs/sources_1/ip/mult_gen_0/mult_gen_0.xci}}]
+# read_xdc dont_touch.xdc
+# set_property used_in_implementation false [get_files dont_touch.xdc]
+# set_param synth.vivado.isSynthRun true
+# set_property webtalk.parent_dir {C:/Users/cdaffron/Documents/ECE 551/final/top_level_project/top_level_project.cache/wt} [current_project]
+# set_property parent.project_dir {C:/Users/cdaffron/Documents/ECE 551/final/top_level_project} [current_project]
+# catch { write_hwdef -file mult_gen_0.hwdef }
+INFO: [Vivado_Tcl 4-279] hardware handoff file cannot be generated as there is no block diagram instance in the design
+# synth_design -top mult_gen_0 -part xc7a100tcsg324-1 -mode out_of_context
+Command: synth_design -top mult_gen_0 -part xc7a100tcsg324-1 -mode out_of_context
+
+Starting synthesis...
+
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 234.563 ; gain = 102.645
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'mult_gen_0' [c:/Users/cdaffron/Documents/ECE 551/final/top_level_project/top_level_project.srcs/sources_1/ip/mult_gen_0/synth/mult_gen_0.vhd:68]
+INFO: [Synth 8-3491] module 'mult_gen_v12_0' declared at 'c:/Users/cdaffron/Documents/ECE 551/final/top_level_project/top_level_project.srcs/sources_1/ip/mult_gen_0/mult_gen_v12_0/hdl/mult_gen_v12_0.vhd:106' bound to instance 'U0' of component 'mult_gen_v12_0' [c:/Users/cdaffron/Documents/ECE 551/final/top_level_project/top_level_project.srcs/sources_1/ip/mult_gen_0/synth/mult_gen_0.vhd:116]
+INFO: [Synth 8-638] synthesizing module 'mult_gen_v12_0__parameterized0' [c:/Users/cdaffron/Documents/ECE 551/final/top_level_project/top_level_project.srcs/sources_1/ip/mult_gen_0/mult_gen_v12_0/hdl/mult_gen_v12_0.vhd:145]
+INFO: [Synth 8-3491] module 'mult_gen_v12_0_viv' declared at 'c:/Users/cdaffron/Documents/ECE 551/final/top_level_project/top_level_project.srcs/sources_1/ip/mult_gen_0/mult_gen_v12_0/hdl/mult_gen_v12_0_viv.vhd:114' bound to instance 'i_mult' of component 'mult_gen_v12_0_viv' [c:/Users/cdaffron/Documents/ECE 551/final/top_level_project/top_level_project.srcs/sources_1/ip/mult_gen_0/mult_gen_v12_0/hdl/mult_gen_v12_0.vhd:151]
+INFO: [Synth 8-638] synthesizing module 'mult_gen_v12_0_viv__parameterized0' [c:/Users/cdaffron/Documents/ECE 551/final/top_level_project/top_level_project.srcs/sources_1/ip/mult_gen_0/mult_gen_v12_0/hdl/mult_gen_v12_0_viv.vhd:163]
+INFO: [Synth 8-638] synthesizing module 'dsp' [c:/Users/cdaffron/Documents/ECE 551/final/top_level_project/top_level_project.srcs/sources_1/ip/mult_gen_0/mult_gen_v12_0/hdl/dsp.vhd:188]
+INFO: [Synth 8-638] synthesizing module 'op_resize' [c:/Users/cdaffron/Documents/ECE 551/final/top_level_project/top_level_project.srcs/sources_1/ip/mult_gen_0/mult_gen_v12_0/hdl/op_resize.vhd:130]
+INFO: [Synth 8-256] done synthesizing module 'op_resize' (1#1) [c:/Users/cdaffron/Documents/ECE 551/final/top_level_project/top_level_project.srcs/sources_1/ip/mult_gen_0/mult_gen_v12_0/hdl/op_resize.vhd:130]
+INFO: [Synth 8-4472] Detected and applied attribute use_dsp48 = yes [c:/Users/cdaffron/Documents/ECE 551/final/top_level_project/top_level_project.srcs/sources_1/ip/mult_gen_0/mult_gen_v12_0/hdl/dsp.vhd:672]
+INFO: [Synth 8-638] synthesizing module 'delay_line' [c:/Users/cdaffron/Documents/ECE 551/final/top_level_project/top_level_project.srcs/sources_1/ip/mult_gen_0/mult_gen_v12_0/hdl/delay_line.vhd:135]
+INFO: [Synth 8-256] done synthesizing module 'delay_line' (2#1) [c:/Users/cdaffron/Documents/ECE 551/final/top_level_project/top_level_project.srcs/sources_1/ip/mult_gen_0/mult_gen_v12_0/hdl/delay_line.vhd:135]
+INFO: [Synth 8-256] done synthesizing module 'dsp' (3#1) [c:/Users/cdaffron/Documents/ECE 551/final/top_level_project/top_level_project.srcs/sources_1/ip/mult_gen_0/mult_gen_v12_0/hdl/dsp.vhd:188]
+INFO: [Synth 8-256] done synthesizing module 'mult_gen_v12_0_viv__parameterized0' (4#1) [c:/Users/cdaffron/Documents/ECE 551/final/top_level_project/top_level_project.srcs/sources_1/ip/mult_gen_0/mult_gen_v12_0/hdl/mult_gen_v12_0_viv.vhd:163]
+INFO: [Synth 8-256] done synthesizing module 'mult_gen_v12_0__parameterized0' (5#1) [c:/Users/cdaffron/Documents/ECE 551/final/top_level_project/top_level_project.srcs/sources_1/ip/mult_gen_0/mult_gen_v12_0/hdl/mult_gen_v12_0.vhd:145]
+INFO: [Synth 8-256] done synthesizing module 'mult_gen_0' (6#1) [c:/Users/cdaffron/Documents/ECE 551/final/top_level_project/top_level_project.srcs/sources_1/ip/mult_gen_0/synth/mult_gen_0.vhd:68]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:17 ; elapsed = 00:00:21 . Memory (MB): peak = 276.559 ; gain = 144.641
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Optimization
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+Loading clock regions from C:/Xilinx/Vivado/2014.2/data\parts/xilinx/artix7/artix7/xc7a100t/ClockRegion.xml
+Loading clock buffers from C:/Xilinx/Vivado/2014.2/data\parts/xilinx/artix7/artix7/xc7a100t/ClockBuffers.xml
+Loading clock placement rules from C:/Xilinx/Vivado/2014.2/data/parts/xilinx/artix7/ClockPlacerRules.xml
+Loading package pin functions from C:/Xilinx/Vivado/2014.2/data\parts/xilinx/artix7/PinFunctions.xml...
+Loading package from C:/Xilinx/Vivado/2014.2/data\parts/xilinx/artix7/artix7/xc7a100t/csg324/Package.xml
+Loading io standards from C:/Xilinx/Vivado/2014.2/data\./parts/xilinx/artix7/IOStandards.xml
+Loading device configuration modes from C:/Xilinx/Vivado/2014.2/data\parts/xilinx/artix7/ConfigModes.xml
+
+Processing XDC Constraints
+Parsing XDC File [c:/Users/cdaffron/Documents/ECE 551/final/top_level_project/top_level_project.srcs/sources_1/ip/mult_gen_0/mult_gen_0_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [c:/Users/cdaffron/Documents/ECE 551/final/top_level_project/top_level_project.srcs/sources_1/ip/mult_gen_0/mult_gen_0_ooc.xdc] for cell 'U0'
+Parsing XDC File [C:/Users/cdaffron/Documents/ECE 551/final/top_level_project/top_level_project.runs/mult_gen_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/cdaffron/Documents/ECE 551/final/top_level_project/top_level_project.runs/mult_gen_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+---------------------------------------------------------------------------------
+Start RTL Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:25 ; elapsed = 00:00:31 . Memory (MB): peak = 475.707 ; gain = 343.789
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for U0. (constraint file  {C:/Users/cdaffron/Documents/ECE 551/final/top_level_project/top_level_project.runs/mult_gen_0_synth_1/dont_touch.xdc}, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:25 ; elapsed = 00:00:31 . Memory (MB): peak = 475.707 ; gain = 343.789
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:31 . Memory (MB): peak = 475.707 ; gain = 343.789
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Workers Ready, Starting Parallel Section  : Time (s): cpu = 00:00:25 ; elapsed = 00:00:31 . Memory (MB): peak = 476.543 ; gain = 344.625
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:31 . Memory (MB): peak = 476.543 ; gain = 344.625
+---------------------------------------------------------------------------------
+Finished Parallel Reinfer  : Time (s): cpu = 00:00:26 ; elapsed = 00:00:31 . Memory (MB): peak = 476.543 ; gain = 344.625
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:32 . Memory (MB): peak = 486.848 ; gain = 354.930
+---------------------------------------------------------------------------------
+Finished Parallel Area Opt  : Time (s): cpu = 00:00:26 ; elapsed = 00:00:32 . Memory (MB): peak = 486.848 ; gain = 354.930
+Finished Parallel Section  : Time (s): cpu = 00:00:26 ; elapsed = 00:00:32 . Memory (MB): peak = 486.848 ; gain = 354.930
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:43 ; elapsed = 00:00:51 . Memory (MB): peak = 586.879 ; gain = 454.961
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:43 ; elapsed = 00:00:51 . Memory (MB): peak = 586.879 ; gain = 454.961
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:43 ; elapsed = 00:00:51 . Memory (MB): peak = 596.531 ; gain = 464.613
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:43 ; elapsed = 00:00:51 . Memory (MB): peak = 596.531 ; gain = 464.613
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:43 ; elapsed = 00:00:51 . Memory (MB): peak = 596.531 ; gain = 464.613
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:44 ; elapsed = 00:00:51 . Memory (MB): peak = 596.531 ; gain = 464.613
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |DSP48E1 |     1|
++------+--------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:44 ; elapsed = 00:00:51 . Memory (MB): peak = 596.531 ; gain = 464.613
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Complete : Time (s): cpu = 00:00:44 ; elapsed = 00:00:51 . Memory (MB): peak = 596.531 ; gain = 464.613
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+Parsing XDC File [c:/Users/cdaffron/Documents/ECE 551/final/top_level_project/top_level_project.srcs/sources_1/ip/mult_gen_0/mult_gen_0_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [c:/Users/cdaffron/Documents/ECE 551/final/top_level_project/top_level_project.srcs/sources_1/ip/mult_gen_0/mult_gen_0_ooc.xdc] for cell 'U0'
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+22 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:43 ; elapsed = 00:00:50 . Memory (MB): peak = 596.531 ; gain = 407.207
+# rename_ref -prefix_all mult_gen_0_
+INFO: [Coretcl 2-1174] Renamed 4 cell refs.
+# write_checkpoint -noxdef mult_gen_0.dcp
+# report_utilization -file mult_gen_0_utilization_synth.rpt -pb mult_gen_0_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.026 . Memory (MB): peak = 596.531 ; gain = 0.000
+# if { [catch {
+#   file copy -force {C:/Users/cdaffron/Documents/ECE 551/final/top_level_project/top_level_project.runs/mult_gen_0_synth_1/mult_gen_0.dcp} {C:/Users/cdaffron/Documents/ECE 551/final/top_level_project/top_level_project.srcs/sources_1/ip/mult_gen_0/mult_gen_0.dcp}
+#   write_verilog -force -mode synth_stub {C:/Users/cdaffron/Documents/ECE 551/final/top_level_project/top_level_project.srcs/sources_1/ip/mult_gen_0/mult_gen_0_stub.v}
+#   write_vhdl -force -mode synth_stub {C:/Users/cdaffron/Documents/ECE 551/final/top_level_project/top_level_project.srcs/sources_1/ip/mult_gen_0/mult_gen_0_stub.vhdl}
+#   write_verilog -force -mode funcsim {C:/Users/cdaffron/Documents/ECE 551/final/top_level_project/top_level_project.srcs/sources_1/ip/mult_gen_0/mult_gen_0_funcsim.v}
+#   write_vhdl -force -mode funcsim {C:/Users/cdaffron/Documents/ECE 551/final/top_level_project/top_level_project.srcs/sources_1/ip/mult_gen_0/mult_gen_0_funcsim.vhdl}
+# } _RESULT ] } { 
+#   send_msg_id runtcl-3 error "Unable to successfully create or copy supporting IP files."
+#   return -code error
+# }
+INFO: [Common 17-206] Exiting Vivado at Fri Apr 17 15:35:18 2015...
