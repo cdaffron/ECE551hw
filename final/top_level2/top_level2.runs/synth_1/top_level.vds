@@ -1,0 +1,86 @@
+#-----------------------------------------------------------
+# Vivado v2014.2 (64-bit)
+# SW Build 932637 on Wed Jun 11 13:08:52 MDT 2014
+# IP Build 924643 on Fri May 30 09:20:16 MDT 2014
+# Start of session at: Sun Apr 19 19:53:02 2015
+# Process ID: 13571
+# Log file: /data1/cdaffron/git/ece551hw/final/top_level2/top_level2.runs/synth_1/top_level.vds
+# Journal file: /data1/cdaffron/git/ece551hw/final/top_level2/top_level2.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source top_level.tcl
+# set_param gui.test TreeTableDev
+# set_msg_config -id {HDL 9-1061} -limit 100000
+# set_msg_config -id {HDL 9-1654} -limit 100000
+# create_project -in_memory -part xc7a100tcsg324-1
+# set_property target_language VHDL [current_project]
+# set_param project.compositeFile.enableAutoGeneration 0
+# set_property default_lib xil_defaultlib [current_project]
+# add_files {{/data1/cdaffron/git/ece551hw/final/jacob/sources/coe files/gunshot.coe}}
+# add_files -quiet /data1/cdaffron/git/ece551hw/final/top_level2/top_level2.runs/mult_gen_0_synth_1/mult_gen_0.dcp
+# set_property used_in_implementation false [get_files /data1/cdaffron/git/ece551hw/final/top_level2/top_level2.runs/mult_gen_0_synth_1/mult_gen_0.dcp]
+# add_files -quiet /data1/cdaffron/git/ece551hw/final/top_level2/top_level2.runs/c_addsub_0_synth_1/c_addsub_0.dcp
+# set_property used_in_implementation false [get_files /data1/cdaffron/git/ece551hw/final/top_level2/top_level2.runs/c_addsub_0_synth_1/c_addsub_0.dcp]
+# add_files -quiet /data1/cdaffron/git/ece551hw/final/top_level2/top_level2.runs/cordic_0_synth_1/cordic_0.dcp
+# set_property used_in_implementation false [get_files /data1/cdaffron/git/ece551hw/final/top_level2/top_level2.runs/cordic_0_synth_1/cordic_0.dcp]
+# add_files -quiet /data1/cdaffron/git/ece551hw/final/top_level2/top_level2.runs/clk_wiz_vga_synth_1/clk_wiz_vga.dcp
+# set_property used_in_implementation false [get_files /data1/cdaffron/git/ece551hw/final/top_level2/top_level2.runs/clk_wiz_vga_synth_1/clk_wiz_vga.dcp]
+# add_files -quiet /data1/cdaffron/git/ece551hw/final/top_level2/top_level2.runs/xfft_0_synth_1/xfft_0.dcp
+# set_property used_in_implementation false [get_files /data1/cdaffron/git/ece551hw/final/top_level2/top_level2.runs/xfft_0_synth_1/xfft_0.dcp]
+# add_files -quiet /data1/cdaffron/git/ece551hw/final/top_level2/top_level2.runs/vio_0_synth_1/vio_0.dcp
+# set_property used_in_implementation false [get_files /data1/cdaffron/git/ece551hw/final/top_level2/top_level2.runs/vio_0_synth_1/vio_0.dcp]
+# add_files -quiet /data1/cdaffron/git/ece551hw/final/top_level2/top_level2.runs/c_counter_binary_0_synth_1/c_counter_binary_0.dcp
+# set_property used_in_implementation false [get_files /data1/cdaffron/git/ece551hw/final/top_level2/top_level2.runs/c_counter_binary_0_synth_1/c_counter_binary_0.dcp]
+# add_files -quiet /data1/cdaffron/git/ece551hw/final/top_level2/top_level2.runs/clk_wiz_0_synth_1/clk_wiz_0.dcp
+# set_property used_in_implementation false [get_files /data1/cdaffron/git/ece551hw/final/top_level2/top_level2.runs/clk_wiz_0_synth_1/clk_wiz_0.dcp]
+# add_files -quiet /data1/cdaffron/git/ece551hw/final/top_level2/top_level2.runs/blk_mem_gen_1_synth_1/blk_mem_gen_1.dcp
+# set_property used_in_implementation false [get_files /data1/cdaffron/git/ece551hw/final/top_level2/top_level2.runs/blk_mem_gen_1_synth_1/blk_mem_gen_1.dcp]
+# add_files -quiet /data1/cdaffron/git/ece551hw/final/top_level2/top_level2.runs/blk_mem_gen_0_synth_1/blk_mem_gen_0.dcp
+# set_property used_in_implementation false [get_files /data1/cdaffron/git/ece551hw/final/top_level2/top_level2.runs/blk_mem_gen_0_synth_1/blk_mem_gen_0.dcp]
+# read_vhdl -library xil_defaultlib {
+#   /data1/cdaffron/git/ece551hw/final/top_level2/top_level2.srcs/sources_1/imports/sources_1/imports/chris/disp_draw/disp_draw.srcs/sources_1/new/type_pkg.vhd
+#   /data1/cdaffron/git/ece551hw/final/top_level2/top_level2.srcs/sources_1/imports/sources_1/imports/sources_1/new/vga_pkg.vhd
+#   /data1/cdaffron/git/ece551hw/final/top_level2/top_level2.srcs/sources_1/imports/sources_1/imports/sources_1/imports/sources_1/new/vga_display_gen.vhd
+#   /data1/cdaffron/git/ece551hw/final/top_level2/top_level2.srcs/sources_1/imports/sources_1/imports/sources_1/imports/sources_1/imports/vga/vga_controller_640_60.vhd
+#   /data1/cdaffron/git/ece551hw/final/top_level2/top_level2.srcs/sources_1/imports/sources_1/imports/new/Hex2SSegDecoder.vhd
+#   /data1/cdaffron/git/ece551hw/final/top_level2/top_level2.srcs/sources_1/imports/sources_1/imports/new/averager.vhd
+#   /data1/cdaffron/git/ece551hw/final/top_level2/top_level2.srcs/sources_1/imports/sources_1/imports/chris/magnitude/magnitude.srcs/sources_1/new/magnitude.vhd
+#   /data1/cdaffron/git/ece551hw/final/top_level2/top_level2.srcs/sources_1/imports/sources_1/imports/sources_1/new/vga_top.vhd
+#   /data1/cdaffron/git/ece551hw/final/top_level2/top_level2.srcs/sources_1/imports/sources_1/imports/new/HexDigs2SSeg.vhd
+#   /data1/cdaffron/git/ece551hw/final/top_level2/top_level2.srcs/sources_1/imports/sources_1/imports/new/CDiv.vhd
+#   /data1/cdaffron/git/ece551hw/final/top_level2/top_level2.srcs/sources_1/imports/sources_1/imports/adc_fft_to_pc/adc_fft_fsmV3_noUART.vhd
+#   /data1/cdaffron/git/ece551hw/final/top_level2/top_level2.srcs/sources_1/imports/new/disp_draw.vhd
+#   /data1/cdaffron/git/ece551hw/final/top_level2/top_level2.srcs/sources_1/imports/sources_1/new/top_level.vhd
+# }
+# read_xdc /data1/cdaffron/git/ece551hw/final/top_level2/top_level2.srcs/constrs_1/imports/lab2/Nexys4_Master.xdc
+# set_property used_in_implementation false [get_files /data1/cdaffron/git/ece551hw/final/top_level2/top_level2.srcs/constrs_1/imports/lab2/Nexys4_Master.xdc]
+# read_xdc dont_buffer.xdc
+# set_property used_in_implementation false [get_files dont_buffer.xdc]
+# set_param synth.vivado.isSynthRun true
+# set_property webtalk.parent_dir /data1/cdaffron/git/ece551hw/final/top_level2/top_level2.cache/wt [current_project]
+# set_property parent.project_dir /data1/cdaffron/git/ece551hw/final/top_level2 [current_project]
+# catch { write_hwdef -file top_level.hwdef }
+INFO: [Vivado_Tcl 4-279] hardware handoff file cannot be generated as there is no block diagram instance in the design
+# synth_design -top top_level -part xc7a100tcsg324-1 -flatten_hierarchy full -verbose
+Command: synth_design -top top_level -part xc7a100tcsg324-1 -flatten_hierarchy full -verbose
+
+Starting synthesis...
+
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 846.168 ; gain = 156.125
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'top_level' [/data1/cdaffron/git/ece551hw/final/top_level2/top_level2.srcs/sources_1/imports/sources_1/new/top_level.vhd:56]
+INFO: [Synth 8-3491] module 'disp_draw' declared at '/data1/cdaffron/git/ece551hw/final/top_level2/top_level2.srcs/sources_1/imports/new/disp_draw.vhd:42' bound to instance 'disp_draw_inst' of component 'disp_draw' [/data1/cdaffron/git/ece551hw/final/top_level2/top_level2.srcs/sources_1/imports/sources_1/new/top_level.vhd:141]
+INFO: [Synth 8-638] synthesizing module 'disp_draw' [/data1/cdaffron/git/ece551hw/final/top_level2/top_level2.srcs/sources_1/imports/new/disp_draw.vhd:60]
+INFO: [Synth 8-3491] module 'averager' declared at '/data1/cdaffron/git/ece551hw/final/top_level2/top_level2.srcs/sources_1/imports/sources_1/imports/new/averager.vhd:39' bound to instance 'avg_inst' of component 'averager' [/data1/cdaffron/git/ece551hw/final/top_level2/top_level2.srcs/sources_1/imports/new/disp_draw.vhd:264]
+INFO: [Synth 8-638] synthesizing module 'averager' [/data1/cdaffron/git/ece551hw/final/top_level2/top_level2.srcs/sources_1/imports/sources_1/imports/new/averager.vhd:111]
+INFO: [Synth 8-256] done synthesizing module 'averager' (1#1) [/data1/cdaffron/git/ece551hw/final/top_level2/top_level2.srcs/sources_1/imports/sources_1/imports/new/averager.vhd:111]
+INFO: [Synth 8-3491] module 'magnitude' declared at '/data1/cdaffron/git/ece551hw/final/top_level2/top_level2.srcs/sources_1/imports/sources_1/imports/chris/magnitude/magnitude.srcs/sources_1/new/magnitude.vhd:34' bound to instance 'mag_inst' of component 'magnitude' [/data1/cdaffron/git/ece551hw/final/top_level2/top_level2.srcs/sources_1/imports/new/disp_draw.vhd:335]
+INFO: [Synth 8-638] synthesizing module 'magnitude' [/data1/cdaffron/git/ece551hw/final/top_level2/top_level2.srcs/sources_1/imports/sources_1/imports/chris/magnitude/magnitude.srcs/sources_1/new/magnitude.vhd:47]
+INFO: [Synth 8-637] synthesizing blackbox instance 'realSquare' of component 'mult_gen_0' [/data1/cdaffron/git/ece551hw/final/top_level2/top_level2.srcs/sources_1/imports/sources_1/imports/chris/magnitude/magnitude.srcs/sources_1/new/magnitude.vhd:139]
+INFO: [Synth 8-637] synthesizing blackbox instance 'imagSquare' of component 'mult_gen_0' [/data1/cdaffron/git/ece551hw/final/top_level2/top_level2.srcs/sources_1/imports/sources_1/imports/chris/magnitude/magnitude.srcs/sources_1/new/magnitude.vhd:147]
+INFO: [Synth 8-637] synthesizing blackbox instance 'sumOfSquares' of component 'c_addsub_0' [/data1/cdaffron/git/ece551hw/final/top_level2/top_level2.srcs/sources_1/imports/sources_1/imports/chris/magnitude/magnitude.srcs/sources_1/new/magnitude.vhd:155]
+INFO: [Synth 8-637] synthesizing blackbox instance 'magSqRt' of component 'cordic_0' [/data1/cdaffron/git/ece551hw/final/top_level2/top_level2.srcs/sources_1/imports/sources_1/imports/chris/magnitude/magnitude.srcs/sources_1/new/magnitude.vhd:163]
+INFO: [Synth 8-256] done synthesizing module 'magnitude' (2#1) [/data1/cdaffron/git/ece551hw/final/top_level2/top_level2.srcs/sources_1/imports/sources_1/imports/chris/magnitude/magnitude.srcs/sources_1/new/magnitude.vhd:47]
+INFO: [Synth 8-256] done synthesizing module 'disp_draw' (3#1) [/data1/cdaffron/git/ece551hw/final/top_level2/top_level2.srcs/sources_1/imports/new/disp_draw.vhd:60]
