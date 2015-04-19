@@ -33,4 +33,5 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 package type_pkg is
     type barArray is array (63 downto 0) of std_logic_vector (7 downto 0);
+    type fullBarArray is array (63 downto 0) of std_logic_vector (16 downto 0);
 end package;

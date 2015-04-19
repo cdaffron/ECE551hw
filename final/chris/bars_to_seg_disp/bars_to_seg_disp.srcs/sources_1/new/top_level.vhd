@@ -55,6 +55,7 @@ architecture Behavioral of top_level is
             FFT_rden    : out std_logic;
             FFT_done    : in  std_logic;
             barHeights  : out barArray;
+            fullBarHeights : out fullBarArray;
             VGA_trig    : in  std_logic;
             sw          : in  std_logic_vector (1 downto 0);
             clk         : in  std_logic        
@@ -66,6 +67,7 @@ architecture Behavioral of top_level is
     signal FFT_rden : std_logic := '0';
     signal FFT_done : std_logic := '0';
     signal barHeights : barArray;
+    signal fullBarHeights : fullBarArray;
     signal VGA_trig : std_logic := '0';
     signal fsm_state : natural;
     signal reset : std_logic_vector(0 downto 0) := (others => '0');
@@ -115,6 +117,7 @@ begin
         FFT_rden => FFT_rden,
         FFT_done => FFT_done,
         barHeights => barHeights,
+        fullBarHeights => fullBarHeights,
         VGA_trig => VGA_trig,
         sw => sw(1 downto 0),
         clk => clk        
@@ -253,9 +256,9 @@ begin
     process( clk1k )
         variable index : integer;
     begin
-        index := to_integer(unsigned(sw(15 downto 0)));
-        seven_seg_data(7 downto 0) <= barHeights(index)(7 downto 0);
-        seven_seg_data(31 downto 8) <= X"000000";
+        index := to_integer(unsigned(sw(15 downto 11)));
+        seven_seg_data(16 downto 0) <= fullBarHeights(index);
+        seven_seg_data(31 downto 17) <= "000000000000000";
     end process;
     
     process( counterOut )

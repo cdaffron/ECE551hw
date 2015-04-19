@@ -49,6 +49,7 @@ entity disp_draw is
 --        VGA_data    : out std_logic_vector (11 downto 0);
 --        VGA_wren    : out std_logic;
         barHeights  : out barArray;
+        fullBarHeights  : out fullBarArray;
         VGA_trig    : in  std_logic;
         sw          : in  std_logic_vector (1 downto 0);
         clk         : in  std_logic        
@@ -148,6 +149,7 @@ architecture Behavioral of disp_draw is
     
 --    type barArray is array (63 downto 0) of std_logic_vector (7 downto 0);
     signal barHeightsWrk : barArray;
+--    signal fullBarHeightsWrk : fullBarArray;
     
 --    signal avgIn0   : std_logic_vector (15 downto 0) := X"0000";
 --    signal avgIn1   : std_logic_vector (15 downto 0) := X"0000";
@@ -218,6 +220,9 @@ architecture Behavioral of disp_draw is
     signal addr1        : std_logic_vector (9 downto 0);
     signal addr2        : std_logic_vector (9 downto 0);
     
+    attribute KEEP : BOOLEAN;
+    attribute KEEP of average : signal is TRUE;
+    
     signal realVal      : std_logic_vector (15 downto 0);
     signal imagVal      : std_logic_vector (15 downto 0);
     signal barNumIn     : std_logic_vector (5 downto 0);
@@ -225,6 +230,9 @@ architecture Behavioral of disp_draw is
     signal inValid      : std_logic;
     signal mag          : std_logic_vector (16 downto 0);
     signal magValid     : std_logic;
+    
+    attribute KEEP of realVal : signal is TRUE;
+    attribute KEEP of imagVal : signal is TRUE;
     
 --    signal tmp1 : std_logic_vector (15 downto 0);
 --    signal tmp2 : std_logic_vector (15 downto 0);
@@ -582,6 +590,7 @@ begin
         if( rising_edge( clk ) ) then
             if( magValid = '1' ) then
                 barHeightsWrk(to_integer(unsigned(barNumOut))) <= mag(16 downto 9);
+                fullBarHeights(to_integer(unsigned(barNumOut))) <= mag;
             end if;
         end if;
     end process;

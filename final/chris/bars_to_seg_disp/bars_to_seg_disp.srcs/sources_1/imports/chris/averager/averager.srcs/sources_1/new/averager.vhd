@@ -111,10 +111,12 @@ end averager;
 architecture Behavioral of averager is
 
 --    signal int1     : std_logic_vector (15 downto 0);
+    signal in0B : std_logic_vector (19 downto 0) := X"00000";
 
 begin
 
     process( clk )
+        variable temp : std_logic_vector (19 downto 0);
     begin
         if( rising_edge(clk) ) then
 --            if( nBins = "00" ) then
@@ -124,8 +126,10 @@ begin
 --            elsif( nBins = "10" ) then
 --                average <= std_logic_vector(( signed(in0) + signed(in1) + signed(in2) + signed(in3) + signed(in4) + signed(in5) + signed(in6) + signed(in7) ) srl 3);
             if( nBins = "00" ) then
-                average <= std_logic_vector(shift_right( signed(in0) + signed(in1) + signed(in2 ) + signed(in3 ) + signed(in4 ) + signed(in5 ) + signed(in6 ) + signed(in7 ) + 
-                                              signed(in8) + signed(in9) + signed(in10) + signed(in11) + signed(in12) + signed(in13) + signed(in14) + signed(in15), 4));
+                temp := std_logic_vector(resize(signed(in0), 20) + resize(signed(in1), 20) + resize(signed(in2), 20) + resize(signed(in3), 20) + resize(signed(in4), 20) + resize(signed(in5), 20) + resize(signed(in6), 20) + resize(signed(in7), 20) + resize(signed(in8), 20) + resize(signed(in9), 20) + resize(signed(in10), 20) + resize(signed(in11), 20) + resize(signed(in12), 20) + resize(signed(in13), 20) + resize(signed(in14), 20) + resize(signed(in15), 20));
+--                average <= std_logic_vector(shift_right( signed(in0) + signed(in1) + signed(in2 ) + signed(in3 ) + signed(in4 ) + signed(in5 ) + signed(in6 ) + signed(in7 ) + 
+--                                              signed(in8) + signed(in9) + signed(in10) + signed(in11) + signed(in12) + signed(in13) + signed(in14) + signed(in15), 4));
+                average <= std_logic_vector( resize(shift_right( signed(temp), 4 ), 16));
             elsif( nBins = "01" ) then
                 average <= std_logic_vector(shift_right( signed(in0 ) + signed(in1 ) + signed(in2 ) + signed(in3 ) + signed(in4 ) + signed(in5 ) + signed(in6 ) + signed(in7 ) + 
                                               signed(in8 ) + signed(in9 ) + signed(in10) + signed(in11) + signed(in12) + signed(in13) + signed(in14) + signed(in15) +
