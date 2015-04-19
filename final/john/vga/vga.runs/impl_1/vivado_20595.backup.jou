@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# Vivado v2014.4 (64-bit)
+# SW Build 1071353 on Tue Nov 18 16:47:07 MST 2014
+# IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+# Start of session at: Mon Apr 13 18:32:22 2015
+# Process ID: 20043
+# Log file: /mnt/git/Spring-2015/ECE551-Spring-2015/ECE551hw/final/john/vga/vga.runs/impl_1/vga_top.vdi
+# Journal file: /mnt/git/Spring-2015/ECE551-Spring-2015/ECE551hw/final/john/vga/vga.runs/impl_1/vivado.jou
+#-----------------------------------------------------------
+source vga_top.tcl -notrace
