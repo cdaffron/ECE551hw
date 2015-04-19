@@ -2,9 +2,9 @@
 # Vivado v2014.2 (64-bit)
 # SW Build 932637 on Wed Jun 11 13:08:52 MDT 2014
 # IP Build 924643 on Fri May 30 09:20:16 MDT 2014
-# Start of session at: Sat Apr 18 19:43:35 2015
-# Process ID: 14996
-# Log file: /data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.runs/synth_1/top_level.vds
-# Journal file: /data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.runs/synth_1/vivado.jou
+# Start of session at: Sun Apr 19 18:30:55 2015
+# Process ID: 12218
+# Log file: /home/jmurra15/classes/ECE551-Spring-2015/ECE551hw/final/top_level_project/top_level_project.runs/synth_1/top_level.vds
+# Journal file: /home/jmurra15/classes/ECE551-Spring-2015/ECE551hw/final/top_level_project/top_level_project.runs/synth_1/vivado.jou
 #-----------------------------------------------------------
 source top_level.tcl

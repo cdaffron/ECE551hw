@@ -1,8 +1,8 @@
 Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2014.2 (lin64) Build 932637 Wed Jun 11 13:08:52 MDT 2014
-| Date             : Sat Apr 18 19:59:07 2015
-| Host             : com1548.eecs.utk.edu running 64-bit Red Hat Enterprise Linux Server release 6.5 (Santiago)
+| Date             : Sun Apr 19 18:36:20 2015
+| Host             : protoann0.eecs.utk.edu running 64-bit Red Hat Enterprise Linux Server release 7.0 (Maipo)
 | Command          : report_power -file top_level_power_routed.rpt -pb top_level_power_summary_routed.pb
 | Design           : top_level
 | Device           : xc7a100tcsg324-1
@@ -30,13 +30,12 @@ Table of Contents
 ----------
 
 +--------------------------+--------+
-| Total On-Chip Power (W)  | 0.313  |
-| Dynamic (W)              | 0.214  |
+| Total On-Chip Power (W)  | 0.436  |
+| Dynamic (W)              | 0.337  |
 | Device Static (W)        | 0.099  |
-| Total Off-Chip Power (W) | 0.000  |
 | Effective TJA (C/W)      | 4.6    |
-| Max Ambient (C)          | 83.6   |
-| Junction Temperature (C) | 26.4   |
+| Max Ambient (C)          | 83.0   |
+| Junction Temperature (C) | 27.0   |
 | Confidence Level         | Medium |
 | Setting File             | ---    |
 | Simulation Activity File | ---    |
@@ -50,22 +49,22 @@ Table of Contents
 +--------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
-| Clocks                   |     0.052 |        7 |       --- |             --- |
-| Slice Logic              |     0.014 |    18665 |       --- |             --- |
-|   LUT as Logic           |     0.012 |     5378 |     63400 |            8.48 |
-|   Register               |    <0.001 |     9547 |    126800 |            7.52 |
+| Clocks                   |     0.055 |       10 |       --- |             --- |
+| Slice Logic              |     0.014 |    18771 |       --- |             --- |
+|   LUT as Logic           |     0.012 |     5409 |     63400 |            8.53 |
+|   Register               |    <0.001 |     9597 |    126800 |            7.56 |
 |   LUT as Shift Register  |    <0.001 |      655 |     19000 |            3.44 |
 |   CARRY4                 |    <0.001 |      349 |     15850 |            2.20 |
 |   LUT as Distributed RAM |    <0.001 |       24 |     19000 |            0.12 |
-|   F7/F8 Muxes            |    <0.001 |      205 |     63400 |            0.32 |
-|   Others                 |     0.000 |     1070 |       --- |             --- |
-| Signals                  |     0.017 |    14257 |       --- |             --- |
-| Block RAM                |     0.026 |     46.5 |       135 |           34.44 |
-| MMCM                     |     0.105 |        1 |         6 |           16.66 |
+|   F7/F8 Muxes            |    <0.001 |      208 |     63400 |            0.32 |
+|   Others                 |     0.000 |     1078 |       --- |             --- |
+| Signals                  |     0.017 |    14331 |       --- |             --- |
+| Block RAM                |     0.028 |     47.5 |       135 |           35.18 |
+| MMCM                     |     0.220 |        2 |         6 |           33.33 |
 | DSPs                     |    <0.001 |       17 |       240 |            7.08 |
-| I/O                      |    <0.001 |       35 |       210 |           16.66 |
+| I/O                      |     0.003 |       49 |       210 |           23.33 |
 | Static Power             |     0.099 |          |           |                 |
-| Total                    |     0.313 |          |           |                 |
+| Total                    |     0.436 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -75,9 +74,9 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.123 |       0.107 |      0.016 |
-| Vccaux    |       1.800 |     0.076 |       0.058 |      0.018 |
-| Vcco33    |       3.300 |     0.004 |       0.000 |      0.004 |
+| Vccint    |       1.000 |     0.129 |       0.112 |      0.016 |
+| Vccaux    |       1.800 |     0.140 |       0.122 |      0.018 |
+| Vcco33    |       3.300 |     0.005 |       0.001 |      0.004 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
@@ -128,17 +127,19 @@ Table of Contents
 2.2 Clock Constraints
 ---------------------
 
-+---------------------------------------------------------+---------------------------------+-----------------+
-| Clock                                                   | Domain                          | Constraint (ns) |
-+---------------------------------------------------------+---------------------------------+-----------------+
-| dbg_hub/inst/bscan_inst/SERIES7_BSCAN.bscan_inst/UPDATE | dbg_hub/inst/bscan_inst/UPDATE  |            60.0 |
-| dbg_hub/inst/bscan_inst/SERIES7_BSCAN.bscan_inst/DRCK   | dbg_hub/inst/bscan_inst/DRCK    |            30.0 |
-| sys_clk_pin                                             | xlnx_opt__1                     |            10.0 |
-| sys_clk_pin                                             | clk                             |            10.0 |
-| clk_out2_clk_wiz_0                                      | clk_debug/U0/clk_out2_clk_wiz_0 |           166.7 |
-| clk_out1_clk_wiz_0                                      | clk_debug/U0/clk_out1_clk_wiz_0 |             5.0 |
-| clkfbout_clk_wiz_0                                      | clk_debug/U0/clkfbout_clk_wiz_0 |            10.0 |
-+---------------------------------------------------------+---------------------------------+-----------------+
++---------------------------------------------------------+-------------------------------------------+-----------------+
+| Clock                                                   | Domain                                    | Constraint (ns) |
++---------------------------------------------------------+-------------------------------------------+-----------------+
+| dbg_hub/inst/bscan_inst/SERIES7_BSCAN.bscan_inst/UPDATE | dbg_hub/inst/bscan_inst/UPDATE            |            60.0 |
+| dbg_hub/inst/bscan_inst/SERIES7_BSCAN.bscan_inst/DRCK   | dbg_hub/inst/bscan_inst/DRCK              |            30.0 |
+| sys_clk_pin                                             | xlnx_opt__1                               |            10.0 |
+| sys_clk_pin                                             | clk                                       |            10.0 |
+| clk_out2_clk_wiz_0                                      | clk_debug/U0/clk_out2_clk_wiz_0           |           166.7 |
+| clk_out1_clk_wiz_0                                      | clk_debug/U0/clk_out1_clk_wiz_0           |             5.0 |
+| clkfbout_clk_wiz_0                                      | clk_debug/U0/clkfbout_clk_wiz_0           |            10.0 |
+| clk_25out_clk_wiz_vga                                   | vga_comp/clk_wiz/U0/clk_25out_clk_wiz_vga |            40.0 |
+| clkfbout_clk_wiz_vga                                    | vga_comp/clk_wiz/U0/clkfbout_clk_wiz_vga  |            40.0 |
++---------------------------------------------------------+-------------------------------------------+-----------------+
 
 
 3. Detailed Reports
@@ -150,7 +151,7 @@ Table of Contents
 +--------------------------------------------------------------------------------------------+-----------+
 | Name                                                                                       | Power (W) |
 +--------------------------------------------------------------------------------------------+-----------+
-| top_level                                                                                  |     0.214 |
+| top_level                                                                                  |     0.337 |
 |   clk_debug                                                                                |     0.106 |
 |     U0                                                                                     |     0.106 |
 |   dbg_hub                                                                                  |     0.007 |
@@ -243,10 +244,10 @@ Table of Contents
 |               inferred_dsp.Pdelay                                                          |     0.000 |
 |       sumOfSquares                                                                         |     0.000 |
 |         U0                                                                                 |     0.000 |
-|   fft                                                                                      |     0.015 |
-|     U0                                                                                     |     0.015 |
-|       i_synth                                                                              |     0.015 |
-|         axi_wrapper                                                                        |    <0.001 |
+|   fft                                                                                      |     0.016 |
+|     U0                                                                                     |     0.016 |
+|       i_synth                                                                              |     0.016 |
+|         axi_wrapper                                                                        |     0.001 |
 |           config_channel_fifo                                                              |    <0.001 |
 |             gen_non_real_time.data_in_fifo_pt1                                             |    <0.001 |
 |               fifo0                                                                        |    <0.001 |
@@ -259,8 +260,8 @@ Table of Contents
 |           gen_status_channel.status_fifo                                                   |    <0.001 |
 |             gen_non_real_time.fifo                                                         |    <0.001 |
 |               fifo0                                                                        |    <0.001 |
-|         xfft_inst                                                                          |     0.014 |
-|           non_floating_point.arch_b.xfft_inst                                              |     0.014 |
+|         xfft_inst                                                                          |     0.015 |
+|           non_floating_point.arch_b.xfft_inst                                              |     0.015 |
 |             control                                                                        |     0.004 |
 |               control                                                                      |    <0.001 |
 |                 bfp_sclr_gen.sclr_register_bfp                                             |    <0.001 |
@@ -423,7 +424,7 @@ Table of Contents
 |                   cos_addr_2s_comp                                                         |    <0.001 |
 |                   rom_addr_zero_compare                                                    |    <0.001 |
 |                   sin_addr_2s_comp                                                         |    <0.001 |
-|             single_channel.datapath                                                        |     0.010 |
+|             single_channel.datapath                                                        |     0.011 |
 |               bfp_scaling.input_ranger_inst                                                |    <0.001 |
 |                 max_finder                                                                 |     0.000 |
 |               bfp_scaling.pe_ranger_inst                                                   |    <0.001 |
@@ -666,9 +667,9 @@ Table of Contents
 |             no_pipelining.the_addsub                                                       |    <0.001 |
 |               i_lut6.i_lut6_addsub                                                         |    <0.001 |
 |                 i_q.i_simple.qreg                                                          |    <0.001 |
-|   u_ila_0                                                                                  |     0.061 |
-|     inst                                                                                   |     0.061 |
-|       ila_core_inst                                                                        |     0.061 |
+|   u_ila_0                                                                                  |     0.062 |
+|     inst                                                                                   |     0.062 |
+|       ila_core_inst                                                                        |     0.062 |
 |         ila_trace_memory_inst                                                              |     0.015 |
 |           SUBCORE_RAM_BLK_MEM_1.trace_block_memory                                         |     0.015 |
 |             inst_blk_mem_gen                                                               |     0.015 |
@@ -1266,8 +1267,13 @@ Table of Contents
 |                   u_srlC                                                                   |    <0.001 |
 |                   u_srlD                                                                   |    <0.001 |
 |         xsdb_memory_read_inst                                                              |     0.006 |
-|   vio                                                                                      |    <0.001 |
-|     inst                                                                                   |    <0.001 |
+|   vga_comp                                                                                 |     0.118 |
+|     clk_wiz                                                                                |     0.115 |
+|       U0                                                                                   |     0.115 |
+|     vga_cont                                                                               |    <0.001 |
+|     vga_disp                                                                               |     0.002 |
+|   vio                                                                                      |     0.001 |
+|     inst                                                                                   |     0.001 |
 |       DECODER_INST                                                                         |    <0.001 |
 |       PROBE_OUT_ALL_INST                                                                   |    <0.001 |
 |         G_PROBE_OUT[0].PROBE_OUT0_INST                                                     |    <0.001 |

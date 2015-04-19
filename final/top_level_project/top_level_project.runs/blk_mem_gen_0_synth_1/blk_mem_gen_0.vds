@@ -2,10 +2,10 @@
 # Vivado v2014.2 (64-bit)
 # SW Build 932637 on Wed Jun 11 13:08:52 MDT 2014
 # IP Build 924643 on Fri May 30 09:20:16 MDT 2014
-# Start of session at: Fri Apr 17 16:39:59 2015
-# Process ID: 17270
-# Log file: /data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.runs/blk_mem_gen_0_synth_1/blk_mem_gen_0.vds
-# Journal file: /data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.runs/blk_mem_gen_0_synth_1/vivado.jou
+# Start of session at: Sun Apr 19 18:26:44 2015
+# Process ID: 11150
+# Log file: /home/jmurra15/classes/ECE551-Spring-2015/ECE551hw/final/top_level_project/top_level_project.runs/blk_mem_gen_0_synth_1/blk_mem_gen_0.vds
+# Journal file: /home/jmurra15/classes/ECE551-Spring-2015/ECE551hw/final/top_level_project/top_level_project.runs/blk_mem_gen_0_synth_1/vivado.jou
 #-----------------------------------------------------------
 source blk_mem_gen_0.tcl
 # set_param gui.test TreeTableDev
@@ -15,22 +15,20 @@ source blk_mem_gen_0.tcl
 # set_property target_language VHDL [current_project]
 # set_param project.compositeFile.enableAutoGeneration 0
 # set_property default_lib xil_defaultlib [current_project]
-# read_ip /data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci
+# read_ip /home/jmurra15/classes/ECE551-Spring-2015/ECE551hw/final/top_level_project/top_level_project.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2014.2/data/ip'.
-WARNING: [IP_Flow 19-3664] IP 'blk_mem_gen_0' generated file not found '/data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.dcp'. Please regenerate to continue.
-WARNING: [IP_Flow 19-3664] IP 'blk_mem_gen_0' generated file not found '/data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_stub.v'. Please regenerate to continue.
-WARNING: [IP_Flow 19-3664] IP 'blk_mem_gen_0' generated file not found '/data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_stub.vhdl'. Please regenerate to continue.
-WARNING: [IP_Flow 19-3664] IP 'blk_mem_gen_0' generated file not found '/data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_funcsim.v'. Please regenerate to continue.
-WARNING: [IP_Flow 19-3664] IP 'blk_mem_gen_0' generated file not found '/data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_funcsim.vhdl'. Please regenerate to continue.
-# set_property used_in_implementation false [get_files /data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.dcp]
-# set_property used_in_implementation false [get_files -all /data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.dcp]
+WARNING: [IP_Flow 19-3664] IP 'blk_mem_gen_0' generated file not found '/home/jmurra15/classes/ECE551-Spring-2015/ECE551hw/final/top_level_project/top_level_project.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'blk_mem_gen_0' generated file not found '/home/jmurra15/classes/ECE551-Spring-2015/ECE551hw/final/top_level_project/top_level_project.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'blk_mem_gen_0' generated file not found '/home/jmurra15/classes/ECE551-Spring-2015/ECE551hw/final/top_level_project/top_level_project.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'blk_mem_gen_0' generated file not found '/home/jmurra15/classes/ECE551-Spring-2015/ECE551hw/final/top_level_project/top_level_project.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_funcsim.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'blk_mem_gen_0' generated file not found '/home/jmurra15/classes/ECE551-Spring-2015/ECE551hw/final/top_level_project/top_level_project.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_funcsim.vhdl'. Please regenerate to continue.
 # set_msg_config -id {IP_Flow 19-2162} -severity warning -new_severity info
-# set_property is_locked true [get_files /data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci]
+# set_property is_locked true [get_files /home/jmurra15/classes/ECE551-Spring-2015/ECE551hw/final/top_level_project/top_level_project.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci]
 # set_param synth.vivado.isSynthRun true
-# set_property webtalk.parent_dir /data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.cache/wt [current_project]
-# set_property parent.project_dir /data1/cdaffron/git/ece551hw/final/top_level_project [current_project]
+# set_property webtalk.parent_dir /home/jmurra15/classes/ECE551-Spring-2015/ECE551hw/final/top_level_project/top_level_project.cache/wt [current_project]
+# set_property parent.project_dir /home/jmurra15/classes/ECE551-Spring-2015/ECE551hw/final/top_level_project [current_project]
 # catch { write_hwdef -file blk_mem_gen_0.hwdef }
 INFO: [Vivado_Tcl 4-279] hardware handoff file cannot be generated as there is no block diagram instance in the design
 # synth_design -top blk_mem_gen_0 -part xc7a100tcsg324-1 -mode out_of_context
@@ -41,9 +39,9 @@ Starting synthesis...
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 851.176 ; gain = 161.129
+Starting RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 893.742 ; gain = 161.129
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_0' [/data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.srcs/sources_1/ip/blk_mem_gen_0/synth/blk_mem_gen_0.vhd:71]
+INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_0' [/home/jmurra15/classes/ECE551-Spring-2015/ECE551hw/final/top_level_project/top_level_project.srcs/sources_1/ip/blk_mem_gen_0/synth/blk_mem_gen_0.vhd:71]
 	Parameter C_FAMILY bound to: artix7 - type: string 
 	Parameter C_XDEVICEFAMILY bound to: artix7 - type: string 
 	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
@@ -111,8 +109,8 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_0' [/data1/cdaffron/git/ece
 	Parameter C_COUNT_36K_BRAM bound to: 2 - type: string 
 	Parameter C_COUNT_18K_BRAM bound to: 0 - type: string 
 	Parameter C_EST_POWER_SUMMARY bound to: Estimated Power for IP     :     5.071399 mW - type: string 
-INFO: [Synth 8-3491] module 'blk_mem_gen_v8_2' declared at '/data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_v8_2/hdl/blk_mem_gen_v8_2.vhd:123' bound to instance 'U0' of component 'blk_mem_gen_v8_2' [/data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.srcs/sources_1/ip/blk_mem_gen_0/synth/blk_mem_gen_0.vhd:222]
-INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_v8_2__parameterized0' [/data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_v8_2/hdl/blk_mem_gen_v8_2.vhd:257]
+INFO: [Synth 8-3491] module 'blk_mem_gen_v8_2' declared at '/home/jmurra15/classes/ECE551-Spring-2015/ECE551hw/final/top_level_project/top_level_project.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_v8_2/hdl/blk_mem_gen_v8_2.vhd:123' bound to instance 'U0' of component 'blk_mem_gen_v8_2' [/home/jmurra15/classes/ECE551-Spring-2015/ECE551hw/final/top_level_project/top_level_project.srcs/sources_1/ip/blk_mem_gen_0/synth/blk_mem_gen_0.vhd:222]
+INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_v8_2__parameterized0' [/home/jmurra15/classes/ECE551-Spring-2015/ECE551hw/final/top_level_project/top_level_project.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_v8_2/hdl/blk_mem_gen_v8_2.vhd:257]
 	Parameter C_FAMILY bound to: artix7 - type: string 
 	Parameter C_XDEVICEFAMILY bound to: artix7 - type: string 
 	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
@@ -180,7 +178,7 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_v8_2__parameterized0' [/dat
 	Parameter C_COUNT_36K_BRAM bound to: 2 - type: string 
 	Parameter C_COUNT_18K_BRAM bound to: 0 - type: string 
 	Parameter C_EST_POWER_SUMMARY bound to: Estimated Power for IP     :     5.071399 mW - type: string 
-INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_v8_2_synth' [/data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_v8_2/hdl/blk_mem_gen_v8_2_synth.vhd:316]
+INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_v8_2_synth' [/home/jmurra15/classes/ECE551-Spring-2015/ECE551hw/final/top_level_project/top_level_project.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_v8_2/hdl/blk_mem_gen_v8_2_synth.vhd:316]
 	Parameter C_FAMILY bound to: artix7 - type: string 
 	Parameter C_XDEVICEFAMILY bound to: artix7 - type: string 
 	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
@@ -246,7 +244,7 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_v8_2_synth' [/data1/cdaffro
 	Parameter C_COMMON_CLK bound to: 0 - type: integer 
 	Parameter C_DISABLE_WARN_BHV_COLL bound to: 0 - type: integer 
 	Parameter C_DISABLE_WARN_BHV_RANGE bound to: 0 - type: integer 
-INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_top' [/data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_v8_2/hdl/blk_mem_gen_top.vhd:444]
+INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_top' [/home/jmurra15/classes/ECE551-Spring-2015/ECE551hw/final/top_level_project/top_level_project.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_v8_2/hdl/blk_mem_gen_top.vhd:444]
 	Parameter C_SIM_DEVICE bound to: 7SERIES - type: string 
 	Parameter C_FAMILY bound to: virtex6 - type: string 
 	Parameter C_XDEVICEFAMILY bound to: artix7 - type: string 
@@ -313,7 +311,7 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_top' [/data1/cdaffron/git/e
 	Parameter C_COMMON_CLK bound to: 0 - type: integer 
 	Parameter C_DISABLE_WARN_BHV_COLL bound to: 0 - type: integer 
 	Parameter C_DISABLE_WARN_BHV_RANGE bound to: 0 - type: integer 
-INFO: [Synth 8-638] synthesizing module 'blk_mem_input_block' [/data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_v8_2/hdl/blk_mem_input_block.vhd:392]
+INFO: [Synth 8-638] synthesizing module 'blk_mem_input_block' [/home/jmurra15/classes/ECE551-Spring-2015/ECE551hw/final/top_level_project/top_level_project.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_v8_2/hdl/blk_mem_input_block.vhd:392]
 	Parameter C_FAMILY bound to: virtex6 - type: string 
 	Parameter C_MEM_TYPE bound to: 0 - type: integer 
 	Parameter C_HAS_RSTA bound to: 1 - type: integer 
@@ -350,8 +348,8 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_input_block' [/data1/cdaffron/g
 	Parameter C_USE_ECC bound to: 0 - type: integer 
 	Parameter C_USE_SOFTECC bound to: 0 - type: integer 
 	Parameter C_HAS_INJECTERR bound to: 0 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'blk_mem_input_block' (1#1) [/data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_v8_2/hdl/blk_mem_input_block.vhd:392]
-INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_generic_cstr' [/data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_v8_2/hdl/blk_mem_gen_generic_cstr.vhd:450]
+INFO: [Synth 8-256] done synthesizing module 'blk_mem_input_block' (1#1) [/home/jmurra15/classes/ECE551-Spring-2015/ECE551hw/final/top_level_project/top_level_project.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_v8_2/hdl/blk_mem_input_block.vhd:392]
+INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_generic_cstr' [/home/jmurra15/classes/ECE551-Spring-2015/ECE551hw/final/top_level_project/top_level_project.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_v8_2/hdl/blk_mem_gen_generic_cstr.vhd:450]
 	Parameter C_FAMILY bound to: virtex6 - type: string 
 	Parameter C_XDEVICEFAMILY bound to: artix7 - type: string 
 	Parameter C_SIM_DEVICE bound to: 7SERIES - type: string 
@@ -420,7 +418,7 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_generic_cstr' [/data1/cdaff
 	Parameter C_EN_ECC_PIPE bound to: 0 - type: bool 
 	Parameter C_EN_SLEEP_PIN bound to: 0 - type: bool 
 	Parameter C_SIM_COLLISION_CHECK bound to: ALL - type: string 
-INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_prim_width' [/data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_v8_2/hdl/blk_mem_gen_prim_width.vhd:400]
+INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_prim_width' [/home/jmurra15/classes/ECE551-Spring-2015/ECE551hw/final/top_level_project/top_level_project.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_v8_2/hdl/blk_mem_gen_prim_width.vhd:400]
 	Parameter C_SIM_DEVICE bound to: 7SERIES - type: string 
 	Parameter C_FAMILY bound to: virtex6 - type: string 
 	Parameter C_XDEVICEFAMILY bound to: artix7 - type: string 
@@ -474,9 +472,9 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_prim_width' [/data1/cdaffro
 	Parameter C_SIM_COLLISION_CHECK bound to: ALL - type: string 
 	Parameter C_MEM_ADDR_WIDTH_A bound to: 12 - type: integer 
 	Parameter C_MEM_ADDR_WIDTH_B bound to: 12 - type: integer 
-INFO: [Synth 8-3919] null assignment ignored [/data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_v8_2/hdl/blk_mem_gen_prim_width.vhd:1042]
-INFO: [Synth 8-3919] null assignment ignored [/data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_v8_2/hdl/blk_mem_gen_prim_width.vhd:1043]
-INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_prim_wrapper_init' [/data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_v8_2/hdl/blk_mem_gen_prim_wrapper_init.vhd:395]
+INFO: [Synth 8-3919] null assignment ignored [/home/jmurra15/classes/ECE551-Spring-2015/ECE551hw/final/top_level_project/top_level_project.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_v8_2/hdl/blk_mem_gen_prim_width.vhd:1042]
+INFO: [Synth 8-3919] null assignment ignored [/home/jmurra15/classes/ECE551-Spring-2015/ECE551hw/final/top_level_project/top_level_project.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_v8_2/hdl/blk_mem_gen_prim_width.vhd:1043]
+INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_prim_wrapper_init' [/home/jmurra15/classes/ECE551-Spring-2015/ECE551hw/final/top_level_project/top_level_project.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_v8_2/hdl/blk_mem_gen_prim_wrapper_init.vhd:395]
 	Parameter C_SIM_DEVICE bound to: 7SERIES - type: string 
 	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
 	Parameter C_ENABLE_32BIT_ADDRESS bound to: 0 - type: integer 
@@ -703,10 +701,10 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_prim_wrapper_init' [/data1/
 	Parameter WRITE_MODE_B bound to: WRITE_FIRST - type: string 
 	Parameter WRITE_WIDTH_A bound to: 9 - type: integer 
 	Parameter WRITE_WIDTH_B bound to: 9 - type: integer 
-INFO: [Synth 8-113] binding component instance 'ram' to cell 'RAMB36E1' [/data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_v8_2/hdl/blk_mem_gen_prim_wrapper_init.vhd:6462]
-INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_prim_wrapper_init' (2#1) [/data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_v8_2/hdl/blk_mem_gen_prim_wrapper_init.vhd:395]
-INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_prim_width' (3#1) [/data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_v8_2/hdl/blk_mem_gen_prim_width.vhd:400]
-INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_prim_width__parameterized0' [/data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_v8_2/hdl/blk_mem_gen_prim_width.vhd:400]
+INFO: [Synth 8-113] binding component instance 'ram' to cell 'RAMB36E1' [/home/jmurra15/classes/ECE551-Spring-2015/ECE551hw/final/top_level_project/top_level_project.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_v8_2/hdl/blk_mem_gen_prim_wrapper_init.vhd:6462]
+INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_prim_wrapper_init' (2#1) [/home/jmurra15/classes/ECE551-Spring-2015/ECE551hw/final/top_level_project/top_level_project.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_v8_2/hdl/blk_mem_gen_prim_wrapper_init.vhd:395]
+INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_prim_width' (3#1) [/home/jmurra15/classes/ECE551-Spring-2015/ECE551hw/final/top_level_project/top_level_project.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_v8_2/hdl/blk_mem_gen_prim_width.vhd:400]
+INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_prim_width__parameterized0' [/home/jmurra15/classes/ECE551-Spring-2015/ECE551hw/final/top_level_project/top_level_project.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_v8_2/hdl/blk_mem_gen_prim_width.vhd:400]
 	Parameter C_SIM_DEVICE bound to: 7SERIES - type: string 
 	Parameter C_FAMILY bound to: virtex6 - type: string 
 	Parameter C_XDEVICEFAMILY bound to: artix7 - type: string 
@@ -760,9 +758,9 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_prim_width__parameterized0'
 	Parameter C_SIM_COLLISION_CHECK bound to: ALL - type: string 
 	Parameter C_MEM_ADDR_WIDTH_A bound to: 12 - type: integer 
 	Parameter C_MEM_ADDR_WIDTH_B bound to: 12 - type: integer 
-INFO: [Synth 8-3919] null assignment ignored [/data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_v8_2/hdl/blk_mem_gen_prim_width.vhd:1042]
-INFO: [Synth 8-3919] null assignment ignored [/data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_v8_2/hdl/blk_mem_gen_prim_width.vhd:1043]
-INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_prim_wrapper_init__parameterized0' [/data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_v8_2/hdl/blk_mem_gen_prim_wrapper_init.vhd:395]
+INFO: [Synth 8-3919] null assignment ignored [/home/jmurra15/classes/ECE551-Spring-2015/ECE551hw/final/top_level_project/top_level_project.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_v8_2/hdl/blk_mem_gen_prim_width.vhd:1042]
+INFO: [Synth 8-3919] null assignment ignored [/home/jmurra15/classes/ECE551-Spring-2015/ECE551hw/final/top_level_project/top_level_project.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_v8_2/hdl/blk_mem_gen_prim_width.vhd:1043]
+INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_prim_wrapper_init__parameterized0' [/home/jmurra15/classes/ECE551-Spring-2015/ECE551hw/final/top_level_project/top_level_project.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_v8_2/hdl/blk_mem_gen_prim_wrapper_init.vhd:395]
 	Parameter C_SIM_DEVICE bound to: 7SERIES - type: string 
 	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
 	Parameter C_ENABLE_32BIT_ADDRESS bound to: 0 - type: integer 
@@ -989,11 +987,11 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_prim_wrapper_init__paramete
 	Parameter WRITE_MODE_B bound to: WRITE_FIRST - type: string 
 	Parameter WRITE_WIDTH_A bound to: 9 - type: integer 
 	Parameter WRITE_WIDTH_B bound to: 9 - type: integer 
-INFO: [Synth 8-113] binding component instance 'ram' to cell 'RAMB36E1' [/data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_v8_2/hdl/blk_mem_gen_prim_wrapper_init.vhd:6462]
-INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_prim_wrapper_init__parameterized0' (3#1) [/data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_v8_2/hdl/blk_mem_gen_prim_wrapper_init.vhd:395]
-INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_prim_width__parameterized0' (3#1) [/data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_v8_2/hdl/blk_mem_gen_prim_width.vhd:400]
-INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_generic_cstr' (4#1) [/data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_v8_2/hdl/blk_mem_gen_generic_cstr.vhd:450]
-INFO: [Synth 8-638] synthesizing module 'blk_mem_output_block' [/data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_v8_2/hdl/blk_mem_output_block.vhd:214]
+INFO: [Synth 8-113] binding component instance 'ram' to cell 'RAMB36E1' [/home/jmurra15/classes/ECE551-Spring-2015/ECE551hw/final/top_level_project/top_level_project.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_v8_2/hdl/blk_mem_gen_prim_wrapper_init.vhd:6462]
+INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_prim_wrapper_init__parameterized0' (3#1) [/home/jmurra15/classes/ECE551-Spring-2015/ECE551hw/final/top_level_project/top_level_project.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_v8_2/hdl/blk_mem_gen_prim_wrapper_init.vhd:395]
+INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_prim_width__parameterized0' (3#1) [/home/jmurra15/classes/ECE551-Spring-2015/ECE551hw/final/top_level_project/top_level_project.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_v8_2/hdl/blk_mem_gen_prim_width.vhd:400]
+INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_generic_cstr' (4#1) [/home/jmurra15/classes/ECE551-Spring-2015/ECE551hw/final/top_level_project/top_level_project.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_v8_2/hdl/blk_mem_gen_generic_cstr.vhd:450]
+INFO: [Synth 8-638] synthesizing module 'blk_mem_output_block' [/home/jmurra15/classes/ECE551-Spring-2015/ECE551hw/final/top_level_project/top_level_project.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_v8_2/hdl/blk_mem_output_block.vhd:214]
 	Parameter C_MEM_TYPE bound to: 0 - type: integer 
 	Parameter C_WRITE_WIDTH_A bound to: 16 - type: integer 
 	Parameter C_READ_WIDTH_A bound to: 16 - type: integer 
@@ -1004,13 +1002,13 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_output_block' [/data1/cdaffron/
 	Parameter C_HAS_SOFTECC_OUTPUT_REGS_B bound to: 0 - type: integer 
 	Parameter C_USE_SOFTECC bound to: 0 - type: integer 
 	Parameter C_USE_ECC bound to: 0 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'blk_mem_output_block' (5#1) [/data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_v8_2/hdl/blk_mem_output_block.vhd:214]
-INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_top' (6#1) [/data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_v8_2/hdl/blk_mem_gen_top.vhd:444]
-INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_v8_2_synth' (7#1) [/data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_v8_2/hdl/blk_mem_gen_v8_2_synth.vhd:316]
-INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_v8_2__parameterized0' (8#1) [/data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_v8_2/hdl/blk_mem_gen_v8_2.vhd:257]
-INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_0' (9#1) [/data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.srcs/sources_1/ip/blk_mem_gen_0/synth/blk_mem_gen_0.vhd:71]
+INFO: [Synth 8-256] done synthesizing module 'blk_mem_output_block' (5#1) [/home/jmurra15/classes/ECE551-Spring-2015/ECE551hw/final/top_level_project/top_level_project.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_v8_2/hdl/blk_mem_output_block.vhd:214]
+INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_top' (6#1) [/home/jmurra15/classes/ECE551-Spring-2015/ECE551hw/final/top_level_project/top_level_project.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_v8_2/hdl/blk_mem_gen_top.vhd:444]
+INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_v8_2_synth' (7#1) [/home/jmurra15/classes/ECE551-Spring-2015/ECE551hw/final/top_level_project/top_level_project.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_v8_2/hdl/blk_mem_gen_v8_2_synth.vhd:316]
+INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_v8_2__parameterized0' (8#1) [/home/jmurra15/classes/ECE551-Spring-2015/ECE551hw/final/top_level_project/top_level_project.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_v8_2/hdl/blk_mem_gen_v8_2.vhd:257]
+INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_0' (9#1) [/home/jmurra15/classes/ECE551-Spring-2015/ECE551hw/final/top_level_project/top_level_project.srcs/sources_1/ip/blk_mem_gen_0/synth/blk_mem_gen_0.vhd:71]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:01:16 ; elapsed = 00:01:16 . Memory (MB): peak = 1016.727 ; gain = 326.680
+Finished RTL Elaboration : Time (s): cpu = 00:01:05 ; elapsed = 00:01:08 . Memory (MB): peak = 1060.816 ; gain = 328.203
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Optimization
@@ -1022,10 +1020,10 @@ Report Check Netlist:
 +------+------------------+-------+---------+-------+------------------+
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
-INFO: [Synth 8-3295] tying undriven pin \prim_init.ram :DINA[8] to constant 0 [/data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_v8_2/hdl/blk_mem_gen_prim_width.vhd:1175]
-INFO: [Synth 8-3295] tying undriven pin \prim_init.ram :DINA[7] to constant 0 [/data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_v8_2/hdl/blk_mem_gen_prim_width.vhd:1175]
-INFO: [Synth 8-3295] tying undriven pin \prim_init.ram :DINB[8] to constant 0 [/data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_v8_2/hdl/blk_mem_gen_prim_width.vhd:1175]
-INFO: [Synth 8-3295] tying undriven pin \prim_init.ram :DINB[7] to constant 0 [/data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_v8_2/hdl/blk_mem_gen_prim_width.vhd:1175]
+INFO: [Synth 8-3295] tying undriven pin \prim_init.ram :DINA[8] to constant 0 [/home/jmurra15/classes/ECE551-Spring-2015/ECE551hw/final/top_level_project/top_level_project.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_v8_2/hdl/blk_mem_gen_prim_width.vhd:1175]
+INFO: [Synth 8-3295] tying undriven pin \prim_init.ram :DINA[7] to constant 0 [/home/jmurra15/classes/ECE551-Spring-2015/ECE551hw/final/top_level_project/top_level_project.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_v8_2/hdl/blk_mem_gen_prim_width.vhd:1175]
+INFO: [Synth 8-3295] tying undriven pin \prim_init.ram :DINB[8] to constant 0 [/home/jmurra15/classes/ECE551-Spring-2015/ECE551hw/final/top_level_project/top_level_project.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_v8_2/hdl/blk_mem_gen_prim_width.vhd:1175]
+INFO: [Synth 8-3295] tying undriven pin \prim_init.ram :DINB[7] to constant 0 [/home/jmurra15/classes/ECE551-Spring-2015/ECE551hw/final/top_level_project/top_level_project.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_v8_2/hdl/blk_mem_gen_prim_width.vhd:1175]
 INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 Loading clock regions from /opt/Xilinx/Vivado/2014.2/data/parts/xilinx/artix7/artix7/xc7a100t/ClockRegion.xml
@@ -1037,8 +1035,8 @@ Loading io standards from /opt/Xilinx/Vivado/2014.2/data/./parts/xilinx/artix7/I
 Loading device configuration modes from /opt/Xilinx/Vivado/2014.2/data/parts/xilinx/artix7/ConfigModes.xml
 
 Processing XDC Constraints
-Parsing XDC File [/data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_ooc.xdc]
-Finished Parsing XDC File [/data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_ooc.xdc]
+Parsing XDC File [/home/jmurra15/classes/ECE551-Spring-2015/ECE551hw/final/top_level_project/top_level_project.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_ooc.xdc]
+Finished Parsing XDC File [/home/jmurra15/classes/ECE551-Spring-2015/ECE551hw/final/top_level_project/top_level_project.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_ooc.xdc]
 Completed Processing XDC Constraints
 
 INFO: [Project 1-111] Unisim Transformation Summary:
@@ -1052,16 +1050,16 @@ Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:01:24 ; elapsed = 00:01:25 . Memory (MB): peak = 1165.758 ; gain = 475.711
+Finished Loading Part and Timing Information : Time (s): cpu = 00:01:12 ; elapsed = 00:01:16 . Memory (MB): peak = 1160.840 ; gain = 428.227
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:24 ; elapsed = 00:01:25 . Memory (MB): peak = 1165.758 ; gain = 475.711
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:12 ; elapsed = 00:01:16 . Memory (MB): peak = 1160.840 ; gain = 428.227
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization : Time (s): cpu = 00:01:24 ; elapsed = 00:01:25 . Memory (MB): peak = 1165.758 ; gain = 475.711
+Finished RTL Optimization : Time (s): cpu = 00:01:12 ; elapsed = 00:01:16 . Memory (MB): peak = 1160.840 ; gain = 428.227
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1114,14 +1112,14 @@ BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
 ---------------------------------------------------------------------------------
 Finished Part Resource Summary
 ---------------------------------------------------------------------------------
-Workers Ready, Starting Parallel Section  : Time (s): cpu = 00:01:24 ; elapsed = 00:01:25 . Memory (MB): peak = 1165.758 ; gain = 475.711
+Workers Ready, Starting Parallel Section  : Time (s): cpu = 00:01:12 ; elapsed = 00:01:16 . Memory (MB): peak = 1167.848 ; gain = 435.234
 ---------------------------------------------------------------------------------
 Start Cross Boundary Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Cross Boundary Optimization : Time (s): cpu = 00:01:24 ; elapsed = 00:01:25 . Memory (MB): peak = 1165.758 ; gain = 475.711
+Finished Cross Boundary Optimization : Time (s): cpu = 00:01:12 ; elapsed = 00:01:16 . Memory (MB): peak = 1167.848 ; gain = 435.234
 ---------------------------------------------------------------------------------
-Finished Parallel Reinfer  : Time (s): cpu = 00:01:24 ; elapsed = 00:01:25 . Memory (MB): peak = 1165.758 ; gain = 475.711
+Finished Parallel Reinfer  : Time (s): cpu = 00:01:12 ; elapsed = 00:01:16 . Memory (MB): peak = 1167.848 ; gain = 435.234
 ---------------------------------------------------------------------------------
 Start RAM, DSP and Shift Register Reporting
 ---------------------------------------------------------------------------------
@@ -1132,10 +1130,10 @@ Finished RAM, DSP and Shift Register Reporting
 Start Area Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Area Optimization : Time (s): cpu = 00:01:24 ; elapsed = 00:01:25 . Memory (MB): peak = 1165.758 ; gain = 475.711
+Finished Area Optimization : Time (s): cpu = 00:01:12 ; elapsed = 00:01:16 . Memory (MB): peak = 1167.848 ; gain = 435.234
 ---------------------------------------------------------------------------------
-Finished Parallel Area Opt  : Time (s): cpu = 00:01:24 ; elapsed = 00:01:25 . Memory (MB): peak = 1165.758 ; gain = 475.711
-Finished Parallel Section  : Time (s): cpu = 00:01:24 ; elapsed = 00:01:25 . Memory (MB): peak = 1165.758 ; gain = 475.711
+Finished Parallel Area Opt  : Time (s): cpu = 00:01:12 ; elapsed = 00:01:16 . Memory (MB): peak = 1167.848 ; gain = 435.234
+Finished Parallel Section  : Time (s): cpu = 00:01:12 ; elapsed = 00:01:16 . Memory (MB): peak = 1167.848 ; gain = 435.234
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
@@ -1143,16 +1141,16 @@ Start Timing Optimization
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:34 ; elapsed = 00:01:35 . Memory (MB): peak = 1172.746 ; gain = 482.699
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:21 ; elapsed = 00:01:24 . Memory (MB): peak = 1216.848 ; gain = 484.234
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:01:34 ; elapsed = 00:01:35 . Memory (MB): peak = 1172.746 ; gain = 482.699
+Finished Timing Optimization : Time (s): cpu = 00:01:21 ; elapsed = 00:01:24 . Memory (MB): peak = 1216.848 ; gain = 484.234
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:01:34 ; elapsed = 00:01:35 . Memory (MB): peak = 1182.762 ; gain = 492.715
+Finished Technology Mapping : Time (s): cpu = 00:01:21 ; elapsed = 00:01:24 . Memory (MB): peak = 1225.863 ; gain = 493.250
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -1170,7 +1168,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:01:34 ; elapsed = 00:01:35 . Memory (MB): peak = 1182.762 ; gain = 492.715
+Finished IO Insertion : Time (s): cpu = 00:01:21 ; elapsed = 00:01:25 . Memory (MB): peak = 1225.863 ; gain = 493.250
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -1183,13 +1181,13 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:01:34 ; elapsed = 00:01:35 . Memory (MB): peak = 1182.762 ; gain = 492.715
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:21 ; elapsed = 00:01:25 . Memory (MB): peak = 1225.863 ; gain = 493.250
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:34 ; elapsed = 00:01:35 . Memory (MB): peak = 1182.762 ; gain = 492.715
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:21 ; elapsed = 00:01:25 . Memory (MB): peak = 1225.863 ; gain = 493.250
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RAM, DSP and Shift Register Reporting
@@ -1230,14 +1228,14 @@ Report Instance Areas:
 |9     |            \prim_init.ram            |blk_mem_gen_prim_wrapper_init__parameterized0 |     1|
 +------+--------------------------------------+----------------------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:01:34 ; elapsed = 00:01:35 . Memory (MB): peak = 1182.762 ; gain = 492.715
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:21 ; elapsed = 00:01:25 . Memory (MB): peak = 1225.863 ; gain = 493.250
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Complete : Time (s): cpu = 00:01:34 ; elapsed = 00:01:35 . Memory (MB): peak = 1182.762 ; gain = 492.715
+Synthesis Optimization Complete : Time (s): cpu = 00:01:21 ; elapsed = 00:01:25 . Memory (MB): peak = 1225.863 ; gain = 493.250
 INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
-Parsing XDC File [/data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_ooc.xdc]
-Finished Parsing XDC File [/data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_ooc.xdc]
+Parsing XDC File [/home/jmurra15/classes/ECE551-Spring-2015/ECE551hw/final/top_level_project/top_level_project.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_ooc.xdc]
+Finished Parsing XDC File [/home/jmurra15/classes/ECE551-Spring-2015/ECE551hw/final/top_level_project/top_level_project.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_ooc.xdc]
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
@@ -1245,20 +1243,20 @@ No Unisim elements were transformed.
 INFO: [Common 17-83] Releasing license: Synthesis
 42 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:33 ; elapsed = 00:01:34 . Memory (MB): peak = 1196.762 ; gain = 388.586
+synth_design: Time (s): cpu = 00:01:20 ; elapsed = 00:01:23 . Memory (MB): peak = 1240.863 ; gain = 390.125
 # rename_ref -prefix_all blk_mem_gen_0_
 INFO: [Coretcl 2-1174] Renamed 8 cell refs.
 # write_checkpoint -noxdef blk_mem_gen_0.dcp
 # report_utilization -file blk_mem_gen_0_utilization_synth.rpt -pb blk_mem_gen_0_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.06 . Memory (MB): peak = 1196.766 ; gain = 0.000
+report_utilization: Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.06 . Memory (MB): peak = 1241.863 ; gain = 0.000
 # if { [catch {
-#   file copy -force /data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.runs/blk_mem_gen_0_synth_1/blk_mem_gen_0.dcp /data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.dcp
-#   write_verilog -force -mode synth_stub /data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_stub.v
-#   write_vhdl -force -mode synth_stub /data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_stub.vhdl
-#   write_verilog -force -mode funcsim /data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_funcsim.v
-#   write_vhdl -force -mode funcsim /data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_funcsim.vhdl
+#   file copy -force /home/jmurra15/classes/ECE551-Spring-2015/ECE551hw/final/top_level_project/top_level_project.runs/blk_mem_gen_0_synth_1/blk_mem_gen_0.dcp /home/jmurra15/classes/ECE551-Spring-2015/ECE551hw/final/top_level_project/top_level_project.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.dcp
+#   write_verilog -force -mode synth_stub /home/jmurra15/classes/ECE551-Spring-2015/ECE551hw/final/top_level_project/top_level_project.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_stub.v
+#   write_vhdl -force -mode synth_stub /home/jmurra15/classes/ECE551-Spring-2015/ECE551hw/final/top_level_project/top_level_project.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_stub.vhdl
+#   write_verilog -force -mode funcsim /home/jmurra15/classes/ECE551-Spring-2015/ECE551hw/final/top_level_project/top_level_project.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_funcsim.v
+#   write_vhdl -force -mode funcsim /home/jmurra15/classes/ECE551-Spring-2015/ECE551hw/final/top_level_project/top_level_project.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_funcsim.vhdl
 # } _RESULT ] } { 
 #   send_msg_id runtcl-3 error "Unable to successfully create or copy supporting IP files."
 #   return -code error
 # }
-INFO: [Common 17-206] Exiting Vivado at Fri Apr 17 16:41:39 2015...
+INFO: [Common 17-206] Exiting Vivado at Sun Apr 19 18:28:14 2015...

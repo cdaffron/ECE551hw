@@ -9,41 +9,47 @@ create_project -in_memory -part xc7a100tcsg324-1
 set_property target_language VHDL [current_project]
 set_param project.compositeFile.enableAutoGeneration 0
 set_property default_lib xil_defaultlib [current_project]
-add_files {{/data1/cdaffron/git/ece551hw/final/jacob/sources/coe files/mat_5kHz_int16_2048samples.coe}}
-add_files -quiet /data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.runs/blk_mem_gen_0_synth_1/blk_mem_gen_0.dcp
-set_property used_in_implementation false [get_files /data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.runs/blk_mem_gen_0_synth_1/blk_mem_gen_0.dcp]
-add_files -quiet /data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.runs/blk_mem_gen_1_synth_1/blk_mem_gen_1.dcp
-set_property used_in_implementation false [get_files /data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.runs/blk_mem_gen_1_synth_1/blk_mem_gen_1.dcp]
-add_files -quiet /data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.runs/xfft_0_synth_1/xfft_0.dcp
-set_property used_in_implementation false [get_files /data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.runs/xfft_0_synth_1/xfft_0.dcp]
-add_files -quiet /data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.runs/vio_0_synth_1/vio_0.dcp
-set_property used_in_implementation false [get_files /data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.runs/vio_0_synth_1/vio_0.dcp]
-add_files -quiet /data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.runs/mult_gen_0_synth_1/mult_gen_0.dcp
-set_property used_in_implementation false [get_files /data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.runs/mult_gen_0_synth_1/mult_gen_0.dcp]
-add_files -quiet /data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.runs/c_addsub_0_synth_1/c_addsub_0.dcp
-set_property used_in_implementation false [get_files /data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.runs/c_addsub_0_synth_1/c_addsub_0.dcp]
-add_files -quiet /data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.runs/cordic_0_synth_1/cordic_0.dcp
-set_property used_in_implementation false [get_files /data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.runs/cordic_0_synth_1/cordic_0.dcp]
-add_files -quiet /data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.runs/clk_wiz_0_synth_1/clk_wiz_0.dcp
-set_property used_in_implementation false [get_files /data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.runs/clk_wiz_0_synth_1/clk_wiz_0.dcp]
-add_files -quiet /data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.runs/c_counter_binary_0_synth_1/c_counter_binary_0.dcp
-set_property used_in_implementation false [get_files /data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.runs/c_counter_binary_0_synth_1/c_counter_binary_0.dcp]
+add_files {{/home/jmurra15/classes/ECE551-Spring-2015/ECE551hw/final/jacob/sources/coe files/mat_5kHz_int16_2048samples.coe}}
+add_files -quiet /home/jmurra15/classes/ECE551-Spring-2015/ECE551hw/final/top_level_project/top_level_project.runs/mult_gen_0_synth_1/mult_gen_0.dcp
+set_property used_in_implementation false [get_files /home/jmurra15/classes/ECE551-Spring-2015/ECE551hw/final/top_level_project/top_level_project.runs/mult_gen_0_synth_1/mult_gen_0.dcp]
+add_files -quiet /home/jmurra15/classes/ECE551-Spring-2015/ECE551hw/final/top_level_project/top_level_project.runs/c_addsub_0_synth_1/c_addsub_0.dcp
+set_property used_in_implementation false [get_files /home/jmurra15/classes/ECE551-Spring-2015/ECE551hw/final/top_level_project/top_level_project.runs/c_addsub_0_synth_1/c_addsub_0.dcp]
+add_files -quiet /home/jmurra15/classes/ECE551-Spring-2015/ECE551hw/final/top_level_project/top_level_project.runs/cordic_0_synth_1/cordic_0.dcp
+set_property used_in_implementation false [get_files /home/jmurra15/classes/ECE551-Spring-2015/ECE551hw/final/top_level_project/top_level_project.runs/cordic_0_synth_1/cordic_0.dcp]
+add_files -quiet /home/jmurra15/classes/ECE551-Spring-2015/ECE551hw/final/top_level_project/top_level_project.runs/clk_wiz_vga_synth_1/clk_wiz_vga.dcp
+set_property used_in_implementation false [get_files /home/jmurra15/classes/ECE551-Spring-2015/ECE551hw/final/top_level_project/top_level_project.runs/clk_wiz_vga_synth_1/clk_wiz_vga.dcp]
+add_files -quiet /home/jmurra15/classes/ECE551-Spring-2015/ECE551hw/final/top_level_project/top_level_project.runs/xfft_0_synth_1/xfft_0.dcp
+set_property used_in_implementation false [get_files /home/jmurra15/classes/ECE551-Spring-2015/ECE551hw/final/top_level_project/top_level_project.runs/xfft_0_synth_1/xfft_0.dcp]
+add_files -quiet /home/jmurra15/classes/ECE551-Spring-2015/ECE551hw/final/top_level_project/top_level_project.runs/vio_0_synth_1/vio_0.dcp
+set_property used_in_implementation false [get_files /home/jmurra15/classes/ECE551-Spring-2015/ECE551hw/final/top_level_project/top_level_project.runs/vio_0_synth_1/vio_0.dcp]
+add_files -quiet /home/jmurra15/classes/ECE551-Spring-2015/ECE551hw/final/top_level_project/top_level_project.runs/c_counter_binary_0_synth_1/c_counter_binary_0.dcp
+set_property used_in_implementation false [get_files /home/jmurra15/classes/ECE551-Spring-2015/ECE551hw/final/top_level_project/top_level_project.runs/c_counter_binary_0_synth_1/c_counter_binary_0.dcp]
+add_files -quiet /home/jmurra15/classes/ECE551-Spring-2015/ECE551hw/final/top_level_project/top_level_project.runs/clk_wiz_0_synth_1/clk_wiz_0.dcp
+set_property used_in_implementation false [get_files /home/jmurra15/classes/ECE551-Spring-2015/ECE551hw/final/top_level_project/top_level_project.runs/clk_wiz_0_synth_1/clk_wiz_0.dcp]
+add_files -quiet /home/jmurra15/classes/ECE551-Spring-2015/ECE551hw/final/top_level_project/top_level_project.runs/blk_mem_gen_1_synth_1/blk_mem_gen_1.dcp
+set_property used_in_implementation false [get_files /home/jmurra15/classes/ECE551-Spring-2015/ECE551hw/final/top_level_project/top_level_project.runs/blk_mem_gen_1_synth_1/blk_mem_gen_1.dcp]
+add_files -quiet /home/jmurra15/classes/ECE551-Spring-2015/ECE551hw/final/top_level_project/top_level_project.runs/blk_mem_gen_0_synth_1/blk_mem_gen_0.dcp
+set_property used_in_implementation false [get_files /home/jmurra15/classes/ECE551-Spring-2015/ECE551hw/final/top_level_project/top_level_project.runs/blk_mem_gen_0_synth_1/blk_mem_gen_0.dcp]
 read_vhdl -library xil_defaultlib {
-  /data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.srcs/sources_1/imports/chris/magnitude/magnitude.srcs/sources_1/new/magnitude.vhd
-  /data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.srcs/sources_1/imports/chris/disp_draw/disp_draw.srcs/sources_1/new/type_pkg.vhd
-  /data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.srcs/sources_1/imports/chris/averager/averager.srcs/sources_1/new/averager.vhd
-  /data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.srcs/sources_1/imports/chris/disp_draw/disp_draw.srcs/sources_1/new/disp_draw.vhd
-  /data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.srcs/sources_1/imports/adc_fft_to_pc/adc_fft_fsmV3_noUART.vhd
-  /data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.srcs/sources_1/new/top_level.vhd
+  /home/jmurra15/classes/ECE551-Spring-2015/ECE551hw/final/top_level_project/top_level_project.srcs/sources_1/imports/chris/disp_draw/disp_draw.srcs/sources_1/new/type_pkg.vhd
+  /home/jmurra15/classes/ECE551-Spring-2015/ECE551hw/final/top_level_project/top_level_project.srcs/sources_1/imports/sources_1/new/vga_pkg.vhd
+  /home/jmurra15/classes/ECE551-Spring-2015/ECE551hw/final/top_level_project/top_level_project.srcs/sources_1/imports/sources_1/imports/sources_1/new/vga_display_gen.vhd
+  /home/jmurra15/classes/ECE551-Spring-2015/ECE551hw/final/top_level_project/top_level_project.srcs/sources_1/imports/sources_1/imports/sources_1/imports/vga/vga_controller_640_60.vhd
+  /home/jmurra15/classes/ECE551-Spring-2015/ECE551hw/final/top_level_project/top_level_project.srcs/sources_1/imports/chris/magnitude/magnitude.srcs/sources_1/new/magnitude.vhd
+  /home/jmurra15/classes/ECE551-Spring-2015/ECE551hw/final/top_level_project/top_level_project.srcs/sources_1/imports/chris/averager/averager.srcs/sources_1/new/averager.vhd
+  /home/jmurra15/classes/ECE551-Spring-2015/ECE551hw/final/top_level_project/top_level_project.srcs/sources_1/imports/sources_1/new/vga_top.vhd
+  /home/jmurra15/classes/ECE551-Spring-2015/ECE551hw/final/top_level_project/top_level_project.srcs/sources_1/imports/chris/disp_draw/disp_draw.srcs/sources_1/new/disp_draw.vhd
+  /home/jmurra15/classes/ECE551-Spring-2015/ECE551hw/final/top_level_project/top_level_project.srcs/sources_1/imports/adc_fft_to_pc/adc_fft_fsmV3_noUART.vhd
+  /home/jmurra15/classes/ECE551-Spring-2015/ECE551hw/final/top_level_project/top_level_project.srcs/sources_1/new/top_level.vhd
 }
-read_xdc /data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.srcs/constrs_1/imports/lab2/Nexys4_Master.xdc
-set_property used_in_implementation false [get_files /data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.srcs/constrs_1/imports/lab2/Nexys4_Master.xdc]
+read_xdc /home/jmurra15/classes/ECE551-Spring-2015/ECE551hw/final/top_level_project/top_level_project.srcs/constrs_1/imports/lab2/Nexys4_Master.xdc
+set_property used_in_implementation false [get_files /home/jmurra15/classes/ECE551-Spring-2015/ECE551hw/final/top_level_project/top_level_project.srcs/constrs_1/imports/lab2/Nexys4_Master.xdc]
 
 read_xdc dont_buffer.xdc
 set_property used_in_implementation false [get_files dont_buffer.xdc]
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir /data1/cdaffron/git/ece551hw/final/top_level_project/top_level_project.cache/wt [current_project]
-set_property parent.project_dir /data1/cdaffron/git/ece551hw/final/top_level_project [current_project]
+set_property webtalk.parent_dir /home/jmurra15/classes/ECE551-Spring-2015/ECE551hw/final/top_level_project/top_level_project.cache/wt [current_project]
+set_property parent.project_dir /home/jmurra15/classes/ECE551-Spring-2015/ECE551hw/final/top_level_project [current_project]
 catch { write_hwdef -file top_level.hwdef }
 synth_design -top top_level -part xc7a100tcsg324-1 -flatten_hierarchy none
 write_checkpoint top_level.dcp

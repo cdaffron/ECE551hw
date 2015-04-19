@@ -40,7 +40,12 @@ entity top_level is
         din             : in  std_logic_vector(15 downto 0);
         busy            : in  std_logic;
         rc              : out std_logic;
-        sw              : in  std_logic_vector(15 downto 0)
+        sw              : in  std_logic_vector(15 downto 0);
+        hsync       : out std_logic;
+        vsync       : out std_logic;
+        vga_red     : out std_logic_vector(3 downto 0);
+        vga_green   : out std_logic_vector(3 downto 0);
+        vga_blue    : out std_logic_vector(3 downto 0)
     );
 end top_level;
 
@@ -58,7 +63,23 @@ architecture Behavioral of top_level is
             clk         : in  std_logic        
         );
     end component;
+
+    component vga_top is
+        Port (
+            clk         : in std_logic;
+            rst         : in std_logic;
+            bars        : in barArray;
+            barNumSws   : in std_logic_vector(1 downto 0); 
     
+            hsync       : out std_logic;
+            vsync       : out std_logic;
+            vga_red     : out std_logic_vector(3 downto 0);
+            vga_green   : out std_logic_vector(3 downto 0);
+            vga_blue    : out std_logic_vector(3 downto 0)
+        );
+    end component;
+
+
     signal FFT_addr : std_logic_vector (9 downto 0) := "0000000000";
     signal FFT_data : std_logic_vector (31 downto 0) := (others => '0');
     signal FFT_rden : std_logic := '0';
@@ -200,6 +221,20 @@ begin
         addrb => FFT_addr,
         doutb => FFT_data
     );
+    
+    
+    vga_comp: vga_top
+        port map (
+            clk => clk,
+            rst => reset(0),
+            bars => barHeights,
+            barNumSws => sw(1 downto 0),
+            hsync => hsync,
+            vsync => vsync,
+            vga_red => vga_red,
+            vga_green => vga_green,
+            vga_blue => vga_blue
+        );
     
     clk_debug : entity work.clk_wiz_0
     port map

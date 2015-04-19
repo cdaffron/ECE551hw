@@ -1,10 +1,10 @@
 #-----------------------------------------------------------
 # Vivado v2014.2 (64-bit)
-# SW Build 932637 on Wed Jun 11 13:33:10 MDT 2014
+# SW Build 932637 on Wed Jun 11 13:08:52 MDT 2014
 # IP Build 924643 on Fri May 30 09:20:16 MDT 2014
-# Start of session at: Fri Apr 17 15:37:33 2015
-# Process ID: 5460
-# Log file: C:/Users/cdaffron/Documents/ECE 551/final/top_level_project/top_level_project.runs/xfft_0_synth_1/xfft_0.vds
-# Journal file: C:/Users/cdaffron/Documents/ECE 551/final/top_level_project/top_level_project.runs/xfft_0_synth_1\vivado.jou
+# Start of session at: Sun Apr 19 18:26:09 2015
+# Process ID: 10405
+# Log file: /home/jmurra15/classes/ECE551-Spring-2015/ECE551hw/final/top_level_project/top_level_project.runs/xfft_0_synth_1/xfft_0.vds
+# Journal file: /home/jmurra15/classes/ECE551-Spring-2015/ECE551hw/final/top_level_project/top_level_project.runs/xfft_0_synth_1/vivado.jou
 #-----------------------------------------------------------
 source xfft_0.tcl
