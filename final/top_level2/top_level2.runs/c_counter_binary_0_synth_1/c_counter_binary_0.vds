@@ -2,8 +2,8 @@
 # Vivado v2014.2 (64-bit)
 # SW Build 932637 on Wed Jun 11 13:08:52 MDT 2014
 # IP Build 924643 on Fri May 30 09:20:16 MDT 2014
-# Start of session at: Sun Apr 19 19:39:43 2015
-# Process ID: 10674
+# Start of session at: Sun Apr 19 19:57:40 2015
+# Process ID: 30576
 # Log file: /data1/cdaffron/git/ece551hw/final/top_level2/top_level2.runs/c_counter_binary_0_synth_1/c_counter_binary_0.vds
 # Journal file: /data1/cdaffron/git/ece551hw/final/top_level2/top_level2.runs/c_counter_binary_0_synth_1/vivado.jou
 #-----------------------------------------------------------
@@ -24,8 +24,6 @@ WARNING: [IP_Flow 19-3664] IP 'c_counter_binary_0' generated file not found '/da
 WARNING: [IP_Flow 19-3664] IP 'c_counter_binary_0' generated file not found '/data1/cdaffron/git/ece551hw/final/top_level2/top_level2.srcs/sources_1/ip/c_counter_binary_0/c_counter_binary_0_stub.vhdl'. Please regenerate to continue.
 WARNING: [IP_Flow 19-3664] IP 'c_counter_binary_0' generated file not found '/data1/cdaffron/git/ece551hw/final/top_level2/top_level2.srcs/sources_1/ip/c_counter_binary_0/c_counter_binary_0_funcsim.v'. Please regenerate to continue.
 WARNING: [IP_Flow 19-3664] IP 'c_counter_binary_0' generated file not found '/data1/cdaffron/git/ece551hw/final/top_level2/top_level2.srcs/sources_1/ip/c_counter_binary_0/c_counter_binary_0_funcsim.vhdl'. Please regenerate to continue.
-# set_property used_in_implementation false [get_files /data1/cdaffron/git/ece551hw/final/top_level2/top_level2.srcs/sources_1/ip/c_counter_binary_0/c_counter_binary_0.dcp]
-# set_property used_in_implementation false [get_files -all /data1/cdaffron/git/ece551hw/final/top_level2/top_level2.srcs/sources_1/ip/c_counter_binary_0/c_counter_binary_0.dcp]
 # set_msg_config -id {IP_Flow 19-2162} -severity warning -new_severity info
 # set_property is_locked true [get_files /data1/cdaffron/git/ece551hw/final/top_level2/top_level2.srcs/sources_1/ip/c_counter_binary_0/c_counter_binary_0.xci]
 # read_xdc dont_touch.xdc
@@ -43,7 +41,7 @@ Starting synthesis...
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 851.172 ; gain = 161.129
+Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 851.562 ; gain = 161.129
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'c_counter_binary_0' [/data1/cdaffron/git/ece551hw/final/top_level2/top_level2.srcs/sources_1/ip/c_counter_binary_0/synth/c_counter_binary_0.vhd:66]
 INFO: [Synth 8-3491] module 'c_counter_binary_v12_0' declared at '/data1/cdaffron/git/ece551hw/final/top_level2/top_level2.srcs/sources_1/ip/c_counter_binary_0/c_counter_binary_v12_0/hdl/c_counter_binary_v12_0.vhd:106' bound to instance 'U0' of component 'c_counter_binary_v12_0' [/data1/cdaffron/git/ece551hw/final/top_level2/top_level2.srcs/sources_1/ip/c_counter_binary_0/synth/c_counter_binary_0.vhd:118]
@@ -104,7 +102,7 @@ INFO: [Synth 8-256] done synthesizing module 'c_counter_binary_v12_0_viv__parame
 INFO: [Synth 8-256] done synthesizing module 'c_counter_binary_v12_0__parameterized0' (7#1) [/data1/cdaffron/git/ece551hw/final/top_level2/top_level2.srcs/sources_1/ip/c_counter_binary_0/c_counter_binary_v12_0/hdl/c_counter_binary_v12_0.vhd:147]
 INFO: [Synth 8-256] done synthesizing module 'c_counter_binary_0' (8#1) [/data1/cdaffron/git/ece551hw/final/top_level2/top_level2.srcs/sources_1/ip/c_counter_binary_0/synth/c_counter_binary_0.vhd:66]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 892.051 ; gain = 202.008
+Finished RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 892.441 ; gain = 202.008
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Optimization
@@ -144,17 +142,17 @@ Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 1154.277 ; gain = 464.234
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1154.668 ; gain = 464.234
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 Applied set_property DONT_TOUCH = true for U0. (constraint file  /data1/cdaffron/git/ece551hw/final/top_level2/top_level2.runs/c_counter_binary_0_synth_1/dont_touch.xdc, line 9).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 1154.277 ; gain = 464.234
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1154.668 ; gain = 464.234
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 1154.277 ; gain = 464.234
+Finished RTL Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1154.668 ; gain = 464.234
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -183,22 +181,22 @@ BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
 ---------------------------------------------------------------------------------
 Finished Part Resource Summary
 ---------------------------------------------------------------------------------
-Workers Ready, Starting Parallel Section  : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 1154.277 ; gain = 464.234
+Workers Ready, Starting Parallel Section  : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1154.668 ; gain = 464.234
 ---------------------------------------------------------------------------------
 Start Cross Boundary Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Cross Boundary Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 1154.277 ; gain = 464.234
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1154.668 ; gain = 464.234
 ---------------------------------------------------------------------------------
-Finished Parallel Reinfer  : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 1154.277 ; gain = 464.234
+Finished Parallel Reinfer  : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1154.668 ; gain = 464.234
 ---------------------------------------------------------------------------------
 Start Area Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Area Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 1154.277 ; gain = 464.234
+Finished Area Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1154.668 ; gain = 464.234
 ---------------------------------------------------------------------------------
-Finished Parallel Area Opt  : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 1154.277 ; gain = 464.234
-Finished Parallel Section  : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 1154.277 ; gain = 464.234
+Finished Parallel Area Opt  : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1154.668 ; gain = 464.234
+Finished Parallel Section  : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1154.668 ; gain = 464.234
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
@@ -206,16 +204,16 @@ Start Timing Optimization
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:29 ; elapsed = 00:00:29 . Memory (MB): peak = 1172.285 ; gain = 482.242
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1172.676 ; gain = 482.242
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:29 ; elapsed = 00:00:29 . Memory (MB): peak = 1172.285 ; gain = 482.242
+Finished Timing Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1172.676 ; gain = 482.242
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:29 ; elapsed = 00:00:29 . Memory (MB): peak = 1182.297 ; gain = 492.254
+Finished Technology Mapping : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1182.688 ; gain = 492.254
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -233,7 +231,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1182.297 ; gain = 492.254
+Finished IO Insertion : Time (s): cpu = 00:00:29 ; elapsed = 00:00:29 . Memory (MB): peak = 1182.688 ; gain = 492.254
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -246,13 +244,13 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1182.297 ; gain = 492.254
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:29 ; elapsed = 00:00:29 . Memory (MB): peak = 1182.688 ; gain = 492.254
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1182.297 ; gain = 492.254
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:29 ; elapsed = 00:00:29 . Memory (MB): peak = 1182.688 ; gain = 492.254
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -275,10 +273,10 @@ Report Cell Usage:
 |5     |FDRE  |    18|
 +------+------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1182.297 ; gain = 492.254
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:29 ; elapsed = 00:00:29 . Memory (MB): peak = 1182.688 ; gain = 492.254
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Complete : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1182.297 ; gain = 492.254
+Synthesis Optimization Complete : Time (s): cpu = 00:00:29 ; elapsed = 00:00:29 . Memory (MB): peak = 1182.688 ; gain = 492.254
 INFO: [Netlist 29-17] Analyzing 18 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 Parsing XDC File [/data1/cdaffron/git/ece551hw/final/top_level2/top_level2.srcs/sources_1/ip/c_counter_binary_0/c_counter_binary_0_ooc.xdc] for cell 'U0'
@@ -291,12 +289,12 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 INFO: [Common 17-83] Releasing license: Synthesis
 67 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:28 ; elapsed = 00:00:28 . Memory (MB): peak = 1196.297 ; gain = 389.125
+synth_design: Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 1196.688 ; gain = 388.125
 # rename_ref -prefix_all c_counter_binary_0_
 INFO: [Coretcl 2-1174] Renamed 7 cell refs.
 # write_checkpoint -noxdef c_counter_binary_0.dcp
 # report_utilization -file c_counter_binary_0_utilization_synth.rpt -pb c_counter_binary_0_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.06 . Memory (MB): peak = 1196.301 ; gain = 0.000
+report_utilization: Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.06 . Memory (MB): peak = 1196.691 ; gain = 0.000
 # if { [catch {
 #   file copy -force /data1/cdaffron/git/ece551hw/final/top_level2/top_level2.runs/c_counter_binary_0_synth_1/c_counter_binary_0.dcp /data1/cdaffron/git/ece551hw/final/top_level2/top_level2.srcs/sources_1/ip/c_counter_binary_0/c_counter_binary_0.dcp
 #   write_verilog -force -mode synth_stub /data1/cdaffron/git/ece551hw/final/top_level2/top_level2.srcs/sources_1/ip/c_counter_binary_0/c_counter_binary_0_stub.v
@@ -307,4 +305,4 @@ report_utilization: Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.06 . Memory
 #   send_msg_id runtcl-3 error "Unable to successfully create or copy supporting IP files."
 #   return -code error
 # }
-INFO: [Common 17-206] Exiting Vivado at Sun Apr 19 19:40:18 2015...
+INFO: [Common 17-206] Exiting Vivado at Sun Apr 19 19:58:15 2015...

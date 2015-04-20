@@ -2,8 +2,8 @@
 # Vivado v2014.2 (64-bit)
 # SW Build 932637 on Wed Jun 11 13:08:52 MDT 2014
 # IP Build 924643 on Fri May 30 09:20:16 MDT 2014
-# Start of session at: Sun Apr 19 19:39:43 2015
-# Process ID: 10681
+# Start of session at: Sun Apr 19 19:57:40 2015
+# Process ID: 30572
 # Log file: /data1/cdaffron/git/ece551hw/final/top_level2/top_level2.runs/blk_mem_gen_1_synth_1/blk_mem_gen_1.vds
 # Journal file: /data1/cdaffron/git/ece551hw/final/top_level2/top_level2.runs/blk_mem_gen_1_synth_1/vivado.jou
 #-----------------------------------------------------------
@@ -24,8 +24,6 @@ WARNING: [IP_Flow 19-3664] IP 'blk_mem_gen_1' generated file not found '/data1/c
 WARNING: [IP_Flow 19-3664] IP 'blk_mem_gen_1' generated file not found '/data1/cdaffron/git/ece551hw/final/top_level2/top_level2.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1_stub.vhdl'. Please regenerate to continue.
 WARNING: [IP_Flow 19-3664] IP 'blk_mem_gen_1' generated file not found '/data1/cdaffron/git/ece551hw/final/top_level2/top_level2.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1_funcsim.v'. Please regenerate to continue.
 WARNING: [IP_Flow 19-3664] IP 'blk_mem_gen_1' generated file not found '/data1/cdaffron/git/ece551hw/final/top_level2/top_level2.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1_funcsim.vhdl'. Please regenerate to continue.
-# set_property used_in_implementation false [get_files /data1/cdaffron/git/ece551hw/final/top_level2/top_level2.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1.dcp]
-# set_property used_in_implementation false [get_files -all /data1/cdaffron/git/ece551hw/final/top_level2/top_level2.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1.dcp]
 # set_msg_config -id {IP_Flow 19-2162} -severity warning -new_severity info
 # set_property is_locked true [get_files /data1/cdaffron/git/ece551hw/final/top_level2/top_level2.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1.xci]
 # read_xdc dont_touch.xdc
@@ -43,7 +41,7 @@ Starting synthesis...
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 851.168 ; gain = 161.129
+Starting RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 851.562 ; gain = 161.129
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_1' [/data1/cdaffron/git/ece551hw/final/top_level2/top_level2.srcs/sources_1/ip/blk_mem_gen_1/synth/blk_mem_gen_1.vhd:73]
 	Parameter C_FAMILY bound to: artix7 - type: string 
@@ -729,7 +727,7 @@ INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_v8_2_synth' (7#1) [/da
 INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_v8_2__parameterized0' (8#1) [/data1/cdaffron/git/ece551hw/final/top_level2/top_level2.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_v8_2/hdl/blk_mem_gen_v8_2.vhd:257]
 INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_1' (9#1) [/data1/cdaffron/git/ece551hw/final/top_level2/top_level2.srcs/sources_1/ip/blk_mem_gen_1/synth/blk_mem_gen_1.vhd:73]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:01:14 ; elapsed = 00:01:15 . Memory (MB): peak = 1014.719 ; gain = 324.680
+Finished RTL Elaboration : Time (s): cpu = 00:01:07 ; elapsed = 00:01:07 . Memory (MB): peak = 1015.113 ; gain = 324.680
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Optimization
@@ -777,17 +775,17 @@ Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:01:22 ; elapsed = 00:01:23 . Memory (MB): peak = 1164.750 ; gain = 474.711
+Finished Loading Part and Timing Information : Time (s): cpu = 00:01:14 ; elapsed = 00:01:15 . Memory (MB): peak = 1165.145 ; gain = 474.711
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 Applied set_property DONT_TOUCH = true for U0. (constraint file  /data1/cdaffron/git/ece551hw/final/top_level2/top_level2.runs/blk_mem_gen_1_synth_1/dont_touch.xdc, line 9).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:22 ; elapsed = 00:01:23 . Memory (MB): peak = 1164.750 ; gain = 474.711
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:14 ; elapsed = 00:01:15 . Memory (MB): peak = 1165.145 ; gain = 474.711
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization : Time (s): cpu = 00:01:22 ; elapsed = 00:01:23 . Memory (MB): peak = 1164.750 ; gain = 474.711
+Finished RTL Optimization : Time (s): cpu = 00:01:14 ; elapsed = 00:01:15 . Memory (MB): peak = 1165.145 ; gain = 474.711
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -836,14 +834,14 @@ BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
 ---------------------------------------------------------------------------------
 Finished Part Resource Summary
 ---------------------------------------------------------------------------------
-Workers Ready, Starting Parallel Section  : Time (s): cpu = 00:01:22 ; elapsed = 00:01:23 . Memory (MB): peak = 1164.750 ; gain = 474.711
+Workers Ready, Starting Parallel Section  : Time (s): cpu = 00:01:14 ; elapsed = 00:01:15 . Memory (MB): peak = 1165.145 ; gain = 474.711
 ---------------------------------------------------------------------------------
 Start Cross Boundary Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Cross Boundary Optimization : Time (s): cpu = 00:01:22 ; elapsed = 00:01:23 . Memory (MB): peak = 1164.750 ; gain = 474.711
+Finished Cross Boundary Optimization : Time (s): cpu = 00:01:14 ; elapsed = 00:01:15 . Memory (MB): peak = 1165.145 ; gain = 474.711
 ---------------------------------------------------------------------------------
-Finished Parallel Reinfer  : Time (s): cpu = 00:01:22 ; elapsed = 00:01:23 . Memory (MB): peak = 1164.750 ; gain = 474.711
+Finished Parallel Reinfer  : Time (s): cpu = 00:01:14 ; elapsed = 00:01:15 . Memory (MB): peak = 1165.145 ; gain = 474.711
 ---------------------------------------------------------------------------------
 Start RAM, DSP and Shift Register Reporting
 ---------------------------------------------------------------------------------
@@ -854,10 +852,10 @@ Finished RAM, DSP and Shift Register Reporting
 Start Area Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Area Optimization : Time (s): cpu = 00:01:22 ; elapsed = 00:01:23 . Memory (MB): peak = 1164.750 ; gain = 474.711
+Finished Area Optimization : Time (s): cpu = 00:01:14 ; elapsed = 00:01:15 . Memory (MB): peak = 1165.145 ; gain = 474.711
 ---------------------------------------------------------------------------------
-Finished Parallel Area Opt  : Time (s): cpu = 00:01:22 ; elapsed = 00:01:23 . Memory (MB): peak = 1164.750 ; gain = 474.711
-Finished Parallel Section  : Time (s): cpu = 00:01:22 ; elapsed = 00:01:23 . Memory (MB): peak = 1164.750 ; gain = 474.711
+Finished Parallel Area Opt  : Time (s): cpu = 00:01:14 ; elapsed = 00:01:15 . Memory (MB): peak = 1165.145 ; gain = 474.711
+Finished Parallel Section  : Time (s): cpu = 00:01:14 ; elapsed = 00:01:15 . Memory (MB): peak = 1165.145 ; gain = 474.711
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
@@ -865,16 +863,16 @@ Start Timing Optimization
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:32 ; elapsed = 00:01:33 . Memory (MB): peak = 1170.738 ; gain = 480.699
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:23 ; elapsed = 00:01:23 . Memory (MB): peak = 1171.133 ; gain = 480.699
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:01:32 ; elapsed = 00:01:33 . Memory (MB): peak = 1170.738 ; gain = 480.699
+Finished Timing Optimization : Time (s): cpu = 00:01:23 ; elapsed = 00:01:24 . Memory (MB): peak = 1171.133 ; gain = 480.699
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:01:32 ; elapsed = 00:01:33 . Memory (MB): peak = 1179.754 ; gain = 489.715
+Finished Technology Mapping : Time (s): cpu = 00:01:23 ; elapsed = 00:01:24 . Memory (MB): peak = 1181.148 ; gain = 490.715
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -892,7 +890,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:01:33 ; elapsed = 00:01:33 . Memory (MB): peak = 1179.754 ; gain = 489.715
+Finished IO Insertion : Time (s): cpu = 00:01:23 ; elapsed = 00:01:24 . Memory (MB): peak = 1181.148 ; gain = 490.715
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -905,13 +903,13 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:01:33 ; elapsed = 00:01:33 . Memory (MB): peak = 1179.754 ; gain = 489.715
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:23 ; elapsed = 00:01:24 . Memory (MB): peak = 1181.148 ; gain = 490.715
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:33 ; elapsed = 00:01:33 . Memory (MB): peak = 1179.754 ; gain = 489.715
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:23 ; elapsed = 00:01:24 . Memory (MB): peak = 1181.148 ; gain = 490.715
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RAM, DSP and Shift Register Reporting
@@ -949,10 +947,10 @@ Report Instance Areas:
 |7     |            \prim_noinit.ram          |blk_mem_gen_prim_wrapper         |     1|
 +------+--------------------------------------+---------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:01:33 ; elapsed = 00:01:33 . Memory (MB): peak = 1179.754 ; gain = 489.715
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:23 ; elapsed = 00:01:24 . Memory (MB): peak = 1181.148 ; gain = 490.715
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Complete : Time (s): cpu = 00:01:33 ; elapsed = 00:01:33 . Memory (MB): peak = 1179.754 ; gain = 489.715
+Synthesis Optimization Complete : Time (s): cpu = 00:01:23 ; elapsed = 00:01:24 . Memory (MB): peak = 1181.148 ; gain = 490.715
 INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 Parsing XDC File [/data1/cdaffron/git/ece551hw/final/top_level2/top_level2.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1_ooc.xdc] for cell 'U0'
@@ -964,12 +962,12 @@ No Unisim elements were transformed.
 INFO: [Common 17-83] Releasing license: Synthesis
 40 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:31 ; elapsed = 00:01:32 . Memory (MB): peak = 1194.754 ; gain = 386.586
+synth_design: Time (s): cpu = 00:01:22 ; elapsed = 00:01:23 . Memory (MB): peak = 1194.148 ; gain = 385.586
 # rename_ref -prefix_all blk_mem_gen_1_
 INFO: [Coretcl 2-1174] Renamed 6 cell refs.
 # write_checkpoint -noxdef blk_mem_gen_1.dcp
 # report_utilization -file blk_mem_gen_1_utilization_synth.rpt -pb blk_mem_gen_1_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.06 . Memory (MB): peak = 1194.758 ; gain = 0.000
+report_utilization: Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.06 . Memory (MB): peak = 1194.152 ; gain = 0.000
 # if { [catch {
 #   file copy -force /data1/cdaffron/git/ece551hw/final/top_level2/top_level2.runs/blk_mem_gen_1_synth_1/blk_mem_gen_1.dcp /data1/cdaffron/git/ece551hw/final/top_level2/top_level2.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1.dcp
 #   write_verilog -force -mode synth_stub /data1/cdaffron/git/ece551hw/final/top_level2/top_level2.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1_stub.v
@@ -980,4 +978,4 @@ report_utilization: Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.06 . Memory
 #   send_msg_id runtcl-3 error "Unable to successfully create or copy supporting IP files."
 #   return -code error
 # }
-INFO: [Common 17-206] Exiting Vivado at Sun Apr 19 19:41:22 2015...
+INFO: [Common 17-206] Exiting Vivado at Sun Apr 19 19:59:09 2015...

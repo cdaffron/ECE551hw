@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="blk_mem_gen_0_synth_1" LaunchDir="/data1/cdaffron/git/ece551hw/final/top_level2/top_level2.runs/blk_mem_gen_0_synth_1" FlowId="Vivado Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="blk_mem_gen_1_synth_1" LaunchDir="/data1/cdaffron/git/ece551hw/final/top_level2/top_level2.runs/blk_mem_gen_1_synth_1" FlowId="Vivado Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="c_addsub_0_synth_1" LaunchDir="/data1/cdaffron/git/ece551hw/final/top_level2/top_level2.runs/c_addsub_0_synth_1" FlowId="Vivado Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="c_counter_binary_0_synth_1" LaunchDir="/data1/cdaffron/git/ece551hw/final/top_level2/top_level2.runs/c_counter_binary_0_synth_1" FlowId="Vivado Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="clk_wiz_0_synth_1" LaunchDir="/data1/cdaffron/git/ece551hw/final/top_level2/top_level2.runs/clk_wiz_0_synth_1" FlowId="Vivado Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="clk_wiz_vga_synth_1" LaunchDir="/data1/cdaffron/git/ece551hw/final/top_level2/top_level2.runs/clk_wiz_vga_synth_1" FlowId="Vivado Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="cordic_0_synth_1" LaunchDir="/data1/cdaffron/git/ece551hw/final/top_level2/top_level2.runs/cordic_0_synth_1" FlowId="Vivado Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="mult_gen_0_synth_1" LaunchDir="/data1/cdaffron/git/ece551hw/final/top_level2/top_level2.runs/mult_gen_0_synth_1" FlowId="Vivado Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="vio_0_synth_1" LaunchDir="/data1/cdaffron/git/ece551hw/final/top_level2/top_level2.runs/vio_0_synth_1" FlowId="Vivado Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="xfft_0_synth_1" LaunchDir="/data1/cdaffron/git/ece551hw/final/top_level2/top_level2.runs/xfft_0_synth_1" FlowId="Vivado Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+</Runs>
+

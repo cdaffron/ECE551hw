@@ -49,7 +49,7 @@ entity disp_draw is
 --        VGA_data    : out std_logic_vector (11 downto 0);
 --        VGA_wren    : out std_logic;
         barHeights  : out barArray;
-        fullBarHeights  : out fullBarArray;
+--        fullBarHeights  : out fullBarArray;
         VGA_trig    : in  std_logic;
         sw          : in  std_logic_vector (1 downto 0);
         dp          : out std_logic;
@@ -603,7 +603,7 @@ begin
         if( rising_edge( clk ) ) then
             if( magValid = '1' ) then
                 barHeightsWrk(to_integer(unsigned(barNumOut))) <= mag(16 downto 9);
-                fullBarHeights(to_integer(unsigned(barNumOut))) <= mag;
+--                fullBarHeights(to_integer(unsigned(barNumOut))) <= mag;
             end if;
         end if;
     end process;

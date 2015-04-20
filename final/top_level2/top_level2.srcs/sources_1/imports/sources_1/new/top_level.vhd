@@ -62,7 +62,7 @@ architecture Behavioral of top_level is
             FFT_rden    : out std_logic;
             FFT_done    : in  std_logic;
             barHeights  : out barArray;
-            fullbarHeights : out fullBarArray;
+--            fullbarHeights : out fullBarArray;
             VGA_trig    : in  std_logic;
             sw          : in  std_logic_vector (1 downto 0);
             dp          : out std_logic;
@@ -145,7 +145,7 @@ begin
         FFT_rden => FFT_rden,
         FFT_done => FFT_done,
         barHeights => barHeights,
-        fullBarHeights => fullBarArray,
+--        fullBarHeights => fullBarArray,
         VGA_trig => VGA_trig,
         sw => sw(1 downto 0),
         dp => dp,

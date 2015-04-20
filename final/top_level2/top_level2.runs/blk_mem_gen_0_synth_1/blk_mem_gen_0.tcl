@@ -11,8 +11,6 @@ set_param project.compositeFile.enableAutoGeneration 0
 set_property default_lib xil_defaultlib [current_project]
 
 read_ip /data1/cdaffron/git/ece551hw/final/top_level2/top_level2.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci
-set_property used_in_implementation false [get_files /data1/cdaffron/git/ece551hw/final/top_level2/top_level2.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.dcp]
-set_property used_in_implementation false [get_files -all /data1/cdaffron/git/ece551hw/final/top_level2/top_level2.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.dcp]
 set_msg_config -id {IP_Flow 19-2162} -severity warning -new_severity info
 set_property is_locked true [get_files /data1/cdaffron/git/ece551hw/final/top_level2/top_level2.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci]
 
