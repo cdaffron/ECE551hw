@@ -213,12 +213,13 @@ begin
 			-- disable write enable to ram and wait for tvalid to go high again.
 			elsif state = 10 then
 				if m_axis_data_tvalid = '1' then
-					ram2_wea <= "1";
+--					ram2_wea <= "1";
+                    ram2_addra_s <= std_logic_vector(unsigned(ram2_addra_s) + 1);
 					state <= 11;
 				else
 					state <= 10;
 				end if;
-			elsif state = 11 then
+			elsif state = 10 then
 				if m_axis_data_tvalid = '1' then
 					ram2_wea <= "1";
 					ram2_addra_s <= std_logic_vector(unsigned(ram2_addra_s) + 1);
