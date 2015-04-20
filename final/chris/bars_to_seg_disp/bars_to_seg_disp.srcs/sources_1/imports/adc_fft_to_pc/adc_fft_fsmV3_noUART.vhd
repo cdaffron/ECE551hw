@@ -106,6 +106,7 @@ begin
 				finished <= '0';
 				ram1_addra_s <= (others => '0');
 				ram2_addra_s <= (others => '0');
+				ram2_wea <= "0";
 				ram2_rst <= '0';
 				fft_config(8) <= '1'; -- fwd fft
 				fft_config(7 downto 5) <= "000"; -- filler data
@@ -213,16 +214,23 @@ begin
 			elsif state = 10 then
 				if m_axis_data_tvalid = '1' then
 					ram2_wea <= "1";
+					state <= 11;
+				else
+					state <= 10;
+				end if;
+			elsif state = 11 then
+				if m_axis_data_tvalid = '1' then
+					ram2_wea <= "1";
 					ram2_addra_s <= std_logic_vector(unsigned(ram2_addra_s) + 1);
 					if m_axis_data_tlast = '1' then	
 						finished <= '1';
 						state <= 0;
 					else
-						state <= 10;
+						state <= 11;
 					end if;
 				else
 					ram2_wea <= "0";
-					state <= 10;
+					state <= 11;
 				end if;
 			end if;
 		end if;

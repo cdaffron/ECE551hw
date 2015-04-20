@@ -31,46 +31,125 @@
     </probe>
     <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
       <probeOptions Id="DebugProbeParams">
-        <Option Id="COMPARE_VALUE.0" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq16&apos;hXXXX"/>
         <Option Id="CORE_LOCATION" value="1:1"/>
         <Option Id="HW_ILA" value="u_ila_0"/>
         <Option Id="PROBE_PORT" value="0"/>
         <Option Id="PROBE_PORT_BITS" value="0"/>
-        <Option Id="PROBE_PORT_BIT_COUNT" value="32"/>
+        <Option Id="PROBE_PORT_BIT_COUNT" value="16"/>
       </probeOptions>
       <nets>
-        <net name="m_axis_data_tdata[31]"/>
-        <net name="m_axis_data_tdata[30]"/>
-        <net name="m_axis_data_tdata[29]"/>
-        <net name="m_axis_data_tdata[28]"/>
-        <net name="m_axis_data_tdata[27]"/>
-        <net name="m_axis_data_tdata[26]"/>
-        <net name="m_axis_data_tdata[25]"/>
-        <net name="m_axis_data_tdata[24]"/>
-        <net name="m_axis_data_tdata[23]"/>
-        <net name="m_axis_data_tdata[22]"/>
-        <net name="m_axis_data_tdata[21]"/>
-        <net name="m_axis_data_tdata[20]"/>
-        <net name="m_axis_data_tdata[19]"/>
-        <net name="m_axis_data_tdata[18]"/>
-        <net name="m_axis_data_tdata[17]"/>
-        <net name="m_axis_data_tdata[16]"/>
-        <net name="m_axis_data_tdata[15]"/>
-        <net name="m_axis_data_tdata[14]"/>
-        <net name="m_axis_data_tdata[13]"/>
-        <net name="m_axis_data_tdata[12]"/>
-        <net name="m_axis_data_tdata[11]"/>
-        <net name="m_axis_data_tdata[10]"/>
-        <net name="m_axis_data_tdata[9]"/>
-        <net name="m_axis_data_tdata[8]"/>
-        <net name="m_axis_data_tdata[7]"/>
-        <net name="m_axis_data_tdata[6]"/>
-        <net name="m_axis_data_tdata[5]"/>
-        <net name="m_axis_data_tdata[4]"/>
-        <net name="m_axis_data_tdata[3]"/>
-        <net name="m_axis_data_tdata[2]"/>
-        <net name="m_axis_data_tdata[1]"/>
-        <net name="m_axis_data_tdata[0]"/>
+        <net name="disp_draw_inst/imagVal[15]"/>
+        <net name="disp_draw_inst/imagVal[14]"/>
+        <net name="disp_draw_inst/imagVal[13]"/>
+        <net name="disp_draw_inst/imagVal[12]"/>
+        <net name="disp_draw_inst/imagVal[11]"/>
+        <net name="disp_draw_inst/imagVal[10]"/>
+        <net name="disp_draw_inst/imagVal[9]"/>
+        <net name="disp_draw_inst/imagVal[8]"/>
+        <net name="disp_draw_inst/imagVal[7]"/>
+        <net name="disp_draw_inst/imagVal[6]"/>
+        <net name="disp_draw_inst/imagVal[5]"/>
+        <net name="disp_draw_inst/imagVal[4]"/>
+        <net name="disp_draw_inst/imagVal[3]"/>
+        <net name="disp_draw_inst/imagVal[2]"/>
+        <net name="disp_draw_inst/imagVal[1]"/>
+        <net name="disp_draw_inst/imagVal[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="COMPARE_VALUE.0" value="eq17&apos;hX_XXXX"/>
+        <Option Id="CORE_LOCATION" value="1:1"/>
+        <Option Id="HW_ILA" value="u_ila_0"/>
+        <Option Id="PROBE_PORT" value="1"/>
+        <Option Id="PROBE_PORT_BITS" value="0"/>
+        <Option Id="PROBE_PORT_BIT_COUNT" value="17"/>
+      </probeOptions>
+      <nets>
+        <net name="disp_draw_inst/mag[16]"/>
+        <net name="disp_draw_inst/mag[15]"/>
+        <net name="disp_draw_inst/mag[14]"/>
+        <net name="disp_draw_inst/mag[13]"/>
+        <net name="disp_draw_inst/mag[12]"/>
+        <net name="disp_draw_inst/mag[11]"/>
+        <net name="disp_draw_inst/mag[10]"/>
+        <net name="disp_draw_inst/mag[9]"/>
+        <net name="disp_draw_inst/mag[8]"/>
+        <net name="disp_draw_inst/mag[7]"/>
+        <net name="disp_draw_inst/mag[6]"/>
+        <net name="disp_draw_inst/mag[5]"/>
+        <net name="disp_draw_inst/mag[4]"/>
+        <net name="disp_draw_inst/mag[3]"/>
+        <net name="disp_draw_inst/mag[2]"/>
+        <net name="disp_draw_inst/mag[1]"/>
+        <net name="disp_draw_inst/mag[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="COMPARE_VALUE.0" value="eq16&apos;hXXXX"/>
+        <Option Id="CORE_LOCATION" value="1:1"/>
+        <Option Id="HW_ILA" value="u_ila_0"/>
+        <Option Id="PROBE_PORT" value="2"/>
+        <Option Id="PROBE_PORT_BITS" value="0"/>
+        <Option Id="PROBE_PORT_BIT_COUNT" value="16"/>
+      </probeOptions>
+      <nets>
+        <net name="disp_draw_inst/realVal[15]"/>
+        <net name="disp_draw_inst/realVal[14]"/>
+        <net name="disp_draw_inst/realVal[13]"/>
+        <net name="disp_draw_inst/realVal[12]"/>
+        <net name="disp_draw_inst/realVal[11]"/>
+        <net name="disp_draw_inst/realVal[10]"/>
+        <net name="disp_draw_inst/realVal[9]"/>
+        <net name="disp_draw_inst/realVal[8]"/>
+        <net name="disp_draw_inst/realVal[7]"/>
+        <net name="disp_draw_inst/realVal[6]"/>
+        <net name="disp_draw_inst/realVal[5]"/>
+        <net name="disp_draw_inst/realVal[4]"/>
+        <net name="disp_draw_inst/realVal[3]"/>
+        <net name="disp_draw_inst/realVal[2]"/>
+        <net name="disp_draw_inst/realVal[1]"/>
+        <net name="disp_draw_inst/realVal[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="COMPARE_VALUE.0" value="eq8&apos;hXX"/>
+        <Option Id="CORE_LOCATION" value="1:1"/>
+        <Option Id="HW_ILA" value="u_ila_0"/>
+        <Option Id="PROBE_PORT" value="3"/>
+        <Option Id="PROBE_PORT_BITS" value="0"/>
+        <Option Id="PROBE_PORT_BIT_COUNT" value="8"/>
+      </probeOptions>
+      <nets>
+        <net name="disp_draw_inst/counter2[7]"/>
+        <net name="disp_draw_inst/counter2[6]"/>
+        <net name="disp_draw_inst/counter2[5]"/>
+        <net name="disp_draw_inst/counter2[4]"/>
+        <net name="disp_draw_inst/counter2[3]"/>
+        <net name="disp_draw_inst/counter2[2]"/>
+        <net name="disp_draw_inst/counter2[1]"/>
+        <net name="disp_draw_inst/counter2[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="COMPARE_VALUE.0" value="eq6&apos;hXX"/>
+        <Option Id="CORE_LOCATION" value="1:1"/>
+        <Option Id="HW_ILA" value="u_ila_0"/>
+        <Option Id="PROBE_PORT" value="4"/>
+        <Option Id="PROBE_PORT_BITS" value="0"/>
+        <Option Id="PROBE_PORT_BIT_COUNT" value="6"/>
+      </probeOptions>
+      <nets>
+        <net name="disp_draw_inst/barNumOut[5]"/>
+        <net name="disp_draw_inst/barNumOut[4]"/>
+        <net name="disp_draw_inst/barNumOut[3]"/>
+        <net name="disp_draw_inst/barNumOut[2]"/>
+        <net name="disp_draw_inst/barNumOut[1]"/>
+        <net name="disp_draw_inst/barNumOut[0]"/>
       </nets>
     </probe>
     <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
@@ -78,7 +157,7 @@
         <Option Id="COMPARE_VALUE.0" value="eq32&apos;hXXXX_XXXX"/>
         <Option Id="CORE_LOCATION" value="1:1"/>
         <Option Id="HW_ILA" value="u_ila_0"/>
-        <Option Id="PROBE_PORT" value="1"/>
+        <Option Id="PROBE_PORT" value="5"/>
         <Option Id="PROBE_PORT_BITS" value="0"/>
         <Option Id="PROBE_PORT_BIT_COUNT" value="32"/>
       </probeOptions>
@@ -119,10 +198,54 @@
     </probe>
     <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
       <probeOptions Id="DebugProbeParams">
+        <Option Id="COMPARE_VALUE.0" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="CORE_LOCATION" value="1:1"/>
+        <Option Id="HW_ILA" value="u_ila_0"/>
+        <Option Id="PROBE_PORT" value="6"/>
+        <Option Id="PROBE_PORT_BITS" value="0"/>
+        <Option Id="PROBE_PORT_BIT_COUNT" value="32"/>
+      </probeOptions>
+      <nets>
+        <net name="m_axis_data_tdata[31]"/>
+        <net name="m_axis_data_tdata[30]"/>
+        <net name="m_axis_data_tdata[29]"/>
+        <net name="m_axis_data_tdata[28]"/>
+        <net name="m_axis_data_tdata[27]"/>
+        <net name="m_axis_data_tdata[26]"/>
+        <net name="m_axis_data_tdata[25]"/>
+        <net name="m_axis_data_tdata[24]"/>
+        <net name="m_axis_data_tdata[23]"/>
+        <net name="m_axis_data_tdata[22]"/>
+        <net name="m_axis_data_tdata[21]"/>
+        <net name="m_axis_data_tdata[20]"/>
+        <net name="m_axis_data_tdata[19]"/>
+        <net name="m_axis_data_tdata[18]"/>
+        <net name="m_axis_data_tdata[17]"/>
+        <net name="m_axis_data_tdata[16]"/>
+        <net name="m_axis_data_tdata[15]"/>
+        <net name="m_axis_data_tdata[14]"/>
+        <net name="m_axis_data_tdata[13]"/>
+        <net name="m_axis_data_tdata[12]"/>
+        <net name="m_axis_data_tdata[11]"/>
+        <net name="m_axis_data_tdata[10]"/>
+        <net name="m_axis_data_tdata[9]"/>
+        <net name="m_axis_data_tdata[8]"/>
+        <net name="m_axis_data_tdata[7]"/>
+        <net name="m_axis_data_tdata[6]"/>
+        <net name="m_axis_data_tdata[5]"/>
+        <net name="m_axis_data_tdata[4]"/>
+        <net name="m_axis_data_tdata[3]"/>
+        <net name="m_axis_data_tdata[2]"/>
+        <net name="m_axis_data_tdata[1]"/>
+        <net name="m_axis_data_tdata[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
         <Option Id="COMPARE_VALUE.0" value="eq10&apos;hXXX"/>
         <Option Id="CORE_LOCATION" value="1:1"/>
         <Option Id="HW_ILA" value="u_ila_0"/>
-        <Option Id="PROBE_PORT" value="2"/>
+        <Option Id="PROBE_PORT" value="7"/>
         <Option Id="PROBE_PORT_BITS" value="0"/>
         <Option Id="PROBE_PORT_BIT_COUNT" value="10"/>
       </probeOptions>
@@ -141,28 +264,10 @@
     </probe>
     <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
       <probeOptions Id="DebugProbeParams">
-        <Option Id="COMPARE_VALUE.0" value="eq6&apos;hXX"/>
-        <Option Id="CORE_LOCATION" value="1:1"/>
-        <Option Id="HW_ILA" value="u_ila_0"/>
-        <Option Id="PROBE_PORT" value="3"/>
-        <Option Id="PROBE_PORT_BITS" value="0"/>
-        <Option Id="PROBE_PORT_BIT_COUNT" value="6"/>
-      </probeOptions>
-      <nets>
-        <net name="disp_draw_inst/barNumOut[5]"/>
-        <net name="disp_draw_inst/barNumOut[4]"/>
-        <net name="disp_draw_inst/barNumOut[3]"/>
-        <net name="disp_draw_inst/barNumOut[2]"/>
-        <net name="disp_draw_inst/barNumOut[1]"/>
-        <net name="disp_draw_inst/barNumOut[0]"/>
-      </nets>
-    </probe>
-    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
-      <probeOptions Id="DebugProbeParams">
         <Option Id="COMPARE_VALUE.0" value="eq16&apos;hXXXX"/>
         <Option Id="CORE_LOCATION" value="1:1"/>
         <Option Id="HW_ILA" value="u_ila_0"/>
-        <Option Id="PROBE_PORT" value="4"/>
+        <Option Id="PROBE_PORT" value="8"/>
         <Option Id="PROBE_PORT_BITS" value="0"/>
         <Option Id="PROBE_PORT_BIT_COUNT" value="16"/>
       </probeOptions>
@@ -185,111 +290,6 @@
         <net name="disp_draw_inst/average[0]"/>
       </nets>
     </probe>
-    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
-      <probeOptions Id="DebugProbeParams">
-        <Option Id="COMPARE_VALUE.0" value="eq16&apos;hXXXX"/>
-        <Option Id="CORE_LOCATION" value="1:1"/>
-        <Option Id="HW_ILA" value="u_ila_0"/>
-        <Option Id="PROBE_PORT" value="5"/>
-        <Option Id="PROBE_PORT_BITS" value="0"/>
-        <Option Id="PROBE_PORT_BIT_COUNT" value="16"/>
-      </probeOptions>
-      <nets>
-        <net name="disp_draw_inst/imagVal[15]"/>
-        <net name="disp_draw_inst/imagVal[14]"/>
-        <net name="disp_draw_inst/imagVal[13]"/>
-        <net name="disp_draw_inst/imagVal[12]"/>
-        <net name="disp_draw_inst/imagVal[11]"/>
-        <net name="disp_draw_inst/imagVal[10]"/>
-        <net name="disp_draw_inst/imagVal[9]"/>
-        <net name="disp_draw_inst/imagVal[8]"/>
-        <net name="disp_draw_inst/imagVal[7]"/>
-        <net name="disp_draw_inst/imagVal[6]"/>
-        <net name="disp_draw_inst/imagVal[5]"/>
-        <net name="disp_draw_inst/imagVal[4]"/>
-        <net name="disp_draw_inst/imagVal[3]"/>
-        <net name="disp_draw_inst/imagVal[2]"/>
-        <net name="disp_draw_inst/imagVal[1]"/>
-        <net name="disp_draw_inst/imagVal[0]"/>
-      </nets>
-    </probe>
-    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
-      <probeOptions Id="DebugProbeParams">
-        <Option Id="COMPARE_VALUE.0" value="eq8&apos;hXX"/>
-        <Option Id="CORE_LOCATION" value="1:1"/>
-        <Option Id="HW_ILA" value="u_ila_0"/>
-        <Option Id="PROBE_PORT" value="6"/>
-        <Option Id="PROBE_PORT_BITS" value="0"/>
-        <Option Id="PROBE_PORT_BIT_COUNT" value="8"/>
-      </probeOptions>
-      <nets>
-        <net name="disp_draw_inst/counter2[7]"/>
-        <net name="disp_draw_inst/counter2[6]"/>
-        <net name="disp_draw_inst/counter2[5]"/>
-        <net name="disp_draw_inst/counter2[4]"/>
-        <net name="disp_draw_inst/counter2[3]"/>
-        <net name="disp_draw_inst/counter2[2]"/>
-        <net name="disp_draw_inst/counter2[1]"/>
-        <net name="disp_draw_inst/counter2[0]"/>
-      </nets>
-    </probe>
-    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
-      <probeOptions Id="DebugProbeParams">
-        <Option Id="COMPARE_VALUE.0" value="eq17&apos;hX_XXXX"/>
-        <Option Id="CORE_LOCATION" value="1:1"/>
-        <Option Id="HW_ILA" value="u_ila_0"/>
-        <Option Id="PROBE_PORT" value="7"/>
-        <Option Id="PROBE_PORT_BITS" value="0"/>
-        <Option Id="PROBE_PORT_BIT_COUNT" value="17"/>
-      </probeOptions>
-      <nets>
-        <net name="disp_draw_inst/mag[16]"/>
-        <net name="disp_draw_inst/mag[15]"/>
-        <net name="disp_draw_inst/mag[14]"/>
-        <net name="disp_draw_inst/mag[13]"/>
-        <net name="disp_draw_inst/mag[12]"/>
-        <net name="disp_draw_inst/mag[11]"/>
-        <net name="disp_draw_inst/mag[10]"/>
-        <net name="disp_draw_inst/mag[9]"/>
-        <net name="disp_draw_inst/mag[8]"/>
-        <net name="disp_draw_inst/mag[7]"/>
-        <net name="disp_draw_inst/mag[6]"/>
-        <net name="disp_draw_inst/mag[5]"/>
-        <net name="disp_draw_inst/mag[4]"/>
-        <net name="disp_draw_inst/mag[3]"/>
-        <net name="disp_draw_inst/mag[2]"/>
-        <net name="disp_draw_inst/mag[1]"/>
-        <net name="disp_draw_inst/mag[0]"/>
-      </nets>
-    </probe>
-    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
-      <probeOptions Id="DebugProbeParams">
-        <Option Id="COMPARE_VALUE.0" value="eq16&apos;hXXXX"/>
-        <Option Id="CORE_LOCATION" value="1:1"/>
-        <Option Id="HW_ILA" value="u_ila_0"/>
-        <Option Id="PROBE_PORT" value="8"/>
-        <Option Id="PROBE_PORT_BITS" value="0"/>
-        <Option Id="PROBE_PORT_BIT_COUNT" value="16"/>
-      </probeOptions>
-      <nets>
-        <net name="disp_draw_inst/realVal[15]"/>
-        <net name="disp_draw_inst/realVal[14]"/>
-        <net name="disp_draw_inst/realVal[13]"/>
-        <net name="disp_draw_inst/realVal[12]"/>
-        <net name="disp_draw_inst/realVal[11]"/>
-        <net name="disp_draw_inst/realVal[10]"/>
-        <net name="disp_draw_inst/realVal[9]"/>
-        <net name="disp_draw_inst/realVal[8]"/>
-        <net name="disp_draw_inst/realVal[7]"/>
-        <net name="disp_draw_inst/realVal[6]"/>
-        <net name="disp_draw_inst/realVal[5]"/>
-        <net name="disp_draw_inst/realVal[4]"/>
-        <net name="disp_draw_inst/realVal[3]"/>
-        <net name="disp_draw_inst/realVal[2]"/>
-        <net name="disp_draw_inst/realVal[1]"/>
-        <net name="disp_draw_inst/realVal[0]"/>
-      </nets>
-    </probe>
     <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
       <probeOptions Id="DebugProbeParams">
         <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
@@ -300,10 +300,10 @@
         <Option Id="PROBE_PORT_BIT_COUNT" value="1"/>
       </probeOptions>
       <nets>
-        <net name="disp_draw_inst/magValid"/>
+        <net name="fft/event_frame_started"/>
       </nets>
     </probe>
-    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
       <probeOptions Id="DebugProbeParams">
         <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
         <Option Id="CORE_LOCATION" value="1:1"/>
@@ -313,10 +313,10 @@
         <Option Id="PROBE_PORT_BIT_COUNT" value="1"/>
       </probeOptions>
       <nets>
-        <net name="disp_draw_inst/n_0_barNumIn_reg[0]"/>
+        <net name="fft/m_axis_data_tlast"/>
       </nets>
     </probe>
-    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
       <probeOptions Id="DebugProbeParams">
         <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
         <Option Id="CORE_LOCATION" value="1:1"/>
@@ -326,10 +326,10 @@
         <Option Id="PROBE_PORT_BIT_COUNT" value="1"/>
       </probeOptions>
       <nets>
-        <net name="disp_draw_inst/n_0_barNumIn_reg_1[1]"/>
+        <net name="fft/m_axis_data_tready"/>
       </nets>
     </probe>
-    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
       <probeOptions Id="DebugProbeParams">
         <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
         <Option Id="CORE_LOCATION" value="1:1"/>
@@ -339,10 +339,10 @@
         <Option Id="PROBE_PORT_BIT_COUNT" value="1"/>
       </probeOptions>
       <nets>
-        <net name="disp_draw_inst/n_0_barNumIn_reg_2[2]"/>
+        <net name="fft/m_axis_data_tvalid"/>
       </nets>
     </probe>
-    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
       <probeOptions Id="DebugProbeParams">
         <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
         <Option Id="CORE_LOCATION" value="1:1"/>
@@ -352,10 +352,10 @@
         <Option Id="PROBE_PORT_BIT_COUNT" value="1"/>
       </probeOptions>
       <nets>
-        <net name="disp_draw_inst/n_0_barNumIn_reg_3[3]"/>
+        <net name="disp_draw_inst/magValid"/>
       </nets>
     </probe>
-    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
       <probeOptions Id="DebugProbeParams">
         <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
         <Option Id="CORE_LOCATION" value="1:1"/>
@@ -365,10 +365,10 @@
         <Option Id="PROBE_PORT_BIT_COUNT" value="1"/>
       </probeOptions>
       <nets>
-        <net name="disp_draw_inst/n_0_barNumIn_reg_4[4]"/>
+        <net name="n_106_fft_fsm"/>
       </nets>
     </probe>
-    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
       <probeOptions Id="DebugProbeParams">
         <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
         <Option Id="CORE_LOCATION" value="1:1"/>
@@ -378,7 +378,7 @@
         <Option Id="PROBE_PORT_BIT_COUNT" value="1"/>
       </probeOptions>
       <nets>
-        <net name="disp_draw_inst/n_0_barNumIn_reg_5[5]"/>
+        <net name="n_107_fft_fsm"/>
       </nets>
     </probe>
     <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
@@ -391,7 +391,7 @@
         <Option Id="PROBE_PORT_BIT_COUNT" value="1"/>
       </probeOptions>
       <nets>
-        <net name="disp_draw_inst/n_0_inValid_reg"/>
+        <net name="n_108_fft_fsm"/>
       </nets>
     </probe>
     <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
@@ -404,7 +404,7 @@
         <Option Id="PROBE_PORT_BIT_COUNT" value="1"/>
       </probeOptions>
       <nets>
-        <net name="n_53_fft_fsm"/>
+        <net name="n_109_fft_fsm"/>
       </nets>
     </probe>
     <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
@@ -417,7 +417,7 @@
         <Option Id="PROBE_PORT_BIT_COUNT" value="1"/>
       </probeOptions>
       <nets>
-        <net name="n_54_fft_fsm"/>
+        <net name="n_110_fft_fsm"/>
       </nets>
     </probe>
     <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
@@ -430,7 +430,7 @@
         <Option Id="PROBE_PORT_BIT_COUNT" value="1"/>
       </probeOptions>
       <nets>
-        <net name="n_55_fft_fsm"/>
+        <net name="n_111_fft_fsm"/>
       </nets>
     </probe>
     <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
@@ -443,7 +443,7 @@
         <Option Id="PROBE_PORT_BIT_COUNT" value="1"/>
       </probeOptions>
       <nets>
-        <net name="n_56_fft_fsm"/>
+        <net name="n_112_fft_fsm"/>
       </nets>
     </probe>
     <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
@@ -456,7 +456,7 @@
         <Option Id="PROBE_PORT_BIT_COUNT" value="1"/>
       </probeOptions>
       <nets>
-        <net name="n_57_fft_fsm"/>
+        <net name="n_113_fft_fsm"/>
       </nets>
     </probe>
     <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
@@ -469,7 +469,7 @@
         <Option Id="PROBE_PORT_BIT_COUNT" value="1"/>
       </probeOptions>
       <nets>
-        <net name="n_58_fft_fsm"/>
+        <net name="n_114_fft_fsm"/>
       </nets>
     </probe>
     <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
@@ -482,7 +482,7 @@
         <Option Id="PROBE_PORT_BIT_COUNT" value="1"/>
       </probeOptions>
       <nets>
-        <net name="n_59_fft_fsm"/>
+        <net name="n_115_fft_fsm"/>
       </nets>
     </probe>
     <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
@@ -495,7 +495,7 @@
         <Option Id="PROBE_PORT_BIT_COUNT" value="1"/>
       </probeOptions>
       <nets>
-        <net name="n_60_fft_fsm"/>
+        <net name="n_116_fft_fsm"/>
       </nets>
     </probe>
     <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
@@ -508,7 +508,7 @@
         <Option Id="PROBE_PORT_BIT_COUNT" value="1"/>
       </probeOptions>
       <nets>
-        <net name="n_61_fft_fsm"/>
+        <net name="n_117_fft_fsm"/>
       </nets>
     </probe>
     <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
@@ -521,7 +521,7 @@
         <Option Id="PROBE_PORT_BIT_COUNT" value="1"/>
       </probeOptions>
       <nets>
-        <net name="n_62_fft_fsm"/>
+        <net name="n_118_fft_fsm"/>
       </nets>
     </probe>
     <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
