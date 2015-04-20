@@ -258,7 +258,7 @@ begin
     process( clk1k )
         variable index : integer;
     begin
-        index := to_integer(unsigned(sw(15 downto 11)));
+        index := to_integer(unsigned(sw(15 downto 10)));
 --        seven_seg_data(16 downto 0) <= fullBarHeights(index);
 --        seven_seg_data(31 downto 17) <= "000000000000000";
         seven_seg_data(31 downto 28) <= fullBarHeights(index)(3 downto 0);

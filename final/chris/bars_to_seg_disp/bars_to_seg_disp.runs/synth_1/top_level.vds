@@ -2,8 +2,8 @@
 # Vivado v2014.2 (64-bit)
 # SW Build 932637 on Wed Jun 11 13:08:52 MDT 2014
 # IP Build 924643 on Fri May 30 09:20:16 MDT 2014
-# Start of session at: Mon Apr 20 09:28:42 2015
-# Process ID: 7345
+# Start of session at: Mon Apr 20 11:25:57 2015
+# Process ID: 19293
 # Log file: /data1/cdaffron/git/ece551hw/final/chris/bars_to_seg_disp/bars_to_seg_disp.runs/synth_1/top_level.vds
 # Journal file: /data1/cdaffron/git/ece551hw/final/chris/bars_to_seg_disp/bars_to_seg_disp.runs/synth_1/vivado.jou
 #-----------------------------------------------------------
@@ -64,7 +64,7 @@ Starting synthesis...
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 846.566 ; gain = 156.125
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 846.559 ; gain = 156.125
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'top_level' [/data1/cdaffron/git/ece551hw/final/chris/bars_to_seg_disp/bars_to_seg_disp.srcs/sources_1/new/top_level.vhd:50]
 INFO: [Synth 8-3491] module 'disp_draw' declared at '/data1/cdaffron/git/ece551hw/final/chris/bars_to_seg_disp/bars_to_seg_disp.srcs/sources_1/imports/chris/disp_draw/disp_draw.srcs/sources_1/new/disp_draw.vhd:42' bound to instance 'disp_draw_inst' of component 'disp_draw' [/data1/cdaffron/git/ece551hw/final/chris/bars_to_seg_disp/bars_to_seg_disp.srcs/sources_1/new/top_level.vhd:115]
@@ -85,12 +85,12 @@ INFO: [Synth 8-638] synthesizing module 'adc_fft_fsmV3' [/data1/cdaffron/git/ece
 INFO: [Synth 8-4472] Detected and applied attribute keep = true [/data1/cdaffron/git/ece551hw/final/chris/bars_to_seg_disp/bars_to_seg_disp.srcs/sources_1/imports/adc_fft_to_pc/adc_fft_fsmV3_noUART.vhd:66]
 INFO: [Synth 8-4472] Detected and applied attribute keep = true [/data1/cdaffron/git/ece551hw/final/chris/bars_to_seg_disp/bars_to_seg_disp.srcs/sources_1/imports/adc_fft_to_pc/adc_fft_fsmV3_noUART.vhd:67]
 INFO: [Synth 8-256] done synthesizing module 'adc_fft_fsmV3' (4#1) [/data1/cdaffron/git/ece551hw/final/chris/bars_to_seg_disp/bars_to_seg_disp.srcs/sources_1/imports/adc_fft_to_pc/adc_fft_fsmV3_noUART.vhd:63]
-INFO: [Synth 8-638] synthesizing module 'xfft_0' [/data1/cdaffron/git/ece551hw/final/chris/bars_to_seg_disp/bars_to_seg_disp.runs/synth_1/.Xil/Vivado-7345-com1549.eecs.utk.edu/realtime/xfft_0_stub.vhdl:35]
-INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_0' [/data1/cdaffron/git/ece551hw/final/chris/bars_to_seg_disp/bars_to_seg_disp.runs/synth_1/.Xil/Vivado-7345-com1549.eecs.utk.edu/realtime/blk_mem_gen_0_stub.vhdl:18]
-INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_1' [/data1/cdaffron/git/ece551hw/final/chris/bars_to_seg_disp/bars_to_seg_disp.runs/synth_1/.Xil/Vivado-7345-com1549.eecs.utk.edu/realtime/blk_mem_gen_1_stub.vhdl:20]
-INFO: [Synth 8-638] synthesizing module 'clk_wiz_0' [/data1/cdaffron/git/ece551hw/final/chris/bars_to_seg_disp/bars_to_seg_disp.runs/synth_1/.Xil/Vivado-7345-com1549.eecs.utk.edu/realtime/clk_wiz_0_stub.vhdl:17]
-INFO: [Synth 8-638] synthesizing module 'vio_0' [/data1/cdaffron/git/ece551hw/final/chris/bars_to_seg_disp/bars_to_seg_disp.runs/synth_1/.Xil/Vivado-7345-com1549.eecs.utk.edu/realtime/vio_0_stub.vhdl:14]
-INFO: [Synth 8-638] synthesizing module 'c_counter_binary_0' [/data1/cdaffron/git/ece551hw/final/chris/bars_to_seg_disp/bars_to_seg_disp.runs/synth_1/.Xil/Vivado-7345-com1549.eecs.utk.edu/realtime/c_counter_binary_0_stub.vhdl:13]
+INFO: [Synth 8-638] synthesizing module 'xfft_0' [/data1/cdaffron/git/ece551hw/final/chris/bars_to_seg_disp/bars_to_seg_disp.runs/synth_1/.Xil/Vivado-19293-com1549.eecs.utk.edu/realtime/xfft_0_stub.vhdl:35]
+INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_0' [/data1/cdaffron/git/ece551hw/final/chris/bars_to_seg_disp/bars_to_seg_disp.runs/synth_1/.Xil/Vivado-19293-com1549.eecs.utk.edu/realtime/blk_mem_gen_0_stub.vhdl:18]
+INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_1' [/data1/cdaffron/git/ece551hw/final/chris/bars_to_seg_disp/bars_to_seg_disp.runs/synth_1/.Xil/Vivado-19293-com1549.eecs.utk.edu/realtime/blk_mem_gen_1_stub.vhdl:20]
+INFO: [Synth 8-638] synthesizing module 'clk_wiz_0' [/data1/cdaffron/git/ece551hw/final/chris/bars_to_seg_disp/bars_to_seg_disp.runs/synth_1/.Xil/Vivado-19293-com1549.eecs.utk.edu/realtime/clk_wiz_0_stub.vhdl:17]
+INFO: [Synth 8-638] synthesizing module 'vio_0' [/data1/cdaffron/git/ece551hw/final/chris/bars_to_seg_disp/bars_to_seg_disp.runs/synth_1/.Xil/Vivado-19293-com1549.eecs.utk.edu/realtime/vio_0_stub.vhdl:14]
+INFO: [Synth 8-638] synthesizing module 'c_counter_binary_0' [/data1/cdaffron/git/ece551hw/final/chris/bars_to_seg_disp/bars_to_seg_disp.runs/synth_1/.Xil/Vivado-19293-com1549.eecs.utk.edu/realtime/c_counter_binary_0_stub.vhdl:13]
 INFO: [Synth 8-638] synthesizing module 'CDiv' [/data1/cdaffron/git/ece551hw/final/chris/bars_to_seg_disp/bars_to_seg_disp.srcs/sources_1/imports/new/CDiv.vhd:24]
 WARNING: [Synth 8-614] signal 'D' is read in the process but is not in the sensitivity list [/data1/cdaffron/git/ece551hw/final/chris/bars_to_seg_disp/bars_to_seg_disp.srcs/sources_1/imports/new/CDiv.vhd:30]
 INFO: [Synth 8-256] done synthesizing module 'CDiv' (5#1) [/data1/cdaffron/git/ece551hw/final/chris/bars_to_seg_disp/bars_to_seg_disp.srcs/sources_1/imports/new/CDiv.vhd:24]
@@ -120,7 +120,7 @@ WARNING: [Synth 8-3331] design top_level has unconnected port din[2]
 WARNING: [Synth 8-3331] design top_level has unconnected port din[1]
 WARNING: [Synth 8-3331] design top_level has unconnected port din[0]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 935.449 ; gain = 245.008
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 935.441 ; gain = 245.008
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Optimization
@@ -141,8 +141,8 @@ Loading io standards from /opt/Xilinx/Vivado/2014.2/data/./parts/xilinx/artix7/I
 Loading device configuration modes from /opt/Xilinx/Vivado/2014.2/data/parts/xilinx/artix7/ConfigModes.xml
 
 Processing XDC Constraints
-Parsing XDC File [/data1/cdaffron/git/ece551hw/final/chris/bars_to_seg_disp/bars_to_seg_disp.runs/synth_1/.Xil/Vivado-7345-com1549.eecs.utk.edu/dcp_7/clk_wiz_0_in_context.xdc] for cell 'clk_debug'
-Finished Parsing XDC File [/data1/cdaffron/git/ece551hw/final/chris/bars_to_seg_disp/bars_to_seg_disp.runs/synth_1/.Xil/Vivado-7345-com1549.eecs.utk.edu/dcp_7/clk_wiz_0_in_context.xdc] for cell 'clk_debug'
+Parsing XDC File [/data1/cdaffron/git/ece551hw/final/chris/bars_to_seg_disp/bars_to_seg_disp.runs/synth_1/.Xil/Vivado-19293-com1549.eecs.utk.edu/dcp_7/clk_wiz_0_in_context.xdc] for cell 'clk_debug'
+Finished Parsing XDC File [/data1/cdaffron/git/ece551hw/final/chris/bars_to_seg_disp/bars_to_seg_disp.runs/synth_1/.Xil/Vivado-19293-com1549.eecs.utk.edu/dcp_7/clk_wiz_0_in_context.xdc] for cell 'clk_debug'
 Parsing XDC File [/data1/cdaffron/git/ece551hw/final/chris/bars_to_seg_disp/bars_to_seg_disp.srcs/constrs_1/imports/lab2/Nexys4_Master.xdc]
 WARNING: [Vivado 12-507] No nets matched 'disp_draw_inst/n_0_barNumIn_reg[5]'. [/data1/cdaffron/git/ece551hw/final/chris/bars_to_seg_disp/bars_to_seg_disp.srcs/constrs_1/imports/lab2/Nexys4_Master.xdc:817]
 WARNING: [Vivado 12-507] No nets matched 'disp_draw_inst/n_0_barNumIn_reg[2]'. [/data1/cdaffron/git/ece551hw/final/chris/bars_to_seg_disp/bars_to_seg_disp.srcs/constrs_1/imports/lab2/Nexys4_Master.xdc:818]
@@ -170,7 +170,7 @@ Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1226.223 ; gain = 535.781
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 1226.215 ; gain = 535.781
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -184,10 +184,10 @@ Applied set_property MARK_DEBUG = true for FFT_addr[6]. (constraint file  /data1
 Applied set_property MARK_DEBUG = true for FFT_data[28]. (constraint file  /data1/cdaffron/git/ece551hw/final/chris/bars_to_seg_disp/bars_to_seg_disp.srcs/constrs_1/imports/lab2/Nexys4_Master.xdc, line 890).
 Applied set_property BUFFER_TYPE = NONE for clk. (constraint file  /data1/cdaffron/git/ece551hw/final/chris/bars_to_seg_disp/bars_to_seg_disp.runs/synth_1/dont_buffer.xdc, line 12).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1226.223 ; gain = 535.781
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1226.215 ; gain = 535.781
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1226.223 ; gain = 535.781
+Finished RTL Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1226.215 ; gain = 535.781
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 's_curr_reg' in module 'disp_draw'
 INFO: [Synth 8-3354] encoded FSM with state register 's_curr_reg' using encoding 'one-hot' in module 'disp_draw'
@@ -223,37 +223,37 @@ Detailed RTL Component Info :
 	                1 Bit    Registers := 20    
 +---Muxes : 
 	  26 Input     18 Bit        Muxes := 1     
-	   3 Input     16 Bit        Muxes := 1     
-	   2 Input     16 Bit        Muxes := 3     
 	  18 Input     16 Bit        Muxes := 66    
+	   2 Input     16 Bit        Muxes := 3     
+	   3 Input     16 Bit        Muxes := 1     
 	   2 Input     13 Bit        Muxes := 4     
-	   4 Input     13 Bit        Muxes := 1     
 	   3 Input     13 Bit        Muxes := 1     
+	   4 Input     13 Bit        Muxes := 1     
 	  18 Input     10 Bit        Muxes := 1     
 	  18 Input      8 Bit        Muxes := 2     
 	   2 Input      8 Bit        Muxes := 3     
-	  16 Input      8 Bit        Muxes := 8     
 	   3 Input      8 Bit        Muxes := 6     
 	   8 Input      8 Bit        Muxes := 1     
+	  16 Input      8 Bit        Muxes := 8     
 	  12 Input      5 Bit        Muxes := 1     
-	  18 Input      5 Bit        Muxes := 1     
 	   2 Input      5 Bit        Muxes := 1     
+	  18 Input      5 Bit        Muxes := 1     
 	   2 Input      4 Bit        Muxes := 5     
 	   2 Input      3 Bit        Muxes := 2     
 	  18 Input      2 Bit        Muxes := 1     
 	   8 Input      1 Bit        Muxes := 3     
-	   2 Input      1 Bit        Muxes := 282   
-	  18 Input      1 Bit        Muxes := 139   
+	   4 Input      1 Bit        Muxes := 3     
 	  15 Input      1 Bit        Muxes := 1     
-	  14 Input      1 Bit        Muxes := 1     
-	   6 Input      1 Bit        Muxes := 3     
-	  11 Input      1 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 282   
 	  10 Input      1 Bit        Muxes := 3     
-	   3 Input      1 Bit        Muxes := 155   
-	   7 Input      1 Bit        Muxes := 1     
 	  13 Input      1 Bit        Muxes := 1     
 	  12 Input      1 Bit        Muxes := 4     
-	   4 Input      1 Bit        Muxes := 3     
+	   3 Input      1 Bit        Muxes := 155   
+	  11 Input      1 Bit        Muxes := 3     
+	  14 Input      1 Bit        Muxes := 1     
+	   7 Input      1 Bit        Muxes := 1     
+	  18 Input      1 Bit        Muxes := 139   
+	   6 Input      1 Bit        Muxes := 3     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -304,19 +304,19 @@ Detailed RTL Component Info :
 	   3 Input      8 Bit        Muxes := 6     
 	  18 Input      5 Bit        Muxes := 1     
 	  18 Input      2 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 273   
-	  15 Input      1 Bit        Muxes := 1     
-	   6 Input      1 Bit        Muxes := 1     
-	   8 Input      1 Bit        Muxes := 2     
-	   4 Input      1 Bit        Muxes := 2     
-	  18 Input      1 Bit        Muxes := 139   
-	  14 Input      1 Bit        Muxes := 1     
-	   7 Input      1 Bit        Muxes := 1     
-	  11 Input      1 Bit        Muxes := 1     
-	  13 Input      1 Bit        Muxes := 1     
-	   3 Input      1 Bit        Muxes := 154   
 	  10 Input      1 Bit        Muxes := 1     
 	  12 Input      1 Bit        Muxes := 1     
+	  13 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 154   
+	  18 Input      1 Bit        Muxes := 139   
+	   2 Input      1 Bit        Muxes := 273   
+	  11 Input      1 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 1     
+	  15 Input      1 Bit        Muxes := 1     
+	   7 Input      1 Bit        Muxes := 1     
+	  14 Input      1 Bit        Muxes := 1     
+	   8 Input      1 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 2     
 Module adc_fft_fsmV3 
 Detailed RTL Component Info : 
 +---Adders : 
@@ -338,13 +338,13 @@ Detailed RTL Component Info :
 	   2 Input      4 Bit        Muxes := 5     
 	   2 Input      3 Bit        Muxes := 2     
 	   8 Input      1 Bit        Muxes := 1     
-	   4 Input      1 Bit        Muxes := 1     
+	  11 Input      1 Bit        Muxes := 2     
+	  10 Input      1 Bit        Muxes := 2     
+	  12 Input      1 Bit        Muxes := 3     
 	   2 Input      1 Bit        Muxes := 9     
 	   3 Input      1 Bit        Muxes := 1     
-	  10 Input      1 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 1     
 	   6 Input      1 Bit        Muxes := 2     
-	  12 Input      1 Bit        Muxes := 3     
-	  11 Input      1 Bit        Muxes := 2     
 Module CDiv 
 Detailed RTL Component Info : 
 +---Adders : 
@@ -377,7 +377,7 @@ BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
 ---------------------------------------------------------------------------------
 Finished Part Resource Summary
 ---------------------------------------------------------------------------------
-Workers Ready, Starting Parallel Section  : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1226.223 ; gain = 535.781
+Workers Ready, Starting Parallel Section  : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 1226.215 ; gain = 535.781
 ---------------------------------------------------------------------------------
 Start Cross Boundary Optimization
 ---------------------------------------------------------------------------------
@@ -398,9 +398,9 @@ WARNING: [Synth 8-3331] design top_level has unconnected port din[2]
 WARNING: [Synth 8-3331] design top_level has unconnected port din[1]
 WARNING: [Synth 8-3331] design top_level has unconnected port din[0]
 ---------------------------------------------------------------------------------
-Finished Cross Boundary Optimization : Time (s): cpu = 00:00:29 ; elapsed = 00:00:29 . Memory (MB): peak = 1226.223 ; gain = 535.781
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:28 . Memory (MB): peak = 1226.215 ; gain = 535.781
 ---------------------------------------------------------------------------------
-Finished Parallel Reinfer  : Time (s): cpu = 00:00:29 ; elapsed = 00:00:29 . Memory (MB): peak = 1226.223 ; gain = 535.781
+Finished Parallel Reinfer  : Time (s): cpu = 00:00:28 ; elapsed = 00:00:28 . Memory (MB): peak = 1226.215 ; gain = 535.781
 ---------------------------------------------------------------------------------
 Start RAM, DSP and Shift Register Reporting
 ---------------------------------------------------------------------------------
@@ -417,111 +417,111 @@ INFO: [Synth 8-3333] propagating constant 1 across sequential element (fft_fsm/m
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (fft_fsm/\s_axis_config_tdata_reg[15] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (fft_fsm/\s_axis_config_tdata_reg[7] )
 WARNING: [Synth 8-3332] Sequential element (\FSM_onehot_s_curr_reg[0] ) is unused and will be removed from module disp_draw.
-WARNING: [Synth 8-3332] Sequential element (\fullBarHeights_reg[63][8] ) is unused and will be removed from module disp_draw.
-WARNING: [Synth 8-3332] Sequential element (\fullBarHeights_reg[63][7] ) is unused and will be removed from module disp_draw.
-WARNING: [Synth 8-3332] Sequential element (\fullBarHeights_reg[63][6] ) is unused and will be removed from module disp_draw.
-WARNING: [Synth 8-3332] Sequential element (\fullBarHeights_reg[63][5] ) is unused and will be removed from module disp_draw.
-WARNING: [Synth 8-3332] Sequential element (\fullBarHeights_reg[63][4] ) is unused and will be removed from module disp_draw.
-WARNING: [Synth 8-3332] Sequential element (\fullBarHeights_reg[63][3] ) is unused and will be removed from module disp_draw.
-WARNING: [Synth 8-3332] Sequential element (\fullBarHeights_reg[63][2] ) is unused and will be removed from module disp_draw.
-WARNING: [Synth 8-3332] Sequential element (\fullBarHeights_reg[63][1] ) is unused and will be removed from module disp_draw.
-WARNING: [Synth 8-3332] Sequential element (\fullBarHeights_reg[63][0] ) is unused and will be removed from module disp_draw.
-WARNING: [Synth 8-3332] Sequential element (\fullBarHeights_reg[62][8] ) is unused and will be removed from module disp_draw.
-WARNING: [Synth 8-3332] Sequential element (\fullBarHeights_reg[62][7] ) is unused and will be removed from module disp_draw.
-WARNING: [Synth 8-3332] Sequential element (\fullBarHeights_reg[62][6] ) is unused and will be removed from module disp_draw.
-WARNING: [Synth 8-3332] Sequential element (\fullBarHeights_reg[62][5] ) is unused and will be removed from module disp_draw.
-WARNING: [Synth 8-3332] Sequential element (\fullBarHeights_reg[62][4] ) is unused and will be removed from module disp_draw.
-WARNING: [Synth 8-3332] Sequential element (\fullBarHeights_reg[62][3] ) is unused and will be removed from module disp_draw.
-WARNING: [Synth 8-3332] Sequential element (\fullBarHeights_reg[62][2] ) is unused and will be removed from module disp_draw.
-WARNING: [Synth 8-3332] Sequential element (\fullBarHeights_reg[62][1] ) is unused and will be removed from module disp_draw.
-WARNING: [Synth 8-3332] Sequential element (\fullBarHeights_reg[62][0] ) is unused and will be removed from module disp_draw.
-WARNING: [Synth 8-3332] Sequential element (\fullBarHeights_reg[61][8] ) is unused and will be removed from module disp_draw.
-WARNING: [Synth 8-3332] Sequential element (\fullBarHeights_reg[61][7] ) is unused and will be removed from module disp_draw.
-WARNING: [Synth 8-3332] Sequential element (\fullBarHeights_reg[61][6] ) is unused and will be removed from module disp_draw.
-WARNING: [Synth 8-3332] Sequential element (\fullBarHeights_reg[61][5] ) is unused and will be removed from module disp_draw.
-WARNING: [Synth 8-3332] Sequential element (\fullBarHeights_reg[61][4] ) is unused and will be removed from module disp_draw.
-WARNING: [Synth 8-3332] Sequential element (\fullBarHeights_reg[61][3] ) is unused and will be removed from module disp_draw.
-WARNING: [Synth 8-3332] Sequential element (\fullBarHeights_reg[61][2] ) is unused and will be removed from module disp_draw.
-WARNING: [Synth 8-3332] Sequential element (\fullBarHeights_reg[61][1] ) is unused and will be removed from module disp_draw.
-WARNING: [Synth 8-3332] Sequential element (\fullBarHeights_reg[61][0] ) is unused and will be removed from module disp_draw.
-WARNING: [Synth 8-3332] Sequential element (\fullBarHeights_reg[60][8] ) is unused and will be removed from module disp_draw.
-WARNING: [Synth 8-3332] Sequential element (\fullBarHeights_reg[60][7] ) is unused and will be removed from module disp_draw.
-WARNING: [Synth 8-3332] Sequential element (\fullBarHeights_reg[60][6] ) is unused and will be removed from module disp_draw.
-WARNING: [Synth 8-3332] Sequential element (\fullBarHeights_reg[60][5] ) is unused and will be removed from module disp_draw.
-WARNING: [Synth 8-3332] Sequential element (\fullBarHeights_reg[60][4] ) is unused and will be removed from module disp_draw.
-WARNING: [Synth 8-3332] Sequential element (\fullBarHeights_reg[60][3] ) is unused and will be removed from module disp_draw.
-WARNING: [Synth 8-3332] Sequential element (\fullBarHeights_reg[60][2] ) is unused and will be removed from module disp_draw.
-WARNING: [Synth 8-3332] Sequential element (\fullBarHeights_reg[60][1] ) is unused and will be removed from module disp_draw.
-WARNING: [Synth 8-3332] Sequential element (\fullBarHeights_reg[60][0] ) is unused and will be removed from module disp_draw.
-WARNING: [Synth 8-3332] Sequential element (\fullBarHeights_reg[59][8] ) is unused and will be removed from module disp_draw.
-WARNING: [Synth 8-3332] Sequential element (\fullBarHeights_reg[59][7] ) is unused and will be removed from module disp_draw.
-WARNING: [Synth 8-3332] Sequential element (\fullBarHeights_reg[59][6] ) is unused and will be removed from module disp_draw.
-WARNING: [Synth 8-3332] Sequential element (\fullBarHeights_reg[59][5] ) is unused and will be removed from module disp_draw.
-WARNING: [Synth 8-3332] Sequential element (\fullBarHeights_reg[59][4] ) is unused and will be removed from module disp_draw.
-WARNING: [Synth 8-3332] Sequential element (\fullBarHeights_reg[59][3] ) is unused and will be removed from module disp_draw.
-WARNING: [Synth 8-3332] Sequential element (\fullBarHeights_reg[59][2] ) is unused and will be removed from module disp_draw.
-WARNING: [Synth 8-3332] Sequential element (\fullBarHeights_reg[59][1] ) is unused and will be removed from module disp_draw.
-WARNING: [Synth 8-3332] Sequential element (\fullBarHeights_reg[59][0] ) is unused and will be removed from module disp_draw.
-WARNING: [Synth 8-3332] Sequential element (\fullBarHeights_reg[58][8] ) is unused and will be removed from module disp_draw.
-WARNING: [Synth 8-3332] Sequential element (\fullBarHeights_reg[58][7] ) is unused and will be removed from module disp_draw.
-WARNING: [Synth 8-3332] Sequential element (\fullBarHeights_reg[58][6] ) is unused and will be removed from module disp_draw.
-WARNING: [Synth 8-3332] Sequential element (\fullBarHeights_reg[58][5] ) is unused and will be removed from module disp_draw.
-WARNING: [Synth 8-3332] Sequential element (\fullBarHeights_reg[58][4] ) is unused and will be removed from module disp_draw.
-WARNING: [Synth 8-3332] Sequential element (\fullBarHeights_reg[58][3] ) is unused and will be removed from module disp_draw.
-WARNING: [Synth 8-3332] Sequential element (\fullBarHeights_reg[58][2] ) is unused and will be removed from module disp_draw.
-WARNING: [Synth 8-3332] Sequential element (\fullBarHeights_reg[58][1] ) is unused and will be removed from module disp_draw.
-WARNING: [Synth 8-3332] Sequential element (\fullBarHeights_reg[58][0] ) is unused and will be removed from module disp_draw.
-WARNING: [Synth 8-3332] Sequential element (\fullBarHeights_reg[57][8] ) is unused and will be removed from module disp_draw.
-WARNING: [Synth 8-3332] Sequential element (\fullBarHeights_reg[57][7] ) is unused and will be removed from module disp_draw.
-WARNING: [Synth 8-3332] Sequential element (\fullBarHeights_reg[57][6] ) is unused and will be removed from module disp_draw.
-WARNING: [Synth 8-3332] Sequential element (\fullBarHeights_reg[57][5] ) is unused and will be removed from module disp_draw.
-WARNING: [Synth 8-3332] Sequential element (\fullBarHeights_reg[57][4] ) is unused and will be removed from module disp_draw.
-WARNING: [Synth 8-3332] Sequential element (\fullBarHeights_reg[57][3] ) is unused and will be removed from module disp_draw.
-WARNING: [Synth 8-3332] Sequential element (\fullBarHeights_reg[57][2] ) is unused and will be removed from module disp_draw.
-WARNING: [Synth 8-3332] Sequential element (\fullBarHeights_reg[57][1] ) is unused and will be removed from module disp_draw.
-WARNING: [Synth 8-3332] Sequential element (\fullBarHeights_reg[57][0] ) is unused and will be removed from module disp_draw.
-WARNING: [Synth 8-3332] Sequential element (\fullBarHeights_reg[56][8] ) is unused and will be removed from module disp_draw.
-WARNING: [Synth 8-3332] Sequential element (\fullBarHeights_reg[56][7] ) is unused and will be removed from module disp_draw.
-WARNING: [Synth 8-3332] Sequential element (\fullBarHeights_reg[56][6] ) is unused and will be removed from module disp_draw.
-WARNING: [Synth 8-3332] Sequential element (\fullBarHeights_reg[56][5] ) is unused and will be removed from module disp_draw.
-WARNING: [Synth 8-3332] Sequential element (\fullBarHeights_reg[56][4] ) is unused and will be removed from module disp_draw.
-WARNING: [Synth 8-3332] Sequential element (\fullBarHeights_reg[56][3] ) is unused and will be removed from module disp_draw.
-WARNING: [Synth 8-3332] Sequential element (\fullBarHeights_reg[56][2] ) is unused and will be removed from module disp_draw.
-WARNING: [Synth 8-3332] Sequential element (\fullBarHeights_reg[56][1] ) is unused and will be removed from module disp_draw.
-WARNING: [Synth 8-3332] Sequential element (\fullBarHeights_reg[56][0] ) is unused and will be removed from module disp_draw.
-WARNING: [Synth 8-3332] Sequential element (\fullBarHeights_reg[55][8] ) is unused and will be removed from module disp_draw.
-WARNING: [Synth 8-3332] Sequential element (\fullBarHeights_reg[55][7] ) is unused and will be removed from module disp_draw.
-WARNING: [Synth 8-3332] Sequential element (\fullBarHeights_reg[55][6] ) is unused and will be removed from module disp_draw.
-WARNING: [Synth 8-3332] Sequential element (\fullBarHeights_reg[55][5] ) is unused and will be removed from module disp_draw.
-WARNING: [Synth 8-3332] Sequential element (\fullBarHeights_reg[55][4] ) is unused and will be removed from module disp_draw.
-WARNING: [Synth 8-3332] Sequential element (\fullBarHeights_reg[55][3] ) is unused and will be removed from module disp_draw.
-WARNING: [Synth 8-3332] Sequential element (\fullBarHeights_reg[55][2] ) is unused and will be removed from module disp_draw.
-WARNING: [Synth 8-3332] Sequential element (\fullBarHeights_reg[55][1] ) is unused and will be removed from module disp_draw.
-WARNING: [Synth 8-3332] Sequential element (\fullBarHeights_reg[55][0] ) is unused and will be removed from module disp_draw.
-WARNING: [Synth 8-3332] Sequential element (\fullBarHeights_reg[54][8] ) is unused and will be removed from module disp_draw.
-WARNING: [Synth 8-3332] Sequential element (\fullBarHeights_reg[54][7] ) is unused and will be removed from module disp_draw.
-WARNING: [Synth 8-3332] Sequential element (\fullBarHeights_reg[54][6] ) is unused and will be removed from module disp_draw.
-WARNING: [Synth 8-3332] Sequential element (\fullBarHeights_reg[54][5] ) is unused and will be removed from module disp_draw.
-WARNING: [Synth 8-3332] Sequential element (\fullBarHeights_reg[54][4] ) is unused and will be removed from module disp_draw.
-WARNING: [Synth 8-3332] Sequential element (\fullBarHeights_reg[54][3] ) is unused and will be removed from module disp_draw.
-WARNING: [Synth 8-3332] Sequential element (\fullBarHeights_reg[54][2] ) is unused and will be removed from module disp_draw.
-WARNING: [Synth 8-3332] Sequential element (\fullBarHeights_reg[54][1] ) is unused and will be removed from module disp_draw.
-WARNING: [Synth 8-3332] Sequential element (\fullBarHeights_reg[54][0] ) is unused and will be removed from module disp_draw.
-WARNING: [Synth 8-3332] Sequential element (\fullBarHeights_reg[53][8] ) is unused and will be removed from module disp_draw.
-WARNING: [Synth 8-3332] Sequential element (\fullBarHeights_reg[53][7] ) is unused and will be removed from module disp_draw.
-WARNING: [Synth 8-3332] Sequential element (\fullBarHeights_reg[53][6] ) is unused and will be removed from module disp_draw.
-WARNING: [Synth 8-3332] Sequential element (\fullBarHeights_reg[53][5] ) is unused and will be removed from module disp_draw.
-WARNING: [Synth 8-3332] Sequential element (\fullBarHeights_reg[53][4] ) is unused and will be removed from module disp_draw.
-WARNING: [Synth 8-3332] Sequential element (\fullBarHeights_reg[53][3] ) is unused and will be removed from module disp_draw.
-WARNING: [Synth 8-3332] Sequential element (\fullBarHeights_reg[53][2] ) is unused and will be removed from module disp_draw.
-WARNING: [Synth 8-3332] Sequential element (\fullBarHeights_reg[53][1] ) is unused and will be removed from module disp_draw.
-WARNING: [Synth 8-3332] Sequential element (\fullBarHeights_reg[53][0] ) is unused and will be removed from module disp_draw.
+WARNING: [Synth 8-3332] Sequential element (\barHeightsWrk_reg[63][0] ) is unused and will be removed from module disp_draw.
+WARNING: [Synth 8-3332] Sequential element (\barHeightsWrk_reg[62][0] ) is unused and will be removed from module disp_draw.
+WARNING: [Synth 8-3332] Sequential element (\barHeightsWrk_reg[61][0] ) is unused and will be removed from module disp_draw.
+WARNING: [Synth 8-3332] Sequential element (\barHeightsWrk_reg[60][0] ) is unused and will be removed from module disp_draw.
+WARNING: [Synth 8-3332] Sequential element (\barHeightsWrk_reg[59][0] ) is unused and will be removed from module disp_draw.
+WARNING: [Synth 8-3332] Sequential element (\barHeightsWrk_reg[58][0] ) is unused and will be removed from module disp_draw.
+WARNING: [Synth 8-3332] Sequential element (\barHeightsWrk_reg[57][0] ) is unused and will be removed from module disp_draw.
+WARNING: [Synth 8-3332] Sequential element (\barHeightsWrk_reg[56][0] ) is unused and will be removed from module disp_draw.
+WARNING: [Synth 8-3332] Sequential element (\barHeightsWrk_reg[55][0] ) is unused and will be removed from module disp_draw.
+WARNING: [Synth 8-3332] Sequential element (\barHeightsWrk_reg[54][0] ) is unused and will be removed from module disp_draw.
+WARNING: [Synth 8-3332] Sequential element (\barHeightsWrk_reg[53][0] ) is unused and will be removed from module disp_draw.
+WARNING: [Synth 8-3332] Sequential element (\barHeightsWrk_reg[52][0] ) is unused and will be removed from module disp_draw.
+WARNING: [Synth 8-3332] Sequential element (\barHeightsWrk_reg[51][0] ) is unused and will be removed from module disp_draw.
+WARNING: [Synth 8-3332] Sequential element (\barHeightsWrk_reg[50][0] ) is unused and will be removed from module disp_draw.
+WARNING: [Synth 8-3332] Sequential element (\barHeightsWrk_reg[49][0] ) is unused and will be removed from module disp_draw.
+WARNING: [Synth 8-3332] Sequential element (\barHeightsWrk_reg[48][0] ) is unused and will be removed from module disp_draw.
+WARNING: [Synth 8-3332] Sequential element (\barHeightsWrk_reg[47][0] ) is unused and will be removed from module disp_draw.
+WARNING: [Synth 8-3332] Sequential element (\barHeightsWrk_reg[46][0] ) is unused and will be removed from module disp_draw.
+WARNING: [Synth 8-3332] Sequential element (\barHeightsWrk_reg[45][0] ) is unused and will be removed from module disp_draw.
+WARNING: [Synth 8-3332] Sequential element (\barHeightsWrk_reg[44][0] ) is unused and will be removed from module disp_draw.
+WARNING: [Synth 8-3332] Sequential element (\barHeightsWrk_reg[43][0] ) is unused and will be removed from module disp_draw.
+WARNING: [Synth 8-3332] Sequential element (\barHeightsWrk_reg[42][0] ) is unused and will be removed from module disp_draw.
+WARNING: [Synth 8-3332] Sequential element (\barHeightsWrk_reg[41][0] ) is unused and will be removed from module disp_draw.
+WARNING: [Synth 8-3332] Sequential element (\barHeightsWrk_reg[40][0] ) is unused and will be removed from module disp_draw.
+WARNING: [Synth 8-3332] Sequential element (\barHeightsWrk_reg[39][0] ) is unused and will be removed from module disp_draw.
+WARNING: [Synth 8-3332] Sequential element (\barHeightsWrk_reg[38][0] ) is unused and will be removed from module disp_draw.
+WARNING: [Synth 8-3332] Sequential element (\barHeightsWrk_reg[37][0] ) is unused and will be removed from module disp_draw.
+WARNING: [Synth 8-3332] Sequential element (\barHeightsWrk_reg[36][0] ) is unused and will be removed from module disp_draw.
+WARNING: [Synth 8-3332] Sequential element (\barHeightsWrk_reg[35][0] ) is unused and will be removed from module disp_draw.
+WARNING: [Synth 8-3332] Sequential element (\barHeightsWrk_reg[34][0] ) is unused and will be removed from module disp_draw.
+WARNING: [Synth 8-3332] Sequential element (\barHeightsWrk_reg[33][0] ) is unused and will be removed from module disp_draw.
+WARNING: [Synth 8-3332] Sequential element (\barHeightsWrk_reg[32][0] ) is unused and will be removed from module disp_draw.
+WARNING: [Synth 8-3332] Sequential element (\barHeightsWrk_reg[31][0] ) is unused and will be removed from module disp_draw.
+WARNING: [Synth 8-3332] Sequential element (\barHeightsWrk_reg[30][0] ) is unused and will be removed from module disp_draw.
+WARNING: [Synth 8-3332] Sequential element (\barHeightsWrk_reg[29][0] ) is unused and will be removed from module disp_draw.
+WARNING: [Synth 8-3332] Sequential element (\barHeightsWrk_reg[28][0] ) is unused and will be removed from module disp_draw.
+WARNING: [Synth 8-3332] Sequential element (\barHeightsWrk_reg[27][0] ) is unused and will be removed from module disp_draw.
+WARNING: [Synth 8-3332] Sequential element (\barHeightsWrk_reg[26][0] ) is unused and will be removed from module disp_draw.
+WARNING: [Synth 8-3332] Sequential element (\barHeightsWrk_reg[25][0] ) is unused and will be removed from module disp_draw.
+WARNING: [Synth 8-3332] Sequential element (\barHeightsWrk_reg[24][0] ) is unused and will be removed from module disp_draw.
+WARNING: [Synth 8-3332] Sequential element (\barHeightsWrk_reg[23][0] ) is unused and will be removed from module disp_draw.
+WARNING: [Synth 8-3332] Sequential element (\barHeightsWrk_reg[22][0] ) is unused and will be removed from module disp_draw.
+WARNING: [Synth 8-3332] Sequential element (\barHeightsWrk_reg[21][0] ) is unused and will be removed from module disp_draw.
+WARNING: [Synth 8-3332] Sequential element (\barHeightsWrk_reg[20][0] ) is unused and will be removed from module disp_draw.
+WARNING: [Synth 8-3332] Sequential element (\barHeightsWrk_reg[19][0] ) is unused and will be removed from module disp_draw.
+WARNING: [Synth 8-3332] Sequential element (\barHeightsWrk_reg[18][0] ) is unused and will be removed from module disp_draw.
+WARNING: [Synth 8-3332] Sequential element (\barHeightsWrk_reg[17][0] ) is unused and will be removed from module disp_draw.
+WARNING: [Synth 8-3332] Sequential element (\barHeightsWrk_reg[16][0] ) is unused and will be removed from module disp_draw.
+WARNING: [Synth 8-3332] Sequential element (\barHeightsWrk_reg[15][0] ) is unused and will be removed from module disp_draw.
+WARNING: [Synth 8-3332] Sequential element (\barHeightsWrk_reg[14][0] ) is unused and will be removed from module disp_draw.
+WARNING: [Synth 8-3332] Sequential element (\barHeightsWrk_reg[13][0] ) is unused and will be removed from module disp_draw.
+WARNING: [Synth 8-3332] Sequential element (\barHeightsWrk_reg[12][0] ) is unused and will be removed from module disp_draw.
+WARNING: [Synth 8-3332] Sequential element (\barHeightsWrk_reg[11][0] ) is unused and will be removed from module disp_draw.
+WARNING: [Synth 8-3332] Sequential element (\barHeightsWrk_reg[10][0] ) is unused and will be removed from module disp_draw.
+WARNING: [Synth 8-3332] Sequential element (\barHeightsWrk_reg[9][0] ) is unused and will be removed from module disp_draw.
+WARNING: [Synth 8-3332] Sequential element (\barHeightsWrk_reg[8][0] ) is unused and will be removed from module disp_draw.
+WARNING: [Synth 8-3332] Sequential element (\barHeightsWrk_reg[7][0] ) is unused and will be removed from module disp_draw.
+WARNING: [Synth 8-3332] Sequential element (\barHeightsWrk_reg[6][0] ) is unused and will be removed from module disp_draw.
+WARNING: [Synth 8-3332] Sequential element (\barHeightsWrk_reg[5][0] ) is unused and will be removed from module disp_draw.
+WARNING: [Synth 8-3332] Sequential element (\barHeightsWrk_reg[4][0] ) is unused and will be removed from module disp_draw.
+WARNING: [Synth 8-3332] Sequential element (\barHeightsWrk_reg[3][0] ) is unused and will be removed from module disp_draw.
+WARNING: [Synth 8-3332] Sequential element (\barHeightsWrk_reg[2][0] ) is unused and will be removed from module disp_draw.
+WARNING: [Synth 8-3332] Sequential element (\barHeightsWrk_reg[1][0] ) is unused and will be removed from module disp_draw.
+WARNING: [Synth 8-3332] Sequential element (\barHeightsWrk_reg[0][0] ) is unused and will be removed from module disp_draw.
+WARNING: [Synth 8-3332] Sequential element (\barHeightsWrk_reg[63][1] ) is unused and will be removed from module disp_draw.
+WARNING: [Synth 8-3332] Sequential element (\barHeightsWrk_reg[62][1] ) is unused and will be removed from module disp_draw.
+WARNING: [Synth 8-3332] Sequential element (\barHeightsWrk_reg[61][1] ) is unused and will be removed from module disp_draw.
+WARNING: [Synth 8-3332] Sequential element (\barHeightsWrk_reg[60][1] ) is unused and will be removed from module disp_draw.
+WARNING: [Synth 8-3332] Sequential element (\barHeightsWrk_reg[59][1] ) is unused and will be removed from module disp_draw.
+WARNING: [Synth 8-3332] Sequential element (\barHeightsWrk_reg[58][1] ) is unused and will be removed from module disp_draw.
+WARNING: [Synth 8-3332] Sequential element (\barHeightsWrk_reg[57][1] ) is unused and will be removed from module disp_draw.
+WARNING: [Synth 8-3332] Sequential element (\barHeightsWrk_reg[56][1] ) is unused and will be removed from module disp_draw.
+WARNING: [Synth 8-3332] Sequential element (\barHeightsWrk_reg[55][1] ) is unused and will be removed from module disp_draw.
+WARNING: [Synth 8-3332] Sequential element (\barHeightsWrk_reg[54][1] ) is unused and will be removed from module disp_draw.
+WARNING: [Synth 8-3332] Sequential element (\barHeightsWrk_reg[53][1] ) is unused and will be removed from module disp_draw.
+WARNING: [Synth 8-3332] Sequential element (\barHeightsWrk_reg[52][1] ) is unused and will be removed from module disp_draw.
+WARNING: [Synth 8-3332] Sequential element (\barHeightsWrk_reg[51][1] ) is unused and will be removed from module disp_draw.
+WARNING: [Synth 8-3332] Sequential element (\barHeightsWrk_reg[50][1] ) is unused and will be removed from module disp_draw.
+WARNING: [Synth 8-3332] Sequential element (\barHeightsWrk_reg[49][1] ) is unused and will be removed from module disp_draw.
+WARNING: [Synth 8-3332] Sequential element (\barHeightsWrk_reg[48][1] ) is unused and will be removed from module disp_draw.
+WARNING: [Synth 8-3332] Sequential element (\barHeightsWrk_reg[47][1] ) is unused and will be removed from module disp_draw.
+WARNING: [Synth 8-3332] Sequential element (\barHeightsWrk_reg[46][1] ) is unused and will be removed from module disp_draw.
+WARNING: [Synth 8-3332] Sequential element (\barHeightsWrk_reg[45][1] ) is unused and will be removed from module disp_draw.
+WARNING: [Synth 8-3332] Sequential element (\barHeightsWrk_reg[44][1] ) is unused and will be removed from module disp_draw.
+WARNING: [Synth 8-3332] Sequential element (\barHeightsWrk_reg[43][1] ) is unused and will be removed from module disp_draw.
+WARNING: [Synth 8-3332] Sequential element (\barHeightsWrk_reg[42][1] ) is unused and will be removed from module disp_draw.
+WARNING: [Synth 8-3332] Sequential element (\barHeightsWrk_reg[41][1] ) is unused and will be removed from module disp_draw.
+WARNING: [Synth 8-3332] Sequential element (\barHeightsWrk_reg[40][1] ) is unused and will be removed from module disp_draw.
+WARNING: [Synth 8-3332] Sequential element (\barHeightsWrk_reg[39][1] ) is unused and will be removed from module disp_draw.
+WARNING: [Synth 8-3332] Sequential element (\barHeightsWrk_reg[38][1] ) is unused and will be removed from module disp_draw.
+WARNING: [Synth 8-3332] Sequential element (\barHeightsWrk_reg[37][1] ) is unused and will be removed from module disp_draw.
+WARNING: [Synth 8-3332] Sequential element (\barHeightsWrk_reg[36][1] ) is unused and will be removed from module disp_draw.
+WARNING: [Synth 8-3332] Sequential element (\barHeightsWrk_reg[35][1] ) is unused and will be removed from module disp_draw.
+WARNING: [Synth 8-3332] Sequential element (\barHeightsWrk_reg[34][1] ) is unused and will be removed from module disp_draw.
+WARNING: [Synth 8-3332] Sequential element (\barHeightsWrk_reg[33][1] ) is unused and will be removed from module disp_draw.
+WARNING: [Synth 8-3332] Sequential element (\barHeightsWrk_reg[32][1] ) is unused and will be removed from module disp_draw.
+WARNING: [Synth 8-3332] Sequential element (\barHeightsWrk_reg[31][1] ) is unused and will be removed from module disp_draw.
+WARNING: [Synth 8-3332] Sequential element (\barHeightsWrk_reg[30][1] ) is unused and will be removed from module disp_draw.
+WARNING: [Synth 8-3332] Sequential element (\barHeightsWrk_reg[29][1] ) is unused and will be removed from module disp_draw.
 INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished Area Optimization : Time (s): cpu = 00:00:35 ; elapsed = 00:00:35 . Memory (MB): peak = 1226.223 ; gain = 535.781
+Finished Area Optimization : Time (s): cpu = 00:00:35 ; elapsed = 00:00:35 . Memory (MB): peak = 1226.215 ; gain = 535.781
 ---------------------------------------------------------------------------------
-Finished Parallel Area Opt  : Time (s): cpu = 00:00:35 ; elapsed = 00:00:35 . Memory (MB): peak = 1226.223 ; gain = 535.781
-Finished Parallel Section  : Time (s): cpu = 00:00:35 ; elapsed = 00:00:35 . Memory (MB): peak = 1226.223 ; gain = 535.781
+Finished Parallel Area Opt  : Time (s): cpu = 00:00:35 ; elapsed = 00:00:35 . Memory (MB): peak = 1226.215 ; gain = 535.781
+Finished Parallel Section  : Time (s): cpu = 00:00:35 ; elapsed = 00:00:35 . Memory (MB): peak = 1226.215 ; gain = 535.781
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
@@ -530,16 +530,16 @@ Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 INFO: Moved 3 constraints on hierarchical pins to their respective driving/loading pins
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:46 ; elapsed = 00:00:47 . Memory (MB): peak = 1236.238 ; gain = 545.797
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:46 ; elapsed = 00:00:47 . Memory (MB): peak = 1241.227 ; gain = 550.793
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:48 ; elapsed = 00:00:49 . Memory (MB): peak = 1244.234 ; gain = 553.793
+Finished Timing Optimization : Time (s): cpu = 00:00:49 ; elapsed = 00:00:49 . Memory (MB): peak = 1248.227 ; gain = 557.793
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:56 ; elapsed = 00:00:57 . Memory (MB): peak = 1265.688 ; gain = 575.246
+Finished Technology Mapping : Time (s): cpu = 00:00:57 ; elapsed = 00:00:58 . Memory (MB): peak = 1270.883 ; gain = 580.449
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -652,7 +652,7 @@ WARNING: [Synth 8-3295] tying undriven pin decoder:data[14] to constant 0
 WARNING: [Synth 8-3295] tying undriven pin decoder:data[13] to constant 0
 INFO: [Common 17-14] Message 'Synth 8-3295' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:57 ; elapsed = 00:00:58 . Memory (MB): peak = 1265.688 ; gain = 575.246
+Finished IO Insertion : Time (s): cpu = 00:00:58 ; elapsed = 00:00:58 . Memory (MB): peak = 1270.883 ; gain = 580.449
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -665,7 +665,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:57 ; elapsed = 00:00:58 . Memory (MB): peak = 1265.688 ; gain = 575.246
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:58 ; elapsed = 00:00:58 . Memory (MB): peak = 1270.883 ; gain = 580.449
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RAM, DSP and Shift Register Reporting
@@ -721,23 +721,24 @@ Report Cell Usage:
 |14    |LUT3               |  1604|
 |15    |LUT4               |   479|
 |16    |LUT5               |   188|
-|17    |LUT6               |   567|
-|18    |MUXF7              |    70|
-|19    |SRL16E             |     7|
-|20    |FDCE               |    47|
-|21    |FDPE               |     1|
-|22    |FDRE               |  3560|
-|23    |FDSE               |    18|
-|24    |IBUF               |    17|
-|25    |OBUF               |    32|
+|17    |LUT6               |   703|
+|18    |MUXF7              |   138|
+|19    |MUXF8              |    68|
+|20    |SRL16E             |     7|
+|21    |FDCE               |    47|
+|22    |FDPE               |     1|
+|23    |FDRE               |  3848|
+|24    |FDSE               |    18|
+|25    |IBUF               |    17|
+|26    |OBUF               |    32|
 +------+-------------------+------+
 
 Report Instance Areas: 
 +------+-----------------+--------------+------+
 |      |Instance         |Module        |Cells |
 +------+-----------------+--------------+------+
-|1     |top              |              |  7173|
-|2     |  disp_draw_inst |disp_draw     |  6356|
+|1     |top              |              |  7733|
+|2     |  disp_draw_inst |disp_draw     |  6644|
 |3     |    avg_inst     |averager      |  1306|
 |4     |    mag_inst     |magnitude     |   168|
 |5     |  fft_fsm        |adc_fft_fsmV3 |   233|
@@ -750,10 +751,10 @@ Report Instance Areas:
 |12    |    dig7         |Hex2SSeg      |     7|
 +------+-----------------+--------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:58 ; elapsed = 00:00:59 . Memory (MB): peak = 1265.688 ; gain = 575.246
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:59 ; elapsed = 00:00:59 . Memory (MB): peak = 1270.883 ; gain = 580.449
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 960 warnings.
-Synthesis Optimization Complete : Time (s): cpu = 00:00:58 ; elapsed = 00:00:59 . Memory (MB): peak = 1265.688 ; gain = 575.246
+Synthesis finished with 0 errors, 0 critical warnings and 672 warnings.
+Synthesis Optimization Complete : Time (s): cpu = 00:00:59 ; elapsed = 00:00:59 . Memory (MB): peak = 1270.883 ; gain = 580.449
 INFO: [Netlist 29-17] Analyzing 216 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Opt 31-140] Inserted 0 IBUFs to IO ports without IO buffers.
@@ -765,8 +766,8 @@ No Unisim elements were transformed.
 INFO: [Common 17-83] Releasing license: Synthesis
 50 Infos, 244 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:59 ; elapsed = 00:01:00 . Memory (MB): peak = 1265.691 ; gain = 461.121
+synth_design: Time (s): cpu = 00:01:00 ; elapsed = 00:01:00 . Memory (MB): peak = 1270.887 ; gain = 466.324
 # write_checkpoint top_level.dcp
 # report_utilization -file top_level_utilization_synth.rpt -pb top_level_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00.12 ; elapsed = 00:00:00.17 . Memory (MB): peak = 1265.691 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Mon Apr 20 09:29:47 2015...
+report_utilization: Time (s): cpu = 00:00:00.12 ; elapsed = 00:00:00.18 . Memory (MB): peak = 1270.887 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Mon Apr 20 11:27:04 2015...
