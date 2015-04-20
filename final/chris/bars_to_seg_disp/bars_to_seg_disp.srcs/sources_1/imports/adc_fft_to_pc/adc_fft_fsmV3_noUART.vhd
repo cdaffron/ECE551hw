@@ -225,6 +225,7 @@ begin
 					ram2_addra_s <= std_logic_vector(unsigned(ram2_addra_s) + 1);
 					if m_axis_data_tlast = '1' then	
 						finished <= '1';
+						ram2_wea <= "0";
 						state <= 0;
 					else
 						state <= 11;
