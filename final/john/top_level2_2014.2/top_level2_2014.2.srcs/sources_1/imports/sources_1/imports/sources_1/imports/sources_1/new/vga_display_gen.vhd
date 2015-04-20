@@ -466,10 +466,32 @@ begin
 --        end if;
 --    end process x_pos;
 
-    actX <= hcount(9 downto 0) when rising_edge(clk);  
-    relX <= std_logic_vector(unsigned(actX) - dispXOrigin);
+
+
+    actX <= hcount(9 downto 0) when rising_edge(clk);
+--    relX <= std_logic_vector(unsigned(actX) - dispXOrigin);
     actY <= vcount(9 downto 0) when rising_edge(clk);
-    relY <= std_logic_vector((479 + dispYorigin) - unsigned(actY));
+--    relY <= std_logic_vector((479 + dispYorigin) - unsigned(actY));
+    
+    process( actX )
+    begin
+        if( unsigned(actX) < 16 ) then
+            relX <= (others => '0');
+        else
+            relX <= std_logic_vector(unsigned(actX) - dispXOrigin);
+        end if;
+    end process;
+    
+    process( actY )
+    begin
+        if( unsigned(actY) > 489 ) then
+            relY <= "0111011111";
+        else
+            relY <= std_logic_vector((479 + dispYorigin) - unsigned(actY));
+        end if;
+    end process;
+
+
 
 --    -- compute ydiff
 --    y_pos: process(clk)
