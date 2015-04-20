@@ -219,7 +219,7 @@ begin
 				else
 					state <= 10;
 				end if;
-			elsif state = 10 then
+			elsif state = 11 then
 				if m_axis_data_tvalid = '1' then
 					ram2_wea <= "1";
 					ram2_addra_s <= std_logic_vector(unsigned(ram2_addra_s) + 1);
