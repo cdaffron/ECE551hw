@@ -517,7 +517,7 @@ begin
 
     barRomVal <= curBarRom(to_integer(unsigned(relX))) when rising_edge(clk);
 --    curBarH <= fake_bars(to_integer(shift_right(unsigned(relX), shiftVal))) when rising_edge(clk);
-    curBarH <= fake_bars(get_index(to_integer(unsigned(relX)), barNumSws)) when rising_edge(clk);
+    curBarH <= std_logic_vector(shift_right(unsigned(fake_bars(get_index(to_integer(unsigned(relX)), barNumSws))),1)) when rising_edge(clk);
 
     process(barNumSws)
     begin

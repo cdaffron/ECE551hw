@@ -1,7 +1,7 @@
 Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2014.2 (lin64) Build 932637 Wed Jun 11 13:08:52 MDT 2014
-| Date             : Mon Apr 20 18:49:45 2015
+| Date             : Mon Apr 20 19:10:07 2015
 | Host             : com1549.eecs.utk.edu running 64-bit Red Hat Enterprise Linux Server release 6.5 (Santiago)
 | Command          : report_power -file top_level_power_routed.rpt -pb top_level_power_summary_routed.pb
 | Design           : top_level
@@ -30,7 +30,7 @@ Table of Contents
 ----------
 
 +--------------------------+-------+
-| Total On-Chip Power (W)  | 0.377 |
+| Total On-Chip Power (W)  | 0.376 |
 | Dynamic (W)              | 0.278 |
 | Device Static (W)        | 0.098 |
 | Total Off-Chip Power (W) | 0.000 |
@@ -52,19 +52,19 @@ Table of Contents
 +--------------------------+-----------+----------+-----------+-----------------+
 | Clocks                   |     0.021 |       11 |       --- |             --- |
 | Slice Logic              |     0.004 |     6010 |       --- |             --- |
-|   LUT as Logic           |     0.004 |     2107 |     63400 |            3.32 |
+|   LUT as Logic           |     0.004 |     2096 |     63400 |            3.30 |
 |   Register               |    <0.001 |     2640 |    126800 |            2.08 |
 |   LUT as Shift Register  |    <0.001 |      169 |     19000 |            0.88 |
 |   CARRY4                 |    <0.001 |      100 |     15850 |            0.63 |
 |   LUT as Distributed RAM |    <0.001 |       24 |     19000 |            0.12 |
 |   F7/F8 Muxes            |    <0.001 |       68 |     63400 |            0.10 |
 |   Others                 |     0.000 |      454 |       --- |             --- |
-| Signals                  |     0.005 |     4244 |       --- |             --- |
+| Signals                  |     0.004 |     4244 |       --- |             --- |
 | Block RAM                |     0.004 |       18 |       135 |           13.33 |
 | MMCM                     |     0.221 |        2 |         6 |           33.33 |
 | I/O                      |     0.023 |       81 |       210 |           38.57 |
 | Static Power             |     0.098 |          |           |                 |
-| Total                    |     0.377 |          |           |                 |
+| Total                    |     0.376 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -130,14 +130,14 @@ Table of Contents
 +---------------------------------------------------------+-------------------------------------------+-----------------+
 | Clock                                                   | Domain                                    | Constraint (ns) |
 +---------------------------------------------------------+-------------------------------------------+-----------------+
-| clk_out1_clk_wiz_0                                      | clk_debug/U0/clk_out1_clk_wiz_0           |             5.0 |
 | clkfbout_clk_wiz_vga                                    | vga_comp/clk_wiz/U0/clkfbout_clk_wiz_vga  |            40.0 |
-| clkfbout_clk_wiz_0                                      | clk_debug/U0/clkfbout_clk_wiz_0           |            10.0 |
 | clk_25out_clk_wiz_vga                                   | vga_comp/clk_wiz/U0/clk_25out_clk_wiz_vga |            40.0 |
-| sys_clk_pin                                             | clk                                       |            10.0 |
-| sys_clk_pin                                             | xlnx_opt__1                               |            10.0 |
+| clk_out1_clk_wiz_0                                      | clk_debug/U0/clk_out1_clk_wiz_0           |             5.0 |
+| clkfbout_clk_wiz_0                                      | clk_debug/U0/clkfbout_clk_wiz_0           |            10.0 |
 | clk_out3_clk_wiz_0                                      | clk_debug/U0/clk_out3_clk_wiz_0           |            20.0 |
 | dbg_hub/inst/bscan_inst/SERIES7_BSCAN.bscan_inst/DRCK   | dbg_hub/inst/bscan_inst/DRCK              |            30.0 |
+| sys_clk_pin                                             | clk                                       |            10.0 |
+| sys_clk_pin                                             | xlnx_opt__1                               |            10.0 |
 | dbg_hub/inst/bscan_inst/SERIES7_BSCAN.bscan_inst/UPDATE | dbg_hub/inst/bscan_inst/UPDATE            |            60.0 |
 +---------------------------------------------------------+-------------------------------------------+-----------------+
 
@@ -154,8 +154,8 @@ Table of Contents
 | top_level                                                                                 |     0.278 |
 |   clk_debug                                                                               |     0.106 |
 |     U0                                                                                    |     0.106 |
-|   dbg_hub                                                                                 |     0.006 |
-|     inst                                                                                  |     0.006 |
+|   dbg_hub                                                                                 |     0.005 |
+|     inst                                                                                  |     0.005 |
 |       UUT_MASTER                                                                          |     0.005 |
 |         U_ICON_INTERFACE                                                                  |     0.003 |
 |           U_CMD1                                                                          |    <0.001 |
@@ -374,9 +374,9 @@ Table of Contents
 |     U0                                                                                    |     0.000 |
 |   pulse30Hz                                                                               |     0.000 |
 |     U0                                                                                    |     0.000 |
-|   u_ila_0                                                                                 |     0.020 |
-|     inst                                                                                  |     0.020 |
-|       ila_core_inst                                                                       |     0.020 |
+|   u_ila_0                                                                                 |     0.021 |
+|     inst                                                                                  |     0.021 |
+|       ila_core_inst                                                                       |     0.021 |
 |         ila_trace_memory_inst                                                             |     0.003 |
 |           SUBCORE_RAM_BLK_MEM_1.trace_block_memory                                        |     0.003 |
 |             inst_blk_mem_gen                                                              |     0.003 |
