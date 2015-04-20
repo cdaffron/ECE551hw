@@ -1,10 +1,5 @@
 <?xml version="1.0"?>
 <ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado" Owner="cdaffron" Host="com1549.eecs.utk.edu" Pid="13865">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado" Owner="cdaffron" Host="com1549.eecs.utk.edu" Pid="18510">
+    <Process Command="vivado" Owner="cdaffron" Host="com1549.eecs.utk.edu" Pid="14938">
     </Process>
 </ProcessHandle>

@@ -267,12 +267,14 @@ architecture behavioral of vga_display_gen is
   );
 
   constant fakeBars : bararray := (
-    x"00",x"04",x"08",x"0c",x"10",x"14",x"18",x"1c",x"20",x"24",x"28",
-    x"2c",x"30",x"34",x"38",x"3c",x"40",x"44",x"48",x"4c",x"50",x"54",
-    x"58",x"5c",x"60",x"64",x"68",x"6c",x"70",x"74",x"78",x"7c",x"80",
-    x"84",x"88",x"8c",x"90",x"94",x"98",x"9c",x"a0",x"a4",x"a8",x"ac",
-    x"b0",x"b4",x"b8",x"bc",x"c0",x"c4",x"c8",x"cc",x"d0",x"d4",x"d8",
-    x"dc",x"e0",x"e4",x"e8",x"ec",x"f0",x"f4",x"f8",x"fc"
+        x"fc",x"f8",x"f4",x"f0",x"ec",x"e8",x"e4",x"e0",
+        x"dc",x"d8",x"d4",x"d0",x"cc",x"c8",x"c4",x"c0",
+        x"bc",x"b8",x"b4",x"b0",x"ac",x"a8",x"a4",x"a0",
+        x"9c",x"98",x"94",x"90",x"8c",x"88",x"84",x"80",
+        x"7c",x"78",x"74",x"70",x"6c",x"68",x"64",x"60",
+        x"5c",x"58",x"54",x"50",x"4c",x"48",x"44",x"40",
+        x"3c",x"38",x"34",x"30",x"2c",x"28",x"24",x"20",
+        x"1c",x"18",x"14",x"10",x"0c",x"08",x"04",x"00"
   );
 
   signal numBars    : integer := 0;
@@ -318,7 +320,7 @@ architecture behavioral of vga_display_gen is
   attribute KEEP of relX : signal is TRUE;
   attribute KEEP of relY : signal is TRUE;
 
-  function get_index(cur_x_pos: integer; num_bars: std_logic_vector(2 downto 0) := "00") return integer is
+  function get_index(cur_x_pos: integer; num_bars: std_logic_vector(1 downto 0) := "00") return integer is
     variable num_bars_int: integer := 0;
     variable index: integer := 0;
   begin
@@ -507,7 +509,8 @@ begin
 
 
     -- for now, let two rows be equivalent to each 'height' unit in the barArray
-    heightInd <= to_integer(shift_right(unsigned(relY), 1)) when rising_edge(clk);
+--    heightInd <= to_integer(shift_right(unsigned(relY), 1)) when rising_edge(clk);
+    heightInd <= to_integer(unsigned(relY)) when rising_edge(clk);
     redVal <= redRom(heightInd) when rising_edge(clk);
     greenVal <= greenRom(heightInd) when rising_edge(clk);
     blueVal <= blueRom(heightInd) when rising_edge(clk);
