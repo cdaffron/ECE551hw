@@ -9,42 +9,42 @@ create_project -in_memory -part xc7a100tcsg324-1
 set_property target_language VHDL [current_project]
 set_param project.compositeFile.enableAutoGeneration 0
 set_property default_lib xil_defaultlib [current_project]
-add_files {{/home/jmurra15/classes/ECE551-Spring-2015/ECE551hw/final/jacob/sources/coe files/gunshot.coe}}
-add_files -quiet /home/jmurra15/classes/ECE551-Spring-2015/ECE551hw/final/john/top_level2_2014.2/top_level2_2014.2.runs/blk_mem_gen_0_synth_1/blk_mem_gen_0.dcp
-set_property used_in_implementation false [get_files /home/jmurra15/classes/ECE551-Spring-2015/ECE551hw/final/john/top_level2_2014.2/top_level2_2014.2.runs/blk_mem_gen_0_synth_1/blk_mem_gen_0.dcp]
-add_files -quiet /home/jmurra15/classes/ECE551-Spring-2015/ECE551hw/final/john/top_level2_2014.2/top_level2_2014.2.runs/blk_mem_gen_1_synth_1/blk_mem_gen_1.dcp
-set_property used_in_implementation false [get_files /home/jmurra15/classes/ECE551-Spring-2015/ECE551hw/final/john/top_level2_2014.2/top_level2_2014.2.runs/blk_mem_gen_1_synth_1/blk_mem_gen_1.dcp]
-add_files -quiet /home/jmurra15/classes/ECE551-Spring-2015/ECE551hw/final/john/top_level2_2014.2/top_level2_2014.2.runs/c_addsub_0_synth_1/c_addsub_0.dcp
-set_property used_in_implementation false [get_files /home/jmurra15/classes/ECE551-Spring-2015/ECE551hw/final/john/top_level2_2014.2/top_level2_2014.2.runs/c_addsub_0_synth_1/c_addsub_0.dcp]
-add_files -quiet /home/jmurra15/classes/ECE551-Spring-2015/ECE551hw/final/john/top_level2_2014.2/top_level2_2014.2.runs/clk_wiz_vga_synth_1/clk_wiz_vga.dcp
-set_property used_in_implementation false [get_files /home/jmurra15/classes/ECE551-Spring-2015/ECE551hw/final/john/top_level2_2014.2/top_level2_2014.2.runs/clk_wiz_vga_synth_1/clk_wiz_vga.dcp]
-add_files -quiet /home/jmurra15/classes/ECE551-Spring-2015/ECE551hw/final/john/top_level2_2014.2/top_level2_2014.2.runs/cordic_0_synth_1/cordic_0.dcp
-set_property used_in_implementation false [get_files /home/jmurra15/classes/ECE551-Spring-2015/ECE551hw/final/john/top_level2_2014.2/top_level2_2014.2.runs/cordic_0_synth_1/cordic_0.dcp]
-add_files -quiet /home/jmurra15/classes/ECE551-Spring-2015/ECE551hw/final/john/top_level2_2014.2/top_level2_2014.2.runs/mult_gen_0_synth_1/mult_gen_0.dcp
-set_property used_in_implementation false [get_files /home/jmurra15/classes/ECE551-Spring-2015/ECE551hw/final/john/top_level2_2014.2/top_level2_2014.2.runs/mult_gen_0_synth_1/mult_gen_0.dcp]
-add_files -quiet /home/jmurra15/classes/ECE551-Spring-2015/ECE551hw/final/john/top_level2_2014.2/top_level2_2014.2.runs/xfft_0_synth_1/xfft_0.dcp
-set_property used_in_implementation false [get_files /home/jmurra15/classes/ECE551-Spring-2015/ECE551hw/final/john/top_level2_2014.2/top_level2_2014.2.runs/xfft_0_synth_1/xfft_0.dcp]
+add_files {{/data1/cdaffron/git/ece551hw/final/jacob/sources/coe files/gunshot.coe}}
+add_files -quiet /data1/cdaffron/git/ece551hw/final/john/top_level2_2014.2/top_level2_2014.2.runs/mult_gen_0_synth_1/mult_gen_0.dcp
+set_property used_in_implementation false [get_files /data1/cdaffron/git/ece551hw/final/john/top_level2_2014.2/top_level2_2014.2.runs/mult_gen_0_synth_1/mult_gen_0.dcp]
+add_files -quiet /data1/cdaffron/git/ece551hw/final/john/top_level2_2014.2/top_level2_2014.2.runs/c_addsub_0_synth_1/c_addsub_0.dcp
+set_property used_in_implementation false [get_files /data1/cdaffron/git/ece551hw/final/john/top_level2_2014.2/top_level2_2014.2.runs/c_addsub_0_synth_1/c_addsub_0.dcp]
+add_files -quiet /data1/cdaffron/git/ece551hw/final/john/top_level2_2014.2/top_level2_2014.2.runs/cordic_0_synth_1/cordic_0.dcp
+set_property used_in_implementation false [get_files /data1/cdaffron/git/ece551hw/final/john/top_level2_2014.2/top_level2_2014.2.runs/cordic_0_synth_1/cordic_0.dcp]
+add_files -quiet /data1/cdaffron/git/ece551hw/final/john/top_level2_2014.2/top_level2_2014.2.runs/clk_wiz_vga_synth_1/clk_wiz_vga.dcp
+set_property used_in_implementation false [get_files /data1/cdaffron/git/ece551hw/final/john/top_level2_2014.2/top_level2_2014.2.runs/clk_wiz_vga_synth_1/clk_wiz_vga.dcp]
+add_files -quiet /data1/cdaffron/git/ece551hw/final/john/top_level2_2014.2/top_level2_2014.2.runs/xfft_0_synth_1/xfft_0.dcp
+set_property used_in_implementation false [get_files /data1/cdaffron/git/ece551hw/final/john/top_level2_2014.2/top_level2_2014.2.runs/xfft_0_synth_1/xfft_0.dcp]
+add_files -quiet /data1/cdaffron/git/ece551hw/final/john/top_level2_2014.2/top_level2_2014.2.runs/blk_mem_gen_1_synth_1/blk_mem_gen_1.dcp
+set_property used_in_implementation false [get_files /data1/cdaffron/git/ece551hw/final/john/top_level2_2014.2/top_level2_2014.2.runs/blk_mem_gen_1_synth_1/blk_mem_gen_1.dcp]
+add_files -quiet /data1/cdaffron/git/ece551hw/final/john/top_level2_2014.2/top_level2_2014.2.runs/blk_mem_gen_0_synth_1/blk_mem_gen_0.dcp
+set_property used_in_implementation false [get_files /data1/cdaffron/git/ece551hw/final/john/top_level2_2014.2/top_level2_2014.2.runs/blk_mem_gen_0_synth_1/blk_mem_gen_0.dcp]
 read_vhdl -library xil_defaultlib {
-  /home/jmurra15/classes/ECE551-Spring-2015/ECE551hw/final/john/top_level2_2014.2/top_level2_2014.2.srcs/sources_1/imports/sources_1/imports/chris/disp_draw/disp_draw.srcs/sources_1/new/type_pkg.vhd
-  /home/jmurra15/classes/ECE551-Spring-2015/ECE551hw/final/john/top_level2_2014.2/top_level2_2014.2.srcs/sources_1/imports/sources_1/imports/sources_1/new/vga_pkg.vhd
-  /home/jmurra15/classes/ECE551-Spring-2015/ECE551hw/final/john/top_level2_2014.2/top_level2_2014.2.srcs/sources_1/imports/sources_1/imports/sources_1/imports/sources_1/new/vga_display_gen.vhd
-  /home/jmurra15/classes/ECE551-Spring-2015/ECE551hw/final/john/top_level2_2014.2/top_level2_2014.2.srcs/sources_1/imports/sources_1/imports/sources_1/imports/sources_1/imports/vga/vga_controller_640_60.vhd
-  /home/jmurra15/classes/ECE551-Spring-2015/ECE551hw/final/john/top_level2_2014.2/top_level2_2014.2.srcs/sources_1/imports/sources_1/imports/new/averager.vhd
-  /home/jmurra15/classes/ECE551-Spring-2015/ECE551hw/final/john/top_level2_2014.2/top_level2_2014.2.srcs/sources_1/imports/sources_1/imports/chris/magnitude/magnitude.srcs/sources_1/new/magnitude.vhd
-  /home/jmurra15/classes/ECE551-Spring-2015/ECE551hw/final/john/top_level2_2014.2/top_level2_2014.2.srcs/sources_1/imports/sources_1/imports/sources_1/new/vga_top.vhd
-  /home/jmurra15/classes/ECE551-Spring-2015/ECE551hw/final/john/top_level2_2014.2/top_level2_2014.2.srcs/sources_1/imports/sources_1/imports/adc_fft_to_pc/adc_fft_fsmV3_noUART.vhd
-  /home/jmurra15/classes/ECE551-Spring-2015/ECE551hw/final/john/top_level2_2014.2/top_level2_2014.2.srcs/sources_1/imports/new/disp_draw.vhd
-  /home/jmurra15/classes/ECE551-Spring-2015/ECE551hw/final/john/top_level2_2014.2/top_level2_2014.2.srcs/sources_1/imports/sources_1/new/top_level.vhd
+  /data1/cdaffron/git/ece551hw/final/john/top_level2_2014.2/top_level2_2014.2.srcs/sources_1/imports/sources_1/imports/chris/disp_draw/disp_draw.srcs/sources_1/new/type_pkg.vhd
+  /data1/cdaffron/git/ece551hw/final/john/top_level2_2014.2/top_level2_2014.2.srcs/sources_1/imports/sources_1/imports/sources_1/new/vga_pkg.vhd
+  /data1/cdaffron/git/ece551hw/final/john/top_level2_2014.2/top_level2_2014.2.srcs/sources_1/imports/sources_1/imports/sources_1/imports/sources_1/new/vga_display_gen.vhd
+  /data1/cdaffron/git/ece551hw/final/john/top_level2_2014.2/top_level2_2014.2.srcs/sources_1/imports/sources_1/imports/sources_1/imports/sources_1/imports/vga/vga_controller_640_60.vhd
+  /data1/cdaffron/git/ece551hw/final/john/top_level2_2014.2/top_level2_2014.2.srcs/sources_1/imports/sources_1/imports/new/averager.vhd
+  /data1/cdaffron/git/ece551hw/final/john/top_level2_2014.2/top_level2_2014.2.srcs/sources_1/imports/sources_1/imports/chris/magnitude/magnitude.srcs/sources_1/new/magnitude.vhd
+  /data1/cdaffron/git/ece551hw/final/john/top_level2_2014.2/top_level2_2014.2.srcs/sources_1/imports/sources_1/imports/sources_1/new/vga_top.vhd
+  /data1/cdaffron/git/ece551hw/final/john/top_level2_2014.2/top_level2_2014.2.srcs/sources_1/imports/sources_1/imports/adc_fft_to_pc/adc_fft_fsmV3_noUART.vhd
+  /data1/cdaffron/git/ece551hw/final/john/top_level2_2014.2/top_level2_2014.2.srcs/sources_1/imports/new/disp_draw.vhd
+  /data1/cdaffron/git/ece551hw/final/john/top_level2_2014.2/top_level2_2014.2.srcs/sources_1/imports/sources_1/new/top_level.vhd
 }
-read_xdc /home/jmurra15/classes/ECE551-Spring-2015/ECE551hw/final/john/top_level2_2014.2/top_level2_2014.2.srcs/constrs_1/imports/lab2/Nexys4_Master.xdc
-set_property used_in_implementation false [get_files /home/jmurra15/classes/ECE551-Spring-2015/ECE551hw/final/john/top_level2_2014.2/top_level2_2014.2.srcs/constrs_1/imports/lab2/Nexys4_Master.xdc]
+read_xdc /data1/cdaffron/git/ece551hw/final/john/top_level2_2014.2/top_level2_2014.2.srcs/constrs_1/imports/lab2/Nexys4_Master.xdc
+set_property used_in_implementation false [get_files /data1/cdaffron/git/ece551hw/final/john/top_level2_2014.2/top_level2_2014.2.srcs/constrs_1/imports/lab2/Nexys4_Master.xdc]
 
 read_xdc dont_buffer.xdc
 set_property used_in_implementation false [get_files dont_buffer.xdc]
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir /home/jmurra15/classes/ECE551-Spring-2015/ECE551hw/final/john/top_level2_2014.2/top_level2_2014.2.cache/wt [current_project]
-set_property parent.project_dir /home/jmurra15/classes/ECE551-Spring-2015/ECE551hw/final/john/top_level2_2014.2 [current_project]
+set_property webtalk.parent_dir /data1/cdaffron/git/ece551hw/final/john/top_level2_2014.2/top_level2_2014.2.cache/wt [current_project]
+set_property parent.project_dir /data1/cdaffron/git/ece551hw/final/john/top_level2_2014.2 [current_project]
 catch { write_hwdef -file top_level.hwdef }
-synth_design -top top_level -part xc7a100tcsg324-1 -flatten_hierarchy full
+synth_design -top top_level -part xc7a100tcsg324-1 -flatten_hierarchy none
 write_checkpoint top_level.dcp
 report_utilization -file top_level_utilization_synth.rpt -pb top_level_utilization_synth.pb

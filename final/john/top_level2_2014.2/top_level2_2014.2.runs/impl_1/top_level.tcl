@@ -42,6 +42,7 @@ proc step_failed { step } {
   close $ch
 }
 
+set_msg_config -id {Common-41} -limit 4294967295
 set_msg_config -id {HDL 9-1061} -limit 100000
 set_msg_config -id {HDL 9-1654} -limit 100000
 
@@ -51,8 +52,8 @@ set rc [catch {
   set_param gui.test TreeTableDev
   open_checkpoint top_level_routed.dcp
   write_bitstream -force top_level.bit 
-  if { [file exists /home/jmurra15/classes/ECE551-Spring-2015/ECE551hw/final/john/top_level2_2014.2/top_level2_2014.2.runs/synth_1/top_level.hwdef] } {
-    catch { write_sysdef -hwdef /home/jmurra15/classes/ECE551-Spring-2015/ECE551hw/final/john/top_level2_2014.2/top_level2_2014.2.runs/synth_1/top_level.hwdef -bitfile top_level.bit -meminfo top_level_bd.bmm -file top_level.sysdef }
+  if { [file exists /data1/cdaffron/git/ece551hw/final/john/top_level2_2014.2/top_level2_2014.2.runs/synth_1/top_level.hwdef] } {
+    catch { write_sysdef -hwdef /data1/cdaffron/git/ece551hw/final/john/top_level2_2014.2/top_level2_2014.2.runs/synth_1/top_level.hwdef -bitfile top_level.bit -meminfo top_level_bd.bmm -file top_level.sysdef }
   }
   close_msg_db -file write_bitstream.pb
 } RESULT]

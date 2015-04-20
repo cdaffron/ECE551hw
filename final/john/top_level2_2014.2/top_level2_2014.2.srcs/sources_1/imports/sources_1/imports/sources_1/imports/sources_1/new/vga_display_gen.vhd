@@ -313,6 +313,10 @@ architecture behavioral of vga_display_gen is
   signal actY : std_logic_vector(9 downto 0); -- Actual Y position
   signal relX : std_logic_vector(9 downto 0); -- X position w.t.r bottom left corner of screen
   signal relY : std_logic_vector(9 downto 0); -- Y position w.t.r bottom left corner of screen
+  
+  attribute KEEP : BOOLEAN;
+  attribute KEEP of relX : signal is TRUE;
+  attribute KEEP of relY : signal is TRUE;
 
   function get_index(cur_x_pos: integer; num_bars: std_logic_vector(2 downto 0) := "00") return integer is
     variable num_bars_int: integer := 0;
