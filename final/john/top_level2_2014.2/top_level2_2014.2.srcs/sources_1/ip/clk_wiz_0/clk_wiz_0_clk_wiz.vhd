@@ -155,7 +155,8 @@ begin
     CLKOUT2_PHASE        => 0.000,
     CLKOUT2_DUTY_CYCLE   => 0.500,
     CLKOUT2_USE_FINE_PS  => FALSE,
-    CLKIN1_PERIOD        => 10.0)
+    CLKIN1_PERIOD        => 10.0,
+    REF_JITTER1          => 0.010)
   port map
     -- Output clocks
    (

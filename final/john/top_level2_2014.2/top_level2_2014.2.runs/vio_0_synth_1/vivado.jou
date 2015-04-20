@@ -1,10 +1,10 @@
 #-----------------------------------------------------------
-# Vivado v2014.4 (64-bit)
-# SW Build 1071353 on Tue Nov 18 16:47:07 MST 2014
-# IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
-# Start of session at: Sun Apr 19 22:01:40 2015
-# Process ID: 19911
-# Log file: /mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.runs/vio_0_synth_1/vio_0.vds
-# Journal file: /mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.runs/vio_0_synth_1/vivado.jou
+# Vivado v2014.2 (64-bit)
+# SW Build 932637 on Wed Jun 11 13:08:52 MDT 2014
+# IP Build 924643 on Fri May 30 09:20:16 MDT 2014
+# Start of session at: Mon Apr 20 17:26:48 2015
+# Process ID: 14174
+# Log file: /data1/cdaffron/git/ece551hw/final/john/top_level2_2014.2/top_level2_2014.2.runs/vio_0_synth_1/vio_0.vds
+# Journal file: /data1/cdaffron/git/ece551hw/final/john/top_level2_2014.2/top_level2_2014.2.runs/vio_0_synth_1/vivado.jou
 #-----------------------------------------------------------
 source vio_0.tcl

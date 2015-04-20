@@ -1,10 +1,10 @@
 // Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
-// Tool Version: Vivado v.2014.4 (lin64) Build 1071353 Tue Nov 18 16:47:07 MST 2014
-// Date        : Sun Apr 19 21:58:54 2015
-// Host        : jjmvi-AMD-ubuntu running 64-bit Ubuntu 14.04.2 LTS
+// Tool Version: Vivado v.2014.2 (lin64) Build 932637 Wed Jun 11 13:08:52 MDT 2014
+// Date        : Mon Apr 20 17:27:33 2015
+// Host        : com1549.eecs.utk.edu running 64-bit Red Hat Enterprise Linux Server release 6.5 (Santiago)
 // Command     : write_verilog -force -mode funcsim
-//               /mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_funcsim.v
+//               /data1/cdaffron/git/ece551hw/final/john/top_level2_2014.2/top_level2_2014.2.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_funcsim.v
 // Design      : clk_wiz_0
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -155,7 +155,7 @@ module clk_wiz_0_clk_wiz_0_clk_wiz
     .IS_PSINCDEC_INVERTED(1'b0),
     .IS_PWRDWN_INVERTED(1'b0),
     .IS_RST_INVERTED(1'b0),
-    .REF_JITTER1(0.000000),
+    .REF_JITTER1(0.010000),
     .REF_JITTER2(0.000000),
     .SS_EN("FALSE"),
     .SS_MODE("CENTER_HIGH"),

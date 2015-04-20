@@ -1,13 +1,3 @@
-2014.4:
- * Version 12.0 (Rev. 5)
- * Encrypted source files are concatenated together to reduce the number of files and to reduce simulator compile time
- * Internal GUI updates, no functional changes.
- * Enabled out-of-context clock frequency setting by adding FREQ_HZ parameter to clock interface aclk_intf
-
-2014.3:
- * Version 12.0 (Rev. 4)
- * No changes
-
 2014.2:
  * Version 12.0 (Rev. 4)
  * No changes

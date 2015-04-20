@@ -1,20 +1,19 @@
 Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
------------------------------------------------------------------------------------------------------
-| Tool Version : Vivado v.2014.4 (lin64) Build 1071353 Tue Nov 18 16:47:07 MST 2014
-| Date         : Sun Apr 19 22:02:20 2015
-| Host         : jjmvi-AMD-ubuntu running 64-bit Ubuntu 14.04.2 LTS
+------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2014.2 (lin64) Build 932637 Wed Jun 11 13:08:52 MDT 2014
+| Date         : Mon Apr 20 17:27:26 2015
+| Host         : com1549.eecs.utk.edu running 64-bit Red Hat Enterprise Linux Server release 6.5 (Santiago)
 | Command      : report_utilization -file vio_0_utilization_synth.rpt -pb vio_0_utilization_synth.pb
 | Design       : vio_0
 | Device       : xc7a100t
 | Design State : Synthesized
------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------
 
 Utilization Design Information
 
 Table of Contents
 -----------------
 1. Slice Logic
-1.1 Summary of Registers by Type
 2. Memory
 3. DSP
 4. IO and GT Specific
@@ -30,8 +29,8 @@ Table of Contents
 +-------------------------+------+-------+-----------+-------+
 |        Site Type        | Used | Fixed | Available | Util% |
 +-------------------------+------+-------+-----------+-------+
-| Slice LUTs*             |   67 |     0 |     63400 |  0.10 |
-|   LUT as Logic          |   67 |     0 |     63400 |  0.10 |
+| Slice LUTs*             |   70 |     0 |     63400 |  0.11 |
+|   LUT as Logic          |   70 |     0 |     63400 |  0.11 |
 |   LUT as Memory         |    0 |     0 |     19000 |  0.00 |
 | Slice Registers         |  105 |     0 |    126800 |  0.08 |
 |   Register as Flip Flop |  105 |     0 |    126800 |  0.08 |
@@ -40,25 +39,6 @@ Table of Contents
 | F8 Muxes                |    0 |     0 |     15850 |  0.00 |
 +-------------------------+------+-------+-----------+-------+
 * Warning! The Final LUT count, after physical optimizations and full implementation, is typically lower. Run opt_design after synthesis, if not already completed, for a more realistic count.
-
-
-1.1 Summary of Registers by Type
---------------------------------
-
-+-------+--------------+-------------+--------------+
-| Total | Clock Enable | Synchronous | Asynchronous |
-+-------+--------------+-------------+--------------+
-| 0     |            _ |           - |            - |
-| 0     |            _ |           - |          Set |
-| 0     |            _ |           - |        Reset |
-| 0     |            _ |         Set |            - |
-| 0     |            _ |       Reset |            - |
-| 0     |          Yes |           - |            - |
-| 0     |          Yes |           - |          Set |
-| 0     |          Yes |           - |        Reset |
-| 6     |          Yes |         Set |            - |
-| 99    |          Yes |       Reset |            - |
-+-------+--------------+-------------+--------------+
 
 
 2. Memory
@@ -148,12 +128,12 @@ Table of Contents
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
 | FDRE     |   99 |        Flop & Latch |
-| LUT3     |   28 |                 LUT |
-| LUT5     |   22 |                 LUT |
-| LUT6     |   20 |                 LUT |
-| LUT2     |    7 |                 LUT |
-| LUT4     |    6 |                 LUT |
+| LUT5     |   28 |                 LUT |
+| LUT6     |   25 |                 LUT |
+| LUT3     |   25 |                 LUT |
+| LUT2     |    6 |                 LUT |
 | FDSE     |    6 |        Flop & Latch |
+| LUT4     |    2 |                 LUT |
 +----------+------+---------------------+
 
 

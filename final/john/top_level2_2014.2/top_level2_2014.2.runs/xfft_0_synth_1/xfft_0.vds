@@ -2,8 +2,8 @@
 # Vivado v2014.2 (64-bit)
 # SW Build 932637 on Wed Jun 11 13:08:52 MDT 2014
 # IP Build 924643 on Fri May 30 09:20:16 MDT 2014
-# Start of session at: Mon Apr 20 16:26:12 2015
-# Process ID: 14232
+# Start of session at: Mon Apr 20 17:26:48 2015
+# Process ID: 14171
 # Log file: /data1/cdaffron/git/ece551hw/final/john/top_level2_2014.2/top_level2_2014.2.runs/xfft_0_synth_1/xfft_0.vds
 # Journal file: /data1/cdaffron/git/ece551hw/final/john/top_level2_2014.2/top_level2_2014.2.runs/xfft_0_synth_1/vivado.jou
 #-----------------------------------------------------------
@@ -24,6 +24,8 @@ WARNING: [IP_Flow 19-3664] IP 'xfft_0' generated file not found '/data1/cdaffron
 WARNING: [IP_Flow 19-3664] IP 'xfft_0' generated file not found '/data1/cdaffron/git/ece551hw/final/john/top_level2_2014.2/top_level2_2014.2.srcs/sources_1/ip/xfft_0/xfft_0_stub.vhdl'. Please regenerate to continue.
 WARNING: [IP_Flow 19-3664] IP 'xfft_0' generated file not found '/data1/cdaffron/git/ece551hw/final/john/top_level2_2014.2/top_level2_2014.2.srcs/sources_1/ip/xfft_0/xfft_0_funcsim.v'. Please regenerate to continue.
 WARNING: [IP_Flow 19-3664] IP 'xfft_0' generated file not found '/data1/cdaffron/git/ece551hw/final/john/top_level2_2014.2/top_level2_2014.2.srcs/sources_1/ip/xfft_0/xfft_0_funcsim.vhdl'. Please regenerate to continue.
+# set_property used_in_implementation false [get_files /data1/cdaffron/git/ece551hw/final/john/top_level2_2014.2/top_level2_2014.2.srcs/sources_1/ip/xfft_0/xfft_0.dcp]
+# set_property used_in_implementation false [get_files -all /data1/cdaffron/git/ece551hw/final/john/top_level2_2014.2/top_level2_2014.2.srcs/sources_1/ip/xfft_0/xfft_0.dcp]
 # set_msg_config -id {IP_Flow 19-2162} -severity warning -new_severity info
 # set_property is_locked true [get_files /data1/cdaffron/git/ece551hw/final/john/top_level2_2014.2/top_level2_2014.2.srcs/sources_1/ip/xfft_0/xfft_0.xci]
 # read_xdc dont_touch.xdc
@@ -41,7 +43,7 @@ Starting synthesis...
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 858.559 ; gain = 168.129
+Starting RTL Elaboration : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 858.566 ; gain = 168.129
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'xfft_0' [/data1/cdaffron/git/ece551hw/final/john/top_level2_2014.2/top_level2_2014.2.srcs/sources_1/ip/xfft_0/synth/xfft_0.vhd:88]
 INFO: [Synth 8-3491] module 'xfft_v9_0' declared at '/data1/cdaffron/git/ece551hw/final/john/top_level2_2014.2/top_level2_2014.2.srcs/sources_1/ip/xfft_0/xfft_v9_0/hdl/xfft_v9_0.vhd:111' bound to instance 'U0' of component 'xfft_v9_0' [/data1/cdaffron/git/ece551hw/final/john/top_level2_2014.2/top_level2_2014.2.srcs/sources_1/ip/xfft_0/synth/xfft_0.vhd:188]
@@ -630,7 +632,7 @@ INFO: [Synth 8-256] done synthesizing module 'xfft_v9_0_viv__parameterized0' (63
 INFO: [Synth 8-256] done synthesizing module 'xfft_v9_0__parameterized0' (64#1) [/data1/cdaffron/git/ece551hw/final/john/top_level2_2014.2/top_level2_2014.2.srcs/sources_1/ip/xfft_0/xfft_v9_0/hdl/xfft_v9_0.vhd:191]
 INFO: [Synth 8-256] done synthesizing module 'xfft_0' (65#1) [/data1/cdaffron/git/ece551hw/final/john/top_level2_2014.2/top_level2_2014.2.srcs/sources_1/ip/xfft_0/synth/xfft_0.vhd:88]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:01:22 ; elapsed = 00:01:23 . Memory (MB): peak = 1018.438 ; gain = 328.008
+Finished RTL Elaboration : Time (s): cpu = 00:01:22 ; elapsed = 00:01:23 . Memory (MB): peak = 1018.445 ; gain = 328.008
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Optimization
@@ -774,17 +776,17 @@ Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:01:34 ; elapsed = 00:01:35 . Memory (MB): peak = 1234.789 ; gain = 544.359
+Finished Loading Part and Timing Information : Time (s): cpu = 00:01:34 ; elapsed = 00:01:35 . Memory (MB): peak = 1234.797 ; gain = 544.359
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 Applied set_property DONT_TOUCH = true for U0. (constraint file  /data1/cdaffron/git/ece551hw/final/john/top_level2_2014.2/top_level2_2014.2.runs/xfft_0_synth_1/dont_touch.xdc, line 9).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:34 ; elapsed = 00:01:35 . Memory (MB): peak = 1234.789 ; gain = 544.359
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:34 ; elapsed = 00:01:35 . Memory (MB): peak = 1234.797 ; gain = 544.359
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization : Time (s): cpu = 00:01:34 ; elapsed = 00:01:35 . Memory (MB): peak = 1234.789 ; gain = 544.359
+Finished RTL Optimization : Time (s): cpu = 00:01:34 ; elapsed = 00:01:35 . Memory (MB): peak = 1234.797 ; gain = 544.359
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-4471] merging register 'CP_LEN_WE_reg' into 'fwd_inv_we_int_reg' [/data1/cdaffron/git/ece551hw/final/john/top_level2_2014.2/top_level2_2014.2.srcs/sources_1/ip/xfft_0/xfft_v9_0/hdl/axi_wrapper.vhd:1718]
 INFO: [Synth 8-4471] merging register 'SCALE_SCH_WE_reg' into 'fwd_inv_we_int_reg' [/data1/cdaffron/git/ece551hw/final/john/top_level2_2014.2/top_level2_2014.2.srcs/sources_1/ip/xfft_0/xfft_v9_0/hdl/axi_wrapper.vhd:1720]
@@ -891,7 +893,7 @@ BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
 ---------------------------------------------------------------------------------
 Finished Part Resource Summary
 ---------------------------------------------------------------------------------
-Workers Ready, Starting Parallel Section  : Time (s): cpu = 00:01:37 ; elapsed = 00:01:38 . Memory (MB): peak = 1234.789 ; gain = 544.359
+Workers Ready, Starting Parallel Section  : Time (s): cpu = 00:01:37 ; elapsed = 00:01:38 . Memory (MB): peak = 1234.797 ; gain = 544.359
 ---------------------------------------------------------------------------------
 Start Cross Boundary Optimization
 ---------------------------------------------------------------------------------
@@ -904,9 +906,9 @@ INFO: [Synth 8-4471] merging register 'xfft_inst/non_floating_point.arch_b.xfft_
 INFO: [Synth 8-4471] merging register 'xfft_inst/non_floating_point.arch_b.xfft_inst/control/twiddle_address_generator/N_MAX_P4.p4/cnt_rank_signal.cnt_rn_delay_reg[8:0]' into 'xfft_inst/non_floating_point.arch_b.xfft_inst/control/processing_address_generator/cnt_reg2_reg[8:0]' [/data1/cdaffron/git/ece551hw/final/john/top_level2_2014.2/top_level2_2014.2.srcs/sources_1/ip/xfft_0/xfft_v9_0/hdl/tw_gen_p4.vhd:437]
 INFO: [Synth 8-4471] merging register 'xfft_inst/non_floating_point.arch_b.xfft_inst/single_channel.datapath/pe/mult_gen.dsp48_dragonfly.dragonfly_inst/BF_0/dsp48e_simd.bf_dsp48e_simd_bypass/reg_SUB_B_reg' into 'xfft_inst/non_floating_point.arch_b.xfft_inst/single_channel.datapath/pe/mult_gen.dsp48_dragonfly.dragonfly_inst/needs_bypass_balancer.bypass_balancer/no_sclr_lut.depth1_shift_ram.without_sclr.Qsr_reg[0:0]' [/data1/cdaffron/git/ece551hw/final/john/top_level2_2014.2/top_level2_2014.2.srcs/sources_1/ip/xfft_0/xfft_v9_0/hdl/butterfly_dsp48e_simd_bypass.vhd:231]
 ---------------------------------------------------------------------------------
-Finished Cross Boundary Optimization : Time (s): cpu = 00:01:38 ; elapsed = 00:01:39 . Memory (MB): peak = 1234.789 ; gain = 544.359
+Finished Cross Boundary Optimization : Time (s): cpu = 00:01:39 ; elapsed = 00:01:40 . Memory (MB): peak = 1234.797 ; gain = 544.359
 ---------------------------------------------------------------------------------
-Finished Parallel Reinfer  : Time (s): cpu = 00:01:38 ; elapsed = 00:01:39 . Memory (MB): peak = 1234.789 ; gain = 544.359
+Finished Parallel Reinfer  : Time (s): cpu = 00:01:39 ; elapsed = 00:01:40 . Memory (MB): peak = 1234.797 ; gain = 544.359
 ---------------------------------------------------------------------------------
 Start Area Optimization
 ---------------------------------------------------------------------------------
@@ -1012,10 +1014,10 @@ INFO: [Synth 8-3332] Sequential element (\xfft_inst/non_floating_point.arch_b.xf
 INFO: [Synth 8-3332] Sequential element (\xfft_inst/non_floating_point.arch_b.xfft_inst/control/twiddle_generator3/tw1.twgen1/theta_i_reg[2] ) is unused and will be removed from module xfft_v9_0_viv__parameterized0.
 INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished Area Optimization : Time (s): cpu = 00:01:40 ; elapsed = 00:01:41 . Memory (MB): peak = 1234.789 ; gain = 544.359
+Finished Area Optimization : Time (s): cpu = 00:01:41 ; elapsed = 00:01:42 . Memory (MB): peak = 1234.797 ; gain = 544.359
 ---------------------------------------------------------------------------------
-Finished Parallel Area Opt  : Time (s): cpu = 00:01:40 ; elapsed = 00:01:41 . Memory (MB): peak = 1234.789 ; gain = 544.359
-Finished Parallel Section  : Time (s): cpu = 00:01:40 ; elapsed = 00:01:41 . Memory (MB): peak = 1234.789 ; gain = 544.359
+Finished Parallel Area Opt  : Time (s): cpu = 00:01:41 ; elapsed = 00:01:42 . Memory (MB): peak = 1234.797 ; gain = 544.359
+Finished Parallel Section  : Time (s): cpu = 00:01:41 ; elapsed = 00:01:42 . Memory (MB): peak = 1234.797 ; gain = 544.359
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
@@ -1023,16 +1025,16 @@ Start Timing Optimization
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:53 ; elapsed = 00:01:54 . Memory (MB): peak = 1260.801 ; gain = 570.371
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:55 ; elapsed = 00:01:56 . Memory (MB): peak = 1259.809 ; gain = 569.371
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:01:54 ; elapsed = 00:01:55 . Memory (MB): peak = 1269.801 ; gain = 579.371
+Finished Timing Optimization : Time (s): cpu = 00:01:56 ; elapsed = 00:01:57 . Memory (MB): peak = 1268.809 ; gain = 578.371
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:01:58 ; elapsed = 00:01:58 . Memory (MB): peak = 1292.262 ; gain = 601.832
+Finished Technology Mapping : Time (s): cpu = 00:02:00 ; elapsed = 00:02:01 . Memory (MB): peak = 1291.270 ; gain = 600.832
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -1050,7 +1052,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:01:59 ; elapsed = 00:01:59 . Memory (MB): peak = 1292.262 ; gain = 601.832
+Finished IO Insertion : Time (s): cpu = 00:02:01 ; elapsed = 00:02:02 . Memory (MB): peak = 1291.270 ; gain = 600.832
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -1063,7 +1065,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:01:59 ; elapsed = 00:01:59 . Memory (MB): peak = 1292.262 ; gain = 601.832
+Finished Renaming Generated Instances : Time (s): cpu = 00:02:01 ; elapsed = 00:02:02 . Memory (MB): peak = 1291.270 ; gain = 600.832
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
@@ -1072,7 +1074,7 @@ WARNING: [Synth 8-115] binding instance 'i_2049_0' in module 'cmpy_3_dsp48' to r
 WARNING: [Synth 8-115] binding instance 'i_2049_0' in module 'cmpy_3_dsp48_82' to reference 'cmpy_v6_0_delay_line_95' which has no pins
 WARNING: [Synth 8-115] binding instance 'i_2049_0' in module 'cmpy_3_dsp48_109' to reference 'cmpy_v6_0_delay_line_122' which has no pins
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:00 ; elapsed = 00:02:01 . Memory (MB): peak = 1292.262 ; gain = 601.832
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:02 ; elapsed = 00:02:03 . Memory (MB): peak = 1291.270 ; gain = 600.832
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -1120,10 +1122,10 @@ Report Cell Usage:
 |29    |FDSE             |    45|
 +------+-----------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:02:00 ; elapsed = 00:02:01 . Memory (MB): peak = 1292.262 ; gain = 601.832
+Finished Writing Synthesis Report : Time (s): cpu = 00:02:02 ; elapsed = 00:02:03 . Memory (MB): peak = 1291.270 ; gain = 600.832
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 61 warnings.
-Synthesis Optimization Complete : Time (s): cpu = 00:02:00 ; elapsed = 00:02:01 . Memory (MB): peak = 1292.262 ; gain = 601.832
+Synthesis Optimization Complete : Time (s): cpu = 00:02:02 ; elapsed = 00:02:03 . Memory (MB): peak = 1291.270 ; gain = 600.832
 INFO: [Netlist 29-17] Analyzing 468 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 Parsing XDC File [/data1/cdaffron/git/ece551hw/final/john/top_level2_2014.2/top_level2_2014.2.srcs/sources_1/ip/xfft_0/xfft_0_ooc.xdc] for cell 'U0'
@@ -1139,12 +1141,12 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 INFO: [Common 17-83] Releasing license: Synthesis
 778 Infos, 104 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:02:01 ; elapsed = 00:02:02 . Memory (MB): peak = 1292.266 ; gain = 483.707
+synth_design: Time (s): cpu = 00:02:02 ; elapsed = 00:02:03 . Memory (MB): peak = 1291.273 ; gain = 482.707
 # rename_ref -prefix_all xfft_0_
 INFO: [Coretcl 2-1174] Renamed 409 cell refs.
 # write_checkpoint -noxdef xfft_0.dcp
 # report_utilization -file xfft_0_utilization_synth.rpt -pb xfft_0_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00.09 ; elapsed = 00:00:00.15 . Memory (MB): peak = 1292.266 ; gain = 0.000
+report_utilization: Time (s): cpu = 00:00:00.10 ; elapsed = 00:00:00.15 . Memory (MB): peak = 1291.273 ; gain = 0.000
 # if { [catch {
 #   file copy -force /data1/cdaffron/git/ece551hw/final/john/top_level2_2014.2/top_level2_2014.2.runs/xfft_0_synth_1/xfft_0.dcp /data1/cdaffron/git/ece551hw/final/john/top_level2_2014.2/top_level2_2014.2.srcs/sources_1/ip/xfft_0/xfft_0.dcp
 #   write_verilog -force -mode synth_stub /data1/cdaffron/git/ece551hw/final/john/top_level2_2014.2/top_level2_2014.2.srcs/sources_1/ip/xfft_0/xfft_0_stub.v
@@ -1155,6 +1157,6 @@ report_utilization: Time (s): cpu = 00:00:00.09 ; elapsed = 00:00:00.15 . Memory
 #   send_msg_id runtcl-3 error "Unable to successfully create or copy supporting IP files."
 #   return -code error
 # }
-write_verilog: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1292.266 ; gain = 0.000
-write_vhdl: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1292.266 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Mon Apr 20 16:28:34 2015...
+write_verilog: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1291.273 ; gain = 0.000
+write_vhdl: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1291.273 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Mon Apr 20 17:29:14 2015...

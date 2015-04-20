@@ -118,12 +118,12 @@ architecture Behavioral of top_level is
     signal clk6MHz : std_logic := '0';
     signal clk50 : std_logic := '0';
     signal clk1k : std_logic := '0';
---    signal debug_clk : std_logic := '0';
+    signal debug_clk : std_logic := '0';
     signal delay_trig : std_logic := '0';
     signal trig_prev : std_logic := '0';
     signal trig_enable : std_logic := '0';
---    signal seven_seg_data : std_logic_vector (31 downto 0) := X"00000000";
---    signal seg7 : std_logic_vector (7 downto 0);
+    signal seven_seg_data : std_logic_vector (31 downto 0) := X"00000000";
+    signal seg7 : std_logic_vector (7 downto 0);
 --    signal fullBarHeights : fullBarArray;
     signal vsync_sig : std_logic := '0';
     
@@ -134,8 +134,8 @@ begin
     
     vsync <= vsync_sig;
     trigger <= vsync_sig;
---    seg <= seg7(6 downto 0);
---    dp <= s(7);
+    seg <= seg7(6 downto 0);
+    dp <= seg7(7);
     led <= sw;
 
     disp_draw_inst : disp_draw
@@ -256,32 +256,32 @@ begin
             vga_blue => vga_blue
         );
     
---    clk_debug : entity work.clk_wiz_0
---    port map
---     (-- Clock in ports
---      clk_in1 => clk,
---      -- Clock out ports
---      clk_out1 => debug_clk,
---      clk_out2 => clk6MHz,
---      clk_out3 => clk50,
---      -- Status and control signals
---      reset => '0',
---      locked => open
---     );
+    clk_debug : entity work.clk_wiz_0
+    port map
+     (-- Clock in ports
+      clk_in1 => clk,
+      -- Clock out ports
+      clk_out1 => debug_clk,
+      clk_out2 => clk6MHz,
+      clk_out3 => clk50,
+      -- Status and control signals
+      reset => '0',
+      locked => open
+     );
 
---    vio : entity work.vio_0
---    PORT map (
---        clk => debug_clk,
---        probe_out0 => reset,
-----        probe_out1 => trigger
---        probe_out1 => open
---    );
+    vio : entity work.vio_0
+    PORT map (
+        clk => debug_clk,
+        probe_out0 => reset,
+--        probe_out1 => trigger
+        probe_out1 => open
+    );
     
---    pulse30Hz : entity work.c_counter_binary_0
---    Port Map (
---        CLK => clk6MHz,
---        Q => counterOut
---    );
+    pulse30Hz : entity work.c_counter_binary_0
+    Port Map (
+        CLK => clk6MHz,
+        Q => counterOut
+    );
     
 --    process( counterOut )
 --    begin
@@ -292,32 +292,33 @@ begin
 --        end if;
 --    end process;
 
---    divide : entity work.cdiv
---    port map(clk => clk50,
---        TCvl => 15,
---        cout => clk1k
---    );
+    divide : entity work.cdiv
+    port map(clk => clk50,
+        TCvl => 15,
+        cout => clk1k
+    );
     
---    decoder : entity work.HexDigs2SSeg
---    Port map(clock => clk1k,  
---        data => seven_seg_data,
---        anodes => an,
---        cathodes=> seg7
---    ); 
+    decoder : entity work.HexDigs2SSeg
+    Port map(clock => clk1k,  
+        data => seven_seg_data,
+        anodes => an,
+        cathodes=> seg7
+    ); 
     
---    process( clk1k )
---        variable index : integer;
---    begin
---        index := to_integer(unsigned(sw(15 downto 11)));
-----        seven_seg_data(16 downto 0) <= fullBarHeights(index);
-----        seven_seg_data(31 downto 17) <= "000000000000000";
+    process( clk1k )
+        variable index : integer;
+    begin
+        index := to_integer(unsigned(sw(15 downto 11)));
+        seven_seg_data <= X"FFFFFFFF";
+--        seven_seg_data(16 downto 0) <= fullBarHeights(index);
+--        seven_seg_data(31 downto 17) <= "000000000000000";
 --        seven_seg_data(31 downto 28) <= fullBarHeights(index)(3 downto 0);
 --        seven_seg_data(27 downto 24) <= fullBarHeights(index)(7 downto 4);
 --        seven_seg_data(23 downto 20) <= fullBarHeights(index)(11 downto 8);
 --        seven_seg_data(19 downto 16) <= fullBarHeights(index)(15 downto 12);
 --        seven_seg_data(15) <= fullBarHeights(index)(16);
 --        seven_seg_data(14 downto 0) <= "000000000000000";
---    end process;
+    end process;
     
     process( clk )
     begin

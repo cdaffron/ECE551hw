@@ -1,32 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <probeData version="1" minor="1">
   <probeset name="EDA_PROBESET" active="true">
+    <probe type="vio_output" busType="net" source="netlist" spec="VIO_OUTPUT_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CORE_LOCATION" value="1:0"/>
+        <Option Id="HW_VIO" value="vio"/>
+        <Option Id="OUTPUT_VALUE" value=""/>
+        <Option Id="OUTPUT_VALUE_RADIX" value="BINARY"/>
+        <Option Id="PROBE_PORT" value="0"/>
+        <Option Id="PROBE_PORT_BITS" value="0"/>
+        <Option Id="PROBE_PORT_BIT_COUNT" value="1"/>
+      </probeOptions>
+      <nets>
+        <net name="reset"/>
+      </nets>
+    </probe>
+    <probe type="vio_output" busType="bus" source="netlist" spec="VIO_OUTPUT_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CORE_LOCATION" value="1:0"/>
+        <Option Id="HW_VIO" value="vio"/>
+        <Option Id="OUTPUT_VALUE" value=""/>
+        <Option Id="OUTPUT_VALUE_RADIX" value="BINARY"/>
+        <Option Id="PROBE_PORT" value="1"/>
+        <Option Id="PROBE_PORT_BITS" value="0"/>
+        <Option Id="PROBE_PORT_BIT_COUNT" value="1"/>
+      </probeOptions>
+      <nets>
+        <net name="vio/probe_out1[0]"/>
+      </nets>
+    </probe>
     <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
       <probeOptions Id="DebugProbeParams">
-        <Option Id="COMPARE_VALUE.0" value="eq10&apos;hXXX"/>
-        <Option Id="CORE_LOCATION" value="1:0"/>
+        <Option Id="COMPARE_VALUE.0" value="eq11&apos;hXXX"/>
+        <Option Id="CORE_LOCATION" value="1:1"/>
         <Option Id="HW_ILA" value="u_ila_0"/>
         <Option Id="PROBE_PORT" value="0"/>
         <Option Id="PROBE_PORT_BITS" value="0"/>
-        <Option Id="PROBE_PORT_BIT_COUNT" value="10"/>
+        <Option Id="PROBE_PORT_BIT_COUNT" value="11"/>
       </probeOptions>
       <nets>
-        <net name="vga_comp/vga_disp/relX[9]"/>
-        <net name="vga_comp/vga_disp/relX[8]"/>
-        <net name="vga_comp/vga_disp/relX[7]"/>
-        <net name="vga_comp/vga_disp/relX[6]"/>
-        <net name="vga_comp/vga_disp/relX[5]"/>
-        <net name="vga_comp/vga_disp/relX[4]"/>
-        <net name="vga_comp/vga_disp/relX[3]"/>
-        <net name="vga_comp/vga_disp/relX[2]"/>
-        <net name="vga_comp/vga_disp/relX[1]"/>
-        <net name="vga_comp/vga_disp/relX[0]"/>
+        <net name="vga_comp/vga_disp/vcount[10]"/>
+        <net name="vga_comp/vga_disp/vcount[9]"/>
+        <net name="vga_comp/vga_disp/vcount[8]"/>
+        <net name="vga_comp/vga_disp/vcount[7]"/>
+        <net name="vga_comp/vga_disp/vcount[6]"/>
+        <net name="vga_comp/vga_disp/vcount[5]"/>
+        <net name="vga_comp/vga_disp/vcount[4]"/>
+        <net name="vga_comp/vga_disp/vcount[3]"/>
+        <net name="vga_comp/vga_disp/vcount[2]"/>
+        <net name="vga_comp/vga_disp/vcount[1]"/>
+        <net name="vga_comp/vga_disp/vcount[0]"/>
       </nets>
     </probe>
     <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
       <probeOptions Id="DebugProbeParams">
         <Option Id="COMPARE_VALUE.0" value="eq10&apos;hXXX"/>
-        <Option Id="CORE_LOCATION" value="1:0"/>
+        <Option Id="CORE_LOCATION" value="1:1"/>
         <Option Id="HW_ILA" value="u_ila_0"/>
         <Option Id="PROBE_PORT" value="1"/>
         <Option Id="PROBE_PORT_BITS" value="0"/>
@@ -48,13 +77,36 @@
     <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
       <probeOptions Id="DebugProbeParams">
         <Option Id="COMPARE_VALUE.0" value="eq10&apos;hXXX"/>
-        <Option Id="CORE_LOCATION" value="1:0"/>
+        <Option Id="CORE_LOCATION" value="1:1"/>
         <Option Id="HW_ILA" value="u_ila_0"/>
         <Option Id="PROBE_PORT" value="2"/>
         <Option Id="PROBE_PORT_BITS" value="0"/>
         <Option Id="PROBE_PORT_BIT_COUNT" value="10"/>
       </probeOptions>
       <nets>
+        <net name="vga_comp/vga_disp/relX[9]"/>
+        <net name="vga_comp/vga_disp/relX[8]"/>
+        <net name="vga_comp/vga_disp/relX[7]"/>
+        <net name="vga_comp/vga_disp/relX[6]"/>
+        <net name="vga_comp/vga_disp/relX[5]"/>
+        <net name="vga_comp/vga_disp/relX[4]"/>
+        <net name="vga_comp/vga_disp/relX[3]"/>
+        <net name="vga_comp/vga_disp/relX[2]"/>
+        <net name="vga_comp/vga_disp/relX[1]"/>
+        <net name="vga_comp/vga_disp/relX[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="COMPARE_VALUE.0" value="eq11&apos;hXXX"/>
+        <Option Id="CORE_LOCATION" value="1:1"/>
+        <Option Id="HW_ILA" value="u_ila_0"/>
+        <Option Id="PROBE_PORT" value="3"/>
+        <Option Id="PROBE_PORT_BITS" value="0"/>
+        <Option Id="PROBE_PORT_BIT_COUNT" value="11"/>
+      </probeOptions>
+      <nets>
+        <net name="vga_comp/vga_disp/hcount[10]"/>
         <net name="vga_comp/vga_disp/hcount[9]"/>
         <net name="vga_comp/vga_disp/hcount[8]"/>
         <net name="vga_comp/vga_disp/hcount[7]"/>
@@ -69,12 +121,12 @@
     </probe>
     <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
       <probeOptions Id="DebugProbeParams">
-        <Option Id="COMPARE_VALUE.0" value="eq6&apos;hXX"/>
-        <Option Id="CORE_LOCATION" value="1:0"/>
+        <Option Id="COMPARE_VALUE.0" value="eq8&apos;hXX"/>
+        <Option Id="CORE_LOCATION" value="1:1"/>
         <Option Id="HW_ILA" value="u_ila_0"/>
-        <Option Id="PROBE_PORT" value="3"/>
+        <Option Id="PROBE_PORT" value="4"/>
         <Option Id="PROBE_PORT_BITS" value="0"/>
-        <Option Id="PROBE_PORT_BIT_COUNT" value="6"/>
+        <Option Id="PROBE_PORT_BIT_COUNT" value="8"/>
       </probeOptions>
       <nets>
         <net name="vga_comp/vga_disp/curBarH[7]"/>
@@ -83,30 +135,14 @@
         <net name="vga_comp/vga_disp/curBarH[4]"/>
         <net name="vga_comp/vga_disp/curBarH[3]"/>
         <net name="vga_comp/vga_disp/curBarH[2]"/>
-      </nets>
-    </probe>
-    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
-      <probeOptions Id="DebugProbeParams">
-        <Option Id="COMPARE_VALUE.0" value="eq6&apos;hXX"/>
-        <Option Id="CORE_LOCATION" value="1:0"/>
-        <Option Id="HW_ILA" value="u_ila_0"/>
-        <Option Id="PROBE_PORT" value="4"/>
-        <Option Id="PROBE_PORT_BITS" value="0"/>
-        <Option Id="PROBE_PORT_BIT_COUNT" value="6"/>
-      </probeOptions>
-      <nets>
-        <net name="vga_comp/vga_disp/actX[9]"/>
-        <net name="vga_comp/vga_disp/actX[8]"/>
-        <net name="vga_comp/vga_disp/actX[7]"/>
-        <net name="vga_comp/vga_disp/actX[6]"/>
-        <net name="vga_comp/vga_disp/actX[5]"/>
-        <net name="vga_comp/vga_disp/actX[4]"/>
+        <net name="vga_comp/vga_disp/curBarH[1]"/>
+        <net name="vga_comp/vga_disp/curBarH[0]"/>
       </nets>
     </probe>
     <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
       <probeOptions Id="DebugProbeParams">
         <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
-        <Option Id="CORE_LOCATION" value="1:0"/>
+        <Option Id="CORE_LOCATION" value="1:1"/>
         <Option Id="HW_ILA" value="u_ila_0"/>
         <Option Id="PROBE_PORT" value="5"/>
         <Option Id="PROBE_PORT_BITS" value="0"/>
@@ -119,7 +155,7 @@
     <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
       <probeOptions Id="DebugProbeParams">
         <Option Id="COMPARE_VALUE.0" value="eq8&apos;hXX"/>
-        <Option Id="CORE_LOCATION" value="1:0"/>
+        <Option Id="CORE_LOCATION" value="1:1"/>
         <Option Id="HW_ILA" value="u_ila_0"/>
         <Option Id="PROBE_PORT" value="5"/>
         <Option Id="PROBE_PORT_BITS" value="1"/>
@@ -138,24 +174,53 @@
     </probe>
     <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
       <probeOptions Id="DebugProbeParams">
-        <Option Id="COMPARE_VALUE.0" value="eq10&apos;hXXX"/>
-        <Option Id="CORE_LOCATION" value="1:0"/>
+        <Option Id="COMPARE_VALUE.0" value="eq6&apos;hXX"/>
+        <Option Id="CORE_LOCATION" value="1:1"/>
         <Option Id="HW_ILA" value="u_ila_0"/>
         <Option Id="PROBE_PORT" value="6"/>
         <Option Id="PROBE_PORT_BITS" value="0"/>
-        <Option Id="PROBE_PORT_BIT_COUNT" value="10"/>
+        <Option Id="PROBE_PORT_BIT_COUNT" value="6"/>
       </probeOptions>
       <nets>
-        <net name="vga_comp/vga_disp/vcount[9]"/>
-        <net name="vga_comp/vga_disp/vcount[8]"/>
-        <net name="vga_comp/vga_disp/vcount[7]"/>
-        <net name="vga_comp/vga_disp/vcount[6]"/>
-        <net name="vga_comp/vga_disp/vcount[5]"/>
-        <net name="vga_comp/vga_disp/vcount[4]"/>
-        <net name="vga_comp/vga_disp/vcount[3]"/>
-        <net name="vga_comp/vga_disp/vcount[2]"/>
-        <net name="vga_comp/vga_disp/vcount[1]"/>
-        <net name="vga_comp/vga_disp/vcount[0]"/>
+        <net name="vga_comp/vga_disp/actX[9]"/>
+        <net name="vga_comp/vga_disp/actX[8]"/>
+        <net name="vga_comp/vga_disp/actX[7]"/>
+        <net name="vga_comp/vga_disp/actX[6]"/>
+        <net name="vga_comp/vga_disp/actX[5]"/>
+        <net name="vga_comp/vga_disp/actX[4]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="COMPARE_VALUE.0" value="eq8&apos;hXX"/>
+        <Option Id="CORE_LOCATION" value="1:1"/>
+        <Option Id="HW_ILA" value="u_ila_0"/>
+        <Option Id="PROBE_PORT" value="7"/>
+        <Option Id="PROBE_PORT_BITS" value="0"/>
+        <Option Id="PROBE_PORT_BIT_COUNT" value="8"/>
+      </probeOptions>
+      <nets>
+        <net name="disp_draw_inst/counter2[7]"/>
+        <net name="disp_draw_inst/counter2[6]"/>
+        <net name="disp_draw_inst/counter2[5]"/>
+        <net name="disp_draw_inst/counter2[4]"/>
+        <net name="disp_draw_inst/counter2[3]"/>
+        <net name="disp_draw_inst/counter2[2]"/>
+        <net name="disp_draw_inst/counter2[1]"/>
+        <net name="disp_draw_inst/counter2[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
+        <Option Id="CORE_LOCATION" value="1:1"/>
+        <Option Id="HW_ILA" value="u_ila_0"/>
+        <Option Id="PROBE_PORT" value="8"/>
+        <Option Id="PROBE_PORT_BITS" value="0"/>
+        <Option Id="PROBE_PORT_BIT_COUNT" value="1"/>
+      </probeOptions>
+      <nets>
+        <net name="reset_1"/>
       </nets>
     </probe>
   </probeset>

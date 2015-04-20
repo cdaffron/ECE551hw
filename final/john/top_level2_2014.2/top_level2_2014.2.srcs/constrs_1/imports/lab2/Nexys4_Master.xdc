@@ -7,7 +7,7 @@
 #Bank = 35, Pin name = IO_L12P_T1_MRCC_35,					Sch name = CLK100MHZ
 set_property PACKAGE_PIN E3 [get_ports clk]
 set_property IOSTANDARD LVCMOS33 [get_ports clk]
-create_clock -period 10.00000000000000000 -name sys_clk_pin -waveform {0.00000000000000000 5.00000000000000000} -add [get_ports clk]
+create_clock -period 10.000 -name sys_clk_pin -waveform {0.000 5.000} -add [get_ports clk]
 
 ## Switches
 #Bank = 34, Pin name = IO_L21P_T3_DQS_34,					Sch name = SW0
@@ -798,14 +798,6 @@ set_property IOSTANDARD LVCMOS33 [get_ports rc]
 #set_property PACKAGE_PIN E18 [get_ports {JA[7]}]
 #set_property IOSTANDARD LVCMOS33 [get_ports {JA[7]}]
 
-set_property MARK_DEBUG false [get_nets {disp_draw_inst/counter2[3]}]
-set_property MARK_DEBUG false [get_nets {disp_draw_inst/counter2[2]}]
-set_property MARK_DEBUG false [get_nets {disp_draw_inst/counter2[1]}]
-set_property MARK_DEBUG false [get_nets {disp_draw_inst/counter2[0]}]
-set_property MARK_DEBUG false [get_nets {disp_draw_inst/counter2[7]}]
-set_property MARK_DEBUG false [get_nets {disp_draw_inst/counter2[6]}]
-set_property MARK_DEBUG false [get_nets {disp_draw_inst/counter2[5]}]
-set_property MARK_DEBUG false [get_nets {disp_draw_inst/counter2[4]}]
 set_property MARK_DEBUG true [get_nets {vga_comp/vga_disp/actX[4]}]
 set_property MARK_DEBUG true [get_nets {vga_comp/vga_disp/actX[5]}]
 set_property MARK_DEBUG true [get_nets {vga_comp/vga_disp/actX[6]}]
@@ -867,6 +859,15 @@ set_property MARK_DEBUG true [get_nets {vga_comp/vga_disp/curBarH[6]}]
 set_property MARK_DEBUG true [get_nets {vga_comp/vga_disp/curBarH[2]}]
 set_property MARK_DEBUG true [get_nets {vga_comp/vga_disp/curBarH[3]}]
 set_property MARK_DEBUG true [get_nets {vga_comp/vga_disp/curBarH[4]}]
+
+set_property MARK_DEBUG true [get_nets {disp_draw_inst/counter2[3]}]
+set_property MARK_DEBUG true [get_nets {disp_draw_inst/counter2[2]}]
+set_property MARK_DEBUG true [get_nets {disp_draw_inst/counter2[1]}]
+set_property MARK_DEBUG true [get_nets {disp_draw_inst/counter2[0]}]
+set_property MARK_DEBUG true [get_nets {disp_draw_inst/counter2[7]}]
+set_property MARK_DEBUG true [get_nets {disp_draw_inst/counter2[6]}]
+set_property MARK_DEBUG true [get_nets {disp_draw_inst/counter2[5]}]
+set_property MARK_DEBUG true [get_nets {disp_draw_inst/counter2[4]}]
 create_debug_core u_ila_0 ila
 set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0]
 set_property ALL_PROBE_SAME_MU_CNT 1 [get_debug_cores u_ila_0]
@@ -877,27 +878,33 @@ set_property C_INPUT_PIPE_STAGES 0 [get_debug_cores u_ila_0]
 set_property C_TRIGIN_EN false [get_debug_cores u_ila_0]
 set_property C_TRIGOUT_EN false [get_debug_cores u_ila_0]
 set_property port_width 1 [get_debug_ports u_ila_0/clk]
-connect_debug_port u_ila_0/clk [get_nets [list disp_draw_inst/clk]]
-set_property port_width 10 [get_debug_ports u_ila_0/probe0]
-connect_debug_port u_ila_0/probe0 [get_nets [list {vga_comp/vga_disp/relX[0]} {vga_comp/vga_disp/relX[1]} {vga_comp/vga_disp/relX[2]} {vga_comp/vga_disp/relX[3]} {vga_comp/vga_disp/relX[4]} {vga_comp/vga_disp/relX[5]} {vga_comp/vga_disp/relX[6]} {vga_comp/vga_disp/relX[7]} {vga_comp/vga_disp/relX[8]} {vga_comp/vga_disp/relX[9]}]]
+connect_debug_port u_ila_0/clk [get_nets [list debug_clk]]
+set_property port_width 11 [get_debug_ports u_ila_0/probe0]
+connect_debug_port u_ila_0/probe0 [get_nets [list {vga_comp/vga_disp/vcount[0]} {vga_comp/vga_disp/vcount[1]} {vga_comp/vga_disp/vcount[2]} {vga_comp/vga_disp/vcount[3]} {vga_comp/vga_disp/vcount[4]} {vga_comp/vga_disp/vcount[5]} {vga_comp/vga_disp/vcount[6]} {vga_comp/vga_disp/vcount[7]} {vga_comp/vga_disp/vcount[8]} {vga_comp/vga_disp/vcount[9]} {vga_comp/vga_disp/vcount[10]}]]
 create_debug_port u_ila_0 probe
 set_property port_width 10 [get_debug_ports u_ila_0/probe1]
 connect_debug_port u_ila_0/probe1 [get_nets [list {vga_comp/vga_disp/relY[0]} {vga_comp/vga_disp/relY[1]} {vga_comp/vga_disp/relY[2]} {vga_comp/vga_disp/relY[3]} {vga_comp/vga_disp/relY[4]} {vga_comp/vga_disp/relY[5]} {vga_comp/vga_disp/relY[6]} {vga_comp/vga_disp/relY[7]} {vga_comp/vga_disp/relY[8]} {vga_comp/vga_disp/relY[9]}]]
 create_debug_port u_ila_0 probe
 set_property port_width 10 [get_debug_ports u_ila_0/probe2]
-connect_debug_port u_ila_0/probe2 [get_nets [list {vga_comp/vga_disp/hcount[0]} {vga_comp/vga_disp/hcount[1]} {vga_comp/vga_disp/hcount[2]} {vga_comp/vga_disp/hcount[3]} {vga_comp/vga_disp/hcount[4]} {vga_comp/vga_disp/hcount[5]} {vga_comp/vga_disp/hcount[6]} {vga_comp/vga_disp/hcount[7]} {vga_comp/vga_disp/hcount[8]} {vga_comp/vga_disp/hcount[9]}]]
+connect_debug_port u_ila_0/probe2 [get_nets [list {vga_comp/vga_disp/relX[0]} {vga_comp/vga_disp/relX[1]} {vga_comp/vga_disp/relX[2]} {vga_comp/vga_disp/relX[3]} {vga_comp/vga_disp/relX[4]} {vga_comp/vga_disp/relX[5]} {vga_comp/vga_disp/relX[6]} {vga_comp/vga_disp/relX[7]} {vga_comp/vga_disp/relX[8]} {vga_comp/vga_disp/relX[9]}]]
 create_debug_port u_ila_0 probe
-set_property port_width 6 [get_debug_ports u_ila_0/probe3]
-connect_debug_port u_ila_0/probe3 [get_nets [list {vga_comp/vga_disp/curBarH[2]} {vga_comp/vga_disp/curBarH[3]} {vga_comp/vga_disp/curBarH[4]} {vga_comp/vga_disp/curBarH[5]} {vga_comp/vga_disp/curBarH[6]} {vga_comp/vga_disp/curBarH[7]}]]
+set_property port_width 11 [get_debug_ports u_ila_0/probe3]
+connect_debug_port u_ila_0/probe3 [get_nets [list {vga_comp/vga_disp/hcount[0]} {vga_comp/vga_disp/hcount[1]} {vga_comp/vga_disp/hcount[2]} {vga_comp/vga_disp/hcount[3]} {vga_comp/vga_disp/hcount[4]} {vga_comp/vga_disp/hcount[5]} {vga_comp/vga_disp/hcount[6]} {vga_comp/vga_disp/hcount[7]} {vga_comp/vga_disp/hcount[8]} {vga_comp/vga_disp/hcount[9]} {vga_comp/vga_disp/hcount[10]}]]
 create_debug_port u_ila_0 probe
-set_property port_width 6 [get_debug_ports u_ila_0/probe4]
-connect_debug_port u_ila_0/probe4 [get_nets [list {vga_comp/vga_disp/actX[4]} {vga_comp/vga_disp/actX[5]} {vga_comp/vga_disp/actX[6]} {vga_comp/vga_disp/actX[7]} {vga_comp/vga_disp/actX[8]} {vga_comp/vga_disp/actX[9]}]]
+set_property port_width 8 [get_debug_ports u_ila_0/probe4]
+connect_debug_port u_ila_0/probe4 [get_nets [list {vga_comp/vga_disp/curBarH[0]} {vga_comp/vga_disp/curBarH[1]} {vga_comp/vga_disp/curBarH[2]} {vga_comp/vga_disp/curBarH[3]} {vga_comp/vga_disp/curBarH[4]} {vga_comp/vga_disp/curBarH[5]} {vga_comp/vga_disp/curBarH[6]} {vga_comp/vga_disp/curBarH[7]}]]
 create_debug_port u_ila_0 probe
 set_property port_width 9 [get_debug_ports u_ila_0/probe5]
 connect_debug_port u_ila_0/probe5 [get_nets [list {vga_comp/vga_disp/actY[0]} {vga_comp/vga_disp/actY[2]} {vga_comp/vga_disp/actY[3]} {vga_comp/vga_disp/actY[4]} {vga_comp/vga_disp/actY[5]} {vga_comp/vga_disp/actY[6]} {vga_comp/vga_disp/actY[7]} {vga_comp/vga_disp/actY[8]} {vga_comp/vga_disp/actY[9]}]]
 create_debug_port u_ila_0 probe
-set_property port_width 10 [get_debug_ports u_ila_0/probe6]
-connect_debug_port u_ila_0/probe6 [get_nets [list {vga_comp/vga_disp/vcount[0]} {vga_comp/vga_disp/vcount[1]} {vga_comp/vga_disp/vcount[2]} {vga_comp/vga_disp/vcount[3]} {vga_comp/vga_disp/vcount[4]} {vga_comp/vga_disp/vcount[5]} {vga_comp/vga_disp/vcount[6]} {vga_comp/vga_disp/vcount[7]} {vga_comp/vga_disp/vcount[8]} {vga_comp/vga_disp/vcount[9]}]]
+set_property port_width 6 [get_debug_ports u_ila_0/probe6]
+connect_debug_port u_ila_0/probe6 [get_nets [list {vga_comp/vga_disp/actX[4]} {vga_comp/vga_disp/actX[5]} {vga_comp/vga_disp/actX[6]} {vga_comp/vga_disp/actX[7]} {vga_comp/vga_disp/actX[8]} {vga_comp/vga_disp/actX[9]}]]
+create_debug_port u_ila_0 probe
+set_property port_width 8 [get_debug_ports u_ila_0/probe7]
+connect_debug_port u_ila_0/probe7 [get_nets [list {disp_draw_inst/counter2[0]} {disp_draw_inst/counter2[1]} {disp_draw_inst/counter2[2]} {disp_draw_inst/counter2[3]} {disp_draw_inst/counter2[4]} {disp_draw_inst/counter2[5]} {disp_draw_inst/counter2[6]} {disp_draw_inst/counter2[7]}]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe8]
+connect_debug_port u_ila_0/probe8 [get_nets [list reset]]
 set_property C_CLK_INPUT_FREQ_HZ 300000000 [get_debug_cores dbg_hub]
 set_property C_ENABLE_CLK_DIVIDER false [get_debug_cores dbg_hub]
 set_property C_USER_SCAN_CHAIN 1 [get_debug_cores dbg_hub]

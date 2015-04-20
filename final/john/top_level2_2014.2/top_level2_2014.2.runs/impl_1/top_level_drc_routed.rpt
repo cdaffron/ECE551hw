@@ -1,7 +1,7 @@
 Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2014.2 (lin64) Build 932637 Wed Jun 11 13:08:52 MDT 2014
-| Date         : Mon Apr 20 16:52:28 2015
+| Date         : Mon Apr 20 17:44:51 2015
 | Host         : com1549.eecs.utk.edu running 64-bit Red Hat Enterprise Linux Server release 6.5 (Santiago)
 | Command      : report_drc
 ------------------------------------------------------------------------------------------------------------
@@ -16,11 +16,11 @@ Table of Contents
 1. REPORT SUMMARY
 -----------------
             Netlist: netlist
-          Floorplan: checkpoint_top_level_placed
+          Floorplan: design_1
       Design limits: <entire design considered>
            Ruledeck: default
            Max violations: <unlimited>
-         Violations found: 2
+         Violations found: 3
 
 2. REPORT DETAILS
 -----------------
@@ -37,9 +37,14 @@ Neither the CFGBVS nor CONFIG_VOLTAGE voltage property is set in the current_des
 Refer to the device configuration user guide for more information.
 Related violations: <none>
 
+CSCL-1#1 Warning
+Clocked by a non-clock net.  
+Net xlnx_opt_ is a non-clock net, connected to the clock port on ChipScope debug core dbg_hub.  Please verify this is correct.
+Related violations: <none>
+
 RTSTAT-10#1 Warning
 No routable loads  
-512 net(s) have no routable loads. The problem net(s) are barHeights[0][0], barHeights[0][1], barHeights[0][2], barHeights[0][3], barHeights[0][4], barHeights[0][5], barHeights[0][6], barHeights[0][7], barHeights[1][0], barHeights[1][1], barHeights[1][2], barHeights[1][3], barHeights[1][4], barHeights[1][5], barHeights[1][6] (the first 15 of 512 listed).
+515 net(s) have no routable loads. The problem net(s) are vio/inst/PROBE_OUT_ALL_INST/G_PROBE_OUT[1].PROBE_OUT0_INST/O2, barHeights[0][0], barHeights[0][1], barHeights[0][2], barHeights[0][3], barHeights[0][4], barHeights[0][5], barHeights[0][6], barHeights[0][7], barHeights[1][0], barHeights[1][1], barHeights[1][2], barHeights[1][3], barHeights[1][4], barHeights[1][5] (the first 15 of 515 listed).
 Related violations: <none>
 
 

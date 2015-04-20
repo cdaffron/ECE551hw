@@ -24,14 +24,23 @@ add_files -quiet /data1/cdaffron/git/ece551hw/final/john/top_level2_2014.2/top_l
 set_property used_in_implementation false [get_files /data1/cdaffron/git/ece551hw/final/john/top_level2_2014.2/top_level2_2014.2.runs/blk_mem_gen_1_synth_1/blk_mem_gen_1.dcp]
 add_files -quiet /data1/cdaffron/git/ece551hw/final/john/top_level2_2014.2/top_level2_2014.2.runs/blk_mem_gen_0_synth_1/blk_mem_gen_0.dcp
 set_property used_in_implementation false [get_files /data1/cdaffron/git/ece551hw/final/john/top_level2_2014.2/top_level2_2014.2.runs/blk_mem_gen_0_synth_1/blk_mem_gen_0.dcp]
+add_files -quiet /data1/cdaffron/git/ece551hw/final/john/top_level2_2014.2/top_level2_2014.2.runs/clk_wiz_0_synth_1/clk_wiz_0.dcp
+set_property used_in_implementation false [get_files /data1/cdaffron/git/ece551hw/final/john/top_level2_2014.2/top_level2_2014.2.runs/clk_wiz_0_synth_1/clk_wiz_0.dcp]
+add_files -quiet /data1/cdaffron/git/ece551hw/final/john/top_level2_2014.2/top_level2_2014.2.runs/vio_0_synth_1/vio_0.dcp
+set_property used_in_implementation false [get_files /data1/cdaffron/git/ece551hw/final/john/top_level2_2014.2/top_level2_2014.2.runs/vio_0_synth_1/vio_0.dcp]
+add_files -quiet /data1/cdaffron/git/ece551hw/final/john/top_level2_2014.2/top_level2_2014.2.runs/c_counter_binary_0_synth_1/c_counter_binary_0.dcp
+set_property used_in_implementation false [get_files /data1/cdaffron/git/ece551hw/final/john/top_level2_2014.2/top_level2_2014.2.runs/c_counter_binary_0_synth_1/c_counter_binary_0.dcp]
 read_vhdl -library xil_defaultlib {
   /data1/cdaffron/git/ece551hw/final/john/top_level2_2014.2/top_level2_2014.2.srcs/sources_1/imports/sources_1/imports/chris/disp_draw/disp_draw.srcs/sources_1/new/type_pkg.vhd
   /data1/cdaffron/git/ece551hw/final/john/top_level2_2014.2/top_level2_2014.2.srcs/sources_1/imports/sources_1/imports/sources_1/new/vga_pkg.vhd
   /data1/cdaffron/git/ece551hw/final/john/top_level2_2014.2/top_level2_2014.2.srcs/sources_1/imports/sources_1/imports/sources_1/imports/sources_1/new/vga_display_gen.vhd
   /data1/cdaffron/git/ece551hw/final/john/top_level2_2014.2/top_level2_2014.2.srcs/sources_1/imports/sources_1/imports/sources_1/imports/sources_1/imports/vga/vga_controller_640_60.vhd
+  /data1/cdaffron/git/ece551hw/final/john/top_level2_2014.2/top_level2_2014.2.srcs/sources_1/imports/sources_1/imports/new/Hex2SSegDecoder.vhd
   /data1/cdaffron/git/ece551hw/final/john/top_level2_2014.2/top_level2_2014.2.srcs/sources_1/imports/sources_1/imports/new/averager.vhd
   /data1/cdaffron/git/ece551hw/final/john/top_level2_2014.2/top_level2_2014.2.srcs/sources_1/imports/sources_1/imports/chris/magnitude/magnitude.srcs/sources_1/new/magnitude.vhd
   /data1/cdaffron/git/ece551hw/final/john/top_level2_2014.2/top_level2_2014.2.srcs/sources_1/imports/sources_1/imports/sources_1/new/vga_top.vhd
+  /data1/cdaffron/git/ece551hw/final/john/top_level2_2014.2/top_level2_2014.2.srcs/sources_1/imports/sources_1/imports/new/HexDigs2SSeg.vhd
+  /data1/cdaffron/git/ece551hw/final/john/top_level2_2014.2/top_level2_2014.2.srcs/sources_1/imports/sources_1/imports/new/CDiv.vhd
   /data1/cdaffron/git/ece551hw/final/john/top_level2_2014.2/top_level2_2014.2.srcs/sources_1/imports/sources_1/imports/adc_fft_to_pc/adc_fft_fsmV3_noUART.vhd
   /data1/cdaffron/git/ece551hw/final/john/top_level2_2014.2/top_level2_2014.2.srcs/sources_1/imports/new/disp_draw.vhd
   /data1/cdaffron/git/ece551hw/final/john/top_level2_2014.2/top_level2_2014.2.srcs/sources_1/imports/sources_1/new/top_level.vhd

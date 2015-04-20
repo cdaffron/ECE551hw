@@ -8,3 +8,6 @@ set_property BUFFER_TYPE NONE -quiet [get_ports -quiet -of [get_cells -hier -fil
 set_property BUFFER_TYPE NONE -quiet [get_ports -quiet -of [get_cells -hier -filter {REF_NAME==xfft_0 || ORIG_REF_NAME==xfft_0}]]
 set_property BUFFER_TYPE NONE -quiet [get_ports -quiet -of [get_cells -hier -filter {REF_NAME==blk_mem_gen_1 || ORIG_REF_NAME==blk_mem_gen_1}]]
 set_property BUFFER_TYPE NONE -quiet [get_ports -quiet -of [get_cells -hier -filter {REF_NAME==blk_mem_gen_0 || ORIG_REF_NAME==blk_mem_gen_0}]]
+set_property BUFFER_TYPE NONE -quiet [get_ports -quiet -of [get_cells -hier -filter {REF_NAME==clk_wiz_0 || ORIG_REF_NAME==clk_wiz_0}]]
+set_property BUFFER_TYPE NONE -quiet [get_ports -quiet -of [get_cells -hier -filter {REF_NAME==vio_0 || ORIG_REF_NAME==vio_0}]]
+set_property BUFFER_TYPE NONE -quiet [get_ports -quiet -of [get_cells -hier -filter {REF_NAME==c_counter_binary_0 || ORIG_REF_NAME==c_counter_binary_0}]]

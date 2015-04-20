@@ -1,7 +1,7 @@
 Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2014.2 (lin64) Build 932637 Wed Jun 11 13:08:52 MDT 2014
-| Date         : Mon Apr 20 16:37:14 2015
+| Date         : Mon Apr 20 17:31:17 2015
 | Host         : com1549.eecs.utk.edu running 64-bit Red Hat Enterprise Linux Server release 6.5 (Santiago)
 | Command      : report_utilization -file top_level_utilization_synth.rpt -pb top_level_utilization_synth.pb
 | Design       : top_level
@@ -29,15 +29,15 @@ Table of Contents
 +----------------------------+------+-------+-----------+-------+
 |          Site Type         | Used | Fixed | Available | Util% |
 +----------------------------+------+-------+-----------+-------+
-| Slice LUTs*                | 2025 |     0 |     63400 |  3.19 |
-|   LUT as Logic             | 2018 |     0 |     63400 |  3.18 |
+| Slice LUTs*                | 2516 |     0 |     63400 |  3.96 |
+|   LUT as Logic             | 2509 |     0 |     63400 |  3.95 |
 |   LUT as Memory            |    7 |     0 |     19000 |  0.03 |
 |     LUT as Distributed RAM |    0 |     0 |           |       |
 |     LUT as Shift Register  |    7 |     0 |           |       |
-| Slice Registers            | 3339 |     0 |    126800 |  2.63 |
-|   Register as Flip Flop    | 3339 |     0 |    126800 |  2.63 |
+| Slice Registers            | 3406 |     0 |    126800 |  2.68 |
+|   Register as Flip Flop    | 3406 |     0 |    126800 |  2.68 |
 |   Register as Latch        |    0 |     0 |    126800 |  0.00 |
-| F7 Muxes                   |    2 |     0 |     31700 | <0.01 |
+| F7 Muxes                   |    4 |     0 |     31700 |  0.01 |
 | F8 Muxes                   |    0 |     0 |     15850 |  0.00 |
 +----------------------------+------+-------+-----------+-------+
 * Warning! The Final LUT count, after physical optimizations and full implementation, is typically lower. Run opt_design after synthesis, if not already completed, for a more realistic count.
@@ -130,38 +130,42 @@ Table of Contents
 +----------+------+---------------------+
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
-| FDRE     | 3329 |        Flop & Latch |
-| LUT3     | 1576 |                 LUT |
-| LUT4     |  496 |                 LUT |
-| LUT6     |  419 |                 LUT |
-| LUT5     |  221 |                 LUT |
-| CARRY4   |  205 |          CarryLogic |
-| LUT2     |   75 |                 LUT |
-| LUT1     |   53 |                 LUT |
-| OBUF     |   32 |                  IO |
+| FDRE     | 3344 |        Flop & Latch |
+| LUT4     | 1288 |                 LUT |
+| LUT3     |  830 |                 LUT |
+| LUT6     |  461 |                 LUT |
+| LUT5     |  236 |                 LUT |
+| CARRY4   |  209 |          CarryLogic |
+| LUT2     |   88 |                 LUT |
+| LUT1     |   65 |                 LUT |
+| OBUF     |   47 |                  IO |
+| FDCE     |   47 |        Flop & Latch |
 | IBUF     |   17 |                  IO |
-| OBUFT    |   15 |                  IO |
-| FDSE     |   10 |        Flop & Latch |
+| FDSE     |   14 |        Flop & Latch |
 | SRL16E   |    7 |  Distributed Memory |
+| MUXF7    |    4 |               MuxFx |
 | RAMB18E1 |    2 |        Block Memory |
-| MUXF7    |    2 |               MuxFx |
+| FDPE     |    1 |        Flop & Latch |
 +----------+------+---------------------+
 
 
 8. Black Boxes
 --------------
 
-+---------------+------+
-|    Ref Name   | Used |
-+---------------+------+
-| mult_gen_0    |    2 |
-| xfft_0        |    1 |
-| cordic_0      |    1 |
-| clk_wiz_vga   |    1 |
-| c_addsub_0    |    1 |
-| blk_mem_gen_1 |    1 |
-| blk_mem_gen_0 |    1 |
-+---------------+------+
++--------------------+------+
+|      Ref Name      | Used |
++--------------------+------+
+| mult_gen_0         |    2 |
+| xfft_0             |    1 |
+| vio_0              |    1 |
+| cordic_0           |    1 |
+| clk_wiz_vga        |    1 |
+| clk_wiz_0          |    1 |
+| c_counter_binary_0 |    1 |
+| c_addsub_0         |    1 |
+| blk_mem_gen_1      |    1 |
+| blk_mem_gen_0      |    1 |
++--------------------+------+
 
 
 9. Instantiated Netlists
