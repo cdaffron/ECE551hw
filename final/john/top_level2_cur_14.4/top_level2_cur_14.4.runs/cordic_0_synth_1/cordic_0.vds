@@ -1,0 +1,783 @@
+#-----------------------------------------------------------
+# Vivado v2014.4 (64-bit)
+# SW Build 1071353 on Tue Nov 18 16:47:07 MST 2014
+# IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+# Start of session at: Sun Apr 19 21:59:47 2015
+# Process ID: 19762
+# Log file: /mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.runs/cordic_0_synth_1/cordic_0.vds
+# Journal file: /mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.runs/cordic_0_synth_1/vivado.jou
+#-----------------------------------------------------------
+source cordic_0.tcl
+# set_param gui.test TreeTableDev
+# debug::add_scope template.lib 1
+# set_msg_config -id {HDL 9-1061} -limit 100000
+# set_msg_config -id {HDL 9-1654} -limit 100000
+# create_project -in_memory -part xc7a100tcsg324-1
+# set_param project.compositeFile.enableAutoGeneration 0
+# set_param synth.vivado.isSynthRun true
+# set_msg_config -id {IP_Flow 19-2162} -severity warning -new_severity info
+# set_property webtalk.parent_dir /mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.cache/wt [current_project]
+# set_property parent.project_path /mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.xpr [current_project]
+# set_property default_lib xil_defaultlib [current_project]
+# set_property target_language VHDL [current_project]
+# read_ip /mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_0.xci
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/jmurray/Applications/Xilinx/Vivado/2014.4/data/ip'.
+WARNING: [IP_Flow 19-3664] IP 'cordic_0' generated file not found '/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_0.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'cordic_0' generated file not found '/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_0_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'cordic_0' generated file not found '/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_0_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'cordic_0' generated file not found '/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_0_funcsim.vhdl'. Please regenerate to continue.
+# set_property is_locked true [get_files /mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_0.xci]
+# read_xdc dont_touch.xdc
+# set_property used_in_implementation false [get_files dont_touch.xdc]
+# catch { write_hwdef -file cordic_0.hwdef }
+INFO: [Vivado_Tcl 4-279] hardware handoff file cannot be generated as there is no block diagram instance in the design
+# synth_design -top cordic_0 -part xc7a100tcsg324-1 -mode out_of_context
+Command: synth_design -top cordic_0 -part xc7a100tcsg324-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 910.387 ; gain = 149.738 ; free physical = 14520 ; free virtual = 32055
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'cordic_0' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/synth/cordic_0.vhd:69]
+INFO: [Synth 8-3491] module 'cordic_v6_0' declared at '/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0.vhd:106' bound to instance 'U0' of component 'cordic_v6_0' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/synth/cordic_0.vhd:140]
+INFO: [Synth 8-638] synthesizing module 'cordic_v6_0__parameterized0' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0.vhd:163]
+INFO: [Synth 8-3491] module 'cordic_v6_0_viv' declared at '/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:9440' bound to instance 'i_synth' of component 'cordic_v6_0_viv' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0.vhd:169]
+INFO: [Synth 8-638] synthesizing module 'cordic_v6_0_viv__parameterized0' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:9508]
+INFO: [Synth 8-3491] module 'xbip_pipe_v3_0_viv' declared at '/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_vh_rfs.vhd:274' bound to instance 'i_nd_to_rdy' of component 'xbip_pipe_v3_0_viv' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:9900]
+INFO: [Synth 8-638] synthesizing module 'xbip_pipe_v3_0_viv__parameterized0' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_vh_rfs.vhd:299]
+INFO: [Synth 8-256] done synthesizing module 'xbip_pipe_v3_0_viv__parameterized0' (1#1) [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_vh_rfs.vhd:299]
+INFO: [Synth 8-3491] module 'cordic_v6_0_synth' declared at '/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:8980' bound to instance 'i_synth' of component 'cordic_v6_0_synth' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:9987]
+INFO: [Synth 8-638] synthesizing module 'cordic_v6_0_synth__parameterized0' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:9028]
+INFO: [Synth 8-3491] module 'cordic_sqrt' declared at '/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:8514' bound to instance 'square_root' of component 'cordic_sqrt' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:9285]
+INFO: [Synth 8-638] synthesizing module 'cordic_sqrt__parameterized0' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:8541]
+INFO: [Synth 8-3491] module 'delay' declared at '/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:3515' bound to instance 'gen_data_in_int' of component 'delay' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:8685]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized0' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:3536]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized0' (2#1) [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:3536]
+INFO: [Synth 8-3491] module 'delay_bit' declared at '/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:4030' bound to instance 'gen_nd_int' of component 'delay_bit' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:8698]
+INFO: [Synth 8-638] synthesizing module 'delay_bit__parameterized0' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:4051]
+INFO: [Synth 8-256] done synthesizing module 'delay_bit__parameterized0' (3#1) [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:4051]
+INFO: [Synth 8-3491] module 'delay_bit' declared at '/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:4030' bound to instance 'gen_rdy_int' of component 'delay_bit' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:8712]
+INFO: [Synth 8-638] synthesizing module 'delay_bit__parameterized2' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:4051]
+INFO: [Synth 8-256] done synthesizing module 'delay_bit__parameterized2' (3#1) [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:4051]
+INFO: [Synth 8-3491] module 'cordic_sqrt_mod' declared at '/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:8334' bound to instance 'gen_rem' of component 'cordic_sqrt_mod' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:8789]
+INFO: [Synth 8-638] synthesizing module 'cordic_sqrt_mod__parameterized0' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:8354]
+INFO: [Synth 8-3491] module 'addsub' declared at '/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:3362' bound to instance 'gen_rem_inc' of component 'addsub' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:8381]
+INFO: [Synth 8-638] synthesizing module 'addsub__parameterized0' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:3385]
+INFO: [Synth 8-3491] module 'c_addsub_v12_0_viv' declared at '/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:6447' bound to instance 'inst' of component 'c_addsub_v12_0_viv' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:3393]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_viv__parameterized0' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:6505]
+INFO: [Synth 8-3491] module 'c_addsub_v12_0_legacy' declared at '/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:5532' bound to instance 'i_baseblox_addsub' of component 'c_addsub_v12_0_legacy' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:6626]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_legacy__parameterized0' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:5608]
+INFO: [Synth 8-3491] module 'c_addsub_v12_0_fabric_legacy' declared at '/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:5268' bound to instance 'the_addsub' of component 'c_addsub_v12_0_fabric_legacy' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:5899]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_fabric_legacy__parameterized0' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:5320]
+INFO: [Synth 8-3491] module 'c_addsub_v12_0_lut6_legacy' declared at '/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:2281' bound to instance 'i_lut6_addsub' of component 'c_addsub_v12_0_lut6_legacy' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:5337]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_lut6_legacy__parameterized0' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:2333]
+INFO: [Synth 8-113] binding component instance 'carrymux0' to cell 'MUXCY' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:3254]
+INFO: [Synth 8-113] binding component instance 'carryxor0' to cell 'XORCY' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:3262]
+INFO: [Synth 8-113] binding component instance 'carryxortop' to cell 'XORCY' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:3274]
+INFO: [Synth 8-113] binding component instance 'carrymux' to cell 'MUXCY' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:3296]
+INFO: [Synth 8-113] binding component instance 'carryxor' to cell 'XORCY' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:3304]
+INFO: [Synth 8-113] binding component instance 'carrymux' to cell 'MUXCY' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:3296]
+INFO: [Synth 8-113] binding component instance 'carryxor' to cell 'XORCY' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:3304]
+INFO: [Synth 8-113] binding component instance 'carrymux' to cell 'MUXCY' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:3296]
+INFO: [Synth 8-113] binding component instance 'carryxor' to cell 'XORCY' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:3304]
+INFO: [Synth 8-113] binding component instance 'carrymux' to cell 'MUXCY' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:3296]
+INFO: [Synth 8-113] binding component instance 'carryxor' to cell 'XORCY' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:3304]
+INFO: [Synth 8-113] binding component instance 'carrymux' to cell 'MUXCY' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:3296]
+INFO: [Synth 8-113] binding component instance 'carryxor' to cell 'XORCY' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:3304]
+INFO: [Synth 8-113] binding component instance 'carrymux' to cell 'MUXCY' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:3296]
+INFO: [Synth 8-113] binding component instance 'carryxor' to cell 'XORCY' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:3304]
+INFO: [Synth 8-113] binding component instance 'carrymux' to cell 'MUXCY' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:3296]
+INFO: [Synth 8-113] binding component instance 'carryxor' to cell 'XORCY' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:3304]
+INFO: [Synth 8-113] binding component instance 'carrymux' to cell 'MUXCY' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:3296]
+INFO: [Synth 8-113] binding component instance 'carryxor' to cell 'XORCY' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:3304]
+INFO: [Synth 8-113] binding component instance 'carrymux' to cell 'MUXCY' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:3296]
+INFO: [Synth 8-113] binding component instance 'carryxor' to cell 'XORCY' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:3304]
+INFO: [Synth 8-113] binding component instance 'carrymux' to cell 'MUXCY' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:3296]
+INFO: [Synth 8-113] binding component instance 'carryxor' to cell 'XORCY' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:3304]
+INFO: [Synth 8-113] binding component instance 'carrymux' to cell 'MUXCY' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:3296]
+INFO: [Synth 8-113] binding component instance 'carryxor' to cell 'XORCY' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:3304]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_lut6_legacy__parameterized0' (4#1) [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:2333]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_fabric_legacy__parameterized0' (5#1) [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:5320]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_legacy__parameterized0' (6#1) [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:5608]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_viv__parameterized0' (7#1) [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:6505]
+INFO: [Synth 8-256] done synthesizing module 'addsub__parameterized0' (8#1) [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:3385]
+INFO: [Synth 8-3491] module 'delay' declared at '/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:3515' bound to instance 'gen_inv_sqrt_out' of component 'delay' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:8401]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized2' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:3536]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized2' (8#1) [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:3536]
+INFO: [Synth 8-3491] module 'delay' declared at '/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:3515' bound to instance 'gen_rem_out' of component 'delay' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:8419]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized4' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:3536]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized4' (8#1) [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:3536]
+INFO: [Synth 8-3491] module 'delay' declared at '/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:3515' bound to instance 'gen_data_int' of component 'delay' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:8434]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized6' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:3536]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized6' (8#1) [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:3536]
+INFO: [Synth 8-256] done synthesizing module 'cordic_sqrt_mod__parameterized0' (9#1) [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:8354]
+INFO: [Synth 8-3491] module 'cordic_sqrt_mod' declared at '/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:8334' bound to instance 'gen_rem' of component 'cordic_sqrt_mod' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:8811]
+INFO: [Synth 8-638] synthesizing module 'cordic_sqrt_mod__parameterized2' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:8354]
+INFO: [Synth 8-3491] module 'addsub' declared at '/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:3362' bound to instance 'gen_rem_inc' of component 'addsub' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:8381]
+INFO: [Synth 8-638] synthesizing module 'addsub__parameterized2' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:3385]
+INFO: [Synth 8-3491] module 'c_addsub_v12_0_viv' declared at '/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:6447' bound to instance 'inst' of component 'c_addsub_v12_0_viv' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:3393]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_viv__parameterized2' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:6505]
+INFO: [Synth 8-3491] module 'c_addsub_v12_0_legacy' declared at '/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:5532' bound to instance 'i_baseblox_addsub' of component 'c_addsub_v12_0_legacy' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:6626]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_legacy__parameterized2' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:5608]
+INFO: [Synth 8-3491] module 'c_addsub_v12_0_fabric_legacy' declared at '/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:5268' bound to instance 'the_addsub' of component 'c_addsub_v12_0_fabric_legacy' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:5899]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_fabric_legacy__parameterized2' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:5320]
+INFO: [Synth 8-3491] module 'c_addsub_v12_0_lut6_legacy' declared at '/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:2281' bound to instance 'i_lut6_addsub' of component 'c_addsub_v12_0_lut6_legacy' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:5337]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_lut6_legacy__parameterized2' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:2333]
+INFO: [Synth 8-113] binding component instance 'carrymux0' to cell 'MUXCY' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:3254]
+INFO: [Synth 8-113] binding component instance 'carryxor0' to cell 'XORCY' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:3262]
+INFO: [Synth 8-113] binding component instance 'carryxortop' to cell 'XORCY' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:3274]
+INFO: [Synth 8-113] binding component instance 'carrymux' to cell 'MUXCY' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:3296]
+INFO: [Synth 8-113] binding component instance 'carryxor' to cell 'XORCY' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:3304]
+INFO: [Synth 8-113] binding component instance 'carrymux' to cell 'MUXCY' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:3296]
+INFO: [Synth 8-113] binding component instance 'carryxor' to cell 'XORCY' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:3304]
+INFO: [Synth 8-113] binding component instance 'carrymux' to cell 'MUXCY' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:3296]
+INFO: [Synth 8-113] binding component instance 'carryxor' to cell 'XORCY' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:3304]
+INFO: [Synth 8-113] binding component instance 'carrymux' to cell 'MUXCY' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:3296]
+INFO: [Synth 8-113] binding component instance 'carryxor' to cell 'XORCY' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:3304]
+INFO: [Synth 8-113] binding component instance 'carrymux' to cell 'MUXCY' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:3296]
+INFO: [Synth 8-113] binding component instance 'carryxor' to cell 'XORCY' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:3304]
+INFO: [Synth 8-113] binding component instance 'carrymux' to cell 'MUXCY' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:3296]
+INFO: [Synth 8-113] binding component instance 'carryxor' to cell 'XORCY' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:3304]
+INFO: [Synth 8-113] binding component instance 'carrymux' to cell 'MUXCY' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:3296]
+INFO: [Synth 8-113] binding component instance 'carryxor' to cell 'XORCY' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:3304]
+INFO: [Synth 8-113] binding component instance 'carrymux' to cell 'MUXCY' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:3296]
+INFO: [Synth 8-113] binding component instance 'carryxor' to cell 'XORCY' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:3304]
+INFO: [Synth 8-113] binding component instance 'carrymux' to cell 'MUXCY' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:3296]
+INFO: [Synth 8-113] binding component instance 'carryxor' to cell 'XORCY' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:3304]
+INFO: [Synth 8-113] binding component instance 'carrymux' to cell 'MUXCY' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:3296]
+INFO: [Synth 8-113] binding component instance 'carryxor' to cell 'XORCY' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:3304]
+INFO: [Synth 8-113] binding component instance 'carrymux' to cell 'MUXCY' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:3296]
+INFO: [Synth 8-113] binding component instance 'carryxor' to cell 'XORCY' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:3304]
+INFO: [Synth 8-113] binding component instance 'carrymux' to cell 'MUXCY' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:3296]
+INFO: [Synth 8-113] binding component instance 'carryxor' to cell 'XORCY' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:3304]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_lut6_legacy__parameterized2' (9#1) [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:2333]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_fabric_legacy__parameterized2' (9#1) [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:5320]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_legacy__parameterized2' (9#1) [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:5608]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_viv__parameterized2' (9#1) [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:6505]
+INFO: [Synth 8-256] done synthesizing module 'addsub__parameterized2' (9#1) [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:3385]
+INFO: [Synth 8-3491] module 'delay' declared at '/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:3515' bound to instance 'gen_inv_sqrt_out' of component 'delay' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:8401]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized8' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:3536]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized8' (9#1) [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:3536]
+INFO: [Synth 8-3491] module 'delay' declared at '/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:3515' bound to instance 'gen_rem_out' of component 'delay' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:8419]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized10' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:3536]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized10' (9#1) [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:3536]
+INFO: [Synth 8-3491] module 'delay' declared at '/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:3515' bound to instance 'gen_data_int' of component 'delay' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:8434]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized12' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:3536]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized12' (9#1) [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:3536]
+INFO: [Synth 8-256] done synthesizing module 'cordic_sqrt_mod__parameterized2' (9#1) [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:8354]
+INFO: [Synth 8-3491] module 'cordic_sqrt_mod' declared at '/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:8334' bound to instance 'gen_rem' of component 'cordic_sqrt_mod' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:8789]
+INFO: [Synth 8-638] synthesizing module 'cordic_sqrt_mod__parameterized4' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:8354]
+INFO: [Synth 8-3491] module 'addsub' declared at '/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:3362' bound to instance 'gen_rem_inc' of component 'addsub' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:8381]
+INFO: [Synth 8-638] synthesizing module 'addsub__parameterized4' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:3385]
+INFO: [Synth 8-3491] module 'c_addsub_v12_0_viv' declared at '/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:6447' bound to instance 'inst' of component 'c_addsub_v12_0_viv' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:3393]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_viv__parameterized4' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:6505]
+INFO: [Synth 8-3491] module 'c_addsub_v12_0_legacy' declared at '/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:5532' bound to instance 'i_baseblox_addsub' of component 'c_addsub_v12_0_legacy' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:6626]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_legacy__parameterized4' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:5608]
+INFO: [Synth 8-3491] module 'c_addsub_v12_0_fabric_legacy' declared at '/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:5268' bound to instance 'the_addsub' of component 'c_addsub_v12_0_fabric_legacy' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:5899]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_fabric_legacy__parameterized4' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:5320]
+INFO: [Synth 8-3491] module 'c_addsub_v12_0_lut6_legacy' declared at '/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:2281' bound to instance 'i_lut6_addsub' of component 'c_addsub_v12_0_lut6_legacy' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:5337]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_lut6_legacy__parameterized4' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:2333]
+INFO: [Synth 8-113] binding component instance 'carrymux0' to cell 'MUXCY' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:3254]
+INFO: [Synth 8-113] binding component instance 'carryxor0' to cell 'XORCY' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:3262]
+INFO: [Synth 8-113] binding component instance 'carryxortop' to cell 'XORCY' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:3274]
+INFO: [Synth 8-113] binding component instance 'carrymux' to cell 'MUXCY' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:3296]
+INFO: [Synth 8-113] binding component instance 'carryxor' to cell 'XORCY' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:3304]
+INFO: [Synth 8-113] binding component instance 'carrymux' to cell 'MUXCY' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:3296]
+INFO: [Synth 8-113] binding component instance 'carryxor' to cell 'XORCY' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:3304]
+INFO: [Synth 8-113] binding component instance 'carrymux' to cell 'MUXCY' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:3296]
+INFO: [Synth 8-113] binding component instance 'carryxor' to cell 'XORCY' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:3304]
+INFO: [Synth 8-113] binding component instance 'carrymux' to cell 'MUXCY' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:3296]
+INFO: [Synth 8-113] binding component instance 'carryxor' to cell 'XORCY' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:3304]
+INFO: [Synth 8-113] binding component instance 'carrymux' to cell 'MUXCY' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:3296]
+INFO: [Synth 8-113] binding component instance 'carryxor' to cell 'XORCY' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:3304]
+INFO: [Synth 8-113] binding component instance 'carrymux' to cell 'MUXCY' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:3296]
+INFO: [Synth 8-113] binding component instance 'carryxor' to cell 'XORCY' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:3304]
+INFO: [Synth 8-113] binding component instance 'carrymux' to cell 'MUXCY' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:3296]
+INFO: [Synth 8-113] binding component instance 'carryxor' to cell 'XORCY' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:3304]
+INFO: [Synth 8-113] binding component instance 'carrymux' to cell 'MUXCY' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:3296]
+INFO: [Synth 8-113] binding component instance 'carryxor' to cell 'XORCY' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:3304]
+INFO: [Synth 8-113] binding component instance 'carrymux' to cell 'MUXCY' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:3296]
+INFO: [Synth 8-113] binding component instance 'carryxor' to cell 'XORCY' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:3304]
+INFO: [Synth 8-113] binding component instance 'carrymux' to cell 'MUXCY' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:3296]
+INFO: [Synth 8-113] binding component instance 'carryxor' to cell 'XORCY' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:3304]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_lut6_legacy__parameterized4' (9#1) [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:2333]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_fabric_legacy__parameterized4' (9#1) [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:5320]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_legacy__parameterized4' (9#1) [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:5608]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_viv__parameterized4' (9#1) [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:6505]
+INFO: [Synth 8-256] done synthesizing module 'addsub__parameterized4' (9#1) [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:3385]
+INFO: [Synth 8-3491] module 'delay' declared at '/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:3515' bound to instance 'gen_inv_sqrt_out' of component 'delay' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:8401]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized14' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:3536]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized14' (9#1) [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:3536]
+INFO: [Synth 8-3491] module 'delay' declared at '/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:3515' bound to instance 'gen_rem_out' of component 'delay' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:8419]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized16' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:3536]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized16' (9#1) [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:3536]
+INFO: [Synth 8-3491] module 'delay' declared at '/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:3515' bound to instance 'gen_data_int' of component 'delay' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:8434]
+INFO: [Synth 8-256] done synthesizing module 'cordic_sqrt_mod__parameterized4' (9#1) [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:8354]
+INFO: [Synth 8-3491] module 'cordic_sqrt_mod' declared at '/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:8334' bound to instance 'gen_rem' of component 'cordic_sqrt_mod' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:8811]
+INFO: [Synth 8-638] synthesizing module 'cordic_sqrt_mod__parameterized6' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:8354]
+INFO: [Synth 8-3491] module 'addsub' declared at '/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:3362' bound to instance 'gen_rem_inc' of component 'addsub' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:8381]
+INFO: [Synth 8-638] synthesizing module 'addsub__parameterized6' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:3385]
+INFO: [Synth 8-3491] module 'c_addsub_v12_0_viv' declared at '/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:6447' bound to instance 'inst' of component 'c_addsub_v12_0_viv' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:3393]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_viv__parameterized6' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:6505]
+INFO: [Synth 8-3491] module 'c_addsub_v12_0_legacy' declared at '/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:5532' bound to instance 'i_baseblox_addsub' of component 'c_addsub_v12_0_legacy' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:6626]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_legacy__parameterized6' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:5608]
+INFO: [Synth 8-3491] module 'c_addsub_v12_0_fabric_legacy' declared at '/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:5268' bound to instance 'the_addsub' of component 'c_addsub_v12_0_fabric_legacy' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:5899]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_fabric_legacy__parameterized6' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:5320]
+INFO: [Synth 8-3491] module 'c_addsub_v12_0_lut6_legacy' declared at '/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:2281' bound to instance 'i_lut6_addsub' of component 'c_addsub_v12_0_lut6_legacy' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:5337]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_lut6_legacy__parameterized6' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:2333]
+INFO: [Synth 8-113] binding component instance 'carrymux0' to cell 'MUXCY' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:3254]
+INFO: [Synth 8-113] binding component instance 'carryxor0' to cell 'XORCY' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:3262]
+INFO: [Synth 8-113] binding component instance 'carryxortop' to cell 'XORCY' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:3274]
+INFO: [Synth 8-113] binding component instance 'carrymux' to cell 'MUXCY' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:3296]
+INFO: [Synth 8-113] binding component instance 'carryxor' to cell 'XORCY' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:3304]
+INFO: [Synth 8-113] binding component instance 'carrymux' to cell 'MUXCY' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:3296]
+INFO: [Synth 8-113] binding component instance 'carryxor' to cell 'XORCY' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:3304]
+INFO: [Synth 8-113] binding component instance 'carrymux' to cell 'MUXCY' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:3296]
+INFO: [Synth 8-113] binding component instance 'carryxor' to cell 'XORCY' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:3304]
+INFO: [Synth 8-113] binding component instance 'carrymux' to cell 'MUXCY' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:3296]
+INFO: [Synth 8-113] binding component instance 'carryxor' to cell 'XORCY' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:3304]
+INFO: [Synth 8-113] binding component instance 'carrymux' to cell 'MUXCY' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:3296]
+INFO: [Synth 8-113] binding component instance 'carryxor' to cell 'XORCY' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:3304]
+INFO: [Synth 8-113] binding component instance 'carrymux' to cell 'MUXCY' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:3296]
+INFO: [Synth 8-113] binding component instance 'carryxor' to cell 'XORCY' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:3304]
+INFO: [Synth 8-113] binding component instance 'carrymux' to cell 'MUXCY' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:3296]
+INFO: [Synth 8-113] binding component instance 'carryxor' to cell 'XORCY' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:3304]
+INFO: [Synth 8-113] binding component instance 'carrymux' to cell 'MUXCY' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:3296]
+INFO: [Synth 8-113] binding component instance 'carryxor' to cell 'XORCY' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:3304]
+INFO: [Synth 8-113] binding component instance 'carrymux' to cell 'MUXCY' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:3296]
+INFO: [Synth 8-113] binding component instance 'carryxor' to cell 'XORCY' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:3304]
+INFO: [Synth 8-113] binding component instance 'carrymux' to cell 'MUXCY' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:3296]
+INFO: [Synth 8-113] binding component instance 'carryxor' to cell 'XORCY' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:3304]
+INFO: [Synth 8-113] binding component instance 'carrymux' to cell 'MUXCY' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:3296]
+INFO: [Synth 8-113] binding component instance 'carryxor' to cell 'XORCY' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:3304]
+INFO: [Common 17-14] Message 'Synth 8-113' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_lut6_legacy__parameterized6' (9#1) [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:2333]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_fabric_legacy__parameterized6' (9#1) [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:5320]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_legacy__parameterized6' (9#1) [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:5608]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_viv__parameterized6' (9#1) [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:6505]
+INFO: [Synth 8-256] done synthesizing module 'addsub__parameterized6' (9#1) [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:3385]
+INFO: [Synth 8-3491] module 'delay' declared at '/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:3515' bound to instance 'gen_inv_sqrt_out' of component 'delay' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:8401]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized18' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:3536]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized18' (9#1) [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:3536]
+INFO: [Synth 8-3491] module 'delay' declared at '/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:3515' bound to instance 'gen_rem_out' of component 'delay' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:8419]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized20' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:3536]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized20' (9#1) [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:3536]
+INFO: [Synth 8-3491] module 'delay' declared at '/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:3515' bound to instance 'gen_data_int' of component 'delay' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:8434]
+INFO: [Synth 8-256] done synthesizing module 'cordic_sqrt_mod__parameterized6' (9#1) [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:8354]
+INFO: [Synth 8-3491] module 'cordic_sqrt_mod' declared at '/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:8334' bound to instance 'gen_rem' of component 'cordic_sqrt_mod' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:8789]
+INFO: [Synth 8-638] synthesizing module 'cordic_sqrt_mod__parameterized8' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:8354]
+INFO: [Synth 8-3491] module 'addsub' declared at '/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:3362' bound to instance 'gen_rem_inc' of component 'addsub' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:8381]
+INFO: [Synth 8-638] synthesizing module 'addsub__parameterized8' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:3385]
+INFO: [Synth 8-3491] module 'c_addsub_v12_0_viv' declared at '/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:6447' bound to instance 'inst' of component 'c_addsub_v12_0_viv' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:3393]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_viv__parameterized8' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:6505]
+INFO: [Synth 8-3491] module 'c_addsub_v12_0_legacy' declared at '/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:5532' bound to instance 'i_baseblox_addsub' of component 'c_addsub_v12_0_legacy' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:6626]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_legacy__parameterized8' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:5608]
+INFO: [Synth 8-3491] module 'c_addsub_v12_0_fabric_legacy' declared at '/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:5268' bound to instance 'the_addsub' of component 'c_addsub_v12_0_fabric_legacy' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:5899]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_fabric_legacy__parameterized8' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:5320]
+INFO: [Synth 8-3491] module 'c_addsub_v12_0_lut6_legacy' declared at '/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:2281' bound to instance 'i_lut6_addsub' of component 'c_addsub_v12_0_lut6_legacy' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:5337]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_lut6_legacy__parameterized8' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:2333]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_lut6_legacy__parameterized8' (9#1) [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:2333]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_fabric_legacy__parameterized8' (9#1) [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:5320]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_legacy__parameterized8' (9#1) [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:5608]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_viv__parameterized8' (9#1) [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:6505]
+INFO: [Synth 8-256] done synthesizing module 'addsub__parameterized8' (9#1) [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:3385]
+INFO: [Synth 8-3491] module 'delay' declared at '/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:3515' bound to instance 'gen_inv_sqrt_out' of component 'delay' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:8401]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized22' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:3536]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized22' (9#1) [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:3536]
+INFO: [Synth 8-3491] module 'delay' declared at '/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:3515' bound to instance 'gen_rem_out' of component 'delay' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:8419]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized24' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:3536]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized24' (9#1) [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:3536]
+INFO: [Synth 8-3491] module 'delay' declared at '/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:3515' bound to instance 'gen_data_int' of component 'delay' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:8434]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized26' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:3536]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized26' (9#1) [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:3536]
+INFO: [Synth 8-256] done synthesizing module 'cordic_sqrt_mod__parameterized8' (9#1) [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:8354]
+INFO: [Synth 8-3491] module 'cordic_sqrt_mod' declared at '/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:8334' bound to instance 'gen_rem' of component 'cordic_sqrt_mod' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:8811]
+INFO: [Synth 8-638] synthesizing module 'cordic_sqrt_mod__parameterized10' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:8354]
+INFO: [Synth 8-3491] module 'addsub' declared at '/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:3362' bound to instance 'gen_rem_inc' of component 'addsub' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:8381]
+INFO: [Synth 8-638] synthesizing module 'addsub__parameterized10' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:3385]
+INFO: [Synth 8-3491] module 'c_addsub_v12_0_viv' declared at '/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:6447' bound to instance 'inst' of component 'c_addsub_v12_0_viv' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:3393]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_viv__parameterized10' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:6505]
+INFO: [Synth 8-3491] module 'c_addsub_v12_0_legacy' declared at '/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:5532' bound to instance 'i_baseblox_addsub' of component 'c_addsub_v12_0_legacy' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:6626]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_legacy__parameterized10' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:5608]
+INFO: [Synth 8-3491] module 'c_addsub_v12_0_fabric_legacy' declared at '/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:5268' bound to instance 'the_addsub' of component 'c_addsub_v12_0_fabric_legacy' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:5899]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_fabric_legacy__parameterized10' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:5320]
+INFO: [Synth 8-3491] module 'c_addsub_v12_0_lut6_legacy' declared at '/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:2281' bound to instance 'i_lut6_addsub' of component 'c_addsub_v12_0_lut6_legacy' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:5337]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_lut6_legacy__parameterized10' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:2333]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_lut6_legacy__parameterized10' (9#1) [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:2333]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_fabric_legacy__parameterized10' (9#1) [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:5320]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_legacy__parameterized10' (9#1) [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:5608]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_viv__parameterized10' (9#1) [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:6505]
+INFO: [Synth 8-256] done synthesizing module 'addsub__parameterized10' (9#1) [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:3385]
+INFO: [Synth 8-3491] module 'delay' declared at '/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:3515' bound to instance 'gen_inv_sqrt_out' of component 'delay' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:8401]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized28' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:3536]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized28' (9#1) [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:3536]
+INFO: [Synth 8-3491] module 'delay' declared at '/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:3515' bound to instance 'gen_rem_out' of component 'delay' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:8419]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized30' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:3536]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized30' (9#1) [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:3536]
+INFO: [Synth 8-3491] module 'delay' declared at '/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:3515' bound to instance 'gen_data_int' of component 'delay' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:8434]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized32' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:3536]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized32' (9#1) [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:3536]
+INFO: [Synth 8-256] done synthesizing module 'cordic_sqrt_mod__parameterized10' (9#1) [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:8354]
+INFO: [Synth 8-3491] module 'cordic_sqrt_mod' declared at '/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:8334' bound to instance 'gen_rem' of component 'cordic_sqrt_mod' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:8789]
+INFO: [Synth 8-638] synthesizing module 'cordic_sqrt_mod__parameterized12' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:8354]
+INFO: [Synth 8-3491] module 'addsub' declared at '/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:3362' bound to instance 'gen_rem_inc' of component 'addsub' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:8381]
+INFO: [Synth 8-638] synthesizing module 'addsub__parameterized12' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:3385]
+INFO: [Synth 8-3491] module 'c_addsub_v12_0_viv' declared at '/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:6447' bound to instance 'inst' of component 'c_addsub_v12_0_viv' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:3393]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_viv__parameterized12' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:6505]
+INFO: [Synth 8-3491] module 'c_addsub_v12_0_legacy' declared at '/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:5532' bound to instance 'i_baseblox_addsub' of component 'c_addsub_v12_0_legacy' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:6626]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_legacy__parameterized12' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:5608]
+INFO: [Synth 8-3491] module 'c_addsub_v12_0_fabric_legacy' declared at '/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:5268' bound to instance 'the_addsub' of component 'c_addsub_v12_0_fabric_legacy' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:5899]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_fabric_legacy__parameterized12' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:5320]
+INFO: [Synth 8-3491] module 'c_addsub_v12_0_lut6_legacy' declared at '/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:2281' bound to instance 'i_lut6_addsub' of component 'c_addsub_v12_0_lut6_legacy' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:5337]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_lut6_legacy__parameterized12' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:2333]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_lut6_legacy__parameterized12' (9#1) [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:2333]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_fabric_legacy__parameterized12' (9#1) [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:5320]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_legacy__parameterized12' (9#1) [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:5608]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_viv__parameterized12' (9#1) [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:6505]
+INFO: [Synth 8-256] done synthesizing module 'addsub__parameterized12' (9#1) [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:3385]
+INFO: [Synth 8-3491] module 'delay' declared at '/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:3515' bound to instance 'gen_inv_sqrt_out' of component 'delay' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:8401]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized34' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:3536]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized34' (9#1) [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:3536]
+INFO: [Synth 8-3491] module 'delay' declared at '/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:3515' bound to instance 'gen_rem_out' of component 'delay' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:8419]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized36' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:3536]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized36' (9#1) [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:3536]
+INFO: [Synth 8-3491] module 'delay' declared at '/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:3515' bound to instance 'gen_data_int' of component 'delay' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:8434]
+INFO: [Synth 8-256] done synthesizing module 'cordic_sqrt_mod__parameterized12' (9#1) [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:8354]
+INFO: [Synth 8-3491] module 'cordic_sqrt_mod' declared at '/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:8334' bound to instance 'gen_rem' of component 'cordic_sqrt_mod' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:8811]
+INFO: [Synth 8-638] synthesizing module 'cordic_sqrt_mod__parameterized14' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:8354]
+INFO: [Synth 8-3491] module 'addsub' declared at '/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:3362' bound to instance 'gen_rem_inc' of component 'addsub' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:8381]
+INFO: [Synth 8-638] synthesizing module 'addsub__parameterized14' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:3385]
+INFO: [Synth 8-3491] module 'c_addsub_v12_0_viv' declared at '/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:6447' bound to instance 'inst' of component 'c_addsub_v12_0_viv' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:3393]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_viv__parameterized14' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:6505]
+INFO: [Synth 8-3491] module 'c_addsub_v12_0_legacy' declared at '/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:5532' bound to instance 'i_baseblox_addsub' of component 'c_addsub_v12_0_legacy' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:6626]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_legacy__parameterized14' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:5608]
+INFO: [Synth 8-3491] module 'c_addsub_v12_0_fabric_legacy' declared at '/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:5268' bound to instance 'the_addsub' of component 'c_addsub_v12_0_fabric_legacy' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:5899]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_fabric_legacy__parameterized14' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:5320]
+INFO: [Synth 8-3491] module 'c_addsub_v12_0_lut6_legacy' declared at '/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:2281' bound to instance 'i_lut6_addsub' of component 'c_addsub_v12_0_lut6_legacy' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:5337]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_lut6_legacy__parameterized14' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:2333]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_lut6_legacy__parameterized14' (9#1) [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:2333]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_fabric_legacy__parameterized14' (9#1) [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:5320]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_legacy__parameterized14' (9#1) [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:5608]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_viv__parameterized14' (9#1) [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:6505]
+INFO: [Synth 8-256] done synthesizing module 'addsub__parameterized14' (9#1) [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:3385]
+INFO: [Synth 8-3491] module 'delay' declared at '/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:3515' bound to instance 'gen_inv_sqrt_out' of component 'delay' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:8401]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized38' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:3536]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized38' (9#1) [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:3536]
+INFO: [Synth 8-3491] module 'delay' declared at '/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:3515' bound to instance 'gen_rem_out' of component 'delay' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:8419]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized40' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:3536]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized40' (9#1) [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:3536]
+INFO: [Synth 8-3491] module 'delay' declared at '/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:3515' bound to instance 'gen_data_int' of component 'delay' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:8434]
+INFO: [Synth 8-256] done synthesizing module 'cordic_sqrt_mod__parameterized14' (9#1) [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:8354]
+INFO: [Synth 8-3491] module 'cordic_sqrt_mod' declared at '/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:8334' bound to instance 'gen_rem' of component 'cordic_sqrt_mod' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:8789]
+INFO: [Synth 8-638] synthesizing module 'cordic_sqrt_mod__parameterized16' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:8354]
+INFO: [Synth 8-3491] module 'addsub' declared at '/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:3362' bound to instance 'gen_rem_inc' of component 'addsub' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:8381]
+INFO: [Synth 8-638] synthesizing module 'addsub__parameterized16' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:3385]
+INFO: [Synth 8-3491] module 'c_addsub_v12_0_viv' declared at '/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:6447' bound to instance 'inst' of component 'c_addsub_v12_0_viv' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:3393]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_viv__parameterized16' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:6505]
+INFO: [Synth 8-3491] module 'c_addsub_v12_0_legacy' declared at '/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:5532' bound to instance 'i_baseblox_addsub' of component 'c_addsub_v12_0_legacy' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:6626]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_legacy__parameterized16' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:5608]
+INFO: [Synth 8-3491] module 'c_addsub_v12_0_fabric_legacy' declared at '/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:5268' bound to instance 'the_addsub' of component 'c_addsub_v12_0_fabric_legacy' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:5899]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_fabric_legacy__parameterized16' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:5320]
+INFO: [Synth 8-3491] module 'c_addsub_v12_0_lut6_legacy' declared at '/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:2281' bound to instance 'i_lut6_addsub' of component 'c_addsub_v12_0_lut6_legacy' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:5337]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_lut6_legacy__parameterized16' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:2333]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_lut6_legacy__parameterized16' (9#1) [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:2333]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_fabric_legacy__parameterized16' (9#1) [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:5320]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_legacy__parameterized16' (9#1) [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:5608]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_viv__parameterized16' (9#1) [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:6505]
+INFO: [Synth 8-256] done synthesizing module 'addsub__parameterized16' (9#1) [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:3385]
+INFO: [Synth 8-3491] module 'delay' declared at '/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:3515' bound to instance 'gen_inv_sqrt_out' of component 'delay' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:8401]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized42' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:3536]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized42' (9#1) [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:3536]
+INFO: [Synth 8-3491] module 'delay' declared at '/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:3515' bound to instance 'gen_rem_out' of component 'delay' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:8419]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized44' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:3536]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized44' (9#1) [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:3536]
+INFO: [Synth 8-3491] module 'delay' declared at '/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:3515' bound to instance 'gen_data_int' of component 'delay' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:8434]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized46' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:3536]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized46' (9#1) [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:3536]
+INFO: [Synth 8-256] done synthesizing module 'cordic_sqrt_mod__parameterized16' (9#1) [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:8354]
+INFO: [Synth 8-3491] module 'cordic_sqrt_mod' declared at '/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:8334' bound to instance 'gen_rem' of component 'cordic_sqrt_mod' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:8811]
+INFO: [Synth 8-638] synthesizing module 'cordic_sqrt_mod__parameterized18' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:8354]
+INFO: [Synth 8-3491] module 'addsub' declared at '/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:3362' bound to instance 'gen_rem_inc' of component 'addsub' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:8381]
+INFO: [Synth 8-638] synthesizing module 'addsub__parameterized18' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:3385]
+INFO: [Synth 8-3491] module 'c_addsub_v12_0_viv' declared at '/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:6447' bound to instance 'inst' of component 'c_addsub_v12_0_viv' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:3393]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_viv__parameterized18' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:6505]
+INFO: [Synth 8-3491] module 'c_addsub_v12_0_legacy' declared at '/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:5532' bound to instance 'i_baseblox_addsub' of component 'c_addsub_v12_0_legacy' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:6626]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_legacy__parameterized18' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:5608]
+INFO: [Synth 8-3491] module 'c_addsub_v12_0_fabric_legacy' declared at '/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:5268' bound to instance 'the_addsub' of component 'c_addsub_v12_0_fabric_legacy' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:5899]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_fabric_legacy__parameterized18' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:5320]
+INFO: [Synth 8-3491] module 'c_addsub_v12_0_lut6_legacy' declared at '/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:2281' bound to instance 'i_lut6_addsub' of component 'c_addsub_v12_0_lut6_legacy' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:5337]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_lut6_legacy__parameterized18' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:2333]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_lut6_legacy__parameterized18' (9#1) [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:2333]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_fabric_legacy__parameterized18' (9#1) [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:5320]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_legacy__parameterized18' (9#1) [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:5608]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_viv__parameterized18' (9#1) [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:6505]
+INFO: [Synth 8-256] done synthesizing module 'addsub__parameterized18' (9#1) [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:3385]
+INFO: [Synth 8-3491] module 'delay' declared at '/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:3515' bound to instance 'gen_inv_sqrt_out' of component 'delay' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:8401]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized48' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:3536]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized48' (9#1) [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:3536]
+INFO: [Synth 8-3491] module 'delay' declared at '/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:3515' bound to instance 'gen_rem_out' of component 'delay' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:8419]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized50' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:3536]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized50' (9#1) [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:3536]
+INFO: [Synth 8-3491] module 'delay' declared at '/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:3515' bound to instance 'gen_data_int' of component 'delay' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:8434]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized52' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:3536]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized52' (9#1) [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:3536]
+INFO: [Synth 8-256] done synthesizing module 'cordic_sqrt_mod__parameterized18' (9#1) [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:8354]
+INFO: [Synth 8-3491] module 'cordic_sqrt_mod' declared at '/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:8334' bound to instance 'gen_rem' of component 'cordic_sqrt_mod' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:8789]
+INFO: [Synth 8-638] synthesizing module 'cordic_sqrt_mod__parameterized20' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:8354]
+INFO: [Synth 8-3491] module 'addsub' declared at '/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:3362' bound to instance 'gen_rem_inc' of component 'addsub' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:8381]
+INFO: [Common 17-14] Message 'Synth 8-3491' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-638] synthesizing module 'addsub__parameterized20' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:3385]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_viv__parameterized20' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:6505]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_legacy__parameterized20' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:5608]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_fabric_legacy__parameterized20' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:5320]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_lut6_legacy__parameterized20' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:2333]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_lut6_legacy__parameterized20' (9#1) [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:2333]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_fabric_legacy__parameterized20' (9#1) [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:5320]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_legacy__parameterized20' (9#1) [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:5608]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_viv__parameterized20' (9#1) [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:6505]
+INFO: [Synth 8-256] done synthesizing module 'addsub__parameterized20' (9#1) [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:3385]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized54' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:3536]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized54' (9#1) [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:3536]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized56' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:3536]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized56' (9#1) [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:3536]
+INFO: [Synth 8-256] done synthesizing module 'cordic_sqrt_mod__parameterized20' (9#1) [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:8354]
+INFO: [Synth 8-638] synthesizing module 'cordic_sqrt_mod__parameterized22' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:8354]
+INFO: [Synth 8-638] synthesizing module 'addsub__parameterized22' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:3385]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_viv__parameterized22' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:6505]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_legacy__parameterized22' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:5608]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_fabric_legacy__parameterized22' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:5320]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_lut6_legacy__parameterized22' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:2333]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_lut6_legacy__parameterized22' (9#1) [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:2333]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_fabric_legacy__parameterized22' (9#1) [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:5320]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_legacy__parameterized22' (9#1) [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:5608]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_viv__parameterized22' (9#1) [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:6505]
+INFO: [Synth 8-256] done synthesizing module 'addsub__parameterized22' (9#1) [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:3385]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized58' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:3536]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized58' (9#1) [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:3536]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized60' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:3536]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized60' (9#1) [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:3536]
+INFO: [Synth 8-256] done synthesizing module 'cordic_sqrt_mod__parameterized22' (9#1) [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:8354]
+INFO: [Synth 8-638] synthesizing module 'cordic_sqrt_mod__parameterized24' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:8354]
+INFO: [Synth 8-638] synthesizing module 'addsub__parameterized24' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:3385]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_viv__parameterized24' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:6505]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_legacy__parameterized24' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:5608]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_fabric_legacy__parameterized24' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:5320]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_lut6_legacy__parameterized24' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:2333]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_lut6_legacy__parameterized24' (9#1) [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:2333]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_fabric_legacy__parameterized24' (9#1) [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:5320]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_legacy__parameterized24' (9#1) [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:5608]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_viv__parameterized24' (9#1) [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:6505]
+INFO: [Synth 8-256] done synthesizing module 'addsub__parameterized24' (9#1) [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:3385]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized62' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:3536]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized62' (9#1) [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:3536]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized64' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:3536]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized64' (9#1) [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:3536]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized66' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:3536]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized66' (9#1) [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:3536]
+INFO: [Synth 8-256] done synthesizing module 'cordic_sqrt_mod__parameterized24' (9#1) [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:8354]
+INFO: [Synth 8-638] synthesizing module 'cordic_sqrt_mod__parameterized26' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:8354]
+INFO: [Synth 8-638] synthesizing module 'addsub__parameterized26' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:3385]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_viv__parameterized26' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:6505]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_legacy__parameterized26' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:5608]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_fabric_legacy__parameterized26' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:5320]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_lut6_legacy__parameterized26' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:2333]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_lut6_legacy__parameterized26' (9#1) [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:2333]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_fabric_legacy__parameterized26' (9#1) [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:5320]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_legacy__parameterized26' (9#1) [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:5608]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_viv__parameterized26' (9#1) [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:6505]
+INFO: [Synth 8-256] done synthesizing module 'addsub__parameterized26' (9#1) [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:3385]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized68' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:3536]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized68' (9#1) [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:3536]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized70' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:3536]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized70' (9#1) [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:3536]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized72' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:3536]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized72' (9#1) [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:3536]
+INFO: [Synth 8-256] done synthesizing module 'cordic_sqrt_mod__parameterized26' (9#1) [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:8354]
+INFO: [Synth 8-638] synthesizing module 'cordic_sqrt_mod__parameterized28' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:8354]
+INFO: [Synth 8-638] synthesizing module 'addsub__parameterized28' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:3385]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_viv__parameterized28' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:6505]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_legacy__parameterized28' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:5608]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_fabric_legacy__parameterized28' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:5320]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_lut6_legacy__parameterized28' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:2333]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_lut6_legacy__parameterized28' (9#1) [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:2333]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_fabric_legacy__parameterized28' (9#1) [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:5320]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_legacy__parameterized28' (9#1) [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:5608]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_viv__parameterized28' (9#1) [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:6505]
+INFO: [Synth 8-256] done synthesizing module 'addsub__parameterized28' (9#1) [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:3385]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized74' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:3536]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized74' (9#1) [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:3536]
+WARNING: [Synth 8-3848] Net rem_out in module/entity cordic_sqrt_mod__parameterized28 does not have driver. [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:8347]
+INFO: [Synth 8-256] done synthesizing module 'cordic_sqrt_mod__parameterized28' (9#1) [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:8354]
+WARNING: [Synth 8-3848] Net rdy in module/entity cordic_sqrt__parameterized0 does not have driver. [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:8534]
+INFO: [Synth 8-256] done synthesizing module 'cordic_sqrt__parameterized0' (10#1) [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:8541]
+INFO: [Synth 8-256] done synthesizing module 'cordic_v6_0_synth__parameterized0' (11#1) [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:9028]
+INFO: [Synth 8-256] done synthesizing module 'cordic_v6_0_viv__parameterized0' (12#1) [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:9508]
+INFO: [Synth 8-256] done synthesizing module 'cordic_v6_0__parameterized0' (13#1) [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0.vhd:163]
+INFO: [Synth 8-256] done synthesizing module 'cordic_0' (14#1) [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/synth/cordic_0.vhd:69]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 972.625 ; gain = 211.977 ; free physical = 14455 ; free virtual = 31991
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:30 ; elapsed = 00:00:30 . Memory (MB): peak = 972.625 ; gain = 211.977 ; free physical = 14455 ; free virtual = 31991
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 210 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+Loading clock regions from /home/jmurray/Applications/Xilinx/Vivado/2014.4/data/parts/xilinx/artix7/artix7/xc7a100t/ClockRegion.xml
+Loading clock buffers from /home/jmurray/Applications/Xilinx/Vivado/2014.4/data/parts/xilinx/artix7/artix7/xc7a100t/ClockBuffers.xml
+Loading clock placement rules from /home/jmurray/Applications/Xilinx/Vivado/2014.4/data/parts/xilinx/artix7/ClockPlacerRules.xml
+Loading package pin functions from /home/jmurray/Applications/Xilinx/Vivado/2014.4/data/parts/xilinx/artix7/PinFunctions.xml...
+Loading package from /home/jmurray/Applications/Xilinx/Vivado/2014.4/data/parts/xilinx/artix7/artix7/xc7a100t/csg324/Package.xml
+Loading io standards from /home/jmurray/Applications/Xilinx/Vivado/2014.4/data/./parts/xilinx/artix7/IOStandards.xml
+Loading device configuration modes from /home/jmurray/Applications/Xilinx/Vivado/2014.4/data/parts/xilinx/artix7/ConfigModes.xml
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_0_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_0_ooc.xdc] for cell 'U0'
+Parsing XDC File [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.runs/cordic_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.runs/cordic_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1304.848 ; gain = 0.000 ; free physical = 14284 ; free virtual = 31820
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:39 ; elapsed = 00:00:39 . Memory (MB): peak = 1304.848 ; gain = 544.199 ; free physical = 14283 ; free virtual = 31819
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:39 ; elapsed = 00:00:39 . Memory (MB): peak = 1304.848 ; gain = 544.199 ; free physical = 14283 ; free virtual = 31819
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for U0. (constraint file  /mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.runs/cordic_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:39 ; elapsed = 00:00:39 . Memory (MB): peak = 1304.848 ; gain = 544.199 ; free physical = 14283 ; free virtual = 31819
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3848] Net rem_out in module/entity cordic_sqrt_mod__parameterized28 does not have driver. [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:8347]
+WARNING: [Synth 8-3848] Net rdy in module/entity cordic_sqrt__parameterized0 does not have driver. [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_v6_0/hdl/cordic_v6_0_vh_rfs.vhd:8534]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:40 ; elapsed = 00:00:40 . Memory (MB): peak = 1304.848 ; gain = 544.199 ; free physical = 14279 ; free virtual = 31815
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:40 ; elapsed = 00:00:41 . Memory (MB): peak = 1304.848 ; gain = 544.199 ; free physical = 14279 ; free virtual = 31815
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:41 ; elapsed = 00:00:41 . Memory (MB): peak = 1304.848 ; gain = 544.199 ; free physical = 14279 ; free virtual = 31815
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:41 ; elapsed = 00:00:41 . Memory (MB): peak = 1304.848 ; gain = 544.199 ; free physical = 14279 ; free virtual = 31815
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:41 ; elapsed = 00:00:41 . Memory (MB): peak = 1304.848 ; gain = 544.199 ; free physical = 14264 ; free virtual = 31800
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:41 ; elapsed = 00:00:41 . Memory (MB): peak = 1304.848 ; gain = 544.199 ; free physical = 14264 ; free virtual = 31800
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:41 ; elapsed = 00:00:41 . Memory (MB): peak = 1304.848 ; gain = 544.199 ; free physical = 14264 ; free virtual = 31800
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:41 ; elapsed = 00:00:41 . Memory (MB): peak = 1304.848 ; gain = 544.199 ; free physical = 14264 ; free virtual = 31800
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:54 ; elapsed = 00:00:55 . Memory (MB): peak = 1304.848 ; gain = 544.199 ; free physical = 14224 ; free virtual = 31760
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:54 ; elapsed = 00:00:55 . Memory (MB): peak = 1304.848 ; gain = 544.199 ; free physical = 14223 ; free virtual = 31759
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:55 ; elapsed = 00:00:55 . Memory (MB): peak = 1304.848 ; gain = 544.199 ; free physical = 14213 ; free virtual = 31749
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:55 ; elapsed = 00:00:56 . Memory (MB): peak = 1304.848 ; gain = 544.199 ; free physical = 14213 ; free virtual = 31749
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:55 ; elapsed = 00:00:56 . Memory (MB): peak = 1304.848 ; gain = 544.199 ; free physical = 14213 ; free virtual = 31749
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:55 ; elapsed = 00:00:56 . Memory (MB): peak = 1304.848 ; gain = 544.199 ; free physical = 14213 ; free virtual = 31749
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |LUT1   |    18|
+|2     |LUT2   |   195|
+|3     |LUT3   |    94|
+|4     |LUT5   |    56|
+|5     |MUXCY  |   180|
+|6     |SRL16E |    17|
+|7     |XORCY  |   162|
+|8     |FDRE   |   233|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:55 ; elapsed = 00:00:56 . Memory (MB): peak = 1304.848 ; gain = 544.199 ; free physical = 14213 ; free virtual = 31749
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 2 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:47 ; elapsed = 00:00:47 . Memory (MB): peak = 1304.848 ; gain = 108.238 ; free physical = 14213 ; free virtual = 31749
+Synthesis Optimization Complete : Time (s): cpu = 00:00:55 ; elapsed = 00:00:56 . Memory (MB): peak = 1304.848 ; gain = 544.199 ; free physical = 14213 ; free virtual = 31749
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 162 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_0_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_0_ooc.xdc] for cell 'U0'
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 54 instances were transformed.
+  (MUXCY,XORCY) => CARRY4: 54 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+486 Infos, 4 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:55 ; elapsed = 00:00:55 . Memory (MB): peak = 1304.848 ; gain = 440.461 ; free physical = 14196 ; free virtual = 31732
+# rename_ref -prefix_all cordic_0_
+INFO: [Coretcl 2-1174] Renamed 126 cell refs.
+# write_checkpoint -noxdef cordic_0.dcp
+# catch { report_utilization -file cordic_0_utilization_synth.rpt -pb cordic_0_utilization_synth.pb }
+report_utilization: Time (s): cpu = 00:00:00.16 ; elapsed = 00:00:00.18 . Memory (MB): peak = 1304.848 ; gain = 0.000 ; free physical = 14195 ; free virtual = 31731
+# if { [catch {
+#   file copy -force /mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.runs/cordic_0_synth_1/cordic_0.dcp /mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_0.dcp
+# } _RESULT ] } { 
+#   error "ERROR: Unable to successfully create or copy the sub-design checkpoint file."
+# }
+# if { [catch {
+#   write_verilog -force -mode synth_stub /mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_0_stub.v
+# } _RESULT ] } { 
+#   puts "CRITICAL WARNING: Unable to successfully create a Verilog synthesis stub for the sub-design. This may lead to errors in top level synthesis of the design. Error reported: $_RESULT"
+# }
+# if { [catch {
+#   write_vhdl -force -mode synth_stub /mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_0_stub.vhdl
+# } _RESULT ] } { 
+#   puts "CRITICAL WARNING: Unable to successfully create a VHDL synthesis stub for the sub-design. This may lead to errors in top level synthesis of the design. Error reported: $_RESULT"
+# }
+# if { [catch {
+#   write_verilog -force -mode funcsim /mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_0_funcsim.v
+# } _RESULT ] } { 
+#   puts "CRITICAL WARNING: Unable to successfully create the Verilog functional simulation sub-design file. Post-Synthesis Functional Simulation with this file may not be possible or may give incorrect results. Error reported: $_RESULT"
+# }
+# if { [catch {
+#   write_vhdl -force -mode funcsim /mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/cordic_0/cordic_0_funcsim.vhdl
+# } _RESULT ] } { 
+#   puts "CRITICAL WARNING: Unable to successfully create the VHDL functional simulation sub-design file. Post-Synthesis Functional Simulation with this file may not be possible or may give incorrect results. Error reported: $_RESULT"
+# }
+INFO: [Common 17-206] Exiting Vivado at Sun Apr 19 22:00:52 2015...

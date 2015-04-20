@@ -1,0 +1,322 @@
+#-----------------------------------------------------------
+# Vivado v2014.4 (64-bit)
+# SW Build 1071353 on Tue Nov 18 16:47:07 MST 2014
+# IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+# Start of session at: Sun Apr 19 21:56:35 2015
+# Process ID: 19477
+# Log file: /mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.runs/c_addsub_0_synth_1/c_addsub_0.vds
+# Journal file: /mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.runs/c_addsub_0_synth_1/vivado.jou
+#-----------------------------------------------------------
+source c_addsub_0.tcl
+# set_param gui.test TreeTableDev
+# debug::add_scope template.lib 1
+# set_msg_config -id {HDL 9-1061} -limit 100000
+# set_msg_config -id {HDL 9-1654} -limit 100000
+# create_project -in_memory -part xc7a100tcsg324-1
+# set_param project.compositeFile.enableAutoGeneration 0
+# set_param synth.vivado.isSynthRun true
+# set_msg_config -id {IP_Flow 19-2162} -severity warning -new_severity info
+# set_property webtalk.parent_dir /mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.cache/wt [current_project]
+# set_property parent.project_path /mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.xpr [current_project]
+# set_property default_lib xil_defaultlib [current_project]
+# set_property target_language VHDL [current_project]
+# read_ip /mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/c_addsub_0/c_addsub_0.xci
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/jmurray/Applications/Xilinx/Vivado/2014.4/data/ip'.
+WARNING: [IP_Flow 19-3664] IP 'c_addsub_0' generated file not found '/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/c_addsub_0/c_addsub_0.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'c_addsub_0' generated file not found '/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/c_addsub_0/c_addsub_0_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'c_addsub_0' generated file not found '/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/c_addsub_0/c_addsub_0_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'c_addsub_0' generated file not found '/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/c_addsub_0/c_addsub_0_funcsim.vhdl'. Please regenerate to continue.
+# set_property is_locked true [get_files /mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/c_addsub_0/c_addsub_0.xci]
+# read_xdc dont_touch.xdc
+# set_property used_in_implementation false [get_files dont_touch.xdc]
+# catch { write_hwdef -file c_addsub_0.hwdef }
+INFO: [Vivado_Tcl 4-279] hardware handoff file cannot be generated as there is no block diagram instance in the design
+# synth_design -top c_addsub_0 -part xc7a100tcsg324-1 -mode out_of_context
+Command: synth_design -top c_addsub_0 -part xc7a100tcsg324-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 909.387 ; gain = 148.738 ; free physical = 14524 ; free virtual = 32057
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'c_addsub_0' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/c_addsub_0/synth/c_addsub_0.vhd:68]
+INFO: [Synth 8-3491] module 'c_addsub_v12_0' declared at '/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/c_addsub_0/c_addsub_v12_0/hdl/c_addsub_v12_0.vhd:106' bound to instance 'U0' of component 'c_addsub_v12_0' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/c_addsub_0/synth/c_addsub_0.vhd:128]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0__parameterized0' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/c_addsub_0/c_addsub_v12_0/hdl/c_addsub_v12_0.vhd:153]
+INFO: [Synth 8-3491] module 'c_addsub_v12_0_viv' declared at '/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/c_addsub_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:6447' bound to instance 'xst_addsub' of component 'c_addsub_v12_0_viv' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/c_addsub_0/c_addsub_v12_0/hdl/c_addsub_v12_0.vhd:159]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_viv__parameterized0' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/c_addsub_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:6505]
+INFO: [Synth 8-3491] module 'xbip_addsub_v3_0_viv' declared at '/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/c_addsub_0/xbip_addsub_v3_0/hdl/xbip_addsub_v3_0_vh_rfs.vhd:297' bound to instance 'i_xbip_addsub' of component 'xbip_addsub_v3_0_viv' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/c_addsub_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:6767]
+INFO: [Synth 8-638] synthesizing module 'xbip_addsub_v3_0_viv__parameterized0' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/c_addsub_0/xbip_addsub_v3_0/hdl/xbip_addsub_v3_0_vh_rfs.vhd:324]
+INFO: [Synth 8-3491] module 'xbip_dsp48_addsub_v3_0_viv' declared at '/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/c_addsub_0/xbip_dsp48_addsub_v3_0/hdl/xbip_dsp48_addsub_v3_0_vh_rfs.vhd:1191' bound to instance 'i_addsub' of component 'xbip_dsp48_addsub_v3_0_viv' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/c_addsub_0/xbip_addsub_v3_0/hdl/xbip_addsub_v3_0_vh_rfs.vhd:412]
+INFO: [Synth 8-638] synthesizing module 'xbip_dsp48_addsub_v3_0_viv__parameterized0' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/c_addsub_0/xbip_dsp48_addsub_v3_0/hdl/xbip_dsp48_addsub_v3_0_vh_rfs.vhd:1229]
+INFO: [Synth 8-3491] module 'xbip_dsp48_addsub_synth' declared at '/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/c_addsub_0/xbip_dsp48_addsub_v3_0/hdl/xbip_dsp48_addsub_v3_0_vh_rfs.vhd:1002' bound to instance 'i_synth_model' of component 'xbip_dsp48_addsub_synth' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/c_addsub_0/xbip_dsp48_addsub_v3_0/hdl/xbip_dsp48_addsub_v3_0_vh_rfs.vhd:1258]
+INFO: [Synth 8-638] synthesizing module 'xbip_dsp48_addsub_synth__parameterized0' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/c_addsub_0/xbip_dsp48_addsub_v3_0/hdl/xbip_dsp48_addsub_v3_0_vh_rfs.vhd:1038]
+INFO: [Synth 8-3491] module 'xbip_dsp48e1_wrapper_v3_0' declared at '/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/c_addsub_0/xbip_dsp48_wrapper_v3_0/hdl/xbip_dsp48_wrapper_v3_0_vh_rfs.vhd:1571' bound to instance 'i_uniwrap' of component 'xbip_dsp48e1_wrapper_v3_0' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/c_addsub_0/xbip_dsp48_addsub_v3_0/hdl/xbip_dsp48_addsub_v3_0_vh_rfs.vhd:1073]
+INFO: [Synth 8-638] synthesizing module 'xbip_dsp48e1_wrapper_v3_0__parameterized0' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/c_addsub_0/xbip_dsp48_wrapper_v3_0/hdl/xbip_dsp48_wrapper_v3_0_vh_rfs.vhd:1649]
+INFO: [Synth 8-113] binding component instance 'i_primitive' to cell 'DSP48E1' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/c_addsub_0/xbip_dsp48_wrapper_v3_0/hdl/xbip_dsp48_wrapper_v3_0_vh_rfs.vhd:1886]
+INFO: [Synth 8-256] done synthesizing module 'xbip_dsp48e1_wrapper_v3_0__parameterized0' (1#1) [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/c_addsub_0/xbip_dsp48_wrapper_v3_0/hdl/xbip_dsp48_wrapper_v3_0_vh_rfs.vhd:1649]
+INFO: [Synth 8-256] done synthesizing module 'xbip_dsp48_addsub_synth__parameterized0' (2#1) [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/c_addsub_0/xbip_dsp48_addsub_v3_0/hdl/xbip_dsp48_addsub_v3_0_vh_rfs.vhd:1038]
+INFO: [Synth 8-256] done synthesizing module 'xbip_dsp48_addsub_v3_0_viv__parameterized0' (3#1) [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/c_addsub_0/xbip_dsp48_addsub_v3_0/hdl/xbip_dsp48_addsub_v3_0_vh_rfs.vhd:1229]
+INFO: [Synth 8-256] done synthesizing module 'xbip_addsub_v3_0_viv__parameterized0' (4#1) [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/c_addsub_0/xbip_addsub_v3_0/hdl/xbip_addsub_v3_0_vh_rfs.vhd:324]
+INFO: [Synth 8-3491] module 'xbip_pipe_v3_0_viv' declared at '/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/c_addsub_0/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_vh_rfs.vhd:274' bound to instance 'i_add_pipe' of component 'xbip_pipe_v3_0_viv' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/c_addsub_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:6830]
+INFO: [Synth 8-638] synthesizing module 'xbip_pipe_v3_0_viv__parameterized0' [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/c_addsub_0/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_vh_rfs.vhd:299]
+INFO: [Synth 8-256] done synthesizing module 'xbip_pipe_v3_0_viv__parameterized0' (5#1) [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/c_addsub_0/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_vh_rfs.vhd:299]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_viv__parameterized0' (6#1) [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/c_addsub_0/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:6505]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0__parameterized0' (7#1) [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/c_addsub_0/c_addsub_v12_0/hdl/c_addsub_v12_0.vhd:153]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_0' (8#1) [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/c_addsub_0/synth/c_addsub_0.vhd:68]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 949.625 ; gain = 188.977 ; free physical = 14482 ; free virtual = 32016
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 949.625 ; gain = 188.977 ; free physical = 14482 ; free virtual = 32016
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+Loading clock regions from /home/jmurray/Applications/Xilinx/Vivado/2014.4/data/parts/xilinx/artix7/artix7/xc7a100t/ClockRegion.xml
+Loading clock buffers from /home/jmurray/Applications/Xilinx/Vivado/2014.4/data/parts/xilinx/artix7/artix7/xc7a100t/ClockBuffers.xml
+Loading clock placement rules from /home/jmurray/Applications/Xilinx/Vivado/2014.4/data/parts/xilinx/artix7/ClockPlacerRules.xml
+Loading package pin functions from /home/jmurray/Applications/Xilinx/Vivado/2014.4/data/parts/xilinx/artix7/PinFunctions.xml...
+Loading package from /home/jmurray/Applications/Xilinx/Vivado/2014.4/data/parts/xilinx/artix7/artix7/xc7a100t/csg324/Package.xml
+Loading io standards from /home/jmurray/Applications/Xilinx/Vivado/2014.4/data/./parts/xilinx/artix7/IOStandards.xml
+Loading device configuration modes from /home/jmurray/Applications/Xilinx/Vivado/2014.4/data/parts/xilinx/artix7/ConfigModes.xml
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/c_addsub_0/c_addsub_0_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/c_addsub_0/c_addsub_0_ooc.xdc] for cell 'U0'
+Parsing XDC File [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.runs/c_addsub_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.runs/c_addsub_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1216.848 ; gain = 0.000 ; free physical = 14300 ; free virtual = 31833
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1216.848 ; gain = 456.199 ; free physical = 14299 ; free virtual = 31833
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1216.848 ; gain = 456.199 ; free physical = 14299 ; free virtual = 31833
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for U0. (constraint file  /mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.runs/c_addsub_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1216.848 ; gain = 456.199 ; free physical = 14299 ; free virtual = 31833
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 1216.848 ; gain = 456.199 ; free physical = 14291 ; free virtual = 31825
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 1216.848 ; gain = 456.199 ; free physical = 14291 ; free virtual = 31825
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 1216.848 ; gain = 456.199 ; free physical = 14291 ; free virtual = 31825
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 1216.848 ; gain = 456.199 ; free physical = 14291 ; free virtual = 31825
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 1216.848 ; gain = 456.199 ; free physical = 14275 ; free virtual = 31809
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 1216.848 ; gain = 456.199 ; free physical = 14275 ; free virtual = 31809
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 1216.848 ; gain = 456.199 ; free physical = 14275 ; free virtual = 31809
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 1216.848 ; gain = 456.199 ; free physical = 14275 ; free virtual = 31809
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:38 ; elapsed = 00:00:38 . Memory (MB): peak = 1258.836 ; gain = 498.188 ; free physical = 14206 ; free virtual = 31740
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:38 ; elapsed = 00:00:38 . Memory (MB): peak = 1258.836 ; gain = 498.188 ; free physical = 14206 ; free virtual = 31739
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:38 ; elapsed = 00:00:38 . Memory (MB): peak = 1268.852 ; gain = 508.203 ; free physical = 14197 ; free virtual = 31730
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:38 ; elapsed = 00:00:38 . Memory (MB): peak = 1268.852 ; gain = 508.203 ; free physical = 14196 ; free virtual = 31730
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:38 ; elapsed = 00:00:38 . Memory (MB): peak = 1268.852 ; gain = 508.203 ; free physical = 14196 ; free virtual = 31730
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:38 ; elapsed = 00:00:38 . Memory (MB): peak = 1268.852 ; gain = 508.203 ; free physical = 14196 ; free virtual = 31730
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |DSP48E1 |     1|
+|2     |FDRE    |     1|
++------+--------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:38 ; elapsed = 00:00:38 . Memory (MB): peak = 1268.852 ; gain = 508.203 ; free physical = 14196 ; free virtual = 31730
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:30 ; elapsed = 00:00:30 . Memory (MB): peak = 1268.852 ; gain = 137.242 ; free physical = 14196 ; free virtual = 31730
+Synthesis Optimization Complete : Time (s): cpu = 00:00:38 ; elapsed = 00:00:39 . Memory (MB): peak = 1268.852 ; gain = 508.203 ; free physical = 14196 ; free virtual = 31730
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/c_addsub_0/c_addsub_0_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [/mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/c_addsub_0/c_addsub_0_ooc.xdc] for cell 'U0'
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+36 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:37 ; elapsed = 00:00:37 . Memory (MB): peak = 1273.852 ; gain = 409.465 ; free physical = 14191 ; free virtual = 31725
+# rename_ref -prefix_all c_addsub_0_
+INFO: [Coretcl 2-1174] Renamed 7 cell refs.
+# write_checkpoint -noxdef c_addsub_0.dcp
+# catch { report_utilization -file c_addsub_0_utilization_synth.rpt -pb c_addsub_0_utilization_synth.pb }
+report_utilization: Time (s): cpu = 00:00:00.14 ; elapsed = 00:00:00.18 . Memory (MB): peak = 1273.855 ; gain = 0.000 ; free physical = 14189 ; free virtual = 31723
+# if { [catch {
+#   file copy -force /mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.runs/c_addsub_0_synth_1/c_addsub_0.dcp /mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/c_addsub_0/c_addsub_0.dcp
+# } _RESULT ] } { 
+#   error "ERROR: Unable to successfully create or copy the sub-design checkpoint file."
+# }
+# if { [catch {
+#   write_verilog -force -mode synth_stub /mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/c_addsub_0/c_addsub_0_stub.v
+# } _RESULT ] } { 
+#   puts "CRITICAL WARNING: Unable to successfully create a Verilog synthesis stub for the sub-design. This may lead to errors in top level synthesis of the design. Error reported: $_RESULT"
+# }
+# if { [catch {
+#   write_vhdl -force -mode synth_stub /mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/c_addsub_0/c_addsub_0_stub.vhdl
+# } _RESULT ] } { 
+#   puts "CRITICAL WARNING: Unable to successfully create a VHDL synthesis stub for the sub-design. This may lead to errors in top level synthesis of the design. Error reported: $_RESULT"
+# }
+# if { [catch {
+#   write_verilog -force -mode funcsim /mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/c_addsub_0/c_addsub_0_funcsim.v
+# } _RESULT ] } { 
+#   puts "CRITICAL WARNING: Unable to successfully create the Verilog functional simulation sub-design file. Post-Synthesis Functional Simulation with this file may not be possible or may give incorrect results. Error reported: $_RESULT"
+# }
+# if { [catch {
+#   write_vhdl -force -mode funcsim /mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.srcs/sources_1/ip/c_addsub_0/c_addsub_0_funcsim.vhdl
+# } _RESULT ] } { 
+#   puts "CRITICAL WARNING: Unable to successfully create the VHDL functional simulation sub-design file. Post-Synthesis Functional Simulation with this file may not be possible or may give incorrect results. Error reported: $_RESULT"
+# }
+INFO: [Common 17-206] Exiting Vivado at Sun Apr 19 21:57:21 2015...

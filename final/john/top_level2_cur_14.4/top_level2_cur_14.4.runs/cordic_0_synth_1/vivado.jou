@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# Vivado v2014.4 (64-bit)
+# SW Build 1071353 on Tue Nov 18 16:47:07 MST 2014
+# IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+# Start of session at: Sun Apr 19 21:59:47 2015
+# Process ID: 19762
+# Log file: /mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.runs/cordic_0_synth_1/cordic_0.vds
+# Journal file: /mnt/git/Spring-2015/ECE551-Spring-2015/top_level2/top_level2.runs/cordic_0_synth_1/vivado.jou
+#-----------------------------------------------------------
+source cordic_0.tcl
