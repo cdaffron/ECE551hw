@@ -1,8 +1,8 @@
 // Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2014.2 (lin64) Build 932637 Wed Jun 11 13:08:52 MDT 2014
-// Date        : Sun Apr 19 14:27:16 2015
-// Host        : com1548.eecs.utk.edu running 64-bit Red Hat Enterprise Linux Server release 6.5 (Santiago)
+// Date        : Mon Apr 20 09:26:44 2015
+// Host        : com1549.eecs.utk.edu running 64-bit Red Hat Enterprise Linux Server release 6.5 (Santiago)
 // Command     : write_verilog -force -mode funcsim
 //               /data1/cdaffron/git/ece551hw/final/chris/bars_to_seg_disp/bars_to_seg_disp.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_funcsim.v
 // Design      : clk_wiz_0

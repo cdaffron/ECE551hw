@@ -3,7 +3,6 @@
 # 
 
   set_param gui.test TreeTableDev
-set_msg_config -id {Common-41} -limit 4294967295
 set_msg_config -id {HDL 9-1061} -limit 100000
 set_msg_config -id {HDL 9-1654} -limit 100000
 create_project -in_memory -part xc7a100tcsg324-1
@@ -12,24 +11,25 @@ set_param project.compositeFile.enableAutoGeneration 0
 set_property default_lib xil_defaultlib [current_project]
 add_files {{/data1/cdaffron/git/ece551hw/final/chris/bars_to_seg_disp/bars_to_seg_disp.srcs/sources_1/imports/coe files/mat_5kHz_int16_2048samples.coe}}
 add_files {{/data1/cdaffron/git/ece551hw/final/jacob/sources/coe files/mat_f_sweep.coe}}
-add_files -quiet /data1/cdaffron/git/ece551hw/final/chris/bars_to_seg_disp/bars_to_seg_disp.runs/blk_mem_gen_0_synth_1/blk_mem_gen_0.dcp
-set_property used_in_implementation false [get_files /data1/cdaffron/git/ece551hw/final/chris/bars_to_seg_disp/bars_to_seg_disp.runs/blk_mem_gen_0_synth_1/blk_mem_gen_0.dcp]
-add_files -quiet /data1/cdaffron/git/ece551hw/final/chris/bars_to_seg_disp/bars_to_seg_disp.runs/blk_mem_gen_1_synth_1/blk_mem_gen_1.dcp
-set_property used_in_implementation false [get_files /data1/cdaffron/git/ece551hw/final/chris/bars_to_seg_disp/bars_to_seg_disp.runs/blk_mem_gen_1_synth_1/blk_mem_gen_1.dcp]
-add_files -quiet /data1/cdaffron/git/ece551hw/final/chris/bars_to_seg_disp/bars_to_seg_disp.runs/xfft_0_synth_1/xfft_0.dcp
-set_property used_in_implementation false [get_files /data1/cdaffron/git/ece551hw/final/chris/bars_to_seg_disp/bars_to_seg_disp.runs/xfft_0_synth_1/xfft_0.dcp]
-add_files -quiet /data1/cdaffron/git/ece551hw/final/chris/bars_to_seg_disp/bars_to_seg_disp.runs/vio_0_synth_1/vio_0.dcp
-set_property used_in_implementation false [get_files /data1/cdaffron/git/ece551hw/final/chris/bars_to_seg_disp/bars_to_seg_disp.runs/vio_0_synth_1/vio_0.dcp]
+add_files {{/data1/cdaffron/git/ece551hw/final/jacob/sources/coe files/gunshot.coe}}
 add_files -quiet /data1/cdaffron/git/ece551hw/final/chris/bars_to_seg_disp/bars_to_seg_disp.runs/mult_gen_0_synth_1/mult_gen_0.dcp
 set_property used_in_implementation false [get_files /data1/cdaffron/git/ece551hw/final/chris/bars_to_seg_disp/bars_to_seg_disp.runs/mult_gen_0_synth_1/mult_gen_0.dcp]
 add_files -quiet /data1/cdaffron/git/ece551hw/final/chris/bars_to_seg_disp/bars_to_seg_disp.runs/c_addsub_0_synth_1/c_addsub_0.dcp
 set_property used_in_implementation false [get_files /data1/cdaffron/git/ece551hw/final/chris/bars_to_seg_disp/bars_to_seg_disp.runs/c_addsub_0_synth_1/c_addsub_0.dcp]
 add_files -quiet /data1/cdaffron/git/ece551hw/final/chris/bars_to_seg_disp/bars_to_seg_disp.runs/cordic_0_synth_1/cordic_0.dcp
 set_property used_in_implementation false [get_files /data1/cdaffron/git/ece551hw/final/chris/bars_to_seg_disp/bars_to_seg_disp.runs/cordic_0_synth_1/cordic_0.dcp]
-add_files -quiet /data1/cdaffron/git/ece551hw/final/chris/bars_to_seg_disp/bars_to_seg_disp.runs/clk_wiz_0_synth_1/clk_wiz_0.dcp
-set_property used_in_implementation false [get_files /data1/cdaffron/git/ece551hw/final/chris/bars_to_seg_disp/bars_to_seg_disp.runs/clk_wiz_0_synth_1/clk_wiz_0.dcp]
+add_files -quiet /data1/cdaffron/git/ece551hw/final/chris/bars_to_seg_disp/bars_to_seg_disp.runs/xfft_0_synth_1/xfft_0.dcp
+set_property used_in_implementation false [get_files /data1/cdaffron/git/ece551hw/final/chris/bars_to_seg_disp/bars_to_seg_disp.runs/xfft_0_synth_1/xfft_0.dcp]
+add_files -quiet /data1/cdaffron/git/ece551hw/final/chris/bars_to_seg_disp/bars_to_seg_disp.runs/vio_0_synth_1/vio_0.dcp
+set_property used_in_implementation false [get_files /data1/cdaffron/git/ece551hw/final/chris/bars_to_seg_disp/bars_to_seg_disp.runs/vio_0_synth_1/vio_0.dcp]
 add_files -quiet /data1/cdaffron/git/ece551hw/final/chris/bars_to_seg_disp/bars_to_seg_disp.runs/c_counter_binary_0_synth_1/c_counter_binary_0.dcp
 set_property used_in_implementation false [get_files /data1/cdaffron/git/ece551hw/final/chris/bars_to_seg_disp/bars_to_seg_disp.runs/c_counter_binary_0_synth_1/c_counter_binary_0.dcp]
+add_files -quiet /data1/cdaffron/git/ece551hw/final/chris/bars_to_seg_disp/bars_to_seg_disp.runs/clk_wiz_0_synth_1/clk_wiz_0.dcp
+set_property used_in_implementation false [get_files /data1/cdaffron/git/ece551hw/final/chris/bars_to_seg_disp/bars_to_seg_disp.runs/clk_wiz_0_synth_1/clk_wiz_0.dcp]
+add_files -quiet /data1/cdaffron/git/ece551hw/final/chris/bars_to_seg_disp/bars_to_seg_disp.runs/blk_mem_gen_1_synth_1/blk_mem_gen_1.dcp
+set_property used_in_implementation false [get_files /data1/cdaffron/git/ece551hw/final/chris/bars_to_seg_disp/bars_to_seg_disp.runs/blk_mem_gen_1_synth_1/blk_mem_gen_1.dcp]
+add_files -quiet /data1/cdaffron/git/ece551hw/final/chris/bars_to_seg_disp/bars_to_seg_disp.runs/blk_mem_gen_0_synth_1/blk_mem_gen_0.dcp
+set_property used_in_implementation false [get_files /data1/cdaffron/git/ece551hw/final/chris/bars_to_seg_disp/bars_to_seg_disp.runs/blk_mem_gen_0_synth_1/blk_mem_gen_0.dcp]
 read_vhdl -library xil_defaultlib {
   /data1/cdaffron/git/ece551hw/final/chris/bars_to_seg_disp/bars_to_seg_disp.srcs/sources_1/imports/new/Hex2SSegDecoder.vhd
   /data1/cdaffron/git/ece551hw/final/chris/bars_to_seg_disp/bars_to_seg_disp.srcs/sources_1/imports/chris/magnitude/magnitude.srcs/sources_1/new/magnitude.vhd

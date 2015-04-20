@@ -1,8 +1,8 @@
 Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2014.2 (lin64) Build 932637 Wed Jun 11 13:08:52 MDT 2014
-| Date             : Sun Apr 19 18:48:29 2015
-| Host             : com1548.eecs.utk.edu running 64-bit Red Hat Enterprise Linux Server release 6.5 (Santiago)
+| Date             : Mon Apr 20 09:34:42 2015
+| Host             : com1549.eecs.utk.edu running 64-bit Red Hat Enterprise Linux Server release 6.5 (Santiago)
 | Command          : report_power -file top_level_power_routed.rpt -pb top_level_power_summary_routed.pb
 | Design           : top_level
 | Device           : xc7a100tcsg324-1
@@ -133,8 +133,8 @@ Table of Contents
 +---------------------------------------------------------+---------------------------------+-----------------+
 | dbg_hub/inst/bscan_inst/SERIES7_BSCAN.bscan_inst/UPDATE | dbg_hub/inst/bscan_inst/UPDATE  |            60.0 |
 | dbg_hub/inst/bscan_inst/SERIES7_BSCAN.bscan_inst/DRCK   | dbg_hub/inst/bscan_inst/DRCK    |            30.0 |
-| sys_clk_pin                                             | clk                             |            10.0 |
 | sys_clk_pin                                             | xlnx_opt__1                     |            10.0 |
+| sys_clk_pin                                             | clk                             |            10.0 |
 | clk_out3_clk_wiz_0                                      | clk_debug/U0/clk_out3_clk_wiz_0 |            20.0 |
 | clk_out2_clk_wiz_0                                      | clk_debug/U0/clk_out2_clk_wiz_0 |           166.7 |
 | clk_out1_clk_wiz_0                                      | clk_debug/U0/clk_out1_clk_wiz_0 |             5.0 |
