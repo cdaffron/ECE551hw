@@ -132,3 +132,5 @@ Temporary Items
 !*.bmm
 !*.xmp
 !*.cpp
+
+!.csv
