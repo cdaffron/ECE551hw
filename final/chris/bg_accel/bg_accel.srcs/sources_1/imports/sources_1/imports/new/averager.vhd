@@ -111,7 +111,7 @@ end averager;
 architecture Behavioral of averager is
 
 --    signal int1     : std_logic_vector (15 downto 0);
-    signal in0B : std_logic_vector (19 downto 0) := X"00000";
+--    signal in0B : std_logic_vector (19 downto 0) := X"00000";
     signal temp : std_logic_vector (21 downto 0);
 
 begin

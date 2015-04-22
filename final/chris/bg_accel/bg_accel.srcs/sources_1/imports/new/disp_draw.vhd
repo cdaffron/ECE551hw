@@ -648,10 +648,11 @@ begin
                         s_curr <= bars64;
                     elsif( sw(1 downto 0) = "01" ) then
                         s_curr <= bars32;
-                    elsif( sw(1 downto 0) = "10" ) then
-                        s_curr <= bars16;
+--                    elsif( sw(1 downto 0) = "10" ) then
+--                        s_curr <= bars16;
                     else
-                        s_curr <= div;
+--                        s_curr <= div;
+                        s_curr <= bars16;
                     end if;
                     
                 when bars64 =>

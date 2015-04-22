@@ -1,7 +1,7 @@
 Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2014.2 (lin64) Build 932637 Wed Jun 11 13:08:52 MDT 2014
-| Date         : Tue Apr 21 23:36:21 2015
+| Date         : Wed Apr 22 10:24:37 2015
 | Host         : com1549.eecs.utk.edu running 64-bit Red Hat Enterprise Linux Server release 6.5 (Santiago)
 | Command      : report_utilization -file top_level_utilization_synth.rpt -pb top_level_utilization_synth.pb
 | Design       : top_level
@@ -29,8 +29,8 @@ Table of Contents
 +----------------------------+------+-------+-----------+-------+
 |          Site Type         | Used | Fixed | Available | Util% |
 +----------------------------+------+-------+-----------+-------+
-| Slice LUTs*                | 3777 |     0 |     63400 |  5.95 |
-|   LUT as Logic             | 3742 |     0 |     63400 |  5.90 |
+| Slice LUTs*                | 3771 |     0 |     63400 |  5.94 |
+|   LUT as Logic             | 3736 |     0 |     63400 |  5.89 |
 |   LUT as Memory            |   35 |     0 |     19000 |  0.18 |
 |     LUT as Distributed RAM |    0 |     0 |           |       |
 |     LUT as Shift Register  |   35 |     0 |           |       |
@@ -132,11 +132,11 @@ Table of Contents
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
 | FDRE     | 3979 |        Flop & Latch |
-| LUT3     | 1809 |                 LUT |
-| LUT6     | 1174 |                 LUT |
-| LUT4     |  767 |                 LUT |
-| LUT5     |  458 |                 LUT |
-| LUT2     |  358 |                 LUT |
+| LUT3     | 1811 |                 LUT |
+| LUT6     | 1172 |                 LUT |
+| LUT4     |  761 |                 LUT |
+| LUT5     |  459 |                 LUT |
+| LUT2     |  355 |                 LUT |
 | CARRY4   |  296 |          CarryLogic |
 | LUT1     |  192 |                 LUT |
 | MUXF7    |  174 |               MuxFx |
