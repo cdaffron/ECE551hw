@@ -1,7 +1,7 @@
 Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2014.2 (lin64) Build 932637 Wed Jun 11 13:08:52 MDT 2014
-| Date             : Wed Apr 22 17:11:23 2015
+| Date             : Wed Apr 22 17:22:01 2015
 | Host             : com1549.eecs.utk.edu running 64-bit Red Hat Enterprise Linux Server release 6.5 (Santiago)
 | Command          : report_power -file top_level_power_routed.rpt -pb top_level_power_summary_routed.pb
 | Design           : top_level
@@ -30,9 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+-------+
-| Total On-Chip Power (W)  | 0.470 |
-| Dynamic (W)              | 0.371 |
+| Total On-Chip Power (W)  | 0.467 |
+| Dynamic (W)              | 0.368 |
 | Device Static (W)        | 0.099 |
+| Total Off-Chip Power (W) | 0.000 |
 | Effective TJA (C/W)      | 4.6   |
 | Max Ambient (C)          | 82.9  |
 | Junction Temperature (C) | 27.1  |
@@ -49,22 +50,22 @@ Table of Contents
 +-------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                 | Power (W) | Used     | Available | Utilization (%) |
 +-------------------------+-----------+----------+-----------+-----------------+
-| Clocks                  |     0.023 |        9 |       --- |             --- |
-| Slice Logic             |     0.025 |    15611 |       --- |             --- |
-|   LUT as Logic          |     0.021 |     5157 |     63400 |            8.13 |
+| Clocks                  |     0.022 |        9 |       --- |             --- |
+| Slice Logic             |     0.024 |    15518 |       --- |             --- |
+|   LUT as Logic          |     0.021 |     5072 |     63400 |            8.00 |
 |   Register              |     0.001 |     7437 |    126800 |            5.86 |
 |   CARRY4                |     0.001 |      422 |     15850 |            2.66 |
 |   LUT as Shift Register |    <0.001 |      251 |     19000 |            1.32 |
-|   F7/F8 Muxes           |    <0.001 |      261 |     63400 |            0.41 |
+|   F7/F8 Muxes           |    <0.001 |      256 |     63400 |            0.40 |
 |   BUFG                  |    <0.001 |        1 |        32 |            3.12 |
 |   Others                |     0.000 |      653 |       --- |             --- |
-| Signals                 |     0.039 |    12120 |       --- |             --- |
+| Signals                 |     0.038 |    12037 |       --- |             --- |
 | Block RAM               |     0.025 |       11 |       135 |            8.14 |
 | MMCM                    |     0.220 |        2 |         6 |           33.33 |
 | DSPs                    |     0.019 |       23 |       240 |            9.58 |
 | I/O                     |     0.021 |       92 |       210 |           43.80 |
 | Static Power            |     0.099 |          |           |                 |
-| Total                   |     0.470 |          |           |                 |
+| Total                   |     0.467 |          |           |                 |
 +-------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -74,7 +75,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.145 |       0.129 |      0.016 |
+| Vccint    |       1.000 |     0.143 |       0.126 |      0.016 |
 | Vccaux    |       1.800 |     0.141 |       0.123 |      0.018 |
 | Vcco33    |       3.300 |     0.010 |       0.006 |      0.004 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -131,11 +132,11 @@ Table of Contents
 | Clock                 | Domain                                    | Constraint (ns) |
 +-----------------------+-------------------------------------------+-----------------+
 | clk_25out_clk_wiz_vga | vga_comp/clk_wiz/U0/clk_25out_clk_wiz_vga |            40.0 |
-| clkfbout_clk_wiz_vga  | vga_comp/clk_wiz/U0/clkfbout_clk_wiz_vga  |            40.0 |
-| sys_clk_pin           | xlnx_opt__18                              |            10.0 |
 | sys_clk_pin           | clk                                       |            10.0 |
+| sys_clk_pin           | xlnx_opt__18                              |            10.0 |
 | clkfbout_clk_wiz_0    | clk_debug/U0/clkfbout_clk_wiz_0           |            10.0 |
 | clk_out3_clk_wiz_0    | clk_debug/U0/clk_out3_clk_wiz_0           |            20.0 |
+| clkfbout_clk_wiz_vga  | vga_comp/clk_wiz/U0/clkfbout_clk_wiz_vga  |            40.0 |
 +-----------------------+-------------------------------------------+-----------------+
 
 
@@ -148,24 +149,24 @@ Table of Contents
 +--------------------------------------------------------------------------------------------+-----------+
 | Name                                                                                       | Power (W) |
 +--------------------------------------------------------------------------------------------+-----------+
-| top_level                                                                                  |     0.371 |
+| top_level                                                                                  |     0.368 |
 |   clk_debug                                                                                |     0.105 |
 |     U0                                                                                     |     0.105 |
 |   decoder                                                                                  |     0.002 |
-|   disp_draw_inst                                                                           |     0.035 |
+|   disp_draw_inst                                                                           |     0.033 |
 |     avg_inst                                                                               |     0.003 |
-|     mag_inst                                                                               |     0.019 |
+|     mag_inst                                                                               |     0.018 |
 |       imagSquare                                                                           |    <0.001 |
 |         U0                                                                                 |    <0.001 |
 |           i_mult                                                                           |    <0.001 |
 |             gDSP.gDSP_only.iDSP                                                            |    <0.001 |
 |               inferred_dsp.Pdelay                                                          |     0.000 |
-|       magSqRt                                                                              |     0.009 |
-|         U0                                                                                 |     0.009 |
-|           i_synth                                                                          |     0.009 |
+|       magSqRt                                                                              |     0.008 |
+|         U0                                                                                 |     0.008 |
+|           i_synth                                                                          |     0.008 |
 |             i_nd_to_rdy                                                                    |    <0.001 |
-|             i_synth                                                                        |     0.009 |
-|               gen_sqrt.square_root                                                         |     0.009 |
+|             i_synth                                                                        |     0.008 |
+|               gen_sqrt.square_root                                                         |     0.008 |
 |                 gen_iterations[10].gen_post_mid.gen_rem                                    |    <0.001 |
 |                   gen_data_int                                                             |    <0.001 |
 |                   gen_rem_inc                                                              |    <0.001 |
@@ -300,15 +301,15 @@ Table of Contents
 |                 i_synth_option.i_synth_model                                               |    <0.001 |
 |                   opt_vx7.i_uniwrap                                                        |    <0.001 |
 |   divide                                                                                   |    <0.001 |
-|   fft                                                                                      |     0.069 |
-|     U0                                                                                     |     0.069 |
-|       i_synth                                                                              |     0.069 |
+|   fft                                                                                      |     0.068 |
+|     U0                                                                                     |     0.068 |
+|       i_synth                                                                              |     0.068 |
 |         axi_wrapper                                                                        |     0.003 |
 |           config_channel_fifo                                                              |    <0.001 |
 |             gen_non_real_time.data_in_fifo_pt1                                             |    <0.001 |
 |               fifo0                                                                        |    <0.001 |
 |           data_in_channel_fifo                                                             |     0.001 |
-|             gen_non_real_time.data_in_fifo_pt1                                             |     0.001 |
+|             gen_non_real_time.data_in_fifo_pt1                                             |    <0.001 |
 |               fifo0                                                                        |    <0.001 |
 |           data_out_channel                                                                 |    <0.001 |
 |             gen_non_real_time.fifo                                                         |    <0.001 |
@@ -316,8 +317,8 @@ Table of Contents
 |           gen_status_channel.status_fifo                                                   |    <0.001 |
 |             gen_non_real_time.fifo                                                         |    <0.001 |
 |               fifo0                                                                        |    <0.001 |
-|         xfft_inst                                                                          |     0.066 |
-|           non_floating_point.arch_b.xfft_inst                                              |     0.066 |
+|         xfft_inst                                                                          |     0.065 |
+|           non_floating_point.arch_b.xfft_inst                                              |     0.065 |
 |             control                                                                        |     0.007 |
 |               control                                                                      |    <0.001 |
 |                 bfp_sclr_gen.sclr_register_bfp                                             |    <0.001 |
@@ -532,7 +533,7 @@ Table of Contents
 |                 o3_gen                                                                     |    <0.001 |
 |               output_selector_im                                                           |    <0.001 |
 |               output_selector_re                                                           |    <0.001 |
-|               pe                                                                           |     0.045 |
+|               pe                                                                           |     0.044 |
 |                 mult_gen.Mult1                                                             |     0.006 |
 |                   i_cmpy                                                                   |     0.006 |
 |                     three_mult_structure.use_dsp.i_dsp48                                   |     0.006 |
@@ -579,8 +580,8 @@ Table of Contents
 |                           use_prim.appDSP48[0].bppDSP48[0].need_output_delay.output_delay  |     0.000 |
 |                           use_prim.iAdelx[0].iAdely[0].use_delay_line.Adelay               |     0.000 |
 |                           use_prim.iBdelx[0].iBdely[0].need_delay_line.Bdelay              |     0.000 |
-|                       mult3_preadder_d_minus_a.mult3                                       |     0.002 |
-|                         mult                                                               |     0.002 |
+|                       mult3_preadder_d_minus_a.mult3                                       |     0.001 |
+|                         mult                                                               |     0.001 |
 |                           use_prim.appDSP48[0].bppDSP48[0].need_output_delay.output_delay  |     0.000 |
 |                           use_prim.iAdelx[0].iAdely[0].use_delay_line.Adelay               |    <0.001 |
 |                           use_prim.iBdelx[0].iBdely[0].need_delay_line.Bdelay              |    <0.001 |
@@ -614,7 +615,7 @@ Table of Contents
 |                       optionally_negate_inputs                                             |    <0.001 |
 |                       pi_post_delay                                                        |     0.000 |
 |                       pr_post_delay                                                        |     0.000 |
-|                 mult_gen.dsp48_dragonfly.dragonfly_inst                                    |     0.012 |
+|                 mult_gen.dsp48_dragonfly.dragonfly_inst                                    |     0.013 |
 |                   BF_0                                                                     |     0.003 |
 |                     dsp48e_simd.bf_dsp48e_simd_bypass                                      |     0.003 |
 |                   BF_1                                                                     |     0.003 |
