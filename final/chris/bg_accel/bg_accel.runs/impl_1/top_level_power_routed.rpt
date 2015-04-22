@@ -1,7 +1,7 @@
 Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2014.2 (lin64) Build 932637 Wed Jun 11 13:08:52 MDT 2014
-| Date             : Tue Apr 21 23:15:08 2015
+| Date             : Tue Apr 21 23:39:19 2015
 | Host             : com1549.eecs.utk.edu running 64-bit Red Hat Enterprise Linux Server release 6.5 (Santiago)
 | Command          : report_power -file top_level_power_routed.rpt -pb top_level_power_summary_routed.pb
 | Design           : top_level
@@ -30,7 +30,7 @@ Table of Contents
 ----------
 
 +--------------------------+-------+
-| Total On-Chip Power (W)  | 0.431 |
+| Total On-Chip Power (W)  | 0.430 |
 | Dynamic (W)              | 0.332 |
 | Device Static (W)        | 0.098 |
 | Total Off-Chip Power (W) | 0.000 |
@@ -52,7 +52,7 @@ Table of Contents
 +--------------------------+-----------+----------+-----------+-----------------+
 | Clocks                   |     0.027 |       11 |       --- |             --- |
 | Slice Logic              |     0.022 |    16988 |       --- |             --- |
-|   LUT as Logic           |     0.020 |     5515 |     63400 |            8.69 |
+|   LUT as Logic           |     0.020 |     5509 |     63400 |            8.68 |
 |   CARRY4                 |     0.001 |      432 |     15850 |            2.72 |
 |   Register               |    <0.001 |     8201 |    126800 |            6.46 |
 |   F7/F8 Muxes            |    <0.001 |      307 |     63400 |            0.48 |
@@ -66,7 +66,7 @@ Table of Contents
 | DSPs                     |    <0.001 |       23 |       240 |            9.58 |
 | I/O                      |     0.023 |       91 |       210 |           43.33 |
 | Static Power             |     0.098 |          |           |                 |
-| Total                    |     0.431 |          |           |                 |
+| Total                    |     0.430 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -132,15 +132,15 @@ Table of Contents
 +---------------------------------------------------------+-------------------------------------------+-----------------+
 | Clock                                                   | Domain                                    | Constraint (ns) |
 +---------------------------------------------------------+-------------------------------------------+-----------------+
-| dbg_hub/inst/bscan_inst/SERIES7_BSCAN.bscan_inst/UPDATE | dbg_hub/inst/bscan_inst/UPDATE            |            60.0 |
 | clk_out1_clk_wiz_0                                      | clk_debug/U0/clk_out1_clk_wiz_0           |             5.0 |
+| clk_out3_clk_wiz_0                                      | clk_debug/U0/clk_out3_clk_wiz_0           |            20.0 |
 | clkfbout_clk_wiz_0                                      | clk_debug/U0/clkfbout_clk_wiz_0           |            10.0 |
+| sys_clk_pin                                             | xlnx_opt__1                               |            10.0 |
+| sys_clk_pin                                             | clk                                       |            10.0 |
+| dbg_hub/inst/bscan_inst/SERIES7_BSCAN.bscan_inst/UPDATE | dbg_hub/inst/bscan_inst/UPDATE            |            60.0 |
+| dbg_hub/inst/bscan_inst/SERIES7_BSCAN.bscan_inst/DRCK   | dbg_hub/inst/bscan_inst/DRCK              |            30.0 |
 | clk_25out_clk_wiz_vga                                   | vga_comp/clk_wiz/U0/clk_25out_clk_wiz_vga |            40.0 |
 | clkfbout_clk_wiz_vga                                    | vga_comp/clk_wiz/U0/clkfbout_clk_wiz_vga  |            40.0 |
-| dbg_hub/inst/bscan_inst/SERIES7_BSCAN.bscan_inst/DRCK   | dbg_hub/inst/bscan_inst/DRCK              |            30.0 |
-| sys_clk_pin                                             | clk                                       |            10.0 |
-| sys_clk_pin                                             | xlnx_opt__1                               |            10.0 |
-| clk_out3_clk_wiz_0                                      | clk_debug/U0/clk_out3_clk_wiz_0           |            20.0 |
 +---------------------------------------------------------+-------------------------------------------+-----------------+
 
 
@@ -156,8 +156,8 @@ Table of Contents
 | top_level                                                                                  |     0.332 |
 |   clk_debug                                                                                |     0.106 |
 |     U0                                                                                     |     0.106 |
-|   dbg_hub                                                                                  |     0.009 |
-|     inst                                                                                   |     0.009 |
+|   dbg_hub                                                                                  |     0.008 |
+|     inst                                                                                   |     0.008 |
 |       UUT_MASTER                                                                           |     0.008 |
 |         U_ICON_INTERFACE                                                                   |     0.005 |
 |           U_CMD1                                                                           |    <0.001 |
@@ -190,11 +190,11 @@ Table of Contents
 |                           RAM_reg_0_15_6_11                                                |    <0.001 |
 |                       rstblk                                                               |    <0.001 |
 |           U_CMD6_WR                                                                        |     0.002 |
-|             U_WR_FIFO                                                                      |     0.002 |
-|               SUBCORE_FIFO.xsdb_wrfifo_inst                                                |     0.002 |
-|                 inst_fifo_gen                                                              |     0.002 |
-|                   gconvfifo.rf                                                             |     0.002 |
-|                     grf.rf                                                                 |     0.002 |
+|             U_WR_FIFO                                                                      |     0.001 |
+|               SUBCORE_FIFO.xsdb_wrfifo_inst                                                |     0.001 |
+|                 inst_fifo_gen                                                              |     0.001 |
+|                   gconvfifo.rf                                                             |     0.001 |
+|                     grf.rf                                                                 |     0.001 |
 |                       gntv_or_sync_fifo.gcx.clkx                                           |    <0.001 |
 |                         gsync_stage[1].rd_stg_inst                                         |    <0.001 |
 |                         gsync_stage[1].wr_stg_inst                                         |    <0.001 |
@@ -221,7 +221,7 @@ Table of Contents
 |           U_CLR_ERROR_FLAG                                                                 |    <0.001 |
 |           U_RD_ABORT_FLAG                                                                  |    <0.001 |
 |           U_RD_REQ_FLAG                                                                    |    <0.001 |
-|           U_TIMER                                                                          |    <0.001 |
+|           U_TIMER                                                                          |     0.001 |
 |         U_XSDB_BUS_MSTR2SL_PORT_IFACE                                                      |    <0.001 |
 |       U_ICON                                                                               |    <0.001 |
 |         U_CMD                                                                              |    <0.001 |
