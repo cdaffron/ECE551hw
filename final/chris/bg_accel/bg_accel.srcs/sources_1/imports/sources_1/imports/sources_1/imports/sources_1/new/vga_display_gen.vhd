@@ -28,6 +28,7 @@ entity vga_display_gen is
 
         bars      : in barArray;
         barNumSws : in std_logic_vector(1 downto 0);
+        enableBG  : in std_logic;
 
         red       : out std_logic_vector(3 downto 0);
         green     : out std_logic_vector(3 downto 0);
@@ -528,9 +529,15 @@ begin
   process( vsync )
   begin
     if ( rising_edge( vsync ) ) then
-        accelRed <= accelXRaw(8 downto 5);
-        accelGreen <= accelYRaw(8 downto 5);
-        accelBlue <= accelMagRaw(11 downto 8);
+        if ( enableBG = '1' ) then
+            accelRed <= accelXRaw(8 downto 5);
+            accelGreen <= accelYRaw(8 downto 5);
+            accelBlue <= accelMagRaw(8 downto 5);
+        else
+            accelRed <= accelRed;
+            accelGreen <= accelGreen;
+            accelBlue <= accelBlue;
+        end if;
     end if;
   end process;
     
