@@ -21,7 +21,8 @@ entity vga_top is
         clk         : in std_logic;    -- system clk (100 MHz)
         rst         : in std_logic;    -- global reset
         bars        : in barArray;     -- bar heights of processed fft data
-        barNumSws   : in std_logic_vector(1 downto 0); -- how many bars there are 
+        barNumSws   : in std_logic_vector(1 downto 0); -- how many bars there are
+        enableBG    : in std_logic; 
 
         hsync       : out std_logic;    -- horizontal sync pulse to VGA
         vsync       : out std_logic;    -- vertical sync pulse to VGA
@@ -32,7 +33,11 @@ entity vga_top is
         sclk        : out std_logic;
         mosi        : out std_logic;
         miso        : in  std_logic;
-        ss          : out std_logic
+        ss          : out std_logic;
+        
+        redRGBled   : out std_logic;
+        greenRGBled : out std_logic;
+        blueRGBled  : out std_logic
     );
 end vga_top;
 
@@ -84,6 +89,7 @@ begin
         blank => blank,
         bars => bars,
         barNumSws => barNumSws,
+        enableBG => enableBG,
         
         red => vga_red,
         green => vga_green,
@@ -92,7 +98,11 @@ begin
         sclk => sclk,
         mosi => mosi,
         miso => miso,
-        ss => ss
+        ss => ss,
+        
+        redRGBled => redRGBled,
+        greenRGBled => greenRGBled,
+        blueRGBled => blueRGBled
       );
 
 

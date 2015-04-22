@@ -45,6 +45,7 @@ package vga_pkg is
     
             bars      : in barArray;
             barNumSws : in std_logic_vector(1 downto 0);
+            enableBG  : in std_logic;
     
             red       : out std_logic_vector(3 downto 0);
             green     : out std_logic_vector(3 downto 0);
@@ -53,7 +54,11 @@ package vga_pkg is
             sclk      : out std_logic;
             mosi      : out std_logic;
             miso      : in  std_logic;
-            ss        : out std_logic
+            ss        : out std_logic;
+            
+            redRGBled   : out std_logic;
+            greenRGBled : out std_logic;
+            blueRGBled  : out std_logic
         );
     end component;
 

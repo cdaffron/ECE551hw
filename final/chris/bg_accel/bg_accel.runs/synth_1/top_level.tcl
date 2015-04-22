@@ -43,6 +43,7 @@ read_vhdl -library xil_defaultlib {
   /data1/cdaffron/git/ece551hw/final/chris/bg_accel/bg_accel.srcs/sources_1/imports/Nexys4UserDemo_ISE_Project/ADXL362Ctrl.vhd
   /data1/cdaffron/git/ece551hw/final/chris/bg_accel/bg_accel.srcs/sources_1/imports/Nexys4UserDemo_ISE_Project/AccelArithmetics.vhd
   /data1/cdaffron/git/ece551hw/final/chris/bg_accel/bg_accel.srcs/sources_1/imports/sources_1/imports/sources_1/new/vga_pkg.vhd
+  /data1/cdaffron/git/ece551hw/final/chris/bg_accel/bg_accel.srcs/sources_1/imports/Nexys4UserDemo_ISE_Project/Pwm.vhd
   /data1/cdaffron/git/ece551hw/final/chris/bg_accel/bg_accel.srcs/sources_1/imports/Nexys4UserDemo_ISE_Project/AccelerometerCtl.vhd
   /data1/cdaffron/git/ece551hw/final/chris/bg_accel/bg_accel.srcs/sources_1/imports/sources_1/imports/sources_1/imports/sources_1/new/vga_display_gen.vhd
   /data1/cdaffron/git/ece551hw/final/chris/bg_accel/bg_accel.srcs/sources_1/imports/sources_1/imports/sources_1/imports/sources_1/imports/vga/vga_controller_640_60.vhd

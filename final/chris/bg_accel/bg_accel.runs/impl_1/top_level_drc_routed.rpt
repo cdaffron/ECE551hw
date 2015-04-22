@@ -1,7 +1,7 @@
 Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2014.2 (lin64) Build 932637 Wed Jun 11 13:08:52 MDT 2014
-| Date         : Tue Apr 21 22:41:17 2015
+| Date         : Tue Apr 21 23:03:49 2015
 | Host         : com1549.eecs.utk.edu running 64-bit Red Hat Enterprise Linux Server release 6.5 (Santiago)
 | Command      : report_drc
 ------------------------------------------------------------------------------------------------------------
@@ -20,7 +20,7 @@ Table of Contents
       Design limits: <entire design considered>
            Ruledeck: default
            Max violations: <unlimited>
-         Violations found: 51
+         Violations found: 57
 
 2. REPORT DETAILS
 -----------------
@@ -69,55 +69,70 @@ Related violations: <none>
 
 DPOP-1#1 Warning
 Output pipelining  
-DSP disp_draw_inst/mag_inst/imagSquare/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg output P  is not pipelined. Pipelining DSP48 output will improve performance. Both multiplier/adder output can be pipelined.
+DSP Accel_Calculation/ACCEL_X_SQUARE_reg output P  is not pipelined. Pipelining DSP48 output will improve performance. Both multiplier/adder output can be pipelined.
 Related violations: <none>
 
 DPOP-1#2 Warning
 Output pipelining  
-DSP disp_draw_inst/mag_inst/realSquare/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg output P  is not pipelined. Pipelining DSP48 output will improve performance. Both multiplier/adder output can be pipelined.
+DSP Accel_Calculation/ACCEL_Y_SQUARE_reg output P  is not pipelined. Pipelining DSP48 output will improve performance. Both multiplier/adder output can be pipelined.
 Related violations: <none>
 
 DPOP-1#3 Warning
 Output pipelining  
-DSP disp_draw_inst/mag_inst/sumOfSquares/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive output P  is not pipelined. Pipelining DSP48 output will improve performance. Both multiplier/adder output can be pipelined.
+DSP Accel_Calculation/ACCEL_Z_SQUARE_reg output P  is not pipelined. Pipelining DSP48 output will improve performance. Both multiplier/adder output can be pipelined.
 Related violations: <none>
 
 DPOP-1#4 Warning
 Output pipelining  
-DSP fft/U0/i_synth/xfft_inst/non_floating_point.arch_b.xfft_inst/single_channel.datapath/pe/mult_gen.dsp48_dragonfly.dragonfly_inst/BF_0/dsp48e_simd.bf_dsp48e_simd_bypass/A_ir output P  is not pipelined. Pipelining DSP48 output will improve performance. Both multiplier/adder output can be pipelined.
+DSP disp_draw_inst/mag_inst/imagSquare/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg output P  is not pipelined. Pipelining DSP48 output will improve performance. Both multiplier/adder output can be pipelined.
 Related violations: <none>
 
 DPOP-1#5 Warning
 Output pipelining  
-DSP fft/U0/i_synth/xfft_inst/non_floating_point.arch_b.xfft_inst/single_channel.datapath/pe/mult_gen.dsp48_dragonfly.dragonfly_inst/BF_0/dsp48e_simd.bf_dsp48e_simd_bypass/B_ir output P  is not pipelined. Pipelining DSP48 output will improve performance. Both multiplier/adder output can be pipelined.
+DSP disp_draw_inst/mag_inst/realSquare/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg output P  is not pipelined. Pipelining DSP48 output will improve performance. Both multiplier/adder output can be pipelined.
 Related violations: <none>
 
 DPOP-1#6 Warning
 Output pipelining  
-DSP fft/U0/i_synth/xfft_inst/non_floating_point.arch_b.xfft_inst/single_channel.datapath/pe/mult_gen.dsp48_dragonfly.dragonfly_inst/BF_1/dsp48e_simd.bf_dsp48e_simd_mul_j_byp/Y0 output P  is not pipelined. Pipelining DSP48 output will improve performance. Both multiplier/adder output can be pipelined.
+DSP disp_draw_inst/mag_inst/sumOfSquares/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive output P  is not pipelined. Pipelining DSP48 output will improve performance. Both multiplier/adder output can be pipelined.
 Related violations: <none>
 
 DPOP-1#7 Warning
 Output pipelining  
-DSP fft/U0/i_synth/xfft_inst/non_floating_point.arch_b.xfft_inst/single_channel.datapath/pe/mult_gen.dsp48_dragonfly.dragonfly_inst/BF_1/dsp48e_simd.bf_dsp48e_simd_mul_j_byp/Y1 output P  is not pipelined. Pipelining DSP48 output will improve performance. Both multiplier/adder output can be pipelined.
+DSP fft/U0/i_synth/xfft_inst/non_floating_point.arch_b.xfft_inst/single_channel.datapath/pe/mult_gen.dsp48_dragonfly.dragonfly_inst/BF_0/dsp48e_simd.bf_dsp48e_simd_bypass/A_ir output P  is not pipelined. Pipelining DSP48 output will improve performance. Both multiplier/adder output can be pipelined.
 Related violations: <none>
 
 DPOP-1#8 Warning
 Output pipelining  
-DSP fft/U0/i_synth/xfft_inst/non_floating_point.arch_b.xfft_inst/single_channel.datapath/pe/mult_gen.dsp48_dragonfly.dragonfly_inst/BF_2/dsp48e_simd.bf_dsp48e_simd/A_ir output P  is not pipelined. Pipelining DSP48 output will improve performance. Both multiplier/adder output can be pipelined.
+DSP fft/U0/i_synth/xfft_inst/non_floating_point.arch_b.xfft_inst/single_channel.datapath/pe/mult_gen.dsp48_dragonfly.dragonfly_inst/BF_0/dsp48e_simd.bf_dsp48e_simd_bypass/B_ir output P  is not pipelined. Pipelining DSP48 output will improve performance. Both multiplier/adder output can be pipelined.
 Related violations: <none>
 
 DPOP-1#9 Warning
 Output pipelining  
-DSP fft/U0/i_synth/xfft_inst/non_floating_point.arch_b.xfft_inst/single_channel.datapath/pe/mult_gen.dsp48_dragonfly.dragonfly_inst/BF_2/dsp48e_simd.bf_dsp48e_simd/need_B_ir.B_ir output P  is not pipelined. Pipelining DSP48 output will improve performance. Both multiplier/adder output can be pipelined.
+DSP fft/U0/i_synth/xfft_inst/non_floating_point.arch_b.xfft_inst/single_channel.datapath/pe/mult_gen.dsp48_dragonfly.dragonfly_inst/BF_1/dsp48e_simd.bf_dsp48e_simd_mul_j_byp/Y0 output P  is not pipelined. Pipelining DSP48 output will improve performance. Both multiplier/adder output can be pipelined.
 Related violations: <none>
 
 DPOP-1#10 Warning
 Output pipelining  
-DSP fft/U0/i_synth/xfft_inst/non_floating_point.arch_b.xfft_inst/single_channel.datapath/pe/mult_gen.dsp48_dragonfly.dragonfly_inst/BF_3/dsp48e_simd.bf_dsp48e_simd/A_ir output P  is not pipelined. Pipelining DSP48 output will improve performance. Both multiplier/adder output can be pipelined.
+DSP fft/U0/i_synth/xfft_inst/non_floating_point.arch_b.xfft_inst/single_channel.datapath/pe/mult_gen.dsp48_dragonfly.dragonfly_inst/BF_1/dsp48e_simd.bf_dsp48e_simd_mul_j_byp/Y1 output P  is not pipelined. Pipelining DSP48 output will improve performance. Both multiplier/adder output can be pipelined.
 Related violations: <none>
 
 DPOP-1#11 Warning
+Output pipelining  
+DSP fft/U0/i_synth/xfft_inst/non_floating_point.arch_b.xfft_inst/single_channel.datapath/pe/mult_gen.dsp48_dragonfly.dragonfly_inst/BF_2/dsp48e_simd.bf_dsp48e_simd/A_ir output P  is not pipelined. Pipelining DSP48 output will improve performance. Both multiplier/adder output can be pipelined.
+Related violations: <none>
+
+DPOP-1#12 Warning
+Output pipelining  
+DSP fft/U0/i_synth/xfft_inst/non_floating_point.arch_b.xfft_inst/single_channel.datapath/pe/mult_gen.dsp48_dragonfly.dragonfly_inst/BF_2/dsp48e_simd.bf_dsp48e_simd/need_B_ir.B_ir output P  is not pipelined. Pipelining DSP48 output will improve performance. Both multiplier/adder output can be pipelined.
+Related violations: <none>
+
+DPOP-1#13 Warning
+Output pipelining  
+DSP fft/U0/i_synth/xfft_inst/non_floating_point.arch_b.xfft_inst/single_channel.datapath/pe/mult_gen.dsp48_dragonfly.dragonfly_inst/BF_3/dsp48e_simd.bf_dsp48e_simd/A_ir output P  is not pipelined. Pipelining DSP48 output will improve performance. Both multiplier/adder output can be pipelined.
+Related violations: <none>
+
+DPOP-1#14 Warning
 Output pipelining  
 DSP fft/U0/i_synth/xfft_inst/non_floating_point.arch_b.xfft_inst/single_channel.datapath/pe/mult_gen.dsp48_dragonfly.dragonfly_inst/BF_3/dsp48e_simd.bf_dsp48e_simd/need_B_ir.B_ir output P  is not pipelined. Pipelining DSP48 output will improve performance. Both multiplier/adder output can be pipelined.
 Related violations: <none>
@@ -189,55 +204,70 @@ Related violations: <none>
 
 AVAL-4#1 Advisory
 enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
-disp_draw_inst/mag_inst/imagSquare/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0', and tie all D inputs to logic '1'.
+Accel_Calculation/ACCEL_X_SQUARE_reg: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0', and tie all D inputs to logic '1'.
 Related violations: <none>
 
 AVAL-4#2 Advisory
 enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
-disp_draw_inst/mag_inst/realSquare/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0', and tie all D inputs to logic '1'.
+Accel_Calculation/ACCEL_Y_SQUARE_reg: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0', and tie all D inputs to logic '1'.
 Related violations: <none>
 
 AVAL-4#3 Advisory
 enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
-disp_draw_inst/mag_inst/sumOfSquares/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0', and tie all D inputs to logic '1'.
+Accel_Calculation/ACCEL_Z_SQUARE_reg: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0', and tie all D inputs to logic '1'.
 Related violations: <none>
 
 AVAL-4#4 Advisory
 enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
-fft/U0/i_synth/xfft_inst/non_floating_point.arch_b.xfft_inst/single_channel.datapath/pe/mult_gen.dsp48_dragonfly.dragonfly_inst/BF_0/dsp48e_simd.bf_dsp48e_simd_bypass/A_ir: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0', and tie all D inputs to logic '1'.
+disp_draw_inst/mag_inst/imagSquare/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0', and tie all D inputs to logic '1'.
 Related violations: <none>
 
 AVAL-4#5 Advisory
 enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
-fft/U0/i_synth/xfft_inst/non_floating_point.arch_b.xfft_inst/single_channel.datapath/pe/mult_gen.dsp48_dragonfly.dragonfly_inst/BF_0/dsp48e_simd.bf_dsp48e_simd_bypass/B_ir: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0', and tie all D inputs to logic '1'.
+disp_draw_inst/mag_inst/realSquare/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0', and tie all D inputs to logic '1'.
 Related violations: <none>
 
 AVAL-4#6 Advisory
 enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
-fft/U0/i_synth/xfft_inst/non_floating_point.arch_b.xfft_inst/single_channel.datapath/pe/mult_gen.dsp48_dragonfly.dragonfly_inst/BF_1/dsp48e_simd.bf_dsp48e_simd_mul_j_byp/Y0: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0', and tie all D inputs to logic '1'.
+disp_draw_inst/mag_inst/sumOfSquares/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0', and tie all D inputs to logic '1'.
 Related violations: <none>
 
 AVAL-4#7 Advisory
 enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
-fft/U0/i_synth/xfft_inst/non_floating_point.arch_b.xfft_inst/single_channel.datapath/pe/mult_gen.dsp48_dragonfly.dragonfly_inst/BF_1/dsp48e_simd.bf_dsp48e_simd_mul_j_byp/Y1: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0', and tie all D inputs to logic '1'.
+fft/U0/i_synth/xfft_inst/non_floating_point.arch_b.xfft_inst/single_channel.datapath/pe/mult_gen.dsp48_dragonfly.dragonfly_inst/BF_0/dsp48e_simd.bf_dsp48e_simd_bypass/A_ir: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0', and tie all D inputs to logic '1'.
 Related violations: <none>
 
 AVAL-4#8 Advisory
 enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
-fft/U0/i_synth/xfft_inst/non_floating_point.arch_b.xfft_inst/single_channel.datapath/pe/mult_gen.dsp48_dragonfly.dragonfly_inst/BF_2/dsp48e_simd.bf_dsp48e_simd/A_ir: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0', and tie all D inputs to logic '1'.
+fft/U0/i_synth/xfft_inst/non_floating_point.arch_b.xfft_inst/single_channel.datapath/pe/mult_gen.dsp48_dragonfly.dragonfly_inst/BF_0/dsp48e_simd.bf_dsp48e_simd_bypass/B_ir: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0', and tie all D inputs to logic '1'.
 Related violations: <none>
 
 AVAL-4#9 Advisory
 enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
-fft/U0/i_synth/xfft_inst/non_floating_point.arch_b.xfft_inst/single_channel.datapath/pe/mult_gen.dsp48_dragonfly.dragonfly_inst/BF_2/dsp48e_simd.bf_dsp48e_simd/need_B_ir.B_ir: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0', and tie all D inputs to logic '1'.
+fft/U0/i_synth/xfft_inst/non_floating_point.arch_b.xfft_inst/single_channel.datapath/pe/mult_gen.dsp48_dragonfly.dragonfly_inst/BF_1/dsp48e_simd.bf_dsp48e_simd_mul_j_byp/Y0: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0', and tie all D inputs to logic '1'.
 Related violations: <none>
 
 AVAL-4#10 Advisory
 enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
-fft/U0/i_synth/xfft_inst/non_floating_point.arch_b.xfft_inst/single_channel.datapath/pe/mult_gen.dsp48_dragonfly.dragonfly_inst/BF_3/dsp48e_simd.bf_dsp48e_simd/A_ir: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0', and tie all D inputs to logic '1'.
+fft/U0/i_synth/xfft_inst/non_floating_point.arch_b.xfft_inst/single_channel.datapath/pe/mult_gen.dsp48_dragonfly.dragonfly_inst/BF_1/dsp48e_simd.bf_dsp48e_simd_mul_j_byp/Y1: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0', and tie all D inputs to logic '1'.
 Related violations: <none>
 
 AVAL-4#11 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+fft/U0/i_synth/xfft_inst/non_floating_point.arch_b.xfft_inst/single_channel.datapath/pe/mult_gen.dsp48_dragonfly.dragonfly_inst/BF_2/dsp48e_simd.bf_dsp48e_simd/A_ir: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0', and tie all D inputs to logic '1'.
+Related violations: <none>
+
+AVAL-4#12 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+fft/U0/i_synth/xfft_inst/non_floating_point.arch_b.xfft_inst/single_channel.datapath/pe/mult_gen.dsp48_dragonfly.dragonfly_inst/BF_2/dsp48e_simd.bf_dsp48e_simd/need_B_ir.B_ir: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0', and tie all D inputs to logic '1'.
+Related violations: <none>
+
+AVAL-4#13 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+fft/U0/i_synth/xfft_inst/non_floating_point.arch_b.xfft_inst/single_channel.datapath/pe/mult_gen.dsp48_dragonfly.dragonfly_inst/BF_3/dsp48e_simd.bf_dsp48e_simd/A_ir: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0', and tie all D inputs to logic '1'.
+Related violations: <none>
+
+AVAL-4#14 Advisory
 enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
 fft/U0/i_synth/xfft_inst/non_floating_point.arch_b.xfft_inst/single_channel.datapath/pe/mult_gen.dsp48_dragonfly.dragonfly_inst/BF_3/dsp48e_simd.bf_dsp48e_simd/need_B_ir.B_ir: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0', and tie all D inputs to logic '1'.
 Related violations: <none>

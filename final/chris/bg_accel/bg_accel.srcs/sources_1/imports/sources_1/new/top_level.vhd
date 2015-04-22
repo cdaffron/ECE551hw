@@ -53,7 +53,13 @@ entity top_level is
         sclk        : out std_logic;
         mosi        : out std_logic;
         miso        : in  std_logic;
-        ss          : out std_logic
+        ss          : out std_logic;
+        RGB1_Red    : out std_logic;
+        RGB1_Green  : out std_logic;
+        RGB1_Blue   : out std_logic;
+        RGB2_Red    : out std_logic;
+        RGB2_Green  : out std_logic;
+        RGB2_Blue   : out std_logic
     );
 end top_level;
 
@@ -82,6 +88,7 @@ architecture Behavioral of top_level is
             rst         : in std_logic;
             bars        : in barArray;
             barNumSws   : in std_logic_vector(1 downto 0); 
+            enableBG    : in std_logic;
     
             hsync       : out std_logic;
             vsync       : out std_logic;
@@ -92,7 +99,11 @@ architecture Behavioral of top_level is
             sclk        : out std_logic;
             mosi        : out std_logic;
             miso        : in  std_logic;
-            ss          : out std_logic
+            ss          : out std_logic;
+            
+            redRGBled   : out std_logic;
+            greenRGBled : out std_logic;
+            blueRGBled  : out std_logic
         );
     end component;
 
@@ -140,6 +151,10 @@ architecture Behavioral of top_level is
     signal halfBarHeights2 : halfBarArray;
     signal vsync_sig : std_logic := '0';
     
+    signal redRGBled : std_logic;
+    signal greenRGBled : std_logic;
+    signal blueRGBled : std_logic;
+    
     attribute DONT_TOUCH : boolean;
     attribute DONT_TOUCH of barHeights : signal is TRUE;
 
@@ -150,6 +165,15 @@ begin
     seg <= seg7(6 downto 0);
     dp <= seg7(7);
     led <= sw;
+    
+    RGB1_Red <= redRGBled;
+    RGB2_Red <= redRGBled;
+    
+    RGB1_Green <= greenRGBled;
+    RGB2_Green <= greenRGBled;
+    
+    RGB1_Blue <= blueRGBled;
+    RGB2_Blue <= blueRGBled;
     
     GEN_MAP:
     for i in 0 to 31 generate
@@ -270,6 +294,7 @@ begin
             rst => reset(0),
             bars => barHeights,
             barNumSws => sw(1 downto 0),
+            enableBG => sw(3),
             hsync => hsync,
             vsync => vsync_sig,
             vga_red => vga_red,
@@ -278,7 +303,10 @@ begin
             sclk => sclk,
             mosi => mosi,
             miso => miso,
-            ss => ss
+            ss => ss,
+            redRGBled => redRGBled,
+            greenRGBled => greenRGBled,
+            blueRGBled => blueRGBled
         );
     
     clk_debug : entity work.clk_wiz_0

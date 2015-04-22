@@ -37,7 +37,11 @@ entity vga_display_gen is
         sclk      : out std_logic;
         mosi      : out std_logic;
         miso      : in  std_logic;
-        ss        : out std_logic
+        ss        : out std_logic;
+        
+        redRGBled   : out std_logic;
+        greenRGBled : out std_logic;
+        blueRGBled  : out std_logic
     );
     
     
@@ -311,6 +315,14 @@ architecture behavioral of vga_display_gen is
   
   );
   end component;
+  
+  component Pwm is
+     port(
+        clk_i : in std_logic; -- system clock = 100MHz
+        data_i : in std_logic_vector(7 downto 0); -- the number to be modulated
+        pwm_o : out std_logic
+     );
+  end component;
 
   signal numBars    : integer := 0;
   signal curBarNum  : integer := 0;
@@ -524,6 +536,27 @@ begin
    ACCEL_Y_OUT => accelYRaw,
    ACCEL_MAG_OUT => accelMagRaw,
    ACCEL_TMP_OUT => open
+  );
+  
+  pwm_red : Pwm
+  port map(
+    clk_i => clk,
+    data_i => accelXRaw(8 downto 1),
+    pwm_o => redRGBled
+  );
+  
+  pwm_green : Pwm
+  port map(
+    clk_i => clk,
+    data_i => accelYRaw(8 downto 1),
+    pwm_o => greenRGBled
+  );
+  
+  pwm_blue : Pwm
+  port map(
+    clk_i => clk,
+    data_i => accelMagRaw(8 downto 1),
+    pwm_o => blueRGBled
   );
   
   process( vsync )
