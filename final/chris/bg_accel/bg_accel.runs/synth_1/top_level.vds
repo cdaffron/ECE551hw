@@ -2,8 +2,8 @@
 # Vivado v2014.2 (64-bit)
 # SW Build 932637 on Wed Jun 11 13:08:52 MDT 2014
 # IP Build 924643 on Fri May 30 09:20:16 MDT 2014
-# Start of session at: Tue Apr 21 22:03:59 2015
-# Process ID: 26586
+# Start of session at: Tue Apr 21 22:17:41 2015
+# Process ID: 20176
 # Log file: /data1/cdaffron/git/ece551hw/final/chris/bg_accel/bg_accel.runs/synth_1/top_level.vds
 # Journal file: /data1/cdaffron/git/ece551hw/final/chris/bg_accel/bg_accel.runs/synth_1/vivado.jou
 #-----------------------------------------------------------
@@ -85,7 +85,7 @@ Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 850.559 ; gain = 160.125
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 850.562 ; gain = 160.125
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'top_level' [/data1/cdaffron/git/ece551hw/final/chris/bg_accel/bg_accel.srcs/sources_1/imports/sources_1/new/top_level.vhd:60]
 INFO: [Synth 8-3491] module 'disp_draw' declared at '/data1/cdaffron/git/ece551hw/final/chris/bg_accel/bg_accel.srcs/sources_1/imports/new/disp_draw.vhd:44' bound to instance 'disp_draw_inst' of component 'disp_draw' [/data1/cdaffron/git/ece551hw/final/chris/bg_accel/bg_accel.srcs/sources_1/imports/sources_1/new/top_level.vhd:160]
@@ -106,13 +106,13 @@ INFO: [Synth 8-638] synthesizing module 'adc_fft_fsmV3' [/data1/cdaffron/git/ece
 INFO: [Synth 8-4472] Detected and applied attribute keep = true [/data1/cdaffron/git/ece551hw/final/chris/bg_accel/bg_accel.srcs/sources_1/imports/sources_1/imports/adc_fft_to_pc/adc_fft_fsmV3_noUART.vhd:66]
 INFO: [Synth 8-4472] Detected and applied attribute keep = true [/data1/cdaffron/git/ece551hw/final/chris/bg_accel/bg_accel.srcs/sources_1/imports/sources_1/imports/adc_fft_to_pc/adc_fft_fsmV3_noUART.vhd:67]
 INFO: [Synth 8-256] done synthesizing module 'adc_fft_fsmV3' (4#1) [/data1/cdaffron/git/ece551hw/final/chris/bg_accel/bg_accel.srcs/sources_1/imports/sources_1/imports/adc_fft_to_pc/adc_fft_fsmV3_noUART.vhd:63]
-INFO: [Synth 8-638] synthesizing module 'xfft_0' [/data1/cdaffron/git/ece551hw/final/chris/bg_accel/bg_accel.runs/synth_1/.Xil/Vivado-26586-com1549.eecs.utk.edu/realtime/xfft_0_stub.vhdl:35]
-INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_0' [/data1/cdaffron/git/ece551hw/final/chris/bg_accel/bg_accel.runs/synth_1/.Xil/Vivado-26586-com1549.eecs.utk.edu/realtime/blk_mem_gen_0_stub.vhdl:18]
-INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_1' [/data1/cdaffron/git/ece551hw/final/chris/bg_accel/bg_accel.runs/synth_1/.Xil/Vivado-26586-com1549.eecs.utk.edu/realtime/blk_mem_gen_1_stub.vhdl:20]
+INFO: [Synth 8-638] synthesizing module 'xfft_0' [/data1/cdaffron/git/ece551hw/final/chris/bg_accel/bg_accel.runs/synth_1/.Xil/Vivado-20176-com1549.eecs.utk.edu/realtime/xfft_0_stub.vhdl:35]
+INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_0' [/data1/cdaffron/git/ece551hw/final/chris/bg_accel/bg_accel.runs/synth_1/.Xil/Vivado-20176-com1549.eecs.utk.edu/realtime/blk_mem_gen_0_stub.vhdl:18]
+INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_1' [/data1/cdaffron/git/ece551hw/final/chris/bg_accel/bg_accel.runs/synth_1/.Xil/Vivado-20176-com1549.eecs.utk.edu/realtime/blk_mem_gen_1_stub.vhdl:20]
 INFO: [Synth 8-3491] module 'vga_top' declared at '/data1/cdaffron/git/ece551hw/final/chris/bg_accel/bg_accel.srcs/sources_1/imports/sources_1/imports/sources_1/new/vga_top.vhd:19' bound to instance 'vga_comp' of component 'vga_top' [/data1/cdaffron/git/ece551hw/final/chris/bg_accel/bg_accel.srcs/sources_1/imports/sources_1/new/top_level.vhd:267]
 INFO: [Synth 8-638] synthesizing module 'vga_top' [/data1/cdaffron/git/ece551hw/final/chris/bg_accel/bg_accel.srcs/sources_1/imports/sources_1/imports/sources_1/new/vga_top.vhd:40]
-INFO: [Synth 8-3491] module 'clk_wiz_vga' declared at '/data1/cdaffron/git/ece551hw/final/chris/bg_accel/bg_accel.runs/synth_1/.Xil/Vivado-26586-com1549.eecs.utk.edu/realtime/clk_wiz_vga_stub.vhdl:5' bound to instance 'clk_wiz' of component 'clk_wiz_vga' [/data1/cdaffron/git/ece551hw/final/chris/bg_accel/bg_accel.srcs/sources_1/imports/sources_1/imports/sources_1/new/vga_top.vhd:57]
-INFO: [Synth 8-638] synthesizing module 'clk_wiz_vga' [/data1/cdaffron/git/ece551hw/final/chris/bg_accel/bg_accel.runs/synth_1/.Xil/Vivado-26586-com1549.eecs.utk.edu/realtime/clk_wiz_vga_stub.vhdl:14]
+INFO: [Synth 8-3491] module 'clk_wiz_vga' declared at '/data1/cdaffron/git/ece551hw/final/chris/bg_accel/bg_accel.runs/synth_1/.Xil/Vivado-20176-com1549.eecs.utk.edu/realtime/clk_wiz_vga_stub.vhdl:5' bound to instance 'clk_wiz' of component 'clk_wiz_vga' [/data1/cdaffron/git/ece551hw/final/chris/bg_accel/bg_accel.srcs/sources_1/imports/sources_1/imports/sources_1/new/vga_top.vhd:57]
+INFO: [Synth 8-638] synthesizing module 'clk_wiz_vga' [/data1/cdaffron/git/ece551hw/final/chris/bg_accel/bg_accel.runs/synth_1/.Xil/Vivado-20176-com1549.eecs.utk.edu/realtime/clk_wiz_vga_stub.vhdl:14]
 INFO: [Synth 8-3491] module 'vga_controller_640_60' declared at '/data1/cdaffron/git/ece551hw/final/chris/bg_accel/bg_accel.srcs/sources_1/imports/sources_1/imports/sources_1/imports/sources_1/imports/vga/vga_controller_640_60.vhd:55' bound to instance 'vga_cont' of component 'vga_controller_640_60' [/data1/cdaffron/git/ece551hw/final/chris/bg_accel/bg_accel.srcs/sources_1/imports/sources_1/imports/sources_1/new/vga_top.vhd:65]
 INFO: [Synth 8-638] synthesizing module 'vga_controller_640_60' [/data1/cdaffron/git/ece551hw/final/chris/bg_accel/bg_accel.srcs/sources_1/imports/sources_1/imports/sources_1/imports/sources_1/imports/vga/vga_controller_640_60.vhd:68]
 INFO: [Synth 8-256] done synthesizing module 'vga_controller_640_60' (5#1) [/data1/cdaffron/git/ece551hw/final/chris/bg_accel/bg_accel.srcs/sources_1/imports/sources_1/imports/sources_1/imports/sources_1/imports/vga/vga_controller_640_60.vhd:68]
@@ -165,9 +165,9 @@ INFO: [Synth 8-256] done synthesizing module 'AccelArithmetics__parameterized0' 
 INFO: [Synth 8-256] done synthesizing module 'AccelerometerCtl__parameterized0' (10#1) [/data1/cdaffron/git/ece551hw/final/chris/bg_accel/bg_accel.srcs/sources_1/imports/Nexys4UserDemo_ISE_Project/AccelerometerCtl.vhd:70]
 INFO: [Synth 8-256] done synthesizing module 'vga_display_gen' (11#1) [/data1/cdaffron/git/ece551hw/final/chris/bg_accel/bg_accel.srcs/sources_1/imports/sources_1/imports/sources_1/imports/sources_1/new/vga_display_gen.vhd:54]
 INFO: [Synth 8-256] done synthesizing module 'vga_top' (12#1) [/data1/cdaffron/git/ece551hw/final/chris/bg_accel/bg_accel.srcs/sources_1/imports/sources_1/imports/sources_1/new/vga_top.vhd:40]
-INFO: [Synth 8-638] synthesizing module 'clk_wiz_0' [/data1/cdaffron/git/ece551hw/final/chris/bg_accel/bg_accel.runs/synth_1/.Xil/Vivado-26586-com1549.eecs.utk.edu/realtime/clk_wiz_0_stub.vhdl:17]
-INFO: [Synth 8-638] synthesizing module 'vio_0' [/data1/cdaffron/git/ece551hw/final/chris/bg_accel/bg_accel.runs/synth_1/.Xil/Vivado-26586-com1549.eecs.utk.edu/realtime/vio_0_stub.vhdl:14]
-INFO: [Synth 8-638] synthesizing module 'c_counter_binary_0' [/data1/cdaffron/git/ece551hw/final/chris/bg_accel/bg_accel.runs/synth_1/.Xil/Vivado-26586-com1549.eecs.utk.edu/realtime/c_counter_binary_0_stub.vhdl:13]
+INFO: [Synth 8-638] synthesizing module 'clk_wiz_0' [/data1/cdaffron/git/ece551hw/final/chris/bg_accel/bg_accel.runs/synth_1/.Xil/Vivado-20176-com1549.eecs.utk.edu/realtime/clk_wiz_0_stub.vhdl:17]
+INFO: [Synth 8-638] synthesizing module 'vio_0' [/data1/cdaffron/git/ece551hw/final/chris/bg_accel/bg_accel.runs/synth_1/.Xil/Vivado-20176-com1549.eecs.utk.edu/realtime/vio_0_stub.vhdl:14]
+INFO: [Synth 8-638] synthesizing module 'c_counter_binary_0' [/data1/cdaffron/git/ece551hw/final/chris/bg_accel/bg_accel.runs/synth_1/.Xil/Vivado-20176-com1549.eecs.utk.edu/realtime/c_counter_binary_0_stub.vhdl:13]
 INFO: [Synth 8-638] synthesizing module 'CDiv' [/data1/cdaffron/git/ece551hw/final/chris/bg_accel/bg_accel.srcs/sources_1/imports/sources_1/imports/new/CDiv.vhd:24]
 WARNING: [Synth 8-614] signal 'D' is read in the process but is not in the sensitivity list [/data1/cdaffron/git/ece551hw/final/chris/bg_accel/bg_accel.srcs/sources_1/imports/sources_1/imports/new/CDiv.vhd:30]
 INFO: [Synth 8-256] done synthesizing module 'CDiv' (13#1) [/data1/cdaffron/git/ece551hw/final/chris/bg_accel/bg_accel.srcs/sources_1/imports/sources_1/imports/new/CDiv.vhd:24]
@@ -197,7 +197,7 @@ WARNING: [Synth 8-3331] design top_level has unconnected port din[2]
 WARNING: [Synth 8-3331] design top_level has unconnected port din[1]
 WARNING: [Synth 8-3331] design top_level has unconnected port din[0]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 961.441 ; gain = 271.008
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 961.445 ; gain = 271.008
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Optimization
@@ -218,10 +218,10 @@ Loading io standards from /opt/Xilinx/Vivado/2014.2/data/./parts/xilinx/artix7/I
 Loading device configuration modes from /opt/Xilinx/Vivado/2014.2/data/parts/xilinx/artix7/ConfigModes.xml
 
 Processing XDC Constraints
-Parsing XDC File [/data1/cdaffron/git/ece551hw/final/chris/bg_accel/bg_accel.runs/synth_1/.Xil/Vivado-26586-com1549.eecs.utk.edu/dcp_4/clk_wiz_vga_in_context.xdc] for cell 'vga_comp/clk_wiz'
-Finished Parsing XDC File [/data1/cdaffron/git/ece551hw/final/chris/bg_accel/bg_accel.runs/synth_1/.Xil/Vivado-26586-com1549.eecs.utk.edu/dcp_4/clk_wiz_vga_in_context.xdc] for cell 'vga_comp/clk_wiz'
-Parsing XDC File [/data1/cdaffron/git/ece551hw/final/chris/bg_accel/bg_accel.runs/synth_1/.Xil/Vivado-26586-com1549.eecs.utk.edu/dcp_8/clk_wiz_0_in_context.xdc] for cell 'clk_debug'
-Finished Parsing XDC File [/data1/cdaffron/git/ece551hw/final/chris/bg_accel/bg_accel.runs/synth_1/.Xil/Vivado-26586-com1549.eecs.utk.edu/dcp_8/clk_wiz_0_in_context.xdc] for cell 'clk_debug'
+Parsing XDC File [/data1/cdaffron/git/ece551hw/final/chris/bg_accel/bg_accel.runs/synth_1/.Xil/Vivado-20176-com1549.eecs.utk.edu/dcp_4/clk_wiz_vga_in_context.xdc] for cell 'vga_comp/clk_wiz'
+Finished Parsing XDC File [/data1/cdaffron/git/ece551hw/final/chris/bg_accel/bg_accel.runs/synth_1/.Xil/Vivado-20176-com1549.eecs.utk.edu/dcp_4/clk_wiz_vga_in_context.xdc] for cell 'vga_comp/clk_wiz'
+Parsing XDC File [/data1/cdaffron/git/ece551hw/final/chris/bg_accel/bg_accel.runs/synth_1/.Xil/Vivado-20176-com1549.eecs.utk.edu/dcp_8/clk_wiz_0_in_context.xdc] for cell 'clk_debug'
+Finished Parsing XDC File [/data1/cdaffron/git/ece551hw/final/chris/bg_accel/bg_accel.runs/synth_1/.Xil/Vivado-20176-com1549.eecs.utk.edu/dcp_8/clk_wiz_0_in_context.xdc] for cell 'clk_debug'
 Parsing XDC File [/data1/cdaffron/git/ece551hw/final/chris/bg_accel/bg_accel.srcs/constrs_1/imports/lab2/Nexys4_Master.xdc]
 Finished Parsing XDC File [/data1/cdaffron/git/ece551hw/final/chris/bg_accel/bg_accel.srcs/constrs_1/imports/lab2/Nexys4_Master.xdc]
 Parsing XDC File [/data1/cdaffron/git/ece551hw/final/chris/bg_accel/bg_accel.runs/synth_1/dont_touch.xdc]
@@ -241,7 +241,7 @@ Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1263.145 ; gain = 572.711
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 1263.156 ; gain = 572.719
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -249,10 +249,10 @@ Start Applying 'set_property' XDC Constraints
 Applied set_property DONT_TOUCH = true for Magnitude_Calculation. (constraint file  /data1/cdaffron/git/ece551hw/final/chris/bg_accel/bg_accel.runs/synth_1/dont_touch.xdc, line 7).
 Applied set_property BUFFER_TYPE = NONE for clk. (constraint file  /data1/cdaffron/git/ece551hw/final/chris/bg_accel/bg_accel.runs/synth_1/dont_buffer.xdc, line 13).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 1263.145 ; gain = 572.711
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 1263.156 ; gain = 572.719
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 1263.145 ; gain = 572.711
+Finished RTL Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 1263.156 ; gain = 572.719
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 's_curr_reg' in module 'disp_draw'
 INFO: [Synth 8-802] inferred FSM for state register 'StC_reg' in module 'SPI_If__parameterized0'
@@ -277,9 +277,9 @@ Detailed RTL Component Info :
 +---Adders : 
 	   2 Input     32 Bit       Adders := 1     
 	   3 Input     26 Bit       Adders := 1     
-	  16 Input     22 Bit       Adders := 1     
-	  33 Input     22 Bit       Adders := 1     
 	  17 Input     22 Bit       Adders := 1     
+	  33 Input     22 Bit       Adders := 1     
+	  16 Input     22 Bit       Adders := 1     
 	   2 Input     20 Bit       Adders := 1     
 	   2 Input     13 Bit       Adders := 9     
 	   2 Input     11 Bit       Adders := 2     
@@ -334,51 +334,51 @@ Detailed RTL Component Info :
 	  18 Input     16 Bit        Muxes := 66    
 	   2 Input     15 Bit        Muxes := 3     
 	   2 Input     14 Bit        Muxes := 3     
-	   3 Input     13 Bit        Muxes := 1     
 	   4 Input     13 Bit        Muxes := 1     
 	   2 Input     13 Bit        Muxes := 9     
-	  10 Input     12 Bit        Muxes := 1     
+	   3 Input     13 Bit        Muxes := 1     
 	   2 Input     12 Bit        Muxes := 3     
+	  10 Input     12 Bit        Muxes := 1     
 	   2 Input     11 Bit        Muxes := 3     
-	  11 Input     10 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 13    
 	  18 Input     10 Bit        Muxes := 1     
 	   6 Input     10 Bit        Muxes := 1     
-	   2 Input     10 Bit        Muxes := 13    
+	  11 Input     10 Bit        Muxes := 1     
 	   2 Input      9 Bit        Muxes := 3     
 	   2 Input      8 Bit        Muxes := 267   
-	  18 Input      8 Bit        Muxes := 2     
-	  16 Input      8 Bit        Muxes := 8     
 	  11 Input      8 Bit        Muxes := 1     
+	  16 Input      8 Bit        Muxes := 8     
 	   5 Input      8 Bit        Muxes := 1     
+	  18 Input      8 Bit        Muxes := 2     
 	   8 Input      8 Bit        Muxes := 1     
 	   3 Input      8 Bit        Muxes := 6     
 	   2 Input      7 Bit        Muxes := 3     
 	   8 Input      7 Bit        Muxes := 3     
 	   4 Input      7 Bit        Muxes := 1     
-	   5 Input      6 Bit        Muxes := 1     
 	   2 Input      6 Bit        Muxes := 2     
+	   5 Input      6 Bit        Muxes := 1     
 	  18 Input      5 Bit        Muxes := 1     
-	  12 Input      5 Bit        Muxes := 1     
 	   2 Input      5 Bit        Muxes := 2     
-	   2 Input      4 Bit        Muxes := 9     
-	   4 Input      3 Bit        Muxes := 1     
+	  12 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 12    
 	   2 Input      3 Bit        Muxes := 8     
-	   2 Input      2 Bit        Muxes := 6     
+	   4 Input      3 Bit        Muxes := 1     
 	  18 Input      2 Bit        Muxes := 1     
-	  14 Input      1 Bit        Muxes := 1     
-	   4 Input      1 Bit        Muxes := 4     
-	   7 Input      1 Bit        Muxes := 1     
-	  15 Input      1 Bit        Muxes := 1     
-	   3 Input      1 Bit        Muxes := 155   
-	  12 Input      1 Bit        Muxes := 4     
-	  11 Input      1 Bit        Muxes := 3     
-	   8 Input      1 Bit        Muxes := 4     
-	  10 Input      1 Bit        Muxes := 4     
-	  13 Input      1 Bit        Muxes := 1     
-	   5 Input      1 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 6     
 	  18 Input      1 Bit        Muxes := 139   
 	   6 Input      1 Bit        Muxes := 4     
-	   2 Input      1 Bit        Muxes := 305   
+	  11 Input      1 Bit        Muxes := 3     
+	   7 Input      1 Bit        Muxes := 1     
+	  14 Input      1 Bit        Muxes := 1     
+	  10 Input      1 Bit        Muxes := 4     
+	   4 Input      1 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 304   
+	   8 Input      1 Bit        Muxes := 4     
+	  13 Input      1 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 1     
+	  12 Input      1 Bit        Muxes := 4     
+	  15 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 155   
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -426,24 +426,24 @@ Detailed RTL Component Info :
 	   2 Input     16 Bit        Muxes := 1     
 	  18 Input     16 Bit        Muxes := 66    
 	  18 Input     10 Bit        Muxes := 1     
-	  18 Input      8 Bit        Muxes := 2     
-	   2 Input      8 Bit        Muxes := 253   
 	   3 Input      8 Bit        Muxes := 6     
+	   2 Input      8 Bit        Muxes := 253   
+	  18 Input      8 Bit        Muxes := 2     
 	  18 Input      5 Bit        Muxes := 1     
 	  18 Input      2 Bit        Muxes := 1     
-	  10 Input      1 Bit        Muxes := 1     
-	  18 Input      1 Bit        Muxes := 139   
-	  12 Input      1 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 273   
-	  11 Input      1 Bit        Muxes := 1     
-	   3 Input      1 Bit        Muxes := 154   
-	   4 Input      1 Bit        Muxes := 2     
-	  14 Input      1 Bit        Muxes := 1     
-	   8 Input      1 Bit        Muxes := 2     
-	  13 Input      1 Bit        Muxes := 1     
 	   6 Input      1 Bit        Muxes := 1     
-	  15 Input      1 Bit        Muxes := 1     
 	   7 Input      1 Bit        Muxes := 1     
+	  10 Input      1 Bit        Muxes := 1     
+	  11 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 2     
+	   8 Input      1 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 273   
+	  12 Input      1 Bit        Muxes := 1     
+	  13 Input      1 Bit        Muxes := 1     
+	  18 Input      1 Bit        Muxes := 139   
+	  14 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 154   
+	  15 Input      1 Bit        Muxes := 1     
 Module adc_fft_fsmV3 
 Detailed RTL Component Info : 
 +---Adders : 
@@ -457,21 +457,21 @@ Detailed RTL Component Info :
 	                1 Bit    Registers := 11    
 +---Muxes : 
 	   2 Input     16 Bit        Muxes := 2     
+	   3 Input     13 Bit        Muxes := 1     
 	   4 Input     13 Bit        Muxes := 1     
 	   2 Input     13 Bit        Muxes := 4     
-	   3 Input     13 Bit        Muxes := 1     
 	  12 Input      5 Bit        Muxes := 1     
 	   2 Input      5 Bit        Muxes := 1     
 	   2 Input      4 Bit        Muxes := 5     
 	   2 Input      3 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 1     
 	   2 Input      1 Bit        Muxes := 9     
 	  11 Input      1 Bit        Muxes := 2     
-	   3 Input      1 Bit        Muxes := 1     
-	   8 Input      1 Bit        Muxes := 1     
-	  12 Input      1 Bit        Muxes := 3     
-	  10 Input      1 Bit        Muxes := 2     
-	   4 Input      1 Bit        Muxes := 1     
 	   6 Input      1 Bit        Muxes := 2     
+	  12 Input      1 Bit        Muxes := 3     
+	   3 Input      1 Bit        Muxes := 1     
+	  10 Input      1 Bit        Muxes := 2     
+	   8 Input      1 Bit        Muxes := 1     
 Module vga_controller_640_60 
 Detailed RTL Component Info : 
 +---Adders : 
@@ -520,19 +520,19 @@ Detailed RTL Component Info :
 	   2 Input     20 Bit        Muxes := 1     
 	  10 Input     12 Bit        Muxes := 1     
 	   6 Input     10 Bit        Muxes := 1     
-	   2 Input     10 Bit        Muxes := 1     
 	  11 Input     10 Bit        Muxes := 1     
-	   2 Input      8 Bit        Muxes := 9     
+	   2 Input     10 Bit        Muxes := 1     
 	  11 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 9     
 	   8 Input      7 Bit        Muxes := 3     
 	   5 Input      6 Bit        Muxes := 1     
 	   2 Input      4 Bit        Muxes := 1     
 	   2 Input      3 Bit        Muxes := 5     
 	   2 Input      2 Bit        Muxes := 6     
 	   2 Input      1 Bit        Muxes := 17    
-	   8 Input      1 Bit        Muxes := 1     
-	  10 Input      1 Bit        Muxes := 1     
 	   6 Input      1 Bit        Muxes := 1     
+	  10 Input      1 Bit        Muxes := 1     
+	   8 Input      1 Bit        Muxes := 1     
 Module AccelArithmetics__parameterized0 
 Detailed RTL Component Info : 
 +---Adders : 
@@ -600,8 +600,7 @@ Detailed RTL Component Info :
 	   4 Input      7 Bit        Muxes := 1     
 	   2 Input      6 Bit        Muxes := 2     
 	   2 Input      5 Bit        Muxes := 1     
-	   2 Input      4 Bit        Muxes := 3     
-	   2 Input      1 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 6     
 	   4 Input      1 Bit        Muxes := 1     
 Module vga_top 
 Detailed RTL Component Info : 
@@ -637,7 +636,7 @@ BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
 ---------------------------------------------------------------------------------
 Finished Part Resource Summary
 ---------------------------------------------------------------------------------
-Workers Ready, Starting Parallel Section  : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1263.145 ; gain = 572.711
+Workers Ready, Starting Parallel Section  : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1263.156 ; gain = 572.719
 ---------------------------------------------------------------------------------
 Start Cross Boundary Optimization
 ---------------------------------------------------------------------------------
@@ -673,9 +672,9 @@ WARNING: [Synth 8-3331] design top_level has unconnected port din[2]
 WARNING: [Synth 8-3331] design top_level has unconnected port din[1]
 WARNING: [Synth 8-3331] design top_level has unconnected port din[0]
 ---------------------------------------------------------------------------------
-Finished Cross Boundary Optimization : Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 1263.145 ; gain = 572.711
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:37 ; elapsed = 00:00:37 . Memory (MB): peak = 1263.156 ; gain = 572.719
 ---------------------------------------------------------------------------------
-Finished Parallel Reinfer  : Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 1263.145 ; gain = 572.711
+Finished Parallel Reinfer  : Time (s): cpu = 00:00:37 ; elapsed = 00:00:37 . Memory (MB): peak = 1263.156 ; gain = 572.719
 ---------------------------------------------------------------------------------
 Start RAM, DSP and Shift Register Reporting
 ---------------------------------------------------------------------------------
@@ -776,19 +775,19 @@ WARNING: [Synth 8-3332] Sequential element (\ADXL_Control/ACCEL_TMP_SUM_reg[15] 
 WARNING: [Synth 8-3332] Sequential element (\Accel_Calculation/ACCEL_X_SUM_reg[1] ) is unused and will be removed from module AccelerometerCtl__parameterized0.
 WARNING: [Synth 8-3332] Sequential element (\Accel_Calculation/ACCEL_X_SUM_reg[0] ) is unused and will be removed from module AccelerometerCtl__parameterized0.
 WARNING: [Synth 8-3332] Sequential element (\Accel_Calculation/ACCEL_X_CLIP_reg[9] ) is unused and will be removed from module AccelerometerCtl__parameterized0.
-WARNING: [Synth 8-3332] Sequential element (\Accel_Calculation/ACCEL_X_CLIP_reg[8] ) is unused and will be removed from module AccelerometerCtl__parameterized0.
-WARNING: [Synth 8-3332] Sequential element (\Accel_Calculation/ACCEL_X_CLIP_reg[7] ) is unused and will be removed from module AccelerometerCtl__parameterized0.
-WARNING: [Synth 8-3332] Sequential element (\Accel_Calculation/ACCEL_X_CLIP_reg[6] ) is unused and will be removed from module AccelerometerCtl__parameterized0.
-WARNING: [Synth 8-3332] Sequential element (\Accel_Calculation/ACCEL_X_CLIP_reg[5] ) is unused and will be removed from module AccelerometerCtl__parameterized0.
 WARNING: [Synth 8-3332] Sequential element (\Accel_Calculation/ACCEL_X_CLIP_reg[4] ) is unused and will be removed from module AccelerometerCtl__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\Accel_Calculation/ACCEL_X_CLIP_reg[3] ) is unused and will be removed from module AccelerometerCtl__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\Accel_Calculation/ACCEL_X_CLIP_reg[2] ) is unused and will be removed from module AccelerometerCtl__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\Accel_Calculation/ACCEL_X_CLIP_reg[1] ) is unused and will be removed from module AccelerometerCtl__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\Accel_Calculation/ACCEL_X_CLIP_reg[0] ) is unused and will be removed from module AccelerometerCtl__parameterized0.
 WARNING: [Synth 8-3332] Sequential element (\Accel_Calculation/ACCEL_Y_SUM_reg[1] ) is unused and will be removed from module AccelerometerCtl__parameterized0.
 WARNING: [Synth 8-3332] Sequential element (\Accel_Calculation/ACCEL_Y_SUM_reg[0] ) is unused and will be removed from module AccelerometerCtl__parameterized0.
 WARNING: [Synth 8-3332] Sequential element (\Accel_Calculation/ACCEL_Y_CLIP_reg[9] ) is unused and will be removed from module AccelerometerCtl__parameterized0.
-WARNING: [Synth 8-3332] Sequential element (\Accel_Calculation/ACCEL_Y_CLIP_reg[8] ) is unused and will be removed from module AccelerometerCtl__parameterized0.
-WARNING: [Synth 8-3332] Sequential element (\Accel_Calculation/ACCEL_Y_CLIP_reg[7] ) is unused and will be removed from module AccelerometerCtl__parameterized0.
-WARNING: [Synth 8-3332] Sequential element (\Accel_Calculation/ACCEL_Y_CLIP_reg[6] ) is unused and will be removed from module AccelerometerCtl__parameterized0.
-WARNING: [Synth 8-3332] Sequential element (\Accel_Calculation/ACCEL_Y_CLIP_reg[5] ) is unused and will be removed from module AccelerometerCtl__parameterized0.
 WARNING: [Synth 8-3332] Sequential element (\Accel_Calculation/ACCEL_Y_CLIP_reg[4] ) is unused and will be removed from module AccelerometerCtl__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\Accel_Calculation/ACCEL_Y_CLIP_reg[3] ) is unused and will be removed from module AccelerometerCtl__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\Accel_Calculation/ACCEL_Y_CLIP_reg[2] ) is unused and will be removed from module AccelerometerCtl__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\Accel_Calculation/ACCEL_Y_CLIP_reg[1] ) is unused and will be removed from module AccelerometerCtl__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\Accel_Calculation/ACCEL_Y_CLIP_reg[0] ) is unused and will be removed from module AccelerometerCtl__parameterized0.
 WARNING: [Synth 8-3332] Sequential element (\ADXL_Control/D_Send_reg[7] ) is unused and will be removed from module AccelerometerCtl__parameterized0.
 WARNING: [Synth 8-3332] Sequential element (\ADXL_Control/Cmd_Reg_reg[2][7] ) is unused and will be removed from module AccelerometerCtl__parameterized0.
 WARNING: [Synth 8-3332] Sequential element (\ADXL_Control/Cmd_Reg_reg[1][7] ) is unused and will be removed from module AccelerometerCtl__parameterized0.
@@ -801,10 +800,10 @@ WARNING: [Synth 8-3332] Sequential element (\blueVal_reg[1] ) is unused and will
 WARNING: [Synth 8-3332] Sequential element (\blueVal_reg[0] ) is unused and will be removed from module vga_display_gen.
 WARNING: [Synth 8-3332] Sequential element (\cathodes_reg[7] ) is unused and will be removed from module HexDigs2SSeg.
 ---------------------------------------------------------------------------------
-Finished Area Optimization : Time (s): cpu = 00:01:13 ; elapsed = 00:01:13 . Memory (MB): peak = 1263.145 ; gain = 572.711
+Finished Area Optimization : Time (s): cpu = 00:01:12 ; elapsed = 00:01:12 . Memory (MB): peak = 1263.156 ; gain = 572.719
 ---------------------------------------------------------------------------------
-Finished Parallel Area Opt  : Time (s): cpu = 00:01:13 ; elapsed = 00:01:13 . Memory (MB): peak = 1263.145 ; gain = 572.711
-Finished Parallel Section  : Time (s): cpu = 00:01:13 ; elapsed = 00:01:13 . Memory (MB): peak = 1263.145 ; gain = 572.711
+Finished Parallel Area Opt  : Time (s): cpu = 00:01:12 ; elapsed = 00:01:12 . Memory (MB): peak = 1263.156 ; gain = 572.719
+Finished Parallel Section  : Time (s): cpu = 00:01:12 ; elapsed = 00:01:12 . Memory (MB): peak = 1263.156 ; gain = 572.719
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
@@ -814,16 +813,16 @@ Start Applying XDC Timing Constraints
 WARNING: [Synth 8-565] redefining clock 'clk'
 INFO: Moved 4 constraints on hierarchical pins to their respective driving/loading pins
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:28 ; elapsed = 00:01:28 . Memory (MB): peak = 1317.156 ; gain = 626.723
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:26 ; elapsed = 00:01:27 . Memory (MB): peak = 1316.168 ; gain = 625.730
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:01:31 ; elapsed = 00:01:32 . Memory (MB): peak = 1327.156 ; gain = 636.723
+Finished Timing Optimization : Time (s): cpu = 00:01:29 ; elapsed = 00:01:30 . Memory (MB): peak = 1326.168 ; gain = 635.730
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:01:40 ; elapsed = 00:01:41 . Memory (MB): peak = 1396.617 ; gain = 706.184
+Finished Technology Mapping : Time (s): cpu = 00:01:39 ; elapsed = 00:01:40 . Memory (MB): peak = 1395.629 ; gain = 705.191
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -841,7 +840,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:01:41 ; elapsed = 00:01:42 . Memory (MB): peak = 1396.617 ; gain = 706.184
+Finished IO Insertion : Time (s): cpu = 00:01:40 ; elapsed = 00:01:41 . Memory (MB): peak = 1395.629 ; gain = 705.191
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -854,13 +853,13 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:01:41 ; elapsed = 00:01:42 . Memory (MB): peak = 1396.617 ; gain = 706.184
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:40 ; elapsed = 00:01:41 . Memory (MB): peak = 1395.629 ; gain = 705.191
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:42 ; elapsed = 00:01:43 . Memory (MB): peak = 1396.617 ; gain = 706.184
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:41 ; elapsed = 00:01:42 . Memory (MB): peak = 1395.629 ; gain = 705.191
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RAM, DSP and Shift Register Reporting
@@ -919,11 +918,11 @@ Report Cell Usage:
 |14    |CARRY4             |   251|
 |15    |DSP48E1            |     3|
 |16    |LUT1               |   140|
-|17    |LUT2               |   268|
-|18    |LUT3               |  1720|
-|19    |LUT4               |   733|
-|20    |LUT5               |   448|
-|21    |LUT6               |  1478|
+|17    |LUT2               |   261|
+|18    |LUT3               |  1710|
+|19    |LUT4               |   743|
+|20    |LUT5               |   452|
+|21    |LUT6               |  1480|
 |22    |MUXF7              |   318|
 |23    |MUXF8              |   110|
 |24    |RAMB18E1_2         |     1|
@@ -941,15 +940,15 @@ Report Instance Areas:
 +------+--------------------------+---------------------------------+------+
 |      |Instance                  |Module                           |Cells |
 +------+--------------------------+---------------------------------+------+
-|1     |top                       |                                 | 10681|
+|1     |top                       |                                 | 10680|
 |2     |  decoder                 |HexDigs2SSeg                     |   259|
 |3     |  disp_draw_inst          |disp_draw                        |  8277|
 |4     |    avg_inst              |averager                         |   721|
 |5     |    mag_inst              |magnitude                        |   987|
 |6     |  divide                  |CDiv                             |   109|
 |7     |  fft_fsm                 |adc_fft_fsmV3                    |   229|
-|8     |  vga_comp                |vga_top                          |  1401|
-|9     |    vga_cont              |vga_controller_640_60            |    64|
+|8     |  vga_comp                |vga_top                          |  1400|
+|9     |    vga_cont              |vga_controller_640_60            |    63|
 |10    |    vga_disp              |vga_display_gen                  |  1336|
 |11    |      Accel_inst          |AccelerometerCtl__parameterized0 |   790|
 |12    |        ADXL_Control      |ADXL362Ctrl__parameterized0      |   594|
@@ -957,24 +956,10 @@ Report Instance Areas:
 |14    |        Accel_Calculation |AccelArithmetics__parameterized0 |   172|
 +------+--------------------------+---------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:01:42 ; elapsed = 00:01:43 . Memory (MB): peak = 1396.617 ; gain = 706.184
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:42 ; elapsed = 00:01:42 . Memory (MB): peak = 1395.629 ; gain = 705.191
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 106 warnings.
-Synthesis Optimization Complete : Time (s): cpu = 00:01:42 ; elapsed = 00:01:43 . Memory (MB): peak = 1396.617 ; gain = 706.184
-Release 14.7 - ngc2edif P.20140520 (lin64)
-Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
-
-Release 14.7 - ngc2edif P.20140520 (lin64)
-Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
-Reading design Square_Root.ngc ...
-WARNING:NetListWriters:298 - No output is written to Square_Root.xncf, ignored.
-Processing design ...
-   Preping design's networks ...
-   Preping design's macros ...
-  finished :Prep
-Writing EDIF netlist file Square_Root.edif ...
-ngc2edif: Total memory usage is 104756 kilobytes
-
+Synthesis Optimization Complete : Time (s): cpu = 00:01:42 ; elapsed = 00:01:43 . Memory (MB): peak = 1395.629 ; gain = 705.191
 Reading core file '/data1/cdaffron/git/ece551hw/final/chris/bg_accel/bg_accel.srcs/sources_1/ip/Square_Root/Square_Root.ngc' for (cell view 'Square_Root', library 'work')
 Parsing EDIF File [./.ngc2edfcache/Square_Root_ngc_5df9eff5.edif]
 Finished Parsing EDIF File [./.ngc2edfcache/Square_Root_ngc_5df9eff5.edif]
@@ -995,8 +980,8 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 INFO: [Common 17-83] Releasing license: Synthesis
 98 Infos, 126 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:46 ; elapsed = 00:01:47 . Memory (MB): peak = 1396.621 ; gain = 588.059
+synth_design: Time (s): cpu = 00:01:44 ; elapsed = 00:01:45 . Memory (MB): peak = 1395.633 ; gain = 587.066
 # write_checkpoint top_level.dcp
 # report_utilization -file top_level_utilization_synth.rpt -pb top_level_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00.16 ; elapsed = 00:00:00.20 . Memory (MB): peak = 1396.621 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Tue Apr 21 22:05:53 2015...
+report_utilization: Time (s): cpu = 00:00:00.17 ; elapsed = 00:00:00.22 . Memory (MB): peak = 1395.633 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Tue Apr 21 22:19:33 2015...

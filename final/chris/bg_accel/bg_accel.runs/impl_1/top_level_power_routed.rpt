@@ -1,7 +1,7 @@
 Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2014.2 (lin64) Build 932637 Wed Jun 11 13:08:52 MDT 2014
-| Date             : Tue Apr 21 22:09:16 2015
+| Date             : Tue Apr 21 22:22:47 2015
 | Host             : com1549.eecs.utk.edu running 64-bit Red Hat Enterprise Linux Server release 6.5 (Santiago)
 | Command          : report_power -file top_level_power_routed.rpt -pb top_level_power_summary_routed.pb
 | Design           : top_level
@@ -30,8 +30,8 @@ Table of Contents
 ----------
 
 +--------------------------+-------+
-| Total On-Chip Power (W)  | 0.443 |
-| Dynamic (W)              | 0.345 |
+| Total On-Chip Power (W)  | 0.440 |
+| Dynamic (W)              | 0.341 |
 | Device Static (W)        | 0.098 |
 | Effective TJA (C/W)      | 4.6   |
 | Max Ambient (C)          | 83.0  |
@@ -49,23 +49,23 @@ Table of Contents
 +--------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
-| Clocks                   |     0.030 |       11 |       --- |             --- |
-| Slice Logic              |     0.023 |    18771 |       --- |             --- |
-|   LUT as Logic           |     0.021 |     5911 |     63400 |            9.32 |
-|   CARRY4                 |     0.001 |      447 |     15850 |            2.82 |
-|   Register               |    <0.001 |     9360 |    126800 |            7.38 |
+| Clocks                   |     0.028 |       11 |       --- |             --- |
+| Slice Logic              |     0.023 |    18391 |       --- |             --- |
+|   LUT as Logic           |     0.021 |     5758 |     63400 |            9.08 |
+|   CARRY4                 |     0.001 |      421 |     15850 |            2.65 |
+|   Register               |    <0.001 |     9218 |    126800 |            7.26 |
 |   F7/F8 Muxes            |    <0.001 |      505 |     63400 |            0.79 |
-|   LUT as Shift Register  |    <0.001 |      261 |     19000 |            1.37 |
+|   LUT as Shift Register  |    <0.001 |      245 |     19000 |            1.28 |
 |   LUT as Distributed RAM |    <0.001 |       24 |     19000 |            0.12 |
 |   BUFG                   |    <0.001 |        1 |        32 |            3.12 |
-|   Others                 |     0.000 |      754 |       --- |             --- |
-| Signals                  |     0.031 |    14406 |       --- |             --- |
+|   Others                 |     0.000 |      713 |       --- |             --- |
+| Signals                  |     0.030 |    14169 |       --- |             --- |
 | Block RAM                |     0.014 |      9.5 |       135 |            7.03 |
 | MMCM                     |     0.221 |        2 |         6 |           33.33 |
 | DSPs                     |    <0.001 |       23 |       240 |            9.58 |
 | I/O                      |     0.025 |       85 |       210 |           40.47 |
 | Static Power             |     0.098 |          |           |                 |
-| Total                    |     0.443 |          |           |                 |
+| Total                    |     0.440 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -75,7 +75,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.115 |       0.099 |      0.016 |
+| Vccint    |       1.000 |     0.111 |       0.095 |      0.016 |
 | Vccaux    |       1.800 |     0.141 |       0.123 |      0.018 |
 | Vcco33    |       3.300 |     0.011 |       0.007 |      0.004 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -131,15 +131,15 @@ Table of Contents
 +---------------------------------------------------------+-------------------------------------------+-----------------+
 | Clock                                                   | Domain                                    | Constraint (ns) |
 +---------------------------------------------------------+-------------------------------------------+-----------------+
-| clk_out1_clk_wiz_0                                      | clk_debug/U0/clk_out1_clk_wiz_0           |             5.0 |
+| clkfbout_clk_wiz_vga                                    | vga_comp/clk_wiz/U0/clkfbout_clk_wiz_vga  |            40.0 |
 | dbg_hub/inst/bscan_inst/SERIES7_BSCAN.bscan_inst/UPDATE | dbg_hub/inst/bscan_inst/UPDATE            |            60.0 |
 | dbg_hub/inst/bscan_inst/SERIES7_BSCAN.bscan_inst/DRCK   | dbg_hub/inst/bscan_inst/DRCK              |            30.0 |
-| clkfbout_clk_wiz_vga                                    | vga_comp/clk_wiz/U0/clkfbout_clk_wiz_vga  |            40.0 |
-| clk_25out_clk_wiz_vga                                   | vga_comp/clk_wiz/U0/clk_25out_clk_wiz_vga |            40.0 |
-| clkfbout_clk_wiz_0                                      | clk_debug/U0/clkfbout_clk_wiz_0           |            10.0 |
-| clk_out3_clk_wiz_0                                      | clk_debug/U0/clk_out3_clk_wiz_0           |            20.0 |
 | sys_clk_pin                                             | clk                                       |            10.0 |
 | sys_clk_pin                                             | xlnx_opt__1                               |            10.0 |
+| clk_out1_clk_wiz_0                                      | clk_debug/U0/clk_out1_clk_wiz_0           |             5.0 |
+| clk_out3_clk_wiz_0                                      | clk_debug/U0/clk_out3_clk_wiz_0           |            20.0 |
+| clk_25out_clk_wiz_vga                                   | vga_comp/clk_wiz/U0/clk_25out_clk_wiz_vga |            40.0 |
+| clkfbout_clk_wiz_0                                      | clk_debug/U0/clkfbout_clk_wiz_0           |            10.0 |
 +---------------------------------------------------------+-------------------------------------------+-----------------+
 
 
@@ -152,12 +152,12 @@ Table of Contents
 +--------------------------------------------------------------------------------------------+-----------+
 | Name                                                                                       | Power (W) |
 +--------------------------------------------------------------------------------------------+-----------+
-| top_level                                                                                  |     0.345 |
+| top_level                                                                                  |     0.341 |
 |   clk_debug                                                                                |     0.106 |
 |     U0                                                                                     |     0.106 |
-|   dbg_hub                                                                                  |     0.009 |
-|     inst                                                                                   |     0.009 |
-|       UUT_MASTER                                                                           |     0.009 |
+|   dbg_hub                                                                                  |     0.008 |
+|     inst                                                                                   |     0.008 |
+|       UUT_MASTER                                                                           |     0.007 |
 |         U_ICON_INTERFACE                                                                   |     0.005 |
 |           U_CMD1                                                                           |    <0.001 |
 |           U_CMD2                                                                           |    <0.001 |
@@ -189,11 +189,11 @@ Table of Contents
 |                           RAM_reg_0_15_6_11                                                |    <0.001 |
 |                       rstblk                                                               |    <0.001 |
 |           U_CMD6_WR                                                                        |     0.002 |
-|             U_WR_FIFO                                                                      |     0.002 |
-|               SUBCORE_FIFO.xsdb_wrfifo_inst                                                |     0.002 |
-|                 inst_fifo_gen                                                              |     0.002 |
-|                   gconvfifo.rf                                                             |     0.002 |
-|                     grf.rf                                                                 |     0.002 |
+|             U_WR_FIFO                                                                      |     0.001 |
+|               SUBCORE_FIFO.xsdb_wrfifo_inst                                                |     0.001 |
+|                 inst_fifo_gen                                                              |     0.001 |
+|                   gconvfifo.rf                                                             |     0.001 |
+|                     grf.rf                                                                 |     0.001 |
 |                       gntv_or_sync_fifo.gcx.clkx                                           |    <0.001 |
 |                         gsync_stage[1].rd_stg_inst                                         |    <0.001 |
 |                         gsync_stage[1].wr_stg_inst                                         |    <0.001 |
@@ -228,20 +228,20 @@ Table of Contents
 |         U_SYNC                                                                             |    <0.001 |
 |       bscan_inst                                                                           |    <0.001 |
 |   decoder                                                                                  |     0.001 |
-|   disp_draw_inst                                                                           |     0.049 |
+|   disp_draw_inst                                                                           |     0.048 |
 |     avg_inst                                                                               |     0.004 |
-|     mag_inst                                                                               |     0.029 |
+|     mag_inst                                                                               |     0.027 |
 |       imagSquare                                                                           |    <0.001 |
 |         U0                                                                                 |    <0.001 |
 |           i_mult                                                                           |    <0.001 |
 |             gDSP.gDSP_only.iDSP                                                            |    <0.001 |
 |               inferred_dsp.Pdelay                                                          |     0.000 |
-|       magSqRt                                                                              |     0.016 |
-|         U0                                                                                 |     0.016 |
-|           i_synth                                                                          |     0.016 |
+|       magSqRt                                                                              |     0.015 |
+|         U0                                                                                 |     0.015 |
+|           i_synth                                                                          |     0.015 |
 |             i_nd_to_rdy                                                                    |    <0.001 |
-|             i_synth                                                                        |     0.016 |
-|               gen_sqrt.square_root                                                         |     0.016 |
+|             i_synth                                                                        |     0.015 |
+|               gen_sqrt.square_root                                                         |     0.015 |
 |                 gen_iterations[10].gen_post_mid.gen_rem                                    |    <0.001 |
 |                   gen_data_int                                                             |    <0.001 |
 |                   gen_rem_inc                                                              |    <0.001 |
@@ -353,7 +353,7 @@ Table of Contents
 |                       i_baseblox.i_baseblox_addsub                                         |    <0.001 |
 |                         no_pipelining.the_addsub                                           |    <0.001 |
 |                           i_lut6.i_lut6_addsub                                             |    <0.001 |
-|                 gen_iterations[17].gen_last.gen_no_round.gen_sqrt_tmp                      |     0.009 |
+|                 gen_iterations[17].gen_last.gen_no_round.gen_sqrt_tmp                      |     0.007 |
 |                 gen_iterations[17].gen_last.gen_rem                                        |    <0.001 |
 |                   gen_data_int                                                             |    <0.001 |
 |                   gen_inv_sqrt_out                                                         |    <0.001 |
@@ -379,7 +379,7 @@ Table of Contents
 |   fft                                                                                      |     0.016 |
 |     U0                                                                                     |     0.016 |
 |       i_synth                                                                              |     0.016 |
-|         axi_wrapper                                                                        |    <0.001 |
+|         axi_wrapper                                                                        |     0.001 |
 |           config_channel_fifo                                                              |    <0.001 |
 |             gen_non_real_time.data_in_fifo_pt1                                             |    <0.001 |
 |               fifo0                                                                        |    <0.001 |
@@ -556,7 +556,7 @@ Table of Contents
 |                   cos_addr_2s_comp                                                         |    <0.001 |
 |                   rom_addr_zero_compare                                                    |    <0.001 |
 |                   sin_addr_2s_comp                                                         |    <0.001 |
-|             single_channel.datapath                                                        |     0.010 |
+|             single_channel.datapath                                                        |     0.011 |
 |               bfp_scaling.input_ranger_inst                                                |    <0.001 |
 |                 max_finder                                                                 |     0.000 |
 |               bfp_scaling.pe_ranger_inst                                                   |    <0.001 |
@@ -798,23 +798,15 @@ Table of Contents
 |       U0                                                                                   |     0.115 |
 |     vga_cont                                                                               |    <0.001 |
 |     vga_disp                                                                               |     0.005 |
-|       Accel_inst                                                                           |     0.002 |
+|       Accel_inst                                                                           |     0.001 |
 |         ADXL_Control                                                                       |    <0.001 |
 |           SPI_Interface                                                                    |    <0.001 |
 |         Accel_Calculation                                                                  |    <0.001 |
 |           Magnitude_Calculation                                                            |    <0.001 |
-|             blk00000036                                                                    |     0.000 |
-|             blk0000007c                                                                    |     0.000 |
-|             blk000000b7                                                                    |     0.000 |
-|             blk000000e6                                                                    |     0.000 |
-|             blk00000126                                                                    |     0.000 |
-|             blk00000144                                                                    |     0.000 |
-|             blk00000189                                                                    |     0.000 |
-|             blk000001a4                                                                    |     0.000 |
 |             blk000001ee                                                                    |     0.000 |
 |             blk00000261                                                                    |     0.000 |
-|   vio                                                                                      |     0.002 |
-|     inst                                                                                   |     0.002 |
+|   vio                                                                                      |     0.001 |
+|     inst                                                                                   |     0.001 |
 |       DECODER_INST                                                                         |    <0.001 |
 |       PROBE_OUT_ALL_INST                                                                   |    <0.001 |
 |         G_PROBE_OUT[0].PROBE_OUT0_INST                                                     |    <0.001 |

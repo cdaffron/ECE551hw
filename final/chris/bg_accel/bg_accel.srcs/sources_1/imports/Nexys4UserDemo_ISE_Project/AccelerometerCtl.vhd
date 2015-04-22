@@ -102,7 +102,7 @@ component AccelArithmetics
 generic
 (
    SYSCLK_FREQUENCY_HZ : integer := 100000000;
-   ACC_X_Y_MAX         : STD_LOGIC_VECTOR (9 downto 0) := "00" & X"0F"; -- 511 pixels, corresponding to +1g
+   ACC_X_Y_MAX         : STD_LOGIC_VECTOR (9 downto 0) := "01" & X"FF"; -- 511 pixels, corresponding to +1g
    ACC_X_Y_MIN         : STD_LOGIC_VECTOR (9 downto 0) := (others => '0') -- corresponding to -1g
 );
 port

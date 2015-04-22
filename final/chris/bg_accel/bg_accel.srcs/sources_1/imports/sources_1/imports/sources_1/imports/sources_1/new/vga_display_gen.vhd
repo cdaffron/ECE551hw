@@ -528,9 +528,9 @@ begin
   process( vsync )
   begin
     if ( rising_edge( vsync ) ) then
-        accelRed <= accelXRaw(3 downto 0);
-        accelGreen <= accelYRaw(3 downto 0);
-        accelBlue <= accelMagRaw(3 downto 0);
+        accelRed <= accelXRaw(8 downto 5);
+        accelGreen <= accelYRaw(8 downto 5);
+        accelBlue <= accelMagRaw(11 downto 8);
     end if;
   end process;
     
@@ -638,9 +638,12 @@ begin
                 blue <= accelBlue;
             end if;
           else
-            red <= (others => '0');
-            green <= (others => '0');
-            blue <= (others => '0');
+--            red <= (others => '0');
+--            green <= (others => '0');
+--            blue <= (others => '0');
+            red <= accelRed;
+            green <= accelGreen;
+            blue <= accelBlue;
           end if;
         else
           red <= (others => '0');
