@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# Vivado v2014.2 (64-bit)
+# SW Build 932637 on Wed Jun 11 13:08:52 MDT 2014
+# IP Build 924643 on Fri May 30 09:20:16 MDT 2014
+# Start of session at: Tue Apr 21 20:30:52 2015
+# Process ID: 31187
+# Log file: /data1/cdaffron/git/ece551hw/final/chris/quad_scaling/quad_scaling.runs/c_counter_binary_0_synth_1/c_counter_binary_0.vds
+# Journal file: /data1/cdaffron/git/ece551hw/final/chris/quad_scaling/quad_scaling.runs/c_counter_binary_0_synth_1/vivado.jou
+#-----------------------------------------------------------
+source c_counter_binary_0.tcl
