@@ -369,21 +369,6 @@
         <Option Name="UseBlackboxStub" Val="1"/>
       </Config>
     </FileSet>
-    <FileSet Name="vio_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/vio_0">
-      <File Path="$PSRCDIR/sources_1/ip/vio_0/vio_0.xci">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../top_level2/top_level2.srcs/sources_1/ip/vio_0/vio_0.xci"/>
-          <Attr Name="ImportTime" Val="1429494574"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <Config>
-        <Option Name="TopModule" Val="vio_0"/>
-        <Option Name="UseBlackboxStub" Val="1"/>
-      </Config>
-    </FileSet>
     <FileSet Name="c_counter_binary_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/c_counter_binary_0">
       <File Path="$PSRCDIR/sources_1/ip/c_counter_binary_0/c_counter_binary_0.xci">
         <FileInfo>
@@ -490,15 +475,6 @@
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
     </Run>
     <Run Id="xfft_0_synth_1" Type="Ft3:Synth" SrcSet="xfft_0" Part="xc7a100tcsg324-1" ConstrsSet="xfft_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/xfft_0_synth_1">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2014">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
-        <Step Id="synth_design"/>
-      </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
-    </Run>
-    <Run Id="vio_0_synth_1" Type="Ft3:Synth" SrcSet="vio_0" Part="xc7a100tcsg324-1" ConstrsSet="vio_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/vio_0_synth_1">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2014">
           <Desc>Vivado Synthesis Defaults</Desc>
@@ -625,22 +601,6 @@
       </Strategy>
     </Run>
     <Run Id="xfft_0_impl_1" Type="Ft2:EntireDesign" Part="xc7a100tcsg324-1" ConstrsSet="xfft_0" Description="Vivado Implementation Defaults" SynthRun="xfft_0_synth_1">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2014">
-          <Desc>Vivado Implementation Defaults</Desc>
-        </StratHandle>
-        <Step Id="init_design"/>
-        <Step Id="opt_design"/>
-        <Step Id="power_opt_design"/>
-        <Step Id="place_design"/>
-        <Step Id="post_place_power_opt_design"/>
-        <Step Id="phys_opt_design"/>
-        <Step Id="route_design"/>
-        <Step Id="post_route_phys_opt_design"/>
-        <Step Id="write_bitstream"/>
-      </Strategy>
-    </Run>
-    <Run Id="vio_0_impl_1" Type="Ft2:EntireDesign" Part="xc7a100tcsg324-1" ConstrsSet="vio_0" Description="Vivado Implementation Defaults" SynthRun="vio_0_synth_1">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2014">
           <Desc>Vivado Implementation Defaults</Desc>

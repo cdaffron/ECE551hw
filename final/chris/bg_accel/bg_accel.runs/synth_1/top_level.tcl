@@ -22,8 +22,6 @@ add_files -quiet /data1/cdaffron/git/ece551hw/final/chris/bg_accel/bg_accel.runs
 set_property used_in_implementation false [get_files /data1/cdaffron/git/ece551hw/final/chris/bg_accel/bg_accel.runs/clk_wiz_vga_synth_1/clk_wiz_vga.dcp]
 add_files -quiet /data1/cdaffron/git/ece551hw/final/chris/bg_accel/bg_accel.runs/xfft_0_synth_1/xfft_0.dcp
 set_property used_in_implementation false [get_files /data1/cdaffron/git/ece551hw/final/chris/bg_accel/bg_accel.runs/xfft_0_synth_1/xfft_0.dcp]
-add_files -quiet /data1/cdaffron/git/ece551hw/final/chris/bg_accel/bg_accel.runs/vio_0_synth_1/vio_0.dcp
-set_property used_in_implementation false [get_files /data1/cdaffron/git/ece551hw/final/chris/bg_accel/bg_accel.runs/vio_0_synth_1/vio_0.dcp]
 add_files -quiet /data1/cdaffron/git/ece551hw/final/chris/bg_accel/bg_accel.runs/c_counter_binary_0_synth_1/c_counter_binary_0.dcp
 set_property used_in_implementation false [get_files /data1/cdaffron/git/ece551hw/final/chris/bg_accel/bg_accel.runs/c_counter_binary_0_synth_1/c_counter_binary_0.dcp]
 add_files -quiet /data1/cdaffron/git/ece551hw/final/chris/bg_accel/bg_accel.runs/clk_wiz_0_synth_1/clk_wiz_0.dcp

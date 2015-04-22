@@ -274,7 +274,7 @@ begin
         ena => '1',
         wea => ram1_wea,
         addra => ram1_addra (11 downto 0),
-        dina => X"0000",
+        dina => din,
         douta => s_axis_data_tdata(15 downto 0)
     );
     
