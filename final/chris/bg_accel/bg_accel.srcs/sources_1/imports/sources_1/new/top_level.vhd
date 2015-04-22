@@ -164,7 +164,7 @@ architecture Behavioral of top_level is
 begin
     
     vsync <= vsync_sig;
-    trigger <= vsync_sig;
+    trigger <= vsync_sig and sw(2);
     seg <= seg7(6 downto 0);
     dp <= seg7(7);
     led <= sw;

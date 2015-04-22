@@ -266,17 +266,11 @@
           <Attr Name="UsedIn" Val="implementation"/>
         </FileInfo>
       </File>
-      <File Path="$PDATADIR/constrs_1/designprops.xml">
-        <FileInfo SFType="CompatPartsDb">
-          <Attr Name="ImportPath" Val="$PPRDIR/../../john/top_level2_2014.2/top_level2_2014.2.ioplanning/constrs_1/designprops.xml"/>
-          <Attr Name="ImportTime" Val="1429565972"/>
-        </FileInfo>
+      <File Path="$PIOPLANDIR/constrs_1/designprops.xml">
+        <FileInfo SFType="CompatPartsDb"/>
       </File>
-      <File Path="$PDATADIR/constrs_1/usercols.xml">
-        <FileInfo SFType="UserColsDb">
-          <Attr Name="ImportPath" Val="$PPRDIR/../../john/top_level2_2014.2/top_level2_2014.2.ioplanning/constrs_1/usercols.xml"/>
-          <Attr Name="ImportTime" Val="1429565972"/>
-        </FileInfo>
+      <File Path="$PIOPLANDIR/constrs_1/usercols.xml">
+        <FileInfo SFType="UserColsDb"/>
       </File>
       <Config>
         <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/imports/lab2/Nexys4_Master.xdc"/>

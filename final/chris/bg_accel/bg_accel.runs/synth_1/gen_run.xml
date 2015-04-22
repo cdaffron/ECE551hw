@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1429733361">
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1429736792">
   <File Type="VDS-TIMING-PB" Name="top_level_timing_summary_synth.pb"/>
   <File Type="VDS-TIMINGSUMMARY" Name="top_level_timing_summary_synth.rpt"/>
   <File Type="RDS-DCP" Name="top_level.dcp"/>
@@ -295,18 +295,14 @@
         <Attr Name="UsedIn" Val="implementation"/>
       </FileInfo>
     </File>
-    <File Path="$PDATADIR/constrs_1/designprops.xml">
+    <File Path="$PIOPLANDIR/constrs_1/designprops.xml">
       <FileInfo SFType="CompatPartsDb">
         <Attr Name="Library" Val="xil_defaultlib"/>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../john/top_level2_2014.2/top_level2_2014.2.ioplanning/constrs_1/designprops.xml"/>
-        <Attr Name="ImportTime" Val="1429565972"/>
       </FileInfo>
     </File>
-    <File Path="$PDATADIR/constrs_1/usercols.xml">
+    <File Path="$PIOPLANDIR/constrs_1/usercols.xml">
       <FileInfo SFType="UserColsDb">
         <Attr Name="Library" Val="xil_defaultlib"/>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../john/top_level2_2014.2/top_level2_2014.2.ioplanning/constrs_1/usercols.xml"/>
-        <Attr Name="ImportTime" Val="1429565972"/>
       </FileInfo>
     </File>
     <Config>
