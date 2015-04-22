@@ -541,21 +541,21 @@ begin
   pwm_red : Pwm
   port map(
     clk_i => clk,
-    data_i => accelXRaw(8 downto 1),
+    data_i => X"0" & accelXRaw(8 downto 5),
     pwm_o => redRGBled
   );
   
   pwm_green : Pwm
   port map(
     clk_i => clk,
-    data_i => accelYRaw(8 downto 1),
+    data_i => X"0" & accelYRaw(8 downto 5),
     pwm_o => greenRGBled
   );
   
   pwm_blue : Pwm
   port map(
     clk_i => clk,
-    data_i => accelMagRaw(8 downto 1),
+    data_i => X"0" & accelMagRaw(8 downto 5),
     pwm_o => blueRGBled
   );
   

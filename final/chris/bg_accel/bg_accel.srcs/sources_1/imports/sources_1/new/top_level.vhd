@@ -73,8 +73,8 @@ architecture Behavioral of top_level is
             FFT_done    : in  std_logic;
             barHeights  : out barArray;
 --            fullbarHeights : out fullBarArray;
-            halfBarHeights1 : out halfBarArray;
-            halfBarHeights2 : out halfBarArray;            
+--            halfBarHeights1 : out halfBarArray;
+--            halfBarHeights2 : out halfBarArray;            
             VGA_trig    : in  std_logic;
             sw          : in  std_logic_vector (1 downto 0);
             dp          : out std_logic;
@@ -147,8 +147,8 @@ architecture Behavioral of top_level is
     signal seven_seg_data : std_logic_vector (31 downto 0) := X"00000000";
     signal seg7 : std_logic_vector (7 downto 0);
     signal fullBarHeights : fullBarArray;
-    signal halfBarHeights1 : halfBarArray;
-    signal halfBarHeights2 : halfBarArray;
+--    signal halfBarHeights1 : halfBarArray;
+--    signal halfBarHeights2 : halfBarArray;
     signal vsync_sig : std_logic := '0';
     
     signal redRGBled : std_logic;
@@ -175,11 +175,11 @@ begin
     RGB1_Blue <= blueRGBled;
     RGB2_Blue <= blueRGBled;
     
-    GEN_MAP:
-    for i in 0 to 31 generate
-        fullBarHeights(i) <= halfBarHeights1(i);
-        fullBarHeights(i + 32) <= halfBarHeights2(i);
-    end generate GEN_MAP;
+--    GEN_MAP:
+--    for i in 0 to 31 generate
+--        fullBarHeights(i) <= halfBarHeights1(i);
+--        fullBarHeights(i + 32) <= halfBarHeights2(i);
+--    end generate GEN_MAP;
 
     disp_draw_inst : disp_draw
     Port Map ( 
@@ -189,8 +189,8 @@ begin
         FFT_done => FFT_done,
         barHeights => barHeights,
 --        fullBarHeights => fullBarArray,
-        halfBarHeights1 => halfBarHeights1,
-        halfBarHeights2 => halfBarHeights2,
+--        halfBarHeights1 => halfBarHeights1,
+--        halfBarHeights2 => halfBarHeights2,
         VGA_trig => VGA_trig,
         sw => sw(1 downto 0),
         dp => dp,
@@ -363,20 +363,20 @@ begin
     begin
         index := to_integer(unsigned(sw(15 downto 10)));
 --        seven_seg_data <= X"FFFFFFFF";
-        if( sw(9) = '0' ) then
---            seven_seg_data(16 downto 0) <= fullBarHeights(index);
---            seven_seg_data(31 downto 17) <= "000000000000000";
-            seven_seg_data(31 downto 28) <= fullBarHeights(index)(3 downto 0);
-            seven_seg_data(27 downto 24) <= fullBarHeights(index)(7 downto 4);
-            seven_seg_data(23 downto 20) <= fullBarHeights(index)(11 downto 8);
-            seven_seg_data(19 downto 16) <= fullBarHeights(index)(15 downto 12);
-            seven_seg_data(15) <= fullBarHeights(index)(16);
-            seven_seg_data(14 downto 0) <= "000000000000000";
-        else
+--        if( sw(9) = '0' ) then
+----            seven_seg_data(16 downto 0) <= fullBarHeights(index);
+----            seven_seg_data(31 downto 17) <= "000000000000000";
+--            seven_seg_data(31 downto 28) <= fullBarHeights(index)(3 downto 0);
+--            seven_seg_data(27 downto 24) <= fullBarHeights(index)(7 downto 4);
+--            seven_seg_data(23 downto 20) <= fullBarHeights(index)(11 downto 8);
+--            seven_seg_data(19 downto 16) <= fullBarHeights(index)(15 downto 12);
+--            seven_seg_data(15) <= fullBarHeights(index)(16);
+--            seven_seg_data(14 downto 0) <= "000000000000000";
+--        else
             seven_seg_data(31 downto 28) <= barHeights(index)(3 downto 0);
             seven_seg_data(27 downto 24) <= barHeights(index)(7 downto 4);
             seven_seg_data(23 downto 0) <= X"000000";
-        end if;
+--        end if;
     end process;
     
     process( clk )

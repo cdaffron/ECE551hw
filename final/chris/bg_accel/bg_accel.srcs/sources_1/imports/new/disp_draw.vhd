@@ -52,8 +52,8 @@ entity disp_draw is
 --        VGA_wren    : out std_logic;
         barHeights  : out barArray;
 --        fullBarHeights  : out fullBarArray;
-        halfBarHeights1 : out halfBarArray;
-        halfBarHeights2 : out halfBarArray;
+--        halfBarHeights1 : out halfBarArray;
+--        halfBarHeights2 : out halfBarArray;
         VGA_trig    : in  std_logic;
         sw          : in  std_logic_vector (1 downto 0);
         dp          : out std_logic;
@@ -154,7 +154,7 @@ architecture Behavioral of disp_draw is
     
 --    type barArray is array (63 downto 0) of std_logic_vector (7 downto 0);
     signal barHeightsWrk : barArray;
-    signal fullBarHeightsWrk : fullBarArray;
+--    signal fullBarHeightsWrk : fullBarArray;
     
 --    signal avgIn0   : std_logic_vector (15 downto 0) := X"0000";
 --    signal avgIn1   : std_logic_vector (15 downto 0) := X"0000";
@@ -527,11 +527,11 @@ architecture Behavioral of disp_draw is
 
 begin
 
-    GEN_SIG:
-    for i in 0 to 31 generate
-        halfBarHeights1(i) <= fullBarHeightsWrk(i);
-        halfBarHeights2(i) <= fullBarHeightsWrk(i + 32);
-    end generate GEN_SIG;
+--    GEN_SIG:
+--    for i in 0 to 31 generate
+--        halfBarHeights1(i) <= fullBarHeightsWrk(i);
+--        halfBarHeights2(i) <= fullBarHeightsWrk(i + 32);
+--    end generate GEN_SIG;
 
 --    halfBarHeights1(0) <= fullBarHeightsWrk(0);
 --    halfBarHeights1(1) <= fullBarHeightsWrk(1);
@@ -884,7 +884,7 @@ begin
             if( magValid = '1' ) then
 --                barHeightsWrk(to_integer(unsigned(barNumOut))) <= std_logic_vector(log10(to_real(unsigned(mag(16 downto 9)))));
                 barHeightsWrk(to_integer(unsigned(barNumOut))) <= apply_scaling(mag);
-                fullBarHeightsWrk(to_integer(unsigned(barNumOut))) <= mag;
+--                fullBarHeightsWrk(to_integer(unsigned(barNumOut))) <= mag;
             end if;
         end if;
     end process;
