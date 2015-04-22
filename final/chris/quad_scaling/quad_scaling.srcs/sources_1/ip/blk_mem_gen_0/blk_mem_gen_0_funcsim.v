@@ -1,7 +1,7 @@
 // Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2014.2 (lin64) Build 932637 Wed Jun 11 13:08:52 MDT 2014
-// Date        : Tue Apr 21 20:32:31 2015
+// Date        : Tue Apr 21 21:18:41 2015
 // Host        : com1549.eecs.utk.edu running 64-bit Red Hat Enterprise Linux Server release 6.5 (Santiago)
 // Command     : write_verilog -force -mode funcsim
 //               /data1/cdaffron/git/ece551hw/final/chris/quad_scaling/quad_scaling.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_funcsim.v

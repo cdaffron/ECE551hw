@@ -11,6 +11,7 @@ set_param project.compositeFile.enableAutoGeneration 0
 set_property default_lib xil_defaultlib [current_project]
 add_files {{/data1/cdaffron/git/ece551hw/final/chris/quad_scaling/quad_scaling.srcs/sources_1/imports/coe files/gunshot.coe}}
 add_files {{/data1/cdaffron/git/ece551hw/final/jacob/sources/coe files/gunshot.coe}}
+add_files {{/data1/cdaffron/git/ece551hw/final/jacob/sources/coe files/mat_5kHz_int16_2048samples.coe}}
 add_files -quiet /data1/cdaffron/git/ece551hw/final/chris/quad_scaling/quad_scaling.runs/mult_gen_0_synth_1/mult_gen_0.dcp
 set_property used_in_implementation false [get_files /data1/cdaffron/git/ece551hw/final/chris/quad_scaling/quad_scaling.runs/mult_gen_0_synth_1/mult_gen_0.dcp]
 add_files -quiet /data1/cdaffron/git/ece551hw/final/chris/quad_scaling/quad_scaling.runs/c_addsub_0_synth_1/c_addsub_0.dcp
