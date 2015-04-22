@@ -1,7 +1,7 @@
 Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2014.2 (lin64) Build 932637 Wed Jun 11 13:08:52 MDT 2014
-| Date             : Wed Apr 22 18:30:16 2015
+| Date             : Wed Apr 22 18:38:44 2015
 | Host             : com1549.eecs.utk.edu running 64-bit Red Hat Enterprise Linux Server release 6.5 (Santiago)
 | Command          : report_power -file top_level_power_routed.rpt -pb top_level_power_summary_routed.pb
 | Design           : top_level
@@ -33,6 +33,7 @@ Table of Contents
 | Total On-Chip Power (W)  | 0.465 |
 | Dynamic (W)              | 0.367 |
 | Device Static (W)        | 0.099 |
+| Total Off-Chip Power (W) | 0.000 |
 | Effective TJA (C/W)      | 4.6   |
 | Max Ambient (C)          | 82.9  |
 | Junction Temperature (C) | 27.1  |
@@ -130,12 +131,12 @@ Table of Contents
 +-----------------------+-------------------------------------------+-----------------+
 | Clock                 | Domain                                    | Constraint (ns) |
 +-----------------------+-------------------------------------------+-----------------+
-| clk_25out_clk_wiz_vga | vga_comp/clk_wiz/U0/clk_25out_clk_wiz_vga |            40.0 |
 | clkfbout_clk_wiz_vga  | vga_comp/clk_wiz/U0/clkfbout_clk_wiz_vga  |            40.0 |
-| clkfbout_clk_wiz_0    | clk_debug/U0/clkfbout_clk_wiz_0           |            10.0 |
-| clk_out3_clk_wiz_0    | clk_debug/U0/clk_out3_clk_wiz_0           |            20.0 |
 | sys_clk_pin           | clk                                       |            10.0 |
 | sys_clk_pin           | xlnx_opt__18                              |            10.0 |
+| clk_out3_clk_wiz_0    | clk_debug/U0/clk_out3_clk_wiz_0           |            20.0 |
+| clkfbout_clk_wiz_0    | clk_debug/U0/clkfbout_clk_wiz_0           |            10.0 |
+| clk_25out_clk_wiz_vga | vga_comp/clk_wiz/U0/clk_25out_clk_wiz_vga |            40.0 |
 +-----------------------+-------------------------------------------+-----------------+
 
 
