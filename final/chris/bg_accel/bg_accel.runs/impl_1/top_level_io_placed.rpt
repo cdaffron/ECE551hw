@@ -1,7 +1,7 @@
 Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2014.2 (lin64) Build 932637 Wed Jun 11 13:08:52 MDT 2014
-| Date         : Wed Apr 22 11:49:53 2015
+| Date         : Wed Apr 22 14:46:32 2015
 | Host         : com1549.eecs.utk.edu running 64-bit Red Hat Enterprise Linux Server release 6.5 (Santiago)
 | Command      : report_io -file top_level_io_placed.rpt
 | Design       : top_level
@@ -23,7 +23,7 @@ Table of Contents
 +---------------+
 | Total User IO |
 +---------------+
-|            91 |
+|            92 |
 +---------------+
 
 
@@ -120,7 +120,7 @@ Table of Contents
 | E13        |              | Dedicated  | TDO_0                        | Config      |             |       0 |            |      |                     |                      |         |            |           |      |                  |
 | E14        |              |            | GND                          | GND         |             |         |            |      |                     |                      |     0.0 |            |           |      |                  |
 | E15        |              | High Range | IO_L11P_T1_SRCC_15           | User IO     |             |      15 |            |      |                     |                      |         |            |           |      |                  |
-| E16        |              | High Range | IO_L11N_T1_SRCC_15           | User IO     |             |      15 |            |      |                     |                      |         |            |           |      |                  |
+| E16        | btnC         | High Range | IO_L11N_T1_SRCC_15           | INPUT       | LVCMOS33    |      15 |            |      |                     |                 NONE |         | FIXED      |           |      | NONE             |
 | E17        |              | High Range | IO_L16P_T2_A28_15            | User IO     |             |      15 |            |      |                     |                      |         |            |           |      |                  |
 | E18        |              | High Range | IO_L21P_T3_DQS_15            | User IO     |             |      15 |            |      |                     |                      |         |            |           |      |                  |
 | F1         |              | High Range | IO_L18P_T2_35                | User IO     |             |      35 |            |      |                     |                      |         |            |           |      |                  |

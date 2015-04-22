@@ -1,7 +1,7 @@
 Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2014.2 (lin64) Build 932637 Wed Jun 11 13:08:52 MDT 2014
-| Date         : Wed Apr 22 11:50:52 2015
+| Date         : Wed Apr 22 14:47:30 2015
 | Host         : com1549.eecs.utk.edu running 64-bit Red Hat Enterprise Linux Server release 6.5 (Santiago)
 | Command      : report_drc
 ------------------------------------------------------------------------------------------------------------
@@ -20,7 +20,7 @@ Table of Contents
       Design limits: <entire design considered>
            Ruledeck: default
            Max violations: <unlimited>
-         Violations found: 57
+         Violations found: 56
 
 2. REPORT DETAILS
 -----------------
@@ -195,11 +195,6 @@ Related violations: <none>
 REQP-1724#6 Warning
 DSP_Dbus_sign_bit_restriction  
 fft/U0/i_synth/xfft_inst/non_floating_point.arch_b.xfft_inst/single_channel.datapath/pe/mult_gen.Mult3/i_cmpy/three_mult_structure.use_dsp.i_dsp48/mult3_preadder_d_minus_a.mult3/mult/use_prim.appDSP48[0].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1: When using the PreAdder and USE_DPORT is TRUE, the D operand should be restricted to 24 bit two's compliment (and sign extended) to avoid over/underflow in the pre-add stage.
-Related violations: <none>
-
-RTSTAT-10#1 Warning
-No routable loads  
-1 net(s) have no routable loads. The problem net(s) are vio/inst/PROBE_OUT_ALL_INST/G_PROBE_OUT[1].PROBE_OUT0_INST/O2.
 Related violations: <none>
 
 AVAL-4#1 Advisory

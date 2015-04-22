@@ -45,21 +45,22 @@ entity top_level is
         dp              : out std_logic;
         led             : out std_logic_vector(15 downto 0);
         an              : out std_logic_vector (7 downto 0);
-        hsync       : out std_logic;
-        vsync       : out std_logic;
-        vga_red     : out std_logic_vector(3 downto 0);
-        vga_green   : out std_logic_vector(3 downto 0);
-        vga_blue    : out std_logic_vector(3 downto 0);
-        sclk        : out std_logic;
-        mosi        : out std_logic;
-        miso        : in  std_logic;
-        ss          : out std_logic;
-        RGB1_Red    : out std_logic;
-        RGB1_Green  : out std_logic;
-        RGB1_Blue   : out std_logic;
-        RGB2_Red    : out std_logic;
-        RGB2_Green  : out std_logic;
-        RGB2_Blue   : out std_logic
+        hsync           : out std_logic;
+        vsync           : out std_logic;
+        vga_red         : out std_logic_vector(3 downto 0);
+        vga_green       : out std_logic_vector(3 downto 0);
+        vga_blue        : out std_logic_vector(3 downto 0);
+        sclk            : out std_logic;
+        mosi            : out std_logic;
+        miso            : in  std_logic;
+        ss              : out std_logic;
+        RGB1_Red        : out std_logic;
+        RGB1_Green      : out std_logic;
+        RGB1_Blue       : out std_logic;
+        RGB2_Red        : out std_logic;
+        RGB2_Green      : out std_logic;
+        RGB2_Blue       : out std_logic;
+        btnC            : in  std_logic
     );
 end top_level;
 
@@ -116,7 +117,8 @@ architecture Behavioral of top_level is
     signal barHeights : barArray;
     signal VGA_trig : std_logic := '0';
     signal fsm_state : natural;
-    signal reset : std_logic_vector(0 downto 0) := (others => '0');
+--    signal reset : std_logic_vector(0 downto 0) := (others => '0');
+    signal reset : std_logic := '0';
     signal ram1_rst : std_logic := '0';
     signal ram1_wea : std_logic_vector (0 downto 0) := (others => '0');
     signal ram1_addra : std_logic_vector (12 downto 0) := (others => '0');
@@ -166,6 +168,7 @@ begin
     seg <= seg7(6 downto 0);
     dp <= seg7(7);
     led <= sw;
+    reset <= btnC;
     
     RGB1_Red <= redRGBled;
     RGB2_Red <= redRGBled;
@@ -204,14 +207,14 @@ begin
         clk => clk,
         -- initialization settings
         fft_points => "01010",
-        n_samples => 0,
-        sample_rate => 0,
+        n_samples => 1024,
+        sample_rate => 40,
         init_max_addr => 1023,
-        ram_initialized => '1',
+        ram_initialized => '0',
         -- control and debug ports
         fsm_state => fsm_state,
         run => VGA_trig,
-        rst => reset(0),
+        rst => reset,
         finished => FFT_done,
         --adc ports
         busy => busy,
@@ -292,7 +295,7 @@ begin
     vga_comp: vga_top
         port map (
             clk => clk,
-            rst => reset(0),
+            rst => reset,
             bars => barHeights,
             barNumSws => sw(1 downto 0),
             enableBG => sw(3),
@@ -320,17 +323,17 @@ begin
       clk_out2 => clk6MHz,
       clk_out3 => clk50,
       -- Status and control signals
-      reset => '0',
+      reset => reset,
       locked => open
      );
 
-    vio : entity work.vio_0
-    PORT map (
-        clk => debug_clk,
-        probe_out0 => reset,
+--    vio : entity work.vio_0
+--    PORT map (
+--        clk => debug_clk,
+--        probe_out0 => reset,
 --        probe_out1 => trigger
-        probe_out1 => open
-    );
+--        probe_out1 => open
+--    );
     
     pulse30Hz : entity work.c_counter_binary_0
     Port Map (

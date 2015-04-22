@@ -1,7 +1,7 @@
 Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2014.2 (lin64) Build 932637 Wed Jun 11 13:08:52 MDT 2014
-| Date             : Wed Apr 22 11:51:00 2015
+| Date             : Wed Apr 22 14:47:38 2015
 | Host             : com1549.eecs.utk.edu running 64-bit Red Hat Enterprise Linux Server release 6.5 (Santiago)
 | Command          : report_power -file top_level_power_routed.rpt -pb top_level_power_summary_routed.pb
 | Design           : top_level
@@ -30,12 +30,13 @@ Table of Contents
 ----------
 
 +--------------------------+-------+
-| Total On-Chip Power (W)  | 0.419 |
-| Dynamic (W)              | 0.321 |
-| Device Static (W)        | 0.098 |
+| Total On-Chip Power (W)  | 0.468 |
+| Dynamic (W)              | 0.370 |
+| Device Static (W)        | 0.099 |
+| Total Off-Chip Power (W) | 0.000 |
 | Effective TJA (C/W)      | 4.6   |
-| Max Ambient (C)          | 83.1  |
-| Junction Temperature (C) | 26.9  |
+| Max Ambient (C)          | 82.9  |
+| Junction Temperature (C) | 27.1  |
 | Confidence Level         | Low   |
 | Setting File             | ---   |
 | Simulation Activity File | ---   |
@@ -46,27 +47,26 @@ Table of Contents
 1.1 On-Chip Components
 ----------------------
 
-+--------------------------+-----------+----------+-----------+-----------------+
-| On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
-+--------------------------+-----------+----------+-----------+-----------------+
-| Clocks                   |     0.025 |       11 |       --- |             --- |
-| Slice Logic              |     0.017 |    17007 |       --- |             --- |
-|   LUT as Logic           |     0.016 |     5515 |     63400 |            8.69 |
-|   CARRY4                 |    <0.001 |      432 |     15850 |            2.72 |
-|   Register               |    <0.001 |     8216 |    126800 |            6.47 |
-|   F7/F8 Muxes            |    <0.001 |      307 |     63400 |            0.48 |
-|   LUT as Shift Register  |    <0.001 |      251 |     19000 |            1.32 |
-|   LUT as Distributed RAM |    <0.001 |       24 |     19000 |            0.12 |
-|   BUFG                   |    <0.001 |        1 |        32 |            3.12 |
-|   Others                 |     0.000 |      732 |       --- |             --- |
-| Signals                  |     0.021 |    13080 |       --- |             --- |
-| Block RAM                |     0.015 |       11 |       135 |            8.14 |
-| MMCM                     |     0.221 |        2 |         6 |           33.33 |
-| DSPs                     |    <0.001 |       23 |       240 |            9.58 |
-| I/O                      |     0.021 |       91 |       210 |           43.33 |
-| Static Power             |     0.098 |          |           |                 |
-| Total                    |     0.419 |          |           |                 |
-+--------------------------+-----------+----------+-----------+-----------------+
++-------------------------+-----------+----------+-----------+-----------------+
+| On-Chip                 | Power (W) | Used     | Available | Utilization (%) |
++-------------------------+-----------+----------+-----------+-----------------+
+| Clocks                  |     0.023 |        9 |       --- |             --- |
+| Slice Logic             |     0.025 |    15616 |       --- |             --- |
+|   LUT as Logic          |     0.021 |     5146 |     63400 |            8.11 |
+|   Register              |     0.001 |     7437 |    126800 |            5.86 |
+|   CARRY4                |     0.001 |      422 |     15850 |            2.66 |
+|   LUT as Shift Register |    <0.001 |      251 |     19000 |            1.32 |
+|   F7/F8 Muxes           |    <0.001 |      267 |     63400 |            0.42 |
+|   BUFG                  |    <0.001 |        1 |        32 |            3.12 |
+|   Others                |     0.000 |      653 |       --- |             --- |
+| Signals                 |     0.038 |    12098 |       --- |             --- |
+| Block RAM               |     0.024 |       11 |       135 |            8.14 |
+| MMCM                    |     0.220 |        2 |         6 |           33.33 |
+| DSPs                    |     0.019 |       23 |       240 |            9.58 |
+| I/O                     |     0.021 |       92 |       210 |           43.80 |
+| Static Power            |     0.099 |          |           |                 |
+| Total                   |     0.468 |          |           |                 |
++-------------------------+-----------+----------+-----------+-----------------+
 
 
 1.2 Power Supply Summary
@@ -75,7 +75,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.095 |       0.079 |      0.016 |
+| Vccint    |       1.000 |     0.144 |       0.127 |      0.016 |
 | Vccaux    |       1.800 |     0.141 |       0.123 |      0.018 |
 | Vcco33    |       3.300 |     0.010 |       0.006 |      0.004 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -84,7 +84,7 @@ Table of Contents
 | Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |
 | Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |
 | Vccaux_io |       0.000 |     0.000 |       0.000 |      0.000 |
-| Vccbram   |       1.000 |     0.002 |       0.001 |      0.000 |
+| Vccbram   |       1.000 |     0.002 |       0.002 |      0.000 |
 | MGTAVcc   |       1.000 |     0.000 |       0.000 |      0.000 |
 | MGTAVtt   |       1.200 |     0.000 |       0.000 |      0.000 |
 | Vccadc    |       1.800 |     0.020 |       0.000 |      0.020 |
@@ -128,19 +128,16 @@ Table of Contents
 2.2 Clock Constraints
 ---------------------
 
-+---------------------------------------------------------+-------------------------------------------+-----------------+
-| Clock                                                   | Domain                                    | Constraint (ns) |
-+---------------------------------------------------------+-------------------------------------------+-----------------+
-| clk_25out_clk_wiz_vga                                   | vga_comp/clk_wiz/U0/clk_25out_clk_wiz_vga |            40.0 |
-| clkfbout_clk_wiz_vga                                    | vga_comp/clk_wiz/U0/clkfbout_clk_wiz_vga  |            40.0 |
-| clkfbout_clk_wiz_0                                      | clk_debug/U0/clkfbout_clk_wiz_0           |            10.0 |
-| clk_out1_clk_wiz_0                                      | clk_debug/U0/clk_out1_clk_wiz_0           |             5.0 |
-| clk_out3_clk_wiz_0                                      | clk_debug/U0/clk_out3_clk_wiz_0           |            20.0 |
-| sys_clk_pin                                             | clk                                       |            10.0 |
-| sys_clk_pin                                             | xlnx_opt__1                               |            10.0 |
-| dbg_hub/inst/bscan_inst/SERIES7_BSCAN.bscan_inst/DRCK   | dbg_hub/inst/bscan_inst/DRCK              |            30.0 |
-| dbg_hub/inst/bscan_inst/SERIES7_BSCAN.bscan_inst/UPDATE | dbg_hub/inst/bscan_inst/UPDATE            |            60.0 |
-+---------------------------------------------------------+-------------------------------------------+-----------------+
++-----------------------+-------------------------------------------+-----------------+
+| Clock                 | Domain                                    | Constraint (ns) |
++-----------------------+-------------------------------------------+-----------------+
+| sys_clk_pin           | xlnx_opt__2                               |            10.0 |
+| sys_clk_pin           | clk                                       |            10.0 |
+| clkfbout_clk_wiz_vga  | vga_comp/clk_wiz/U0/clkfbout_clk_wiz_vga  |            40.0 |
+| clk_25out_clk_wiz_vga | vga_comp/clk_wiz/U0/clk_25out_clk_wiz_vga |            40.0 |
+| clkfbout_clk_wiz_0    | clk_debug/U0/clkfbout_clk_wiz_0           |            10.0 |
+| clk_out3_clk_wiz_0    | clk_debug/U0/clk_out3_clk_wiz_0           |            20.0 |
++-----------------------+-------------------------------------------+-----------------+
 
 
 3. Detailed Reports
@@ -152,96 +149,24 @@ Table of Contents
 +--------------------------------------------------------------------------------------------+-----------+
 | Name                                                                                       | Power (W) |
 +--------------------------------------------------------------------------------------------+-----------+
-| top_level                                                                                  |     0.321 |
-|   clk_debug                                                                                |     0.106 |
-|     U0                                                                                     |     0.106 |
-|   dbg_hub                                                                                  |     0.008 |
-|     inst                                                                                   |     0.008 |
-|       UUT_MASTER                                                                           |     0.008 |
-|         U_ICON_INTERFACE                                                                   |     0.005 |
-|           U_CMD1                                                                           |    <0.001 |
-|           U_CMD2                                                                           |    <0.001 |
-|           U_CMD3                                                                           |    <0.001 |
-|           U_CMD4                                                                           |    <0.001 |
-|           U_CMD5                                                                           |    <0.001 |
-|           U_CMD6_RD                                                                        |     0.002 |
-|             U_RD_FIFO                                                                      |     0.002 |
-|               SUBCORE_FIFO.xsdb_rdfifo_inst                                                |     0.002 |
-|                 inst_fifo_gen                                                              |     0.002 |
-|                   gconvfifo.rf                                                             |     0.002 |
-|                     grf.rf                                                                 |     0.002 |
-|                       gntv_or_sync_fifo.gcx.clkx                                           |    <0.001 |
-|                         gsync_stage[1].rd_stg_inst                                         |    <0.001 |
-|                         gsync_stage[1].wr_stg_inst                                         |    <0.001 |
-|                         gsync_stage[2].rd_stg_inst                                         |    <0.001 |
-|                         gsync_stage[2].wr_stg_inst                                         |    <0.001 |
-|                       gntv_or_sync_fifo.gl0.rd                                             |    <0.001 |
-|                         gr1.rfwft                                                          |    <0.001 |
-|                         gras.rsts                                                          |    <0.001 |
-|                         rpntr                                                              |    <0.001 |
-|                       gntv_or_sync_fifo.gl0.wr                                             |    <0.001 |
-|                         gwas.wsts                                                          |    <0.001 |
-|                         wpntr                                                              |    <0.001 |
-|                       gntv_or_sync_fifo.mem                                                |    <0.001 |
-|                         gdm.dm                                                             |    <0.001 |
-|                           RAM_reg_0_15_0_5                                                 |    <0.001 |
-|                           RAM_reg_0_15_12_15                                               |    <0.001 |
-|                           RAM_reg_0_15_6_11                                                |    <0.001 |
-|                       rstblk                                                               |    <0.001 |
-|           U_CMD6_WR                                                                        |     0.002 |
-|             U_WR_FIFO                                                                      |     0.002 |
-|               SUBCORE_FIFO.xsdb_wrfifo_inst                                                |     0.002 |
-|                 inst_fifo_gen                                                              |     0.002 |
-|                   gconvfifo.rf                                                             |     0.002 |
-|                     grf.rf                                                                 |     0.002 |
-|                       gntv_or_sync_fifo.gcx.clkx                                           |    <0.001 |
-|                         gsync_stage[1].rd_stg_inst                                         |    <0.001 |
-|                         gsync_stage[1].wr_stg_inst                                         |    <0.001 |
-|                         gsync_stage[2].rd_stg_inst                                         |    <0.001 |
-|                         gsync_stage[2].wr_stg_inst                                         |    <0.001 |
-|                       gntv_or_sync_fifo.gl0.rd                                             |    <0.001 |
-|                         gras.rsts                                                          |    <0.001 |
-|                         rpntr                                                              |    <0.001 |
-|                       gntv_or_sync_fifo.gl0.wr                                             |    <0.001 |
-|                         gwas.wsts                                                          |    <0.001 |
-|                         wpntr                                                              |    <0.001 |
-|                       gntv_or_sync_fifo.mem                                                |    <0.001 |
-|                         gdm.dm                                                             |    <0.001 |
-|                           RAM_reg_0_15_0_5                                                 |    <0.001 |
-|                           RAM_reg_0_15_12_15                                               |    <0.001 |
-|                           RAM_reg_0_15_6_11                                                |    <0.001 |
-|                       rstblk                                                               |    <0.001 |
-|           U_CMD7_CTL                                                                       |    <0.001 |
-|           U_CMD7_STAT                                                                      |    <0.001 |
-|           U_STATIC_STATUS                                                                  |    <0.001 |
-|         U_XSDB_ADDRESS_CONTROLLER                                                          |    <0.001 |
-|         U_XSDB_BURST_WD_LEN_CONTROLLER                                                     |    <0.001 |
-|         U_XSDB_BUS_CONTROLLER                                                              |     0.002 |
-|           U_CLR_ERROR_FLAG                                                                 |    <0.001 |
-|           U_RD_ABORT_FLAG                                                                  |    <0.001 |
-|           U_RD_REQ_FLAG                                                                    |    <0.001 |
-|           U_TIMER                                                                          |     0.001 |
-|         U_XSDB_BUS_MSTR2SL_PORT_IFACE                                                      |    <0.001 |
-|       U_ICON                                                                               |    <0.001 |
-|         U_CMD                                                                              |    <0.001 |
-|         U_STAT                                                                             |    <0.001 |
-|         U_SYNC                                                                             |    <0.001 |
-|       bscan_inst                                                                           |    <0.001 |
+| top_level                                                                                  |     0.370 |
+|   clk_debug                                                                                |     0.105 |
+|     U0                                                                                     |     0.105 |
 |   decoder                                                                                  |     0.002 |
-|   disp_draw_inst                                                                           |     0.031 |
-|     avg_inst                                                                               |     0.003 |
-|     mag_inst                                                                               |     0.017 |
+|   disp_draw_inst                                                                           |     0.034 |
+|     avg_inst                                                                               |     0.004 |
+|     mag_inst                                                                               |     0.019 |
 |       imagSquare                                                                           |    <0.001 |
 |         U0                                                                                 |    <0.001 |
 |           i_mult                                                                           |    <0.001 |
 |             gDSP.gDSP_only.iDSP                                                            |    <0.001 |
 |               inferred_dsp.Pdelay                                                          |     0.000 |
-|       magSqRt                                                                              |     0.008 |
-|         U0                                                                                 |     0.008 |
-|           i_synth                                                                          |     0.008 |
+|       magSqRt                                                                              |     0.009 |
+|         U0                                                                                 |     0.009 |
+|           i_synth                                                                          |     0.009 |
 |             i_nd_to_rdy                                                                    |    <0.001 |
-|             i_synth                                                                        |     0.008 |
-|               gen_sqrt.square_root                                                         |     0.008 |
+|             i_synth                                                                        |     0.009 |
+|               gen_sqrt.square_root                                                         |     0.009 |
 |                 gen_iterations[10].gen_post_mid.gen_rem                                    |    <0.001 |
 |                   gen_data_int                                                             |    <0.001 |
 |                   gen_rem_inc                                                              |    <0.001 |
@@ -376,14 +301,14 @@ Table of Contents
 |                 i_synth_option.i_synth_model                                               |    <0.001 |
 |                   opt_vx7.i_uniwrap                                                        |    <0.001 |
 |   divide                                                                                   |    <0.001 |
-|   fft                                                                                      |     0.013 |
-|     U0                                                                                     |     0.013 |
-|       i_synth                                                                              |     0.013 |
-|         axi_wrapper                                                                        |    <0.001 |
+|   fft                                                                                      |     0.069 |
+|     U0                                                                                     |     0.069 |
+|       i_synth                                                                              |     0.069 |
+|         axi_wrapper                                                                        |     0.003 |
 |           config_channel_fifo                                                              |    <0.001 |
 |             gen_non_real_time.data_in_fifo_pt1                                             |    <0.001 |
 |               fifo0                                                                        |    <0.001 |
-|           data_in_channel_fifo                                                             |    <0.001 |
+|           data_in_channel_fifo                                                             |     0.001 |
 |             gen_non_real_time.data_in_fifo_pt1                                             |    <0.001 |
 |               fifo0                                                                        |    <0.001 |
 |           data_out_channel                                                                 |    <0.001 |
@@ -392,48 +317,48 @@ Table of Contents
 |           gen_status_channel.status_fifo                                                   |    <0.001 |
 |             gen_non_real_time.fifo                                                         |    <0.001 |
 |               fifo0                                                                        |    <0.001 |
-|         xfft_inst                                                                          |     0.012 |
-|           non_floating_point.arch_b.xfft_inst                                              |     0.012 |
-|             control                                                                        |     0.002 |
+|         xfft_inst                                                                          |     0.065 |
+|           non_floating_point.arch_b.xfft_inst                                              |     0.065 |
+|             control                                                                        |     0.007 |
 |               control                                                                      |    <0.001 |
 |                 bfp_sclr_gen.sclr_register_bfp                                             |    <0.001 |
 |                 has_unload.unloading_state                                                 |    <0.001 |
 |                 loading_state                                                              |    <0.001 |
 |                 nat_out_xk_index.no_cyclic_prefix.xk_index_counter                         |    <0.001 |
-|                   cnt_async                                                                |     0.000 |
-|                     i_baseblox.i_baseblox_addsub                                           |     0.000 |
-|                       no_pipelining.the_addsub                                             |     0.000 |
-|                         i_lut6.i_lut6_addsub                                               |     0.000 |
-|                   threshold                                                                |     0.000 |
+|                   cnt_async                                                                |    <0.001 |
+|                     i_baseblox.i_baseblox_addsub                                           |    <0.001 |
+|                       no_pipelining.the_addsub                                             |    <0.001 |
+|                         i_lut6.i_lut6_addsub                                               |    <0.001 |
+|                   threshold                                                                |    <0.001 |
 |                 need_output_sclr.sclr_register                                             |    <0.001 |
 |                 need_we_process_sclr.delay_i_we                                            |    <0.001 |
 |                   no_sclr_lut.real_shift_ram.use_baseblock.not_use_hlutnm_srls.i_shift_ram |    <0.001 |
 |                     i_bb_inst                                                              |    <0.001 |
 |                 need_we_process_sclr.sclr_register_we                                      |    <0.001 |
 |                 pe_cnt                                                                     |    <0.001 |
-|                   cnt_async                                                                |     0.000 |
-|                     i_baseblox.i_baseblox_addsub                                           |     0.000 |
-|                       no_pipelining.the_addsub                                             |     0.000 |
-|                         i_lut6.i_lut6_addsub                                               |     0.000 |
-|                   threshold                                                                |     0.000 |
+|                   cnt_async                                                                |    <0.001 |
+|                     i_baseblox.i_baseblox_addsub                                           |    <0.001 |
+|                       no_pipelining.the_addsub                                             |    <0.001 |
+|                         i_lut6.i_lut6_addsub                                               |    <0.001 |
+|                   threshold                                                                |    <0.001 |
 |                 processing_state                                                           |    <0.001 |
 |                 rank_0_cnt                                                                 |    <0.001 |
-|                   cnt_async                                                                |     0.000 |
-|                     i_baseblox.i_baseblox_addsub                                           |     0.000 |
-|                       no_pipelining.the_addsub                                             |     0.000 |
-|                         i_lut6.i_lut6_addsub                                               |     0.000 |
+|                   cnt_async                                                                |    <0.001 |
+|                     i_baseblox.i_baseblox_addsub                                           |    <0.001 |
+|                       no_pipelining.the_addsub                                             |    <0.001 |
+|                         i_lut6.i_lut6_addsub                                               |    <0.001 |
 |                 rn_0_cnt                                                                   |    <0.001 |
-|                   cnt_async                                                                |     0.000 |
-|                     i_baseblox.i_baseblox_addsub                                           |     0.000 |
-|                       no_pipelining.the_addsub                                             |     0.000 |
-|                         i_lut6.i_lut6_addsub                                               |     0.000 |
-|                   threshold                                                                |     0.000 |
+|                   cnt_async                                                                |    <0.001 |
+|                     i_baseblox.i_baseblox_addsub                                           |    <0.001 |
+|                       no_pipelining.the_addsub                                             |    <0.001 |
+|                         i_lut6.i_lut6_addsub                                               |    <0.001 |
+|                   threshold                                                                |    <0.001 |
 |                 xn_index_counter                                                           |    <0.001 |
-|                   cnt_async                                                                |     0.000 |
-|                     i_baseblox.i_baseblox_addsub                                           |     0.000 |
-|                       no_pipelining.the_addsub                                             |     0.000 |
-|                         i_lut6.i_lut6_addsub                                               |     0.000 |
-|                   threshold                                                                |     0.000 |
+|                   cnt_async                                                                |    <0.001 |
+|                     i_baseblox.i_baseblox_addsub                                           |    <0.001 |
+|                       no_pipelining.the_addsub                                             |    <0.001 |
+|                         i_lut6.i_lut6_addsub                                               |    <0.001 |
+|                   threshold                                                                |    <0.001 |
 |               delay_line2_for_rfd                                                          |    <0.001 |
 |                 no_sclr_lut.real_shift_ram.use_baseblock.not_use_hlutnm_srls.i_shift_ram   |    <0.001 |
 |                   i_bb_inst                                                                |    <0.001 |
@@ -537,28 +462,28 @@ Table of Contents
 |                   N_MAX_4096.mux1                                                          |    <0.001 |
 |                   N_MAX_4096_MUX_FOR_P2.mux                                                |    <0.001 |
 |                     four_to_one.four_to_one_mux                                            |    <0.001 |
-|                   tw3_add_addsub.tw3_add                                                   |     0.000 |
-|                     i_baseblox.i_baseblox_addsub                                           |     0.000 |
-|                       no_pipelining.the_addsub                                             |     0.000 |
-|                         i_lut6.i_lut6_addsub                                               |     0.000 |
-|               twiddle_generator1                                                           |    <0.001 |
-|                 tw1.twgen1                                                                 |    <0.001 |
+|                   tw3_add_addsub.tw3_add                                                   |    <0.001 |
+|                     i_baseblox.i_baseblox_addsub                                           |    <0.001 |
+|                       no_pipelining.the_addsub                                             |    <0.001 |
+|                         i_lut6.i_lut6_addsub                                               |    <0.001 |
+|               twiddle_generator1                                                           |     0.002 |
+|                 tw1.twgen1                                                                 |     0.002 |
 |                   cos_addr_2s_comp                                                         |    <0.001 |
 |                   rom_addr_zero_compare                                                    |    <0.001 |
 |                   sin_addr_2s_comp                                                         |    <0.001 |
-|               twiddle_generator2                                                           |    <0.001 |
-|                 tw1.twgen1                                                                 |    <0.001 |
+|               twiddle_generator2                                                           |     0.002 |
+|                 tw1.twgen1                                                                 |     0.002 |
 |                   cos_addr_2s_comp                                                         |    <0.001 |
 |                   rom_addr_zero_compare                                                    |    <0.001 |
 |                   sin_addr_2s_comp                                                         |    <0.001 |
-|               twiddle_generator3                                                           |    <0.001 |
-|                 tw1.twgen1                                                                 |    <0.001 |
+|               twiddle_generator3                                                           |     0.002 |
+|                 tw1.twgen1                                                                 |     0.002 |
 |                   cos_addr_2s_comp                                                         |    <0.001 |
 |                   rom_addr_zero_compare                                                    |    <0.001 |
 |                   sin_addr_2s_comp                                                         |    <0.001 |
-|             single_channel.datapath                                                        |     0.010 |
+|             single_channel.datapath                                                        |     0.058 |
 |               bfp_scaling.input_ranger_inst                                                |    <0.001 |
-|                 max_finder                                                                 |     0.000 |
+|                 max_finder                                                                 |    <0.001 |
 |               bfp_scaling.pe_ranger_inst                                                   |    <0.001 |
 |                 ranger_ai                                                                  |    <0.001 |
 |                 ranger_ar                                                                  |    <0.001 |
@@ -592,171 +517,171 @@ Table of Contents
 |               input_muxes[2].write_data_re_mux                                             |    <0.001 |
 |               input_muxes[3].write_data_im_mux                                             |    <0.001 |
 |               input_muxes[3].write_data_re_mux                                             |    <0.001 |
-|               memories[0].blkmem_gen.use_bram_only.dpms                                    |     0.001 |
-|               memories[1].blkmem_gen.use_bram_only.dpms                                    |     0.001 |
-|               memories[2].blkmem_gen.use_bram_only.dpms                                    |     0.001 |
-|               memories[3].blkmem_gen.use_bram_only.dpms                                    |     0.001 |
-|               o_switch_im                                                                  |    <0.001 |
+|               memories[0].blkmem_gen.use_bram_only.dpms                                    |     0.002 |
+|               memories[1].blkmem_gen.use_bram_only.dpms                                    |     0.002 |
+|               memories[2].blkmem_gen.use_bram_only.dpms                                    |     0.002 |
+|               memories[3].blkmem_gen.use_bram_only.dpms                                    |     0.002 |
+|               o_switch_im                                                                  |     0.001 |
 |                 o0_gen                                                                     |    <0.001 |
 |                 o1_gen                                                                     |    <0.001 |
 |                 o2_gen                                                                     |    <0.001 |
 |                 o3_gen                                                                     |    <0.001 |
-|               o_switch_re                                                                  |    <0.001 |
+|               o_switch_re                                                                  |     0.001 |
 |                 o0_gen                                                                     |    <0.001 |
 |                 o1_gen                                                                     |    <0.001 |
 |                 o2_gen                                                                     |    <0.001 |
 |                 o3_gen                                                                     |    <0.001 |
 |               output_selector_im                                                           |    <0.001 |
 |               output_selector_re                                                           |    <0.001 |
-|               pe                                                                           |     0.005 |
-|                 mult_gen.Mult1                                                             |    <0.001 |
-|                   i_cmpy                                                                   |    <0.001 |
-|                     three_mult_structure.use_dsp.i_dsp48                                   |    <0.001 |
+|               pe                                                                           |     0.045 |
+|                 mult_gen.Mult1                                                             |     0.006 |
+|                   i_cmpy                                                                   |     0.006 |
+|                     three_mult_structure.use_dsp.i_dsp48                                   |     0.006 |
 |                       dsp_preadder_1.reg_bi_inv                                            |     0.000 |
 |                       dsp_preadder_1.reg_mult1_preadd_d                                    |    <0.001 |
 |                       dsp_preadder_1.reg_mult1_preadd_sum                                  |     0.000 |
 |                       dsp_preadder_3.reg_br_inv                                            |     0.000 |
 |                       dsp_preadder_3.reg_mult3_preadd_d                                    |     0.000 |
 |                       dsp_preadder_3.reg_mult3_preadd_sum                                  |     0.000 |
-|                       mult1_preadder_d_plus_a.mult1                                        |    <0.001 |
-|                         mult                                                               |    <0.001 |
+|                       mult1_preadder_d_plus_a.mult1                                        |     0.002 |
+|                         mult                                                               |     0.002 |
 |                           use_prim.appDSP48[0].bppDSP48[0].need_output_delay.output_delay  |     0.000 |
 |                           use_prim.iAdelx[0].iAdely[0].use_delay_line.Adelay               |    <0.001 |
 |                           use_prim.iBdelx[0].iBdely[0].need_delay_line.Bdelay              |    <0.001 |
-|                       mult2_preadder_d_plus_a.mult2                                        |    <0.001 |
-|                         mult                                                               |    <0.001 |
+|                       mult2_preadder_d_plus_a.mult2                                        |     0.002 |
+|                         mult                                                               |     0.002 |
 |                           use_prim.appDSP48[0].bppDSP48[0].need_output_delay.output_delay  |     0.000 |
 |                           use_prim.iAdelx[0].iAdely[0].use_delay_line.Adelay               |     0.000 |
 |                           use_prim.iBdelx[0].iBdely[0].need_delay_line.Bdelay              |     0.000 |
-|                       mult3_preadder_d_minus_a.mult3                                       |    <0.001 |
-|                         mult                                                               |    <0.001 |
+|                       mult3_preadder_d_minus_a.mult3                                       |     0.001 |
+|                         mult                                                               |     0.001 |
 |                           use_prim.appDSP48[0].bppDSP48[0].need_output_delay.output_delay  |     0.000 |
 |                           use_prim.iAdelx[0].iAdely[0].use_delay_line.Adelay               |    <0.001 |
 |                           use_prim.iBdelx[0].iBdely[0].need_delay_line.Bdelay              |    <0.001 |
 |                       optionally_negate_inputs                                             |    <0.001 |
 |                       pi_post_delay                                                        |     0.000 |
 |                       pr_post_delay                                                        |     0.000 |
-|                 mult_gen.Mult2                                                             |    <0.001 |
-|                   i_cmpy                                                                   |    <0.001 |
-|                     three_mult_structure.use_dsp.i_dsp48                                   |    <0.001 |
+|                 mult_gen.Mult2                                                             |     0.006 |
+|                   i_cmpy                                                                   |     0.006 |
+|                     three_mult_structure.use_dsp.i_dsp48                                   |     0.006 |
 |                       dsp_preadder_1.reg_bi_inv                                            |     0.000 |
 |                       dsp_preadder_1.reg_mult1_preadd_d                                    |    <0.001 |
 |                       dsp_preadder_1.reg_mult1_preadd_sum                                  |     0.000 |
 |                       dsp_preadder_3.reg_br_inv                                            |     0.000 |
 |                       dsp_preadder_3.reg_mult3_preadd_d                                    |     0.000 |
 |                       dsp_preadder_3.reg_mult3_preadd_sum                                  |     0.000 |
-|                       mult1_preadder_d_plus_a.mult1                                        |    <0.001 |
-|                         mult                                                               |    <0.001 |
+|                       mult1_preadder_d_plus_a.mult1                                        |     0.002 |
+|                         mult                                                               |     0.002 |
 |                           use_prim.appDSP48[0].bppDSP48[0].need_output_delay.output_delay  |     0.000 |
 |                           use_prim.iAdelx[0].iAdely[0].use_delay_line.Adelay               |    <0.001 |
 |                           use_prim.iBdelx[0].iBdely[0].need_delay_line.Bdelay              |    <0.001 |
-|                       mult2_preadder_d_plus_a.mult2                                        |    <0.001 |
-|                         mult                                                               |    <0.001 |
+|                       mult2_preadder_d_plus_a.mult2                                        |     0.002 |
+|                         mult                                                               |     0.002 |
 |                           use_prim.appDSP48[0].bppDSP48[0].need_output_delay.output_delay  |     0.000 |
 |                           use_prim.iAdelx[0].iAdely[0].use_delay_line.Adelay               |     0.000 |
 |                           use_prim.iBdelx[0].iBdely[0].need_delay_line.Bdelay              |     0.000 |
-|                       mult3_preadder_d_minus_a.mult3                                       |    <0.001 |
-|                         mult                                                               |    <0.001 |
+|                       mult3_preadder_d_minus_a.mult3                                       |     0.001 |
+|                         mult                                                               |     0.001 |
 |                           use_prim.appDSP48[0].bppDSP48[0].need_output_delay.output_delay  |     0.000 |
 |                           use_prim.iAdelx[0].iAdely[0].use_delay_line.Adelay               |    <0.001 |
 |                           use_prim.iBdelx[0].iBdely[0].need_delay_line.Bdelay              |    <0.001 |
 |                       optionally_negate_inputs                                             |    <0.001 |
 |                       pi_post_delay                                                        |     0.000 |
 |                       pr_post_delay                                                        |     0.000 |
-|                 mult_gen.Mult3                                                             |    <0.001 |
-|                   i_cmpy                                                                   |    <0.001 |
-|                     three_mult_structure.use_dsp.i_dsp48                                   |    <0.001 |
+|                 mult_gen.Mult3                                                             |     0.006 |
+|                   i_cmpy                                                                   |     0.006 |
+|                     three_mult_structure.use_dsp.i_dsp48                                   |     0.006 |
 |                       dsp_preadder_1.reg_bi_inv                                            |     0.000 |
 |                       dsp_preadder_1.reg_mult1_preadd_d                                    |    <0.001 |
 |                       dsp_preadder_1.reg_mult1_preadd_sum                                  |     0.000 |
 |                       dsp_preadder_3.reg_br_inv                                            |     0.000 |
 |                       dsp_preadder_3.reg_mult3_preadd_d                                    |     0.000 |
 |                       dsp_preadder_3.reg_mult3_preadd_sum                                  |     0.000 |
-|                       mult1_preadder_d_plus_a.mult1                                        |    <0.001 |
-|                         mult                                                               |    <0.001 |
+|                       mult1_preadder_d_plus_a.mult1                                        |     0.002 |
+|                         mult                                                               |     0.002 |
 |                           use_prim.appDSP48[0].bppDSP48[0].need_output_delay.output_delay  |     0.000 |
 |                           use_prim.iAdelx[0].iAdely[0].use_delay_line.Adelay               |    <0.001 |
 |                           use_prim.iBdelx[0].iBdely[0].need_delay_line.Bdelay              |    <0.001 |
-|                       mult2_preadder_d_plus_a.mult2                                        |    <0.001 |
-|                         mult                                                               |    <0.001 |
+|                       mult2_preadder_d_plus_a.mult2                                        |     0.002 |
+|                         mult                                                               |     0.002 |
 |                           use_prim.appDSP48[0].bppDSP48[0].need_output_delay.output_delay  |     0.000 |
 |                           use_prim.iAdelx[0].iAdely[0].use_delay_line.Adelay               |     0.000 |
 |                           use_prim.iBdelx[0].iBdely[0].need_delay_line.Bdelay              |     0.000 |
-|                       mult3_preadder_d_minus_a.mult3                                       |    <0.001 |
-|                         mult                                                               |    <0.001 |
+|                       mult3_preadder_d_minus_a.mult3                                       |     0.001 |
+|                         mult                                                               |     0.001 |
 |                           use_prim.appDSP48[0].bppDSP48[0].need_output_delay.output_delay  |     0.000 |
 |                           use_prim.iAdelx[0].iAdely[0].use_delay_line.Adelay               |    <0.001 |
 |                           use_prim.iBdelx[0].iBdely[0].need_delay_line.Bdelay              |    <0.001 |
 |                       optionally_negate_inputs                                             |    <0.001 |
 |                       pi_post_delay                                                        |     0.000 |
 |                       pr_post_delay                                                        |     0.000 |
-|                 mult_gen.dsp48_dragonfly.dragonfly_inst                                    |    <0.001 |
-|                   BF_0                                                                     |    <0.001 |
-|                     dsp48e_simd.bf_dsp48e_simd_bypass                                      |    <0.001 |
-|                   BF_1                                                                     |    <0.001 |
-|                     dsp48e_simd.bf_dsp48e_simd_mul_j_byp                                   |    <0.001 |
-|                   BF_2                                                                     |    <0.001 |
-|                     dsp48e_simd.bf_dsp48e_simd                                             |    <0.001 |
-|                   BF_3                                                                     |    <0.001 |
-|                     dsp48e_simd.bf_dsp48e_simd                                             |    <0.001 |
+|                 mult_gen.dsp48_dragonfly.dragonfly_inst                                    |     0.013 |
+|                   BF_0                                                                     |     0.002 |
+|                     dsp48e_simd.bf_dsp48e_simd_bypass                                      |     0.002 |
+|                   BF_1                                                                     |     0.003 |
+|                     dsp48e_simd.bf_dsp48e_simd_mul_j_byp                                   |     0.003 |
+|                   BF_2                                                                     |     0.002 |
+|                     dsp48e_simd.bf_dsp48e_simd                                             |     0.002 |
+|                   BF_3                                                                     |     0.002 |
+|                     dsp48e_simd.bf_dsp48e_simd                                             |     0.002 |
 |                   needs_bypass_balancer.bypass_balancer                                    |    <0.001 |
 |                 mult_gen.pipeline_balancer_im                                              |    <0.001 |
 |                 mult_gen.pipeline_balancer_re                                              |    <0.001 |
 |                 rounder_inst.with_mults.rounder_0i                                         |    <0.001 |
-|                   gated_incrementer                                                        |     0.000 |
-|                     i_baseblox.i_baseblox_addsub                                           |     0.000 |
-|                       no_pipelining.the_addsub                                             |     0.000 |
-|                         i_lut6.i_lut6_addsub                                               |     0.000 |
-|                   pos_fullscale_detect                                                     |     0.000 |
+|                   gated_incrementer                                                        |    <0.001 |
+|                     i_baseblox.i_baseblox_addsub                                           |    <0.001 |
+|                       no_pipelining.the_addsub                                             |    <0.001 |
+|                         i_lut6.i_lut6_addsub                                               |    <0.001 |
+|                   pos_fullscale_detect                                                     |    <0.001 |
 |                   reg_gate.delay_d_2                                                       |    <0.001 |
 |                 rounder_inst.with_mults.rounder_0r                                         |    <0.001 |
-|                   gated_incrementer                                                        |     0.000 |
-|                     i_baseblox.i_baseblox_addsub                                           |     0.000 |
-|                       no_pipelining.the_addsub                                             |     0.000 |
-|                         i_lut6.i_lut6_addsub                                               |     0.000 |
-|                   pos_fullscale_detect                                                     |     0.000 |
+|                   gated_incrementer                                                        |    <0.001 |
+|                     i_baseblox.i_baseblox_addsub                                           |    <0.001 |
+|                       no_pipelining.the_addsub                                             |    <0.001 |
+|                         i_lut6.i_lut6_addsub                                               |    <0.001 |
+|                   pos_fullscale_detect                                                     |    <0.001 |
 |                   reg_gate.delay_d_2                                                       |    <0.001 |
 |                 rounder_inst.with_mults.rounder_1i                                         |    <0.001 |
-|                   gated_incrementer                                                        |     0.000 |
-|                     i_baseblox.i_baseblox_addsub                                           |     0.000 |
-|                       no_pipelining.the_addsub                                             |     0.000 |
-|                         i_lut6.i_lut6_addsub                                               |     0.000 |
-|                   pos_fullscale_detect                                                     |     0.000 |
+|                   gated_incrementer                                                        |    <0.001 |
+|                     i_baseblox.i_baseblox_addsub                                           |    <0.001 |
+|                       no_pipelining.the_addsub                                             |    <0.001 |
+|                         i_lut6.i_lut6_addsub                                               |    <0.001 |
+|                   pos_fullscale_detect                                                     |    <0.001 |
 |                   reg_gate.delay_d_2                                                       |    <0.001 |
 |                 rounder_inst.with_mults.rounder_1r                                         |    <0.001 |
-|                   gated_incrementer                                                        |     0.000 |
-|                     i_baseblox.i_baseblox_addsub                                           |     0.000 |
-|                       no_pipelining.the_addsub                                             |     0.000 |
-|                         i_lut6.i_lut6_addsub                                               |     0.000 |
-|                   pos_fullscale_detect                                                     |     0.000 |
+|                   gated_incrementer                                                        |    <0.001 |
+|                     i_baseblox.i_baseblox_addsub                                           |    <0.001 |
+|                       no_pipelining.the_addsub                                             |    <0.001 |
+|                         i_lut6.i_lut6_addsub                                               |    <0.001 |
+|                   pos_fullscale_detect                                                     |    <0.001 |
 |                   reg_gate.delay_d_2                                                       |    <0.001 |
 |                 rounder_inst.with_mults.rounder_2i                                         |    <0.001 |
-|                   gated_incrementer                                                        |     0.000 |
-|                     i_baseblox.i_baseblox_addsub                                           |     0.000 |
-|                       no_pipelining.the_addsub                                             |     0.000 |
-|                         i_lut6.i_lut6_addsub                                               |     0.000 |
-|                   pos_fullscale_detect                                                     |     0.000 |
+|                   gated_incrementer                                                        |    <0.001 |
+|                     i_baseblox.i_baseblox_addsub                                           |    <0.001 |
+|                       no_pipelining.the_addsub                                             |    <0.001 |
+|                         i_lut6.i_lut6_addsub                                               |    <0.001 |
+|                   pos_fullscale_detect                                                     |    <0.001 |
 |                   reg_gate.delay_d_2                                                       |    <0.001 |
 |                 rounder_inst.with_mults.rounder_2r                                         |    <0.001 |
-|                   gated_incrementer                                                        |     0.000 |
-|                     i_baseblox.i_baseblox_addsub                                           |     0.000 |
-|                       no_pipelining.the_addsub                                             |     0.000 |
-|                         i_lut6.i_lut6_addsub                                               |     0.000 |
-|                   pos_fullscale_detect                                                     |     0.000 |
+|                   gated_incrementer                                                        |    <0.001 |
+|                     i_baseblox.i_baseblox_addsub                                           |    <0.001 |
+|                       no_pipelining.the_addsub                                             |    <0.001 |
+|                         i_lut6.i_lut6_addsub                                               |    <0.001 |
+|                   pos_fullscale_detect                                                     |    <0.001 |
 |                   reg_gate.delay_d_2                                                       |    <0.001 |
 |                 rounder_inst.with_mults.rounder_3i                                         |    <0.001 |
-|                   gated_incrementer                                                        |     0.000 |
-|                     i_baseblox.i_baseblox_addsub                                           |     0.000 |
-|                       no_pipelining.the_addsub                                             |     0.000 |
-|                         i_lut6.i_lut6_addsub                                               |     0.000 |
-|                   pos_fullscale_detect                                                     |     0.000 |
+|                   gated_incrementer                                                        |    <0.001 |
+|                     i_baseblox.i_baseblox_addsub                                           |    <0.001 |
+|                       no_pipelining.the_addsub                                             |    <0.001 |
+|                         i_lut6.i_lut6_addsub                                               |    <0.001 |
+|                   pos_fullscale_detect                                                     |    <0.001 |
 |                   reg_gate.delay_d_2                                                       |    <0.001 |
 |                 rounder_inst.with_mults.rounder_3r                                         |    <0.001 |
-|                   gated_incrementer                                                        |     0.000 |
-|                     i_baseblox.i_baseblox_addsub                                           |     0.000 |
-|                       no_pipelining.the_addsub                                             |     0.000 |
-|                         i_lut6.i_lut6_addsub                                               |     0.000 |
-|                   pos_fullscale_detect                                                     |     0.000 |
+|                   gated_incrementer                                                        |    <0.001 |
+|                     i_baseblox.i_baseblox_addsub                                           |    <0.001 |
+|                       no_pipelining.the_addsub                                             |    <0.001 |
+|                         i_lut6.i_lut6_addsub                                               |    <0.001 |
+|                   pos_fullscale_detect                                                     |    <0.001 |
 |                   reg_gate.delay_d_2                                                       |    <0.001 |
 |                 scaler_gen.scaler_0i                                                       |    <0.001 |
 |                   scale_mux                                                                |    <0.001 |
@@ -774,14 +699,14 @@ Table of Contents
 |                   scale_mux                                                                |    <0.001 |
 |                 scaler_gen.scaler_3r                                                       |    <0.001 |
 |                   scale_mux                                                                |    <0.001 |
-|   fft_fsm                                                                                  |    <0.001 |
-|   fft_ram                                                                                  |     0.006 |
-|     U0                                                                                     |     0.006 |
-|       inst_blk_mem_gen                                                                     |     0.006 |
-|         gnativebmg.native_blk_mem_gen                                                      |     0.006 |
-|           valid.cstr                                                                       |     0.006 |
-|             ramloop[0].ram.r                                                               |     0.006 |
-|               prim_noinit.ram                                                              |     0.006 |
+|   fft_fsm                                                                                  |     0.001 |
+|   fft_ram                                                                                  |     0.008 |
+|     U0                                                                                     |     0.008 |
+|       inst_blk_mem_gen                                                                     |     0.008 |
+|         gnativebmg.native_blk_mem_gen                                                      |     0.008 |
+|           valid.cstr                                                                       |     0.008 |
+|             ramloop[0].ram.r                                                               |     0.008 |
+|               prim_noinit.ram                                                              |     0.008 |
 |   input_ram                                                                                |     0.004 |
 |     U0                                                                                     |     0.004 |
 |       inst_blk_mem_gen                                                                     |     0.004 |
@@ -793,12 +718,12 @@ Table of Contents
 |               prim_init.ram                                                                |     0.002 |
 |   pulse30Hz                                                                                |     0.000 |
 |     U0                                                                                     |     0.000 |
-|   vga_comp                                                                                 |     0.124 |
+|   vga_comp                                                                                 |     0.123 |
 |     clk_wiz                                                                                |     0.115 |
 |       U0                                                                                   |     0.115 |
 |     vga_cont                                                                               |    <0.001 |
-|     vga_disp                                                                               |     0.009 |
-|       Accel_inst                                                                           |     0.001 |
+|     vga_disp                                                                               |     0.008 |
+|       Accel_inst                                                                           |     0.002 |
 |         ADXL_Control                                                                       |    <0.001 |
 |           SPI_Interface                                                                    |    <0.001 |
 |         Accel_Calculation                                                                  |    <0.001 |
@@ -811,13 +736,6 @@ Table of Contents
 |       pwm_blue                                                                             |    <0.001 |
 |       pwm_green                                                                            |    <0.001 |
 |       pwm_red                                                                              |    <0.001 |
-|   vio                                                                                      |     0.002 |
-|     inst                                                                                   |     0.002 |
-|       DECODER_INST                                                                         |    <0.001 |
-|       PROBE_OUT_ALL_INST                                                                   |    <0.001 |
-|         G_PROBE_OUT[0].PROBE_OUT0_INST                                                     |    <0.001 |
-|         G_PROBE_OUT[1].PROBE_OUT0_INST                                                     |    <0.001 |
-|       U_XSDB_SLAVE                                                                         |    <0.001 |
 +--------------------------------------------------------------------------------------------+-----------+
 
 

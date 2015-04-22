@@ -191,8 +191,8 @@ set_property IOSTANDARD LVCMOS33 [get_ports {an[7]}]
 #set_property PACKAGE_PIN C12 [get_ports btnCpuReset]
 #set_property IOSTANDARD LVCMOS33 [get_ports btnCpuReset]
 ##Bank = 15, Pin name = IO_L11N_T1_SRCC_15,					Sch name = BTNC
-#set_property PACKAGE_PIN E16 [get_ports btnC]
-#set_property IOSTANDARD LVCMOS33 [get_ports btnC]
+set_property PACKAGE_PIN E16 [get_ports btnC]
+set_property IOSTANDARD LVCMOS33 [get_ports btnC]
 ##Bank = 15, Pin name = IO_L14P_T2_SRCC_15,					Sch name = BTNU
 #set_property PACKAGE_PIN F15 [get_ports btnU]
 #set_property IOSTANDARD LVCMOS33 [get_ports btnU]
