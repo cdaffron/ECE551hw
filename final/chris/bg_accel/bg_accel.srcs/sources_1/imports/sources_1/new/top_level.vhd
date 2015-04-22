@@ -89,6 +89,7 @@ architecture Behavioral of top_level is
             bars        : in barArray;
             barNumSws   : in std_logic_vector(1 downto 0); 
             enableBG    : in std_logic;
+            colorSel    : in std_logic_vector(1 downto 0);
     
             hsync       : out std_logic;
             vsync       : out std_logic;
@@ -295,6 +296,7 @@ begin
             bars => barHeights,
             barNumSws => sw(1 downto 0),
             enableBG => sw(3),
+            colorSel => sw(5 downto 4),
             hsync => hsync,
             vsync => vsync_sig,
             vga_red => vga_red,

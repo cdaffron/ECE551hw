@@ -46,6 +46,7 @@ package vga_pkg is
             bars      : in barArray;
             barNumSws : in std_logic_vector(1 downto 0);
             enableBG  : in std_logic;
+            colorSel  : in std_logic_vector(1 downto 0);
     
             red       : out std_logic_vector(3 downto 0);
             green     : out std_logic_vector(3 downto 0);

@@ -1,7 +1,7 @@
 Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2014.2 (lin64) Build 932637 Wed Jun 11 13:08:52 MDT 2014
-| Date         : Wed Apr 22 10:24:37 2015
+| Date         : Wed Apr 22 11:25:39 2015
 | Host         : com1549.eecs.utk.edu running 64-bit Red Hat Enterprise Linux Server release 6.5 (Santiago)
 | Command      : report_utilization -file top_level_utilization_synth.rpt -pb top_level_utilization_synth.pb
 | Design       : top_level
@@ -29,13 +29,13 @@ Table of Contents
 +----------------------------+------+-------+-----------+-------+
 |          Site Type         | Used | Fixed | Available | Util% |
 +----------------------------+------+-------+-----------+-------+
-| Slice LUTs*                | 3771 |     0 |     63400 |  5.94 |
-|   LUT as Logic             | 3736 |     0 |     63400 |  5.89 |
+| Slice LUTs*                | 3784 |     0 |     63400 |  5.96 |
+|   LUT as Logic             | 3749 |     0 |     63400 |  5.91 |
 |   LUT as Memory            |   35 |     0 |     19000 |  0.18 |
 |     LUT as Distributed RAM |    0 |     0 |           |       |
 |     LUT as Shift Register  |   35 |     0 |           |       |
-| Slice Registers            | 4048 |     0 |    126800 |  3.19 |
-|   Register as Flip Flop    | 4048 |     0 |    126800 |  3.19 |
+| Slice Registers            | 4062 |     0 |    126800 |  3.20 |
+|   Register as Flip Flop    | 4062 |     0 |    126800 |  3.20 |
 |   Register as Latch        |    0 |     0 |    126800 |  0.00 |
 | F7 Muxes                   |  174 |     0 |     31700 |  0.54 |
 | F8 Muxes                   |   56 |     0 |     15850 |  0.35 |
@@ -49,10 +49,10 @@ Table of Contents
 +-------------------+------+-------+-----------+-------+
 |     Site Type     | Used | Fixed | Available | Util% |
 +-------------------+------+-------+-----------+-------+
-| Block RAM Tile    |    1 |     0 |       135 |  0.74 |
+| Block RAM Tile    |    2 |     0 |       135 |  1.48 |
 |   RAMB36/FIFO*    |    0 |     0 |       135 |  0.00 |
-|   RAMB18          |    2 |     0 |       270 |  0.74 |
-|     RAMB18E1 only |    2 |       |           |       |
+|   RAMB18          |    4 |     0 |       270 |  1.48 |
+|     RAMB18E1 only |    4 |       |           |       |
 +-------------------+------+-------+-----------+-------+
 * Note: Each Block RAM Tile only has one FIFO logic available and therefore can accommodate only one FIFO36E1 or one FIFO18E1. However, if a FIFO18E1 occupies a Block RAM Tile, that tile can still accommodate a RAMB18E1
 
@@ -131,12 +131,12 @@ Table of Contents
 +----------+------+---------------------+
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
-| FDRE     | 3979 |        Flop & Latch |
-| LUT3     | 1811 |                 LUT |
+| FDRE     | 3986 |        Flop & Latch |
+| LUT3     | 1812 |                 LUT |
 | LUT6     | 1172 |                 LUT |
-| LUT4     |  761 |                 LUT |
+| LUT4     |  769 |                 LUT |
 | LUT5     |  459 |                 LUT |
-| LUT2     |  355 |                 LUT |
+| LUT2     |  357 |                 LUT |
 | CARRY4   |  296 |          CarryLogic |
 | LUT1     |  192 |                 LUT |
 | MUXF7    |  174 |               MuxFx |
@@ -144,10 +144,10 @@ Table of Contents
 | MUXF8    |   56 |               MuxFx |
 | FDCE     |   47 |        Flop & Latch |
 | SRL16E   |   35 |  Distributed Memory |
-| FDSE     |   21 |        Flop & Latch |
+| FDSE     |   28 |        Flop & Latch |
 | IBUF     |   18 |                  IO |
+| RAMB18E1 |    4 |        Block Memory |
 | DSP48E1  |    3 |    Block Arithmetic |
-| RAMB18E1 |    2 |        Block Memory |
 | FDPE     |    1 |        Flop & Latch |
 | BUFG     |    1 |               Clock |
 +----------+------+---------------------+

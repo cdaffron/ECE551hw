@@ -134,7 +134,7 @@ if {$rc} {
 start_step place_design
 set rc [catch {
   create_msg_db place_design.pb
-  place_design -directive SSI_ExtraTimingOpt
+  place_design 
   write_checkpoint -force top_level_placed.dcp
   catch { report_io -file top_level_io_placed.rpt }
   catch { report_clock_utilization -file top_level_clock_utilization_placed.rpt }
@@ -147,20 +147,6 @@ if {$rc} {
   return -code error $RESULT
 } else {
   end_step place_design
-}
-
-start_step phys_opt_design
-set rc [catch {
-  create_msg_db phys_opt_design.pb
-  phys_opt_design -directive AddRetime
-  write_checkpoint -force top_level_physopt.dcp
-  close_msg_db -file phys_opt_design.pb
-} RESULT]
-if {$rc} {
-  step_failed phys_opt_design
-  return -code error $RESULT
-} else {
-  end_step phys_opt_design
 }
 
 start_step route_design
