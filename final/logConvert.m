@@ -22,3 +22,13 @@ logDataT = logData';
 togData = zeros(131071,2);
 togData(:,1) = linDataT(:);
 togData(:,2) = logDataT(:);
+
+for i=0:256
+   for j=1:length(logDataT)
+       if( logDataT(j) >= i )
+           fprintf('Threshold value for output of %d is %d\n', i, j);
+           pause;
+           break;
+       end
+   end
+end
