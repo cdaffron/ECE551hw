@@ -208,7 +208,7 @@ begin
         -- initialization settings
         fft_points => "01010",
         n_samples => 1024,
-        sample_rate => 40,
+        sample_rate => 30,
         init_max_addr => 1023,
         ram_initialized => '0',
         -- control and debug ports
