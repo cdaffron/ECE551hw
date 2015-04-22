@@ -1,0 +1,112 @@
+<?xml version="1.0"?>
+<BillOfMaterials Version="1" Minor="2">
+	<IPInstance name="BRAM_1">
+		<FileSets>
+			<FileSet generator="xmdf_to_bom">
+				<File name="BRAM_1/blk_mem_gen_v7_3_readme.txt" type="ignore" timestamp="Tue Apr 21 13:36:24 2015" checksum="0">
+				</File>
+				<File name="BRAM_1/doc/blk_mem_gen_v7_3_vinfo.html" type="ignore" timestamp="Tue Apr 21 13:36:24 2015" checksum="0">
+				</File>
+				<File name="BRAM_1/doc/pg058-blk-mem-gen.pdf" type="ignore" timestamp="Tue Apr 21 13:36:24 2015" checksum="0">
+				</File>
+				<File name="BRAM_1/example_design/BRAM_1_exdes.ucf" type="ignore" timestamp="Tue Apr 21 13:36:24 2015" checksum="0">
+				</File>
+				<File name="BRAM_1/example_design/BRAM_1_exdes.vhd" type="ignore" timestamp="Tue Apr 21 13:36:24 2015" checksum="0">
+				</File>
+				<File name="BRAM_1/example_design/BRAM_1_exdes.xdc" type="ignore" timestamp="Tue Apr 21 13:36:24 2015" checksum="0">
+				</File>
+				<File name="BRAM_1/example_design/BRAM_1_prod.vhd" type="ignore" timestamp="Tue Apr 21 13:36:24 2015" checksum="0">
+				</File>
+				<File name="BRAM_1/implement/implement.bat" type="ignore" timestamp="Tue Apr 21 13:36:24 2015" checksum="0">
+				</File>
+				<File name="BRAM_1/implement/implement.sh" type="ignore" timestamp="Tue Apr 21 13:36:24 2015" checksum="0">
+				</File>
+				<File name="BRAM_1/implement/planAhead_ise.bat" type="ignore" timestamp="Tue Apr 21 13:36:24 2015" checksum="0">
+				</File>
+				<File name="BRAM_1/implement/planAhead_ise.sh" type="ignore" timestamp="Tue Apr 21 13:36:24 2015" checksum="0">
+				</File>
+				<File name="BRAM_1/implement/planAhead_ise.tcl" type="ignore" timestamp="Tue Apr 21 13:36:24 2015" checksum="0">
+				</File>
+				<File name="BRAM_1/implement/xst.prj" type="ignore" timestamp="Tue Apr 21 13:36:24 2015" checksum="0">
+				</File>
+				<File name="BRAM_1/implement/xst.scr" type="ignore" timestamp="Tue Apr 21 13:36:24 2015" checksum="0">
+				</File>
+				<File name="BRAM_1/simulation/BRAM_1_synth.vhd" type="ignore" timestamp="Tue Apr 21 13:36:25 2015" checksum="0">
+				</File>
+				<File name="BRAM_1/simulation/BRAM_1_tb.vhd" type="ignore" timestamp="Tue Apr 21 13:36:25 2015" checksum="0">
+				</File>
+				<File name="BRAM_1/simulation/addr_gen.vhd" type="ignore" timestamp="Tue Apr 21 13:36:25 2015" checksum="0">
+				</File>
+				<File name="BRAM_1/simulation/bmg_stim_gen.vhd" type="ignore" timestamp="Tue Apr 21 13:36:25 2015" checksum="0">
+				</File>
+				<File name="BRAM_1/simulation/bmg_tb_pkg.vhd" type="ignore" timestamp="Tue Apr 21 13:36:25 2015" checksum="0">
+				</File>
+				<File name="BRAM_1/simulation/functional/simcmds.tcl" type="ignore" timestamp="Tue Apr 21 13:36:25 2015" checksum="0">
+				</File>
+				<File name="BRAM_1/simulation/functional/simulate_isim.bat" type="ignore" timestamp="Tue Apr 21 13:36:25 2015" checksum="0">
+				</File>
+				<File name="BRAM_1/simulation/functional/simulate_mti.bat" type="ignore" timestamp="Tue Apr 21 13:36:25 2015" checksum="0">
+				</File>
+				<File name="BRAM_1/simulation/functional/simulate_mti.do" type="ignore" timestamp="Tue Apr 21 13:36:25 2015" checksum="0">
+				</File>
+				<File name="BRAM_1/simulation/functional/simulate_mti.sh" type="ignore" timestamp="Tue Apr 21 13:36:25 2015" checksum="0">
+				</File>
+				<File name="BRAM_1/simulation/functional/simulate_ncsim.sh" type="ignore" timestamp="Tue Apr 21 13:36:25 2015" checksum="0">
+				</File>
+				<File name="BRAM_1/simulation/functional/simulate_vcs.sh" type="ignore" timestamp="Tue Apr 21 13:36:25 2015" checksum="0">
+				</File>
+				<File name="BRAM_1/simulation/functional/ucli_commands.key" type="ignore" timestamp="Tue Apr 21 13:36:25 2015" checksum="0">
+				</File>
+				<File name="BRAM_1/simulation/functional/vcs_session.tcl" type="ignore" timestamp="Tue Apr 21 13:36:25 2015" checksum="0">
+				</File>
+				<File name="BRAM_1/simulation/functional/wave_mti.do" type="ignore" timestamp="Tue Apr 21 13:36:25 2015" checksum="0">
+				</File>
+				<File name="BRAM_1/simulation/functional/wave_ncsim.sv" type="ignore" timestamp="Tue Apr 21 13:36:25 2015" checksum="0">
+				</File>
+				<File name="BRAM_1/simulation/random.vhd" type="ignore" timestamp="Tue Apr 21 13:36:25 2015" checksum="0">
+				</File>
+				<File name="BRAM_1/simulation/timing/simcmds.tcl" type="ignore" timestamp="Tue Apr 21 13:36:25 2015" checksum="0">
+				</File>
+				<File name="BRAM_1/simulation/timing/simulate_isim.bat" type="ignore" timestamp="Tue Apr 21 13:36:25 2015" checksum="0">
+				</File>
+				<File name="BRAM_1/simulation/timing/simulate_mti.bat" type="ignore" timestamp="Tue Apr 21 13:36:25 2015" checksum="0">
+				</File>
+				<File name="BRAM_1/simulation/timing/simulate_mti.do" type="ignore" timestamp="Tue Apr 21 13:36:25 2015" checksum="0">
+				</File>
+				<File name="BRAM_1/simulation/timing/simulate_mti.sh" type="ignore" timestamp="Tue Apr 21 13:36:25 2015" checksum="0">
+				</File>
+				<File name="BRAM_1/simulation/timing/simulate_ncsim.sh" type="ignore" timestamp="Tue Apr 21 13:36:25 2015" checksum="0">
+				</File>
+				<File name="BRAM_1/simulation/timing/simulate_vcs.sh" type="ignore" timestamp="Tue Apr 21 13:36:25 2015" checksum="0">
+				</File>
+				<File name="BRAM_1/simulation/timing/ucli_commands.key" type="ignore" timestamp="Tue Apr 21 13:36:25 2015" checksum="0">
+				</File>
+				<File name="BRAM_1/simulation/timing/vcs_session.tcl" type="ignore" timestamp="Tue Apr 21 13:36:25 2015" checksum="0">
+				</File>
+				<File name="BRAM_1/simulation/timing/wave_mti.do" type="ignore" timestamp="Tue Apr 21 13:36:25 2015" checksum="0">
+				</File>
+				<File name="BRAM_1/simulation/timing/wave_ncsim.sv" type="ignore" timestamp="Tue Apr 21 13:36:25 2015" checksum="0">
+				</File>
+				<File name="BRAM_1.asy" type="asy" timestamp="Tue Apr 21 13:36:23 2015" checksum="0">
+				</File>
+				<File name="BRAM_1.mif" type="ignore" timestamp="Tue Apr 21 13:36:23 2015" checksum="0">
+				</File>
+				<File name="BRAM_1.ngc" type="ngc" timestamp="Tue Apr 21 13:36:23 2015" checksum="0">
+				</File>
+				<File name="BRAM_1.sym" type="asy" timestamp="Tue Apr 21 13:36:23 2015" checksum="0">
+				</File>
+				<File name="BRAM_1.vhd" type="vhdl" timestamp="Tue Apr 21 13:36:23 2015" checksum="0">
+				</File>
+				<File name="BRAM_1.vho" type="vho" timestamp="Tue Apr 21 13:36:23 2015" checksum="0">
+				</File>
+				<File name="BRAM_1.xco" type="xco" timestamp="Tue Apr 21 13:36:23 2015" checksum="0">
+				</File>
+				<File name="BRAM_1_xmdf.tcl" type="ignore" timestamp="Tue Apr 21 13:36:23 2015" checksum="0">
+				</File>
+				<File name="summary.log" type="ignore" timestamp="Tue Apr 21 13:36:24 2015" checksum="0">
+				</File>
+			</FileSet>
+		</FileSets>
+	</IPInstance>
+</BillOfMaterials>
+

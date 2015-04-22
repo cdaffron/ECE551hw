@@ -329,6 +329,22 @@
           <Attr Name="ImportTime" Val="1429623451"/>
         </FileInfo>
       </File>
+      <File Path="$PSRCDIR/sources_1/imports/Nexys4UserDemo_ISE_Project/Nexys4_Overlay.coe">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../Downloads/Nexys4UserDemo/Nexys4UserDemo/source/Nexys4UserDemo_ISE_Project/Nexys4_Overlay.coe"/>
+          <Attr Name="ImportTime" Val="1429623383"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/Nexys4UserDemo_ISE_Project/Nexys4_all.coe">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../Downloads/Nexys4UserDemo/Nexys4UserDemo/source/Nexys4UserDemo_ISE_Project/Nexys4_all.coe"/>
+          <Attr Name="ImportTime" Val="1429623383"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
         <Option Name="TopModule" Val="Nexys4UserDemo"/>

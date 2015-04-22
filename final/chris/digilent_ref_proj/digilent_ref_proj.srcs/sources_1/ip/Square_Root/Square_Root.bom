@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<BillOfMaterials Version="1" Minor="2">
+	<IPInstance name="Square_Root">
+		<FileSets>
+			<FileSet generator="xmdf_to_bom">
+				<File name="Square_Root/doc/cordic_ds249.pdf" type="ignore" timestamp="Tue Apr 21 13:36:29 2015" checksum="0">
+				</File>
+				<File name="Square_Root/doc/cordic_v4_0_vinfo.html" type="ignore" timestamp="Tue Apr 21 13:36:29 2015" checksum="0">
+				</File>
+				<File name="Square_Root.asy" type="asy" timestamp="Tue Apr 21 13:36:24 2015" checksum="0">
+				</File>
+				<File name="Square_Root.ngc" type="ngc" timestamp="Tue Apr 21 13:36:24 2015" checksum="0">
+				</File>
+				<File name="Square_Root.sym" type="asy" timestamp="Tue Apr 21 13:36:24 2015" checksum="0">
+				</File>
+				<File name="Square_Root.vhd" type="vhdl" timestamp="Tue Apr 21 13:36:24 2015" checksum="0">
+				</File>
+				<File name="Square_Root.vho" type="vho" timestamp="Tue Apr 21 13:36:24 2015" checksum="0">
+				</File>
+				<File name="Square_Root.xco" type="xco" timestamp="Tue Apr 21 13:36:24 2015" checksum="0">
+				</File>
+				<File name="Square_Root_xmdf.tcl" type="ignore" timestamp="Tue Apr 21 13:36:24 2015" checksum="0">
+				</File>
+			</FileSet>
+		</FileSets>
+	</IPInstance>
+</BillOfMaterials>
+

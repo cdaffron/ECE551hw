@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<BillOfMaterials Version="1" Minor="2">
+	<IPInstance name="PxlClkGen">
+		<FileSets>
+			<FileSet generator="xmdf_to_bom">
+				<File name="PxlClkGen/implement/implement.bat" type="ignore" timestamp="Tue Apr 21 13:36:28 2015" checksum="0">
+				</File>
+				<File name="PxlClkGen/implement/implement.sh" type="ignore" timestamp="Tue Apr 21 13:36:28 2015" checksum="0">
+				</File>
+				<File name="PxlClkGen/implement/xst.prj" type="ignore" timestamp="Tue Apr 21 13:36:28 2015" checksum="0">
+				</File>
+				<File name="PxlClkGen/implement/xst.scr" type="ignore" timestamp="Tue Apr 21 13:36:28 2015" checksum="0">
+				</File>
+				<File name="PxlClkGen/simulation/PxlClkGen_tb.vhd" type="ignore" timestamp="Tue Apr 21 13:36:29 2015" checksum="0">
+				</File>
+				<File name="PxlClkGen/simulation/functional/simcmds.tcl" type="ignore" timestamp="Tue Apr 21 13:36:29 2015" checksum="0">
+				</File>
+				<File name="PxlClkGen/simulation/functional/simulate_isim.sh" type="ignore" timestamp="Tue Apr 21 13:36:29 2015" checksum="0">
+				</File>
+				<File name="PxlClkGen/simulation/functional/simulate_mti.do" type="ignore" timestamp="Tue Apr 21 13:36:29 2015" checksum="0">
+				</File>
+				<File name="PxlClkGen/simulation/functional/simulate_ncsim.sh" type="ignore" timestamp="Tue Apr 21 13:36:29 2015" checksum="0">
+				</File>
+				<File name="PxlClkGen/simulation/functional/wave.do" type="ignore" timestamp="Tue Apr 21 13:36:29 2015" checksum="0">
+				</File>
+				<File name="PxlClkGen/simulation/functional/wave.sv" type="ignore" timestamp="Tue Apr 21 13:36:29 2015" checksum="0">
+				</File>
+				<File name="PxlClkGen.asy" type="asy" timestamp="Tue Apr 21 13:36:24 2015" checksum="0">
+				</File>
+				<File name="PxlClkGen.ucf" type="ucf" timestamp="Tue Apr 21 13:36:24 2015" checksum="0">
+				</File>
+				<File name="PxlClkGen.vhd" type="vhdl" timestamp="Tue Apr 21 13:36:24 2015" checksum="0">
+				</File>
+				<File name="PxlClkGen.vho" type="vho" timestamp="Tue Apr 21 13:36:24 2015" checksum="0">
+				</File>
+				<File name="PxlClkGen.xco" type="xco" timestamp="Tue Apr 21 13:36:24 2015" checksum="0">
+				</File>
+				<File name="PxlClkGen_xmdf.tcl" type="ignore" timestamp="Tue Apr 21 13:36:24 2015" checksum="0">
+				</File>
+			</FileSet>
+		</FileSets>
+	</IPInstance>
+</BillOfMaterials>
+
