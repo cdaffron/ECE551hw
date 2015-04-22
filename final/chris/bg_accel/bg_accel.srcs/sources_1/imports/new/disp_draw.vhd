@@ -172,7 +172,7 @@ architecture Behavioral of disp_draw is
 --        96177,    97437,    98708,    99990,    101283,    102587,    103902,    105228,    106566,    107915,    109275,    110647,
 --        112030,    113424,    114831,    116248,    117677,    119118,    120571,    122035,    123512,    125000,    126500,    128012,
 --        129536
-        1,
+        0,
         1,
         1,
         1,
@@ -548,7 +548,7 @@ architecture Behavioral of disp_draw is
     begin
         height_int := unsigned(full_height);
         
-        if scaleRom(0) <= height_int and height_int < scaleRom(1) then retVal := to_unsigned(0, 8);
+        if scaleRom(0) <= height_int and height_int < scaleRom(1) then retVal := to_unsigned(1, 8);
         elsif scaleRom(1) <= height_int and height_int < scaleRom(2) then retVal := to_unsigned(1, 8);
         elsif scaleRom(2) <= height_int and height_int < scaleRom(3) then retVal := to_unsigned(2, 8);
         elsif scaleRom(3) <= height_int and height_int < scaleRom(4) then retVal := to_unsigned(3, 8);
