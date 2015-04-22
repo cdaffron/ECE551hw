@@ -1,7 +1,7 @@
 Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2014.2 (lin64) Build 932637 Wed Jun 11 13:08:52 MDT 2014
-| Date             : Tue Apr 21 20:46:00 2015
+| Date             : Tue Apr 21 20:58:57 2015
 | Host             : com1549.eecs.utk.edu running 64-bit Red Hat Enterprise Linux Server release 6.5 (Santiago)
 | Command          : report_power -file top_level_power_routed.rpt -pb top_level_power_summary_routed.pb
 | Design           : top_level
@@ -30,8 +30,8 @@ Table of Contents
 ----------
 
 +--------------------------+-------+
-| Total On-Chip Power (W)  | 0.416 |
-| Dynamic (W)              | 0.318 |
+| Total On-Chip Power (W)  | 0.417 |
+| Dynamic (W)              | 0.319 |
 | Device Static (W)        | 0.098 |
 | Effective TJA (C/W)      | 4.6   |
 | Max Ambient (C)          | 83.1  |
@@ -49,23 +49,23 @@ Table of Contents
 +--------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
-| Clocks                   |     0.024 |       11 |       --- |             --- |
-| Slice Logic              |     0.015 |    15583 |       --- |             --- |
-|   LUT as Logic           |     0.013 |     4623 |     63400 |            7.29 |
+| Clocks                   |     0.025 |       11 |       --- |             --- |
+| Slice Logic              |     0.015 |    15818 |       --- |             --- |
+|   LUT as Logic           |     0.014 |     4778 |     63400 |            7.53 |
 |   CARRY4                 |     0.001 |      366 |     15850 |            2.30 |
 |   Register               |    <0.001 |     7911 |    126800 |            6.23 |
-|   F7/F8 Muxes            |    <0.001 |      357 |     63400 |            0.56 |
+|   F7/F8 Muxes            |    <0.001 |      438 |     63400 |            0.69 |
 |   LUT as Shift Register  |    <0.001 |      239 |     19000 |            1.25 |
 |   LUT as Distributed RAM |    <0.001 |       24 |     19000 |            0.12 |
 |   BUFG                   |    <0.001 |        1 |        32 |            3.12 |
 |   Others                 |     0.000 |      690 |       --- |             --- |
-| Signals                  |     0.020 |    12012 |       --- |             --- |
+| Signals                  |     0.020 |    12085 |       --- |             --- |
 | Block RAM                |     0.014 |      9.5 |       135 |            7.03 |
 | MMCM                     |     0.221 |        2 |         6 |           33.33 |
 | DSPs                     |    <0.001 |       20 |       240 |            8.33 |
 | I/O                      |     0.024 |       81 |       210 |           38.57 |
 | Static Power             |     0.098 |          |           |                 |
-| Total                    |     0.416 |          |           |                 |
+| Total                    |     0.417 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -75,7 +75,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.089 |       0.073 |      0.016 |
+| Vccint    |       1.000 |     0.091 |       0.075 |      0.016 |
 | Vccaux    |       1.800 |     0.141 |       0.123 |      0.018 |
 | Vcco33    |       3.300 |     0.011 |       0.007 |      0.004 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -131,14 +131,14 @@ Table of Contents
 +---------------------------------------------------------+-------------------------------------------+-----------------+
 | Clock                                                   | Domain                                    | Constraint (ns) |
 +---------------------------------------------------------+-------------------------------------------+-----------------+
+| clkfbout_clk_wiz_0                                      | clk_debug/U0/clkfbout_clk_wiz_0           |            10.0 |
 | dbg_hub/inst/bscan_inst/SERIES7_BSCAN.bscan_inst/DRCK   | dbg_hub/inst/bscan_inst/DRCK              |            30.0 |
 | clkfbout_clk_wiz_vga                                    | vga_comp/clk_wiz/U0/clkfbout_clk_wiz_vga  |            40.0 |
 | clk_25out_clk_wiz_vga                                   | vga_comp/clk_wiz/U0/clk_25out_clk_wiz_vga |            40.0 |
-| clk_out3_clk_wiz_0                                      | clk_debug/U0/clk_out3_clk_wiz_0           |            20.0 |
 | sys_clk_pin                                             | clk                                       |            10.0 |
 | sys_clk_pin                                             | xlnx_opt__1                               |            10.0 |
 | dbg_hub/inst/bscan_inst/SERIES7_BSCAN.bscan_inst/UPDATE | dbg_hub/inst/bscan_inst/UPDATE            |            60.0 |
-| clkfbout_clk_wiz_0                                      | clk_debug/U0/clkfbout_clk_wiz_0           |            10.0 |
+| clk_out3_clk_wiz_0                                      | clk_debug/U0/clk_out3_clk_wiz_0           |            20.0 |
 | clk_out1_clk_wiz_0                                      | clk_debug/U0/clk_out1_clk_wiz_0           |             5.0 |
 +---------------------------------------------------------+-------------------------------------------+-----------------+
 
@@ -152,11 +152,11 @@ Table of Contents
 +--------------------------------------------------------------------------------------------+-----------+
 | Name                                                                                       | Power (W) |
 +--------------------------------------------------------------------------------------------+-----------+
-| top_level                                                                                  |     0.318 |
+| top_level                                                                                  |     0.319 |
 |   clk_debug                                                                                |     0.106 |
 |     U0                                                                                     |     0.106 |
-|   dbg_hub                                                                                  |     0.008 |
-|     inst                                                                                   |     0.008 |
+|   dbg_hub                                                                                  |     0.009 |
+|     inst                                                                                   |     0.009 |
 |       UUT_MASTER                                                                           |     0.008 |
 |         U_ICON_INTERFACE                                                                   |     0.005 |
 |           U_CMD1                                                                           |    <0.001 |
@@ -322,7 +322,7 @@ Table of Contents
 |                       i_baseblox.i_baseblox_addsub                                         |    <0.001 |
 |                         no_pipelining.the_addsub                                           |    <0.001 |
 |                           i_lut6.i_lut6_addsub                                             |    <0.001 |
-|                 gen_iterations[15].gen_post_mid.gen_rem                                    |     0.001 |
+|                 gen_iterations[15].gen_post_mid.gen_rem                                    |    <0.001 |
 |                   gen_data_int                                                             |    <0.001 |
 |                   gen_inv_sqrt_out                                                         |    <0.001 |
 |                   gen_rem.gen_rem_out                                                      |    <0.001 |
@@ -798,8 +798,8 @@ Table of Contents
 |       U0                                                                                   |     0.115 |
 |     vga_cont                                                                               |    <0.001 |
 |     vga_disp                                                                               |     0.003 |
-|   vio                                                                                      |     0.001 |
-|     inst                                                                                   |     0.001 |
+|   vio                                                                                      |     0.002 |
+|     inst                                                                                   |     0.002 |
 |       DECODER_INST                                                                         |    <0.001 |
 |       PROBE_OUT_ALL_INST                                                                   |    <0.001 |
 |         G_PROBE_OUT[0].PROBE_OUT0_INST                                                     |    <0.001 |
