@@ -1,0 +1,11 @@
+# PROMGEN: Xilinx Prom Generator P.20131013
+# Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+SOFTWARE_VERSION P.20131013
+DATE             4/23/2015 -  9:31
+SOURCE          /data1/cdaffron/git/ece551hw/final/final_551_35k.mcs
+DEVICE          16384K
+DATA_WIDTH      1
+FILL_DATA       0xFF
+SIGNATURE       0xC5BA59EB
+START_ADDRESS   0x00000000 END_ADDRESS 0x003A607B DIRECTION_UP   "/data1/cdaffron/git/ece551hw/final/chris/bg_accel/bg_accel.runs/impl_1/top_level.bit" 7a100tcsg324
