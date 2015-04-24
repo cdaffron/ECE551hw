@@ -1,0 +1,16 @@
+Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2014.2 (lin64) Build 932637 Wed Jun 11 13:08:52 MDT 2014
+| Date         : Mon Apr 20 17:15:19 2015
+| Host         : com1549.eecs.utk.edu running 64-bit Red Hat Enterprise Linux Server release 6.5 (Santiago)
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-1
+------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'c_counter_binary_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of c_counter_binary_0 (xilinx.com:ip:c_counter_binary:12.0) from (Rev. 5) to (Rev. 4)
+

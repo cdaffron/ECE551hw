@@ -1,0 +1,1009 @@
+#-----------------------------------------------------------
+# Vivado v2014.2 (64-bit)
+# SW Build 932637 on Wed Jun 11 13:08:52 MDT 2014
+# IP Build 924643 on Fri May 30 09:20:16 MDT 2014
+# Start of session at: Fri Apr 24 14:44:45 2015
+# Process ID: 14188
+# Log file: /data1/cdaffron/git/ece551hw/final/chris/final_version_opt_test/final_version_opt_test.runs/synth_1/top_level.vds
+# Journal file: /data1/cdaffron/git/ece551hw/final/chris/final_version_opt_test/final_version_opt_test.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source top_level.tcl
+# set_param gui.test TreeTableDev
+# set_msg_config -id {HDL 9-1061} -limit 100000
+# set_msg_config -id {HDL 9-1654} -limit 100000
+# create_project -in_memory -part xc7a100tcsg324-1
+# set_property target_language VHDL [current_project]
+# set_param project.compositeFile.enableAutoGeneration 0
+# set_property default_lib xil_defaultlib [current_project]
+# add_files {{/data1/cdaffron/git/ece551hw/final/chris/final_version_opt_test/final_version_opt_test.srcs/sources_1/imports/coe files/gunshot.coe}}
+# add_files {{/data1/cdaffron/git/ece551hw/final/jacob/sources/coe files/gunshot.coe}}
+# add_files {{/data1/cdaffron/git/ece551hw/final/chris/final_version_opt_test/final_version_opt_test.srcs/sources_1/imports/coe files/mat_5kHz_int16_2048samples.coe}}
+# add_files -quiet /data1/cdaffron/git/ece551hw/final/chris/final_version_opt_test/final_version_opt_test.runs/mult_gen_0_synth_1/mult_gen_0.dcp
+# set_property used_in_implementation false [get_files /data1/cdaffron/git/ece551hw/final/chris/final_version_opt_test/final_version_opt_test.runs/mult_gen_0_synth_1/mult_gen_0.dcp]
+# add_files -quiet /data1/cdaffron/git/ece551hw/final/chris/final_version_opt_test/final_version_opt_test.runs/c_addsub_0_synth_1/c_addsub_0.dcp
+# set_property used_in_implementation false [get_files /data1/cdaffron/git/ece551hw/final/chris/final_version_opt_test/final_version_opt_test.runs/c_addsub_0_synth_1/c_addsub_0.dcp]
+# add_files -quiet /data1/cdaffron/git/ece551hw/final/chris/final_version_opt_test/final_version_opt_test.runs/cordic_0_synth_1/cordic_0.dcp
+# set_property used_in_implementation false [get_files /data1/cdaffron/git/ece551hw/final/chris/final_version_opt_test/final_version_opt_test.runs/cordic_0_synth_1/cordic_0.dcp]
+# add_files -quiet /data1/cdaffron/git/ece551hw/final/chris/final_version_opt_test/final_version_opt_test.runs/clk_wiz_vga_synth_1/clk_wiz_vga.dcp
+# set_property used_in_implementation false [get_files /data1/cdaffron/git/ece551hw/final/chris/final_version_opt_test/final_version_opt_test.runs/clk_wiz_vga_synth_1/clk_wiz_vga.dcp]
+# add_files -quiet /data1/cdaffron/git/ece551hw/final/chris/final_version_opt_test/final_version_opt_test.runs/xfft_0_synth_1/xfft_0.dcp
+# set_property used_in_implementation false [get_files /data1/cdaffron/git/ece551hw/final/chris/final_version_opt_test/final_version_opt_test.runs/xfft_0_synth_1/xfft_0.dcp]
+# add_files -quiet /data1/cdaffron/git/ece551hw/final/chris/final_version_opt_test/final_version_opt_test.runs/c_counter_binary_0_synth_1/c_counter_binary_0.dcp
+# set_property used_in_implementation false [get_files /data1/cdaffron/git/ece551hw/final/chris/final_version_opt_test/final_version_opt_test.runs/c_counter_binary_0_synth_1/c_counter_binary_0.dcp]
+# add_files -quiet /data1/cdaffron/git/ece551hw/final/chris/final_version_opt_test/final_version_opt_test.runs/clk_wiz_0_synth_1/clk_wiz_0.dcp
+# set_property used_in_implementation false [get_files /data1/cdaffron/git/ece551hw/final/chris/final_version_opt_test/final_version_opt_test.runs/clk_wiz_0_synth_1/clk_wiz_0.dcp]
+# add_files -quiet /data1/cdaffron/git/ece551hw/final/chris/final_version_opt_test/final_version_opt_test.runs/blk_mem_gen_1_synth_1/blk_mem_gen_1.dcp
+# set_property used_in_implementation false [get_files /data1/cdaffron/git/ece551hw/final/chris/final_version_opt_test/final_version_opt_test.runs/blk_mem_gen_1_synth_1/blk_mem_gen_1.dcp]
+# add_files -quiet /data1/cdaffron/git/ece551hw/final/chris/final_version_opt_test/final_version_opt_test.runs/blk_mem_gen_0_synth_1/blk_mem_gen_0.dcp
+# set_property used_in_implementation false [get_files /data1/cdaffron/git/ece551hw/final/chris/final_version_opt_test/final_version_opt_test.runs/blk_mem_gen_0_synth_1/blk_mem_gen_0.dcp]
+# read_ip /data1/cdaffron/git/ece551hw/final/chris/final_version_opt_test/final_version_opt_test.srcs/sources_1/ip/Square_Root/Square_Root.xco
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2014.2/data/ip'.
+# set_msg_config -id {IP_Flow 19-2162} -severity warning -new_severity info
+# set_property is_locked true [get_files /data1/cdaffron/git/ece551hw/final/chris/final_version_opt_test/final_version_opt_test.srcs/sources_1/ip/Square_Root/Square_Root.xco]
+# read_vhdl -library xil_defaultlib {
+#   /data1/cdaffron/git/ece551hw/final/chris/final_version_opt_test/final_version_opt_test.srcs/sources_1/imports/Nexys4UserDemo_ISE_Project/SPI_If.vhd
+#   /data1/cdaffron/git/ece551hw/final/chris/final_version_opt_test/final_version_opt_test.srcs/sources_1/imports/sources_1/imports/chris/disp_draw/disp_draw.srcs/sources_1/new/type_pkg.vhd
+#   /data1/cdaffron/git/ece551hw/final/chris/final_version_opt_test/final_version_opt_test.srcs/sources_1/imports/Nexys4UserDemo_ISE_Project/ADXL362Ctrl.vhd
+#   /data1/cdaffron/git/ece551hw/final/chris/final_version_opt_test/final_version_opt_test.srcs/sources_1/imports/Nexys4UserDemo_ISE_Project/AccelArithmetics.vhd
+#   /data1/cdaffron/git/ece551hw/final/chris/final_version_opt_test/final_version_opt_test.srcs/sources_1/imports/sources_1/imports/sources_1/new/vga_pkg.vhd
+#   /data1/cdaffron/git/ece551hw/final/chris/final_version_opt_test/final_version_opt_test.srcs/sources_1/imports/Nexys4UserDemo_ISE_Project/Pwm.vhd
+#   /data1/cdaffron/git/ece551hw/final/chris/final_version_opt_test/final_version_opt_test.srcs/sources_1/imports/Nexys4UserDemo_ISE_Project/AccelerometerCtl.vhd
+#   /data1/cdaffron/git/ece551hw/final/chris/final_version_opt_test/final_version_opt_test.srcs/sources_1/imports/sources_1/imports/sources_1/imports/sources_1/new/vga_display_gen.vhd
+#   /data1/cdaffron/git/ece551hw/final/chris/final_version_opt_test/final_version_opt_test.srcs/sources_1/imports/sources_1/imports/sources_1/imports/sources_1/imports/vga/vga_controller_640_60.vhd
+#   /data1/cdaffron/git/ece551hw/final/chris/final_version_opt_test/final_version_opt_test.srcs/sources_1/imports/sources_1/imports/new/Hex2SSegDecoder.vhd
+#   /data1/cdaffron/git/ece551hw/final/chris/final_version_opt_test/final_version_opt_test.srcs/sources_1/imports/sources_1/imports/new/averager.vhd
+#   /data1/cdaffron/git/ece551hw/final/chris/final_version_opt_test/final_version_opt_test.srcs/sources_1/imports/sources_1/imports/chris/magnitude/magnitude.srcs/sources_1/new/magnitude.vhd
+#   /data1/cdaffron/git/ece551hw/final/chris/final_version_opt_test/final_version_opt_test.srcs/sources_1/imports/sources_1/imports/sources_1/new/vga_top.vhd
+#   /data1/cdaffron/git/ece551hw/final/chris/final_version_opt_test/final_version_opt_test.srcs/sources_1/imports/sources_1/imports/new/HexDigs2SSeg.vhd
+#   /data1/cdaffron/git/ece551hw/final/chris/final_version_opt_test/final_version_opt_test.srcs/sources_1/imports/sources_1/imports/new/CDiv.vhd
+#   /data1/cdaffron/git/ece551hw/final/chris/final_version_opt_test/final_version_opt_test.srcs/sources_1/imports/sources_1/imports/adc_fft_to_pc/adc_fft_fsmV3_noUART.vhd
+#   /data1/cdaffron/git/ece551hw/final/chris/final_version_opt_test/final_version_opt_test.srcs/sources_1/imports/new/disp_draw.vhd
+#   /data1/cdaffron/git/ece551hw/final/chris/final_version_opt_test/final_version_opt_test.srcs/sources_1/imports/sources_1/new/top_level.vhd
+# }
+# read_xdc /data1/cdaffron/git/ece551hw/final/chris/final_version_opt_test/final_version_opt_test.srcs/constrs_1/imports/lab2/Nexys4_Master.xdc
+# set_property used_in_implementation false [get_files /data1/cdaffron/git/ece551hw/final/chris/final_version_opt_test/final_version_opt_test.srcs/constrs_1/imports/lab2/Nexys4_Master.xdc]
+# read_xdc dont_touch.xdc
+# set_property used_in_implementation false [get_files dont_touch.xdc]
+# read_xdc dont_buffer.xdc
+# set_property used_in_implementation false [get_files dont_buffer.xdc]
+# set_param synth.vivado.isSynthRun true
+# set_property webtalk.parent_dir /data1/cdaffron/git/ece551hw/final/chris/final_version_opt_test/final_version_opt_test.cache/wt [current_project]
+# set_property parent.project_dir /data1/cdaffron/git/ece551hw/final/chris/final_version_opt_test [current_project]
+# catch { write_hwdef -file top_level.hwdef }
+INFO: [Vivado_Tcl 4-279] hardware handoff file cannot be generated as there is no block diagram instance in the design
+# synth_design -top top_level -part xc7a100tcsg324-1 -gated_clock_conversion auto
+Command: synth_design -top top_level -part xc7a100tcsg324-1 -gated_clock_conversion auto
+
+Starting synthesis...
+
+INFO: [IP_Flow 19-2162] IP 'Square_Root' is locked:
+* IP definition 'CORDIC (4.0)' for IP 'Square_Root' has a newer major version in the IP Catalog.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 850.562 ; gain = 160.125
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-1565] actual for formal port data_i is neither a static name nor a globally static expression [/data1/cdaffron/git/ece551hw/final/chris/final_version_opt_test/final_version_opt_test.srcs/sources_1/imports/sources_1/imports/sources_1/imports/sources_1/new/vga_display_gen.vhd:643]
+WARNING: [Synth 8-1565] actual for formal port data_i is neither a static name nor a globally static expression [/data1/cdaffron/git/ece551hw/final/chris/final_version_opt_test/final_version_opt_test.srcs/sources_1/imports/sources_1/imports/sources_1/imports/sources_1/new/vga_display_gen.vhd:650]
+WARNING: [Synth 8-1565] actual for formal port data_i is neither a static name nor a globally static expression [/data1/cdaffron/git/ece551hw/final/chris/final_version_opt_test/final_version_opt_test.srcs/sources_1/imports/sources_1/imports/sources_1/imports/sources_1/new/vga_display_gen.vhd:657]
+WARNING: [Synth 8-2551] possible infinite loop; process does not have a wait statement [/data1/cdaffron/git/ece551hw/final/chris/final_version_opt_test/final_version_opt_test.srcs/sources_1/imports/sources_1/imports/new/averager.vhd:120]
+INFO: [Synth 8-638] synthesizing module 'top_level' [/data1/cdaffron/git/ece551hw/final/chris/final_version_opt_test/final_version_opt_test.srcs/sources_1/imports/sources_1/new/top_level.vhd:67]
+INFO: [Synth 8-3491] module 'disp_draw' declared at '/data1/cdaffron/git/ece551hw/final/chris/final_version_opt_test/final_version_opt_test.srcs/sources_1/imports/new/disp_draw.vhd:44' bound to instance 'disp_draw_inst' of component 'disp_draw' [/data1/cdaffron/git/ece551hw/final/chris/final_version_opt_test/final_version_opt_test.srcs/sources_1/imports/sources_1/new/top_level.vhd:188]
+INFO: [Synth 8-638] synthesizing module 'disp_draw' [/data1/cdaffron/git/ece551hw/final/chris/final_version_opt_test/final_version_opt_test.srcs/sources_1/imports/new/disp_draw.vhd:64]
+INFO: [Synth 8-3491] module 'averager' declared at '/data1/cdaffron/git/ece551hw/final/chris/final_version_opt_test/final_version_opt_test.srcs/sources_1/imports/sources_1/imports/new/averager.vhd:39' bound to instance 'avg_inst' of component 'averager' [/data1/cdaffron/git/ece551hw/final/chris/final_version_opt_test/final_version_opt_test.srcs/sources_1/imports/new/disp_draw.vhd:830]
+INFO: [Synth 8-638] synthesizing module 'averager' [/data1/cdaffron/git/ece551hw/final/chris/final_version_opt_test/final_version_opt_test.srcs/sources_1/imports/sources_1/imports/new/averager.vhd:111]
+INFO: [Synth 8-256] done synthesizing module 'averager' (1#1) [/data1/cdaffron/git/ece551hw/final/chris/final_version_opt_test/final_version_opt_test.srcs/sources_1/imports/sources_1/imports/new/averager.vhd:111]
+INFO: [Synth 8-3491] module 'magnitude' declared at '/data1/cdaffron/git/ece551hw/final/chris/final_version_opt_test/final_version_opt_test.srcs/sources_1/imports/sources_1/imports/chris/magnitude/magnitude.srcs/sources_1/new/magnitude.vhd:34' bound to instance 'mag_inst' of component 'magnitude' [/data1/cdaffron/git/ece551hw/final/chris/final_version_opt_test/final_version_opt_test.srcs/sources_1/imports/new/disp_draw.vhd:901]
+INFO: [Synth 8-638] synthesizing module 'magnitude' [/data1/cdaffron/git/ece551hw/final/chris/final_version_opt_test/final_version_opt_test.srcs/sources_1/imports/sources_1/imports/chris/magnitude/magnitude.srcs/sources_1/new/magnitude.vhd:47]
+INFO: [Synth 8-637] synthesizing blackbox instance 'realSquare' of component 'mult_gen_0' [/data1/cdaffron/git/ece551hw/final/chris/final_version_opt_test/final_version_opt_test.srcs/sources_1/imports/sources_1/imports/chris/magnitude/magnitude.srcs/sources_1/new/magnitude.vhd:139]
+INFO: [Synth 8-637] synthesizing blackbox instance 'imagSquare' of component 'mult_gen_0' [/data1/cdaffron/git/ece551hw/final/chris/final_version_opt_test/final_version_opt_test.srcs/sources_1/imports/sources_1/imports/chris/magnitude/magnitude.srcs/sources_1/new/magnitude.vhd:147]
+INFO: [Synth 8-637] synthesizing blackbox instance 'sumOfSquares' of component 'c_addsub_0' [/data1/cdaffron/git/ece551hw/final/chris/final_version_opt_test/final_version_opt_test.srcs/sources_1/imports/sources_1/imports/chris/magnitude/magnitude.srcs/sources_1/new/magnitude.vhd:155]
+INFO: [Synth 8-637] synthesizing blackbox instance 'magSqRt' of component 'cordic_0' [/data1/cdaffron/git/ece551hw/final/chris/final_version_opt_test/final_version_opt_test.srcs/sources_1/imports/sources_1/imports/chris/magnitude/magnitude.srcs/sources_1/new/magnitude.vhd:163]
+INFO: [Synth 8-256] done synthesizing module 'magnitude' (2#1) [/data1/cdaffron/git/ece551hw/final/chris/final_version_opt_test/final_version_opt_test.srcs/sources_1/imports/sources_1/imports/chris/magnitude/magnitude.srcs/sources_1/new/magnitude.vhd:47]
+INFO: [Synth 8-256] done synthesizing module 'disp_draw' (3#1) [/data1/cdaffron/git/ece551hw/final/chris/final_version_opt_test/final_version_opt_test.srcs/sources_1/imports/new/disp_draw.vhd:64]
+INFO: [Synth 8-638] synthesizing module 'adc_fft_fsmV3' [/data1/cdaffron/git/ece551hw/final/chris/final_version_opt_test/final_version_opt_test.srcs/sources_1/imports/sources_1/imports/adc_fft_to_pc/adc_fft_fsmV3_noUART.vhd:63]
+	Parameter clk_rate bound to: 100 - type: integer 
+INFO: [Synth 8-4472] Detected and applied attribute keep = true [/data1/cdaffron/git/ece551hw/final/chris/final_version_opt_test/final_version_opt_test.srcs/sources_1/imports/sources_1/imports/adc_fft_to_pc/adc_fft_fsmV3_noUART.vhd:66]
+INFO: [Synth 8-4472] Detected and applied attribute keep = true [/data1/cdaffron/git/ece551hw/final/chris/final_version_opt_test/final_version_opt_test.srcs/sources_1/imports/sources_1/imports/adc_fft_to_pc/adc_fft_fsmV3_noUART.vhd:67]
+INFO: [Synth 8-256] done synthesizing module 'adc_fft_fsmV3' (4#1) [/data1/cdaffron/git/ece551hw/final/chris/final_version_opt_test/final_version_opt_test.srcs/sources_1/imports/sources_1/imports/adc_fft_to_pc/adc_fft_fsmV3_noUART.vhd:63]
+INFO: [Synth 8-638] synthesizing module 'xfft_0' [/data1/cdaffron/git/ece551hw/final/chris/final_version_opt_test/final_version_opt_test.runs/synth_1/.Xil/Vivado-14188-com1549.eecs.utk.edu/realtime/xfft_0_stub.vhdl:35]
+INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_0' [/data1/cdaffron/git/ece551hw/final/chris/final_version_opt_test/final_version_opt_test.runs/synth_1/.Xil/Vivado-14188-com1549.eecs.utk.edu/realtime/blk_mem_gen_0_stub.vhdl:18]
+INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_1' [/data1/cdaffron/git/ece551hw/final/chris/final_version_opt_test/final_version_opt_test.runs/synth_1/.Xil/Vivado-14188-com1549.eecs.utk.edu/realtime/blk_mem_gen_1_stub.vhdl:20]
+INFO: [Synth 8-3491] module 'vga_top' declared at '/data1/cdaffron/git/ece551hw/final/chris/final_version_opt_test/final_version_opt_test.srcs/sources_1/imports/sources_1/imports/sources_1/new/vga_top.vhd:19' bound to instance 'vga_comp' of component 'vga_top' [/data1/cdaffron/git/ece551hw/final/chris/final_version_opt_test/final_version_opt_test.srcs/sources_1/imports/sources_1/new/top_level.vhd:295]
+INFO: [Synth 8-638] synthesizing module 'vga_top' [/data1/cdaffron/git/ece551hw/final/chris/final_version_opt_test/final_version_opt_test.srcs/sources_1/imports/sources_1/imports/sources_1/new/vga_top.vhd:46]
+INFO: [Synth 8-3491] module 'clk_wiz_vga' declared at '/data1/cdaffron/git/ece551hw/final/chris/final_version_opt_test/final_version_opt_test.runs/synth_1/.Xil/Vivado-14188-com1549.eecs.utk.edu/realtime/clk_wiz_vga_stub.vhdl:5' bound to instance 'clk_wiz' of component 'clk_wiz_vga' [/data1/cdaffron/git/ece551hw/final/chris/final_version_opt_test/final_version_opt_test.srcs/sources_1/imports/sources_1/imports/sources_1/new/vga_top.vhd:63]
+INFO: [Synth 8-638] synthesizing module 'clk_wiz_vga' [/data1/cdaffron/git/ece551hw/final/chris/final_version_opt_test/final_version_opt_test.runs/synth_1/.Xil/Vivado-14188-com1549.eecs.utk.edu/realtime/clk_wiz_vga_stub.vhdl:14]
+INFO: [Synth 8-3491] module 'vga_controller_640_60' declared at '/data1/cdaffron/git/ece551hw/final/chris/final_version_opt_test/final_version_opt_test.srcs/sources_1/imports/sources_1/imports/sources_1/imports/sources_1/imports/vga/vga_controller_640_60.vhd:55' bound to instance 'vga_cont' of component 'vga_controller_640_60' [/data1/cdaffron/git/ece551hw/final/chris/final_version_opt_test/final_version_opt_test.srcs/sources_1/imports/sources_1/imports/sources_1/new/vga_top.vhd:71]
+INFO: [Synth 8-638] synthesizing module 'vga_controller_640_60' [/data1/cdaffron/git/ece551hw/final/chris/final_version_opt_test/final_version_opt_test.srcs/sources_1/imports/sources_1/imports/sources_1/imports/sources_1/imports/vga/vga_controller_640_60.vhd:68]
+INFO: [Synth 8-256] done synthesizing module 'vga_controller_640_60' (5#1) [/data1/cdaffron/git/ece551hw/final/chris/final_version_opt_test/final_version_opt_test.srcs/sources_1/imports/sources_1/imports/sources_1/imports/sources_1/imports/vga/vga_controller_640_60.vhd:68]
+INFO: [Synth 8-3491] module 'vga_display_gen' declared at '/data1/cdaffron/git/ece551hw/final/chris/final_version_opt_test/final_version_opt_test.srcs/sources_1/imports/sources_1/imports/sources_1/imports/sources_1/new/vga_display_gen.vhd:19' bound to instance 'vga_disp' of component 'vga_display_gen' [/data1/cdaffron/git/ece551hw/final/chris/final_version_opt_test/final_version_opt_test.srcs/sources_1/imports/sources_1/imports/sources_1/new/vga_top.vhd:83]
+INFO: [Synth 8-638] synthesizing module 'vga_display_gen' [/data1/cdaffron/git/ece551hw/final/chris/final_version_opt_test/final_version_opt_test.srcs/sources_1/imports/sources_1/imports/sources_1/imports/sources_1/new/vga_display_gen.vhd:60]
+	Parameter SYSCLK_FREQUENCY_HZ bound to: 100000000 - type: integer 
+	Parameter SCLK_FREQUENCY_HZ bound to: 1000000 - type: integer 
+	Parameter NUM_READS_AVG bound to: 16 - type: integer 
+	Parameter UPDATE_FREQUENCY_HZ bound to: 100 - type: integer 
+INFO: [Synth 8-3491] module 'AccelerometerCtl' declared at '/data1/cdaffron/git/ece551hw/final/chris/final_version_opt_test/final_version_opt_test.srcs/sources_1/imports/Nexys4UserDemo_ISE_Project/AccelerometerCtl.vhd:42' bound to instance 'Accel_inst' of component 'AccelerometerCtl' [/data1/cdaffron/git/ece551hw/final/chris/final_version_opt_test/final_version_opt_test.srcs/sources_1/imports/sources_1/imports/sources_1/imports/sources_1/new/vga_display_gen.vhd:614]
+INFO: [Synth 8-638] synthesizing module 'AccelerometerCtl__parameterized0' [/data1/cdaffron/git/ece551hw/final/chris/final_version_opt_test/final_version_opt_test.srcs/sources_1/imports/Nexys4UserDemo_ISE_Project/AccelerometerCtl.vhd:70]
+	Parameter SYSCLK_FREQUENCY_HZ bound to: 100000000 - type: integer 
+	Parameter SCLK_FREQUENCY_HZ bound to: 1000000 - type: integer 
+	Parameter NUM_READS_AVG bound to: 16 - type: integer 
+	Parameter UPDATE_FREQUENCY_HZ bound to: 100 - type: integer 
+	Parameter SYSCLK_FREQUENCY_HZ bound to: 100000000 - type: integer 
+	Parameter SCLK_FREQUENCY_HZ bound to: 1000000 - type: integer 
+	Parameter NUM_READS_AVG bound to: 16 - type: integer 
+	Parameter UPDATE_FREQUENCY_HZ bound to: 100 - type: integer 
+INFO: [Synth 8-3491] module 'ADXL362Ctrl' declared at '/data1/cdaffron/git/ece551hw/final/chris/final_version_opt_test/final_version_opt_test.srcs/sources_1/imports/Nexys4UserDemo_ISE_Project/ADXL362Ctrl.vhd:89' bound to instance 'ADXL_Control' of component 'ADXL362Ctrl' [/data1/cdaffron/git/ece551hw/final/chris/final_version_opt_test/final_version_opt_test.srcs/sources_1/imports/Nexys4UserDemo_ISE_Project/AccelerometerCtl.vhd:163]
+INFO: [Synth 8-638] synthesizing module 'ADXL362Ctrl__parameterized0' [/data1/cdaffron/git/ece551hw/final/chris/final_version_opt_test/final_version_opt_test.srcs/sources_1/imports/Nexys4UserDemo_ISE_Project/ADXL362Ctrl.vhd:117]
+	Parameter SYSCLK_FREQUENCY_HZ bound to: 100000000 - type: integer 
+	Parameter SCLK_FREQUENCY_HZ bound to: 1000000 - type: integer 
+	Parameter NUM_READS_AVG bound to: 16 - type: integer 
+	Parameter UPDATE_FREQUENCY_HZ bound to: 100 - type: integer 
+INFO: [Synth 8-4472] Detected and applied attribute fsm_encoding = USER [/data1/cdaffron/git/ece551hw/final/chris/final_version_opt_test/final_version_opt_test.srcs/sources_1/imports/Nexys4UserDemo_ISE_Project/ADXL362Ctrl.vhd:283]
+INFO: [Synth 8-4472] Detected and applied attribute fsm_encoding = USER [/data1/cdaffron/git/ece551hw/final/chris/final_version_opt_test/final_version_opt_test.srcs/sources_1/imports/Nexys4UserDemo_ISE_Project/ADXL362Ctrl.vhd:312]
+INFO: [Synth 8-4472] Detected and applied attribute fsm_encoding = USER [/data1/cdaffron/git/ece551hw/final/chris/final_version_opt_test/final_version_opt_test.srcs/sources_1/imports/Nexys4UserDemo_ISE_Project/ADXL362Ctrl.vhd:365]
+	Parameter SYSCLK_FREQUENCY_HZ bound to: 100000000 - type: integer 
+	Parameter SCLK_FREQUENCY_HZ bound to: 1000000 - type: integer 
+INFO: [Synth 8-3491] module 'SPI_If' declared at '/data1/cdaffron/git/ece551hw/final/chris/final_version_opt_test/final_version_opt_test.srcs/sources_1/imports/Nexys4UserDemo_ISE_Project/SPI_If.vhd:42' bound to instance 'SPI_Interface' of component 'SPI_If' [/data1/cdaffron/git/ece551hw/final/chris/final_version_opt_test/final_version_opt_test.srcs/sources_1/imports/Nexys4UserDemo_ISE_Project/ADXL362Ctrl.vhd:373]
+INFO: [Synth 8-638] synthesizing module 'SPI_If__parameterized0' [/data1/cdaffron/git/ece551hw/final/chris/final_version_opt_test/final_version_opt_test.srcs/sources_1/imports/Nexys4UserDemo_ISE_Project/SPI_If.vhd:66]
+	Parameter SYSCLK_FREQUENCY_HZ bound to: 100000000 - type: integer 
+	Parameter SCLK_FREQUENCY_HZ bound to: 1000000 - type: integer 
+INFO: [Synth 8-4472] Detected and applied attribute fsm_encoding = USER [/data1/cdaffron/git/ece551hw/final/chris/final_version_opt_test/final_version_opt_test.srcs/sources_1/imports/Nexys4UserDemo_ISE_Project/SPI_If.vhd:113]
+INFO: [Synth 8-256] done synthesizing module 'SPI_If__parameterized0' (6#1) [/data1/cdaffron/git/ece551hw/final/chris/final_version_opt_test/final_version_opt_test.srcs/sources_1/imports/Nexys4UserDemo_ISE_Project/SPI_If.vhd:66]
+INFO: [Synth 8-256] done synthesizing module 'ADXL362Ctrl__parameterized0' (7#1) [/data1/cdaffron/git/ece551hw/final/chris/final_version_opt_test/final_version_opt_test.srcs/sources_1/imports/Nexys4UserDemo_ISE_Project/ADXL362Ctrl.vhd:117]
+	Parameter SYSCLK_FREQUENCY_HZ bound to: 100000000 - type: integer 
+	Parameter ACC_X_Y_MAX bound to: 10'b0111111111 
+	Parameter ACC_X_Y_MIN bound to: 10'b0000000000 
+INFO: [Synth 8-3491] module 'AccelArithmetics' declared at '/data1/cdaffron/git/ece551hw/final/chris/final_version_opt_test/final_version_opt_test.srcs/sources_1/imports/Nexys4UserDemo_ISE_Project/AccelArithmetics.vhd:49' bound to instance 'Accel_Calculation' of component 'AccelArithmetics' [/data1/cdaffron/git/ece551hw/final/chris/final_version_opt_test/final_version_opt_test.srcs/sources_1/imports/Nexys4UserDemo_ISE_Project/AccelerometerCtl.vhd:190]
+INFO: [Synth 8-638] synthesizing module 'AccelArithmetics__parameterized0' [/data1/cdaffron/git/ece551hw/final/chris/final_version_opt_test/final_version_opt_test.srcs/sources_1/imports/Nexys4UserDemo_ISE_Project/AccelArithmetics.vhd:74]
+	Parameter SYSCLK_FREQUENCY_HZ bound to: 100000000 - type: integer 
+	Parameter ACC_X_Y_MAX bound to: 10'b0111111111 
+	Parameter ACC_X_Y_MIN bound to: 10'b0000000000 
+INFO: [Synth 8-3491] module 'Square_Root' declared at '/data1/cdaffron/git/ece551hw/final/chris/final_version_opt_test/final_version_opt_test.srcs/sources_1/ip/Square_Root/Square_Root.vhd:43' bound to instance 'Magnitude_Calculation' of component 'Square_Root' [/data1/cdaffron/git/ece551hw/final/chris/final_version_opt_test/final_version_opt_test.srcs/sources_1/imports/Nexys4UserDemo_ISE_Project/AccelArithmetics.vhd:229]
+INFO: [Synth 8-638] synthesizing module 'Square_Root' [/data1/cdaffron/git/ece551hw/final/chris/final_version_opt_test/final_version_opt_test.srcs/sources_1/ip/Square_Root/Square_Root.vhd:53]
+INFO: [Synth 8-256] done synthesizing module 'Square_Root' (8#1) [/data1/cdaffron/git/ece551hw/final/chris/final_version_opt_test/final_version_opt_test.srcs/sources_1/ip/Square_Root/Square_Root.vhd:53]
+INFO: [Synth 8-256] done synthesizing module 'AccelArithmetics__parameterized0' (9#1) [/data1/cdaffron/git/ece551hw/final/chris/final_version_opt_test/final_version_opt_test.srcs/sources_1/imports/Nexys4UserDemo_ISE_Project/AccelArithmetics.vhd:74]
+INFO: [Synth 8-256] done synthesizing module 'AccelerometerCtl__parameterized0' (10#1) [/data1/cdaffron/git/ece551hw/final/chris/final_version_opt_test/final_version_opt_test.srcs/sources_1/imports/Nexys4UserDemo_ISE_Project/AccelerometerCtl.vhd:70]
+INFO: [Synth 8-3491] module 'Pwm' declared at '/data1/cdaffron/git/ece551hw/final/chris/final_version_opt_test/final_version_opt_test.srcs/sources_1/imports/Nexys4UserDemo_ISE_Project/Pwm.vhd:28' bound to instance 'pwm_red' of component 'Pwm' [/data1/cdaffron/git/ece551hw/final/chris/final_version_opt_test/final_version_opt_test.srcs/sources_1/imports/sources_1/imports/sources_1/imports/sources_1/new/vga_display_gen.vhd:640]
+INFO: [Synth 8-638] synthesizing module 'Pwm' [/data1/cdaffron/git/ece551hw/final/chris/final_version_opt_test/final_version_opt_test.srcs/sources_1/imports/Nexys4UserDemo_ISE_Project/Pwm.vhd:36]
+INFO: [Synth 8-256] done synthesizing module 'Pwm' (11#1) [/data1/cdaffron/git/ece551hw/final/chris/final_version_opt_test/final_version_opt_test.srcs/sources_1/imports/Nexys4UserDemo_ISE_Project/Pwm.vhd:36]
+INFO: [Synth 8-3491] module 'Pwm' declared at '/data1/cdaffron/git/ece551hw/final/chris/final_version_opt_test/final_version_opt_test.srcs/sources_1/imports/Nexys4UserDemo_ISE_Project/Pwm.vhd:28' bound to instance 'pwm_green' of component 'Pwm' [/data1/cdaffron/git/ece551hw/final/chris/final_version_opt_test/final_version_opt_test.srcs/sources_1/imports/sources_1/imports/sources_1/imports/sources_1/new/vga_display_gen.vhd:647]
+INFO: [Synth 8-3491] module 'Pwm' declared at '/data1/cdaffron/git/ece551hw/final/chris/final_version_opt_test/final_version_opt_test.srcs/sources_1/imports/Nexys4UserDemo_ISE_Project/Pwm.vhd:28' bound to instance 'pwm_blue' of component 'Pwm' [/data1/cdaffron/git/ece551hw/final/chris/final_version_opt_test/final_version_opt_test.srcs/sources_1/imports/sources_1/imports/sources_1/imports/sources_1/new/vga_display_gen.vhd:654]
+INFO: [Synth 8-256] done synthesizing module 'vga_display_gen' (12#1) [/data1/cdaffron/git/ece551hw/final/chris/final_version_opt_test/final_version_opt_test.srcs/sources_1/imports/sources_1/imports/sources_1/imports/sources_1/new/vga_display_gen.vhd:60]
+INFO: [Synth 8-256] done synthesizing module 'vga_top' (13#1) [/data1/cdaffron/git/ece551hw/final/chris/final_version_opt_test/final_version_opt_test.srcs/sources_1/imports/sources_1/imports/sources_1/new/vga_top.vhd:46]
+INFO: [Synth 8-638] synthesizing module 'clk_wiz_0' [/data1/cdaffron/git/ece551hw/final/chris/final_version_opt_test/final_version_opt_test.runs/synth_1/.Xil/Vivado-14188-com1549.eecs.utk.edu/realtime/clk_wiz_0_stub.vhdl:17]
+INFO: [Synth 8-638] synthesizing module 'c_counter_binary_0' [/data1/cdaffron/git/ece551hw/final/chris/final_version_opt_test/final_version_opt_test.runs/synth_1/.Xil/Vivado-14188-com1549.eecs.utk.edu/realtime/c_counter_binary_0_stub.vhdl:13]
+INFO: [Synth 8-638] synthesizing module 'CDiv' [/data1/cdaffron/git/ece551hw/final/chris/final_version_opt_test/final_version_opt_test.srcs/sources_1/imports/sources_1/imports/new/CDiv.vhd:24]
+WARNING: [Synth 8-614] signal 'D' is read in the process but is not in the sensitivity list [/data1/cdaffron/git/ece551hw/final/chris/final_version_opt_test/final_version_opt_test.srcs/sources_1/imports/sources_1/imports/new/CDiv.vhd:30]
+INFO: [Synth 8-256] done synthesizing module 'CDiv' (14#1) [/data1/cdaffron/git/ece551hw/final/chris/final_version_opt_test/final_version_opt_test.srcs/sources_1/imports/sources_1/imports/new/CDiv.vhd:24]
+INFO: [Synth 8-638] synthesizing module 'HexDigs2SSeg' [/data1/cdaffron/git/ece551hw/final/chris/final_version_opt_test/final_version_opt_test.srcs/sources_1/imports/sources_1/imports/new/HexDigs2SSeg.vhd:16]
+INFO: [Synth 8-638] synthesizing module 'Hex2SSeg' [/data1/cdaffron/git/ece551hw/final/chris/final_version_opt_test/final_version_opt_test.srcs/sources_1/imports/sources_1/imports/new/Hex2SSegDecoder.vhd:17]
+INFO: [Synth 8-256] done synthesizing module 'Hex2SSeg' (15#1) [/data1/cdaffron/git/ece551hw/final/chris/final_version_opt_test/final_version_opt_test.srcs/sources_1/imports/sources_1/imports/new/Hex2SSegDecoder.vhd:17]
+INFO: [Synth 8-226] default block is never used [/data1/cdaffron/git/ece551hw/final/chris/final_version_opt_test/final_version_opt_test.srcs/sources_1/imports/sources_1/imports/new/HexDigs2SSeg.vhd:45]
+INFO: [Synth 8-256] done synthesizing module 'HexDigs2SSeg' (16#1) [/data1/cdaffron/git/ece551hw/final/chris/final_version_opt_test/final_version_opt_test.srcs/sources_1/imports/sources_1/imports/new/HexDigs2SSeg.vhd:16]
+WARNING: [Synth 8-614] signal 'sw' is read in the process but is not in the sensitivity list [/data1/cdaffron/git/ece551hw/final/chris/final_version_opt_test/final_version_opt_test.srcs/sources_1/imports/sources_1/new/top_level.vhd:366]
+WARNING: [Synth 8-614] signal 'barHeights' is read in the process but is not in the sensitivity list [/data1/cdaffron/git/ece551hw/final/chris/final_version_opt_test/final_version_opt_test.srcs/sources_1/imports/sources_1/new/top_level.vhd:366]
+INFO: [Synth 8-256] done synthesizing module 'top_level' (17#1) [/data1/cdaffron/git/ece551hw/final/chris/final_version_opt_test/final_version_opt_test.srcs/sources_1/imports/sources_1/new/top_level.vhd:67]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 959.445 ; gain = 269.008
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Optimization
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+Loading clock regions from /opt/Xilinx/Vivado/2014.2/data/parts/xilinx/artix7/artix7/xc7a100t/ClockRegion.xml
+Loading clock buffers from /opt/Xilinx/Vivado/2014.2/data/parts/xilinx/artix7/artix7/xc7a100t/ClockBuffers.xml
+Loading clock placement rules from /opt/Xilinx/Vivado/2014.2/data/parts/xilinx/artix7/ClockPlacerRules.xml
+Loading package pin functions from /opt/Xilinx/Vivado/2014.2/data/parts/xilinx/artix7/PinFunctions.xml...
+Loading package from /opt/Xilinx/Vivado/2014.2/data/parts/xilinx/artix7/artix7/xc7a100t/csg324/Package.xml
+Loading io standards from /opt/Xilinx/Vivado/2014.2/data/./parts/xilinx/artix7/IOStandards.xml
+Loading device configuration modes from /opt/Xilinx/Vivado/2014.2/data/parts/xilinx/artix7/ConfigModes.xml
+
+Processing XDC Constraints
+Parsing XDC File [/data1/cdaffron/git/ece551hw/final/chris/final_version_opt_test/final_version_opt_test.runs/synth_1/.Xil/Vivado-14188-com1549.eecs.utk.edu/dcp_4/clk_wiz_vga_in_context.xdc] for cell 'vga_comp/clk_wiz'
+Finished Parsing XDC File [/data1/cdaffron/git/ece551hw/final/chris/final_version_opt_test/final_version_opt_test.runs/synth_1/.Xil/Vivado-14188-com1549.eecs.utk.edu/dcp_4/clk_wiz_vga_in_context.xdc] for cell 'vga_comp/clk_wiz'
+Parsing XDC File [/data1/cdaffron/git/ece551hw/final/chris/final_version_opt_test/final_version_opt_test.runs/synth_1/.Xil/Vivado-14188-com1549.eecs.utk.edu/dcp_7/clk_wiz_0_in_context.xdc] for cell 'clk_debug'
+Finished Parsing XDC File [/data1/cdaffron/git/ece551hw/final/chris/final_version_opt_test/final_version_opt_test.runs/synth_1/.Xil/Vivado-14188-com1549.eecs.utk.edu/dcp_7/clk_wiz_0_in_context.xdc] for cell 'clk_debug'
+Parsing XDC File [/data1/cdaffron/git/ece551hw/final/chris/final_version_opt_test/final_version_opt_test.srcs/constrs_1/imports/lab2/Nexys4_Master.xdc]
+Finished Parsing XDC File [/data1/cdaffron/git/ece551hw/final/chris/final_version_opt_test/final_version_opt_test.srcs/constrs_1/imports/lab2/Nexys4_Master.xdc]
+Parsing XDC File [/data1/cdaffron/git/ece551hw/final/chris/final_version_opt_test/final_version_opt_test.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/data1/cdaffron/git/ece551hw/final/chris/final_version_opt_test/final_version_opt_test.runs/synth_1/dont_touch.xdc]
+Parsing XDC File [/data1/cdaffron/git/ece551hw/final/chris/final_version_opt_test/final_version_opt_test.runs/synth_1/dont_buffer.xdc]
+Finished Parsing XDC File [/data1/cdaffron/git/ece551hw/final/chris/final_version_opt_test/final_version_opt_test.runs/synth_1/dont_buffer.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+---------------------------------------------------------------------------------
+Start RTL Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 1255.289 ; gain = 564.852
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for Magnitude_Calculation. (constraint file  /data1/cdaffron/git/ece551hw/final/chris/final_version_opt_test/final_version_opt_test.runs/synth_1/dont_touch.xdc, line 7).
+Applied set_property BUFFER_TYPE = NONE for btnC. (constraint file  /data1/cdaffron/git/ece551hw/final/chris/final_version_opt_test/final_version_opt_test.runs/synth_1/dont_buffer.xdc, line 10).
+Applied set_property BUFFER_TYPE = NONE for clk. (constraint file  /data1/cdaffron/git/ece551hw/final/chris/final_version_opt_test/final_version_opt_test.runs/synth_1/dont_buffer.xdc, line 12).
+Applied set_property BUFFER_TYPE = NONE for din[15]. (constraint file  /data1/cdaffron/git/ece551hw/final/chris/final_version_opt_test/final_version_opt_test.runs/synth_1/dont_buffer.xdc, line 12).
+Applied set_property BUFFER_TYPE = NONE for din[14]. (constraint file  /data1/cdaffron/git/ece551hw/final/chris/final_version_opt_test/final_version_opt_test.runs/synth_1/dont_buffer.xdc, line 12).
+Applied set_property BUFFER_TYPE = NONE for din[13]. (constraint file  /data1/cdaffron/git/ece551hw/final/chris/final_version_opt_test/final_version_opt_test.runs/synth_1/dont_buffer.xdc, line 12).
+Applied set_property BUFFER_TYPE = NONE for din[12]. (constraint file  /data1/cdaffron/git/ece551hw/final/chris/final_version_opt_test/final_version_opt_test.runs/synth_1/dont_buffer.xdc, line 12).
+Applied set_property BUFFER_TYPE = NONE for din[11]. (constraint file  /data1/cdaffron/git/ece551hw/final/chris/final_version_opt_test/final_version_opt_test.runs/synth_1/dont_buffer.xdc, line 12).
+Applied set_property BUFFER_TYPE = NONE for din[10]. (constraint file  /data1/cdaffron/git/ece551hw/final/chris/final_version_opt_test/final_version_opt_test.runs/synth_1/dont_buffer.xdc, line 12).
+Applied set_property BUFFER_TYPE = NONE for din[9]. (constraint file  /data1/cdaffron/git/ece551hw/final/chris/final_version_opt_test/final_version_opt_test.runs/synth_1/dont_buffer.xdc, line 12).
+Applied set_property BUFFER_TYPE = NONE for din[8]. (constraint file  /data1/cdaffron/git/ece551hw/final/chris/final_version_opt_test/final_version_opt_test.runs/synth_1/dont_buffer.xdc, line 12).
+Applied set_property BUFFER_TYPE = NONE for din[7]. (constraint file  /data1/cdaffron/git/ece551hw/final/chris/final_version_opt_test/final_version_opt_test.runs/synth_1/dont_buffer.xdc, line 12).
+Applied set_property BUFFER_TYPE = NONE for din[6]. (constraint file  /data1/cdaffron/git/ece551hw/final/chris/final_version_opt_test/final_version_opt_test.runs/synth_1/dont_buffer.xdc, line 12).
+Applied set_property BUFFER_TYPE = NONE for din[5]. (constraint file  /data1/cdaffron/git/ece551hw/final/chris/final_version_opt_test/final_version_opt_test.runs/synth_1/dont_buffer.xdc, line 12).
+Applied set_property BUFFER_TYPE = NONE for din[4]. (constraint file  /data1/cdaffron/git/ece551hw/final/chris/final_version_opt_test/final_version_opt_test.runs/synth_1/dont_buffer.xdc, line 12).
+Applied set_property BUFFER_TYPE = NONE for din[3]. (constraint file  /data1/cdaffron/git/ece551hw/final/chris/final_version_opt_test/final_version_opt_test.runs/synth_1/dont_buffer.xdc, line 12).
+Applied set_property BUFFER_TYPE = NONE for din[2]. (constraint file  /data1/cdaffron/git/ece551hw/final/chris/final_version_opt_test/final_version_opt_test.runs/synth_1/dont_buffer.xdc, line 12).
+Applied set_property BUFFER_TYPE = NONE for din[1]. (constraint file  /data1/cdaffron/git/ece551hw/final/chris/final_version_opt_test/final_version_opt_test.runs/synth_1/dont_buffer.xdc, line 12).
+Applied set_property BUFFER_TYPE = NONE for din[0]. (constraint file  /data1/cdaffron/git/ece551hw/final/chris/final_version_opt_test/final_version_opt_test.runs/synth_1/dont_buffer.xdc, line 12).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 1255.289 ; gain = 564.852
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 1255.289 ; gain = 564.852
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 's_curr_reg' in module 'disp_draw'
+INFO: [Synth 8-802] inferred FSM for state register 'StC_reg' in module 'SPI_If__parameterized0'
+INFO: [Synth 8-802] inferred FSM for state register 'StC_Spi_SendRec_reg' in module 'ADXL362Ctrl__parameterized0'
+INFO: [Synth 8-802] inferred FSM for state register 'StC_Spi_Trans_reg' in module 'ADXL362Ctrl__parameterized0'
+INFO: [Synth 8-802] inferred FSM for state register 'StC_Adxl_Ctrl_reg' in module 'ADXL362Ctrl__parameterized0'
+INFO: [Synth 8-3354] encoded FSM with state register 's_curr_reg' using encoding 'one-hot' in module 'disp_draw'
+INFO: [Synth 8-3354] encoded FSM with state register 'StC_reg' using encoding 'sequential' in module 'SPI_If__parameterized0'
+INFO: [Synth 8-3354] encoded FSM with state register 'StC_Spi_SendRec_reg' using encoding 'one-hot' in module 'ADXL362Ctrl__parameterized0'
+INFO: [Synth 8-3354] encoded FSM with state register 'StC_Spi_Trans_reg' using encoding 'one-hot' in module 'ADXL362Ctrl__parameterized0'
+INFO: [Synth 8-3354] encoded FSM with state register 'StC_Adxl_Ctrl_reg' using encoding 'one-hot' in module 'ADXL362Ctrl__parameterized0'
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   3 Input     26 Bit       Adders := 1     
+	  16 Input     22 Bit       Adders := 1     
+	  33 Input     22 Bit       Adders := 1     
+	  17 Input     22 Bit       Adders := 1     
+	   2 Input     20 Bit       Adders := 1     
+	   2 Input     13 Bit       Adders := 9     
+	   2 Input     11 Bit       Adders := 2     
+	   2 Input     10 Bit       Adders := 12    
+	   2 Input      8 Bit       Adders := 5     
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 3     
+	   2 Input      2 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 1     
+	               26 Bit    Registers := 1     
+	               20 Bit    Registers := 1     
+	               16 Bit    Registers := 134   
+	               13 Bit    Registers := 6     
+	               12 Bit    Registers := 4     
+	               11 Bit    Registers := 2     
+	               10 Bit    Registers := 11    
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 155   
+	                7 Bit    Registers := 1     
+	                6 Bit    Registers := 14    
+	                5 Bit    Registers := 2     
+	                4 Bit    Registers := 10    
+	                3 Bit    Registers := 3     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 32    
++---ROMs : 
+	                              ROMs := 5     
++---Muxes : 
+	   4 Input    639 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 45    
+	   3 Input     32 Bit        Muxes := 1     
+	   2 Input     31 Bit        Muxes := 2     
+	   2 Input     30 Bit        Muxes := 2     
+	   2 Input     29 Bit        Muxes := 2     
+	   2 Input     28 Bit        Muxes := 2     
+	   2 Input     27 Bit        Muxes := 2     
+	   2 Input     26 Bit        Muxes := 2     
+	   2 Input     25 Bit        Muxes := 2     
+	   2 Input     24 Bit        Muxes := 2     
+	   2 Input     23 Bit        Muxes := 2     
+	   2 Input     22 Bit        Muxes := 2     
+	   3 Input     22 Bit        Muxes := 1     
+	   2 Input     21 Bit        Muxes := 2     
+	   2 Input     20 Bit        Muxes := 4     
+	   2 Input     19 Bit        Muxes := 3     
+	  25 Input     18 Bit        Muxes := 1     
+	   2 Input     18 Bit        Muxes := 3     
+	   2 Input     17 Bit        Muxes := 3     
+	   3 Input     16 Bit        Muxes := 1     
+	  18 Input     16 Bit        Muxes := 66    
+	   2 Input     16 Bit        Muxes := 6     
+	   2 Input     15 Bit        Muxes := 3     
+	   2 Input     14 Bit        Muxes := 3     
+	   2 Input     13 Bit        Muxes := 9     
+	   4 Input     13 Bit        Muxes := 1     
+	   3 Input     13 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 3     
+	  10 Input     12 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 3     
+	  11 Input     10 Bit        Muxes := 1     
+	  18 Input     10 Bit        Muxes := 1     
+	   6 Input     10 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 13    
+	   2 Input      9 Bit        Muxes := 3     
+	  16 Input      8 Bit        Muxes := 8     
+	   8 Input      8 Bit        Muxes := 1     
+	  11 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 243   
+	   5 Input      8 Bit        Muxes := 1     
+	  18 Input      8 Bit        Muxes := 2     
+	   3 Input      8 Bit        Muxes := 6     
+	   2 Input      7 Bit        Muxes := 3     
+	   8 Input      7 Bit        Muxes := 3     
+	   4 Input      7 Bit        Muxes := 1     
+	   5 Input      6 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 2     
+	  12 Input      5 Bit        Muxes := 1     
+	  18 Input      5 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 2     
+	   4 Input      4 Bit        Muxes := 2     
+	   3 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 15    
+	 256 Input      4 Bit        Muxes := 1     
+	   4 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 8     
+	  18 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 6     
+	  14 Input      1 Bit        Muxes := 1     
+	  13 Input      1 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 1     
+	  12 Input      1 Bit        Muxes := 4     
+	  15 Input      1 Bit        Muxes := 1     
+	  11 Input      1 Bit        Muxes := 3     
+	   8 Input      1 Bit        Muxes := 4     
+	   4 Input      1 Bit        Muxes := 4     
+	  18 Input      1 Bit        Muxes := 139   
+	   3 Input      1 Bit        Muxes := 155   
+	   2 Input      1 Bit        Muxes := 304   
+	   7 Input      1 Bit        Muxes := 1     
+	  10 Input      1 Bit        Muxes := 4     
+	   6 Input      1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module top_level 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
+Module averager 
+Detailed RTL Component Info : 
++---Adders : 
+	  33 Input     22 Bit       Adders := 1     
+	  17 Input     22 Bit       Adders := 1     
+	  16 Input     22 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
++---Muxes : 
+	   3 Input     22 Bit        Muxes := 1     
+	   3 Input     16 Bit        Muxes := 1     
+Module magnitude 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 2     
+	                6 Bit    Registers := 12    
+	                1 Bit    Registers := 3     
+Module disp_draw 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 2     
++---Registers : 
+	               16 Bit    Registers := 130   
+	               10 Bit    Registers := 1     
+	                8 Bit    Registers := 130   
+	                6 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	  25 Input     18 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 1     
+	  18 Input     16 Bit        Muxes := 66    
+	  18 Input     10 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 229   
+	  18 Input      8 Bit        Muxes := 2     
+	   3 Input      8 Bit        Muxes := 6     
+	  18 Input      5 Bit        Muxes := 1     
+	  18 Input      2 Bit        Muxes := 1     
+	   7 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 2     
+	   8 Input      1 Bit        Muxes := 2     
+	  11 Input      1 Bit        Muxes := 1     
+	  12 Input      1 Bit        Muxes := 1     
+	  18 Input      1 Bit        Muxes := 139   
+	   3 Input      1 Bit        Muxes := 154   
+	  10 Input      1 Bit        Muxes := 1     
+	  15 Input      1 Bit        Muxes := 1     
+	  14 Input      1 Bit        Muxes := 1     
+	  13 Input      1 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 273   
+Module adc_fft_fsmV3 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input     13 Bit       Adders := 5     
++---Registers : 
+	               16 Bit    Registers := 1     
+	               13 Bit    Registers := 4     
+	                9 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 11    
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 2     
+	   2 Input     13 Bit        Muxes := 4     
+	   4 Input     13 Bit        Muxes := 1     
+	   3 Input     13 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	  12 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 5     
+	   2 Input      3 Bit        Muxes := 2     
+	  11 Input      1 Bit        Muxes := 2     
+	   8 Input      1 Bit        Muxes := 1     
+	  10 Input      1 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 1     
+	  12 Input      1 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 9     
+Module vga_controller_640_60 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 2     
++---Registers : 
+	               11 Bit    Registers := 2     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+Module SPI_If__parameterized0 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 3     
+	                6 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+	   5 Input      8 Bit        Muxes := 1     
+	   4 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module ADXL362Ctrl__parameterized0 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     20 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 2     
++---Registers : 
+	               20 Bit    Registers := 1     
+	               12 Bit    Registers := 4     
+	               10 Bit    Registers := 1     
+	                8 Bit    Registers := 11    
+	                7 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     20 Bit        Muxes := 1     
+	  10 Input     12 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 1     
+	   6 Input     10 Bit        Muxes := 1     
+	  11 Input     10 Bit        Muxes := 1     
+	  11 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 9     
+	   8 Input      7 Bit        Muxes := 3     
+	   5 Input      6 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 5     
+	   2 Input      2 Bit        Muxes := 6     
+	  10 Input      1 Bit        Muxes := 1     
+	   8 Input      1 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 17    
+Module AccelArithmetics__parameterized0 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     26 Bit       Adders := 1     
+	   2 Input     13 Bit       Adders := 4     
+	   2 Input     10 Bit       Adders := 2     
++---Registers : 
+	               26 Bit    Registers := 1     
+	               13 Bit    Registers := 2     
+	               10 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     13 Bit        Muxes := 2     
+	   2 Input     10 Bit        Muxes := 6     
+Module AccelerometerCtl__parameterized0 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     10 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module Pwm 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+Module vga_display_gen 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 3     
++---Registers : 
+	               32 Bit    Registers := 1     
+	               10 Bit    Registers := 2     
+	                8 Bit    Registers := 6     
+	                4 Bit    Registers := 9     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---ROMs : 
+	                              ROMs := 5     
++---Muxes : 
+	   4 Input    639 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 45    
+	   3 Input     32 Bit        Muxes := 1     
+	   2 Input     31 Bit        Muxes := 2     
+	   2 Input     30 Bit        Muxes := 2     
+	   2 Input     29 Bit        Muxes := 2     
+	   2 Input     28 Bit        Muxes := 2     
+	   2 Input     27 Bit        Muxes := 2     
+	   2 Input     26 Bit        Muxes := 2     
+	   2 Input     25 Bit        Muxes := 2     
+	   2 Input     24 Bit        Muxes := 2     
+	   2 Input     23 Bit        Muxes := 2     
+	   2 Input     22 Bit        Muxes := 2     
+	   2 Input     21 Bit        Muxes := 2     
+	   2 Input     20 Bit        Muxes := 3     
+	   2 Input     19 Bit        Muxes := 3     
+	   2 Input     18 Bit        Muxes := 3     
+	   2 Input     17 Bit        Muxes := 3     
+	   2 Input     16 Bit        Muxes := 3     
+	   2 Input     15 Bit        Muxes := 3     
+	   2 Input     14 Bit        Muxes := 3     
+	   2 Input     13 Bit        Muxes := 3     
+	   2 Input     12 Bit        Muxes := 3     
+	   2 Input     11 Bit        Muxes := 3     
+	   2 Input     10 Bit        Muxes := 5     
+	   2 Input      9 Bit        Muxes := 3     
+	   2 Input      8 Bit        Muxes := 3     
+	   2 Input      7 Bit        Muxes := 3     
+	   4 Input      7 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 1     
+	 256 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 9     
+	   4 Input      4 Bit        Muxes := 2     
+	   3 Input      4 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+Module vga_top 
+Detailed RTL Component Info : 
+Module CDiv 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 4     
++---Registers : 
+	               10 Bit    Registers := 4     
+	                1 Bit    Registers := 1     
+Module Hex2SSeg 
+Detailed RTL Component Info : 
++---Muxes : 
+	  16 Input      8 Bit        Muxes := 1     
+Module HexDigs2SSeg 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 2     
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   8 Input      8 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Workers Ready, Starting Parallel Section  : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1255.289 ; gain = 564.852
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+DSP Report: Generating DSP Accel_Calculation/ACCEL_Y_SQUARE_reg, operation Mode is: (A2*B2)'.
+DSP Report: register ADXL_Control/ACCEL_Y_reg is absorbed into DSP Accel_Calculation/ACCEL_Y_SQUARE_reg.
+DSP Report: register ADXL_Control/ACCEL_Y_reg is absorbed into DSP Accel_Calculation/ACCEL_Y_SQUARE_reg.
+DSP Report: register Accel_Calculation/ACCEL_Y_SQUARE_reg is absorbed into DSP Accel_Calculation/ACCEL_Y_SQUARE_reg.
+DSP Report: operator Accel_Calculation/multOp is absorbed into DSP Accel_Calculation/ACCEL_Y_SQUARE_reg.
+DSP Report: Generating DSP Accel_Calculation/ACCEL_Z_SQUARE_reg, operation Mode is: (A2*B2)'.
+DSP Report: register ADXL_Control/ACCEL_Z_reg is absorbed into DSP Accel_Calculation/ACCEL_Z_SQUARE_reg.
+DSP Report: register ADXL_Control/ACCEL_Z_reg is absorbed into DSP Accel_Calculation/ACCEL_Z_SQUARE_reg.
+DSP Report: register Accel_Calculation/ACCEL_Z_SQUARE_reg is absorbed into DSP Accel_Calculation/ACCEL_Z_SQUARE_reg.
+DSP Report: operator Accel_Calculation/multOp is absorbed into DSP Accel_Calculation/ACCEL_Z_SQUARE_reg.
+DSP Report: Generating DSP Accel_Calculation/ACCEL_X_SQUARE_reg, operation Mode is: (A2*B2)'.
+DSP Report: register ADXL_Control/ACCEL_X_reg is absorbed into DSP Accel_Calculation/ACCEL_X_SQUARE_reg.
+DSP Report: register ADXL_Control/ACCEL_X_reg is absorbed into DSP Accel_Calculation/ACCEL_X_SQUARE_reg.
+DSP Report: register Accel_Calculation/ACCEL_X_SQUARE_reg is absorbed into DSP Accel_Calculation/ACCEL_X_SQUARE_reg.
+DSP Report: operator Accel_Calculation/multOp is absorbed into DSP Accel_Calculation/ACCEL_X_SQUARE_reg.
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:36 ; elapsed = 00:00:36 . Memory (MB): peak = 1255.289 ; gain = 564.852
+---------------------------------------------------------------------------------
+Finished Parallel Reinfer  : Time (s): cpu = 00:00:36 ; elapsed = 00:00:36 . Memory (MB): peak = 1255.289 ; gain = 564.852
+---------------------------------------------------------------------------------
+Start RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+DSP:
++-----------------+----------+--------------+------------------+--------+--------+--------+--------+------+------+------+------+------+
+|Module Name      | OP MODE  | Neg Edge Clk | A Size (Signed?) | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | PREG | 
++-----------------+----------+--------------+------------------+--------+--------+--------+--------+------+------+------+------+------+
+|AccelerometerCtl | (A2*B2)' | No           | 12 (Y)           | 12 (Y) | 48 (N) | 25 (N) | 24 (Y) | 1    | 1    | 1    | 1    | 0    | 
+|AccelerometerCtl | (A2*B2)' | No           | 12 (Y)           | 12 (Y) | 48 (N) | 25 (N) | 24 (Y) | 1    | 1    | 1    | 1    | 0    | 
+|AccelerometerCtl | (A2*B2)' | No           | 12 (Y)           | 12 (Y) | 48 (N) | 25 (N) | 24 (Y) | 1    | 1    | 1    | 1    | 0    | 
++-----------------+----------+--------------+------------------+--------+--------+--------+--------+------+------+------+------+------+
+
+Note: The table shows DSPs generated at current stage. Some DSP generation could be reversed due to later optimizations. Mutiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (disp_draw_inst/i_278/\FSM_onehot_s_curr_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\vga_comp/vga_disp /Accel_inst/\ADXL_Control/Cmd_Reg_reg[0][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\fft_fsm/fft_config_reg[7] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\fft_fsm/m_axis_data_tready_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\fft_fsm/s_axis_config_tdata_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\vga_comp/vga_disp /Accel_inst/\ADXL_Control/Cmd_Reg_reg[1][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\vga_comp/vga_disp /Accel_inst/i_3/\ADXL_Control/FSM_onehot_StC_Adxl_Ctrl_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\vga_comp/vga_disp /Accel_inst/i_1/\ADXL_Control/FSM_onehot_StC_Spi_SendRec_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\vga_comp/vga_disp /Accel_inst/i_2/\ADXL_Control/FSM_onehot_StC_Spi_Trans_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\vga_comp/vga_disp /Accel_inst/i_0/\ADXL_Control/SPI_Interface/FSM_sequential_StC_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\fft_fsm/s_axis_config_tdata_reg[7] )
+WARNING: [Synth 8-3332] Sequential element (\FSM_onehot_s_curr_reg[0] ) is unused and will be removed from module disp_draw.
+WARNING: [Synth 8-3332] Sequential element (\fft_fsm/ram2_rst_reg ) is unused and will be removed from module top_level.
+WARNING: [Synth 8-3332] Sequential element (\fft_fsm/ram2_addra_s_reg[12] ) is unused and will be removed from module top_level.
+WARNING: [Synth 8-3332] Sequential element (\fft_fsm/ram2_addra_s_reg[11] ) is unused and will be removed from module top_level.
+WARNING: [Synth 8-3332] Sequential element (\fft_fsm/ram2_addra_s_reg[10] ) is unused and will be removed from module top_level.
+WARNING: [Synth 8-3332] Sequential element (\fft_fsm/s_axis_config_tdata_reg[15] ) is unused and will be removed from module top_level.
+WARNING: [Synth 8-3332] Sequential element (\fft_fsm/s_axis_config_tdata_reg[14] ) is unused and will be removed from module top_level.
+WARNING: [Synth 8-3332] Sequential element (\fft_fsm/s_axis_config_tdata_reg[13] ) is unused and will be removed from module top_level.
+WARNING: [Synth 8-3332] Sequential element (\fft_fsm/s_axis_config_tdata_reg[12] ) is unused and will be removed from module top_level.
+WARNING: [Synth 8-3332] Sequential element (\fft_fsm/s_axis_config_tdata_reg[11] ) is unused and will be removed from module top_level.
+WARNING: [Synth 8-3332] Sequential element (\fft_fsm/s_axis_config_tdata_reg[10] ) is unused and will be removed from module top_level.
+WARNING: [Synth 8-3332] Sequential element (\fft_fsm/s_axis_config_tdata_reg[9] ) is unused and will be removed from module top_level.
+WARNING: [Synth 8-3332] Sequential element (\fft_fsm/s_axis_config_tdata_reg[7] ) is unused and will be removed from module top_level.
+WARNING: [Synth 8-3332] Sequential element (\fft_fsm/s_axis_config_tdata_reg[6] ) is unused and will be removed from module top_level.
+WARNING: [Synth 8-3332] Sequential element (\fft_fsm/s_axis_config_tdata_reg[5] ) is unused and will be removed from module top_level.
+WARNING: [Synth 8-3332] Sequential element (\fft_fsm/s_axis_config_tdata_reg[4] ) is unused and will be removed from module top_level.
+WARNING: [Synth 8-3332] Sequential element (\fft_fsm/s_axis_config_tdata_reg[3] ) is unused and will be removed from module top_level.
+WARNING: [Synth 8-3332] Sequential element (\fft_fsm/s_axis_config_tdata_reg[2] ) is unused and will be removed from module top_level.
+WARNING: [Synth 8-3332] Sequential element (\fft_fsm/s_axis_config_tdata_reg[1] ) is unused and will be removed from module top_level.
+WARNING: [Synth 8-3332] Sequential element (\fft_fsm/s_axis_config_tdata_reg[0] ) is unused and will be removed from module top_level.
+WARNING: [Synth 8-3332] Sequential element (\fft_fsm/m_axis_data_tready_reg ) is unused and will be removed from module top_level.
+WARNING: [Synth 8-3332] Sequential element (\fft_fsm/fft_config_reg[7] ) is unused and will be removed from module top_level.
+WARNING: [Synth 8-3332] Sequential element (\fft_fsm/fft_config_reg[6] ) is unused and will be removed from module top_level.
+WARNING: [Synth 8-3332] Sequential element (\fft_fsm/fft_config_reg[5] ) is unused and will be removed from module top_level.
+WARNING: [Synth 8-3332] Sequential element (\fft_fsm/fft_config_reg[4] ) is unused and will be removed from module top_level.
+WARNING: [Synth 8-3332] Sequential element (\fft_fsm/fft_config_reg[3] ) is unused and will be removed from module top_level.
+WARNING: [Synth 8-3332] Sequential element (\fft_fsm/fft_config_reg[2] ) is unused and will be removed from module top_level.
+WARNING: [Synth 8-3332] Sequential element (\fft_fsm/fft_config_reg[1] ) is unused and will be removed from module top_level.
+WARNING: [Synth 8-3332] Sequential element (\fft_fsm/fft_config_reg[0] ) is unused and will be removed from module top_level.
+WARNING: [Synth 8-3332] Sequential element (\ADXL_Control/SPI_Interface/FSM_sequential_StC_reg[2] ) is unused and will be removed from module AccelerometerCtl__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\ADXL_Control/FSM_onehot_StC_Spi_SendRec_reg[0] ) is unused and will be removed from module AccelerometerCtl__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\ADXL_Control/FSM_onehot_StC_Spi_Trans_reg[0] ) is unused and will be removed from module AccelerometerCtl__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\ADXL_Control/FSM_onehot_StC_Adxl_Ctrl_reg[0] ) is unused and will be removed from module AccelerometerCtl__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\ADXL_Control/ACCEL_TMP_reg[11] ) is unused and will be removed from module AccelerometerCtl__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\ADXL_Control/ACCEL_TMP_reg[10] ) is unused and will be removed from module AccelerometerCtl__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\ADXL_Control/ACCEL_TMP_reg[9] ) is unused and will be removed from module AccelerometerCtl__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\ADXL_Control/ACCEL_TMP_reg[8] ) is unused and will be removed from module AccelerometerCtl__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\ADXL_Control/ACCEL_TMP_reg[7] ) is unused and will be removed from module AccelerometerCtl__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\ADXL_Control/ACCEL_TMP_reg[6] ) is unused and will be removed from module AccelerometerCtl__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\ADXL_Control/ACCEL_TMP_reg[5] ) is unused and will be removed from module AccelerometerCtl__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\ADXL_Control/ACCEL_TMP_reg[4] ) is unused and will be removed from module AccelerometerCtl__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\ADXL_Control/ACCEL_TMP_reg[3] ) is unused and will be removed from module AccelerometerCtl__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\ADXL_Control/ACCEL_TMP_reg[2] ) is unused and will be removed from module AccelerometerCtl__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\ADXL_Control/ACCEL_TMP_reg[1] ) is unused and will be removed from module AccelerometerCtl__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\ADXL_Control/ACCEL_TMP_reg[0] ) is unused and will be removed from module AccelerometerCtl__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\ADXL_Control/ACCEL_TMP_SUM_reg[0] ) is unused and will be removed from module AccelerometerCtl__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\ADXL_Control/ACCEL_TMP_SUM_reg[1] ) is unused and will be removed from module AccelerometerCtl__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\ADXL_Control/ACCEL_TMP_SUM_reg[2] ) is unused and will be removed from module AccelerometerCtl__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\ADXL_Control/ACCEL_TMP_SUM_reg[3] ) is unused and will be removed from module AccelerometerCtl__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\ADXL_Control/ACCEL_TMP_SUM_reg[4] ) is unused and will be removed from module AccelerometerCtl__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\ADXL_Control/ACCEL_TMP_SUM_reg[5] ) is unused and will be removed from module AccelerometerCtl__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\ADXL_Control/ACCEL_TMP_SUM_reg[6] ) is unused and will be removed from module AccelerometerCtl__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\ADXL_Control/ACCEL_TMP_SUM_reg[7] ) is unused and will be removed from module AccelerometerCtl__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\ADXL_Control/ACCEL_TMP_SUM_reg[8] ) is unused and will be removed from module AccelerometerCtl__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\ADXL_Control/ACCEL_TMP_SUM_reg[9] ) is unused and will be removed from module AccelerometerCtl__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\ADXL_Control/ACCEL_TMP_SUM_reg[10] ) is unused and will be removed from module AccelerometerCtl__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\ADXL_Control/ACCEL_TMP_SUM_reg[11] ) is unused and will be removed from module AccelerometerCtl__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\ADXL_Control/ACCEL_TMP_SUM_reg[12] ) is unused and will be removed from module AccelerometerCtl__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\ADXL_Control/ACCEL_TMP_SUM_reg[13] ) is unused and will be removed from module AccelerometerCtl__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\ADXL_Control/ACCEL_TMP_SUM_reg[14] ) is unused and will be removed from module AccelerometerCtl__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\ADXL_Control/ACCEL_TMP_SUM_reg[15] ) is unused and will be removed from module AccelerometerCtl__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\Accel_Calculation/ACCEL_X_SUM_reg[1] ) is unused and will be removed from module AccelerometerCtl__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\Accel_Calculation/ACCEL_X_SUM_reg[0] ) is unused and will be removed from module AccelerometerCtl__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\Accel_Calculation/ACCEL_X_CLIP_reg[9] ) is unused and will be removed from module AccelerometerCtl__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\Accel_Calculation/ACCEL_X_CLIP_reg[4] ) is unused and will be removed from module AccelerometerCtl__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\Accel_Calculation/ACCEL_X_CLIP_reg[3] ) is unused and will be removed from module AccelerometerCtl__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\Accel_Calculation/ACCEL_X_CLIP_reg[2] ) is unused and will be removed from module AccelerometerCtl__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\Accel_Calculation/ACCEL_X_CLIP_reg[1] ) is unused and will be removed from module AccelerometerCtl__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\Accel_Calculation/ACCEL_X_CLIP_reg[0] ) is unused and will be removed from module AccelerometerCtl__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\Accel_Calculation/ACCEL_Y_SUM_reg[1] ) is unused and will be removed from module AccelerometerCtl__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\Accel_Calculation/ACCEL_Y_SUM_reg[0] ) is unused and will be removed from module AccelerometerCtl__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\Accel_Calculation/ACCEL_Y_CLIP_reg[9] ) is unused and will be removed from module AccelerometerCtl__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\Accel_Calculation/ACCEL_Y_CLIP_reg[4] ) is unused and will be removed from module AccelerometerCtl__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\Accel_Calculation/ACCEL_Y_CLIP_reg[3] ) is unused and will be removed from module AccelerometerCtl__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\Accel_Calculation/ACCEL_Y_CLIP_reg[2] ) is unused and will be removed from module AccelerometerCtl__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\Accel_Calculation/ACCEL_Y_CLIP_reg[1] ) is unused and will be removed from module AccelerometerCtl__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\Accel_Calculation/ACCEL_Y_CLIP_reg[0] ) is unused and will be removed from module AccelerometerCtl__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\ADXL_Control/D_Send_reg[7] ) is unused and will be removed from module AccelerometerCtl__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\ADXL_Control/Cmd_Reg_reg[2][7] ) is unused and will be removed from module AccelerometerCtl__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\ADXL_Control/Cmd_Reg_reg[1][7] ) is unused and will be removed from module AccelerometerCtl__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\ADXL_Control/Cmd_Reg_reg[0][5] ) is unused and will be removed from module AccelerometerCtl__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\ADXL_Control/Cmd_Reg_reg[0][3] ) is unused and will be removed from module AccelerometerCtl__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\ADXL_Control/Cmd_Reg_reg[0][0] ) is unused and will be removed from module AccelerometerCtl__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\heightInd_reg[31] ) is unused and will be removed from module vga_display_gen.
+WARNING: [Synth 8-3332] Sequential element (\heightInd_reg[30] ) is unused and will be removed from module vga_display_gen.
+WARNING: [Synth 8-3332] Sequential element (\heightInd_reg[29] ) is unused and will be removed from module vga_display_gen.
+WARNING: [Synth 8-3332] Sequential element (\heightInd_reg[28] ) is unused and will be removed from module vga_display_gen.
+WARNING: [Synth 8-3332] Sequential element (\heightInd_reg[27] ) is unused and will be removed from module vga_display_gen.
+WARNING: [Synth 8-3332] Sequential element (\heightInd_reg[26] ) is unused and will be removed from module vga_display_gen.
+WARNING: [Synth 8-3332] Sequential element (\heightInd_reg[25] ) is unused and will be removed from module vga_display_gen.
+WARNING: [Synth 8-3332] Sequential element (\heightInd_reg[24] ) is unused and will be removed from module vga_display_gen.
+WARNING: [Synth 8-3332] Sequential element (\heightInd_reg[23] ) is unused and will be removed from module vga_display_gen.
+WARNING: [Synth 8-3332] Sequential element (\heightInd_reg[22] ) is unused and will be removed from module vga_display_gen.
+WARNING: [Synth 8-3332] Sequential element (\heightInd_reg[21] ) is unused and will be removed from module vga_display_gen.
+WARNING: [Synth 8-3332] Sequential element (\heightInd_reg[20] ) is unused and will be removed from module vga_display_gen.
+WARNING: [Synth 8-3332] Sequential element (\heightInd_reg[19] ) is unused and will be removed from module vga_display_gen.
+WARNING: [Synth 8-3332] Sequential element (\heightInd_reg[18] ) is unused and will be removed from module vga_display_gen.
+WARNING: [Synth 8-3332] Sequential element (\heightInd_reg[17] ) is unused and will be removed from module vga_display_gen.
+WARNING: [Synth 8-3332] Sequential element (\heightInd_reg[16] ) is unused and will be removed from module vga_display_gen.
+WARNING: [Synth 8-3332] Sequential element (\heightInd_reg[15] ) is unused and will be removed from module vga_display_gen.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:01:02 ; elapsed = 00:01:03 . Memory (MB): peak = 1255.289 ; gain = 564.852
+---------------------------------------------------------------------------------
+Finished Parallel Area Opt  : Time (s): cpu = 00:01:02 ; elapsed = 00:01:03 . Memory (MB): peak = 1255.289 ; gain = 564.852
+Finished Parallel Section  : Time (s): cpu = 00:01:02 ; elapsed = 00:01:03 . Memory (MB): peak = 1255.289 ; gain = 564.852
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-565] redefining clock 'clk'
+INFO: Moved 4 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:16 ; elapsed = 00:01:17 . Memory (MB): peak = 1314.301 ; gain = 623.863
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:19 ; elapsed = 00:01:20 . Memory (MB): peak = 1323.301 ; gain = 632.863
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4480] The timing for the instance \vga_comp/vga_disp/sel_rep  (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance \vga_comp/vga_disp/sel_rep__0  (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance \vga_comp/vga_disp/sel_rep__1  (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance \vga_comp/vga_disp/sel_rep__2  (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance \vga_comp/vga_disp/sel  (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:27 ; elapsed = 00:01:28 . Memory (MB): peak = 1383.684 ; gain = 693.246
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+Gated Clock Conversion mode: auto
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:28 ; elapsed = 00:01:29 . Memory (MB): peak = 1383.684 ; gain = 693.246
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:28 ; elapsed = 00:01:29 . Memory (MB): peak = 1383.684 ; gain = 693.246
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:29 ; elapsed = 00:01:29 . Memory (MB): peak = 1383.684 ; gain = 693.246
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register:
++------------+--------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name                                                     | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+--------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|top_level   | disp_draw_inst/mag_inst/barNumOut_reg[5]                     | 12     | 6     | NO           | NO                 | YES               | 6      | 0       | 
+|top_level   | disp_draw_inst/mag_inst/inValidPipe3_reg                     | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|top_level   | vga_comp/vga_disp/Accel_inst/ADXL_Control/Data_Reg_reg[2][6] | 3      | 6     | NO           | NO                 | YES               | 6      | 0       | 
++------------+--------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+-------------------+----------+
+|      |BlackBox name      |Instances |
++------+-------------------+----------+
+|1     |xfft_0             |         1|
+|2     |blk_mem_gen_0      |         1|
+|3     |blk_mem_gen_1      |         1|
+|4     |clk_wiz_0          |         1|
+|5     |c_counter_binary_0 |         1|
+|6     |mult_gen_0         |         2|
+|7     |c_addsub_0         |         1|
+|8     |cordic_0           |         1|
+|9     |clk_wiz_vga        |         1|
+|10    |Square_Root        |         1|
++------+-------------------+----------+
+
+Report Cell Usage: 
++------+-------------------+------+
+|      |Cell               |Count |
++------+-------------------+------+
+|1     |Square_Root        |     1|
+|2     |blk_mem_gen_0      |     1|
+|3     |blk_mem_gen_1      |     1|
+|4     |c_addsub_0_bbox    |     1|
+|5     |c_counter_binary_0 |     1|
+|6     |clk_wiz_0          |     1|
+|7     |clk_wiz_vga_bbox   |     1|
+|8     |cordic_0_bbox      |     1|
+|9     |mult_gen_0_bbox    |     1|
+|10    |mult_gen_0_bbox_0  |     1|
+|11    |xfft_0             |     1|
+|12    |BUFG               |     1|
+|13    |CARRY4             |   254|
+|14    |DSP48E1            |     3|
+|15    |LUT1               |   121|
+|16    |LUT2               |   258|
+|17    |LUT3               |  1703|
+|18    |LUT4               |   760|
+|19    |LUT5               |   416|
+|20    |LUT6               |  1091|
+|21    |MUXF7              |   163|
+|22    |MUXF8              |    54|
+|23    |RAMB18E1           |     1|
+|24    |RAMB18E1_1         |     1|
+|25    |RAMB18E1_2         |     1|
+|26    |RAMB18E1_3         |     1|
+|27    |RAMB18E1_4         |     1|
+|28    |SRL16E             |    13|
+|29    |FDCE               |    47|
+|30    |FDPE               |     1|
+|31    |FDRE               |  3738|
+|32    |FDSE               |    25|
+|33    |IBUF               |    18|
+|34    |OBUF               |    56|
++------+-------------------+------+
+
+Report Instance Areas: 
++------+--------------------------+---------------------------------+------+
+|      |Instance                  |Module                           |Cells |
++------+--------------------------+---------------------------------+------+
+|1     |top                       |                                 |  8994|
+|2     |  decoder                 |HexDigs2SSeg                     |   283|
+|3     |  disp_draw_inst          |disp_draw                        |  6484|
+|4     |    avg_inst              |averager                         |   721|
+|5     |    mag_inst              |magnitude                        |   826|
+|6     |  divide                  |CDiv                             |   109|
+|7     |  fft_fsm                 |adc_fft_fsmV3                    |   229|
+|8     |  vga_comp                |vga_top                          |  1493|
+|9     |    vga_cont              |vga_controller_640_60            |    65|
+|10    |    vga_disp              |vga_display_gen                  |  1427|
+|11    |      Accel_inst          |AccelerometerCtl__parameterized0 |   779|
+|12    |        ADXL_Control      |ADXL362Ctrl__parameterized0      |   583|
+|13    |          SPI_Interface   |SPI_If__parameterized0           |    77|
+|14    |        Accel_Calculation |AccelArithmetics__parameterized0 |   172|
+|15    |      pwm_blue            |Pwm                              |    24|
+|16    |      pwm_green           |Pwm_0                            |    24|
+|17    |      pwm_red             |Pwm_1                            |    24|
++------+--------------------------+---------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:29 ; elapsed = 00:01:30 . Memory (MB): peak = 1383.684 ; gain = 693.246
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 116 warnings.
+Synthesis Optimization Complete : Time (s): cpu = 00:01:29 ; elapsed = 00:01:30 . Memory (MB): peak = 1383.684 ; gain = 693.246
+Reading core file '/data1/cdaffron/git/ece551hw/final/chris/final_version_opt_test/final_version_opt_test.srcs/sources_1/ip/Square_Root/Square_Root.ngc' for (cell view 'Square_Root', library 'work')
+Parsing EDIF File [./.ngc2edfcache/Square_Root_ngc_879fe675.edif]
+Finished Parsing EDIF File [./.ngc2edfcache/Square_Root_ngc_879fe675.edif]
+INFO: [Netlist 29-17] Analyzing 471 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Xilinx ngc2edif P.20140520
+INFO: [Opt 31-140] Inserted 0 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 0 OBUFs to IO ports without IO buffers.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 154 instances were transformed.
+  (MUXCY,XORCY) => CARRY4: 42 instances
+  FD => FDRE: 19 instances
+  FDE => FDRE: 22 instances
+  INV => LUT1: 49 instances
+  SRLC16E => SRL16E: 22 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+103 Infos, 108 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:31 ; elapsed = 00:01:31 . Memory (MB): peak = 1383.688 ; gain = 575.121
+# write_checkpoint top_level.dcp
+# report_utilization -file top_level_utilization_synth.rpt -pb top_level_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00.14 ; elapsed = 00:00:00.19 . Memory (MB): peak = 1383.688 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Fri Apr 24 14:46:24 2015...

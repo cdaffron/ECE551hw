@@ -1,0 +1,16 @@
+Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2014.2 (lin64) Build 932637 Wed Jun 11 13:08:52 MDT 2014
+| Date         : Mon Apr 20 14:36:00 2015
+| Host         : protoann0.eecs.utk.edu running 64-bit Red Hat Enterprise Linux Server release 7.0 (Maipo)
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-1
+-----------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'c_addsub_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of c_addsub_0 (xilinx.com:ip:c_addsub:12.0) from (Rev. 5) to (Rev. 4)
+
