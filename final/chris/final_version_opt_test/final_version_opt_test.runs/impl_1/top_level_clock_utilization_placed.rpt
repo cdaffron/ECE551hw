@@ -1,7 +1,7 @@
 Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2014.2 (lin64) Build 932637 Wed Jun 11 13:08:52 MDT 2014
-| Date         : Fri Apr 24 15:25:04 2015
+| Date         : Fri Apr 24 16:17:25 2015
 | Host         : com1549.eecs.utk.edu running 64-bit Red Hat Enterprise Linux Server release 6.5 (Santiago)
 | Command      : report_clock_utilization -file top_level_clock_utilization_placed.rpt
 | Design       : top_level
@@ -24,8 +24,7 @@ Table of Contents
 10. Net wise resources used in clock region X1Y1
 11. Net wise resources used in clock region X0Y2
 12. Net wise resources used in clock region X1Y2
-13. Net wise resources used in clock region X0Y3
-14. Net wise resources used in clock region X1Y3
+13. Net wise resources used in clock region X1Y3
 
 1. Clock Primitive Utilization
 ------------------------------
@@ -33,7 +32,7 @@ Table of Contents
 +-------+------+-----------+-----------+
 | Type  | Used | Available | Num Fixed |
 +-------+------+-----------+-----------+
-| BUFG  |    7 |        32 |         0 |
+| BUFG  |    8 |        32 |         0 |
 | BUFH  |    0 |        96 |         0 |
 | BUFIO |    0 |        24 |         0 |
 | MMCM  |    2 |         6 |         0 |
@@ -53,11 +52,12 @@ Table of Contents
 +-------+---------------------------------+----------------------------------------------+------+-------+-------+---------------+-----------+
 |     1 | clk_debug/U0/clkf_buf           | clk_debug/U0/clkfbout_buf_clk_wiz_0          |    1 |     1 |    no |         1.721 |     0.086 |
 |     2 | vga_comp/clk_wiz/U0/clkf_buf    | vga_comp/clk_wiz/U0/clkfbout_buf_clk_wiz_vga |    1 |     1 |    no |         1.895 |     0.095 |
-|     3 | clk_debug/U0/clkout3_buf        | clk_debug/U0/clk_out3                        |   41 |    10 |    no |         1.885 |     0.150 |
-|     4 | vga_comp/clk_wiz/U0/clkout1_buf | vga_comp/clk_wiz/U0/clk_25out                |  415 |   152 |    no |         1.881 |     0.332 |
-|     5 | dbg_hub/inst/u_bufg_icon        | dbg_hub/inst/idrck                           |  459 |   107 |    no |         1.856 |     0.253 |
-|     6 | VGA_trig_BUFG_inst              | VGA_trig_BUFG                                | 4388 |  1341 |    no |         1.889 |     0.340 |
-|     7 | xlnx_opt_BUFG                   | xlnx_opt__18                                 | 7245 |  1909 |    no |         1.966 |     0.402 |
+|     3 | vga_comp/clk_wiz/U0/clkout1_buf | vga_comp/clk_wiz/U0/clk_25out                |   37 |    11 |    no |         1.867 |     0.158 |
+|     4 | clk_debug/U0/clkout3_buf        | clk_debug/U0/clk_out3                        |   41 |    11 |    no |         1.880 |     0.239 |
+|     5 | dbg_hub/inst/u_bufg_icon        | dbg_hub/inst/idrck                           |  457 |    99 |    no |         1.840 |     0.213 |
+|     6 | VGA_trig_BUFG_inst              | VGA_trig_BUFG                                |  512 |    90 |    no |         1.869 |     0.181 |
+|     7 | clk_debug/U0/clkout1_buf        | clk_debug/U0/clk_out1                        | 3524 |  1156 |    no |         1.882 |     0.318 |
+|     8 | xlnx_opt_BUFG                   | xlnx_opt__18                                 | 7245 |  1771 |    no |         1.956 |     0.407 |
 +-------+---------------------------------+----------------------------------------------+------+-------+-------+---------------+-----------+
 
 
@@ -66,10 +66,11 @@ Table of Contents
 +-------+-----------------------------------+-------------------------------------------+------+-------+-------+---------------+-----------+
 | Index | MMCM Cell                         | Net Name                                  | BELs | Sites | Fixed | MaxDelay (ns) | Skew (ns) |
 +-------+-----------------------------------+-------------------------------------------+------+-------+-------+---------------+-----------+
-|     1 | clk_debug/U0/mmcm_adv_inst        | clk_debug/U0/clk_out3_clk_wiz_0           |    1 |     1 |    no |         1.710 |     0.086 |
-|     2 | clk_debug/U0/mmcm_adv_inst        | clk_debug/U0/clkfbout_clk_wiz_0           |    1 |     1 |    no |         1.710 |     0.086 |
-|     3 | vga_comp/clk_wiz/U0/mmcm_adv_inst | vga_comp/clk_wiz/U0/clk_25out_clk_wiz_vga |    1 |     1 |    no |         2.018 |     0.101 |
-|     4 | vga_comp/clk_wiz/U0/mmcm_adv_inst | vga_comp/clk_wiz/U0/clkfbout_clk_wiz_vga  |    1 |     1 |    no |         2.018 |     0.101 |
+|     1 | clk_debug/U0/mmcm_adv_inst        | clk_debug/U0/clk_out1_clk_wiz_0           |    1 |     1 |    no |         1.710 |     0.086 |
+|     2 | clk_debug/U0/mmcm_adv_inst        | clk_debug/U0/clk_out3_clk_wiz_0           |    1 |     1 |    no |         1.710 |     0.086 |
+|     3 | clk_debug/U0/mmcm_adv_inst        | clk_debug/U0/clkfbout_clk_wiz_0           |    1 |     1 |    no |         1.710 |     0.086 |
+|     4 | vga_comp/clk_wiz/U0/mmcm_adv_inst | vga_comp/clk_wiz/U0/clk_25out_clk_wiz_vga |    1 |     1 |    no |         2.018 |     0.101 |
+|     5 | vga_comp/clk_wiz/U0/mmcm_adv_inst | vga_comp/clk_wiz/U0/clkfbout_clk_wiz_vga  |    1 |     1 |    no |         2.018 |     0.101 |
 +-------+-----------------------------------+-------------------------------------------+------+-------+-------+---------------+-----------+
 
 
@@ -91,8 +92,8 @@ Table of Contents
 | Index | Local Clk Src                                    | Net Name                       | BELs | Sites | Fixed | MaxDelay (ns) | Skew (ns) |
 +-------+--------------------------------------------------+--------------------------------+------+-------+-------+---------------+-----------+
 |     1 | dbg_hub/inst/bscan_inst/SERIES7_BSCAN.bscan_inst | dbg_hub/inst/bscan_inst/UPDATE |    1 |     1 |   yes |         0.000 |     0.000 |
-|     2 | vga_comp/vga_cont/VS_reg                         | vga_comp/vga_cont/O1           |   17 |     8 |    no |         3.369 |     2.594 |
-|     3 | divide/D_reg                                     | divide/Cout                    |   19 |     6 |    no |         0.963 |     0.491 |
+|     2 | vga_comp/vga_cont/VS_reg                         | vga_comp/vga_cont/O1           |   17 |     7 |    no |         3.715 |     2.990 |
+|     3 | divide/D_reg                                     | divide/Cout                    |   19 |     7 |    no |         1.447 |     0.975 |
 +-------+--------------------------------------------------+--------------------------------+------+-------+-------+---------------+-----------+
 
 
@@ -106,12 +107,12 @@ Table of Contents
 +-------------------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+
 | X0Y0              |    2 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    1 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |    0 | 20800 |    0 |  2400 |    0 |    20 |    0 |    10 |    0 |    20 |
 | X1Y0              |    0 |    12 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     5 |    0 |     0 |    0 |     0 |    0 |     0 |    0 | 12000 |    0 |  2200 |    0 |    40 |    0 |    20 |    0 |    40 |
-| X0Y1              |    2 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    1 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 | 1143 | 16000 |    7 |  2400 |    1 |    20 |    0 |    10 |    1 |    20 |
-| X1Y1              |    5 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |  884 | 15200 |   35 |  2600 |    0 |    60 |    0 |    30 |    0 |    40 |
-| X0Y2              |    3 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 | 5186 | 16000 |  339 |  2400 |   10 |    20 |    1 |    10 |   14 |    20 |
-| X1Y2              |    4 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 | 4205 | 15200 |  625 |  2600 |    7 |    60 |   11 |    30 |    8 |    40 |
-| X0Y3              |    1 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |   11 | 20800 |    0 |  2400 |    0 |    20 |    0 |    10 |    0 |    20 |
-| X1Y3              |    1 |    12 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     5 |    0 |     1 |    0 |     0 |    0 |     0 |   82 | 10800 |    0 |  2000 |    0 |    30 |    0 |    15 |    0 |    40 |
+| X0Y1              |    4 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    1 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |  655 | 16000 |   48 |  2400 |    0 |    20 |    1 |    10 |    0 |    20 |
+| X1Y1              |    4 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |  408 | 15200 |   18 |  2600 |    1 |    60 |    0 |    30 |    0 |    40 |
+| X0Y2              |    3 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 | 3402 | 16000 |  463 |  2400 |    0 |    20 |    9 |    10 |    0 |    20 |
+| X1Y2              |    4 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 | 6374 | 15200 |  405 |  2600 |   15 |    60 |    3 |    30 |   23 |    40 |
+| X0Y3              |    0 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |    0 | 20800 |    0 |  2400 |    0 |    20 |    0 |    10 |    0 |    20 |
+| X1Y3              |    1 |    12 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     5 |    0 |     1 |    0 |     0 |    0 |     0 |   22 | 10800 |    0 |  2000 |    0 |    30 |    0 |    15 |    0 |    40 |
 +-------------------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+
 * RAMB36 site can be used as two RAMB18/FIFO18 sites
 
@@ -130,38 +131,39 @@ Table of Contents
 9. Net wise resources used in clock region X0Y1
 -----------------------------------------------
 
-+-------------+-------------+-------+-----------+----------+---------+-----------+---------+---------+------+-------+----------+-------------------------------------+
-| Source Type | BUFHCE Site | Fixed | MMCM Pins | PLL Pins | GT Pins | BRAM Pins | ILOGICs | OLOGICs |  FFs | LUTMs | DSP48E1s |            Clock Net Name           |
-+-------------+-------------+-------+-----------+----------+---------+-----------+---------+---------+------+-------+----------+-------------------------------------+
-| BUFG        |     ---     |   no  |         1 |        0 |       0 |         0 |       0 |       0 |    0 |     0 |        0 | clk_debug/U0/clkfbout_buf_clk_wiz_0 |
-| BUFG        |     ---     |   no  |         1 |        0 |       0 |         2 |       0 |       0 | 1143 |     7 |        1 | xlnx_opt__18                        |
-+-------------+-------------+-------+-----------+----------+---------+-----------+---------+---------+------+-------+----------+-------------------------------------+
++-------------+-------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+-------------------------------------+
+| Source Type | BUFHCE Site | Fixed | MMCM Pins | PLL Pins | GT Pins | BRAM Pins | ILOGICs | OLOGICs | FFs | LUTMs | DSP48E1s |            Clock Net Name           |
++-------------+-------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+-------------------------------------+
+| BUFG        |     ---     |   no  |         1 |        0 |       0 |         0 |       0 |       0 |   0 |     0 |        0 | clk_debug/U0/clkfbout_buf_clk_wiz_0 |
+| BUFG        |     ---     |   no  |         1 |        0 |       0 |         0 |       0 |       0 |   0 |     0 |        0 | xlnx_opt__18                        |
+| BUFG        |     ---     |   no  |         0 |        0 |       0 |         0 |       0 |       0 | 263 |    24 |        0 | dbg_hub/inst/idrck                  |
+| BUFG        |     ---     |   no  |         0 |        0 |       0 |         2 |       0 |       0 | 391 |    24 |        0 | clk_debug/U0/clk_out1               |
++-------------+-------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+-------------------------------------+
 
 
 10. Net wise resources used in clock region X1Y1
 ------------------------------------------------
 
-+-------------+-------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+-------------------------------+
-| Source Type | BUFHCE Site | Fixed | MMCM Pins | PLL Pins | GT Pins | BRAM Pins | ILOGICs | OLOGICs | FFs | LUTMs | DSP48E1s |         Clock Net Name        |
-+-------------+-------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+-------------------------------+
-| BUFG        |     ---     |   no  |         0 |        0 |       0 |         0 |       0 |       0 |   1 |     0 |        0 | dbg_hub/inst/idrck            |
-| BUFG        |     ---     |   no  |         0 |        0 |       0 |         0 |       0 |       0 |   6 |     0 |        0 | vga_comp/clk_wiz/U0/clk_25out |
-| BUFG        |     ---     |   no  |         0 |        0 |       0 |         0 |       0 |       0 |  41 |     0 |        0 | clk_debug/U0/clk_out3         |
-| BUFG        |     ---     |   no  |         0 |        0 |       0 |         0 |       0 |       0 |  96 |    10 |        0 | xlnx_opt__18                  |
-| BUFG        |     ---     |   no  |         0 |        0 |       0 |         0 |       0 |       0 | 720 |    25 |        0 | VGA_trig_BUFG                 |
-+-------------+-------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+-------------------------------+
++-------------+-------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+-----------------------+
+| Source Type | BUFHCE Site | Fixed | MMCM Pins | PLL Pins | GT Pins | BRAM Pins | ILOGICs | OLOGICs | FFs | LUTMs | DSP48E1s |     Clock Net Name    |
++-------------+-------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+-----------------------+
+| BUFG        |     ---     |   no  |         0 |        0 |       0 |         0 |       0 |       0 |   1 |     0 |        0 | VGA_trig_BUFG         |
+| BUFG        |     ---     |   no  |         0 |        0 |       0 |         0 |       0 |       0 |   3 |     0 |        0 | clk_debug/U0/clk_out1 |
+| BUFG        |     ---     |   no  |         0 |        0 |       0 |         0 |       0 |       0 |  41 |     0 |        0 | clk_debug/U0/clk_out3 |
+| BUFG        |     ---     |   no  |         0 |        0 |       0 |         2 |       0 |       0 | 353 |    18 |        0 | xlnx_opt__18          |
++-------------+-------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+-----------------------+
 
 
 11. Net wise resources used in clock region X0Y2
 ------------------------------------------------
 
-+-------------+-------------+-------+-----------+----------+---------+-----------+---------+---------+------+-------+----------+-------------------------------+
-| Source Type | BUFHCE Site | Fixed | MMCM Pins | PLL Pins | GT Pins | BRAM Pins | ILOGICs | OLOGICs |  FFs | LUTMs | DSP48E1s |         Clock Net Name        |
-+-------------+-------------+-------+-----------+----------+---------+-----------+---------+---------+------+-------+----------+-------------------------------+
-| BUFG        |     ---     |   no  |         0 |        0 |       0 |         0 |       0 |       0 |   12 |     0 |        0 | vga_comp/clk_wiz/U0/clk_25out |
-| BUFG        |     ---     |   no  |         0 |        0 |       0 |         0 |       0 |       0 |  529 |     0 |        0 | VGA_trig_BUFG                 |
-| BUFG        |     ---     |   no  |         0 |        0 |       0 |        21 |       0 |       0 | 4645 |   339 |       14 | xlnx_opt__18                  |
-+-------------+-------------+-------+-----------+----------+---------+-----------+---------+---------+------+-------+----------+-------------------------------+
++-------------+-------------+-------+-----------+----------+---------+-----------+---------+---------+------+-------+----------+-----------------------+
+| Source Type | BUFHCE Site | Fixed | MMCM Pins | PLL Pins | GT Pins | BRAM Pins | ILOGICs | OLOGICs |  FFs | LUTMs | DSP48E1s |     Clock Net Name    |
++-------------+-------------+-------+-----------+----------+---------+-----------+---------+---------+------+-------+----------+-----------------------+
+| BUFG        |     ---     |   no  |         0 |        0 |       0 |         0 |       0 |       0 |  170 |     0 |        0 | dbg_hub/inst/idrck    |
+| BUFG        |     ---     |   no  |         0 |        0 |       0 |         0 |       0 |       0 |  652 |     0 |        0 | xlnx_opt__18          |
+| BUFG        |     ---     |   no  |         0 |        0 |       0 |        18 |       0 |       0 | 2580 |   463 |        0 | clk_debug/U0/clk_out1 |
++-------------+-------------+-------+-----------+----------+---------+-----------+---------+---------+------+-------+----------+-----------------------+
 
 
 12. Net wise resources used in clock region X1Y2
@@ -170,41 +172,32 @@ Table of Contents
 +-------------+-------------+-------+-----------+----------+---------+-----------+---------+---------+------+-------+----------+-------------------------------+
 | Source Type | BUFHCE Site | Fixed | MMCM Pins | PLL Pins | GT Pins | BRAM Pins | ILOGICs | OLOGICs |  FFs | LUTMs | DSP48E1s |         Clock Net Name        |
 +-------------+-------------+-------+-----------+----------+---------+-----------+---------+---------+------+-------+----------+-------------------------------+
-| BUFG        |     ---     |   no  |         0 |        0 |       0 |         9 |       0 |       0 |  352 |    36 |        0 | vga_comp/clk_wiz/U0/clk_25out |
-| BUFG        |     ---     |   no  |         0 |        0 |       0 |         0 |       0 |       0 |  434 |    24 |        0 | dbg_hub/inst/idrck            |
-| BUFG        |     ---     |   no  |         0 |        0 |       0 |         9 |       0 |       0 |  837 |    31 |        8 | xlnx_opt__18                  |
-| BUFG        |     ---     |   no  |         0 |        0 |       0 |        13 |       0 |       0 | 2569 |   534 |        0 | VGA_trig_BUFG                 |
+| BUFG        |     ---     |   no  |         0 |        0 |       0 |         0 |       0 |       0 |   17 |    36 |        0 | clk_debug/U0/clk_out1         |
+| BUFG        |     ---     |   no  |         0 |        0 |       0 |         0 |       0 |       0 |   37 |     0 |        0 | vga_comp/clk_wiz/U0/clk_25out |
+| BUFG        |     ---     |   no  |         0 |        0 |       0 |         0 |       0 |       0 |  511 |     0 |        0 | VGA_trig_BUFG                 |
+| BUFG        |     ---     |   no  |         0 |        0 |       0 |        30 |       0 |       0 | 5787 |   369 |       23 | xlnx_opt__18                  |
 +-------------+-------------+-------+-----------+----------+---------+-----------+---------+---------+------+-------+----------+-------------------------------+
 
 
-13. Net wise resources used in clock region X0Y3
+13. Net wise resources used in clock region X1Y3
 ------------------------------------------------
 
 +-------------+-------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+----------------+
 | Source Type | BUFHCE Site | Fixed | MMCM Pins | PLL Pins | GT Pins | BRAM Pins | ILOGICs | OLOGICs | FFs | LUTMs | DSP48E1s | Clock Net Name |
 +-------------+-------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+----------------+
-| BUFG        |     ---     |   no  |         0 |        0 |       0 |         0 |       0 |       0 |  11 |     0 |        0 | xlnx_opt__18   |
-+-------------+-------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+----------------+
-
-
-14. Net wise resources used in clock region X1Y3
-------------------------------------------------
-
-+-------------+-------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+----------------+
-| Source Type | BUFHCE Site | Fixed | MMCM Pins | PLL Pins | GT Pins | BRAM Pins | ILOGICs | OLOGICs | FFs | LUTMs | DSP48E1s | Clock Net Name |
-+-------------+-------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+----------------+
-| BUFG        |     ---     |   no  |         0 |        0 |       0 |         0 |       0 |       0 |  82 |     0 |        0 | xlnx_opt__18   |
+| BUFG        |     ---     |   no  |         0 |        0 |       0 |         0 |       0 |       0 |  22 |     0 |        0 | xlnx_opt__18   |
 +-------------+-------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+----------------+
 
 
 
 # Location of BUFG Primitives 
-set_property LOC BUFGCTRL_X0Y0 [get_cells VGA_trig_BUFG_inst]
+set_property LOC BUFGCTRL_X0Y1 [get_cells VGA_trig_BUFG_inst]
+set_property LOC BUFGCTRL_X0Y0 [get_cells clk_debug/U0/clkout1_buf]
 set_property LOC BUFGCTRL_X0Y3 [get_cells clk_debug/U0/clkout3_buf]
-set_property LOC BUFGCTRL_X0Y4 [get_cells clk_debug/U0/clkf_buf]
-set_property LOC BUFGCTRL_X0Y1 [get_cells dbg_hub/inst/u_bufg_icon]
-set_property LOC BUFGCTRL_X0Y2 [get_cells vga_comp/clk_wiz/U0/clkout1_buf]
-set_property LOC BUFGCTRL_X0Y5 [get_cells vga_comp/clk_wiz/U0/clkf_buf]
+set_property LOC BUFGCTRL_X0Y5 [get_cells clk_debug/U0/clkf_buf]
+set_property LOC BUFGCTRL_X0Y2 [get_cells dbg_hub/inst/u_bufg_icon]
+set_property LOC BUFGCTRL_X0Y4 [get_cells vga_comp/clk_wiz/U0/clkout1_buf]
+set_property LOC BUFGCTRL_X0Y6 [get_cells vga_comp/clk_wiz/U0/clkf_buf]
 set_property LOC BUFGCTRL_X0Y16 [get_cells xlnx_opt_BUFG]
 
 # Location of IO Clock Primitives
@@ -227,11 +220,18 @@ set_property LOC IOB_X0Y143 [get_cells vsync_OBUF_inst]
 # Location of clock ports
 set_property LOC IOB_X1Y126 [get_ports clk]
 
-# Clock net "VGA_trig_BUFG" driven by instance "VGA_trig_BUFG_inst" located at site "BUFGCTRL_X0Y0"
+# Clock net "VGA_trig_BUFG" driven by instance "VGA_trig_BUFG_inst" located at site "BUFGCTRL_X0Y1"
 #startgroup
 create_pblock CLKAG_VGA_trig_BUFG
 add_cells_to_pblock [get_pblocks  CLKAG_VGA_trig_BUFG] [get_cells  -filter { IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="VGA_trig_BUFG"}]]]
 resize_pblock [get_pblocks CLKAG_VGA_trig_BUFG] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0 CLOCKREGION_X0Y1:CLOCKREGION_X0Y1 CLOCKREGION_X0Y2:CLOCKREGION_X0Y2 CLOCKREGION_X0Y3:CLOCKREGION_X0Y3 CLOCKREGION_X1Y0:CLOCKREGION_X1Y0 CLOCKREGION_X1Y1:CLOCKREGION_X1Y1 CLOCKREGION_X1Y2:CLOCKREGION_X1Y2 CLOCKREGION_X1Y3:CLOCKREGION_X1Y3}
+#endgroup
+
+# Clock net "clk_debug/U0/clk_out1" driven by instance "clk_debug/U0/clkout1_buf" located at site "BUFGCTRL_X0Y0"
+#startgroup
+create_pblock CLKAG_clk_debug/U0/clk_out1
+add_cells_to_pblock [get_pblocks  CLKAG_clk_debug/U0/clk_out1] [get_cells  -filter { IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="clk_debug/U0/clk_out1"}]]]
+resize_pblock [get_pblocks CLKAG_clk_debug/U0/clk_out1] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0 CLOCKREGION_X0Y1:CLOCKREGION_X0Y1 CLOCKREGION_X0Y2:CLOCKREGION_X0Y2 CLOCKREGION_X0Y3:CLOCKREGION_X0Y3 CLOCKREGION_X1Y0:CLOCKREGION_X1Y0 CLOCKREGION_X1Y1:CLOCKREGION_X1Y1 CLOCKREGION_X1Y2:CLOCKREGION_X1Y2 CLOCKREGION_X1Y3:CLOCKREGION_X1Y3}
 #endgroup
 
 # Clock net "clk_debug/U0/clk_out3" driven by instance "clk_debug/U0/clkout3_buf" located at site "BUFGCTRL_X0Y3"
@@ -248,28 +248,28 @@ add_cells_to_pblock [get_pblocks  CLKAG_dbg_hub/inst/bscan_inst/UPDATE] [get_cel
 resize_pblock [get_pblocks CLKAG_dbg_hub/inst/bscan_inst/UPDATE] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0 CLOCKREGION_X0Y1:CLOCKREGION_X0Y1 CLOCKREGION_X0Y2:CLOCKREGION_X0Y2 CLOCKREGION_X0Y3:CLOCKREGION_X0Y3 CLOCKREGION_X1Y0:CLOCKREGION_X1Y0 CLOCKREGION_X1Y1:CLOCKREGION_X1Y1 CLOCKREGION_X1Y2:CLOCKREGION_X1Y2 CLOCKREGION_X1Y3:CLOCKREGION_X1Y3}
 #endgroup
 
-# Clock net "dbg_hub/inst/idrck" driven by instance "dbg_hub/inst/u_bufg_icon" located at site "BUFGCTRL_X0Y1"
+# Clock net "dbg_hub/inst/idrck" driven by instance "dbg_hub/inst/u_bufg_icon" located at site "BUFGCTRL_X0Y2"
 #startgroup
 create_pblock CLKAG_dbg_hub/inst/idrck
 add_cells_to_pblock [get_pblocks  CLKAG_dbg_hub/inst/idrck] [get_cells  -filter { IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="dbg_hub/inst/idrck"}]]]
 resize_pblock [get_pblocks CLKAG_dbg_hub/inst/idrck] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0 CLOCKREGION_X0Y1:CLOCKREGION_X0Y1 CLOCKREGION_X0Y2:CLOCKREGION_X0Y2 CLOCKREGION_X0Y3:CLOCKREGION_X0Y3 CLOCKREGION_X1Y0:CLOCKREGION_X1Y0 CLOCKREGION_X1Y1:CLOCKREGION_X1Y1 CLOCKREGION_X1Y2:CLOCKREGION_X1Y2 CLOCKREGION_X1Y3:CLOCKREGION_X1Y3}
 #endgroup
 
-# Clock net "divide/Cout" driven by instance "divide/D_reg" located at site "SLICE_X84Y91"
+# Clock net "divide/Cout" driven by instance "divide/D_reg" located at site "SLICE_X78Y92"
 #startgroup
 create_pblock CLKAG_divide/Cout
 add_cells_to_pblock [get_pblocks  CLKAG_divide/Cout] [get_cells  -filter { IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="divide/Cout"}]]]
 resize_pblock [get_pblocks CLKAG_divide/Cout] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0 CLOCKREGION_X0Y1:CLOCKREGION_X0Y1 CLOCKREGION_X0Y2:CLOCKREGION_X0Y2 CLOCKREGION_X0Y3:CLOCKREGION_X0Y3 CLOCKREGION_X1Y0:CLOCKREGION_X1Y0 CLOCKREGION_X1Y1:CLOCKREGION_X1Y1 CLOCKREGION_X1Y2:CLOCKREGION_X1Y2 CLOCKREGION_X1Y3:CLOCKREGION_X1Y3}
 #endgroup
 
-# Clock net "vga_comp/clk_wiz/U0/clk_25out" driven by instance "vga_comp/clk_wiz/U0/clkout1_buf" located at site "BUFGCTRL_X0Y2"
+# Clock net "vga_comp/clk_wiz/U0/clk_25out" driven by instance "vga_comp/clk_wiz/U0/clkout1_buf" located at site "BUFGCTRL_X0Y4"
 #startgroup
 create_pblock CLKAG_vga_comp/clk_wiz/U0/clk_25out
 add_cells_to_pblock [get_pblocks  CLKAG_vga_comp/clk_wiz/U0/clk_25out] [get_cells  -filter { IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="vga_comp/clk_wiz/U0/clk_25out"}]]]
 resize_pblock [get_pblocks CLKAG_vga_comp/clk_wiz/U0/clk_25out] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0 CLOCKREGION_X0Y1:CLOCKREGION_X0Y1 CLOCKREGION_X0Y2:CLOCKREGION_X0Y2 CLOCKREGION_X0Y3:CLOCKREGION_X0Y3 CLOCKREGION_X1Y0:CLOCKREGION_X1Y0 CLOCKREGION_X1Y1:CLOCKREGION_X1Y1 CLOCKREGION_X1Y2:CLOCKREGION_X1Y2 CLOCKREGION_X1Y3:CLOCKREGION_X1Y3}
 #endgroup
 
-# Clock net "vga_comp/vga_cont/O1" driven by instance "vga_comp/vga_cont/VS_reg" located at site "SLICE_X67Y138"
+# Clock net "vga_comp/vga_cont/O1" driven by instance "vga_comp/vga_cont/VS_reg" located at site "SLICE_X81Y139"
 #startgroup
 create_pblock CLKAG_vga_comp/vga_cont/O1
 add_cells_to_pblock [get_pblocks  CLKAG_vga_comp/vga_cont/O1] [get_cells  -filter { IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL && NAME!=vsync_OBUF_inst} -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="vga_comp/vga_cont/O1"}]]]

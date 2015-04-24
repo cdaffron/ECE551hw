@@ -160,6 +160,7 @@ architecture Behavioral of top_level is
     
     attribute DONT_TOUCH : boolean;
     attribute DONT_TOUCH of barHeights : signal is TRUE;
+    attribute DONT_TOUCH of debug_clk : signal is TRUE;
 
 begin
     

@@ -799,6 +799,48 @@ set_property IOSTANDARD LVCMOS33 [get_ports rc]
 #set_property IOSTANDARD LVCMOS33 [get_ports {JA[7]}]
 
 
+set_property MARK_DEBUG true [get_nets {fft_fsm/state[4]}]
+set_property MARK_DEBUG true [get_nets {fft_fsm/state[3]}]
+set_property MARK_DEBUG true [get_nets {fft_fsm/state[2]}]
+set_property MARK_DEBUG true [get_nets {fft_fsm/state[1]}]
+set_property MARK_DEBUG true [get_nets {fft_fsm/state[0]}]
+set_property MARK_DEBUG true [get_nets VGA_trig]
+set_property MARK_DEBUG true [get_nets xlnx_opt_]
+set_property MARK_DEBUG true [get_nets busy_IBUF]
+set_property MARK_DEBUG true [get_nets n_2_fft_fsm]
+set_property MARK_DEBUG true [get_nets FFT_done]
+set_property MARK_DEBUG true [get_nets ram2_wea]
+set_property MARK_DEBUG true [get_nets ram1_wea]
+set_property MARK_DEBUG true [get_nets n_28_fft_fsm]
+set_property MARK_DEBUG true [get_nets n_30_fft_fsm]
+set_property MARK_DEBUG true [get_nets n_24_fft_fsm]
+set_property MARK_DEBUG true [get_nets n_26_fft_fsm]
+set_property MARK_DEBUG true [get_nets n_22_fft_fsm]
+set_property MARK_DEBUG true [get_nets n_27_fft_fsm]
+set_property MARK_DEBUG true [get_nets n_25_fft_fsm]
+set_property MARK_DEBUG true [get_nets n_31_fft_fsm]
+set_property MARK_DEBUG true [get_nets n_29_fft_fsm]
+set_property MARK_DEBUG true [get_nets n_23_fft_fsm]
+set_property MARK_DEBUG true [get_nets n_21_fft_fsm]
+set_property MARK_DEBUG true [get_nets n_20_fft_fsm]
+set_property MARK_DEBUG true [get_nets n_15_fft_fsm]
+set_property MARK_DEBUG true [get_nets n_12_fft_fsm]
+set_property MARK_DEBUG true [get_nets n_18_fft_fsm]
+set_property MARK_DEBUG true [get_nets n_17_fft_fsm]
+set_property MARK_DEBUG true [get_nets n_10_fft_fsm]
+set_property MARK_DEBUG true [get_nets n_13_fft_fsm]
+set_property MARK_DEBUG true [get_nets n_19_fft_fsm]
+set_property MARK_DEBUG true [get_nets n_16_fft_fsm]
+set_property MARK_DEBUG true [get_nets n_14_fft_fsm]
+set_property MARK_DEBUG true [get_nets n_11_fft_fsm]
+set_property MARK_DEBUG true [get_nets {s_axis_config_tdata[8]}]
+set_property MARK_DEBUG true [get_nets s_axis_config_tvalid]
+set_property MARK_DEBUG true [get_nets s_axis_data_tlast]
+set_property MARK_DEBUG true [get_nets s_axis_data_tvalid]
+set_property MARK_DEBUG true [get_nets m_axis_data_tlast]
+set_property MARK_DEBUG true [get_nets m_axis_data_tvalid]
+set_property MARK_DEBUG true [get_nets s_axis_config_tready]
+set_property MARK_DEBUG true [get_nets s_axis_data_tready]
 set_property MARK_DEBUG false [get_nets {disp_draw_inst/counter2[7]}]
 set_property MARK_DEBUG false [get_nets {disp_draw_inst/counter2[6]}]
 set_property MARK_DEBUG false [get_nets {disp_draw_inst/counter2[5]}]
@@ -807,46 +849,6 @@ set_property MARK_DEBUG false [get_nets {disp_draw_inst/counter2[3]}]
 set_property MARK_DEBUG false [get_nets {disp_draw_inst/counter2[2]}]
 set_property MARK_DEBUG false [get_nets {disp_draw_inst/counter2[1]}]
 set_property MARK_DEBUG false [get_nets {disp_draw_inst/counter2[0]}]
-set_property MARK_DEBUG true [get_nets {fft_fsm/state[4]}]
-set_property MARK_DEBUG true [get_nets {fft_fsm/state[3]}]
-set_property MARK_DEBUG true [get_nets {fft_fsm/state[2]}]
-set_property MARK_DEBUG true [get_nets {fft_fsm/state[1]}]
-set_property MARK_DEBUG true [get_nets {fft_fsm/state[0]}]
-set_property MARK_DEBUG true [get_nets fft_fsm/VGA_trig]
-set_property MARK_DEBUG true [get_nets xlnx_opt_]
-set_property MARK_DEBUG true [get_nets FFT_done]
-set_property MARK_DEBUG true [get_nets ram2_wea]
-set_property MARK_DEBUG true [get_nets ram1_wea]
-set_property MARK_DEBUG true [get_nets n_21_fft_fsm]
-set_property MARK_DEBUG true [get_nets n_13_fft_fsm]
-set_property MARK_DEBUG true [get_nets n_11_fft_fsm]
-set_property MARK_DEBUG true [get_nets n_19_fft_fsm]
-set_property MARK_DEBUG true [get_nets n_10_fft_fsm]
-set_property MARK_DEBUG true [get_nets n_20_fft_fsm]
-set_property MARK_DEBUG true [get_nets n_14_fft_fsm]
-set_property MARK_DEBUG true [get_nets n_17_fft_fsm]
-set_property MARK_DEBUG true [get_nets n_16_fft_fsm]
-set_property MARK_DEBUG true [get_nets n_15_fft_fsm]
-set_property MARK_DEBUG true [get_nets n_12_fft_fsm]
-set_property MARK_DEBUG true [get_nets n_18_fft_fsm]
-set_property MARK_DEBUG true [get_nets n_31_fft_fsm]
-set_property MARK_DEBUG true [get_nets n_30_fft_fsm]
-set_property MARK_DEBUG true [get_nets n_27_fft_fsm]
-set_property MARK_DEBUG true [get_nets n_26_fft_fsm]
-set_property MARK_DEBUG true [get_nets n_23_fft_fsm]
-set_property MARK_DEBUG true [get_nets n_22_fft_fsm]
-set_property MARK_DEBUG true [get_nets n_24_fft_fsm]
-set_property MARK_DEBUG true [get_nets n_29_fft_fsm]
-set_property MARK_DEBUG true [get_nets n_25_fft_fsm]
-set_property MARK_DEBUG true [get_nets n_28_fft_fsm]
-set_property MARK_DEBUG true [get_nets m_axis_data_tlast]
-set_property MARK_DEBUG true [get_nets m_axis_data_tvalid]
-set_property MARK_DEBUG true [get_nets s_axis_config_tready]
-set_property MARK_DEBUG true [get_nets s_axis_data_tready]
-set_property MARK_DEBUG true [get_nets {s_axis_config_tdata[8]}]
-set_property MARK_DEBUG true [get_nets s_axis_config_tvalid]
-set_property MARK_DEBUG true [get_nets s_axis_data_tlast]
-set_property MARK_DEBUG true [get_nets s_axis_data_tvalid]
 create_debug_core u_ila_0 ila
 set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0]
 set_property ALL_PROBE_SAME_MU_CNT 1 [get_debug_cores u_ila_0]
@@ -857,128 +859,121 @@ set_property C_INPUT_PIPE_STAGES 0 [get_debug_cores u_ila_0]
 set_property C_TRIGIN_EN false [get_debug_cores u_ila_0]
 set_property C_TRIGOUT_EN false [get_debug_cores u_ila_0]
 set_property port_width 1 [get_debug_ports u_ila_0/clk]
-connect_debug_port u_ila_0/clk [get_nets [list VGA_trig_BUFG]]
+connect_debug_port u_ila_0/clk [get_nets [list debug_clk]]
 set_property port_width 1 [get_debug_ports u_ila_0/probe0]
-connect_debug_port u_ila_0/probe0 [get_nets [list {fft_fsm/state[4]}]]
-create_debug_core u_ila_1 ila
-set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_1]
-set_property ALL_PROBE_SAME_MU_CNT 1 [get_debug_cores u_ila_1]
-set_property C_ADV_TRIGGER false [get_debug_cores u_ila_1]
-set_property C_DATA_DEPTH 8192 [get_debug_cores u_ila_1]
-set_property C_EN_STRG_QUAL false [get_debug_cores u_ila_1]
-set_property C_INPUT_PIPE_STAGES 0 [get_debug_cores u_ila_1]
-set_property C_TRIGIN_EN false [get_debug_cores u_ila_1]
-set_property C_TRIGOUT_EN false [get_debug_cores u_ila_1]
-set_property port_width 1 [get_debug_ports u_ila_1/clk]
-connect_debug_port u_ila_1/clk [get_nets [list vga_comp/pixel_clk]]
-set_property port_width 1 [get_debug_ports u_ila_1/probe0]
-connect_debug_port u_ila_1/probe0 [get_nets [list {s_axis_config_tdata[8]}]]
+connect_debug_port u_ila_0/probe0 [get_nets [list {s_axis_config_tdata[8]}]]
 create_debug_port u_ila_0 probe
-set_property port_width 1 [get_debug_ports u_ila_0/probe1]
-connect_debug_port u_ila_0/probe1 [get_nets [list s_axis_config_tvalid]]
+set_property port_width 5 [get_debug_ports u_ila_0/probe1]
+connect_debug_port u_ila_0/probe1 [get_nets [list {fft_fsm/state[0]} {fft_fsm/state[1]} {fft_fsm/state[2]} {fft_fsm/state[3]} {fft_fsm/state[4]}]]
 create_debug_port u_ila_0 probe
 set_property port_width 1 [get_debug_ports u_ila_0/probe2]
-connect_debug_port u_ila_0/probe2 [get_nets [list s_axis_data_tvalid]]
+connect_debug_port u_ila_0/probe2 [get_nets [list busy_IBUF]]
 create_debug_port u_ila_0 probe
 set_property port_width 1 [get_debug_ports u_ila_0/probe3]
-connect_debug_port u_ila_0/probe3 [get_nets [list xlnx_opt_]]
-create_debug_port u_ila_1 probe
-set_property port_width 4 [get_debug_ports u_ila_1/probe1]
-connect_debug_port u_ila_1/probe1 [get_nets [list {fft_fsm/state[0]} {fft_fsm/state[1]} {fft_fsm/state[2]} {fft_fsm/state[3]}]]
-create_debug_port u_ila_1 probe
-set_property port_width 1 [get_debug_ports u_ila_1/probe2]
-connect_debug_port u_ila_1/probe2 [get_nets [list FFT_done]]
-create_debug_port u_ila_1 probe
-set_property port_width 1 [get_debug_ports u_ila_1/probe3]
-connect_debug_port u_ila_1/probe3 [get_nets [list m_axis_data_tlast]]
-create_debug_port u_ila_1 probe
-set_property port_width 1 [get_debug_ports u_ila_1/probe4]
-connect_debug_port u_ila_1/probe4 [get_nets [list m_axis_data_tvalid]]
-create_debug_port u_ila_1 probe
-set_property port_width 1 [get_debug_ports u_ila_1/probe5]
-connect_debug_port u_ila_1/probe5 [get_nets [list n_10_fft_fsm]]
-create_debug_port u_ila_1 probe
-set_property port_width 1 [get_debug_ports u_ila_1/probe6]
-connect_debug_port u_ila_1/probe6 [get_nets [list n_11_fft_fsm]]
-create_debug_port u_ila_1 probe
-set_property port_width 1 [get_debug_ports u_ila_1/probe7]
-connect_debug_port u_ila_1/probe7 [get_nets [list n_12_fft_fsm]]
-create_debug_port u_ila_1 probe
-set_property port_width 1 [get_debug_ports u_ila_1/probe8]
-connect_debug_port u_ila_1/probe8 [get_nets [list n_13_fft_fsm]]
-create_debug_port u_ila_1 probe
-set_property port_width 1 [get_debug_ports u_ila_1/probe9]
-connect_debug_port u_ila_1/probe9 [get_nets [list n_14_fft_fsm]]
-create_debug_port u_ila_1 probe
-set_property port_width 1 [get_debug_ports u_ila_1/probe10]
-connect_debug_port u_ila_1/probe10 [get_nets [list n_15_fft_fsm]]
-create_debug_port u_ila_1 probe
-set_property port_width 1 [get_debug_ports u_ila_1/probe11]
-connect_debug_port u_ila_1/probe11 [get_nets [list n_16_fft_fsm]]
-create_debug_port u_ila_1 probe
-set_property port_width 1 [get_debug_ports u_ila_1/probe12]
-connect_debug_port u_ila_1/probe12 [get_nets [list n_17_fft_fsm]]
-create_debug_port u_ila_1 probe
-set_property port_width 1 [get_debug_ports u_ila_1/probe13]
-connect_debug_port u_ila_1/probe13 [get_nets [list n_18_fft_fsm]]
-create_debug_port u_ila_1 probe
-set_property port_width 1 [get_debug_ports u_ila_1/probe14]
-connect_debug_port u_ila_1/probe14 [get_nets [list n_19_fft_fsm]]
-create_debug_port u_ila_1 probe
-set_property port_width 1 [get_debug_ports u_ila_1/probe15]
-connect_debug_port u_ila_1/probe15 [get_nets [list n_20_fft_fsm]]
-create_debug_port u_ila_1 probe
-set_property port_width 1 [get_debug_ports u_ila_1/probe16]
-connect_debug_port u_ila_1/probe16 [get_nets [list n_21_fft_fsm]]
-create_debug_port u_ila_1 probe
-set_property port_width 1 [get_debug_ports u_ila_1/probe17]
-connect_debug_port u_ila_1/probe17 [get_nets [list n_22_fft_fsm]]
-create_debug_port u_ila_1 probe
-set_property port_width 1 [get_debug_ports u_ila_1/probe18]
-connect_debug_port u_ila_1/probe18 [get_nets [list n_23_fft_fsm]]
-create_debug_port u_ila_1 probe
-set_property port_width 1 [get_debug_ports u_ila_1/probe19]
-connect_debug_port u_ila_1/probe19 [get_nets [list n_24_fft_fsm]]
-create_debug_port u_ila_1 probe
-set_property port_width 1 [get_debug_ports u_ila_1/probe20]
-connect_debug_port u_ila_1/probe20 [get_nets [list n_25_fft_fsm]]
-create_debug_port u_ila_1 probe
-set_property port_width 1 [get_debug_ports u_ila_1/probe21]
-connect_debug_port u_ila_1/probe21 [get_nets [list n_26_fft_fsm]]
-create_debug_port u_ila_1 probe
-set_property port_width 1 [get_debug_ports u_ila_1/probe22]
-connect_debug_port u_ila_1/probe22 [get_nets [list n_27_fft_fsm]]
-create_debug_port u_ila_1 probe
-set_property port_width 1 [get_debug_ports u_ila_1/probe23]
-connect_debug_port u_ila_1/probe23 [get_nets [list n_28_fft_fsm]]
-create_debug_port u_ila_1 probe
-set_property port_width 1 [get_debug_ports u_ila_1/probe24]
-connect_debug_port u_ila_1/probe24 [get_nets [list n_29_fft_fsm]]
-create_debug_port u_ila_1 probe
-set_property port_width 1 [get_debug_ports u_ila_1/probe25]
-connect_debug_port u_ila_1/probe25 [get_nets [list n_30_fft_fsm]]
-create_debug_port u_ila_1 probe
-set_property port_width 1 [get_debug_ports u_ila_1/probe26]
-connect_debug_port u_ila_1/probe26 [get_nets [list n_31_fft_fsm]]
-create_debug_port u_ila_1 probe
-set_property port_width 1 [get_debug_ports u_ila_1/probe27]
-connect_debug_port u_ila_1/probe27 [get_nets [list ram1_wea]]
-create_debug_port u_ila_1 probe
-set_property port_width 1 [get_debug_ports u_ila_1/probe28]
-connect_debug_port u_ila_1/probe28 [get_nets [list ram2_wea]]
-create_debug_port u_ila_1 probe
-set_property port_width 1 [get_debug_ports u_ila_1/probe29]
-connect_debug_port u_ila_1/probe29 [get_nets [list s_axis_config_tready]]
-create_debug_port u_ila_1 probe
-set_property port_width 1 [get_debug_ports u_ila_1/probe30]
-connect_debug_port u_ila_1/probe30 [get_nets [list s_axis_data_tlast]]
-create_debug_port u_ila_1 probe
-set_property port_width 1 [get_debug_ports u_ila_1/probe31]
-connect_debug_port u_ila_1/probe31 [get_nets [list s_axis_data_tready]]
-create_debug_port u_ila_1 probe
-set_property port_width 1 [get_debug_ports u_ila_1/probe32]
-connect_debug_port u_ila_1/probe32 [get_nets [list fft_fsm/VGA_trig]]
+connect_debug_port u_ila_0/probe3 [get_nets [list FFT_done]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe4]
+connect_debug_port u_ila_0/probe4 [get_nets [list m_axis_data_tlast]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe5]
+connect_debug_port u_ila_0/probe5 [get_nets [list m_axis_data_tvalid]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe6]
+connect_debug_port u_ila_0/probe6 [get_nets [list n_2_fft_fsm]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe7]
+connect_debug_port u_ila_0/probe7 [get_nets [list n_10_fft_fsm]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe8]
+connect_debug_port u_ila_0/probe8 [get_nets [list n_11_fft_fsm]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe9]
+connect_debug_port u_ila_0/probe9 [get_nets [list n_12_fft_fsm]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe10]
+connect_debug_port u_ila_0/probe10 [get_nets [list n_13_fft_fsm]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe11]
+connect_debug_port u_ila_0/probe11 [get_nets [list n_14_fft_fsm]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe12]
+connect_debug_port u_ila_0/probe12 [get_nets [list n_15_fft_fsm]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe13]
+connect_debug_port u_ila_0/probe13 [get_nets [list n_16_fft_fsm]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe14]
+connect_debug_port u_ila_0/probe14 [get_nets [list n_17_fft_fsm]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe15]
+connect_debug_port u_ila_0/probe15 [get_nets [list n_18_fft_fsm]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe16]
+connect_debug_port u_ila_0/probe16 [get_nets [list n_19_fft_fsm]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe17]
+connect_debug_port u_ila_0/probe17 [get_nets [list n_20_fft_fsm]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe18]
+connect_debug_port u_ila_0/probe18 [get_nets [list n_21_fft_fsm]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe19]
+connect_debug_port u_ila_0/probe19 [get_nets [list n_22_fft_fsm]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe20]
+connect_debug_port u_ila_0/probe20 [get_nets [list n_23_fft_fsm]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe21]
+connect_debug_port u_ila_0/probe21 [get_nets [list n_24_fft_fsm]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe22]
+connect_debug_port u_ila_0/probe22 [get_nets [list n_25_fft_fsm]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe23]
+connect_debug_port u_ila_0/probe23 [get_nets [list n_26_fft_fsm]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe24]
+connect_debug_port u_ila_0/probe24 [get_nets [list n_27_fft_fsm]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe25]
+connect_debug_port u_ila_0/probe25 [get_nets [list n_28_fft_fsm]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe26]
+connect_debug_port u_ila_0/probe26 [get_nets [list n_29_fft_fsm]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe27]
+connect_debug_port u_ila_0/probe27 [get_nets [list n_30_fft_fsm]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe28]
+connect_debug_port u_ila_0/probe28 [get_nets [list n_31_fft_fsm]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe29]
+connect_debug_port u_ila_0/probe29 [get_nets [list ram1_wea]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe30]
+connect_debug_port u_ila_0/probe30 [get_nets [list ram2_wea]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe31]
+connect_debug_port u_ila_0/probe31 [get_nets [list s_axis_config_tready]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe32]
+connect_debug_port u_ila_0/probe32 [get_nets [list s_axis_config_tvalid]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe33]
+connect_debug_port u_ila_0/probe33 [get_nets [list s_axis_data_tlast]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe34]
+connect_debug_port u_ila_0/probe34 [get_nets [list s_axis_data_tready]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe35]
+connect_debug_port u_ila_0/probe35 [get_nets [list s_axis_data_tvalid]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe36]
+connect_debug_port u_ila_0/probe36 [get_nets [list VGA_trig]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe37]
+connect_debug_port u_ila_0/probe37 [get_nets [list xlnx_opt_]]
 set_property C_CLK_INPUT_FREQ_HZ 300000000 [get_debug_cores dbg_hub]
 set_property C_ENABLE_CLK_DIVIDER false [get_debug_cores dbg_hub]
 set_property C_USER_SCAN_CHAIN 1 [get_debug_cores dbg_hub]
-connect_debug_port dbg_hub/clk [get_nets VGA_trig_BUFG]
+connect_debug_port dbg_hub/clk [get_nets debug_clk]

@@ -113,7 +113,7 @@ start_step opt_design
 set rc [catch {
   create_msg_db opt_design.pb
   catch {write_debug_probes -quiet -force debug_nets}
-  catch {update_ip_catalog -quiet -current_ip_cache {/data1/cdaffron/git/ece551hw/final/chris/bg_accel/bg_accel.cache} }
+  catch {update_ip_catalog -quiet -current_ip_cache {/data1/cdaffron/git/ece551hw/final/chris/final_version_opt_test/final_version_opt_test.cache} }
   opt_design 
   write_checkpoint -force top_level_opt.dcp
   close_msg_db -file opt_design.pb
